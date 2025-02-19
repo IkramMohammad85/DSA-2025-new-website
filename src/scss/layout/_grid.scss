@@ -1,0 +1,186 @@
+
+@use "../base/variables" as v;
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+  
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    &-col {
+      flex: 1 1 100%; // Default: Full width for mobile
+  
+      @media (min-width: 768px) {
+        flex: 1;
+      }
+    }
+  
+    &-col-lg {
+      flex: 1 1 100%;
+  
+      @media (min-width: 992px) {
+        flex: 1;
+      }
+    }
+  
+    // 2-Column Layout
+    &-row--two {
+      .flex-col {padding: 1rem;
+        @media (min-width: 768px) {
+          flex: 0 0 calc(50% - 1%);
+          margin-right: 2%;
+        }
+  
+        &:nth-child(2n) {
+          @media (min-width: 768px) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  
+    // 3-Column Layout
+    &-row--three {
+      .flex-col {padding: 1rem;
+        @media (min-width: 768px) {
+          flex: 0 0 calc(33.33% - 2%);
+          margin-right: 3%;
+          flex-grow: 1;
+          flex-shrink: 0;
+          flex-basis: calc(100% / 3);
+        }
+  
+        @media (min-width: 992px) {
+          flex: 0 0 calc(33.33% - 2%);
+          margin-right: 3%;
+          flex-grow: 1;
+          flex-shrink: 0;
+          flex-basis: calc(100% / 4);
+        }
+      }
+    }
+  
+    // 4-Column Layout
+    &-row--four {
+      .flex-col {padding: 1rem;
+        @media (min-width: 768px) {
+          margin-right: 2%;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: calc(25% - 1.5%);
+        }
+      }
+  
+      .flex-col:nth-child(4n) {
+        @media (min-width: 768px) {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    // Fixed 3-Column Layout
+    &-row--fixed-three {
+      .flex-col {padding: 1rem;
+        @media (min-width: 768px) {
+          flex: 0 0 33.33%;
+        }
+      }
+    }
+  
+    // Fixed 4-Column Layout
+    &-row--fixed-four {
+      .flex-col {padding: 1rem;
+        @media (min-width: 768px) {
+          flex: 0 0 25%;
+        }
+      }
+    }
+  }
+  
+  // Fix nth-child behavior for spacing
+  @media (min-width: 768px) {
+    .flex-grid-row--three .flex-col {
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+  
+      &:nth-child(3n) {
+        margin-right: 3%;
+      }
+  
+      &:last-child {
+        margin-right: 0%;
+      }
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .flex-grid-row--three .flex-col {
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+  
+      &:nth-child(2n) {
+        margin-right: 3%;
+      }
+  
+      &:last-child {
+        margin-right: 0%;
+      }
+    }
+  }
+  
+  .section-wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: inherit;
+  
+    @media (min-width: 1200px) {
+      max-width: 100%;
+    }
+  
+    @media (min-width: 1440px) {
+      max-width: 1440px;
+      width: 100%;
+    }
+  }
+  
+  .flex {
+    &-wrapper {
+      display: flex;
+  
+      &--spacing {
+        display: flex;
+        justify-content: space-between;
+        .flex-item{padding: 1rem;}
+      }
+      .flex-item{padding: 1rem;}
+    }
+  
+    &-spacing {
+      display: flex;
+      justify-content: space-between;
+      .flex-item{padding: 1rem;}
+    }
+
+  }  
+
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+.text-center { text-align: center; }
+
+#wrapper {display: flex;flex-direction: column;}
+details, main { display: block;}
+
+// just for testing purpose
+.bg-dsa1{background-color: v.$dsa-yellow; color: v.$dark;}
+.bg-dsa2{background-color: v.$dsa-red; color: v.$white;}
+.bg-dsa3{background-color: v.$dsa-green; color: v.$white;}
+.bg-dsa4{background-color: v.$dsa-purple; color: v.$white;}
+
+

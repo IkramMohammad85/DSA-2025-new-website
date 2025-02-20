@@ -1,0 +1,207 @@
+@use "../base/variables" as v; 
+.cta-boxes {
+    padding: 4rem 0 2rem;
+  
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  
+    .flex-spacing {
+      flex-direction: column;
+  
+      @media (min-width: 1080px) {
+        flex-direction: row;
+      }
+    }
+  
+    &--4.cta-boxes {
+      .cta-box {
+        @media (min-width: 1080px) {
+          max-width: 24%;
+        }
+      }
+    }
+  
+    .cta-box {
+      width: 100%;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 2px;
+      background-color: v.$white;
+      border-top: 4px solid #e0e0e0;
+      box-shadow: 0px 2px 4px rgba(41, 70, 97, 0.25);
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+  
+      @media (min-width: 1080px) {
+        max-width: 32%;
+  
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: rgba(22, 51, 127, 0.15) 0px 10px 15px;
+  
+          span {
+            color: v.$dsa-bright-blue;
+          }
+        }
+      }
+  
+      &--highlight {
+        border-top: 4px solid v.$dsa-bright-blue;
+      }
+  
+      p {
+        color: v.$dsa-grey;
+        line-height: 1.6;
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+  
+      span {
+        display: inline-block;
+        color: v.$black;
+        font-size: 1.125rem;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+  
+        &:after {
+          content: "";
+          display: inline-block;
+          background: url(../img/sprite-all.svg) no-repeat 0 -50px;
+          width: 15px;
+          height: 10px;
+          margin-left: 0.5rem;
+          vertical-align: middle;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  
+  .cta-contact {
+    padding: 3rem 0;
+    color: v.$white;
+    background: linear-gradient(180deg, #217fd4 0%, #3271b7 100%);
+  
+    .flex-spacing {
+      flex-direction: column;
+  
+      @media (min-width: 1080px) {
+        align-items: center;
+        flex-direction: row;
+      }
+    }
+  
+    &__top {
+      p {
+        width: 100%;
+        max-width: 850px;
+        font-size: 1.1rem;
+        line-height: 1.1;
+        margin: 0 auto;
+        margin-bottom: 1.5rem;
+        text-align: center;
+  
+        @media (min-width: 1080px) {
+          margin: 0;
+          text-align: left;
+        }
+      }
+  
+      a {
+        padding: 1.25rem 1.5rem;
+        line-height: 1;
+        color: v.$white;
+        font-size: 0.9375rem;
+        font-weight: bold;
+        border-radius: 4px;
+        border: 1px solid v.$white;
+        background-color: transparent;
+        box-shadow: 0px 2px 4px rgba(41, 70, 97, 0.2);
+        align-self: center;
+  
+        &:after {
+          content: "";
+          width: 10px;
+          height: 6px;
+          display: inline-block;
+          margin-left: 0.5rem;
+          background: url(../img/sprite-all.svg) no-repeat -63px -40px;
+          vertical-align: middle;
+          transform: scale(1.5);
+        }
+      }
+    }
+  
+    &__bot {
+      display: none;
+      margin-top: 2rem;
+      padding-top: 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+  
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      background-color: v.$white;
+      max-width: 730px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 4px;
+      border: 1px solid #e9ecef;
+      box-shadow: 0px 4px 8px rgba(41, 70, 97, 0.2);
+    }
+  
+    &__fields {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      @media (min-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+    }
+  
+    &__field {
+      width: 100%;
+      margin-bottom: 1.5rem;
+  
+      @media (min-width: 768px) {
+        max-width: calc(50% - 10px);
+      }
+  
+      label {
+        display: block;
+        color: v.$dsa-grey;
+        font-weight: bold;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        padding-bottom: 0.25rem;
+      }
+  
+      input {
+        border: 1px solid #d4dadf;
+        width: 100%;
+      }
+  
+      &--2x {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  
+    &__btn {
+      display: inline-block;
+      color: v.$white;
+      font-weight: bold;
+      font-size: 0.9375rem;
+      border-radius: 2px;
+      padding: 0.75rem 2rem;
+      background-color: v.$dsa-dark-blue;
+      box-shadow: 0px 2px 4px rgba(41, 70, 97, 0.2);
+    }
+  }
+  

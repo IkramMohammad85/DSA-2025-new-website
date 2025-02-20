@@ -39,13 +39,9 @@ function scripts() {
 
 // Watch for Changes
 function watchFiles() {
-//   browserSync.init({
-//     server: { baseDir: './src/html' }, // Use the `html` folder as root
-//     notify: false
-//   });
     browserSync.init({
         server: { baseDir: "dist", index: "index.html" },
-        port: 8080, // Change to another port
+        port: 8080, 
     });
   gulp.watch('./src/scss/**/*.scss', styles);
   gulp.watch('./src/js/**/*.js', scripts);
@@ -55,25 +51,21 @@ function watchFiles() {
 function serve() {
     browserSync.init({
         server: { baseDir: "dist", index: "index.html" },
-        port: 8080, // Change to another port
+        port: 8080, 
       });
   
     gulp.watch("src/scss/**/*.scss", gulp.series(styles));
     gulp.watch("src/js/**/*.js").on("change", browserSync.reload);
     gulp.watch("src/html/**/*.html").on("change", browserSync.reload);
   }
-
-
-  
 // Task to process HTML includes
 gulp.task("html", function () {
     return gulp
-      //.src("src/html/*.html") // Only process main HTML files, not components
       .src("src/html/**/*.html") // Include all HTML files and subfolders
       .pipe(
         fileInclude({
-          prefix: "@@", // Use @@ as the include prefix
-          basepath: "@file", // Ensure relative path works
+          prefix: "@@", 
+          basepath: "@file", 
         })
       )
       .pipe(gulp.dest("dist")) // Output compiled HTML to dist folder
@@ -86,7 +78,7 @@ gulp.task("scripts", function () {
       .pipe(sourcemaps.init()) // Initialize source maps
       .pipe(
         babel({
-          presets: ["@babel/env"], // Convert ES6+ to ES5
+          presets: ["@babel/env"], 
         })
       )
       .pipe(uglify()) // Minify JS
@@ -96,21 +88,13 @@ gulp.task("scripts", function () {
   });
   // Start local server and watch for changes
   gulp.task("watch", function () {
-    // browserSync.init({
-    //   server: {
-    //     baseDir: "dist", // Serve from dist folder
-    //     index: "index.html", // Ensure index.html is the default
-    //   },
-    //   port: 8080, // Optional: Change port if needed
-    // });
     browserSync.init({
         server: { baseDir: "dist", index: "index.html" },
-        port: 8080, // Change to another port
+        port: 8080, 
       });
   
     gulp.watch("src/html/**/*.html", gulp.series("html"));
-    
-    gulp.watch("src/js/**/*.js", gulp.series("scripts")); // Watch JS
+    gulp.watch("src/js/**/*.js", gulp.series("scripts")); 
   });
 
 // Default Task

@@ -1,0 +1,71 @@
+@use "../base/variables" as v; 
+.btn {
+    border-radius: 2px;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    padding: 8px 20px 7px 20px;
+    line-height: 1.5333333333;
+    text-decoration: none;
+    height: auto;
+    transition: all 0.25s ease-in-out;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+    width: min-content;
+  }
+  .btn-primary {
+    color: v.$white;
+    background-color: v.$dsa-bright-blue;
+    border-color: v.$dsa-bright-blue;
+    &:hover {
+      color: v.$white;
+      background-color: v.$dsa-medium-blue;
+      border-color: v.$dsa-medium-blue;
+    }
+    &:active {
+      &:hover {
+        color: v.$white;
+        background-color: v.$dsa-medium-blue;
+        border-color: v.$dsa-medium-blue;
+      }
+      &:focus {
+        color: v.$white;
+        background-color: v.$dsa-medium-blue;
+        border-color: v.$dsa-medium-blue;
+      }
+    }
+  }
+  .btn-outline-primary {
+    color: v.$dsa-bright-blue;
+    background-color: transparent;
+    background-image: none;
+    border-color: v.$dsa-bright-blue;
+    &:hover {
+      color: v.$white;
+      background-color: v.$dsa-bright-blue;
+      border-color: v.$dsa-bright-blue;
+    }
+  }
+  .btn-secondary {
+    color: v.$white;
+    background-color: v.$gray-dark;
+    border-color: v.$gray-dark;
+    &:hover,
+    &:focus {
+      color: v.$white;
+      background-color: v.$gray-dark;
+      border-color: v.$gray-dark;
+    }
+  }
+  .btn-outline-secondary {
+    color: v.$gray-dark;
+    background-color: transparent;
+    border-color: v.$gray-dark;
+    &:hover {
+      color: v.$white;
+      background-color: v.$gray-dark;
+      border-color: v.$gray-dark;
+    }
+  }

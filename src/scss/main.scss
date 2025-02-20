@@ -5,8 +5,14 @@
 
 // Components ----------------------------------------------------------------
 @use "components/megamenu";
+@use "components/multimedia";
+@use "components/cta-boxes";
+@use "components/tooltip";
+@use "components/buttons";
+
 
 // layout ----------------------------------------------------------------
 @use "layout/footer";
 @use "layout/grid";
 @use "layout/header";
+@use "layout/location";

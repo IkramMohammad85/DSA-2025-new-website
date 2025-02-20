@@ -1,0 +1,102 @@
+$light-gray: #f5f7fa;
+$mobile-bp-min: 1100px;
+@use "../base/variables" as v; 
+.hp-multimedia {
+    padding: 4rem 0;
+    background: $light-gray;
+    .hp-section-link {
+      margin-top: 0;
+    }
+  
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        font-size: 0;
+      }
+  
+      li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+        border-radius: 2px;
+        background-color: v.$white;
+        box-shadow: 0px 4px 8px rgba(10, 8, 59, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        margin-bottom: 2rem;
+  
+        @media (min-width: 768px) {
+          /* max-width: calc((100% - 30px) / 2); */
+          /* this is for ie browser fix */
+          width: calc((100% - 30px)/2);
+          /* end */
+        }
+  
+        @media (min-width: #{$mobile-bp-min}) {
+          /* max-width: calc((100% - 90px) / 4); */
+          /* this is for ie browser fix */
+          width: calc((100% - 90px)/4);
+          /* end */
+        }
+  
+        &:nth-child(1) {
+          a:first-child {
+            border-bottom: 2px solid v.$dsa-yellow;
+          }
+        }
+  
+        &:nth-child(2) {
+          a:first-child {
+            border-bottom: 2px solid v.$dsa-red;
+          }
+        }
+  
+        &:nth-child(3) {
+          a:first-child {
+            border-bottom: 2px solid v.$dsa-green;
+          }
+        }
+  
+        &:nth-child(4) {
+          a:first-child {
+            border-bottom: 2px solid v.$dsa-purple;
+          }
+        }
+  
+        span {
+          font-weight: bold;
+          font-size: 0.625rem;
+          color: v.$dsa-light-grey;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          padding: 1rem 10px 0.5rem 10px;
+        }
+  
+        a {
+          &:first-child {
+            font-size: 0;
+            overflow: hidden;
+            @media (min-width: #{$mobile-bp-min}) {
+              max-height: 180px;
+            }
+          }
+  
+          &:last-child {
+            color: v.$black;
+            padding: 0 10px 20px 10px;
+          }
+        }
+  
+        &:hover {
+          box-shadow: 0 13px 14px 0 rgba(10, 8, 59, 0.1);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }

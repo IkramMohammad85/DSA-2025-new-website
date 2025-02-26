@@ -1,11 +1,9 @@
 @use "../base/variables" as v; 
 .cta-boxes {
     padding: 4rem 0 2rem;
-  
     h2 {
       margin-bottom: 1.5rem;
     }
-  
     .flex-spacing {
       flex-direction: column;
   
@@ -38,6 +36,7 @@
         &:hover {
           transform: scale(1.05);
           box-shadow: rgba(22, 51, 127, 0.15) 0px 10px 15px;
+          border-top: 4px solid v.$dsa-bright-blue;
   
           span {
             color: v.$dsa-bright-blue;

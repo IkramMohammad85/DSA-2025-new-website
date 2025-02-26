@@ -1,0 +1,64 @@
+@use "../base/variables" as v; 
+ /* Measuring Asia’s Eight Most Dynamic Emerging Countries*/
+ .common-tab-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .common-tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;
+    padding: 20px 0;
+   margin: 0; 
+   list-style: none;
+   line-height: normal;
+   color: #535353;
+    
+    li{
+        border-right: solid 1px #DEDEDE;
+        padding-right: 14px;
+        margin-right: 14px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        &:last-child{border: none; padding-right: 0; margin: 0;}
+    }
+    
+  }
+  
+  .common-tab-button {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    &.active {
+        color: #000;
+        border-bottom: solid 3px #367DBF;
+        font-weight: bold;
+      }
+  }
+  
+  .common-tab-content {
+    display: none; 
+    padding-top: 2rem;
+    p{color: #535353;}
+    .btn-cta-link{ text-align: right;}
+    .dec-heade-title{display: flex; color: #000; margin-bottom: 1.5rem; font-weight: 600;
+    img{margin-right: 1rem; border-radius: 10px; width: 45px;}
+    }
+
+  }
+  
+  #tabDropdown {
+    display: none; 
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: solid 2px #367DBF;
+    border-radius: 5px;
+    &:focus{outline:#367DBF ;}
+  }
+ /* end*/

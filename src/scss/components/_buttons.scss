@@ -69,3 +69,22 @@
       border-color: v.$gray-dark;
     }
   }
+  .btn-cta-link {
+    a {
+        color: #357DC0;
+        text-decoration: none;
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        &:after {
+            content: "";
+            display: inline-block;
+            background: url(https://dsa-2021.netlify.app/assets/img/esg-cta-arrow.svg) no-repeat left top;
+            width: 6px;
+            height: 8px;
+            margin-left: .5rem;
+            vertical-align: middle;
+        }
+        &:hover:after{color: #103D68 ; background: url(https://dsa-2021.netlify.app/assets/img/esg-cta-arrow-h.svg) no-repeat left top;}
+    }
+}

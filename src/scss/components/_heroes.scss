@@ -1,0 +1,541 @@
+@use "../base/variables" as v; 
+//Why work with Dezan Shira
+.section-padding { padding-top: 80px; padding-bottom: 80px;}
+.para{color: v.$gray;
+    a{color: v.$gray; text-decoration: underline;
+        &:hover{text-decoration: none;}
+        }
+}
+.thumb-round{ display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;}
+.why-work-with-DSA{ background-color: v.$gray-bg; @extend .section-padding; padding-top: 88px; padding-bottom: 65px;
+    p{@extend .para;margin-bottom: 0; }
+    .flex-spacing{ flex-direction: column;}
+.dsa-block{width: calc((100%)/1);padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 2px;
+    text-align: center;
+   &:hover{
+       .icon-block{
+        transform: scale(1.1);
+       }
+       .dsa-block-title{
+           h4{color: v.$dsa-bright-blue; 
+               a{color: v.$dsa-bright-blue;}
+           }
+       }
+   }
+    }
+.icon-block{
+    height: 5rem;
+    width: 5rem;
+    @extend .thumb-round;
+    background-color: #f2f6fc;
+    margin-bottom: 1.5rem;
+    transition: transform .5s ease;
+    &.yellow-icon{
+        //background-color: #FFCB31;
+        background: rgba(255, 203, 49, 0.3);
+    }
+    &.red-icon{
+        //background-color: #ED1C24;
+        background: rgba(237, 28, 36, 0.3);
+    }
+    &.green-icon{
+        //background-color: #1A9649;
+        background: rgba(26, 150, 73, 0.3);
+    }
+    &.purple-icon{
+        //background-color: #6270B5;
+        background: rgba(98, 112, 181, 0.3);
+    }
+}
+.dsa-block-title {
+    h4{font-size: 18px; font-weight: bold;  color: v.$blue-theme;line-height: 24px;
+    a{color: v.$blue-theme;}
+    }
+}
+}
+
+/*Meet Our Experts*/
+.our-experts-section{min-height: 450px; padding-top: 63px; padding-bottom: 63px;
+    h2{margin-bottom: 3rem; text-align: center; font-size: 1.5rem;}
+}
+.expert-block-item{ display: flex; flex-direction: row; margin-top: 3rem;
+    .expert-thumbnail-item{ margin-right: 1.5rem;
+        img{border-radius: 50%; width: 94px;
+            border: solid 1px #e7e7e7;}
+    }
+  .expert-details-item{ width: 70%;
+    .expert-name { font-weight: bold; color: #000; font-size: 19px;
+    a{color: #000;}
+    }
+    .expert-position {color: #535353; font-size: 1rem; margin-bottom: 2rem;line-height: 22px;}
+    .expert-country{ color: #000; font-weight: 600; font-size: 14px; text-transform: uppercase;}
+    .expert-social{ display: flex; margin-top: 1rem;
+        a{background-color: #DAE8F4; padding: 8px; line-height: 8px; margin-right: 10px; border-radius: 50%;
+            img{width: 12px;}
+        }
+    }
+  }
+
+}
+.carousel-inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+//end
+
+/*Measuring Asia’s Eight Most Dynamic Emerging Countries*/
+.dynamic-emerging-countries{
+    h2{font-size: 1.5rem; text-align: center; margin-bottom: 2rem;}
+    background-color: #F0F6FC;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    min-height: 500px;
+    .dec-tabs {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: 0 auto;
+      }
+      
+      .dec-tab-list {
+        list-style: none;
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap; 
+        background-color: #fff;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;
+      }
+      .dec-tab-item {
+        margin-right: 14px;
+        padding: 0;
+        color: #535353;
+        cursor: pointer;
+        border-right: solid 1px #DEDEDE;
+        padding-right: 14px;
+        line-height: 18px;
+        &:last-child{border: none; padding-right: 0;}
+        a{color:#535353 ;}
+        &.active {
+            background-color: #fff;
+            border-bottom: none;
+            a{color:#000 ; border-bottom: solid 3px #367DBF; font-weight: bold;}
+          }
+      }
+      .dec-tab-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .dec-tab-pane {
+        display: none;
+        padding-top: 2rem;
+        p{color: #535353;}
+        .btn-cta-link{ text-align: right;}
+        .dec-heade-title{display: flex; color: #000; margin-bottom: 1.5rem; font-weight: 600;
+        img{margin-right: 1rem; border-radius: 10px; width: 45px;}
+        }
+        &.active {
+            display: block;
+          }
+      }
+    }
+/*end*/
+
+//The eight core tiers table
+.eight-core-tiers{padding: 6rem 0;
+    .eight-core-head { display: flex; justify-content: space-between; width: 100%; margin: 0 auto 3rem auto; flex-direction: column;
+        .eight-core-left{ width: 100%; margin-bottom: 2rem;
+            p{color: #344C71; margin: 0;}
+        }
+        .eight-core-right{
+            img{outline: none; height: 50px;}
+        }
+       
+    }
+    h2{font-size: 1.5rem; text-align: center; margin-bottom: 2rem;}
+    .table-secondary{ background-color: #F6F6F6; color: #4E4E4E; font-weight: bold; border-bottom: solid #fff 12px; cursor: pointer;}
+    .table-primary{ background-color: #1A5E9D;color: #fff; font-size: 14px;
+    a{color: #fff;}
+    th{background-color: #1A5E9D;}
+    }
+    .table-second{ background-color: #fff;color: #535353; font-size: 14px;
+        a{color: #fff;}
+        th{background-color: #fff;}
+        }
+    .table-success{ background-color: #EAF5FF;color: #535353; font-weight: 600;}
+    .table th, .table td{border: none;}
+    .table th img{width: 45px; vertical-align: middle;}
+    .eight-core-table{width: 100%; margin: 0 auto;
+    }
+
+    .table{word-break: normal;}
+    .table th, .table td{
+        &:first-child{width: 150px; text-align: left; }
+    }
+    .td-label{ background-color: #F5EF51; border-radius: 50%; display: inline-block; padding: 5px 8px; line-height: 14px;}
+    .tier-title{cursor: pointer;
+        .ml-18{margin-left: 18px;}
+        .tier{display: flex;}
+    }
+    .tier-detail{display: none;    
+    }
+
+    
+    .arrow-move{font-size: 14px; color: #367DBF;margin-right: 6px;
+    img{width: 11px !important; height: 11px;}
+    }
+}
+.rankings{width: 100%; margin: 0 auto;}
+//end
+/*emerging countries table*/
+.eight-core-tiers{
+    &.amir2025{padding-top: 0px;
+        .td-label {
+            border-radius: 50%;
+            display: inline-block;
+            padding: 5px 8px;
+            line-height: 14px;
+            &.gold{
+                background-color: #F5EF51; font-weight: 600;
+            }
+            &.silver{
+                background-color: transparent;
+            }
+            &.bronze{
+                background-color: transparent;
+                //color: #fff;
+            }
+        }
+        .eight-core-head{ flex-direction: column;
+            p{text-align: center; color: #787878;}
+            p:nth-child(2){color: #344C71; margin-bottom: 0; font-size: 14px;}
+            }
+            .eight-core-table{margin-bottom: 4rem;
+                .table-primary {font-weight: 500;
+                    a{font-weight: 500;}
+                }
+            }
+            .table td{word-break: normal;}
+            .table-success{background-color: #fff; border: solid 2px #367DBF !important;border: 5px;}
+            .table-striped tbody tr:nth-of-type(even){ color: #4E4E4E;
+                background-color: rgba(237, 243, 251, 1);
+            }
+            .table-striped { color: #4E4E4E;
+                td{width: 75px;}
+                //td:first-child{width: 270px !important;}
+                .striped-first-td{ display: flex; line-height: 22px; 
+                strong{margin-right: 1rem;}
+                span{padding-left: 2.8rem;}
+                }
+            }
+            .table-striped tbody tr:nth-of-type(odd){
+                background-color: #fff;
+            }
+            .arrow-move{margin-right: 1rem;}
+            .tier-title .ml-18{margin-left: 26px;}
+            
+    }
+}
+
+/*end*/
+
+
+@media only screen and (max-width: 767px){
+    /*Measuring Asia’s Eight Most Dynamic Emerging Countries*/
+.dynamic-emerging-countries {
+    .dec-tabs{width: 100%;}
+    .dec-tab-pane {
+        .btn-cta-link{text-align: left;margin-top: 2rem;}
+    }
+    .common-tab-content .btn-cta-link{text-align: left;margin-top: 2rem;}
+}
+/*end */
+}
+@media only screen and (max-width: 767px){
+    /*emerging countries table*/
+    .eight-core-tiers{
+        &.amir2025{
+            .eight-core-table{
+                th:first-child{background-color: #FFF;}
+                .table-striped{
+                    tr:nth-child(even) td:first-child {background-color: #edf3fb;}
+                    tr:nth-child(odd) td:first-child {background-color: #fff;}
+                    .striped-first-td span{padding-left: 1.8rem;}
+                }
+            }
+        }
+    }
+    .eight-core-tiers .table th:first-child, .eight-core-tiers .table td:first-child {
+        width: 150px;
+        text-align: left;
+    }
+    /*end*/
+}
+    
+
+@media screen and (min-width: 767px) {
+    .why-work-with-DSA{
+        .flex-spacing{ flex-direction: row; flex-wrap: wrap;}
+        .dsa-block{width: calc((100% - 85px)/2); text-align:left; }
+    }
+  }
+  @media screen and (min-width: 1167px) {
+    .why-work-with-DSA{
+        .dsa-block{width: calc((100% - 85px)/4); text-align:left; }
+    }
+  }
+
+  //our servicess
+.our-dsa-services{@extend .section-padding; padding-top: 88px; padding-bottom: 111px;
+    .flex-spacing{ flex-direction: column;}
+    p{@extend .para;margin-bottom: 0; }
+    .dsa-services-block{width: calc((100%)/1);padding: 1rem; display: flex; flex-direction: column;
+        margin-top: 2rem;
+        border-radius: 2px;
+        text-align: center;
+        &:hover{
+            .service-thumb{
+                transform: scale(1.1);
+            }
+            .dsa-block-title{
+               a{
+                   h4{color: v.$dsa-cyan-blue;}
+               }
+            }
+        }
+        p{margin-bottom: 0;}
+        .left-thumb-block{ margin-right: 0rem; margin-bottom: 1rem; height: 130px;
+            .service-thumb{
+                height: 130px;
+                width: 130px;
+                max-width: max-content;
+                @extend .thumb-round;
+                transition: transform .5s ease;
+
+            }
+        }
+        .right-dec-block{
+            .dsa-block-title{
+                h4{color: v.$dsa-cyan-blue; font-size: 20px; font-weight: bold;
+                    a{color: v.$dsa-cyan-blue;}
+                }
+            }
+        }
+        }
+        .flex-spacing{flex-wrap: wrap;}
+        .btn { margin-top: 2rem;
+         
+            font-weight: 600;
+            font-size: 18px;
+            padding-left: 2rem;
+            padding-right: 2rem;}
+}
+@media screen and (min-width: 767px) {
+    .our-dsa-services{
+        .flex-spacing{ flex-direction: row;}
+        .dsa-services-block{width: calc((100% - 90px)/2); flex-direction: column; text-align: left;
+            .left-thumb-block{ margin-right: 2rem; }
+        }
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    .our-dsa-services{
+        .dsa-services-block{flex-direction: row; 
+            .left-thumb-block{ margin-bottom: 0rem;}
+        }
+    }
+    .our-experts-section{
+        .carousel-inner{
+            width: 80%;
+        margin: 0 auto;
+        .carousel-item{width: 30%;}
+        }
+    }
+  }
+
+  // Upcoming Events and News by ASEAN Briefing
+.event-asean-news{@extend .section-padding; background-color: v.$gray-bg; padding-top: 125px; padding-bottom: 125px;
+    .title-section{text-align: left}
+    .flex-spacing{ flex-direction: column;}
+    .upcoming-events-block{ width: auto;
+        ul{padding: 0; margin: 0; list-style: none;
+        li{ display: flex; margin-bottom: 1rem; transition: box-shadow .2s ease,transform .2s ease;
+            &:last-child{margin-bottom: 0px;} 
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;cursor: pointer;
+            }
+            .event-date{ background-color: #E8E8E8; width: 68px; height: auto; padding: 1.5rem 1rem; font-size: 24px; font-weight: bold; line-height: 24px; color: #357DC0; text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column;
+            span{color: v.$gray40; display: block; font-size: 16px;}
+            }
+            .event-details{display: flex; border: solid 1px #ddd; padding: 1rem 1.5rem; 
+                &:hover{ 
+                    .details{
+                        .event-title{
+                            a{color: v.$dsa-bright-blue;}
+                        }
+                    }  
+                }
+                .details{  
+                .event-title{color: v.$blue-theme; font-weight: 600; line-height: 24px;
+                    a{color: v.$blue-theme;
+                        &:hover{color: v.$dsa-bright-blue;}
+                    }
+                }
+                .event-schedule{font-size: 12px; color: #666; }
+            }
+            .tooltip{display: none;}
+
+                .event-speaker{
+                    height: 4rem;
+                    width: 4rem;
+                    max-width: min-content;
+                    @extend .thumb-round;
+                    background-color: #f2f6fc;
+                    border: solid 1px #CDCDCD;}
+            }
+        }
+        }
+        .tooltip .tooltiptext{border-radius: 3px; background-color: #373D3F; text-align: left; padding: 1rem 1rem; font-weight: 500; width: 140px;
+        small{font-size: 11px;font-weight: normal; color: #afafaf;}
+        }
+        .tooltip-right{top: -5px;
+            left: 125%;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent #373D3F transparent transparent;
+        }
+        }
+    }
+    .briefing-news-section{ width: auto; margin-top: 2rem;
+        .briefing-news{display: flex; flex-direction: column;
+            .posts { width: auto; margin-right: 0px; height: auto;
+                &:hover{
+                    .thumbnail{
+                        img{transform: scale(1.1);}
+                    }                   
+                }
+                .thumbnail {
+                    height: 194px; overflow: hidden;
+                    img {
+                        width: 100%;
+                        min-height: 194px;transition: transform .5s ease;
+                    }
+                }
+                .news-content {
+                    padding: 1.5rem 0 1.5rem 0;
+                    overflow: hidden;
+                    color: v.$black;
+                    margin-bottom: 0;
+                    p{color: v.$gray40; line-height: 24px; font-size: 16px;  margin: 0; margin-top: 1rem;}
+                    h3{font-size: 18px; color: v.$blue-theme;  font-weight: 400;
+                    a{color: v.$blue-theme;}
+                    }
+                }  
+            }
+            .briefing-news-list{ padding: 0;margin: 0; list-style: none; width: auto;
+                li{border-bottom: solid 1px #C4C4C4; padding-top: 1.5rem; padding-bottom: 1.5rem;
+                .news-title{font-size: 16px; line-height: 22px; color: v.$blue-theme; 
+                a{color: v.$blue-theme}
+                }
+                &:first-child{padding-top: 0px;}
+                &:last-child{border: none;}
+                } 
+                }
+                .briefing-name-label{color: v.$gray40;  margin-top: 1rem; font-size: 15px;}
+           }
+    }
+}
+@media screen and (min-width: 767px) {
+    .event-asean-news{
+        .flex-spacing{ flex-direction: column;}
+        .upcoming-events-block{ width: auto;
+            ul{
+                li{
+                    .event-details{
+                        .tooltip{display: block; margin-left: 2rem;}
+                    }
+                }
+            }
+        }
+        .briefing-news-section{ width: auto; margin-top: 2rem;
+            .briefing-news{ flex-direction: row;
+                .posts { width: 345px; margin-right: 30px; height: auto;}
+                .briefing-news-list{width: auto;}
+            }
+    }
+   
+  }
+}
+@media only screen and (min-width: 1001px) {
+    //The eight core tiers table
+.eight-core-tiers{
+    .eight-core-table{width: 100%; 
+    p{width: auto;}
+    }
+    .eight-core-head { width: 100%; flex-direction: row;
+        .eight-core-left{ width: 40%; margin-bottom: 0;
+        }
+    }
+    .table th, .table td{
+        &:first-child{width: 257px; }
+    }
+    .table thead th { position: sticky; top: 0; z-index: 1; }
+}
+   
+    .table thead {  top: 85px; }
+    .eight-core-tiers{
+        &.amir2025{
+            .final-ranking-row{
+                box-shadow: #367DBF 0px 0px 0px 1px; background-color: #fff;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 1024px) {
+    .event-asean-news{
+        .flex-spacing{ flex-direction: row;}
+        .upcoming-events-block{ width: 45%;}
+        .briefing-news-section{ width: 48%; margin-top: 0rem;
+            .briefing-news{ flex-direction: column;
+                .posts { margin-right: 0px; } 
+            }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px){
+    //The eight core tiers table
+.eight-core-tiers{
+    .eight-core-table{width: 75%; }
+    .eight-core-head { width: 75%; 
+        .eight-core-left{ width: 40%;
+        }
+    }
+}
+.rankings{width: 75%; }
+}
+
+@media screen and (min-width: 1300px) {
+    .event-asean-news{
+        .briefing-news-section{ 
+            .briefing-news{  flex-direction: row;
+                .posts { width: 345px; margin-right: 30px; height: 194px;}
+                .briefing-news-list{width: 40%; }
+            }
+    } 
+  }
+}

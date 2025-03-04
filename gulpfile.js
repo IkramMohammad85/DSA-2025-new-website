@@ -57,7 +57,8 @@ function watchFiles() {
   gulp.watch("src/js/**/*.js", scripts);
   gulp.watch("src/html/**/*.html", html);
 }
-
+// Build Task (Run all tasks sequentially)
+gulp.task('build', gulp.series(styles, scripts, html));
 // Define Tasks
 gulp.task("html", html);
 gulp.task("scripts", scripts);

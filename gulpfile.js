@@ -25,82 +25,41 @@ function styles() {
 function scripts() {
   return gulp.src([
       './src/js/utilities/helpers.js',
-      './src/js/components/*.js',  // Include all components
-      './src/js/main.js' // Finally, main.js
+      './src/js/components/*.js',
+      './src/js/main.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(concat('main.js'))
-    .pipe(terser())
+    .pipe(babel({ presets: ["@babel/env"] }))
+    .pipe(terser()) // Corrected from uglify()
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream());
 }
 
-// Watch for Changes
-function watchFiles() {
-    browserSync.init({
-        server: { baseDir: "dist", index: "index.html" },
-        port: 8080, 
-    });
-  gulp.watch('./src/scss/**/*.scss', styles);
-  gulp.watch('./src/js/**/*.js', scripts);
-  gulp.watch('./src/html/**/*.html').on('change', browserSync.reload);
+// Process HTML includes
+function html() {
+  return gulp.src("src/html/**/*.html")
+    .pipe(fileInclude({ prefix: "@@", basepath: "@file" }))
+    .pipe(gulp.dest("dist"))
+    .pipe(browserSync.stream());
 }
-// Static Server + Watching Files
-function serve() {
-    browserSync.init({
-        server: { baseDir: "dist", index: "index.html" },
-        port: 8080, 
-      });
-  
-    gulp.watch("src/scss/**/*.scss", gulp.series(styles));
-    gulp.watch("src/js/**/*.js").on("change", browserSync.reload);
-    gulp.watch("src/html/**/*.html").on("change", browserSync.reload);
-  }
-// Task to process HTML includes
-gulp.task("html", function () {
-    return gulp
-      .src("src/html/**/*.html") // Include all HTML files and subfolders
-      .pipe(
-        fileInclude({
-          prefix: "@@", 
-          basepath: "@file", 
-        })
-      )
-      .pipe(gulp.dest("dist")) // Output compiled HTML to dist folder
-      .pipe(browserSync.stream()); // Reload browser
-  });
-  // JavaScript Task (Transpile & Minify)
-gulp.task("scripts", function () {
-    return gulp
-      .src("src/js/**/*.js") // Select all JS files
-      .pipe(sourcemaps.init()) // Initialize source maps
-      .pipe(
-        babel({
-          presets: ["@babel/env"], 
-        })
-      )
-      .pipe(uglify()) // Minify JS
-      .pipe(sourcemaps.write(".")) // Write source maps
-      .pipe(gulp.dest("dist/js")) // Move processed JS to dist/
-      .pipe(browserSync.stream()); // Auto-reload browser
-  });
-  // Start local server and watch for changes
-  gulp.task("watch", function () {
-    browserSync.init({
-        server: { baseDir: "dist", index: "index.html" },
-        port: 8080, 
-      });
-  
-    gulp.watch("src/html/**/*.html", gulp.series("html"));
-    gulp.watch("src/js/**/*.js", gulp.series("scripts")); 
+
+// Watch Files and Start Local Server
+function watchFiles() {
+  browserSync.init({
+    server: { baseDir: "dist", index: "index.html" },
+    port: 8080,
   });
 
-// Default Task
-gulp.task("default", gulp.series("html", "scripts", "watch"));
-exports.default = gulp.series(gulp.parallel(styles, scripts), watchFiles);
-exports.default = serve;
+  gulp.watch("src/scss/**/*.scss", styles);
+  gulp.watch("src/js/**/*.js", scripts);
+  gulp.watch("src/html/**/*.html", html);
+}
 
-
-
+// Define Tasks
+gulp.task("html", html);
+gulp.task("scripts", scripts);
+gulp.task("watch", gulp.series("html", "scripts", watchFiles));
+gulp.task("default", gulp.series(gulp.parallel(styles, scripts, html), watchFiles));

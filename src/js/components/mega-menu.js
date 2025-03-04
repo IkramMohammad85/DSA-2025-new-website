@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
     // Automatically open the default service tab
     document.getElementById("Opendefault").click();
-    // Function to activate mega menu tabs
+    // Function to activate mega menu tabs 
     function activateTab(section, mgtabRel) {
     const megatabs = section.querySelectorAll('.mega-mtabs li');
     const megaMtabContents = section.querySelectorAll('.mega-mtab-content');

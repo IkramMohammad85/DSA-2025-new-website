@@ -26,4 +26,9 @@
 @use "layout/header";
 @use "layout/location";
 @use "layout/common";
+@use "layout/icons";
 
+
+// pages ----------------------------------------------------------------
+@use "page/success-stories";
+@use "page/landing.scss";

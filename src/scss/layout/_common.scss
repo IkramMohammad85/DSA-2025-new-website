@@ -1,5 +1,7 @@
 @use "../base/variables" as v; 
-
+.mr-2 { margin-right: 20px;}
+.mt-4{ margin-top: 40px;}
+.mt-3{margin-top: 30px;}
 #searchFilterSticky { position: sticky; top: 120px; }
 .sticky {position:-webkit-sticky; position:sticky;  }
 .filter_form {height: auto;
@@ -28,6 +30,7 @@
     .dots{ display: none;}
 }
 .hidden {display: none;}
+.more-text{display: none;}
 #more {display: none; }
 #myBtn{color: v.$gray; text-decoration: underline; border: none; background-color: transparent; margin-bottom: 2rem; cursor: pointer; padding: 0;} 
 html { scroll-behavior: smooth; }

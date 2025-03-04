@@ -1,0 +1,2841 @@
+/* Style the tab */
+.code-hide{ display: none;}
+.powertab { overflow: hidden;}
+  .powertab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 16px;
+    transition: 0.3s;
+    font-size: 17px;font-weight: 600;
+    &:first-child{border-right: solid 2px #535353; padding-left: 0;}
+  }
+  .powertab button{
+    &:hover { color: #367DBF;}
+    &.active { color: #367DBF; }
+  }
+ 
+  
+  /* Style the tab content */
+  .powertabcontent {
+    display: none;
+  }
+
+  //Our Locations
+  .tooltip-country {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px 16px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+    //pointer-events: none;
+    white-space: nowrap;
+    z-index: 1000;
+    a{color: #fff; cursor: pointer;}
+  }
+  #tooltip-country{
+    a{cursor: pointer;}
+  }
+
+
+.circle {
+    fill: #2D73B6;
+    cursor: pointer;
+    &.aam{
+        fill: #dee5f0;
+        stroke-width: 2;
+        stroke: #307EBF;
+    }
+  }
+  @keyframes myblink {
+    from,
+    to {
+        
+      opacity: 1;
+      fill:#2D73B6 ;
+      stroke: #2D73B6;
+      stroke-width: 1;
+    }
+
+    50% {
+      opacity: 1;
+      fill: #fedc00;
+      stroke-width: 5;
+      stroke: #fedc00;
+    }
+  }
+  @keyframes aamblink {
+    from,
+    to {
+        
+      opacity: 1;
+      stroke: #307EBF;
+      stroke-width: 2;
+    }
+
+    50% {
+      opacity: 1;
+      stroke-width: 2;
+      stroke: #fedc00;
+    }
+  }
+
+  .our-location-map{ padding-top: 6rem; padding-bottom: 6rem;
+    .ol-map{
+        text-align: center;
+        
+    }
+}
+
+.our-clients-panel{ background-color: #F9F9F9; 
+    .glide__bullets { margin: 0; width: 100%; display: flex;
+      justify-content: center;
+      .glide__bullet {
+        background-color: #C4C4C4;
+        border: 0;
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+        font-size: 0px;
+        margin: 0px 3px;
+        cursor: pointer;
+          &.glide__bullet--active{ background-color: #19283f;}
+      }
+    }
+    .our-people{ height: auto;
+      .glide__bullets{margin: 0; width: 100%; display: flex;
+        justify-content: center;}
+    }
+    &.hp-clients-panel-eight{
+      .clients-logos{
+        .c-logo{ width: 140px;
+        }
+        
+      }
+    }
+  }
+  .clients-logos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .c-logo{ margin: 1rem; width: 174px;align-items: center;
+      display: flex;
+      justify-content: center;
+    img{width: 120px; }
+    }
+    
+  }
+  .asia-latest-updates{background: #fff;
+    .pricing__intro{ background-color: #fff; border-bottom: solid 1px #B8B8B8; padding-bottom: 2rem; width: 90%; margin-left: auto; margin-right: auto;
+        h2{font-size: 24px;}
+    }
+    .pricing__tab--country {
+        li{ border-right: solid 2px #000; padding: 0 1rem; margin: 0; font-size: 1rem; line-height: 14px; font-weight: 600;
+            &.tab--active {border-bottom: none;
+                a{
+                    color: #367DBF;
+                }
+            }
+            &:last-child{border: none;}
+        }
+    }
+  }
+  
+  .al-update{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    h3{
+        color: #000; font-size: 1.125rem; font-weight: normal; padding: 0; margin: 0 0 1.5rem 0;
+    }
+    p{line-height: 20px; padding: 0; margin: 0;}
+    .fbn-block{ width: 314px;
+        ul{padding: 0; margin: 0; list-style: none;
+            li{ margin-top: 1.5rem; color: #535353; font-size: 1rem; line-height: 20px;
+            a{color: #535353; text-decoration: none;}
+            span.evnt-date{ display: block; font-size: 14px; margin-bottom: 0.5rem;
+                a{
+                    color: #535353;
+                }
+            }
+            }
+        }
+
+    }
+    .bp-block{width: 350px;
+        h3{text-align: center;}
+    img{width: 122px;}
+    .rr-glide {
+        .rr-title{
+            font-size: 14px;
+            a{font-weight: normal; color: #535353;}
+        }
+        .glide-next, .glide-prev{
+            width: 24px;
+            height: 24px;
+            background-color: #ECECEC;
+            line-height: 18px;
+            font-size: 12px;
+    
+        }
+        .arrow{
+            border-color: #000000;
+        }
+    }
+
+    }
+    .odw-block{width: 314px;
+    p{ margin-top: 1rem;
+    a{color: #000;}
+    }
+    h3{text-align: center;}
+    img{width: 314px;}
+    }
+
+  }
+  #pricing-cn{
+    span.evnt-date{
+        a{
+            color: #e2001a;
+        }
+    }
+}
+#pricing-in{
+    span.evnt-date{
+        a{
+            color: #1d9649;
+        }
+    }
+}
+#pricing-vn {
+    span.evnt-date{
+        a{
+            color: #7C65AD;
+        }
+    }
+}
+#pricing-asean{
+    span.evnt-date{
+        a{
+            color: #2d3790;
+        }
+    }
+}
+
+.pathfinder{
+    &.empower-state-growth {
+        background-color: rgba(249, 249, 249, 0.9647) !important;
+            .c-tab__menu .c-tab--active{ font-weight: normal !important; background-color:  rgba(249, 249, 249, 0.9647) !important; background:  rgba(249, 249, 249, 0.9647) !important;}
+        
+        .c-tab__menu__item{font-weight: normal !important;}
+        
+            .flex-spacing{display: inherit; }
+            .approach-ensures-container{border: none !important; padding-bottom: 0px !important;}
+     
+        
+        .tab-content-description{
+            ul{ padding-left: 24px !important;
+                margin-bottom: 0; color: #535353;
+                li{line-height: 22px;
+                ul{
+                    li{line-height: 24px;}
+                }
+                }
+               
+            }
+        }
+        .flex-spacing {
+            display: inherit;
+        }
+    }
+}
+
+
+//v-tab-and-advantages css
+.hidden {
+    display: none;
+}
+@keyframes leftMove {
+    0%   { left:0px; top:0px;}
+    25%  {left:10px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+.c-btn{line-height:normal; padding: 0.75rem 1rem;}
+  .pathfinder-bg{background-color: #fff;
+    //padding:0 25px; 
+}
+  #s-pathfinder{border:0; padding:4rem 0;}
+  .c-tab--vertical{ padding-bottom:0px;}
+  .pathfinder{background-color: #fff; padding-top:0px;
+    .c-tab__content{
+        &.cyber {
+            .c-tab__content__inner {
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+                background:transparent; 
+              }   
+              .c-tab__content__item{
+                .c-tab__content__inner{
+
+                    .tab-content-description{
+                        h3{line-height: 24px; font-size:1rem;}
+                        p{line-height: 24px; font-size:14px; color:#474747;}
+                        .c-btn{ background:#217FD4; margin:0px; display: inline-block !important;}
+                        ul{padding-left: 5px; margin-left: 11px;color:#474747; font-size:14px;}
+                        .g-col{padding: 0;text-align:left;}
+                        .btn, .c-btn {padding: 0.75rem 1rem;font-size: 0.875rem; line-height:1.4;margin-right: 18px; vertical-align:top;}
+                        .c-btn{border: 1px solid #217FD4;}
+                    }
+                }
+                &.c-tab--active {
+                    .c-tab__content__btn {
+                        svg{fill:#217FD4;}
+                    }
+                }
+            }
+        }
+
+    }
+
+    .c-tab__menu{
+        .c-tab__menu__item{margin-right:0px;padding-left:0px; color:#8b8b8b;
+            .icon-active{transform: scale(0.48);margin-right:0.5rem; margin-left:-0.5rem;}
+            svg{
+                &.icon-active{ margin-right:0rem; margin-left:0rem; fill:#8b8b8b;}
+            }
+        }
+        .c-tab--active{background: #fff; background-color: #fff;  color: #217fd4; font-weight: 600;
+        
+            span{
+                &::after{content: "";
+                    display: inline-block;
+                    background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat 0 -50px;
+                    width: 15px;
+                    height: 10px;
+                    margin-left: .5rem;
+                    vertical-align: middle; transform: scale(1.2); 
+                    }
+            }
+            &:hover span:after {content: "";
+                display: inline-block;
+                background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat 0 -50px;
+                width: 15px;
+                height: 10px;
+                margin-left: .5rem;
+                vertical-align: middle; transform: scale(1.2); 
+                position: relative;
+                animation-name: leftMove;
+                animation-duration: 0.5s;
+                animation-iteration-count: 1;
+                }
+                svg{
+                    &.icon-active{fill:#217FD4;}
+                }
+          &:after{ display:none;}      
+        }
+    }
+    h2{border-bottom: solid 3px #2f4f4f; }
+  }
+/* Advantages */
+.carousel-container {
+    position: relative;
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 24px;
+        display: none; /* Hide buttons by default */
+        }
+    .prev-btn {
+        left: 10px;
+        }
+        .next-btn {
+        right: 10px;
+        }
+    .carousel {
+    overflow: hidden;
+    position: relative;
+    }
+
+    }
+
+    .g-row {
+    display: flex;
+
+    }
+    .g-col {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    }
+  /* end */
+  .c-link--group a:first-child{margin-left: 0;}
+  .hp-events-card-bot{padding-left: 1rem; padding-right: 1rem;}
+
+
+//end
+
+
+//eami
+
+.download-publication-form{width: auto;
+    .dp-form {
+        .btn-secondary{ background-color:#217FD4; border-color:#217FD4;padding: 0.75rem 1rem; font-size: 14px; min-width: auto; margin-bottom: 9px; margin-top: 1.5rem;    border-radius: 2px;}
+        .form-check{display: flex;align-items: start;}
+        .form-check-label{font-weight: normal;}
+    }
+    &.domain-spoofing {margin-top: 4rem;
+        .dp-form{
+            input{margin-bottom: 5px;}
+            .form-check{margin-top: 16px;}
+        }
+        .dp-text{margin-bottom: 1rem;}
+    }
+}
+
+.overview-section{
+    h2, h3{margin-bottom: 1.5rem;}
+    h2{font-size: 24px;}
+    h3{font-weight: 500; font-size: 18px; line-height: 24px;}
+}
+
+.security-Check-code{border: 1px solid #e7e7e7; width: 94%; padding: 0; margin-top: 10px;box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+input{margin-bottom: 0 !important;}
+.security-Check img{ width: 130px;}
+
+}
+.reload-captcha{margin-right: 0;
+svg{width: 15px;
+    margin-top: 5px;}
+}
+//Measuring Asia’s Eight Most Dynamic Emerging Countries
+.measuring-asia{ background-color: #F6F6F6; padding: 4rem 0;
+    h4{ text-align: center; font-weight: normal; margin-bottom: 2rem; font-size: 22px; line-height: 30px;}
+    ul{margin: 0; padding: 0; list-style: none; display: flex; justify-content: center; flex-wrap: wrap;
+        li{text-align: center; margin: 0 1.4rem 1rem 1.4rem;  
+            a{text-decoration: none;}  
+        }
+        }
+    .emerging-countries{ width: 100%; margin: 0 auto;
+       
+        ul{
+        li{
+            a{color: #535353;}
+        span{display: block; font-size: 14px; color: #535353;}
+        }
+        }
+    }
+    .across-eight-key{
+        h4{ margin-top: 3rem;}
+        ul{
+            li{font-size: 14px; color: #535353; border-right: 1px solid #535353; padding: 0 1rem; margin: 5px 0; line-height: 14px;
+                //&:last-child{border: none;}
+                a{color: #535353;}
+            }
+            }
+    }
+}
+//.masthead__bg img{height: 300px;}
+
+.masthead{
+&.eami-banner{
+    .masthead__bg img{height: 300px;}
+}
+}
+//The eight core tiers table
+.eight-core-tiers{padding: 6rem 0;
+    .eight-core-head { display: flex; justify-content: space-between; width: 100%; margin: 0 auto 3rem auto; flex-direction: column;
+        .eight-core-left{ width: 100%; margin-bottom: 2rem;
+            p{color: #344C71; margin: 0;}
+        }
+        .eight-core-right{
+            img{outline: none; height: 50px;}
+        }
+    }
+    .table-secondary{ background-color: #F6F6F6; color: #4E4E4E; font-weight: bold; border-bottom: solid #fff 12px; cursor: pointer;}
+    .table-primary{ background-color: #1A5E9D;color: #fff; font-size: 14px;
+    a{color: #fff;}
+    }
+    .table-success{ background-color: #EAF5FF;color: #535353; font-weight: 600;}
+    .table th, .table td{border: none;}
+    .table th img{width: 45px; vertical-align: middle;}
+    .eight-core-table{width: 100%; margin: 0 auto;
+    }
+
+    .table{word-break: normal;}
+    .table th, .table td{
+        &:first-child{width: 150px; text-align: left; }
+    }
+    .td-label{ background-color: #F5EF51; border-radius: 50%; display: inline-block; padding: 5px 8px; line-height: 14px;}
+    .tier-title{cursor: pointer;
+        .ml-18{margin-left: 18px;}
+        .tier{display: flex;}
+    }
+    .tier-detail{display: none;    
+    }
+
+    
+    .arrow-move{font-size: 14px; color: #367DBF;margin-right: 6px;
+    img{width: 11px !important; height: 11px;}
+    }
+}
+//end
+//Doing Business Portals
+.dbp{padding: 6rem 0;
+    h2{text-align: center; margin-bottom: 2rem; font-size: 24px;}
+    .dbp-block{ display: flex; justify-content: center; padding-top: 2rem; width: 100%; margin: 0 auto; flex-direction: column-reverse;
+        .dbp-left-block{ width: 100%;
+            ul{ padding: 0; margin: 0; list-style: none; display: flex;
+                li{ font-size: 16px; margin: 0 1rem 0 0rem;
+                    a{
+                        color: #367DBF; text-decoration: underline; font-weight: 600;
+                        &:hover{text-decoration: none;}
+                    }
+                    &:first-child{margin-left: 0; font-size: 16px;}
+                }
+            }
+        }
+        .dbp-right-block{ margin-bottom: 2rem;
+            img{ width: 100%;}
+        }
+    }
+    &.dbp-na{
+        background-color: #F9F9F9;
+        padding: 66px 0;
+    }
+}
+//end
+//Meet Our Experts
+.meet-our-experts{
+    background-color: #F0F6FC;padding: 6rem 0;
+    h2{ text-align: center;margin-bottom: 4rem; font-size: 24px;}
+    .our-expert-block{ width: 100%; height: auto; min-height: 590px; border-radius: 30px; display: flex; background-color: #fff; padding: 1.5rem;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; flex-direction: column;
+        .expert-thumbnail{ margin-right: 1rem;
+            img{width: 96px; border-radius: 50%;border: solid 1px #e7e7e7;}
+        }
+        .expert-info{ 
+            display: flex;  margin-bottom: 0rem; flex-direction: row;
+            .personnel-social{display: flex;justify-content: start; width: 100%; flex-direction: column;
+            .expert-personnel{ width: 100%; display: flex; flex-direction: column;
+                .expert-name{ font-size: 16px; font-weight: bold; color: #000;}
+                .expert-title{ color: #000; font-size: 14px; line-height: 22px;}
+            }
+            .expert-social{
+                ul{ display: flex; justify-content: start; padding: 0; margin: 1rem 0 0 0; list-style: none;
+                    li{ width: 30px; height: 30px; border-radius: 50%; background-color: #DAE8F4; margin: 0 10px; line-height: 2; text-align: center; display: flex; justify-content: center; align-items: center;
+                        &:first-child{margin-left: 0;
+                       
+                        }
+                        img{width: 12px;}
+                        a{line-height: 0;}
+                    }
+                }
+            }
+        }
+        }
+        .expert-detail{
+
+            .expert-quotes{color: #6E6E6E; padding-top: 2rem;}
+        }
+
+    }
+    .related-insight-slides{
+        .glide__bullets{ width: 100%; margin-left: 0;}
+        .glide__bullet--active{background-color: #58585b;}
+        .glide__bullet{
+                width: .5rem;
+                height: .5rem;
+                cursor: pointer;
+                margin: 0;
+                margin-right: .5rem;
+                border-radius: 50%;
+                border: 2px solid transparent;
+                background-color: rgba(0, 0, 0, .25);
+                transition: all .3s ease-in-out;
+                padding: 0;
+            &:last-child{margin-right: 0;}
+        }
+    }
+}
+.visible-xs{ display: none;}
+.guide-download-cover{text-align: center;
+img{height: 300px;}
+}
+.destination-clone{margin-top: 4rem;}
+.rankings{width: 100%; margin: 0 auto;}
+
+//end
+.link-text-btn{color: #217fd4; display: flex;
+span{color: #217fd4;margin-left: 0.5rem;}
+}
+.table thead { position: sticky; top: 0px; z-index: 2; }
+.download-eami-report{ background-color: #E3EBF3; min-height: 180px; margin-top: 3rem;
+    .download-eami-block{ display: flex; justify-content: center; flex-direction: column;
+        .eami-left-block{ padding-right: 0px; 
+
+            .eami-cover{display: flex; flex-direction: row;  justify-content: center;margin: -40px 0px 0 0;
+                img{margin: 0px 0px 0 0;
+                  
+                    }
+            }
+        }
+        .eami-right-block{width: auto; padding-top: 36px; text-align: center; padding-bottom: 36px;
+        a{color: #217fd4;
+        span{color: #217fd4;margin-left: 0.5rem;}
+        }
+        }
+    }
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.emerging-countries .carousel-inner {
+    justify-content: center;
+    .carousel-item{ text-align: center; 
+        span {
+            display: block;
+            font-size: 14px;
+            color: #535353;
+        }
+    }
+
+}
+
+.across-eight-key{
+    .carousel-inner{justify-content: center;
+        .carousel-item{ text-align: center; 
+            font-size: 14px;
+            color: #535353;
+            padding: 0;
+            margin: 0;
+            line-height: 14px;
+            &:last-child {
+               ul li:last-child{ border: none;}
+            }
+
+        }
+    }
+}
+
+
+//esg
+
+.c-tab__menu__item{min-height: 54px; color: #535353; font-weight: bold;}
+.pathfinder {
+    h2{padding: 0; border: none; color: #000;}
+    .c-tab__menu {color: #535353;}
+    .c-tab__content{
+        &.cyber{
+            .c-tab__content__item{
+                .c-tab__content__inner{
+                    .tab-content-description{
+                        h3{    font-size: 16px;line-height: 30px; text-align: left; margin: 0; margin-bottom: 0.5rem; font-weight: bold;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.cta-boxes{
+&.cta-bg-light-gray{background-color: #F9F9F9;}
+}
+
+.approach-ensures-slide{display: flex;justify-content: space-evenly; 
+    
+    .popover-wrapper{
+        .popover-content{left: 0; width: 274px; background-color: #fff; top: 20px; height: 260px;box-shadow: rgba(100, 100, 111, 0.1) 0px 0px 20px 0px; padding: 1.1rem;
+            transform: translate(0, -20px);transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+            &:before{display: none;}
+            .ae-title{ margin-top: 0 !important;}
+        }
+    }
+}
+
+.esg-cta-block{margin-top: 2rem;}
+.country-section .title-section{ font-size: 24px;}
+.masthead .envizi-ibm { right: 30%; bottom: 28%; position: absolute;
+img{width: 120px;}
+}
+.masthead.esg-banner {
+.flex-column{justify-content: start;}
+h1{ max-width: 450px;}
+.masthead__bg:before{background: none;}
+}
+
+
+.content {
+padding: 0 18px;
+display: block;
+overflow: hidden;
+background-color: transparent;
+max-height: inherit;
+}
+.ESG-framework { background-color: #F6F6F6;
+padding-top: 60px; padding-bottom: 75px;
+h2{text-align:center; margin-bottom: 62px; font-size: 24px;}
+.esg-main-block{display: flex; border-bottom: solid 1px #D4D3D3; padding-bottom: 60px; margin-bottom: 60px;justify-content: space-around;
+&:last-child{border: none; margin-bottom: 0; padding-bottom: 0; }
+
+}
+.esg-left-block{ margin-right: 3%; margin-top: 7px;
+img{max-width: fit-content;}
+}
+.esg-right-block{
+    p, ul{color: #535353;}
+    ul{margin-bottom: 0;}
+    h3{font-size: 20px; font-weight: 600; color: #344C71; padding: 4px 18px 18px 18px;}
+    ul{padding-left: 1rem;}
+}
+}
+.cta-buttons{ margin-top: 2rem;}
+.country-section .contact-our-experts{background-color: #fff;}
+
+.mc-platform{padding-top: 70px; padding-bottom: 100px; 
+h2{text-align:center; margin-bottom: 60px; font-size: 24px; color: #000;}
+h3{text-align:left; margin-bottom:47px; font-size: 18px;color: #000; margin-top: 0px; background-color: #DAE6D4; font-weight: 400; padding: 0.5rem 2rem; vertical-align: middle;}
+.mc-platform-container{ display: flex; justify-content: center; margin: 0 auto;
+    .mc-platform-left{ width: 586px; margin-right: 60px;
+        .mc-thumbnail {
+            img{ width: auto;}
+        }
+    }
+    .mc-platform-right{  width: 278px;
+
+        p{text-align: center;}
+        h4{text-align: center; font-size: 15px;}
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-left: 1rem;
+            
+
+            li{ display: flex; margin-bottom: 1.6rem;
+                &:before{
+                    content: '';
+                    background: url(/assets/img/check-bullet.svg) no-repeat 0 0px;
+                    width: 28px;
+                    height: 28px;
+                    display: inline-block; margin-right: 13px; margin-top: 2px;
+                }
+                span{display: inline-block; width: 218px; line-height: 24px;}
+            }
+        }
+    }
+    
+}
+}
+
+.ibm-envizi-esg{display: flex;  border-bottom: solid #D4D3D3 1px; padding-bottom: 70px;
+.flex-spacing{justify-content: center; align-items: center;}
+.ibm-envizi-container{ width: 100%; 
+    ul { 
+        padding: 0;
+        margin: 0;
+        list-style: none; 
+       
+        li {
+           margin-bottom: 0; font-size: 16px;  color:#535353; margin-left: 0; 
+           margin-right: 0;  width: 390px;
+
+        
+        
+        }
+    }
+    .envizi-leaf{background: url(/assets/img/leaf-circle.svg) no-repeat left top; height: auto; width: 100%; margin-right: 0.5rem;}
+    h2{font-size: 24px; margin-bottom: 2rem; margin-top: 0rem; text-align: center; line-height: 30px; color: #000;}
+    h3,h4{font-size: 16px; text-align: center; line-height: 24px; color: #000; width: 59%; margin: 2rem auto;}
+    h4{color: #103D68;}
+    h3{margin-top: 1rem; font-weight: 400; color: #535353; margin-bottom: 3.5rem; font-size: 18px; line-height: 30px;}
+    
+    
+    .envizi-helps-block{
+        display: flex;  justify-content: center; 
+        .envizi-helps{ display: flex; margin-bottom: 1.5rem;
+            
+            p{font-size: 14px;font-size: 14px; line-height: 24px; color:#0C2740; }
+            &:last-child{margin-bottom: 0;}
+        }
+        
+        .envizi-helps-block-right{width: 460px;}
+        .envizi-helps-block-left{ width: 437px; margin-right: 2rem;
+        img{width: 100%;}
+        }
+    }
+}
+
+}
+.ibm-enizi-sp{
+.carousel-inner{
+    .carousel-item{
+        &:nth-child(2){
+            .ibm-enizi-sp-block{
+                .ibm-enizi-sp-text{
+                    h4{width: 60%; font-size: 16px;}
+                    } 
+            }
+        }
+    }
+}
+
+}
+
+.approach-ensures{ padding-top: 90px; padding-bottom: 53px;
+.flex-spacing{ justify-content: center;}
+.approach-ensures-container{ border-bottom: solid #D4D3D3 1px; padding-bottom: 76px;
+h2, h3{text-align: center; line-height: 28px; margin-bottom: 1rem;}
+h2{margin-bottom: 2rem; font-size: 24px;}
+h3{font-size: 18px; line-height: 30px; font-weight: 500; width:69%; margin-left:auto; margin-right: auto;margin-bottom: 3rem;  color: #535353; }
+   
+
+    
+
+   
+    .esg-goals-block{ width: 274px; margin-bottom: 1rem; 
+        .ae-content{width: 274px; 
+            
+             
+        }
+        p{ font-size: 14px; color: #535353; margin-bottom: 0;    letter-spacing: normal;
+            word-spacing: normal;}
+        .ae-title{font-weight: 600; font-size: 16px; margin-bottom: 1.5rem; margin-top: 1.5rem; color: #367DBF;    letter-spacing: normal;
+            word-spacing: normal;
+        a{color: #367DBF;}
+        }
+
+}
+}
+}
+
+.esg-advantage{ padding-top:63px ;   
+background: url(/img/curve-bg.jpg) no-repeat center bottom #F6F6F6; background-size: cover;
+min-height: 451px;
+h2{text-align: center; margin-bottom: 2.5rem; font-size: 24px;}
+.flex-spacing{display: inherit;}
+.esg-advantage-container{ display: flex; justify-content: space-evenly;
+    .esg-advantage-block{ width: 392px;height: 258px;
+        .esg-advantage-thumb{ 
+            a{display: block;
+                img{width: 174px;}
+            }
+            
+        }
+
+        .icon-ellipse {width: 76px; height: 76px; display: flex; align-items: center; background-color: #e4eef6; justify-content: center; border-radius: 50%;  margin: 0 auto; 
+        img{width: 38px;}
+        }
+        .esg-advantage-desc{ padding: 1.5rem 0rem 0rem 0rem; text-align: center;  width: 320px; margin: 0 auto;
+        p, .adv-title{padding: 0; color: #535353; font-size: 16px;line-height: 24px; margin: 0;}
+        .adv-title{font-weight: 600; margin-bottom: 1rem; color: #000; font-size: 1rem; width: 185px; margin: 0 auto; margin-bottom: 1rem;}
+
+        }
+
+       
+    }
+}
+}
+
+.esg-f-l{ padding-top: 75px; padding-bottom: 70px;
+.esg-f-l-container{ display: flex; justify-content: space-between; flex-direction: row;
+    .esg-f-l-left{  padding-right: 100px;
+        p{color: #535353;}
+        h2{ margin-bottom: 1.5rem; font-size: 24px; font-weight: bold; text-align: left;}
+        .cta-link{
+            color: #357DC0;
+            font-weight: 600;
+            padding: 0;
+            
+            &:after {
+                content: "";
+                display: inline-block;
+                background: url(/assets/img/esg-cta-arrow.svg) no-repeat left top;
+                width: 6px;
+                height: 8px;
+                margin-left: .5rem;
+                vertical-align: middle;
+            }
+            &:hover{color: #103D68 ;
+                &:after{background: url(/assets/img/esg-cta-arrow-h.svg) no-repeat left top;}
+            }
+        }
+        .btn{margin-right: 1.6rem;}
+    }
+    .esg-f-l-right{
+        img{width: 433px; margin-top: 2rem; max-width: fit-content;}
+    }
+}
+}
+
+.esg-lifecycle{ padding-top: 20px; padding-bottom: 120px;
+.flex-spacing{display: inherit;}
+.carousel{ padding-bottom: 3rem;}
+.carousel-inner{justify-content: center;}
+h2,h3{text-align:center; margin-bottom: 2rem; font-size: 20px;}
+h3{font-size: 18px; font-weight: 500; color: #535353; margin-bottom: 3rem; line-height: 1.4;}
+.esg-lifecycle-container {display: flex; justify-content: center; flex-direction: row;
+    .lifecycle-block{ display: flex; margin-bottom: 1.4rem;
+        .icon-ellipse {width: 45px; height: 45px; display: flex; align-items: center; background-color: #F0F6FC; justify-content: center; border-radius: 50%;  margin-right: 22px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; z-index: 1;
+        img{width: 25px;}
+        }
+    p{padding: 0; margin: 0; color: #535353; font-size: 16px; width: 388px; line-height: 24px;
+    }
+    &:first-child, &:last-child{
+        p{width: 328px;}
+    }
+    &:nth-child(3){
+        p{width: 390px;}
+    }
+    &:nth-child(4){
+        p{width: 284px;}
+    }
+    }
+    .esg-lifecycle-right-block{width: 460px;position: relative;
+    
+        &:before {
+            content: "";
+            width: 1px;
+            height: 90%;
+            background-color: #E2DEDE;
+            position: absolute;
+            top: 0;
+            left: 22px;
+        }
+    }
+    .esg-lifecycle-left-block{ margin-right: 50px;}
+}
+}
+
+.ibm-enizi-sp{padding-top: 68px;  margin-bottom: 90px;
+background: url(/img/curve-bg.jpg) no-repeat center bottom #F6F6F6; background-size: cover;
+min-height: 451px;
+.flex-spacing{display: inherit;}
+h2,p {text-align:center;   width: 75%; margin: 0 auto; margin-bottom: 2rem;}
+h2{line-height: 30px; font-size: 24px; color: #000;}
+p {margin-bottom: 3rem; color: #535353; font-size: 18px; line-height: 30px;}
+
+.ibm-enizi-sp-container {display: flex; justify-content: space-between; flex-direction: row;
+    .ibm-enizi-sp-block{ width: 400px;  display: flex;
+        .ibm-enizi-sp-title{  margin-right: 2rem;
+            .sp-icon{ width: 76px; height: 76px;border-radius: 50%; background-color: #4087A8; display: flex;
+                align-items: center;
+                justify-content: center;
+            img{width: 38px; height: 38px; }
+            &.srd{ background-color: #4A9191;}
+            &.ad{ background-color: #54997A;}
+            }
+
+        }
+        .ibm-enizi-sp-text{padding: 0rem 0rem;font-size: 1rem; color: #535353; width: 350px;
+            h4{line-height: 24px; font-size: 1rem;}
+        }
+
+    }
+
+}
+}
+.toggle-btnls {display: none;}
+
+.carousel-inner{display: flex; justify-content: space-around; flex-wrap: wrap;}
+.esg-advantage{
+.carousel-inner{justify-content: space-evenly;}
+}
+.ibm-enizi-sp{
+.carousel-inner{justify-content: center;}
+}
+.ibm-enizi-sp .carousel-inner .ibm-enizi-sp-container .ibm-enizi-sp-block{margin-left: 2rem; margin-right: 2rem;}
+.carousel-item{margin-bottom:2rem;}
+.more-text {
+margin-top: 1.5rem; display: block;
+    &:last-child{margin-bottom: 1.5rem;}
+}
+.dots{display: none;}
+/* CSS for carousel - hide on desktop */
+
+
+/* corporate-secretarial-service-page */
+.help-companies{
+    &.companies-navigate{padding-top: 90px; padding-bottom: 20px;
+        .ibm-envizi-esg {border: none;
+            .ibm-envizi-container {
+                h3{margin-bottom: 2rem;}
+                ul li{width: 280px;font-size: 16px;}
+                
+                .envizi-leaf{height: 50px;}
+                .envizi-helps-block {
+                    .envizi-helps{align-items: center; margin-bottom: 1rem;}
+                    .envizi-helps-block-right{ width: 390px;}
+                }
+            }
+        }
+    } 
+}
+
+.esg-advantage {
+    &.cs-advantage{min-height: 380px;
+        .carousel-inner{justify-content: center;}
+        .esg-advantage-container {
+            .esg-advantage-block{width: 300px; height: auto;
+                .icon-ellipse img{width: 50px;}
+               .esg-advantage-desc{
+                .adv-title{font-size: 18px; width: 200px;}
+               }
+            }
+        }
+    }  
+}
+
+.esg-advantage{
+    &.cgl{ padding-top: 5rem; height: auto; min-height: 380px;
+        padding-bottom: 3rem; background: none;
+        .carousel-inner {
+            justify-content: space-around;
+        }
+        h2{margin-bottom: 4rem;}
+        .esg-advantage-container {
+            .esg-advantage-block{width: auto; text-align: left; height: auto;
+                .esg-advantage-desc { min-height: 190px; text-align: left;
+                    .adv-title{ width: auto;}
+                    p{font-size: 14px;}
+                }
+            } 
+    }
+    .resources-dropdown{ width: 256px;
+        .dropdown-btn {color: #357DC0;
+            .dropdown-content{ min-width: 256px;}
+        }
+    }
+        }
+}
+
+
+.esg-f-l{
+    &.simplify-int-compl{
+        .esg-f-l-container {
+            .esg-f-l-left {
+                .cta-link{
+                    color: #fff; padding: 8px 20px 7px;
+                    &:after{display: none;}
+                    &:hover{color: #fff;}
+                }
+            }
+        }
+    }
+}
+
+
+.ESG-framework{
+    &.tailored-support{
+        .esg-right-block{
+            em{color: #344C71; font-weight: 600;
+            }
+            ul{color: #535353; margin-bottom: 1.5rem;}
+            p{text-align: left;}
+        }
+        h2{ margin-bottom: 2rem;}
+        .more-text{display: none;}
+.toggle-btnls{display: block;
+    color: #6D6E71;
+    border: none;
+    padding: 0px 0px;
+    cursor: pointer;
+    background: transparent;
+    text-decoration: underline;
+    &:hover{text-decoration: none;}
+}
+    }
+
+}
+
+.cta-boxes{padding-bottom: 70px;}
+.cta-link{color: #fff;
+    &:after{display: none;}
+}
+.cta-link-d{
+    color: #357DC0;
+    font-weight: 600;
+    padding: 0;
+    &:after {
+        content: "";
+        display: inline-block;
+        background: url(/assets/img/esg-cta-arrow.svg) no-repeat left top;
+        width: 6px;
+        height: 8px;
+        margin-left: .5rem;
+        vertical-align: middle;
+    }
+    &:hover{color: #103D68 ;
+        &:after{background: url(/assets/img/esg-cta-arrow-h.svg) no-repeat left top;}
+    }
+}
+.icon-ellipse-blue{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #F0F6FC;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 22px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: 1;
+img {
+        width: 25px;
+    }
+}
+.para-sub-head{margin-top: 4rem; margin-bottom: 4rem; font-size: 18px;}
+.masthead.esg-banner {
+    &.css-banner{
+        .masthead__bg {
+            img{top:70%;transform: translate(-50%, -55%);}
+        }
+    }
+}
+section h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+   /* Measuring Asia’s Eight Most Dynamic Emerging Countries*/
+   .common-tab-container {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .common-tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;
+    padding: 20px 0;
+   margin: 0; 
+   list-style: none;
+   line-height: 0px;
+   color: #535353;
+    
+    li{
+        border-right: solid 1px #DEDEDE;
+        padding-right: 14px;
+        margin-right: 14px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        &:last-child{border: none; padding-right: 0; margin: 0;}
+    }
+    
+  }
+  
+  .common-tab-button {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    &.active {
+        color: #000;
+        border-bottom: solid 3px #367DBF;
+        font-weight: bold;
+      }
+  }
+  
+  .common-tab-content {
+    display: none; 
+    padding-top: 2rem;
+    p{color: #535353;}
+    .btn-cta-link{ text-align: right;}
+    .dec-heade-title{display: flex; color: #000; margin-bottom: 1.5rem; font-weight: 600;
+    img{margin-right: 1rem; border-radius: 10px; width: 45px;}
+    }
+
+  }
+  
+  #tabDropdown {
+    display: none; 
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: solid 2px #367DBF;
+    border-radius: 5px;
+    &:focus{outline:#367DBF ;}
+  }
+ /* end*/
+/* Let’s Discuss the Right Resources for Your State */
+.let-discuss-form {
+    &.ldform-gray-bg{background-color: #F6F6F6;}
+    padding-top: 67px;
+    padding-bottom: 86px;;
+    p{
+        color: #667085;
+        padding: 0;
+        text-align: center
+    }
+    h2{ text-align: center; margin-bottom: 1rem; font-size: 1.5;}
+    h5{text-align: center; font-weight: normal; color: #667085; font-size: 1.125rem;}
+
+    .ld-form {
+        width: 642px; margin: 3rem auto 0 auto;
+        input[type=text], select, textarea, input[type=checkbox]{
+            border: solid 1px #D0D5DD;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 5px 0px, rgba(0, 0, 0, 0.05) 0px 0px 1px 0px;
+            padding: 0 1rem;
+            color: #667085;
+            font-size: 14px;
+        }
+        .form-field-two-column, .form-field-one-column{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            input[type=text], select{ height: 48px;width: 48%;}
+        }
+        .form-field-one-column{
+            textarea{
+                padding-top: 1rem; padding-bottom: 1rem;
+            }
+            &.codecs{display: inherit;}
+            select {width: 100%;}
+        }
+        .form-check-input{
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 14px;
+                line-height: normal;
+                color: #4E4E4E;
+                a{text-decoration: underline; color: #4E4E4E;
+                    &:hover{text-decoration: none;}
+                    }
+            }
+            input{margin-right: 1rem; width: 30px; height: 30px;}
+            
+        }
+        input[type=submit] {
+            background-color: #3271B7;
+            color: #fff;
+            padding: 9px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 147px;
+          }
+          input[type=submit]:hover {
+            background-color: #285c98;
+          }
+    }
+    .security-Check-code {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        border-color: #D0D5DD;
+        input {
+            border: none !important;
+            width: 100% !important;
+        }
+        .security-Check {
+            background-color: #fff;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            height: 54px;
+        }
+    }
+}
+
+/* end */
+
+/* Explore the Business Environment*/
+.dbp.dbp-na{
+&.ami{
+    background-color: #fff;
+}
+}
+/* end */
+
+/*Executive Summary */
+.landing-top-content{padding-top: 66px; padding-bottom: 66px;
+    .two-column-section{ display: flex; flex-direction: row;
+        .left-section-block{ width: 72%; padding-right: 4rem;
+            h2{ text-align: left; font-size: 1.5rem;}
+            h3{
+                text-align: left;    line-height: 1.5;
+                    font-size: 1.125rem;
+                    margin-bottom: 0rem;
+                    margin-top: 1.5rem;
+            }
+            p {color: #666666;}
+        }
+        .right-section-block{ max-width: 400px; padding-top: 4rem;
+            img{  width: 100%;
+                max-width: 400px;
+                height: auto;
+            margin-top: 4rem;
+            }
+        }
+    }
+
+    .landing-inro{ text-align: center;width: 80%; margin: 0 auto;
+        h2{font-size: 24px; font-weight: bold; color: #000;}
+        p{font-size: 16px; color: #535353; padding: 0px; margin: 0; }
+        .btn-cta-link{ text-align: center;}
+    }
+}
+
+/*end*/
+
+/*top banner*/
+
+.masthead{
+    &.ami-banner {
+        .masthead__bg:before {
+            background: none;
+        }
+    }
+    .masthead-logo {
+        right: 2%;
+        top: 40%;
+        position: absolute;
+    }
+
+    &.na-desk-banner{
+        height: 300px;
+        h1{max-width: inherit;}
+        .masthead__bg:before{
+            background: none;
+        }
+    }
+    #title::after{
+        content: "\a";
+        white-space: pre;
+    }
+}
+
+
+/*end*/
+/*more and less text toggle*/
+.left-section-block, .common-tab-content{
+    .dots{display: none;}
+    .toggle-btnls {
+        color: #6d6e71;
+        display: block;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        background: 0 0;
+        text-decoration: underline;
+    }
+    .more-text {
+        display: none;
+    }
+    .more-less, .toggle-btnls {
+        color: #6d6e71;
+        display: block;
+    }
+}
+/*end*/
+
+
+/*emerging countries table*/
+.eight-core-tiers{
+    &.amir2025{padding-top: 0px;
+        .td-label {
+            border-radius: 50%;
+            display: inline-block;
+            padding: 5px 8px;
+            line-height: 14px;
+            &.gold{
+                background-color: #F5EF51; font-weight: 600;
+            }
+            &.silver{
+                background-color: transparent;
+            }
+            &.bronze{
+                background-color: transparent;
+                //color: #fff;
+            }
+        }
+        .eight-core-head{ flex-direction: column;
+            p{text-align: center; color: #787878;}
+            p:nth-child(2){color: #344C71; margin-bottom: 0; font-size: 14px;}
+            }
+            .eight-core-table{margin-bottom: 4rem;
+                .table-primary {font-weight: 500;
+                    a{font-weight: 500;}
+                }
+            }
+            .table td{word-break: normal;}
+            .table-success{background-color: #fff; border: solid 2px #367DBF !important;border: 5px;}
+            .table-striped tbody tr:nth-of-type(even){ color: #4E4E4E;
+                background-color: rgba(237, 243, 251, 1);
+            }
+            .table-striped { color: #4E4E4E;
+                td{width: 75px;}
+                //td:first-child{width: 270px !important;}
+                .striped-first-td{ display: flex; line-height: 22px; 
+                strong{margin-right: 1rem;}
+                span{padding-left: 2.8rem;}
+                }
+            }
+            .table-striped tbody tr:nth-of-type(odd){
+                background-color: #fff;
+            }
+            .arrow-move{margin-right: 1rem;}
+            .tier-title .ml-18{margin-left: 26px;}
+            
+    }
+}
+
+/*end*/
+
+/*Meet Our Experts*/
+.our-experts-section{min-height: 450px; padding-top: 63px; padding-bottom: 63px;
+    h2{margin-bottom: 3rem;}
+}
+.expert-block-item{ display: flex; flex-direction: row; margin-top: 3rem;
+    .expert-thumbnail-item{ margin-right: 1.5rem;
+        img{border-radius: 50%; width: 94px;
+            border: solid 1px #e7e7e7;}
+    }
+  .expert-details-item{ width: 70%;
+    .expert-name { font-weight: bold; color: #000; font-size: 19px;
+    a{color: #000;}
+    }
+    .expert-position {color: #535353; font-size: 1rem; margin-bottom: 2rem;line-height: 22px;}
+    .expert-country{ color: #000; font-weight: 600; font-size: 14px; text-transform: uppercase;}
+    .expert-social{ display: flex; margin-top: 1rem;
+        a{background-color: #DAE8F4; padding: 8px; line-height: 8px; margin-right: 10px; border-radius: 50%;
+            img{width: 12px;}
+        }
+    }
+  }
+
+}
+/*end*/
+/*Measuring Asia’s Eight Most Dynamic Emerging Countries*/
+.dynamic-emerging-countries{
+    background-color: #F0F6FC;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    min-height: 500px;
+    .dec-tabs {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: 0 auto;
+      }
+      
+      .dec-tab-list {
+        list-style: none;
+        margin: 0;
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap; 
+        background-color: #fff;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;
+      }
+      .dec-tab-item {
+        margin-right: 14px;
+        padding: 0;
+        color: #535353;
+        cursor: pointer;
+        border-right: solid 1px #DEDEDE;
+        padding-right: 14px;
+        line-height: 18px;
+        &:last-child{border: none; padding-right: 0;}
+        a{color:#535353 ;}
+        &.active {
+            background-color: #fff;
+            border-bottom: none;
+            a{color:#000 ; border-bottom: solid 3px #367DBF; font-weight: bold;}
+          }
+      }
+      .dec-tab-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .dec-tab-pane {
+        display: none;
+        padding-top: 2rem;
+        p{color: #535353;}
+        .btn-cta-link{ text-align: right;}
+        .dec-heade-title{display: flex; color: #000; margin-bottom: 1.5rem; font-weight: 600;
+        img{margin-right: 1rem; border-radius: 10px; width: 45px;}
+        }
+        &.active {
+            display: block;
+          }
+      }
+    }
+/*end*/
+.btn-cta-link {
+    a {
+        color: #357DC0;
+        text-decoration: none;
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        &:after {
+            content: "";
+            display: inline-block;
+            background: url(https://dsa-2021.netlify.app/assets/img/esg-cta-arrow.svg) no-repeat left top;
+            width: 6px;
+            height: 8px;
+            margin-left: .5rem;
+            vertical-align: middle;
+        }
+        &:hover:after{color: #103D68 ; background: url(https://dsa-2021.netlify.app/assets/img/esg-cta-arrow-h.svg) no-repeat left top;}
+    }
+}
+
+
+
+@media (max-width: 440px) {
+    .esg-f-l{
+        &.simplify-int-compl{
+            .esg-f-l-container {
+                .esg-f-l-left {
+                    .cta-link, .btn{margin-bottom: 1.5rem;}
+                }
+            }
+        }
+    }
+}
+@media (max-width: 667px) {
+    .esg-f-l{
+        &.simplify-int-compl{padding-top: 40px;}
+    }
+    .masthead.esg-banner {
+        &.css-banner{
+            h1{max-width: 300px; font-size: 30px;}
+
+        }
+    }
+    .let-discuss-form {
+        .ld-form{ width: 100%;
+            .form-field-two-column{ flex-direction: column; margin-bottom: 0px;
+                input[type=text], select{ width: 100%; margin-bottom: 2rem;}
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .para-sub-head{margin-top: 2rem; margin-bottom: 2rem;}
+    .ESG-framework {
+        &.tailored-support{
+            .dots{display: none;}
+            .toggle-btnls{font-weight: bold;}
+        }
+    }
+
+
+    .masthead.esg-banner {
+        &.css-banner{
+            .masthead__bg {
+                img{top: 50%;
+                    left: 60%;
+                    transform: translate(-50%, -60%);
+                }
+            }
+        }
+    }
+    .help-companies{
+        &.companies-navigate{
+            .ibm-envizi-esg {
+                .ibm-envizi-container {
+                    .envizi-helps-block { align-items: center;
+                        .envizi-helps-block-right{ width: auto;}
+                    }
+                    ul { width: 230px;
+                        li{width: auto; margin-bottom: 0; line-height: 1.5;}
+                    }
+                }
+            }
+        } 
+    }
+    .esg-advantage{
+        &.cgl {
+            .esg-advantage-container {
+                .esg-advantage-block{ text-align: center; margin-bottom: 1rem;}
+            }
+        }
+    }
+
+    .esg-f-l {
+        &.simplify-int-compl{
+            .esg-f-l-container{
+                .esg-f-l-left {
+                    .cta-link{margin-top: 0;}
+                }
+            }
+        }
+    }
+    .esg-advantage {
+        &.cs-advantage{
+            .esg-advantage-container {
+                .esg-advantage-block{width: 100%; height: auto; margin-bottom: 1rem;
+                }
+            }
+            .carousel-inner{justify-content: flex-start;}
+        }
+    }
+    .help-companies{
+        &.companies-navigate{
+            .ibm-envizi-esg {
+                .ibm-envizi-container {
+                    .para-sub-head{margin-top: 2rem; margin-bottom: 1rem;}
+                }
+            }
+        }
+
+    }
+}
+@media (min-width: 667px) {
+    .help-companies{
+        &.companies-navigate {
+            .ibm-envizi-esg {
+                .ibm-envizi-container {
+                    .para-frame{width: 90%; margin: 0 auto;}
+                }
+            }
+        }
+    }
+    .ESG-framework{
+        &.tailored-support{
+            .para-frame{width: 70%; margin: 0 auto;}
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1260px) {
+    .ESG-framework {
+        &.tailored-support{
+            .ESG-container {
+                .esg-main-block {
+                    .esg-left-block {
+                        .esg-thumbnail { 
+                            img{width: auto;}
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+/*end*/
+
+
+@media  only screen and  (max-width: 667px) {
+.pathfinder {
+        .c-tab__content{
+            &.cyber {
+                .c-tab__content__item {
+                    .c-tab__content__btn {
+                        svg{ display: none;}
+                    }
+                }
+            }
+        }
+        &.empower-state-growth{
+            .c-tab__content{
+                &.cyber {
+                    .c-tab__content__item {
+                        .c-tab__content__btn{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .tab-content-description{
+                .btn-cta-link a{font-size: 15px;}
+            }
+            .approach-ensures-container.empower-growth{
+                h2{text-align: center;}
+            }
+            .powertab { margin-bottom: 2rem; display: flex;
+                justify-content: center;
+                button{
+                    border: solid 1px #909295;
+                    padding: 5px 16px;
+                    border-radius: 8px;
+                    &:first-child{
+                        border-bottom-right-radius: 0;
+                        border-top-right-radius: 0;
+                        border-right: 0;
+                        padding-left: 1rem;
+                    }
+                    &:last-child{
+                        border-bottom-left-radius: 0;
+                        border-top-left-radius: 0;
+                        border-left: 0;
+                    }
+                    &.active{ background-color: #E2F0FD;}
+                }
+            }
+        }
+  }
+
+  .al-update{ width: 100%;
+    flex-direction: column;
+    .fbn-block, .bp-block{width: auto; border-bottom: solid 1px #B8B8B8; margin-bottom: 3rem;}
+    .odw-block{width: auto;}
+    .fbn-block{ padding-bottom: 3rem;}
+    
+  }
+  .asia-latest-updates .pricing__intro{ width: 100%;}
+
+.masthead.esg-banner h1{font-size: 20px; max-width: 200px;}
+.masthead {
+    .envizi-ibm{ 
+        right: 16px;
+        img{width: 80px;}
+    }
+    &.na-desk-banner{
+        height: 200px;
+    }
+}
+.our-location-map{ 
+    .ol-map{
+ img{  width: 100%;
+    height: auto;}
+    }
+}
+.landing-top-content{ 
+    .landing-inro{ text-align: left; width: 90%;
+    h2{text-align: left;}
+    .btn-cta-link{ text-align: left;}
+   
+}
+}
+.circle {
+    stroke-width:12px !important;
+    stroke: #2d73b6a3 !important;
+
+  }
+.ibm-enizi-sp {
+.carousel-inner {
+    .ibm-enizi-sp-container {
+        .ibm-enizi-sp-block{
+flex-direction: column;
+.ibm-enizi-sp-title{
+    margin-right: 0;
+    .sp-icon {
+        margin: 0 auto;
+    }
+}
+.ibm-enizi-sp-text{
+    padding-top: 1rem;
+    text-align: center;
+    h4{ width: 100;}
+}
+        }
+    }
+
+    .carousel-item:nth-child(2) .ibm-enizi-sp-block .ibm-enizi-sp-text h4{width: auto; text-align: center;}
+}
+}
+
+.esg-lifecycle .esg-lifecycle-container .lifecycle-block{
+&:last-child, &:nth-child(3), &:nth-child(4), &:first-child, &:nth-child(2) {
+    p{ width: 270px;}
+}
+
+}
+.let-discuss-form{
+    .ld-form {width: 100%;
+        .code-sensitive{margin-top: 5px;}
+        .reload-captcha{margin-right: 0; margin-top: 0; margin-left: 5px;}
+        .form-field-two-column{ flex-direction: column; margin-bottom: 0px;
+            input[type=text], select{ width: 100%; margin-bottom: 2rem;}
+        }
+    }
+}
+.subtitle-hide{ display: none;}
+.dbp {
+    .dbp-block{
+        .dbp-left-block{
+            p:nth-child(2) {
+                text-align: center;
+              }
+            ul{justify-content: center;}
+        }
+    }
+}
+.bp-block {
+    .glide__slides{height: 250px;}
+    .btn-cta-link{margin-bottom: 2rem;}
+}
+
+.submit-block-col{
+    text-align: center;
+    #loading, #message{display: block;}
+    .float-right{float: none !important;}
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+    .clients-logos{
+        .c-logo{width: 120px;}
+    }
+    .asia-latest-updates{
+        .pricing__tab--country{overflow-y: hidden; width: auto; padding: 1rem 0;
+            li + li{min-width: auto;}
+            li:nth-child(4){min-width: auto;}
+        }
+    }
+  }
+
+@media only screen and (max-width: 767px){
+    .guide-download-cover{margin-top: 2rem;}
+    .visible-xs{ display: block;}
+    .hidden-xs{display: none;}
+
+
+
+    .download-publication-form{
+        &.domain-spoofing{
+            &.domain-spoofingV2{
+                .dp-form{
+                    input, select, textarea{width: 100%;}
+                    [class*="col-"]{
+                        padding-left: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .masthead__bg{
+        img {
+            height: 240px; left: 100%;
+        }
+        &:before{display: none;}
+    }
+    .masthead{height: 241px;
+        .flex-column{justify-content: center;}
+        h1{font-size: 24px; max-width: 220px;}
+    }
+
+    
+    .grid{
+    &.column-reverse{
+        flex-direction: column-reverse;
+    }
+    }
+    .dbp {
+        .dbp-block {
+            .dbp-left-block{
+                ul{flex-wrap: wrap;
+                }
+            }
+        }
+    }
+
+    
+/*top banner*/
+.masthead {
+    .masthead-logo{ 
+        right: inherit; 
+        top: inherit;
+        bottom: 20px;
+    img{
+        width: 250px; 
+        margin-bottom: 0;}
+    }
+    &.ami-banner{height: 200px;
+        h1{max-width: inherit;}
+
+    }
+}
+/*end*/
+/*Executive Summary 
+.landing-top-content{
+    .two-column-section{flex-direction: column;
+        .left-section-block{ width: 100%; padding-right: 0rem;
+        }
+
+    }
+}*/
+/*end */
+
+
+/*Measuring Asia’s Eight Most Dynamic Emerging Countries*/
+.dynamic-emerging-countries {
+    .dec-tabs{width: 100%;}
+    .dec-tab-pane {
+        .btn-cta-link{text-align: left;margin-top: 2rem;}
+    }
+    .common-tab-content .btn-cta-link{text-align: left;margin-top: 2rem;}
+}
+/*end */
+
+.envizi-helps-block{flex-direction: column;}
+}
+@media only screen and  (max-width: 1000px){
+    .eight-core-table{
+        th:first-child, td:first-child, p {
+            position: sticky;
+            left: 0;
+            background-color: #F6F6F6;
+            z-index: 1;
+        }
+p{left: 16px;}
+    }
+
+    .eight-core-table{overflow-x: auto; overflow-y: auto; height: 500px;
+        p{color: #535353; margin-bottom: 1rem; width: 40%;}
+    }
+    /*emerging countries table*/
+.eight-core-tiers{
+    &.amir2025{
+        .eight-core-table{
+            th:first-child{background-color: #FFF;}
+            .table-striped{
+                tr:nth-child(even) td:first-child {background-color: #edf3fb;}
+                tr:nth-child(odd) td:first-child {background-color: #fff;}
+                .striped-first-td span{padding-left: 1.8rem;}
+            }
+        }
+    }
+}
+.eight-core-tiers .table th:first-child, .eight-core-tiers .table td:first-child {
+    width: 150px;
+    text-align: left;
+}
+/*end*/
+}
+
+@media only screen and  (max-width: 768px){
+    
+    .our-location-map{ 
+        .ol-map{
+            svg{ width: 100%; height: 100%;
+                
+            }
+        }
+    }
+    .pathfinder {
+        .c-tab__content{
+            &.cyber {
+                .c-tab__content__item {
+                    .c-tab__content__btn {
+                        padding: 0.5rem 0.8rem;}
+
+                    &.c-tab--active {
+                        .c-tab__content__btn{border-radius: 2px; background: #f2f2f2;
+                        &:after{
+        
+                            background: url(/assets/img/Angel-Up.svg) no-repeat 0rem 0;
+                        }
+                        }  
+                        span{color: #0078d4; font-weight: 600;} 
+                    } 
+                }
+                .c-tab__content__inner{margin-bottom: 0; padding-bottom: 0; border-bottom: none;}
+            }
+        
+        }
+        &.empower-state-growth{
+            .c-tab__content.cyber{
+                .c-tab__content__inner{border: none !important;}
+            }
+            .c-tab__content.cyber {
+                .c-tab__content__item {
+                    .c-tab__content__btn{
+                        border-top: solid 1px #DADADA;
+                        
+                    }
+                    &:last-child{
+                        .c-tab__content__btn{border-bottom: solid 1px #DADADA;}
+                    }
+                    .c-tab__content__inner{ padding-left: 1rem; padding-right: 1rem;}
+                    &.c-tab--active{
+                        .c-tab__content__btn{background-color: #f9f9f9;}
+                        .c-tab__content__inner{padding-top: 0;}
+                        &:last-child{
+                            .c-tab__content__btn{border-bottom: 0;}
+                        }
+                    }
+                }
+                .c-tab__content__inner{border: none !important;}
+            }
+        }
+    }
+    .c-link--group a:first-child{width: fit-content; display: flex;}
+    /* Advantages */
+    .carousel-container {
+        .carousel-btn {display: block;}
+    }
+    .g-col {
+      flex: 0 0 100%; 
+      opacity: 0;
+      transition: opacity 1s ease-in-out !important;
+      &.active {  opacity: 1;}
+      }
+    .g-row{flex-wrap: inherit;transition: opacity 1s ease-in-out !important;}
+    /* end */
+    .pathfinder-bg{padding:0px; }
+    .pathfinder{
+        .c-tab__content{ height:auto;
+            &.cyber {
+                .c-tab__content__item{
+                    &.c-tab--active {
+                        .c-tab__content__btn{background: #f2f2f2; border-radius: 2px;
+                        //&:after{background: url(assets/img/Angel-Up.svg) no-repeat -150px -50px; margin-right:10px; margin-left:0;} 
+                        }
+                        span{color: #0078d4; font-weight: 600;}
+                    }
+                    .c-tab__content__btn{padding: 0px 0; color:#8b8b8b; line-height: 20px; font-size: 14px;justify-content: space-between;padding: 1rem 1rem;
+                        span{display:block; width:80%}
+                        .icon-active{transform: scale(0.48);fill: #8b8b8b;}
+                        &:after{background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat -150px -40px;margin-right:10px; margin-left:0;}
+                    }
+                    .c-tab__content__btn{
+                        &:nth-child(2){display: none;}
+                    }
+                }
+                .c-tab__content__inner{border-bottom: solid 2px #e2e2e2; margin-bottom:1rem;}
+            }
+        }
+    }
+        /* Measuring Asia’s Eight Most Dynamic Emerging Countries
+        .common-tab-buttons {
+            display: none; 
+          }
+          #tabDropdown {
+            display: block;
+          }
+            .dec-tab-list {
+              flex-direction: column; 
+            }
+            .dec-tab-item {
+              margin-right: 0;
+              margin-bottom: 10px;
+            }*/
+             /* end*/
+
+}
+
+@media only screen and (max-width: 991px){
+    .guide-download-cover{ margin: 0 auto;
+        img{box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+        }
+}
+@media only screen and (max-width: 1000px){
+
+   
+/*Executive Summary */
+.landing-top-content{
+    .two-column-section{flex-direction: column;
+        .left-section-block{ width: 100%; padding-right: 0rem;
+        }
+
+    }
+}
+/*end */
+    .dbp {
+        .dbp-block {
+            .dbp-left-block{
+                ul{flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px){
+            /* Measuring Asia’s Eight Most Dynamic Emerging Countries*/
+            .common-tab-buttons {
+                display: none; 
+              }
+              #tabDropdown {
+                display: block;
+              }
+                .dec-tab-list {
+                  flex-direction: column; 
+                }
+                .dec-tab-item {
+                  margin-right: 0;
+                  margin-bottom: 10px;
+                }
+                 /* end*/
+            }
+@media only screen and (max-width: 1024px){
+    .al-update{ width: 100%;
+        flex-direction: column;
+        .fbn-block, .bp-block{width: auto; border-bottom: solid 1px #B8B8B8; margin-bottom: 3rem;}
+        .odw-block{width: auto;}
+        .fbn-block{ padding-bottom: 3rem;}
+        
+      }
+    .our-clients-panel{
+        &.hp-clients-panel-eight{
+            .clients-logos {
+                .c-logo{width: auto;}
+            }
+        }
+    }
+
+    .approach-ensures-slide{flex-direction: column; 
+    }
+    .approach-ensures .approach-ensures-container .esg-goals-block{
+        max-height: 356px; margin-bottom: 2.5rem;
+    }
+    
+    /* Hide carousel on desktop */
+    .ibm-enizi-sp .carousel-inner .ibm-enizi-sp-container .ibm-enizi-sp-block{width:auto; margin-left: auto; margin-right: auto;}
+    .esg-advantage, .ibm-enizi-sp{padding-bottom: 36px;
+        .carousel-inner{justify-content: flex-start;}
+      }
+    .carousel {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px; /* Adjust as needed */
+    }
+    .carousel-inner {
+      display: flex;
+      justify-content: flex-start;
+      transition: transform 0.5s ease; flex-wrap: inherit;
+    }
+    .carousel-item {
+      flex: 0 0 100%; margin-bottom: 0;
+    }
+    .carousel-indicators {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .carousel-indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: gray;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    .carousel-indicator.active {
+      background-color: black;
+    }
+    /* end */
+    /* read more and less text */
+    .dots {
+        display: inline-block;
+      }
+      
+      .more-text {
+        display: none;
+      }
+      
+      .toggle-btnls {
+        color: #000000;
+        border: none;
+        padding: 5px 0px;
+        cursor: pointer;
+        display: inline;
+        background: transparent;
+      }
+      /* end */
+    .masthead.esg-banner .masthead__bg img{top: 0; left: 0;transform: translate(0%,0%);}
+    .cta-contact__top p{line-height: 30px; margin-bottom: 2rem;}
+    
+    .ibm-enizi-sp{padding-bottom: 36px;
+        .ibm-enizi-sp-container {flex-direction: column;
+            .ibm-enizi-sp-block{ width: 100%; margin-bottom: 2rem;
+                .ibm-enizi-sp-text{width: auto;}
+            }
+        }
+        h2, p{width: 96%;}
+      }
+    .esg-lifecycle{ padding-bottom: 36px;
+        .esg-lifecycle-container {flex-direction: column; justify-content: center;
+            .lifecycle-block{width: 100%; margin: 0;margin-bottom: 2rem;
+            p{width: 86%; line-height: 1.6;}
+            }
+    
+            .esg-lifecycle-left-block{ margin-right: 0;
+                img{width: 100%;}
+                }
+                .esg-lifecycle-right-block{ width: auto; margin-top: 2rem;}
+        }
+      }    
+    .esg-f-l{
+        .esg-f-l-container{  flex-direction: column;
+            .esg-f-l-left{  padding-right: 0;
+                    .cta-link{margin-top: 1.5rem; }
+                    .btn-bright-blue{margin-right: 1.6rem;}  
+            }
+            .esg-f-l-right{ display: none;
+                img{width: 100%; }
+            }
+        }
+      }
+    .esg-advantage{ 
+        .esg-advantage-container{ flex-direction: column;
+            .esg-advantage-block{  width: 100%;height:210px; margin-bottom: 3.5rem; box-shadow: none;
+                .esg-advantage-thumb{ 
+                    a{display: block;
+                        img{width: 120px;}
+                    }
+                }
+                .esg-advantage-desc{ padding: 1rem;  
+                    
+                    }
+            }
+        }
+      }
+    
+    .approach-ensures{ 
+        .approach-ensures-container{ width: 100%;
+            .approach-ensures-block{flex-direction: column;
+                .list-item{ width: calc(100%); margin-top: 2rem;
+                }
+                .esg-goals-block{margin-bottom: 2rem; width: auto;}
+            }
+            h2,h3{text-align: left;}
+            h3{width: auto;}
+            
+        }
+          }
+    
+    .ibm-envizi-esg{ 
+        .ibm-envizi-container{ width: 90%; margin: 0 auto;
+            ul { width: 86%;
+                li {
+                    width: 100%; 
+                    margin-bottom: 1.5rem;
+                }
+            }
+            h2{text-align: center;}
+            h3{ width: 100%;}
+            .envizi-helps-block{
+                //flex-direction: column;
+                .envizi-helps{width: auto;}
+                .envizi-helps-block-left{ width: auto; margin-right: 0;      
+                }
+                .envizi-helps-block-right{width: auto; margin-top: 1rem;}
+            }
+            .envizi-leaf{width: 57px;}
+        }
+      }
+    
+    .mc-platform{
+        h2{text-align:center; margin-bottom: 2rem;}
+        .mc-platform-container{ flex-direction: column;
+            .mc-platform-left{ width: auto; margin-right: 0px;
+                .mc-thumbnail {
+                    img{ width: 100%;}
+                }
+            }
+            .mc-platform-right{  margin-top: 2rem; width: auto;
+                .mc-thumbnail {
+                    img{ width: 100%;}
+                }
+                ul li span{width: 86%;}
+            }
+            
+        }
+      }
+    
+    .ESG-framework {
+        h2{text-align:center; margin-bottom: 2rem; }
+        
+        .esg-main-block{ justify-content: left; flex-direction: column;
+           
+            .content{padding: 0;
+      
+            }
+            .esg-left-block{ margin-right: 0; margin-top: 0;
+                .esg-thumbnail{
+                    img{width: 100%;}
+                }
+            }
+            .esg-right-block{
+            h3{padding-left: 0px; padding-right: 0; padding-top: 18px;}
+            }
+            }
+      }
+    .emerging-countries {
+        .carousel-inner {
+            justify-content: flex-start;
+            .carousel-item{ text-align: center; margin: 0;
+                img{display: block; margin: 0 auto;}
+                span{display: block;}
+
+            }
+            
+        }
+
+    }
+
+    .across-eight-key {
+        .carousel-inner {
+            justify-content: flex-start;
+            .carousel-item{ text-align: center; border: none;  margin: 0px 0;
+                &:last-child {
+                    border: none;
+                }
+                span{border: 1px solid #535353; padding: 10px; display: block;}
+
+            }
+            
+        }
+    }
+    .measuring-asia .emerging-countries ul li{margin: 0 0.5rem;}
+    .measuring-asia .across-eight-key ul li{border: none; padding: 0 0.3rem; margin: 0px 0;}
+    /* Hide carousel on desktop */
+
+    .carousel {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px; /* Adjust as needed */
+    }
+    .carousel-inner {
+      display: flex;
+      justify-content: flex-start;
+      transition: transform 0.5s ease; flex-wrap: inherit;
+    }
+    .carousel-item {
+      flex: 0 0 100%; margin-bottom: 0;
+    }
+    .carousel-indicators {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .carousel-indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: gray;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    .carousel-indicator.active {
+      background-color: black;
+    }
+    /* end */
+    /*Meet Our Experts */
+.expert-block-item{margin-top: 0; display: flex; justify-content: center;
+    .expert-details-item{width: auto;}
+}
+}
+@media (min-width:1024px) and (max-width:1260px) {
+    .esg-f-l {
+        .esg-f-l-container {
+            .esg-f-l-right {
+                img {
+                    width: 100%; height: auto;
+                 }
+            }
+            .esg-f-l-left{padding-right: 20px;}
+        }
+    }
+    .esg-advantage {
+        .esg-advantage-container {
+            .esg-advantage-block{
+                width: 318px; box-shadow: none; height: 230px; margin: 0 auto;
+                .esg-advantage-thumb {
+                    a img{
+                        width: 100px;
+                    }
+                }
+                .esg-advantage-desc{padding-top: 0;}
+            }
+        }
+    }
+    
+    .ibm-envizi-esg {
+        .ibm-envizi-container {
+            .envizi-leaf{width: 57px;}
+            ul {
+                width: 86%;
+            }
+    
+        }
+    }
+    
+    .ibm-enizi-sp {
+        .carousel-inner {
+            .ibm-enizi-sp-container {
+                .ibm-enizi-sp-block{ width: 300px; min-height: 226px;}
+            }
+        }
+    }
+    .ESG-framework{
+        .ESG-container{
+            .esg-main-block{
+                .esg-left-block{
+                    .esg-thumbnail{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+@media only screen and (min-width: 767px){
+    .measuring-asia{ 
+        ul{flex-wrap:wrap;            }
+        .emerging-countries{ width: 100%; margin: 0 auto;
+        }
+    }
+ 
+//Doing Business Portals
+    .dbp {
+        .dbp-block{flex-direction: row;width: 100%;
+            .dbp-left-block{ width: 70%;
+            }
+            .dbp-right-block{ margin-left: 2rem; margin-top: 0;
+                img{ width: 100%;}
+            }
+        }
+    }
+//end
+
+//Meet Our Experts
+.meet-our-experts{
+    .our-expert-block{ width: 624px; height: 368px; min-height: auto; flex-direction: column; margin: 0 auto;
+        .expert-thumbnail{ margin-right: 2rem;
+            img{width: 110px; }
+        }
+        .expert-info{ 
+            flex-direction: row;
+            .personnel-social{ flex-direction: row; justify-content: space-between;
+            .expert-personnel{ width: 70%; 
+                .expert-name{ font-size: 20px;}
+                .expert-title{ font-size: 16px;}
+            }
+            .expert-social{
+                ul{ justify-content: space-between;  margin-top: 0;
+                    li{width: 36px; height: 36px;
+                    img{width: auto;}
+                    }
+                }
+            }
+        }
+        }
+        .expert-detail{
+            .expert-quotes{padding-left: 144px; padding-top: 0;}
+        }
+    }
+}
+//end
+    
+
+    .download-eami-report{  margin-top: 3rem; padding-bottom: 36px;
+        .download-eami-block{ flex-direction: row;
+            .eami-left-block{ padding-right: 60px; 
+     
+            }
+            .eami-right-block{width: 575px; padding-top: 36px;  text-align: left; padding-bottom: 0px;}
+        }
+    }
+
+
+}
+@media only screen and  (min-width: 768px){
+
+    .pathfinder{
+        .c-tab__content{height: 100%;   max-height: 30rem;
+            &.cyber {
+                .c-tab__content__inner { padding: 0; width:auto; margin:2.8rem 1.5rem 1.5rem 1.5rem;
+                    .tab-content-description  {width:75%; background: rgba(255, 255, 255, 0.93); padding:2rem; border-radius: 3px; margin-left:23px;}
+                }
+                .c-tab__content__item{background: url(/assets/img/V7_BG.jpg) no-repeat 0rem top;}
+        
+            }
+            &.asiaadmin{
+                .c-tab__content__item{background: url(/assets/img/AsiaAdmin.jpg);}
+            }
+            &.market-entry{
+                .c-tab__content__item{background: url(/assets/img/Market-Entry.jpg);}
+            }
+            &.opportunities-during-covid{
+                .c-tab__content__item{background: url(/assets/img/Opportunities-During-Covid.jpg);}
+            }
+        }
+        &.empower-state-growth{
+            .c-tab__content{ width: 60% !important;
+                &.cyber {
+                    .c-tab__content__inner{
+                        margin: 0rem 0 2rem 2rem !important;
+                        padding: 2rem 0rem;
+                        .tab-content-description{
+                            padding: 2rem !important; width: 94% !important;
+                            p{ margin-bottom: 1.5rem; display: block;}
+                        }
+                    }
+                    .c-tab__content__item{min-height: 340px !important;}
+                }
+                &.asiaadmin .c-tab__content__item {
+                    background: url(/assets/img/eysg-banner.jpg) no-repeat 0rem top !important;
+                }
+            }
+            .powertabcontent .c-tab {
+                margin-top: 2rem;
+            }
+            .powertab{   margin: 0 auto;
+                width: 100%; display: flex; margin-bottom: -50px;
+                margin-top: 4rem; }
+                .powertabcontent .c-tab__menu{ margin-top: 50px; width: 40%;}
+        }
+        }
+        .tab-content-description{flex: 0 0 calc(45% - 1%);
+        .g-col {
+            flex: 0 0 calc(44% - 1%);
+            margin-right: 10%;
+        }
+        }
+        
+.c-tab{justify-content: center;}
+.c-tab__menu{width: 25%;}
+.c-tab__content{
+    &.cyber {
+        .c-tab__content__item{min-height: 214px;}
+    }
+}
+.pathfinder {
+    .c-tab__content{
+        &.cyber {
+            .c-tab__content__inner {margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+                .tab-content-description{width: 400px; margin-left: 0; padding: 1rem;
+                    p{font-size: 14px; margin-bottom: 0;}
+                    }
+            }
+        }
+        &.asiaadmin{
+            .c-tab__content__item {
+                background: url(/assets/img/esg-goals-graphic.jpg) no-repeat 0rem top;
+            } 
+        }
+    }
+}
+
+
+.c-tab__content{width: 563px;}
+.bp-block{
+    .rr-glide {
+        .glide-next{
+            right: -10px;
+        }
+        .glide-prev{
+            left: -10px;
+        }
+    }
+}
+
+
+
+}
+@media only screen and (min-width: 992px){
+    .guide-download-cover{margin: -190px auto 0 auto;
+    
+    }
+    .download-publication-form.domain-spoofing {margin-top: 1rem;}
+    
+}
+@media only screen and (min-width: 1001px) {
+    //The eight core tiers table
+.eight-core-tiers{
+    .eight-core-table{width: 100%; 
+    p{width: auto;}
+    }
+    .eight-core-head { width: 100%; flex-direction: row;
+        .eight-core-left{ width: 40%; margin-bottom: 0;
+        }
+    }
+    .table th, .table td{
+        &:first-child{width: 257px; }
+    }
+    .table thead th { position: sticky; top: 0; z-index: 1; }
+}
+   
+    .table thead {  top: 85px; }
+    .eight-core-tiers{
+        &.amir2025{
+            .final-ranking-row{
+                box-shadow: #367DBF 0px 0px 0px 1px; background-color: #fff;
+            }
+        }
+    }
+    
+}
+@media only screen and (min-width: 1100px) {
+    /*Meet Our Experts*/
+.our-experts-section{
+    .carousel-inner{
+        width: 80%;
+    margin: 0 auto;
+    .carousel-item{width: 30%;}
+    }
+}
+
+/*end*/
+    .pathfinder {
+        &.empower-state-growth{
+            .c-tab__content{ width: 70% !important;
+                &.cyber {
+                    .c-tab__content__inner{
+                        margin: 3rem 0 3rem 3rem !important;
+                        padding: 2rem 0rem;
+                        .tab-content-description{min-height: 358px;
+                            padding: 2rem !important; width: 95% !important;
+                            p{ margin-bottom: 1.5rem; display: block;}
+                        }
+                    }
+                    .c-tab__content__item{min-height: 340px !important;}
+                }
+                &.asiaadmin .c-tab__content__item {
+                    background: url(/assets/img/eysg-banner.jpg) no-repeat 0rem top !important;
+                    background-size: cover !important;
+                }
+            }
+            .powertabcontent .c-tab {
+                margin-top: 2rem;
+            }
+            .powertab{   margin: 0 auto;
+                width: 95%; display: flex; margin-bottom: -50px;
+                margin-top: 4rem; }
+                .powertabcontent .c-tab__menu{ margin-top: 50px; width: 25%;}
+        }
+
+    }
+    .bp-block{
+        .rr-glide {
+            .glide-next{
+                right: -10px;
+            }
+            .glide-prev{
+                left: -10px;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px){
+    .guide-download-sec{right: 136px;}
+    .measuring-asia{ 
+        .emerging-countries{ width: 90%; 
+        }
+    }
+    //The eight core tiers table
+.eight-core-tiers{
+    .eight-core-table{width: 75%; }
+    .eight-core-head { width: 75%; 
+        .eight-core-left{ width: 40%;
+        }
+    }
+
+}
+//Doing Business Portals
+.dbp {
+    .dbp-block{width: 90%;
+        .dbp-left-block{ width: 50%;
+        }
+        .dbp-right-block{ margin-left: 4rem;
+            img{ width: 500px;}
+        }
+    }
+}
+//end
+.container {
+    max-width: 100%;
+}
+.download-publication-form{margin-left: 0;}
+.rankings{width: 75%; }
+}
+
+@media only screen and (min-width: 1440px){
+    .download-publication-form{margin-left: 48px;width: 462px;}
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.dsa-blue-text{color:#3271b7;}
+.btn#scrollToForm{display: none;}
+.parallex.fullwidth {
+    &:before{ display:none;}
+    &:after{display:none;}
+    .parallex_content {
+        .parallex-text{width:auto;
+            p{ color: #4f4f4f; }
+            h1{color: #ffffff; font-size:30px; line-height: 40px;}
+        }
+
+    }
+}
+
+.guide-download-sec { position: relative; right: 153px;bottom: -90px;
+    img {width:310px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; display:none;}
+}
+
+.parallax-image-wrapper {  height: 400px ;}
+section.parallex .parallax-image-wrapper:before{background: linear-gradient( 180deg, rgba(12, 39, 64, 0.1) 0%, rgba(12, 39, 64, 0.5) 100%);
+content: "";
+position: absolute;
+display: block;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.download-publication-form{ margin-top: 0rem; margin-left: 0;
+    .dp-title{ font-size: 20px; font-weight: 600; text-align: center; color: #3271b7;}
+    .dp-text{ font-size: 1rem; color: #6c757d; text-align: center; margin-bottom: 1rem;}
+    .dp-form{ width: 100%;
+      input, select, textarea{border-radius: 5px; padding-top: 17px; padding-bottom: 17px; padding-left: 15px; padding-right: 15px; margin-top: 5px; color: #667085;box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;}
+      select{background: #ffffff
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAb0lEQVRIie2PsQ2AMAwELyyWcVIyCqSCaQmNI1kIRwEF0fjq998bHMf5lQDEjlyU7OPyDBzA3MglyeyWZGocFzlaDEkCNqu4hwCsIrp+UpcXGuvfSoaVa0lWklqeR5RrSf1k2HJL8km5lnxW7jj3nAwCHOMFhaBLAAAAAElFTkSuQmCC)
+        no-repeat 98% 50%;}
+      [class*="col-"]{
+        padding-bottom: 0px; padding-top: 20px;
+      }
+      .btn-secondary{background: #217fd4; border-radius: 3px;min-width: 200px; padding: 0.75rem 1rem; margin-top: 1rem;}
+      .form-label{font-size: 16px; color: #667085; margin-bottom: 5px;}
+      .form-check{  margin-top: 10px;
+        input{margin-right: 10px;}
+      }
+      .form-check-label{ font-weight: bold; color: #344c71;}
+      .col-6{width: 49.5%;}
+      //#captchaCode{margin-top: 0rem;}
+
+    }
+  }
+  .part {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    img {
+        width: 300px;
+        margin-left: 0rem;
+    }
+}
+
+  @media only screen and (min-width: 767px){
+    .part {
+        margin-top: 5rem;
+        img {
+            margin-left: 1rem;
+        }
+    }
+
+
+  .guide-download-sec { position: absolute; right: 153px;bottom: -55px;
+    img {display:block;box-shadow:rgba(23, 40, 127, 0.3) 0px 10px 35px 10px;}
+}
+
+.guide-download-sec { right: 30px;}   
+
+.parallex.fullwidth { max-height: 480px; overflow: inherit;
+    .parallex_content{ width: 100%; top:30%; position: relative;
+        .parallex-text {position: absolute; bottom:40px; left:30px; width:55%;
+            h1{line-height: 40px; font-size: 22px;}
+        }
+    }
+}
+.parallax-image-wrapper {  height: 280px;}
+
+.download-publication-form{ margin-top: 13rem; margin-left: 0px; width: 500px;
+    .dp-form{ width: 100%;
+        .form-check{  margin-top: 10px;
+        }
+      }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+    .btn#scrollToForm{display: block;width: 200px;text-align: center;}
+    section{
+      &.parallex {overflow: inherit;
+  
+      img{
+          &.parallax-image {min-height:542px; object-fit: cover;}
+      }
+      }
+    }
+    .parallax-image-wrapper{height: auto;min-height: 550px;}
+    .guide-download-sec{
+      right: inherit;
+      bottom: -20px;
+      img{width: 250px; display: block;}
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .guide-download-sec { bottom: -90px;}
+    .dp-form{
+        .col-md-6{ width: 49.5%;}
+      }
+ }
+
+ @media only screen and (min-width: 1200px) {
+    .guide-download-sec { right: 153px;}
+    .parallex.fullwidth {
+        .parallex_content{
+            .parallex-text{position: absolute; bottom:40px; left:105px;}
+        }
+    }
+    
+    .download-publication-form{ margin-top: 7rem; margin-left: 73px; 
+    }
+    }
+
+    @media only screen and (min-width: 1367px) {
+        .download-publication-form{ margin-top: 13rem; margin-left: 147px;}
+        .guide-download-sec {
+            bottom: -250px;
+            }
+      }
+      @media only screen and (max-width: 1367px){
+        .guide-download-sec  {bottom:-20px;}
+        .guide-download-sec img {width: 200px;}
+        .download-publication-form{margin-top:0 !important;}
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            .overview-section .container .grid{flex-direction:column-reverse;}
+            .parallex.fullwidth .parallex_content .parallex-text h1 {
+            font-size:1.4rem;
+            line-height: 2rem;
+            }
+            }
+
+      @media only screen and (min-width: 1440px) {
+        .pad-column{padding-left:90px !important;}
+        }

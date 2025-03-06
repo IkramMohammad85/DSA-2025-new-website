@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+// font
+@font-face {
+  font-family: "Inter,sans-serif";
+  src: 
+    url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;

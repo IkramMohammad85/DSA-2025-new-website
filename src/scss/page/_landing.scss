@@ -1,5 +1,6 @@
 /* Style the tab */
 .code-hide{ display: none;}
+
 .powertab { overflow: hidden;}
   .powertab button {
     background-color: inherit;
@@ -227,120 +228,8 @@
     }
 }
 
-.pathfinder{
-    &.empower-state-growth {
-        background-color: rgba(249, 249, 249, 0.9647) !important;
-            .c-tab__menu .c-tab--active{ font-weight: normal !important; background-color:  rgba(249, 249, 249, 0.9647) !important; background:  rgba(249, 249, 249, 0.9647) !important;}
-        
-        .c-tab__menu__item{font-weight: normal !important;}
-        
-            .flex-spacing{display: inherit; }
-            .approach-ensures-container{border: none !important; padding-bottom: 0px !important;}
-     
-        
-        .tab-content-description{
-            ul{ padding-left: 24px !important;
-                margin-bottom: 0; color: #535353;
-                li{line-height: 22px;
-                ul{
-                    li{line-height: 24px;}
-                }
-                }
-               
-            }
-        }
-        .flex-spacing {
-            display: inherit;
-        }
-    }
-}
 
 
-//v-tab-and-advantages css
-.hidden {
-    display: none;
-}
-@keyframes leftMove {
-    0%   { left:0px; top:0px;}
-    25%  {left:10px; top:0px;}
-    100% {left:0px; top:0px;}
-}
-.c-btn{line-height:normal; padding: 0.75rem 1rem;}
-  .pathfinder-bg{background-color: #fff;
-    //padding:0 25px; 
-}
-  #s-pathfinder{border:0; padding:4rem 0;}
-  .c-tab--vertical{ padding-bottom:0px; display: flex;}
-  .pathfinder{background-color: #fff; padding-top:0px;
-    .c-tab__content{
-        &.cyber {
-            .c-tab__content__inner {
-                opacity: 0;
-                transition: opacity 1s ease-in-out;
-                background:transparent; 
-              }   
-              .c-tab__content__item{
-                .c-tab__content__inner{
-
-                    .tab-content-description{
-                        h3{line-height: 24px; font-size:1rem;}
-                        p{line-height: 24px; font-size:14px; color:#474747;}
-                        .c-btn{ background:#217FD4; margin:0px; display: inline-block !important;}
-                        ul{padding-left: 5px; margin-left: 11px;color:#474747; font-size:14px;}
-                        .g-col{padding: 0;text-align:left;}
-                        .btn, .c-btn {padding: 0.75rem 1rem;font-size: 0.875rem; line-height:1.4;margin-right: 18px; vertical-align:top;}
-                        .c-btn{border: 1px solid #217FD4;}
-                    }
-                }
-                &.c-tab--active {
-                    .c-tab__content__btn {
-                        svg{fill:#217FD4;}
-                    }
-                }
-            }
-        }
-
-    }
-
-    .c-tab__menu{
-        .c-tab__menu__item{margin-right:0px;padding-left:0px; color:#8b8b8b;
-            .icon-active{transform: scale(0.48);margin-right:0.5rem; margin-left:-0.5rem;}
-            svg{
-                &.icon-active{ margin-right:0rem; margin-left:0rem; fill:#8b8b8b;}
-            }
-        }
-        .c-tab--active{background: #fff; background-color: #fff;  color: #217fd4; font-weight: 600;
-        
-            span{
-                &::after{content: "";
-                    display: inline-block;
-                    background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat 0 -50px;
-                    width: 15px;
-                    height: 10px;
-                    margin-left: .5rem;
-                    vertical-align: middle; transform: scale(1.2); 
-                    }
-            }
-            &:hover span:after {content: "";
-                display: inline-block;
-                background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat 0 -50px;
-                width: 15px;
-                height: 10px;
-                margin-left: .5rem;
-                vertical-align: middle; transform: scale(1.2); 
-                position: relative;
-                animation-name: leftMove;
-                animation-duration: 0.5s;
-                animation-iteration-count: 1;
-                }
-                svg{
-                    &.icon-active{fill:#217FD4;}
-                }
-          &:after{ display:none;}      
-        }
-    }
-    h2{border-bottom: solid 3px #2f4f4f; }
-  }
 /* Advantages */
 .carousel-container {
     position: relative;
@@ -630,22 +519,7 @@ span{color: #217fd4;margin-left: 0.5rem;}
 
 //esg
 
-.c-tab__menu__item{min-height: 54px; color: #535353; font-weight: bold;}
-.pathfinder {
-    h2{padding: 0; border: none; color: #000;}
-    .c-tab__menu {color: #535353;}
-    .c-tab__content{
-        &.cyber{
-            .c-tab__content__item{
-                .c-tab__content__inner{
-                    .tab-content-description{
-                        h3{    font-size: 16px;line-height: 30px; text-align: left; margin: 0; margin-bottom: 0.5rem; font-weight: bold;}
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 
 
@@ -1112,68 +986,7 @@ section h2 {
     margin-bottom: 32px;
 }
 
-   /* Measuring Asia’s Eight Most Dynamic Emerging Countries*/
-   .common-tab-container {
-    width: 75%;
-    margin: 0 auto;
-  }
 
-  .common-tab-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;
-    padding: 20px 0;
-   margin: 0; 
-   list-style: none;
-   line-height: normal;
-   color: #535353;
-    
-    li{
-        border-right: solid 1px #DEDEDE;
-        padding-right: 14px;
-        margin-right: 14px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        &:last-child{border: none; padding-right: 0; margin: 0;}
-    }
-    
-  }
-  
-  .common-tab-button {
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    background: transparent;
-    &.active {
-        color: #000;
-        border-bottom: solid 3px #367DBF;
-        font-weight: bold;
-      }
-  }
-  
-  .common-tab-content {
-    display: none; 
-    padding-top: 2rem;
-    p{color: #535353;}
-    .btn-cta-link{ text-align: right;}
-    .dec-heade-title{display: flex; color: #000; margin-bottom: 1.5rem; font-weight: 600;
-    img{margin-right: 1rem; border-radius: 10px; width: 45px;}
-    }
-
-  }
-  
-  #tabDropdown {
-    display: none; 
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    border: solid 2px #367DBF;
-    border-radius: 5px;
-    &:focus{outline:#367DBF ;}
-  }
  /* end*/
 /* Let’s Discuss the Right Resources for Your State */
 .let-discuss-form {
@@ -1646,54 +1459,7 @@ section h2 {
 
 
 @media  only screen and  (max-width: 667px) {
-.pathfinder {
-        .c-tab__content{
-            &.cyber {
-                .c-tab__content__item {
-                    .c-tab__content__btn {
-                        svg{ display: none;}
-                    }
-                }
-            }
-        }
-        &.empower-state-growth{
-            .c-tab__content{
-                &.cyber {
-                    .c-tab__content__item {
-                        .c-tab__content__btn{
-                            font-size: 15px;
-                        }
-                    }
-                }
-            }
-            .tab-content-description{
-                .btn-cta-link a{font-size: 15px;}
-            }
-            .approach-ensures-container.empower-growth{
-                h2{text-align: center;}
-            }
-            .powertab { margin-bottom: 2rem; display: flex;
-                justify-content: center;
-                button{
-                    border: solid 1px #909295;
-                    padding: 5px 16px;
-                    border-radius: 8px;
-                    &:first-child{
-                        border-bottom-right-radius: 0;
-                        border-top-right-radius: 0;
-                        border-right: 0;
-                        padding-left: 1rem;
-                    }
-                    &:last-child{
-                        border-bottom-left-radius: 0;
-                        border-top-left-radius: 0;
-                        border-left: 0;
-                    }
-                    &.active{ background-color: #E2F0FD;}
-                }
-            }
-        }
-  }
+
 
   .al-update{ width: 100%;
     flex-direction: column;
@@ -1869,26 +1635,11 @@ flex-direction: column;
 
     }
 }
-/*end*/
-/*Executive Summary 
-.landing-top-content{
-    .two-column-section{flex-direction: column;
-        .left-section-block{ width: 100%; padding-right: 0rem;
-        }
 
-    }
-}*/
-/*end */
 
 
 /*Measuring Asia’s Eight Most Dynamic Emerging Countries*/
-.dynamic-emerging-countries {
-    .dec-tabs{width: 100%;}
-    .dec-tab-pane {
-        .btn-cta-link{text-align: left;margin-top: 2rem;}
-    }
-    .common-tab-content .btn-cta-link{text-align: left;margin-top: 2rem;}
-}
+
 /*end */
 
 .envizi-helps-block{flex-direction: column;}
@@ -1936,53 +1687,7 @@ p{left: 16px;}
             }
         }
     }
-    .pathfinder {
-        .c-tab__content{
-            &.cyber {
-                .c-tab__content__item {
-                    .c-tab__content__btn {
-                        padding: 0.5rem 0.8rem;}
-
-                    &.c-tab--active {
-                        .c-tab__content__btn{border-radius: 2px; background: #f2f2f2;
-                        &:after{
-        
-                            background: url(/assets/img/Angel-Up.svg) no-repeat 0rem 0;
-                        }
-                        }  
-                        span{color: #0078d4; font-weight: 600;} 
-                    } 
-                }
-                .c-tab__content__inner{margin-bottom: 0; padding-bottom: 0; border-bottom: none;}
-            }
-        
-        }
-        &.empower-state-growth{
-            .c-tab__content.cyber{
-                .c-tab__content__inner{border: none !important;}
-            }
-            .c-tab__content.cyber {
-                .c-tab__content__item {
-                    .c-tab__content__btn{
-                        border-top: solid 1px #DADADA;
-                        
-                    }
-                    &:last-child{
-                        .c-tab__content__btn{border-bottom: solid 1px #DADADA;}
-                    }
-                    .c-tab__content__inner{ padding-left: 1rem; padding-right: 1rem;}
-                    &.c-tab--active{
-                        .c-tab__content__btn{background-color: #f9f9f9;}
-                        .c-tab__content__inner{padding-top: 0;}
-                        &:last-child{
-                            .c-tab__content__btn{border-bottom: 0;}
-                        }
-                    }
-                }
-                .c-tab__content__inner{border: none !important;}
-            }
-        }
-    }
+    
     .c-link--group a:first-child{width: fit-content; display: flex;}
     /* Advantages */
     .carousel-container {
@@ -1996,45 +1701,9 @@ p{left: 16px;}
       }
     .g-row{flex-wrap: inherit;transition: opacity 1s ease-in-out !important;}
     /* end */
-    .pathfinder-bg{padding:0px; }
-    .pathfinder{
-        .c-tab__content{ height:auto;
-            &.cyber {
-                .c-tab__content__item{
-                    &.c-tab--active {
-                        .c-tab__content__btn{background: #f2f2f2; border-radius: 2px;
-                        //&:after{background: url(assets/img/Angel-Up.svg) no-repeat -150px -50px; margin-right:10px; margin-left:0;} 
-                        }
-                        span{color: #0078d4; font-weight: 600;}
-                    }
-                    .c-tab__content__btn{padding: 0px 0; color:#8b8b8b; line-height: 20px; font-size: 14px;justify-content: space-between;padding: 1rem 1rem;
-                        span{display:block; width:80%}
-                        .icon-active{transform: scale(0.48);fill: #8b8b8b;}
-                        &:after{background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat -150px -40px;margin-right:10px; margin-left:0;}
-                    }
-                    .c-tab__content__btn{
-                        &:nth-child(2){display: none;}
-                    }
-                }
-                .c-tab__content__inner{border-bottom: solid 2px #e2e2e2; margin-bottom:1rem;}
-            }
-        }
-    }
-        /* Measuring Asia’s Eight Most Dynamic Emerging Countries
-        .common-tab-buttons {
-            display: none; 
-          }
-          #tabDropdown {
-            display: block;
-          }
-            .dec-tab-list {
-              flex-direction: column; 
-            }
-            .dec-tab-item {
-              margin-right: 0;
-              margin-bottom: 10px;
-            }*/
-             /* end*/
+    
+
+      
 
 }
 
@@ -2067,12 +1736,7 @@ p{left: 16px;}
 
 @media only screen and (max-width: 1100px){
             /* Measuring Asia’s Eight Most Dynamic Emerging Countries*/
-            .common-tab-buttons {
-                display: none; 
-              }
-              #tabDropdown {
-                display: block;
-              }
+
                 .dec-tab-list {
                   flex-direction: column; 
                 }
@@ -2460,100 +2124,7 @@ p{left: 16px;}
 
 
 }
-@media only screen and  (min-width: 768px){
 
-    .pathfinder{
-        .c-tab__content{height: 100%;   max-height: 30rem;
-            &.cyber {
-                .c-tab__content__inner { padding: 0; width:auto; margin:2.8rem 1.5rem 1.5rem 1.5rem;
-                    .tab-content-description  {width:75%; background: rgba(255, 255, 255, 0.93); padding:2rem; border-radius: 3px; margin-left:23px;}
-                }
-                .c-tab__content__item{background: url(/assets/img/V7_BG.jpg) no-repeat 0rem top;}
-        
-            }
-            &.asiaadmin{
-                .c-tab__content__item{background: url(/assets/img/AsiaAdmin.jpg);}
-            }
-            &.market-entry{
-                .c-tab__content__item{background: url(/assets/img/Market-Entry.jpg);}
-            }
-            &.opportunities-during-covid{
-                .c-tab__content__item{background: url(/assets/img/Opportunities-During-Covid.jpg);}
-            }
-        }
-        &.empower-state-growth{
-            .c-tab__content{ width: 60% !important;
-                &.cyber {
-                    .c-tab__content__inner{
-                        margin: 0rem 0 2rem 2rem !important;
-                        padding: 2rem 0rem;
-                        .tab-content-description{
-                            padding: 2rem !important; width: 94% !important;
-                            p{ margin-bottom: 1.5rem; display: block;}
-                        }
-                    }
-                    .c-tab__content__item{min-height: 340px !important;}
-                }
-                &.asiaadmin .c-tab__content__item {
-                    background: url(/assets/img/eysg-banner.jpg) no-repeat 0rem top !important;
-                }
-            }
-            .powertabcontent .c-tab {
-                margin-top: 2rem;
-            }
-            .powertab{   margin: 0 auto;
-                width: 100%; display: flex; margin-bottom: -50px;
-                margin-top: 4rem; }
-                .powertabcontent .c-tab__menu{ margin-top: 50px; width: 40%;}
-        }
-        }
-        .tab-content-description{flex: 0 0 calc(45% - 1%);
-        .g-col {
-            flex: 0 0 calc(44% - 1%);
-            margin-right: 10%;
-        }
-        }
-        
-.c-tab{justify-content: center;}
-.c-tab__menu{width: 25%; display: flex; flex-direction: column;}
-.c-tab__content{
-    &.cyber {
-        .c-tab__content__item{min-height: 214px;}
-    }
-}
-.pathfinder {
-    .c-tab__content{
-        &.cyber {
-            .c-tab__content__inner {margin: 1.5rem 1.5rem 1.5rem 1.5rem;
-                .tab-content-description{width: 400px; margin-left: 0; padding: 1rem;
-                    p{font-size: 14px; margin-bottom: 0;}
-                    }
-            }
-        }
-        &.asiaadmin{
-            .c-tab__content__item {
-                background: url(https://www.dezshira.com/assets/img/esg-goals-graphic.jpg) no-repeat 0rem top;
-            } 
-        }
-    }
-}
-
-
-.c-tab__content{width: 563px;}
-.bp-block{
-    .rr-glide {
-        .glide-next{
-            right: -10px;
-        }
-        .glide-prev{
-            left: -10px;
-        }
-    }
-}
-
-
-
-}
 @media only screen and (min-width: 992px){
     .guide-download-cover{margin: -190px auto 0 auto;
     
@@ -2598,35 +2169,7 @@ p{left: 16px;}
 }
 
 /*end*/
-    .pathfinder {
-        &.empower-state-growth{
-            .c-tab__content{ width: 70% !important;
-                &.cyber {
-                    .c-tab__content__inner{
-                        margin: 3rem 0 3rem 3rem !important;
-                        padding: 2rem 0rem;
-                        .tab-content-description{min-height: 358px;
-                            padding: 2rem !important; width: 95% !important;
-                            p{ margin-bottom: 1.5rem; display: block;}
-                        }
-                    }
-                    .c-tab__content__item{min-height: 340px !important;}
-                }
-                &.asiaadmin .c-tab__content__item {
-                    background: url(/assets/img/eysg-banner.jpg) no-repeat 0rem top !important;
-                    background-size: cover !important;
-                }
-            }
-            .powertabcontent .c-tab {
-                margin-top: 2rem;
-            }
-            .powertab{   margin: 0 auto;
-                width: 95%; display: flex; margin-bottom: -50px;
-                margin-top: 4rem; }
-                .powertabcontent .c-tab__menu{ margin-top: 50px; width: 25%;}
-        }
-
-    }
+    
     .bp-block{
         .rr-glide {
             .glide-next{
@@ -2839,3 +2382,9 @@ height: 100%;
       @media only screen and (min-width: 1440px) {
         .pad-column{padding-left:90px !important;}
         }
+
+
+
+
+
+ 

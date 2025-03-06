@@ -1,4 +1,6 @@
 @use "../base/variables" as v; 
+$mobile-bp-min: 1080px;
+$mobile-bp-max: 1079px;
  /* Measuring Asia’s Eight Most Dynamic Emerging Countries*/
  .common-tab-container {
     width: 75%;
@@ -62,3 +64,361 @@
     &:focus{outline:#367DBF ;}
   }
  /* end*/
+
+//v-tab-and-advantages css
+
+.hidden {display: none;}
+@keyframes leftMove {
+  0%   { left:0px; top:0px;}
+  25%  {left:10px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+.pathfinder{background-color: #fff; padding-top:0px;
+  .c-tab--vertical{ padding-bottom:0px; display: flex;}
+  .c-tab__content{
+      &.cyber {
+          .c-tab__content__inner {
+              opacity: 0;
+              transition: opacity 1s ease-in-out;
+              background:transparent; 
+            }   
+            .c-tab__content__item{
+              .c-tab__content__inner{
+                  .tab-content-description{
+                      h3{    font-size: 16px;line-height: 30px; text-align: left; margin: 0; margin-bottom: 0.5rem; font-weight: bold;}
+                      p{line-height: 24px; font-size:14px; color:#474747;}
+                      .c-btn{ background:#217FD4; margin:0px; display: inline-block !important;}
+                      ul{padding-left: 5px; margin-left: 11px;color:#474747; font-size:14px;}
+                      .g-col{padding: 0;text-align:left;}
+                      .btn, .c-btn {padding: 0.75rem 1rem;font-size: 0.875rem; line-height:1.4;margin-right: 18px; vertical-align:top;}
+                      .c-btn{border: 1px solid #217FD4;}
+                  }
+              }
+              &.c-tab--active {
+                  .c-tab__content__btn { display: flex;
+                      svg{fill:#217FD4;}
+                  }
+              }
+          }
+      }
+
+  }
+  .c-tab__menu{color: #535353;
+      .c-tab__menu__item{margin-right:0px;padding-left:0px; color:#8b8b8b;
+          .icon-active{transform: scale(0.48);margin-right:0.5rem; margin-left:-0.5rem;}
+          svg{
+              &.icon-active{ margin-right:0rem; margin-left:0rem; fill:#8b8b8b;}
+          }
+      }
+      .c-tab--active{background: #fff; background-color: #fff;  color: #217fd4; font-weight: 600;
+      
+          span{
+              &::after{content: "";
+                  display: inline-block;
+                  background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat 0 -50px;
+                  width: 15px;
+                  height: 10px;
+                  margin-left: .5rem;
+                  vertical-align: middle; transform: scale(1.2); 
+                  }
+          }
+          &:hover span:after {content: "";
+              display: inline-block;
+              background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat 0 -50px;
+              width: 15px;
+              height: 10px;
+              margin-left: .5rem;
+              vertical-align: middle; transform: scale(1.2); 
+              position: relative;
+              animation-name: leftMove;
+              animation-duration: 0.5s;
+              animation-iteration-count: 1;
+              }
+              svg{
+                  &.icon-active{fill:#217FD4;}
+              }
+        &:after{ display:none;}      
+      }
+  }
+  h2{padding: 0; border: none; color: #000;}
+  
+}
+.c-tab__menu__item{min-height: 54px; color: #535353; font-weight: bold;}
+
+
+/*end*/
+    .c-tab {
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  max-width: 100%;
+  padding-bottom: 1.5rem;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__menu {
+    display: none;
+
+    @media (min-width: 768px) {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      min-height: 60px;
+      color: v.$white;
+      padding-left: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      color: v.$black;
+      transition: background 1s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+
+      &:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      &:hover{
+        .c-tab{
+          &__content {
+            transition: background 1s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+          }
+        }
+      }
+      .icon-active {
+        transform: scale(0.6);
+      }
+    }
+
+    .c-tab {
+      &--active{
+        background: v.$dsa-bright-blue;
+        background-color: v.$dsa-dark-blue;
+        color: v.$white;
+        &:after {
+          border-left: 10px solid v.$dsa-dark-blue;
+          content: "";
+          position: absolute;
+          display: inline-block;
+          top: 50%;
+          right: -10px;
+          transform: translateY(-50%);
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+  
+        }
+      }
+    }
+  }
+
+  &__content {
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      width: 70%;
+    }
+
+    &__item {
+      @media (min-width: #{$mobile-bp-min}) {
+        display: flex;
+        flex-direction: column;
+        min-height: 420px;
+      }
+
+
+      &.c-tab{
+        &--active{
+          .c-tab{
+            &__content{
+              &__btn{
+                background: v.$dsa-dark-blue; color: v.$white;
+                &:after {
+                  transform: rotate(-180deg);
+                }
+              }
+            }
+          }
+
+          .c-tab{
+            &__content{
+              &__inner{
+                flex: auto;
+                display: block;
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: v.$white;
+      padding: 1rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      
+
+      &:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      &:after {
+        content: "";
+        display: inline-block;
+        background: url(../img/sprite-all.svg) no-repeat -150px -50px;
+        width: 16px;
+        height: 10px;
+        transition: transform 0.2s ease;
+        margin-left: 10px;
+      }
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &__inner {
+      display: none;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      background: v.$white;
+     /*  box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.08); */
+
+      @media (min-width: 768px) {
+        padding: 2rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      &__item:not(.c-tab--active) {
+        display: none;
+      }
+    }
+    .c-btn {
+      background-color: v.$dsa-yellow;
+      &--border{
+        border: 1px solid v.$dsa-yellow;
+        background: 0 0;
+        color: v.$dsa-dark-blue;
+      }
+    }
+    &__btn {
+      color: v.$black;
+      justify-content: inherit;
+      .icon-active {
+        transform: scale(0.6);
+      }
+  }
+  }
+  
+}
+
+
+@media  only screen and  (max-width: 667px) {
+  .pathfinder {
+          .c-tab__content{
+              &.cyber {
+                  .c-tab__content__item {
+                      .c-tab__content__btn {
+                          svg{ display: none;}
+                      }
+                  }
+              }
+          }
+
+    }}
+@media only screen and  (max-width: 768px){ 
+    .pathfinder {
+      .c-tab__content{height:auto;
+          &.cyber {
+              .c-tab__content__item {
+                      .c-tab__content__btn{padding: 0px 0; color:#8b8b8b; line-height: 20px; font-size: 14px;justify-content: space-between;padding: 1rem 1rem;
+                        span{display:block; width:80%}
+                        .icon-active{transform: scale(0.48);fill: #8b8b8b;}
+                        &:after{background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat -150px -40px;margin-right:10px; margin-left:0;}
+                        &:nth-child(2){display: none;}
+                    }
+
+                  &.c-tab--active {
+                      .c-tab__content__btn{border-radius: 2px; background: #f2f2f2;
+
+                      &:after{
+      
+                          background: url(https://www.dezshira.com/assets_v2/img/Angel-Up.svg) no-repeat 0rem 0;
+                      }
+                      }  
+                      span{color: #0078d4; font-weight: 600;} 
+                  } 
+              }
+              .c-tab__content__inner{padding-bottom: 0; border-bottom: solid 2px #e2e2e2; margin-bottom:1rem;}
+          }
+      
+      }
+
+  } 
+}
+@media only screen and  (min-width: 768px){
+  
+  .c-tab__content__inner {
+    padding:2rem
+}
+
+.c-tab__content__item:not(.c-tab--active) {
+    display: none;
+}
+.c-tab__content__btn {
+    display:none !important;
+}
+  .pathfinder{
+      .c-tab__content{height: 100%;   max-height: 30rem;
+          &.cyber {
+              .c-tab__content__inner { padding: 0; width:auto; margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+                  .tab-content-description  {width: 400px; margin-left: 0; padding: 1rem; background: rgba(255, 255, 255, 0.93);border-radius: 3px;
+                      p{font-size: 14px; margin-bottom: 0;}
+                  }
+              }
+              .c-tab__content__item{background: url(https://www.dezshira.com/assets/img/esg-goals-graphic.jpg) no-repeat 0rem top;}
+      
+          }
+      }
+      
+      }
+
+      
+
+
+.c-tab__content{width: 563px;
+  &.cyber {
+      .c-tab__content__item{min-height: 214px;}
+  }
+}
+}
+
+@media only screen and (max-width: 1100px){
+  .common-tab-buttons {
+    display: none; 
+  }
+  #tabDropdown {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px){
+.dynamic-emerging-countries {
+  .dec-tabs{width: 100%;}
+  .dec-tab-pane {
+      .btn-cta-link{text-align: left;margin-top: 2rem;}
+  }
+  .common-tab-content .btn-cta-link{text-align: left;margin-top: 2rem;}
+}
+}

@@ -1,37 +1,5 @@
 
-//Highlights from Each Country’s Ranking
-document.addEventListener('DOMContentLoaded', function () {
-    const commonTabButtons = document.querySelectorAll('.common-tab-button');
-    const commonTabContents = document.querySelectorAll('.common-tab-content');
-    const commonTabContainer = document.querySelector('.common-tab-container');
-    const commonTabDropdown = document.createElement('select');
-    commonTabDropdown.id = 'tabDropdown';
-    commonTabButtons.forEach(button => {
-    const option = document.createElement('option');
-    option.value = button.getAttribute('data-tab');
-    option.textContent = button.textContent;
-    commonTabDropdown.appendChild(option);
-    });
-    commonTabContainer.insertBefore(commonTabDropdown, commonTabContents[0]);
-    function showTabContent(commonTabId) {
-    commonTabContents.forEach(content => content.style.display = 'none');
-    document.getElementById(commonTabId).style.display = 'block';
-    commonTabButtons.forEach(button => button.classList.remove('active'));
-    document.querySelector(`.common-tab-button[data-tab="${commonTabId}"]`).classList.add('active');
-    }
-    commonTabButtons.forEach(button => {
-    button.addEventListener('click', function () {
-    const commonTabId = this.getAttribute('data-tab');
-    showTabContent(commonTabId);
-    commonTabDropdown.value = commonTabId;
-    });
-    });
-    commonTabDropdown.addEventListener('change', function () {
-    const commonTabId = this.value;
-    showTabContent(commonTabId);
-    });
-    showTabContent('dectabB');
-    });
+
 
     // table tab
     document.querySelectorAll('.table-secondary').forEach(function(item) {
@@ -110,4 +78,36 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         
-        
+        //Highlights from Each Country’s Ranking
+document.addEventListener('DOMContentLoaded', function () {
+    const commonTabButtons = document.querySelectorAll('.common-tab-button');
+    const commonTabContents = document.querySelectorAll('.common-tab-content');
+    const commonTabContainer = document.querySelector('.common-tab-container');
+    const commonTabDropdown = document.createElement('select');
+    commonTabDropdown.id = 'tabDropdown';
+    commonTabButtons.forEach(button => {
+    const option = document.createElement('option');
+    option.value = button.getAttribute('data-tab');
+    option.textContent = button.textContent;
+    commonTabDropdown.appendChild(option);
+    });
+    commonTabContainer.insertBefore(commonTabDropdown, commonTabContents[0]);
+    function showTabContent(commonTabId) {
+    commonTabContents.forEach(content => content.style.display = 'none');
+    document.getElementById(commonTabId).style.display = 'block';
+    commonTabButtons.forEach(button => button.classList.remove('active'));
+    document.querySelector(`.common-tab-button[data-tab="${commonTabId}"]`).classList.add('active');
+    }
+    commonTabButtons.forEach(button => {
+    button.addEventListener('click', function () {
+    const commonTabId = this.getAttribute('data-tab');
+    showTabContent(commonTabId);
+    commonTabDropdown.value = commonTabId;
+    });
+    });
+    commonTabDropdown.addEventListener('change', function () {
+    const commonTabId = this.value;
+    showTabContent(commonTabId);
+    });
+    showTabContent('dectabB');
+    });

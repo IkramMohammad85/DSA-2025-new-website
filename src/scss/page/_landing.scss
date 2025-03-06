@@ -270,7 +270,7 @@
     //padding:0 25px; 
 }
   #s-pathfinder{border:0; padding:4rem 0;}
-  .c-tab--vertical{ padding-bottom:0px;}
+  .c-tab--vertical{ padding-bottom:0px; display: flex;}
   .pathfinder{background-color: #fff; padding-top:0px;
     .c-tab__content{
         &.cyber {
@@ -1127,7 +1127,7 @@ section h2 {
     padding: 20px 0;
    margin: 0; 
    list-style: none;
-   line-height: 0px;
+   line-height: normal;
    color: #535353;
     
     li{
@@ -2515,7 +2515,7 @@ p{left: 16px;}
         }
         
 .c-tab{justify-content: center;}
-.c-tab__menu{width: 25%;}
+.c-tab__menu{width: 25%; display: flex; flex-direction: column;}
 .c-tab__content{
     &.cyber {
         .c-tab__content__item{min-height: 214px;}
@@ -2532,7 +2532,7 @@ p{left: 16px;}
         }
         &.asiaadmin{
             .c-tab__content__item {
-                background: url(/assets/img/esg-goals-graphic.jpg) no-repeat 0rem top;
+                background: url(https://www.dezshira.com/assets/img/esg-goals-graphic.jpg) no-repeat 0rem top;
             } 
         }
     }

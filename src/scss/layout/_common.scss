@@ -24,7 +24,7 @@
   color: #6d6e71;
   display: block;
 }
-.more { display: none;}
+
 .open {
     .more {display: inline;}
     .dots{ display: none;}
@@ -32,6 +32,7 @@
 .hidden {display: none;}
 .more-text{display: none;}
 #more {display: none; }
+.d-none { display: none !important;}
 #myBtn{color: v.$gray; text-decoration: underline; border: none; background-color: transparent; margin-bottom: 2rem; cursor: pointer; padding: 0;} 
 html { scroll-behavior: smooth; }
     ///Page menu

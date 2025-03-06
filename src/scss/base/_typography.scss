@@ -1,14 +1,14 @@
 
 // font
 @font-face {
-  font-family: "Inter,sans-serif";
+  font-family: "Inter";
   src: 
-    url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+    url("../fonts/Inter_18pt-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-size: 16px;
     line-height: 1.6;
     color: #333;

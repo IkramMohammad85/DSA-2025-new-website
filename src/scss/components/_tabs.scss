@@ -116,7 +116,7 @@ $mobile-bp-max: 1079px;
           span{
               &::after{content: "";
                   display: inline-block;
-                  background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat 0 -50px;
+                  background: url(../img/sprite-all.svg) no-repeat 0 -50px;
                   width: 15px;
                   height: 10px;
                   margin-left: .5rem;
@@ -125,7 +125,7 @@ $mobile-bp-max: 1079px;
           }
           &:hover span:after {content: "";
               display: inline-block;
-              background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat 0 -50px;
+              background: url(../img/sprite-all.svg) no-repeat 0 -50px;
               width: 15px;
               height: 10px;
               margin-left: .5rem;
@@ -346,7 +346,7 @@ $mobile-bp-max: 1079px;
                       .c-tab__content__btn{padding: 0px 0; color:#8b8b8b; line-height: 20px; font-size: 14px;justify-content: space-between;padding: 1rem 1rem;
                         span{display:block; width:80%}
                         .icon-active{transform: scale(0.48);fill: #8b8b8b;}
-                        &:after{background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat -150px -40px;margin-right:10px; margin-left:0;}
+                        &:after{background: url(../img/sprite-all.svg) no-repeat -150px -40px;margin-right:10px; margin-left:0;}
                         &:nth-child(2){display: none;}
                     }
 
@@ -388,7 +388,7 @@ $mobile-bp-max: 1079px;
                       p{font-size: 14px; margin-bottom: 0;}
                   }
               }
-              .c-tab__content__item{background: url(/img/esg/esg-goals-graphic.jpg) no-repeat 0rem top;}
+              .c-tab__content__item{background: url(/img/esg/esg-goals-graphic.webp) no-repeat 0rem top;}
       
           }
       }

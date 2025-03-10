@@ -37,5 +37,26 @@ for(i=0;i<articleToggle.length;++i){
   })
 
 }
-  
-       
+document.addEventListener("DOMContentLoaded", function () {
+  let slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    const slides = document.querySelectorAll(".LogoSlides");
+
+    if (slides.length === 0) return; // Prevent error if no slides exist
+
+    slides.forEach((slide) => {
+      slide.style.display = "none";
+    });
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(carousel, 9000);
+  }
+});

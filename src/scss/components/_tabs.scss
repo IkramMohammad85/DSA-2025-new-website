@@ -1,6 +1,5 @@
 @use "../base/variables" as v; 
-$mobile-bp-min: 1080px;
-$mobile-bp-max: 1079px;
+
  /* Measuring Asia’s Eight Most Dynamic Emerging Countries*/
  .common-tab-container {
     width: 75%;
@@ -227,7 +226,7 @@ $mobile-bp-max: 1079px;
     }
 
     &__item {
-      @media (min-width: #{$mobile-bp-min}) {
+      @media (min-width: #{v.$mobile-bp-min}) {
         display: flex;
         flex-direction: column;
         min-height: 420px;
@@ -337,7 +336,17 @@ $mobile-bp-max: 1079px;
               }
           }
 
-    }}
+    }
+  }
+@media only screen and (max-width: 767px){
+    .dynamic-emerging-countries {
+      .dec-tabs{width: 100%;}
+      .dec-tab-pane {
+          .btn-cta-link{text-align: left;margin-top: 2rem;}
+      }
+      .common-tab-content .btn-cta-link{text-align: left;margin-top: 2rem;}
+    }
+    }
 @media only screen and  (max-width: 768px){ 
     .pathfinder {
       .c-tab__content{height:auto;
@@ -367,6 +376,14 @@ $mobile-bp-max: 1079px;
       }
 
   } 
+}
+@media only screen and (max-width: 1100px){
+  .common-tab-buttons {
+    display: none; 
+  }
+  #tabDropdown {
+    display: block;
+  }
 }
 @media only screen and  (min-width: 768px){
   
@@ -405,20 +422,3 @@ $mobile-bp-max: 1079px;
 }
 }
 
-@media only screen and (max-width: 1100px){
-  .common-tab-buttons {
-    display: none; 
-  }
-  #tabDropdown {
-    display: block;
-  }
-}
-@media only screen and (max-width: 767px){
-.dynamic-emerging-countries {
-  .dec-tabs{width: 100%;}
-  .dec-tab-pane {
-      .btn-cta-link{text-align: left;margin-top: 2rem;}
-  }
-  .common-tab-content .btn-cta-link{text-align: left;margin-top: 2rem;}
-}
-}

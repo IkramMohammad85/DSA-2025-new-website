@@ -27,106 +27,6 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
-form {
-  .form-field {
-    &.field-group {
-      position: relative;
-      input {
-        margin: 0;
-        padding-left: 50px;
-      }
-      .group-field-btn {
-        position: absolute;
-        &.btn-serach {
-          left: 0;
-          background: transparent;
-          padding-top: 16px;
-          color: v.$gray-400;
-        }
-        &.icon-chevron-down {
-          top: 0;
-          right: 0;
-          padding: 21px 15px;
-        }
-        &.btn-go {
-          top: 0;
-          right: 0;
-          padding-top: 13px;
-          padding-bottom: 13px;
-        }
-        &.btn-plus-minus {
-          right: 0;
-          top: 0;
-          height: auto;
-          width: 3%;
-          padding: 22px 0px;
-          &.btn-plus-minus.btn-pluse-minus-city {
-            width: 6%;
-          }
-          &.btn-plus-minus.btn-minus {
-            top: 0;
-          }
-        }
-      }
-      .select-topic {
-        width: 97%;
-      }
-      .select-city {
-        width: 94%;
-      }
-    }
-    label {
-      font-size: 14px;
-      color: v.$gray-700;
-      line-height: 1.5;
-      
-    }
-    input,
-    select,
-    textarea {
-      width: 100%;
-      background: v.$gray-100;
-      border-radius: 0px;
-      font-size: 20px;
-      color: v.$gray-600;
-      line-height: 1.2;
-      padding: 0 15px;
-      -webkit-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      -moz-transition: all 0.4s;
-      transition: all 0.4s;
-      margin-top: 5px;
-      border-color: v.$gray-200;
-    }
-
-    select {
-      background: v.$gray-100
-        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAb0lEQVRIie2PsQ2AMAwELyyWcVIyCqSCaQmNI1kIRwEF0fjq998bHMf5lQDEjlyU7OPyDBzA3MglyeyWZGocFzlaDEkCNqu4hwCsIrp+UpcXGuvfSoaVa0lWklqeR5RrSf1k2HJL8km5lnxW7jj3nAwCHOMFhaBLAAAAAElFTkSuQmCC)
-        no-repeat 98% 50%;
-    }
-
-    input,
-    select {
-      height: 50px;
-    }
-    textarea {
-      min-height: 100px;
-      padding-top: 19px;
-      padding-bottom: 13px;
-    }
-    input:focus,
-    textarea:focus,
-    select:focus {
-      background: v.$gray-200;
-    }
-    input::placeholder,
-    textarea::placeholder,
-    select::placeholder {
-      color: #6c757d !important;
-     
-    }
-  }
-}
 
 
 /* Let’s Discuss the Right Resources for Your State */
@@ -134,14 +34,8 @@ form {
     &.ldform-gray-bg{background-color: #F6F6F6;}
     padding-top: 67px;
     padding-bottom: 86px;;
-    p{
-        color: #667085;
-        padding: 0;
-        text-align: center
-    }
     h2{ text-align: center; margin-bottom: 1rem; font-size: 1.5rem;}
     h5{text-align: center; font-weight: normal; color: #667085; font-size: 1.125rem;}
-
     .ld-form {
         width: 642px; margin: 3rem auto 0 auto;
         input[type=text], select, textarea, input[type=checkbox],input[type=email] {
@@ -198,9 +92,11 @@ form {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-top: 0;
+        margin-top: 10px;
         border: #D0D5DD solid 1px;
-        padding: 0; box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+        padding: 0; 
+        border: 1px solid #e7e7e7;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
         input {
             border: none !important;
             width: 100% !important;

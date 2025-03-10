@@ -1,9 +1,7 @@
-$light-gray: #f5f7fa;
-$mobile-bp-min: 1100px;
 @use "../base/variables" as v; 
 .hp-multimedia {
     padding: 4rem 0;
-    background: $light-gray;
+    background: v.$light-gray;
     .hp-section-link {
       margin-top: 0;
     }
@@ -36,7 +34,7 @@ $mobile-bp-min: 1100px;
       
         }
   
-        @media (min-width: #{$mobile-bp-min}) {
+        @media (min-width: #{v.$mobile-bp-min}) {
           width: calc((100% - 90px)/4);
        
         }
@@ -78,7 +76,7 @@ $mobile-bp-min: 1100px;
           &:first-child {
             font-size: 0;
             overflow: hidden;
-            @media (min-width: #{$mobile-bp-min}) {
+            @media (min-width: #{v.$mobile-bp-min}) {
               max-height: 180px;
             }
           }

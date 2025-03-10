@@ -11,7 +11,7 @@
     padding-bottom: 1rem;
     align-items: flex-end;
     &.flex-column{
-      align-items: center;
+      align-items: center; justify-content: space-between;
     }
   }
 
@@ -76,117 +76,23 @@
       min-height: 100%;
     }
   }
-
-  &--small {
-    height: 160px;
-    color: v.$white;
-
-    p {
-      margin-bottom: 1rem;
-    }
-  }
-
-}
-.banner {
-    &.banner-sm {
-      height: 170px;
-    }
-    position: relative;
-    overflow: hidden;
-    height: 340px;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    &.top-postion-24 {
-      top: inherit;
-      bottom: 0;
-      img {
-        top: inherit;
-        bottom: 0;
-        width: inherit;
-      }
-    }
-    &.top-postion-0 {
-      top: 0px;
-    }
-    img {
-      position: absolute;
-      background-size: cover;
-      width: 100%;
-      background-position: 50% 0;
-      background-repeat: no-repeat;
-      top: 0;
-    }
-    .img {
-      position: relative;
-      background-size: initial;
-      background-position: initial;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p {
-      color: v.$white;
-      a {
-        color: v.$white;
-      }
-    }
-    .btn {
-      display: table;
-    }
-  }
-  
-  .heading {
-    color: v.$white;
-    max-width: 600px;
-    line-height: 1.4;
-    font-size: 1.4rem;
-    font-weight: bold;
-    padding-bottom: 0.3rem;
-  }
-  .des-text {
-    color: v.$white;
-    line-height: 1.6;
-    text-align: center;
-  }
-  .masthead{
-    &__text{
-      p.pb-5{padding-bottom: 0px !important;}
-    }
-    &.masthead-height-auto{ height: auto; padding-top: 1rem; 
-    }
-    &.ami-banner {
-      .masthead__bg:before {
-          background: none;
-      }
-  }
-  .masthead-logo {
+  &__logo {
     right: 2%;
     top: 40%;
     position: absolute;
 }
-  }
-  @media only screen and (min-width: 753px) {
-  
-    .masthead{
-      &__text{
-        p.pb-5{padding-bottom: 50px !important;}
-      }
-      &.masthead-height-auto{ height: 300px; padding-top: 0;
-      h1{max-width: 900px;}
-      }
-      .masthead-btn-register{ position: absolute; right: 0;padding: 0.6rem 1rem;}
-    }
-  }
-  
+.envizi-ibm {
+  right: 30%;
+  bottom: 28%;
+  position: absolute;
+  img{width: 120px;}
+}
+}
   /* end */
   //Tablets
   @media (max-width: 767px){
     .masthead {
-      .masthead-logo{ 
+      &__logo{ 
           right: inherit; 
           top: inherit;
           bottom: 20px;
@@ -194,49 +100,30 @@
           width: 250px; 
           margin-bottom: 0;}
       }
-      &.ami-banner{height: 200px;
-          h1{max-width: inherit;}
-
-      }
-      h1{font-size: 24px;}
       &__bg img {
         height: 240px;
         left: 100%;
         max-width: fit-content;
     }
-  }
-  }
-  @media (max-width: v.$reflex-lg) {
-    .banner {
-      &.top-postion-24{
-        img{ width: auto;}
+    .section-wrapper {
+
+      &.flex-column{
+        flex-wrap: wrap;
       }
-      height: auto;
-      padding: 60px 0px;
     }
-  }
-  //Mobile
-  @media (max-width: v.$reflex-md) {
-    .banner {
-      &.top-postion-24{
-        img{ width: auto;}
-      }
-      img {
-        width: auto;
-      }
-      &.banner-sm {
-        height: auto;
-      }
-      height: auto;
-      padding: 25px 0px;
+    &.esg-banner {
       h1 {
-        font-size: 28px;
-      }
-      &.banner-brochure {
-        img {
-          width: 100%;
-        }
-      }
+        font-size: 20px;
+        max-width: 200px;
+    }
+    img{width: 80px;}
+    .envizi-ibm {
+      right: 16px;
+  }
     }
   }
+  
+  }
+
+  
   

@@ -58,16 +58,3 @@
 	}
 }
 
-
-	.navbar__resource{
-		&.navbar__resource-mega{
-			.resource-mega-menu{
-				.navbar__asiapedia, .navbar__resource__aside{
-					.tooltip{
-						.tooltiptext{width: 276px;
-							padding: 1rem; top: 30px; font-size: 12px; text-align: left; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; color: #000; background-color: #fff;}
-					}
-				}
-			}
-		}
-	}

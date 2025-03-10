@@ -1,4 +1,5 @@
 @use "../base/variables" as v; 
+//How to Get Started
 .cta-boxes {
     padding: 4rem 0 2rem;
     h2 {
@@ -11,15 +12,6 @@
         flex-direction: row;
       }
     }
-  
-    &--4.cta-boxes {
-      .cta-box {
-        @media (min-width: 1080px) {
-          max-width: 24%;
-        }
-      }
-    }
-  
     .cta-box {
       width: 100%;
       padding: 1.5rem;
@@ -76,12 +68,12 @@
       }
     }
   }
-  
+  //end
+
   .cta-contact {
     padding: 3rem 0;
     color: v.$white;
     background: linear-gradient(180deg, #217fd4 0%, #3271b7 100%);
-  
     .flex-spacing {
       flex-direction: column;
   

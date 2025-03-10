@@ -79,12 +79,12 @@
         &:after {
             content: "";
             display: inline-block;
-            background: url(https://dsa-2021.netlify.app/assets/img/esg-cta-arrow.svg) no-repeat left top;
+            background: url(../img/esg-cta-arrow.svg) no-repeat left top;
             width: 6px;
             height: 8px;
             margin-left: .5rem;
             vertical-align: middle;
         }
-        &:hover:after{color: #103D68 ; background: url(https://dsa-2021.netlify.app/assets/img/esg-cta-arrow-h.svg) no-repeat left top;}
+        &:hover:after{color: #103D68 ; background: url(../img/esg-cta-arrow-h.svg) no-repeat left top;}
     }
 }

@@ -60,28 +60,6 @@
 }
 
 /*Meet Our Experts*/
-.our-experts-section{min-height: 450px; padding-top: 63px; padding-bottom: 63px;
-    h2{margin-bottom: 3rem; text-align: center; font-size: 1.5rem;}
-}
-.expert-block-item{ display: flex; flex-direction: row; margin-top: 3rem;
-    .expert-thumbnail-item{ margin-right: 1.5rem;
-        img{border-radius: 50%; width: 94px;
-            border: solid 1px #e7e7e7;}
-    }
-  .expert-details-item{ width: 70%;
-    .expert-name { font-weight: bold; color: #000; font-size: 19px;
-    a{color: #000;}
-    }
-    .expert-position {color: #535353; font-size: 1rem; margin-bottom: 2rem;line-height: 22px;}
-    .expert-country{ color: #000; font-weight: 600; font-size: 14px; text-transform: uppercase;}
-    .expert-social{ display: flex; margin-top: 1rem;
-        a{background-color: #DAE8F4; padding: 8px; line-height: 8px; margin-right: 10px; border-radius: 50%;
-            img{width: 12px;}
-        }
-    }
-  }
-
-}
 .carousel-inner {
     display: flex;
     justify-content: space-around;
@@ -89,196 +67,6 @@
 }
 //end
 
-/*Measuring Asia’s Eight Most Dynamic Emerging Countries*/
-.dynamic-emerging-countries{
-    h2{font-size: 1.5rem; text-align: center; margin-bottom: 2rem;}
-    background-color: #F0F6FC;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    min-height: 500px;
-    .dec-tabs {
-        display: flex;
-        flex-direction: column;
-        width: 75%;
-        margin: 0 auto;
-      }
-      
-      .dec-tab-list {
-        list-style: none;
-        margin: 0;
-        padding: 20px 0;
-        display: flex;
-        flex-wrap: wrap; 
-        background-color: #fff;
-        justify-content: center;
-        box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;
-      }
-      .dec-tab-item {
-        margin-right: 14px;
-        padding: 0;
-        color: #535353;
-        cursor: pointer;
-        border-right: solid 1px #DEDEDE;
-        padding-right: 14px;
-        line-height: 18px;
-        &:last-child{border: none; padding-right: 0;}
-        a{color:#535353 ;}
-        &.active {
-            background-color: #fff;
-            border-bottom: none;
-            a{color:#000 ; border-bottom: solid 3px #367DBF; font-weight: bold;}
-          }
-      }
-      .dec-tab-content {
-        display: flex;
-        flex-direction: column;
-      }
-      .dec-tab-pane {
-        display: none;
-        padding-top: 2rem;
-        p{color: #535353;}
-        .btn-cta-link{ text-align: right;}
-        .dec-heade-title{display: flex; color: #000; margin-bottom: 1.5rem; font-weight: 600;
-        img{margin-right: 1rem; border-radius: 10px; width: 45px;}
-        }
-        &.active {
-            display: block;
-          }
-      }
-    }
-/*end*/
-
-//The eight core tiers table
-.eight-core-tiers{padding: 6rem 0;
-    .eight-core-head { display: flex; justify-content: space-between; width: 100%; margin: 0 auto 3rem auto; flex-direction: column;
-        .eight-core-left{ width: 100%; margin-bottom: 2rem;
-            p{color: #344C71; margin: 0;}
-        }
-        .eight-core-right{
-            img{outline: none; height: 50px;}
-        }
-       
-    }
-    h2{font-size: 1.5rem; text-align: center; margin-bottom: 2rem;}
-    .table-secondary{ background-color: #F6F6F6; color: #4E4E4E; font-weight: bold; border-bottom: solid #fff 12px; cursor: pointer;}
-    .table-primary{ background-color: #1A5E9D;color: #fff; font-size: 14px;
-    a{color: #fff;}
-    th{background-color: #1A5E9D;}
-    }
-    .table-second{ background-color: #fff;color: #535353; font-size: 14px;
-        a{color: #fff;}
-        th{background-color: #fff;}
-        }
-    .table-success{ background-color: #EAF5FF;color: #535353; font-weight: 600;}
-    .table th, .table td{border: none;}
-    .table th img{width: 45px; vertical-align: middle;}
-    .eight-core-table{width: 100%; margin: 0 auto;
-    }
-
-    .table{word-break: normal;}
-    .table th, .table td{
-        &:first-child{width: 150px; text-align: left; }
-    }
-    .td-label{ background-color: #F5EF51; border-radius: 50%; display: inline-block; padding: 5px 8px; line-height: 14px;}
-    .tier-title{cursor: pointer;
-        .ml-18{margin-left: 18px;}
-        .tier{display: flex;}
-    }
-    .tier-detail{display: none;    
-    }
-
-    
-    .arrow-move{font-size: 14px; color: #367DBF;margin-right: 6px;
-    img{width: 11px !important; height: 11px;}
-    }
-}
-.rankings{width: 100%; margin: 0 auto;}
-//end
-/*emerging countries table*/
-.eight-core-tiers{
-    &.amir2025{padding-top: 0px;
-        .td-label {
-            border-radius: 50%;
-            display: inline-block;
-            padding: 5px 8px;
-            line-height: 14px;
-            &.gold{
-                background-color: #F5EF51; font-weight: 600;
-            }
-            &.silver{
-                background-color: transparent;
-            }
-            &.bronze{
-                background-color: transparent;
-                //color: #fff;
-            }
-        }
-        .eight-core-head{ flex-direction: column;
-            p{text-align: center; color: #787878;}
-            p:nth-child(2){color: #344C71; margin-bottom: 0; font-size: 14px;}
-            }
-            .eight-core-table{margin-bottom: 4rem;
-                .table-primary {font-weight: 500;
-                    a{font-weight: 500;}
-                }
-            }
-            .table td{word-break: normal;}
-            .table-success{background-color: #fff; border: solid 2px #367DBF !important;border: 5px;}
-            .table-striped tbody tr:nth-of-type(even){ color: #4E4E4E;
-                background-color: rgba(237, 243, 251, 1);
-            }
-            .table-striped { color: #4E4E4E;
-                td{width: 75px;}
-                //td:first-child{width: 270px !important;}
-                .striped-first-td{ display: flex; line-height: 22px; 
-                strong{margin-right: 1rem;}
-                span{padding-left: 2.8rem;}
-                }
-            }
-            .table-striped tbody tr:nth-of-type(odd){
-                background-color: #fff;
-            }
-            .arrow-move{margin-right: 1rem;}
-            .tier-title .ml-18{margin-left: 26px;}
-            
-    }
-}
-
-/*end*/
-
-
-@media only screen and (max-width: 767px){
-    /*Measuring Asia’s Eight Most Dynamic Emerging Countries*/
-.dynamic-emerging-countries {
-    .dec-tabs{width: 100%;}
-    .dec-tab-pane {
-        .btn-cta-link{text-align: left;margin-top: 2rem;}
-    }
-    .common-tab-content .btn-cta-link{text-align: left;margin-top: 2rem;}
-}
-/*end */
-}
-@media only screen and (max-width: 767px){
-    /*emerging countries table*/
-    .eight-core-tiers{
-        &.amir2025{
-            .eight-core-table{
-                th:first-child{background-color: #FFF;}
-                .table-striped{
-                    tr:nth-child(even) td:first-child {background-color: #edf3fb;}
-                    tr:nth-child(odd) td:first-child {background-color: #fff;}
-                    .striped-first-td span{padding-left: 1.8rem;}
-                }
-            }
-        }
-    }
-    .eight-core-tiers .table th:first-child, .eight-core-tiers .table td:first-child {
-        width: 150px;
-        text-align: left;
-    }
-    /*end*/
-}
-    
 
 @media screen and (min-width: 767px) {
     .why-work-with-DSA{
@@ -351,18 +139,12 @@
             .left-thumb-block{ margin-bottom: 0rem;}
         }
     }
-    .our-experts-section{
-        .carousel-inner{
-            width: 80%;
-        margin: 0 auto;
-        .carousel-item{width: 30%;}
-        }
-    }
+
   }
 
   // Upcoming Events and News by ASEAN Briefing
 .event-asean-news{@extend .section-padding; background-color: v.$gray-bg; padding-top: 125px; padding-bottom: 125px;
-    .title-section{text-align: left}
+    .title-section{text-align: left;}
     .flex-spacing{ flex-direction: column;}
     .upcoming-events-block{ width: auto;
         ul{padding: 0; margin: 0; list-style: none;
@@ -479,32 +261,7 @@
    
   }
 }
-@media only screen and (min-width: 1001px) {
-    //The eight core tiers table
-.eight-core-tiers{
-    .eight-core-table{width: 100%; 
-    p{width: auto;}
-    }
-    .eight-core-head { width: 100%; flex-direction: row;
-        .eight-core-left{ width: 40%; margin-bottom: 0;
-        }
-    }
-    .table th, .table td{
-        &:first-child{width: 257px; }
-    }
-    .table thead th { position: sticky; top: 0; z-index: 1; }
-}
-   
-    .table thead {  top: 85px; }
-    .eight-core-tiers{
-        &.amir2025{
-            .final-ranking-row{
-                box-shadow: #367DBF 0px 0px 0px 1px; background-color: #fff;
-            }
-        }
-    }
-    
-}
+
 @media screen and (min-width: 1024px) {
     .event-asean-news{
         .flex-spacing{ flex-direction: row;}
@@ -517,17 +274,7 @@
   }
 }
 
-@media only screen and (min-width: 1200px){
-    //The eight core tiers table
-.eight-core-tiers{
-    .eight-core-table{width: 75%; }
-    .eight-core-head { width: 75%; 
-        .eight-core-left{ width: 40%;
-        }
-    }
-}
-.rankings{width: 75%; }
-}
+
 
 @media screen and (min-width: 1300px) {
     .event-asean-news{

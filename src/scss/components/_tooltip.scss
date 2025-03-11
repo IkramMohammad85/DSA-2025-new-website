@@ -1,4 +1,10 @@
 @use "../base/variables" as v; 
+.tooltip-basic{
+	content: "";
+	position: absolute;	
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent v.$black transparent transparent;}
 .tooltip {
 	position: relative;
 	display: inline-block;
@@ -30,31 +36,22 @@
 	left: 50%;
 	margin-left: -60px;
 	&::after {
-		content: "";
-		position: absolute;
 		bottom: 100%;
 		left: 50%;
 		margin-left: -5px;
-		border-width: 5px;
-		border-style: solid;
-		border-color: transparent transparent v.$black transparent;
+		@extend .tooltip-basic;
 	}
 }
 
 .tooltip-right {
 	top: 6%;
 	left: 42px;
-	
 	margin-left: 0px;
 	&::after {
-		content: "";
-		position: absolute;
 		bottom: 30%;
 		right: 100%;
 		margin-top: 20px;
-		border-width: 5px;
-		border-style: solid;
-		border-color: transparent #000 transparent transparent;
+		@extend .tooltip-basic;
 	}
 }
 

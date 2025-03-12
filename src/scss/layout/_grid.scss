@@ -172,16 +172,10 @@
 
 .justify-center { justify-content: center; }
 .align-center { align-items: center; }
-.text-center { text-align: center; }
 
 #wrapper {display: flex;flex-direction: column;}
 details, main { display: block;}
 
 
-// just for testing purpose
-.bg-dsa1{background-color: v.$dsa-yellow; color: v.$dark;}
-.bg-dsa2{background-color: v.$dsa-red; color: v.$white;}
-.bg-dsa3{background-color: v.$dsa-green; color: v.$white;}
-.bg-dsa4{background-color: v.$dsa-purple; color: v.$white;}
 
 

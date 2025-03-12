@@ -71,7 +71,7 @@
   }
   .btn-cta-link {
     a {
-        color: #357DC0;
+        color: v.$dsa-cyan-blue;
         text-decoration: none;
         margin-bottom: 5px;
         font-size: 16px;
@@ -85,6 +85,6 @@
             margin-left: .5rem;
             vertical-align: middle;
         }
-        &:hover:after{color: #103D68 ; background: url(../img/esg-cta-arrow-h.svg) no-repeat left top;}
+        &:hover:after{color: v.$dsa-dark-blue ; background: url(../img/esg-cta-arrow-h.svg) no-repeat left top;}
     }
 }

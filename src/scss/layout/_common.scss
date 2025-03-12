@@ -1,7 +1,5 @@
 @use "../base/variables" as v; 
-.mr-2 { margin-right: 20px;}
-.mt-4{ margin-top: 40px;}
-.mt-3{margin-top: 30px;}
+
 #searchFilterSticky { position: sticky; top: 120px; }
 .sticky {position:-webkit-sticky; position:sticky;  }
 .filter_form {height: auto;
@@ -9,7 +7,6 @@
  .selectBox select{padding: .9375rem; font-size: 1.0625rem; border: none;background: #f5f5f5;margin: 0 0 1.375rem 0;
 }
  }
- .dots{display: none;}
  .toggle-btnls{display: block;
   color: #6D6E71;
   border: none;
@@ -23,34 +20,28 @@
   color: #6d6e71;
   display: block;
 }
-
 .open {
     .more {display: inline;}
     .dots{ display: none;}
 }
-.hidden {display: none;}
-.more-text{display: none;}
-#more {display: none; }
+.hidden, .more-text, #more{display: none;}
 .d-none { display: none !important;}
 #myBtn{color: v.$gray; text-decoration: underline; border: none; background-color: transparent; margin-bottom: 2rem; cursor: pointer; padding: 0;} 
 html { scroll-behavior: smooth; }
+
     ///Page menu
     .page-menu{
         background-color: v.$white;box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); padding-top: 1rem; padding-bottom: 1rem; position: inherit;z-index: 1;
         top: 85px;
          ul{padding: 0; margin: 0; list-style: none; display: flex;flex-wrap: wrap; text-align: left; flex-direction: column;
              li{ padding-left: 0rem; padding-right: 0rem; text-transform: uppercase; font-size: 1rem; line-height: 40px;
-                 a{color: v.$blue-theme;
-                &:hover{color: v.$dsa-bright-blue;}
-                }
-                
              }
          }
          .section-wrapper .flex-spacing ul li.selected { transition: 0.3s;
-            a{color: #217FD4;}
+            a{color: v.$dsa-cyan-blue;}
           }
     }
-
+//end
 /*Executive Summary */
 .landing-top-content{padding-top: 66px; padding-bottom: 66px;
   .two-column-section{ display: flex; flex-direction: row;
@@ -72,45 +63,10 @@ html { scroll-behavior: smooth; }
           }
       }
   }
-
-  .landing-inro{ text-align: center;width: 80%; margin: 0 auto;
-      h2{font-size: 24px; font-weight: bold; color: #000;}
-      p{font-size: 16px; color: #535353; padding: 0px; margin: 0; }
-      .btn-cta-link{ text-align: center;}
-  }
 }
-
 /*end*/
 
-//Doing Business Portals
-.dbp{padding: 6rem 0;
-  h2{text-align: center; margin-bottom: 2rem; font-size: 24px;}
-  .dbp-block{ display: flex; justify-content: center; padding-top: 2rem; width: 100%; margin: 0 auto; flex-direction: column-reverse;
-      .dbp-left-block{ width: 100%;
-          ul{ padding: 0; margin: 0; list-style: none; display: flex;
-              li{ font-size: 16px; margin: 0 1rem 0 0rem;
-                  a{
-                      color: #367DBF; text-decoration: underline; font-weight: 600;
-                      &:hover{text-decoration: none;}
-                  }
-                  &:first-child{margin-left: 0; font-size: 16px;}
-              }
-          }
-      }
-      .dbp-right-block{ margin-bottom: 2rem;
-          img{ width: 100%;}
-      }
-  }
-  &.dbp-na{
-      background-color: #F9F9F9;
-      padding: 66px 0;
-      &.ami{
-        background-color: #fff;
-    }
-  }
 
-}
-//end
 
 @media only screen and (max-width: 1000px){
   /*Executive Summary */
@@ -123,28 +79,17 @@ html { scroll-behavior: smooth; }
 /*end */
 }
 @media only screen and (min-width: 767px) {
+  ///Page menu
         .page-menu{ position: sticky;
-        ul{flex-direction: row; justify-content: space-between; width: 100%;
-            li{    padding-left: 0.5rem;
-                padding-right: 0.5rem;text-align: center; 
-                &:first-child{padding-left: 0rem;}
-            }
+        ul{
+            li{padding-left: 0.5rem; padding-right: 0.5rem;text-align: center;}
         }
+        }
+  //end
 
-        }
-        //Doing Business Portals
-    .dbp {
-      .dbp-block{flex-direction: row;width: 100%;
-          .dbp-left-block{ width: 70%;
-          }
-          .dbp-right-block{ margin-left: 2rem; margin-top: 0;
-              img{ width: 100%;}
-          }
-      }
-  }
-//end
       }
 @media (max-width: 667px) {
+    ///Page menu
         .page-menu.success-stories{
             .menu-container {
               display: flex;
@@ -212,56 +157,6 @@ html { scroll-behavior: smooth; }
             }
             .hide-mobile {display: none;}
         }
-        .landing-top-content{ 
-          .landing-inro{ text-align: left; width: 90%;
-          h2{text-align: left;}
-          .btn-cta-link{ text-align: left;}
-         
-      }
-      }
-      .dbp {
-        .dbp-block{
-            .dbp-left-block{
-                p:nth-child(2) {
-                    text-align: center;
-                  }
-                ul{justify-content: center;}
-            }
-        }
-    }
-    .bp-block {
-        .glide__slides{height: 250px;}
-        .btn-cta-link{margin-bottom: 2rem;}
-    }
-      }
-@media (max-width: 767px) {
-      .dbp {
-        .dbp-block {
-            .dbp-left-block{
-                ul{flex-wrap: wrap;
-                }
-            }
-        }
-    }}
-@media (max-width: 1000px) {
-    .dbp {
-      .dbp-block {
-          .dbp-left-block{
-              ul{flex-wrap: wrap;
-              }
-          }
-      }
-  }}
-@media only screen and (min-width: 1200px) {
-  //Doing Business Portals
-.dbp {
-  .dbp-block{width: 90%;
-      .dbp-left-block{ width: 50%;
-      }
-      .dbp-right-block{ margin-left: 4rem;
-          img{ width: 500px;}
-      }
-  }
-}}
 //end
+      }
 

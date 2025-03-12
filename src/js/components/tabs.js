@@ -1,6 +1,3 @@
-
-
-
     // table tab
     document.querySelectorAll('.table-secondary').forEach(function(item) {
         item.addEventListener('click', function() {
@@ -15,7 +12,7 @@
         });
         detailRow.classList.toggle('hidden');
         var arrow = this.querySelector('.arrow-move');
-        arrow.innerHTML = detailRow.classList.contains('hidden') ? '<img src="https://dsa-2021.netlify.app/assets/img/right-arrow-t.svg" alt="image">' : '<img src="https://dsa-2021.netlify.app/assets/img/down-arrow-t.svg" alt="image">';
+        arrow.innerHTML = detailRow.classList.contains('hidden') ? '<img src="/img/right-arrow-t.svg" alt="image">' : '<img src="/img/down-arrow-t.svg" alt="image">';
         }
         });
         });
@@ -23,9 +20,9 @@
         function toggleArrow(icon) {
         var currentSrc = icon.getAttribute('src');
         if (currentSrc.includes('down-arrow-t.svg')) {
-        icon.setAttribute('src', 'https://dsa-2021.netlify.app/assets/img/right-arrow-t.svg');
+        icon.setAttribute('src', '/img/right-arrow-t.svg');
         } else {
-        icon.setAttribute('src', 'https://dsa-2021.netlify.app/assets/img/down-arrow-t.svg');
+        icon.setAttribute('src', '/img/down-arrow-t.svg');
         }
         }
         document.querySelectorAll('.across-eight-key a[href^="#"]').forEach(function(anchor) {
@@ -56,7 +53,7 @@
         if (arrowIcon !== icon) {
         var otherSrc = arrowIcon.getAttribute('src');
         if (otherSrc.includes('down-arrow-t.svg')) {
-        arrowIcon.setAttribute('src', 'https://dsa-2021.netlify.app/assets/img/right-arrow-t.svg');
+        arrowIcon.setAttribute('src', '/img/right-arrow-t.svg');
         }
         }
         });
@@ -66,23 +63,27 @@
         // Show default-open row
         document.querySelectorAll('.default-open').forEach(function(row) {
         row.classList.remove('hidden');
-        row.previousElementSibling.querySelector('.arrow-move').innerHTML = '<img src="https://dsa-2021.netlify.app/assets/img/down-arrow-t.svg" alt="image">';
+        row.previousElementSibling.querySelector('.arrow-move').innerHTML = '<img src="/img/down-arrow-t.svg" alt="image">';
         });
-        document.addEventListener('DOMContentLoaded', function() {
-        const sourceContent = document.querySelector('.source-content');
-        const destinationClone = document.querySelector('.destination-clone');
-        function cloneContent() {
-        destinationClone.innerHTML = sourceContent.innerHTML;
-        }
-        cloneContent();
-        });
+        // document.addEventListener('DOMContentLoaded', function() {
+        // const sourceContent = document.querySelector('.source-content');
+        // const destinationClone = document.querySelector('.destination-clone');
+        // function cloneContent() {
+        // destinationClone.innerHTML = sourceContent.innerHTML;
+        // }
+        // cloneContent();
+        // });
 
         
         //Highlights from Each Country’s Ranking
-document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
     const commonTabButtons = document.querySelectorAll('.common-tab-button');
     const commonTabContents = document.querySelectorAll('.common-tab-content');
     const commonTabContainer = document.querySelector('.common-tab-container');
+    if (!commonTabContainer) {
+        console.warn("Warning: '.common-tab-container' not found. Skipping tab script.");
+        return; // Stop execution if the container doesn't exist
+    }
     const commonTabDropdown = document.createElement('select');
     commonTabDropdown.id = 'tabDropdown';
     commonTabButtons.forEach(button => {

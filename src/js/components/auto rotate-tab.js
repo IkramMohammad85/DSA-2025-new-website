@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentTabIndex = 0;
     let autoChangeInterval;
 
-    console.log(tabLink, tabContent, tabContentInner); // Debugging: Check if elements exist
+    //console.log(tabLink, tabContent, tabContentInner); // Debugging: Check if elements exist
 
     function changeTab(index) {
         if (!tabLink[index] || !tabContent[index] || !tabContentInner[index]) return; // Prevent errors

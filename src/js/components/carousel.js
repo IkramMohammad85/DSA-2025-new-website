@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   }
   // Swipe gesture handling
-  carousel.addEventListener('touchstart', touchStart);
-  carousel.addEventListener('touchmove', touchMove);
+  carousel.addEventListener('touchstart', touchStart, { passive: true });
+  carousel.addEventListener('touchmove', touchMove, { passive: true });
   function touchStart(event) {
   startX = event.touches[0].clientX;
   }

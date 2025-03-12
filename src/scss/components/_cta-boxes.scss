@@ -1,7 +1,7 @@
 @use "../base/variables" as v; 
 //How to Get Started
 .cta-boxes {
-    padding: 4rem 0 2rem;
+    padding: 4rem 0 4rem;
     h2 {
       margin-bottom: 1.5rem;
     }
@@ -24,29 +24,24 @@
   
       @media (min-width: 1080px) {
         max-width: 32%;
-  
         &:hover {
           transform: scale(1.05);
           box-shadow: rgba(22, 51, 127, 0.15) 0px 10px 15px;
           border-top: 4px solid v.$dsa-bright-blue;
-  
           span {
             color: v.$dsa-bright-blue;
           }
         }
       }
-  
       &--highlight {
         border-top: 4px solid v.$dsa-bright-blue;
       }
-  
       p {
         color: v.$dsa-grey;
         line-height: 1.6;
         font-size: 1rem;
         margin-bottom: 0;
       }
-  
       span {
         display: inline-block;
         color: v.$black;
@@ -54,7 +49,6 @@
         font-weight: bold;
         line-height: 1.5;
         margin-bottom: 0.5rem;
-  
         &:after {
           content: "";
           display: inline-block;
@@ -105,7 +99,7 @@
         color: v.$white;
         font-size: 0.9375rem;
         font-weight: bold;
-        border-radius: 4px;
+        border-radius: 2px;
         border: 1px solid v.$white;
         background-color: transparent;
         box-shadow: 0px 2px 4px rgba(41, 70, 97, 0.2);

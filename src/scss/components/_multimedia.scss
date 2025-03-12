@@ -1,11 +1,7 @@
 @use "../base/variables" as v; 
 .hp-multimedia {
     padding: 4rem 0;
-    background: v.$light-gray;
-    .hp-section-link {
-      margin-top: 0;
-    }
-  
+    background: v.$gray-bg;
     &-list {
       display: flex;
       justify-content: space-between;
@@ -74,7 +70,6 @@
   
         a {
           &:first-child {
-            font-size: 0;
             overflow: hidden;
             @media (min-width: #{v.$mobile-bp-min}) {
               max-height: 180px;

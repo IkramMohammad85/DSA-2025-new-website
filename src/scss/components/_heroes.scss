@@ -10,7 +10,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;}
-.why-work-with-DSA{ background-color: v.$gray-bg; @extend .section-padding; padding-top: 88px; padding-bottom: 65px;
+
+//Why work with Dezan Shira    
+.why-work-with-DSA{ background-color: v.$gray-bg; @extend .section-padding; 
     p{@extend .para;margin-bottom: 0; }
     .flex-spacing{ flex-direction: column;}
 .dsa-block{width: calc((100%)/1);padding: 1rem;
@@ -36,19 +38,15 @@
     margin-bottom: 1.5rem;
     transition: transform .5s ease;
     &.yellow-icon{
-        //background-color: #FFCB31;
         background: rgba(255, 203, 49, 0.3);
     }
     &.red-icon{
-        //background-color: #ED1C24;
         background: rgba(237, 28, 36, 0.3);
     }
     &.green-icon{
-        //background-color: #1A9649;
         background: rgba(26, 150, 73, 0.3);
     }
     &.purple-icon{
-        //background-color: #6270B5;
         background: rgba(98, 112, 181, 0.3);
     }
 }
@@ -58,24 +56,11 @@
     }
 }
 }
+//end
 
-
-
-@media screen and (min-width: 767px) {
-    .why-work-with-DSA{
-        .flex-spacing{ flex-direction: row; flex-wrap: wrap;}
-        .dsa-block{width: calc((100% - 85px)/2); text-align:left; }
-    }
-  }
-  @media screen and (min-width: 1167px) {
-    .why-work-with-DSA{
-        .dsa-block{width: calc((100% - 85px)/4); text-align:left; }
-    }
-  }
-
-  //our servicess
-.our-dsa-services{@extend .section-padding; padding-top: 88px; padding-bottom: 111px;
-    .flex-spacing{ flex-direction: column;}
+//our servicess
+  .our-dsa-services{@extend .section-padding; padding-top: 88px; padding-bottom: 111px;
+    .flex-spacing{ flex-direction: column;flex-wrap: wrap;}
     p{@extend .para;margin-bottom: 0; }
     .dsa-services-block{width: calc((100%)/1);padding: 1rem; display: flex; flex-direction: column;
         margin-top: 2rem;
@@ -110,37 +95,19 @@
             }
         }
         }
-        .flex-spacing{flex-wrap: wrap;}
         .btn { margin-top: 2rem;
-         
             font-weight: 600;
             font-size: 18px;
             padding-left: 2rem;
             padding-right: 2rem;}
 }
-@media screen and (min-width: 767px) {
-    .our-dsa-services{
-        .flex-spacing{ flex-direction: row;}
-        .dsa-services-block{width: calc((100% - 90px)/2); flex-direction: column; text-align: left;
-            .left-thumb-block{ margin-right: 2rem; }
-        }
-    }
-  }
-  @media screen and (min-width: 1100px) {
-    .our-dsa-services{
-        .dsa-services-block{flex-direction: row; 
-            .left-thumb-block{ margin-bottom: 0rem;}
-        }
-    }
+//end
 
-  }
-
-  // Upcoming Events and News by ASEAN Briefing
-.event-asean-news{@extend .section-padding; background-color: v.$gray-bg; padding-top: 125px; padding-bottom: 125px;
-    .title-section{text-align: left;}
+// Upcoming Events and News by ASEAN Briefing
+  .event-asean-news{@extend .section-padding; background-color: v.$gray-bg; padding-top: 125px; padding-bottom: 125px;
     .flex-spacing{ flex-direction: column;}
     .upcoming-events-block{ width: auto;
-        ul{padding: 0; margin: 0; list-style: none;
+        ul{margin: 0; list-style: none;
         li{ display: flex; margin-bottom: 1rem; transition: box-shadow .2s ease,transform .2s ease;
             &:last-child{margin-bottom: 0px;} 
             &:hover{
@@ -166,7 +133,6 @@
                 .event-schedule{font-size: 12px; color: #666; }
             }
             .tooltip{display: none;}
-
                 .event-speaker{
                     height: 4rem;
                     width: 4rem;
@@ -233,7 +199,23 @@
            }
     }
 }
+//end
 @media screen and (min-width: 767px) {
+    //Why work with Dezan Shira 
+    .why-work-with-DSA{
+        .flex-spacing{ flex-direction: row; flex-wrap: wrap;}
+        .dsa-block{width: calc((100% - 85px)/2); text-align:left; }
+    }
+    //end
+    //our servicess
+    .our-dsa-services{
+        .flex-spacing{ flex-direction: row;}
+        .dsa-services-block{width: calc((100% - 90px)/2); flex-direction: column; text-align: left;
+            .left-thumb-block{ margin-right: 2rem; }
+        }
+        //end
+    }
+      // Upcoming Events and News by ASEAN Briefing
     .event-asean-news{
         .flex-spacing{ flex-direction: column;}
         .upcoming-events-block{ width: auto;
@@ -251,9 +233,25 @@
                 .briefing-news-list{width: auto;}
             }
     }
-   
   }
-}
+  //end
+  }
+  @media screen and (min-width: 1100px) {
+    //our servicess
+    .our-dsa-services{
+        .dsa-services-block{flex-direction: row; 
+            .left-thumb-block{ margin-bottom: 0rem;}
+        }
+    }
+    //end
+  }
+  @media screen and (min-width: 1167px) {
+    //Why work with Dezan Shira 
+    .why-work-with-DSA{
+        .dsa-block{width: calc((100% - 85px)/4); text-align:left; }
+    }
+    //end
+  }
 
 @media screen and (min-width: 1024px) {
     .event-asean-news{

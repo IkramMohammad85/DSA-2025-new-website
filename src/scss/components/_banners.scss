@@ -3,7 +3,7 @@
 .masthead {
   position: relative;
   height: 300px;
-  background: linear-gradient(90deg, #0c2740 0%, #314d77 100%);
+  background: linear-gradient(90deg, v.$dsa-dark-blue 0%, v.$dsa-medium-blue 100%);
   background-size: cover;
 
   .section-wrapper {
@@ -22,22 +22,10 @@
     font-size: 2rem;
     a{color: v.$white;}
   }
-
-  p {
-    color: v.$white;
-    max-width: 800px;
-    line-height: 1.6;
-  }
-
-  img {
-    margin-bottom: 1rem;
-  }
-
   &__text {
     position: relative;
     height: inherit;
     z-index: 2;
-    // padding-bottom: 3rem;
   }
 
   &__bg {
@@ -48,7 +36,6 @@
     width: 100%;
     height: inherit;
     overflow: hidden;
-
     &:before {
       content: "";
       position: absolute;
@@ -64,7 +51,6 @@
         rgba(0, 0, 0, 0.5) 100%
       );
     }
-
     img {
       position: absolute;
       top: 50%;
@@ -76,11 +62,6 @@
       min-height: 100%;
     }
   }
-  &__logo {
-    right: 2%;
-    top: 40%;
-    position: absolute;
-}
 .envizi-ibm {
   right: 30%;
   bottom: 28%;
@@ -92,21 +73,12 @@
   //Tablets
   @media (max-width: 767px){
     .masthead {
-      &__logo{ 
-          right: inherit; 
-          top: inherit;
-          bottom: 20px;
-      img{
-          width: 250px; 
-          margin-bottom: 0;}
-      }
       &__bg img {
         height: 240px;
         left: 100%;
         max-width: fit-content;
     }
     .section-wrapper {
-
       &.flex-column{
         flex-wrap: wrap;
       }
@@ -122,8 +94,4 @@
   }
     }
   }
-  
   }
-
-  
-  

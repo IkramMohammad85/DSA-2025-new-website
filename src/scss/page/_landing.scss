@@ -5,55 +5,35 @@
         p{text-align: center; color: #787878; margin-bottom: 1.5rem;
             &:nth-child(2){color: v.$dsa-medium-blue; margin-bottom: 0; font-size: 14px;}
             }
-        .eight-core-left{ width: 100%; margin-bottom: 2rem;
-
-           
-        }
-        .eight-core-right{
-            img{outline: none; height: 50px;}
-        }
-
     }
     .table-secondary{ background-color: #F6F6F6; color: #4E4E4E; font-weight: bold; border-bottom: solid v.$white 12px; cursor: pointer;}
-    .table-primary{ background-color: v.$dsa-cyan-blue;color: v.$white; font-size: 14px;
-    a{color: v.$white;}
-     th {
-        background-color: v.$dsa-cyan-blue;
-    }
+    .table-primary{ background-color: v.$dsa-cyan-blue;color: v.$white; font-size: 14px;font-weight: 500;
+    a{color: v.$white;font-weight: 500;}
+     th {background-color: v.$dsa-cyan-blue;}
     }
     .table-second {
         background-color: v.$white;
         color: v.$dsa-light-grey;
         font-size: 14px;
-        th {
-            background-color: v.$white;
+        th {background-color: v.$white;}
+    }
+    .table {
+        td{word-break: normal;}
+        th,td{border: none;
+            &:first-child{width: 150px; text-align: left; }
         }
+        th img{width: 45px; vertical-align: middle;}
+        thead { position: sticky; top: 0px; z-index: 2; }
     }
-    .table-success{ background-color: #EAF5FF;color: v.$dsa-light-grey; font-weight: 600;}
-    .table th, .table td{border: none;}
-    .table th img{width: 45px; vertical-align: middle;}
-    .table thead { position: sticky; top: 0px; z-index: 2;
-    
-    }
-    .eight-core-table{width: 100%; margin: 0 auto 4rem auto;
-        .table-primary {font-weight: 500;
-            a{font-weight: 500;}
-        }
-    }
-
-    .table td{word-break: normal;}
-    .table th, .table td{
-        &:first-child{width: 150px; text-align: left; }
-    }
-    .td-label{ background-color: #F5EF51; border-radius: 50%; display: inline-block; padding: 5px 8px; line-height: 14px;}
+    .eight-core-table{width: 100%; margin: 0 auto 4rem auto; }
     .tier-title{cursor: pointer;
-        .ml-18{margin-left: 18px;}
+        .ml-18{margin-left: 26px;}
         .tier{display: flex;}
     }
     .tier-detail{display: none;    
     }
     .arrow-move{font-size: 14px; color: v.$dsa-cyan-blue;margin-right: 1rem;
-    img{width: 11px !important; height: 11px;}
+    img{width: 11px; height: 11px;}
     }
     .td-label {
         border-radius: 50%;
@@ -64,39 +44,21 @@
             background-color: #F5EF51; font-weight: 600;
         }
     }
-    .table-success{background-color: v.$white; border: solid 2px v.$dsa-cyan-blue !important;border: 5px;}
-    .table-striped tbody tr:nth-of-type(even){ color: #4E4E4E;
-        background-color: rgba(237, 243, 251, 1);
-    }
     .table-striped { color: #4E4E4E;
         td{width: 75px;}
-        //td:first-child{width: 270px !important;}
         .striped-first-td{ display: flex; line-height: 22px; 
         strong{margin-right: 1rem;}
         span{padding-left: 2.8rem;}
         }
-    }
-    .table-striped tbody tr:nth-of-type(odd){
-        background-color: v.$white;
-    }
-    
-    .tier-title .ml-18{margin-left: 26px;}
-}
-//end
-
-
-
-//Explore the Business Environment
-.emerging-countries .carousel-inner {
-    justify-content: center;
-    .carousel-item{ text-align: center; 
-        span {
-            display: block;
-            font-size: 14px;
-            color: v.$dsa-light-grey;
+        tbody {
+            tr:nth-of-type(odd){
+                background-color: v.$white;
+            }
+            tr:nth-of-type(even){ color: #4E4E4E;
+                background-color: rgba(237, 243, 251, 1);
+            }
         }
     }
-
 }
 //end
 
@@ -106,26 +68,23 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     min-height: 500px;
-    
     }
 //end
 
 //Learn more about the ESG Framework Landscape
-.ESG-framework { background-color: #F6F6F6;
-    padding-top: 60px; padding-bottom: 75px;
+.ESG-framework { background-color: #F6F6F6; padding-top: 60px; padding-bottom: 75px;
     h2{text-align:center; margin-bottom: 62px; font-size: 24px;}
     .esg-main-block{display: flex; border-bottom: solid 1px #D4D3D3; padding-bottom: 60px; margin-bottom: 60px;justify-content: space-around;
     &:last-child{border: none; margin-bottom: 0; padding-bottom: 0; }
-    
     }
     .esg-left-block{ margin-right: 3%; margin-top: 7px;
     img{max-width: fit-content;}
     }
     .esg-right-block{
         p, ul{color: v.$dsa-light-grey;}
-        ul{margin-bottom: 0;}
+        ul{margin-bottom: 0;padding-left: 1rem;}
         h3{font-size: 20px; font-weight: 600; color: v.$dsa-medium-blue; padding: 4px 18px 18px 18px;}
-        ul{padding-left: 1rem;}
+
     }
     }
 //end
@@ -177,20 +136,17 @@
             .envizi-leaf{background: url(/img/esg/leaf-circle.svg) no-repeat left top; height: auto; width: 100%; margin-right: 0.5rem;}
             h2{font-size: 24px; margin-bottom: 2rem; margin-top: 0rem; text-align: center; line-height: 30px; color: v.$black;}
             h3{margin-top: 1rem; font-weight: 400; color: v.$dsa-light-grey; margin-bottom: 3.5rem; font-size: 18px; line-height: 30px;text-align: center;  width: 59%; margin: 2rem auto;}
-            
             .envizi-helps-block{
                 display: flex;  justify-content: center; 
                 .envizi-helps{ display: flex; margin-bottom: 1.5rem;
                     &:last-child{margin-bottom: 0;}
                 }
-                
                 .envizi-helps-block-right{width: 460px;}
                 .envizi-helps-block-left{ width: 437px; margin-right: 2rem;
                 img{width: 100%;}
                 }
             }
         }
-        
         }
     //end
 
@@ -198,26 +154,10 @@
     .approach-ensures{ padding-top: 90px; padding-bottom: 53px;
         .flex-spacing{ justify-content: center;}
         .approach-ensures-container{ border-bottom: solid #D4D3D3 1px; padding-bottom: 76px;
-        h2, h3{text-align: center; line-height: 28px; margin-bottom: 1rem;}
-        h2{margin-bottom: 2rem; font-size: 24px;}
+        h2{margin-bottom: 2rem; font-size: 24px; line-height: 28px;}
         h3{font-size: 18px; line-height: 30px; font-weight: 500; width:69%; margin-left:auto; margin-right: auto;margin-bottom: 3rem;  color: v.$dsa-light-grey; }
-           
-            .esg-goals-block{ width: 274px; margin-bottom: 1rem; 
-                .ae-content{width: 274px; 
-                    
-                     
-                }
-                p{ font-size: 14px; color: v.$dsa-light-grey; margin-bottom: 0;    letter-spacing: normal;
-                    word-spacing: normal;}
-                .ae-title{font-weight: 600; font-size: 16px; margin-bottom: 1.5rem; margin-top: 1.5rem; color: v.$dsa-cyan-blue;    letter-spacing: normal;
-                    word-spacing: normal;
-                a{color: v.$dsa-cyan-blue;}
-                }
-        
         }
         }
-        }
-    
     //end
 
     // Our ESG Advantage
@@ -232,8 +172,8 @@
                 img{width: 38px;}
                 }
                 .esg-advantage-desc{ padding: 1.5rem 0rem 0rem 0rem; text-align: center;  width: 320px; margin: 0 auto;
-                p, .adv-title{padding: 0; color: v.$dsa-light-grey; font-size: 16px;line-height: 24px; margin: 0;}
-                .adv-title{font-weight: 600; margin-bottom: 1rem; color: v.$black; font-size: 1rem; width: 185px; margin: 0 auto; margin-bottom: 1rem;}
+                p, .adv-title{padding: 0; color: v.$dsa-light-grey; font-size: 1rem;line-height: 24px; margin: 0;}
+                .adv-title{font-weight: 600; color: v.$black; width: 185px; margin: 0 auto  1rem auto; }
                 }
             }
         }
@@ -279,7 +219,7 @@
         .flex-spacing{display: inherit;}
         .carousel{ padding-bottom: 3rem;}
         .carousel-inner{justify-content: center;}
-        h3{font-size: 18px; font-weight: 500; color: v.$dsa-light-grey; margin-bottom: 3rem; line-height: 1.4;text-align:center; margin-bottom: 2rem; font-size: 20px;}
+        h3{font-size: 18px; font-weight: 500; color: v.$dsa-light-grey; line-height: 1.4;text-align:center; margin-bottom: 2rem; font-size: 20px;}
         .esg-lifecycle-container {display: flex; justify-content: center; flex-direction: row;
             .lifecycle-block{ display: flex; margin-bottom: 1.4rem;
                 .icon-ellipse {width: 45px; height: 45px; display: flex; align-items: center; background-color: #F0F6FC; justify-content: center; border-radius: 50%;  margin-right: 22px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; z-index: 1;
@@ -324,7 +264,7 @@
         p {margin-bottom: 3rem; color: v.$dsa-light-grey; font-size: 18px; line-height: 30px;}
         
         .ibm-enizi-sp-container {display: flex; justify-content: space-between; flex-direction: row;
-            .ibm-enizi-sp-block{ width: 400px;  display: flex;
+            .ibm-enizi-sp-block{ width: 400px;  display: flex;margin-left: 2rem; margin-right: 2rem;
                 .ibm-enizi-sp-title{  margin-right: 2rem;
                     .sp-icon{ width: 76px; height: 76px;border-radius: 50%; background-color: #4087A8; display: flex;
                         align-items: center;
@@ -333,17 +273,13 @@
                     &.srd{ background-color: #4A9191;}
                     &.ad{ background-color: #54997A;}
                     }
-        
                 }
-                .ibm-enizi-sp-text{padding: 0rem 0rem;font-size: 1rem; color: v.$dsa-light-grey; width: 350px;
+                .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$dsa-light-grey; width: 350px;
                     h4{line-height: 24px; font-size: 1rem;}
                 }
-        
             }
-        
         }
         .carousel-inner{justify-content: center;
-            .ibm-enizi-sp-container .ibm-enizi-sp-block{margin-left: 2rem; margin-right: 2rem;}
             .carousel-item{
                 &:nth-child(2){
                     .ibm-enizi-sp-block{
@@ -354,7 +290,6 @@
                 }
             }
         }
-        
         }
     //end
 
@@ -424,20 +359,18 @@
             .cta-buttons{ margin-top: 2rem;}
             .country-section .contact-our-experts{background-color: v.$white;}
             .toggle-btnls {display: none;}
-
-       
             .carousel-item{margin-bottom:2rem;}
-.more-text {
-margin-top: 1.5rem; display: block;
-    &:last-child{margin-bottom: 1.5rem;}
-}
+        .more-text {
+        margin-top: 1.5rem; display: block;
+            &:last-child{margin-bottom: 1.5rem;}
+        }
 .dots{display: none;}
 .cta-link{color: v.$white;
     &:after{display: none;}
 }
 
 //Explore the Business Environment
-.dbp{padding: 6rem 0;
+.dbp{padding: 66px 0;background-color: v.$white;
     h2{text-align: center; margin-bottom: 2rem; font-size: 24px;}
     .dbp-block{ display: flex; justify-content: center; padding-top: 2rem; width: 100%; margin: 0 auto; flex-direction: column-reverse;
         .dbp-left-block{ width: 100%;
@@ -447,18 +380,13 @@ margin-top: 1.5rem; display: block;
                         color: v.$dsa-cyan-blue; text-decoration: underline; font-weight: 600;
                         &:hover{text-decoration: none;}
                     }
-                    &:first-child{margin-left: 0; font-size: 16px;}
+                    &:first-child{margin-left: 0;}
                 }
             }
         }
         .dbp-right-block{ margin-bottom: 2rem;
             img{ width: 100%;}
         }
-    }
-    &.dbp-na{
-        background-color: #F9F9F9;
-        padding: 66px 0;
-        &.ami{ background-color: v.$white;}
     }
 }
 //end
@@ -557,17 +485,9 @@ margin-top: 1.5rem; display: block;
     //Learn more about the ESG Framework Landscape
     .ESG-framework {
         h2{text-align:center; margin-bottom: 2rem; }
-        
         .esg-main-block{ justify-content: left; flex-direction: column;
-           
-            .content{padding: 0;
-      
-            }
-            .esg-left-block{ margin-right: 0; margin-top: 0;
-                .esg-thumbnail{
-                    img{width: 100%;}
-                }
-            }
+            .content{padding: 0; }
+            .esg-left-block{ margin-right: 0; margin-top: 0;}
             .esg-right-block{
             h3{padding-left: 0px; padding-right: 0; padding-top: 18px;}
             }
@@ -590,7 +510,6 @@ margin-top: 1.5rem; display: block;
                 }
                 ul li span{width: 86%;}
             }
-            
         }
       }
       //end
@@ -607,7 +526,6 @@ margin-top: 1.5rem; display: block;
             h2{text-align: center;}
             h3{ width: 100%;}
             .envizi-helps-block{
-                //flex-direction: column;
                 .envizi-helps{width: auto;}
                 .envizi-helps-block-left{ width: auto; margin-right: 0;      
                 }
@@ -621,14 +539,8 @@ margin-top: 1.5rem; display: block;
       //How we help companies realize their sustainability goals
     .approach-ensures{ 
         .approach-ensures-container{ width: 100%;
-            .approach-ensures-block{flex-direction: column;
-                .list-item{ width: calc(100%); margin-top: 2rem;
-                }
-                .esg-goals-block{max-height: 356px; margin-bottom: 2.5rem; width: auto;}
-            }
-            h2,h3{text-align: left;}
+            .approach-ensures-block{flex-direction: column;}
             h3{width: auto;}
-            
         }
           }
     //end
@@ -640,10 +552,7 @@ margin-top: 1.5rem; display: block;
       .esg-advantage{ 
         .esg-advantage-container{ flex-direction: column;
             .esg-advantage-block{  width: 100%;height:210px; margin-bottom: 3.5rem; box-shadow: none;
-
-                .esg-advantage-desc{ padding: 1rem;  
-                    
-                    }
+                .esg-advantage-desc{ padding: 1rem;}
             }
         }
       }
@@ -654,7 +563,6 @@ margin-top: 1.5rem; display: block;
         .esg-f-l-container{  flex-direction: column;
             .esg-f-l-left{  padding-right: 0;
                     .cta-link{margin-top: 1.5rem; }
-                    .btn-bright-blue{margin-right: 1.6rem;}  
             }
             .esg-f-l-right{ display: none;
                 img{width: 100%; }
@@ -779,7 +687,7 @@ margin-top: 1.5rem; display: block;
 .our-experts-section{
     .carousel-inner{
         width: 80%;
-    margin: 0 auto;
+        margin: 0 auto;
     .carousel-item{width: 30%;}
     }
 }
@@ -804,10 +712,8 @@ margin-top: 1.5rem; display: block;
     .ibm-envizi-esg {
         .ibm-envizi-container {
             .envizi-leaf{width: 57px;}
-            ul {
-                width: 86%;
+            ul { width: 86%;
             }
-    
         }
     }
     //end

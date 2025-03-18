@@ -48,18 +48,6 @@
     position: relative;
     padding: 4rem 0;
   }
-
-
-  .business-updates{
-      h1{ font-size: 40px; line-height: 55px; color: v.$blue-theme; margin-top: 1.5rem; margin-bottom: 1.5rem;
-    a{color: v.$blue-theme;}
-    }
-      p{font-size: 18px; line-height: 26px; color: v.$gray;}
-      .btn {margin-top: 2rem; font-size: 18px; padding-left: 1.5rem; padding-right: 1.5rem;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;font-weight: bold;
-       
-    }
-  }
-  
   .hp-country-banner-box {
     position: relative;
     border-top: 0;
@@ -68,6 +56,38 @@
     box-shadow: none;
     z-index: 2;
   }
+  .business-updates{
+    h1{ font-size: 40px; line-height: 55px; color: v.$blue-theme; margin-top: 1.5rem; margin-bottom: 1.5rem;
+  a{color: v.$blue-theme;}
+  }
+    p{font-size: 18px; line-height: 26px; color: v.$gray;}
+    .btn {margin-top: 2rem; font-size: 18px; padding-left: 1.5rem; padding-right: 1.5rem;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;font-weight: bold;
+     
+  }
+}
+//country
+.svg-border-rounded{ height: auto;
+  img{vertical-align: top;}
+  }
+
+  .section-intro{ width: auto; margin: 0 auto; padding-bottom: 4rem; font-size: 18px; line-height: 26px;color: v.$gray;}
+
+  .country-section{
+    .title-section{ font-size: 28px; margin-bottom: 2rem; color: v.$blue-theme;
+    a{ color: v.$dsa-dark-blue;}
+    }
+    .sub-title-section{ font-size: 24px;  font-weight: normal; margin-bottom: 2rem; color: v.$blue-theme; }
+    
+    //why singapore block    
+    .why-singapore{ padding-top: 80px; padding-bottom: 20px;
+    .more-less{color: v.$gray; font-size: 16px; line-height: 18px; display: block; margin-top: 1rem;
+    a{text-decoration: underline; color: v.$gray;
+    &:hover{ text-decoration: none;}
+    }
+    }
+    }
+    }
+
   @media (min-width: 1100px){
   .hp-country-banner:after, .hp-country-banner:before {
     content: "";
@@ -94,34 +114,14 @@
     .hp-country-banner-box {max-width: 600px;}
   }
   // end
-//country
-.svg-border-rounded{ height: auto;
-img{vertical-align: top;}
-}
-
-.section-intro{ width: auto; margin: 0 auto; padding-bottom: 4rem; font-size: 18px !important; line-height: 26px !important;color: v.$gray;}
 @media only screen and (min-width: 767px) {
         .section-intro{ width: 66%;}
         .svg-border-rounded{height: auto; display: flex; justify-content: center; width:100%;
         img{height: auto; width: 100%;}
         }
       }
-//country
-.country-section{
-.title-section{ font-size: 28px; padding: 0; margin: 0;  font-weight: 700; line-height: 36px; margin-bottom: 2rem; color: v.$blue-theme;
-a{ color: v.$dsa-dark-blue;}
-}
-.sub-title-section{ font-size: 24px; padding: 0; margin: 0; font-weight: normal; line-height: 34px; margin-bottom: 2rem; color: v.$blue-theme; }
 
-//why singapore block    
-.why-singapore{ padding-top: 80px; padding-bottom: 20px;
-.more-less{color: v.$gray; font-size: 16px; line-height: 18px; display: block; margin-top: 1rem;
-a{text-decoration: underline; color: v.$gray;
-&:hover{ text-decoration: none;}
-}
-}
-}
-}
+
 
 
  

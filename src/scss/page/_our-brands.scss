@@ -111,16 +111,14 @@
       span {
         margin-left: 0.3rem;
         a {
-          color: v.$cyan-blue-dark;
+          color: v.$strong-blue;
           font-weight: bold;
-          text-decoration: underline;
-          &:hover{text-decoration: none;}
         }
       }
     }
     &.meb-brand {
       p a {
-        color: #be8b00;
+        color: #a37800;
       }
     }
     &.asean-brand {
@@ -135,7 +133,7 @@
     }
     &.ib-brand {
       p a {
-        color: #1d9649;
+        color: #0a7a33;
       }
     }
     &.cb-brand {

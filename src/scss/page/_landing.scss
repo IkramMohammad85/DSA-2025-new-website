@@ -2,7 +2,7 @@
 //The eight core tiers table
 .eight-core-tiers{padding: 0rem 0 6rem 0;
     .eight-core-head { display: flex; justify-content: space-between; width: 100%; margin: 0 auto 3rem auto; flex-direction: column;
-        p{text-align: center; color: #787878; margin-bottom: 1.5rem;
+        p{text-align: center; color: v.$dsa-grey; margin-bottom: 1.5rem;
             &:nth-child(2){color: v.$dsa-medium-blue; margin-bottom: 0; font-size: 14px;}
             }
     }

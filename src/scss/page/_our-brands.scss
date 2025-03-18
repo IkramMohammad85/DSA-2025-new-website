@@ -113,6 +113,8 @@
         a {
           color: v.$cyan-blue-dark;
           font-weight: bold;
+          text-decoration: underline;
+          &:hover{text-decoration: none;}
         }
       }
     }

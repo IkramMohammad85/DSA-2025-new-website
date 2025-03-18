@@ -24,7 +24,7 @@
         transform: scale(1.1);
        }
        .dsa-block-title{
-           h4{color: v.$dsa-bright-blue; 
+           h3{color: v.$dsa-bright-blue; 
                a{color: v.$dsa-bright-blue;}
            }
        }
@@ -51,7 +51,7 @@
     }
 }
 .dsa-block-title {
-    h4{font-size: 18px; font-weight: bold;  color: v.$blue-theme;line-height: 24px;
+    h3{font-size: 18px; font-weight: bold;  color: v.$blue-theme;line-height: 24px;
     a{color: v.$blue-theme;}
     }
 }
@@ -72,7 +72,7 @@
             }
             .dsa-block-title{
                a{
-                   h4{color: v.$dsa-cyan-blue;}
+                   h3{color: v.$dsa-cyan-blue;}
                }
             }
         }
@@ -89,7 +89,7 @@
         }
         .right-dec-block{
             .dsa-block-title{
-                h4{color: v.$dsa-cyan-blue; font-size: 20px; font-weight: bold;
+                h3{color: v.$dsa-cyan-blue; font-size: 20px; font-weight: bold;
                     a{color: v.$dsa-cyan-blue;}
                 }
             }

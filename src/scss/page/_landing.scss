@@ -188,7 +188,7 @@
                 p{color: v.$dsa-light-grey;}
                 h2{ margin-bottom: 1.5rem; font-size: 24px; font-weight: bold; text-align: left;}
                 .cta-link{
-                    color: #357DC0;
+                    color: v.$strong-blue;
                     font-weight: 600;
                     padding: 0;
                     
@@ -274,7 +274,7 @@
                     &.ad{ background-color: #54997A;}
                     }
                 }
-                .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$dsa-light-grey; width: 350px;
+                .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$gray-700; width: 350px;
                     h4{line-height: 24px; font-size: 1rem;}
                 }
             }

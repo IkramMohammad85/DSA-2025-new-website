@@ -87,16 +87,16 @@
                   .tab-content-description{
                       h3{    font-size: 16px;line-height: 30px; text-align: left; margin: 0; margin-bottom: 0.5rem; font-weight: bold;}
                       p{line-height: 24px; font-size:14px; color:#474747;}
-                      .c-btn{ background:#217FD4; margin:0px; display: inline-block !important;}
+                      .c-btn{ background:v.$strong-blue; margin:0px; display: inline-block !important;}
                       ul{padding-left: 5px; margin-left: 11px;color:#474747; font-size:14px;}
                       .g-col{padding: 0;text-align:left;}
                       .btn, .c-btn {padding: 0.75rem 1rem;font-size: 0.875rem; line-height:1.4;margin-right: 18px; vertical-align:top;}
-                      .c-btn{border: 1px solid #217FD4;}
+                      .c-btn{border: 1px solid v.$strong-blue;}
                   }
               }
               &.c-tab--active {
                   .c-tab__content__btn { display: flex;
-                      svg{fill:#217FD4;}
+                      svg{fill:v.$strong-blue;}
                   }
               }
           }
@@ -110,7 +110,7 @@
               &.icon-active{ margin-right:0rem; margin-left:0rem; fill:v.$dsa-light-grey;}
           }
       }
-      .c-tab--active{background: v.$white; background-color: v.$white;  color: #217fd4; font-weight: 600;
+      .c-tab--active{background: v.$white; background-color: v.$white;  color: v.$strong-blue; font-weight: 600;
       
           span{
               &::after{content: "";
@@ -135,7 +135,7 @@
               animation-iteration-count: 1;
               }
               svg{
-                  &.icon-active{fill:#217FD4;}
+                  &.icon-active{fill:v.$strong-blue;}
               }
         &:after{ display:none;}      
       }

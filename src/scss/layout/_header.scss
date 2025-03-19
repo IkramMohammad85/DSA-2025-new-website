@@ -183,6 +183,7 @@ $short-browser: 720px;
       flex-direction: row;
       align-items: center;
     }
+    
   }
 
   &__togglemenu {
@@ -373,8 +374,8 @@ $short-browser: 720px;
     left: 0;
     width: 100%;
     background-color: v.$gray-100;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1), inset 0 1px 0 #e2e3df,
-      0 3px 6px rgba(0, 0, 0, 0.05);
+    //box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1), inset 0 1px 0 #e2e3df, 0 3px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 50px 200px 0px 200px rgba(0,0,0,0.75);
     font-weight: normal;
     z-index: 1;
     opacity: 0;
@@ -394,9 +395,6 @@ $short-browser: 720px;
       opacity: 0.5;
     }
   }
-  
-  
-
   &__search {
     position: absolute;
     width: 100%;
@@ -891,9 +889,6 @@ $short-browser: 720px;
     background-position: -160px 0;
   }
 }
-
-
-
 .sprite-login {
   display: block;
   margin-bottom: 2rem;
@@ -944,7 +939,7 @@ $short-browser: 720px;
   }
 
  /*new mega menu css*/
- .service-page-subheading { 
+.service-page-subheading { 
   &.sp-padd-b{margin-bottom: 17px;}
 }
 .servicetab {
@@ -1053,7 +1048,6 @@ $short-browser: 720px;
       column-count:1;
       li{ width: 100px;
       }
-
     }  
     &.news-events-margin{
         li{
@@ -1109,9 +1103,7 @@ $short-browser: 720px;
 }
 
 
-.navbar__megamenu{
-  box-shadow: 50px 200px 0px 200px rgba(0,0,0,0.75);
-}
+
 .navbar__menu .navbar__megamenu:before {
   content: "";
   display: block;
@@ -1458,7 +1450,6 @@ ul.mega-mtabs {
   p{display: none;}
   }
     .service-page-heading{display: none;}
-
 }
 @media screen and (max-height: 660px) {
   ul.mega-mtabs {

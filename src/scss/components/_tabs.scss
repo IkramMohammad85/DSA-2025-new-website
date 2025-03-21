@@ -188,7 +188,7 @@
   }
 @media only screen and  (max-width: 768px){ 
     .pathfinder {
-      .c-tab__content{height:auto;
+      .c-tab__content{height:auto; background: none !important;
           &.cyber {
               .c-tab__content__item {
                       .c-tab__content__btn{padding: 0px 0; color:v.$dsa-light-grey; line-height: 20px; font-size: 14px;justify-content: space-between;padding: 1rem 1rem;

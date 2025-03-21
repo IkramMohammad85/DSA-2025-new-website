@@ -5,6 +5,12 @@ $navbar-height: 85px;
 $mobile-bp-min: 1100px;
 $short-browser: 720px;
 
+.before-content{
+  content: "";
+  background-image: url(../img/sprite-all.svg);
+  background-repeat: no-repeat;
+}
+
 .text-black{color: v.$black !important;}
 .navbar {
   position: fixed;
@@ -843,10 +849,8 @@ $short-browser: 720px;
 }
 .sprite-flag {
   &:before {
-    content: "";
+    @extend .before-content;
     display: inline-block;
-    background-image: url(../img/sprite-all.svg);
-    background-repeat: no-repeat;
     width: 20px;
     height: 20px;
     margin-right: 0.5rem;
@@ -894,11 +898,9 @@ $short-browser: 720px;
   margin-bottom: 2rem;
 
   &:before {
-    content: "";
+    @extend .before-content;
     display: block;
     margin: 0 auto;
-    background-image: url(../img/sprite-all.svg);
-    background-repeat: no-repeat;
     width: 24px;
     height: 24px;
     transform: scale(2.5);
@@ -937,7 +939,6 @@ $short-browser: 720px;
     background: #eee;
     height: auto;
   }
-
  /*new mega menu css*/
 .service-page-subheading { 
   &.sp-padd-b{margin-bottom: 17px;}
@@ -1063,7 +1064,6 @@ $short-browser: 720px;
           a{ margin-right: 8px; margin-left: 8px; color: #7D7F7C;
           &:hover{ color: v.$dsa-cyan-blue;}
           img{margin-right: 5px;}
-          //&:last-child{margin-right: 0;}
           }
           span{ display: inline-block; color: #7D7F7C;}
         }
@@ -1090,7 +1090,7 @@ $short-browser: 720px;
 
 
 }
-.featured-insight-heading{text-transform: uppercase; margin-bottom: 14px; font-weight: normal; margin-top: 20px; font-size: 14px;
+.featured-insight-heading{ margin-bottom: 14px; font-weight: normal; margin-top: 20px; font-size: 14px;
 
 }
 #industryFocus, #serviceAreas{
@@ -1214,16 +1214,7 @@ ul.mega-mtabs {
 .date{font-weight: 500; color: #717171; display: block; font-size: 14px; margin-top: 0.5rem;
   &.event-d{margin-bottom: 0.5rem; margin-top: 0;}
 }
-.sprite-down:after {
-  content: "";
-  display: inline-block;
-  background: url(../img/sprite-all.svg) no-repeat -150px -40px;
-  width: 16px;
-  height: 10px;
-  margin-left: 0.375rem;
-  vertical-align: middle;
-  transform: scale(0.8);
-}
+
 @media (min-width: 1100px) {
   .page-link-block{margin-left: 45px; padding-right: 45px;border-right: solid 1px #DCDCDC;
     ul {
@@ -1366,7 +1357,7 @@ ul.mega-mtabs {
         a{
             color: v.$dsa-cyan-blue; font-weight: bold;
         }
-        &.service-page-subheading-sub{margin-top: 0;}
+   
     }
    
   .page-link-block{width: auto; margin-bottom: 2rem; margin-left: 0; padding-right: 0;
@@ -1428,22 +1419,7 @@ ul.mega-mtabs {
          
       }
     }
-    .d_active {
-        background: #F5F5F5;
-        color: #535353;
-        font-weight: normal;
-        margin-bottom: 1rem;
-        &::after{
-          content: '';
-          display: inline-block;       
-          margin-left: .5rem;
-          background: url(/img/mm-images/mgm_arrow_down_icon-n.svg) no-repeat right center;
-          width:17px;
-          height: 12px;
-          vertical-align: middle;
-          
-      }
-    }
+    
     .mega-mtab-content{flex-direction: column; padding: 0 1.5rem;}
     .cta-banner-block{padding-left: 0; border: 0; margin-bottom: 2rem; display: none;
   img{display: none;}

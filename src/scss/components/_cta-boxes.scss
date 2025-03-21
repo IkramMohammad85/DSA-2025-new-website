@@ -1,5 +1,6 @@
 @use "../base/variables" as v; 
 //How to Get Started
+
 .cta-boxes {
     padding: 4rem 0 4rem;
     h2 {
@@ -7,10 +8,6 @@
     }
     .flex-spacing {
       flex-direction: column;
-  
-      @media (min-width: 1080px) {
-        flex-direction: row;
-      }
     }
     .cta-box {
       width: 100%;
@@ -22,17 +19,6 @@
       box-shadow: 0px 2px 4px rgba(41, 70, 97, 0.25);
       transition: box-shadow 0.2s ease, transform 0.2s ease;
   
-      @media (min-width: 1080px) {
-        max-width: 32%;
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: rgba(22, 51, 127, 0.15) 0px 10px 15px;
-          border-top: 4px solid v.$dsa-bright-blue;
-          span {
-            color: v.$dsa-bright-blue;
-          }
-        }
-      }
       &--highlight {
         border-top: 4px solid v.$dsa-bright-blue;
       }
@@ -70,11 +56,6 @@
     background: linear-gradient(180deg, #217fd4 0%, #3271b7 100%);
     .flex-spacing {
       flex-direction: column;
-  
-      @media (min-width: 1080px) {
-        align-items: center;
-        flex-direction: row;
-      }
     }
   
     &__top {
@@ -86,11 +67,6 @@
         margin: 0 auto;
         margin-bottom: 1.5rem;
         text-align: center;
-  
-        @media (min-width: 1080px) {
-          margin: 0;
-          text-align: left;
-        }
       }
   
       a {
@@ -143,21 +119,11 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-  
-      @media (min-width: 768px) {
-        flex-wrap: wrap;
-        flex-direction: row;
-      }
     }
   
     &__field {
       width: 100%;
       margin-bottom: 1.5rem;
-  
-      @media (min-width: 768px) {
-        max-width: calc(50% - 10px);
-      }
-  
       label {
         display: block;
         color: v.$dsa-grey;
@@ -178,4 +144,40 @@
       }
     }
   }
-  
+  @media (min-width: 768px){
+    .cta-contact {
+      &__fields{
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      &__field{
+        max-width: calc(50% - 10px);
+      }
+    }
+  }
+  @media (min-width: 1080px) {
+    .flex-spacing{
+      flex-direction: row;
+    }
+    .cta-box {
+      max-width: 32%;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: rgba(22, 51, 127, 0.15) 0px 10px 15px;
+        border-top: 4px solid v.$dsa-bright-blue;
+        span {
+          color: v.$dsa-bright-blue;
+        }
+      }
+    }
+    .cta-contact{
+      .flex-spacing{
+        align-items: center;
+        flex-direction: row;
+      }
+      &__top{
+        p{   margin: 0;
+          text-align: left;}
+      }
+    }
+  }

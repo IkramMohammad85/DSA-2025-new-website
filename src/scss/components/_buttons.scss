@@ -18,22 +18,18 @@
   .btn-primary {
     color: v.$white;
     background-color: v.$strong-blue;
-    border-color: v.$strong-blue;
     &:hover {
       color: v.$white;
-      background-color: v.$dsa-medium-blue;
-      border-color: v.$dsa-medium-blue;
+      background-color: v.$strong-blue;
     }
     &:active {
       &:hover {
         color: v.$white;
-        background-color: v.$dsa-medium-blue;
-        border-color: v.$dsa-medium-blue;
+        background-color: v.$strong-blue;
       }
       &:focus {
         color: v.$white;
-        background-color: v.$dsa-medium-blue;
-        border-color: v.$dsa-medium-blue;
+        background-color: v.$strong-blue;
       }
     }
   }

@@ -1,0 +1,41 @@
+/* Ripple Out */
+@-webkit-keyframes hover-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  @keyframes hover-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  .hover-ripple-out {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  .hover-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: #0056b3 solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    border-radius: 2px;
+  }
+  .hover-ripple-out:hover:before, .hover-ripple-out:focus:before, .hover-ripple-out:active:before {
+    -webkit-animation-name: hover-ripple-out;
+    animation-name: hover-ripple-out;
+  }

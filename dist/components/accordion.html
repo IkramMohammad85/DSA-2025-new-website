@@ -1546,7 +1546,7 @@
                         item.classList.add("active");
                         content.style.maxHeight = content.scrollHeight + "px";
                         setTimeout(() => {
-                        const yOffset = -100; // Adjust this value as needed
+                        const yOffset = -100;
                         const y = item.getBoundingClientRect().top + window.scrollY + yOffset;
                         window.scrollTo({ top: y, behavior: "smooth" });
                     }, 300);

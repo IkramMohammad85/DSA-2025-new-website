@@ -1,7 +1,5 @@
 @use "../base/variables" as v; 
-html {
-  scroll-behavior: smooth;
-}
+
 .search-filter-block {
   padding-top: 4rem;
   .career-search_form {

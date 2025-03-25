@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create();
 
 // Compile SCSS → Minified CSS
 function styles() {
-  return gulp.src('./src/scss/main.scss')
+  return gulp.src(['./src/scss/main.scss', './src/scss/mockups/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())

@@ -16,7 +16,7 @@ $color_1: white;
 				background: white;
 				cursor: pointer;
 				font-weight: bold;
-				transition: background 0.3s ease;
+				transition: background 0.5s ease;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
@@ -27,13 +27,13 @@ $color_1: white;
 				font-weight: 200;
 				border-bottom: solid 1px #c6c6c6;
 				svg {
-					transition: 0.3s ease;
+					transition: 0.5s ease;
 				}
 			}
 			.accordion-content {
 				max-height: 0;
 				overflow: hidden;
-				transition: all 0.3s ease-in-out;
+				transition: all 0.5s ease-in-out;
 				background: #fff;
 				.accordion-content-inner {
 					padding: 20px;

@@ -1615,7 +1615,7 @@
                 const yOffset = -100;
                 const y = item.getBoundingClientRect().top + window.scrollY + yOffset;
                 window.scrollTo({ top: y, behavior: "smooth" });
-              }, 300);
+              }, 700);
             });
           } else {
             content.style.maxHeight = content.scrollHeight + "px";
@@ -1623,7 +1623,7 @@
               content.style.maxHeight = "0px";
               setTimeout(() => {
                 item.classList.remove("active");
-              }, 300);
+              }, 700);
             });
           }
         });

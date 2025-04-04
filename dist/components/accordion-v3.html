@@ -1518,28 +1518,28 @@
 //             const isOpen = targetPanel.classList.contains("show");
 //             const accordionItem = this.closest('.accordion3-item');
 
-//             // Close all other panels and update aria-expanded
+//             
 //             document.querySelectorAll('.accordion3-collapse').forEach(panel => {
 //                 if (panel !== targetPanel) {
 //                     panel.classList.remove("show");
 
-//                     // Also set corresponding button aria-expanded to false
+//                     
 //                     const btn = document.querySelector(`[data-bs-target="#${panel.id}"]`);
 //                     if (btn) btn.setAttribute("aria-expanded", "false");
 
-//                     // Remove arrow rotation if any
+//                    
 //                     const icon = btn?.querySelector(".arrow");
 //                     if (icon) icon.classList.remove("rotate");
 //                 }
 //             });
 
-//             // Toggle current panel
+//            
 //             targetPanel.classList.toggle("show");
 
-//             // Update aria-expanded of clicked button
+//             
 //             this.setAttribute("aria-expanded", String(!isOpen));
 
-//             // Toggle arrow icon on current button
+//            
 //             const arrowIcon = this.querySelector(".arrow");
 //             if (arrowIcon) {
 //                 if (!isOpen) {
@@ -1549,7 +1549,7 @@
 //                 }
 //             }
 
-//             // Scroll the full accordion item into view (no delay)
+//            
 //             if (!isOpen) {
 //                 accordionItem.scrollIntoView({ behavior: "smooth", block: "start" });
 //             }

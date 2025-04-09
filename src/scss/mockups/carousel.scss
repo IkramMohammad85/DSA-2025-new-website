@@ -1,0 +1,136 @@
+.c-logo {
+  width: 145px;
+  margin: 0 auto;
+  img {
+    margin: auto auto;
+  }
+}
+
+.splide__pagination__page.is-active {
+  background: #0056b3 !important;
+}
+
+.country-name {
+  color: #000;
+  text-align: center;
+  background-color: #cadef4;
+  width: 120px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.our-experts {
+  width: 200px;
+  margin: 0 auto;
+  .expert-name-thumbnail {
+    img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.expert-name-thumbnail,
+.expert-name,
+.expert-position {
+  text-align: center;
+}
+
+.expert-social-contact img {
+  margin: 0 auto;
+}
+
+.our-guide {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.guide-thumbnail {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.carousel {
+  background: #fafafa;
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.carousel-cell {
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.embla {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1440px;
+  overflow: hidden;
+}
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 auto;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+}
+.embla__prev,
+.embla__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  z-index: 2;
+  cursor: pointer;
+}
+.embla__prev {
+  left: 0.5rem;
+}
+.embla__next {
+  right: 0.5rem;
+}
+.embla__dots {
+  text-align: center;
+}
+.embla__dot {
+  background: #ccc;
+  border: none;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.embla__dot--selected {
+  background: #333;
+}
+.flickity-page-dots {
+  margin-left: 0 !important;
+  margin-bottom: 2rem !important;
+}
+@media (max-width: 768px) {
+  .embla .our-experts {
+    width: 300px;
+  }
+  .embla .c-logo {
+    width: 300px;
+  }
+  .embla .country-name {
+    width: 300px;
+  }
+}

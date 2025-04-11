@@ -1477,42 +1477,7 @@
   </footer>
   
 
-<script>
-    // Open on trigger
-document.querySelectorAll('[data-popup]').forEach(trigger => {
-  trigger.addEventListener('click', e => {
-    e.preventDefault();
-    const id = trigger.getAttribute('data-popup');
-    const popup = document.getElementById(id);
-    if (popup) popup.classList.add('active');
-  });
-});
 
-// Close on overlay or close button click
-document.querySelectorAll('.popup-overlay').forEach(popup => {
-  popup.addEventListener('click', e => {
-    if (e.target === popup || e.target.classList.contains('popup-close')) {
-      popup.classList.remove('active');
-    }
-  });
-});
-
-// Dynamic open function
-function openPopupById(id) {
-  const popup = document.getElementById(id);
-  if (popup) popup.classList.add('active');
-}
-
-// Example: scroll-triggered popup bottom right
-let bottomPopupShown = false;
-window.addEventListener('scroll', () => {
-  if (!bottomPopupShown && window.scrollY > 500) {
-    openPopupById('bottom-popup');
-    bottomPopupShown = true;
-  }
-});
-
-</script>
   <script src="../js/main.min.js"></script>
 </body>
 

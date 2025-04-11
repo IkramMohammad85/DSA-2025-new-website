@@ -1,6 +1,17 @@
 
 
 
+
+.btn-outline-white {
+  color:#fff;
+  background-color: transparent;
+  border-color: #fff;
+  &:hover {
+    color: #fff;
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+}
 .c-logo {
   width: 145px;
   margin: 0 auto;

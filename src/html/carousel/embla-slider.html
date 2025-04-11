@@ -25,14 +25,62 @@
 
 <body>
     @@include("../includes/header.html")
-    <section class="masthead">
-        <div class="masthead__text">
-            <div class="section-wrapper flex-wrapper flex-column">
-                <h1>Client Success Stories</h1>
+
+    <section>
+        <div class="embla" id="main-h-slider"  data-arrows="false" data-type="fade" interval= '5000'>
+            <div class="embla__viewport">
+              <div class="embla__container">
+        
+                <!-- Slide 1 -->
+                <div class="embla__slide">
+                  <img src="https://www.dezshira.com/userfiles/homepage/april-2023/HP_slide1.jpg" class="slide-bg" />
+                  <div class="slide-content">
+                    <h2 class="slide-title">Seamlessly Manage Your Operations across Multiple Countries in Asia</h2>
+                    <p class="slide-desc">Trusted for 30+ years, we support clients across Asia with accounting, tax, HR, IT, and more.</p>
+                    <a href="#" class="slide-btn">Start Your Journey</a>
+                  </div>
+                  <div class="trending-insights">
+                    <div class="ti-heading">
+                        Trending Insight
+                    </div>
+                    <ul class="ti-list">
+                        <li>Asia Manufacturing Index 2025</li>
+                        <li>Doing Business in Asia 2025</li>
+                        <li>Vietnam Manufacturing Tracker</li>
+                    </ul>
+                  </div>
+                </div>
+        
+                <!-- Slide 2 -->
+                <div class="embla__slide">
+                  <img src="https://www.dezshira.com/userfiles/homepage/manage_your_asia_office.webp" class="slide-bg" />
+                  <div class="slide-content">
+                    <h2 class="slide-title">Choosing the right location for your business in the Asian market</h2>
+                    <p class="slide-desc">Use multi-country benchmarking to find the best Asian markets for your sector.</p>
+                    <a href="#" class="slide-btn">Start Your Journey</a>
+                    
+                  </div>
+                  <div class="trending-insights">
+                    <div class="ti-heading">
+                        Trending Insight
+                    </div>
+                    <ul class="ti-list">
+                        <li>China's Labor Law in Review</li>
+                        <li>Vietnam's 2025 Job Market</li>
+                        <li>India Employee Retention Strategy</li>
+                    </ul>
+                  </div>
+
+                </div>
+        
+              </div>
             </div>
-        </div>
-        <div class="masthead__bg"><img alt="Client Success Stories" src="/img/success-stories/Brochures_1300x200.webp">
-        </div>
+        
+            
+        
+            <!-- Pagination Dots -->
+            <div class="embla__dots"></div>
+          </div>
     </section>
 
     <section style="padding-top: 3rem; padding-bottom: 3rem;">
@@ -401,11 +449,12 @@
         });
     </script>
 
-
+    
+    
     <script src="../js/main.min.js"></script>
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
 
-
+    
 
 </body>
 

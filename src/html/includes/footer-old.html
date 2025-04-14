@@ -1,0 +1,309 @@
+<style>
+    .sitefooter {
+  background-color: #0c2740;
+  padding: 4rem 0;
+  .subhead {
+    color: #fff;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+  &--top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  &--right {
+    width: 100%;
+  }
+  &--left {
+  
+    p{color: #fff;}
+  }
+  &__social {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  &__newsletter-form {
+    display: flex;
+    margin-bottom: 2rem;
+
+    input[type="email"],
+    input[type="email"]::-webkit-input-placeholder {
+      font-size: 0.875rem;
+      width: 100%;
+      padding: 8px 10px;
+      display: inline-block;
+      border-color: #e7e7e7;
+      background-color: #e7e7e7;
+    }
+    input[type="submit"] {
+      color: #fff;
+      background-color: #0056b3;
+      padding: 0 1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    &--col:nth-child(1) {
+      width: 12rem;
+      margin-right: 4rem;
+    }
+    &--col:nth-child(2) {
+      width: 16rem;
+      margin-right: 2rem;
+    }
+    &--col:nth-child(3) {
+      width: 8rem;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #fff;
+      font-size: 0.875rem;
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &--bot {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    p {
+      font-size: 0.875rem;
+    }
+  }
+  &__copyright {
+    opacity: 0.6;
+    margin-bottom: 1rem;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  &__submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+    li + li {
+      margin-left: 1.5rem;
+    }
+    a {
+      color: #fff;
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+.sprite-social {
+  &:before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/sprite-all.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+
+  &-fb:before {
+    background-position: 0 -84px;
+  }
+
+  &-tt:before {
+    background-position: -96px -84px;
+  }
+
+  &-li:before {
+    background-position: -48px -84px;
+  }
+
+  &-yt:before {
+    background-position: -72px -84px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .sitefooter {
+    &--top {
+      flex-direction: row;
+    }
+    &--left {
+      min-width: 272px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+        
+      }
+      &:after {
+        content: "";
+        display: none;
+        height: 1px;
+        width: 100%;
+        margin: 2rem 0 3rem;
+        background-color: #ced4da;
+        opacity: 0.25;
+      }
+    }
+    &--right {
+      max-width: 42rem;
+    }
+    &__newsletter-form {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .sitefooter {
+    &--left {
+      min-width: 300px;
+    }
+    &__grid {
+      flex-direction: row;
+    }
+    &--bot {
+      flex-direction: row;
+    }
+    &__copyright {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1180px) {
+  .sitefooter {
+    &--right {
+      max-width: 46rem;
+    }
+    &__grid {
+      &--col:nth-child(1) {
+        margin-right: 6rem;
+      }
+      &--col:nth-child(2) {
+        margin-right: 4rem;
+      }
+    }
+  }
+}
+
+
+</style>
+
+<footer class="sitefooter">
+    <div class="section-wrapper">
+      <div class="sitefooter--top">
+        <div class="sitefooter--left">
+          <div class="sitefooter__newsletter">
+            <p>Subscribe to our latest insights</p>
+            <form action="/register" method="GET">
+              <div class="sitefooter__newsletter-form">
+                <input type="email" name="email" placeholder="Enter your e-mail">
+                <input type="submit" value="Sign Up">
+              </div>
+            </form>
+          </div>
+          <div class="sitefooter__social">
+            <p>Follow Dezan Shira &amp; Associates</p>
+            <ul>
+              <li><a href="https://www.facebook.com/DezanShira" aria-label="Follow us on Facebook"><span class="sprite-social sprite-social-fb" aria-hidden="true"></span></a></li>
+              <li><a href="https://twitter.com/dezanshira" aria-label="Follow us on Twitter"><span class="sprite-social sprite-social-tt" aria-hidden="true"></span></a></li>
+              <li><a href="https://www.linkedin.com/company/51688" aria-label="Follow us on linkedin"><span class="sprite-social sprite-social-li" aria-hidden="true"></span></a></li>
+              <li><a href="https://www.youtube.com/channel/UCDuNrJ3qUVmxinM5i6trjtA" aria-label="Follow us on YouTube"><span class="sprite-social sprite-social-yt" aria-hidden="true"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sitefooter--right">
+          <div class="sitefooter__grid">
+            <div class="sitefooter__grid--col">
+              <h3 class="subhead">About Us</h3>
+              <ul>
+                <li><a href="/about-us/our-firm.html">Our Firm</a></li>
+                <li><a href="/about-us/history-milestones.html">History</a></li>
+                <li><a href="/personnel">Personnel</a></li>
+                <!-- <li><a href="/personnel">Our Experts</a></li> -->
+                <li><a href="https://www.dezshira.com/updates/">News</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/about-us/media.html">Media</a></li>
+                <li><a href="/partnerships/global">Partnerships</a></li>
+                <li><a href="/career">Careers</a></li>
+              </ul>
+            </div>
+            <div class="sitefooter__grid--col">
+              <h3 class="subhead">Our Services</h3>
+              <ul>
+                <li><a href="/services/accounting-reporting">Accounting</a></li>
+                <li><a href="/services/audit-financial-review">Audit and Financial Review</a></li>
+                <li><a href="/services/business-advisory-services">Business Advisory </a></li>
+                <li><a href="/services/business-intelligence-solutions">Business Intelligence</a></li>
+                <li><a href="/services/business-advisory-services/corporate-establishment">Corporate Establishment and Governance </a></li>
+                <li><a href="/services/legal-financial-due-diligence">Due Diligence</a></li>
+                <li><a href="/services/payroll-human-resource-administration">HR and Payroll</a></li>
+                <li><a href="/services/business-advisory/intellectual-property-services">Intellectual Property</a></li>
+                <li><a href="/services/business-advisory/mergers-acquisitions-services">Mergers and Acquisitions </a></li>
+                <li><a href="/services/outbound-direct-investment">Outbound Direct Investment</a></li>
+                <li><a href="/services/risk-management-compliance">Risk Management</a></li>
+                <li><a href="/services/tax">Tax</a></li>
+                <li><a href="/services/information-technology-solutions">Technology</a></li>
+              </ul>
+            </div>
+            <div class="sitefooter__grid--col">
+              <h3 class="subhead">Contact Us</h3>
+              <ul>
+                <li><a href="/contact">Enquiry Form</a></li>
+                <li><a href="/office">Our Offices</a></li>
+                <li><a href="/international-desk">International Desks</a></li>
+              </ul>
+              <h3 class="subhead">Resources</h3>
+              <ul>
+                <li><a href="/investor-resource.html">Asia Briefing</a></li>
+                <li><a href="/library">Asiapedia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sitefooter--bot">
+        <div class="sitefooter__copyright">
+          <p>Hong Kong Employment Agency Licence No.: 76362</p>
+          <p>© 1992-2024 Dezan Shira &amp; Associates All Rights Reserved.</p>
+        </div>
+        <ul class="sitefooter__submenu">
+          <li><a href="https://www.dezshira.com/terms-of-use.html">Terms of Use</a></li>
+          <li><a href="https://www.dezshira.com/privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  

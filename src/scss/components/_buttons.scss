@@ -84,3 +84,22 @@
         &:hover:after{color: v.$dsa-dark-blue ; background: url(../img/esg-cta-arrow-h.svg) no-repeat left top;}
     }
 }
+
+.text-cta-link {
+  color: #217FD4;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins";
+  &:hover{color: #217FD4;}
+  &:after {
+      content: "";
+      display: inline-block;
+      background: url(../img/Arrow-text-link.svg) no-repeat left top;
+      width: 26px;
+      height: 16px;
+      margin-left: .5rem;
+      vertical-align: middle;
+  }
+}

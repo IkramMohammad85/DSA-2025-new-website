@@ -1,3 +1,6 @@
+.clients-carousel{
+  .splide{max-width: 1245px; margin: 0 auto;}
+}
 .btn-outline-white {
   color:#fff;
   background-color: transparent;
@@ -9,7 +12,7 @@
   }
 }
 .c-logo {
-  width: 145px;
+  width: 100px;
   margin: 0 auto;
   img {
     margin: auto auto;
@@ -17,7 +20,14 @@
 }
 
 .splide__pagination__page.is-active {
-  background: #0056b3 !important;
+  background: #525252 !important;
+  transform: scale(1) !important;
+}
+#main-slider{
+  .splide__pagination__page.is-active {
+    background: #fff !important;
+    transform: scale(2) !important;
+  }
 }
 
 .country-name {

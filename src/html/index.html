@@ -2,22 +2,240 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.min.css" type="text/css" />
-    <title>Dezan Shira &amp; Associates - Homepage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="../css/carousel.min.css" type="text/css" />
+  <title>Dezan Shira &amp; Associates - Homepage</title>
 </head>
 
 <body>
-    @@include("includes/header.html")
-    @@include("components/perspectives-trends.html")
-    @@include("components/led-session.html")
-    
-    @@include("components/featured-resources.html")
-    @@include("components/news-section.html")
-    @@include("components/hero-section.html")
-    @@include("includes/footer.html")
-    <script src="js/main.min.js"></script>
+  @@include("includes/header.html")
+  <section>
+    <div id="main-slider" class="splide" data-arrows="false" data-type="fade" interval='5000'>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Navigate Tariff Risks by Diversifying Your Supply Chain and Markets across Asia
+              </h2>
+              <p class="slide-desc">Country benchmarking, tariff advisory, location selection, and partner matchmaking
+                can help companies stay ahead of tariff and supply chain disruptions by operating in the right markets.
+              </p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>Asia Manufacturing Index 2025</li>
+                <li>Doing Business in Asia 2025</li>
+                <li>Vietnam Manufacturing Tracker</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/april-2023/HP_slide1.jpg" alt="Background Image"
+              class="slide-bg">
+          </li>
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Seamlessly Manage Your Operations<br> across Multiple Countries in Asia</h2>
+              <p class="slide-desc">Trusted for 30+ years, we support clients across Asia with accounting, tax, HR, IT,
+                and technology services for simple to complex structures.</p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>China's Labor Law in Review</li>
+                <li>Vietnam's 2025 Job Market</li>
+                <li>India Employee Retention Strategy</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/manage_your_asia_office.webp" alt="Background Image"
+              class="slide-bg">
+          </li>
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Build Your Asia Team with Expert Support in Recruitment, PEO and Global Staffing
+              </h2>
+              <p class="slide-desc">Build Your Asia Team with Expert Support in Recruitment, PEO and Global Staffing
+                In today's climate, businesses must build quality teams quickly and without added risk.
+              </p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>Vietnam and China Manufacturing</li>
+                <li>India’s FTA Network</li>
+                <li>Doing Business in Asia 2025</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/recrutment.jpg" alt="Background Image"
+              class="slide-bg">
+          </li>
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Scale Your Operations with AI Cloud Accounting, ERP, and Office Automation</h2>
+              <p class="slide-desc">We help businesses harness the top AI-powered solutions in cloud accounting, ERP,
+                and automation to boost the performance of their operations in Asia.</p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>China's New Company Law</li>
+                <li>Avoiding PE Risks in Vietnam</li>
+                <li>New Data Security Risk Assessment</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/DSA-homepage-02.jpg" alt="Background Image"
+              class="slide-bg">
+          </li>
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Identify Business Risks with Entity Health Checks and Partner Review Services</h2>
+              <p class="slide-desc">Doing business in Asia entails bringing on risk. We review and advise on the health
+                of your partners and companies to help you reduce risk and issues that accumulate over time.</p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>Guide to ERP Localization</li>
+                <li>Accounting and Tax Invoice Automation</li>
+                <li>Digitalization of Expenses</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/identify_business_risk.webp" alt="Background Image"
+              class="slide-bg">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  @@include("components/who-we-are.html")
+  @@include("components/our-services-section.html")
+  @@include("components/perspectives-trends.html")
+  @@include("components/led-session.html")
+  @@include("components/featured-resources.html")
+  @@include("components/news-section.html")
+  <section class="section-tb3rem-padding clients-carousel section-light-gray-bg">
+    <h2 class="heading-second text-center mb-3">Our Clients</h2>
+    <div class="splide" data-per-page="5" data-autoplay="false" data-arrows="false" data-type="slide"
+      data-pagination="true"
+      data-breakpoints='{"640":{"perPage":2,"gap":"0.7rem","height":"6rem"},"480":{"perPage":1,"gap":"0.7rem","height":"6rem"}}'>
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1728025982_Mann_Hummel.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1685893852_Mastip logo.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1728025822_RUSSELL_MINERAL_EQUIPMENT.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1685698331_ECA Italia logo.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1685893908_Metaverk logo.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1728023495_cockerill-logo.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy" src="https://resource.dezshira.com/Assets/1728611971_VSM.png"
+                alt="Mann Hummel"></div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy" src="https://resource.dezshira.com/Assets/1685698655_Ubisoft.png"
+                alt="Mann Hummel"></div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1728611984_Tiger-Water.png" alt="Mann Hummel">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include("components/hero-section.html")
+
+  @@include("includes/footer.html")
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.splide').forEach((el) => {
+        const options = {
+          perPage: parseInt(el.dataset.perPage) || 1,
+          type: el.dataset.type || 'loop',
+          autoplay: el.dataset.autoplay === 'true',
+          pagination: el.dataset.pagination !== 'false',
+          rewind: el.dataset.rewind === 'true',
+          arrows: el.dataset.arrows !== 'false',
+        };
+        if (el.dataset.breakpoints) {
+          try {
+            options.breakpoints = JSON.parse(el.dataset.breakpoints);
+          } catch (e) {
+            console.warn('Invalid breakpoints JSON for', el, e);
+          }
+        }
+        new Splide(el, options).mount();
+      });
+    });
+  </script>
+  <script>
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+      counter.innerText = '0';
+
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+
+        const increment = target / 200; // Speed control
+
+        if (current < target) {
+          counter.innerText = `${Math.ceil(current + increment)}`;
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    });
+
+  </script>
 </body>
 
 </html>

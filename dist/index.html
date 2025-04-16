@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.min.css" type="text/css" />
-    <title>Dezan Shira &amp; Associates - Homepage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.min.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    type="text/css">
+  <link rel="stylesheet" href="../css/carousel.min.css" type="text/css" />
+  <title>Dezan Shira &amp; Associates - Homepage</title>
 </head>
 
 <body>
-    <nav class="navbar">
+  <nav class="navbar">
     <div class="navbar__wrapper"><a class="navbar__logo" href="index.html"><img src="/img/logo-black.webp" alt="logo" sizes="(max-width: 480px) 240px,  380px" width="640" height="96" loading="lazy"></a>
       <div class="navbar__menuwrap navbar--desktop">
         <ul class="navbar__menu">
@@ -571,6 +574,7 @@
               </div>
             </div>
           </li>
+          <li><a class="navbar__togglemenu" href="#" aria-expanded="false" data-twice="0">Events & Webinars</a></li>
           <li><a class="navbar__togglemenu" href="#" aria-expanded="false" data-twice="0">Resources</a>
             <div class="navbar__megamenu navbar__megamenu--three">
               <div class="megamenu-wrapper">
@@ -859,7 +863,7 @@
           <li><a href="#" class="hover-ripple-out">Contact Us</a></li>
         </ul>
         <ul class="navbar__iconmenu">
-          <li><a href="#" data-twice="0" aria-label="Search here"><i class="icon-search" aria-hidden="true"></i></a>
+          <li><a href="#" data-twice="0" aria-label="Search here"><i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i></a>
             <div class="navbar__search">
               <div class="section-wrapper">
                 <div class="navbar__search__box">
@@ -885,7 +889,7 @@
               </ul>
             </aside>
           </li>
-          <li class="navbar__iconmenu__login"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><i class="icon-user"></i><span>Login</span></a>
+          <li class="navbar__iconmenu__login"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
             <aside class="navbar__accessbox">
               <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
                 <p>A place to gain knowledge and better understand business in Asia</p><a class="navbar__accessbox__close" href="#" onclick="toggle_modal('.navbar__accessbox');"><span class="sprite-close"></span></a>
@@ -936,29 +940,198 @@
       <button class="navbar__hamburger navbar--mobile" aria-label="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
     </div>
   </nav>
-    <div class="section-wrapper section-top-bottom-padding">
+  <section>
+    <div id="main-slider" class="splide" data-arrows="false" data-type="fade" interval='5000'>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Navigate Tariff Risks by Diversifying Your Supply Chain and Markets across Asia
+              </h2>
+              <p class="slide-desc">Country benchmarking, tariff advisory, location selection, and partner matchmaking
+                can help companies stay ahead of tariff and supply chain disruptions by operating in the right markets.
+              </p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>Asia Manufacturing Index 2025</li>
+                <li>Doing Business in Asia 2025</li>
+                <li>Vietnam Manufacturing Tracker</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/april-2023/HP_slide1.jpg" alt="Background Image"
+              class="slide-bg">
+          </li>
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Seamlessly Manage Your Operations<br> across Multiple Countries in Asia</h2>
+              <p class="slide-desc">Trusted for 30+ years, we support clients across Asia with accounting, tax, HR, IT,
+                and technology services for simple to complex structures.</p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>China's Labor Law in Review</li>
+                <li>Vietnam's 2025 Job Market</li>
+                <li>India Employee Retention Strategy</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/manage_your_asia_office.webp" alt="Background Image"
+              class="slide-bg">
+          </li>
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Build Your Asia Team with Expert Support in Recruitment, PEO and Global Staffing
+              </h2>
+              <p class="slide-desc">Build Your Asia Team with Expert Support in Recruitment, PEO and Global Staffing
+                In today's climate, businesses must build quality teams quickly and without added risk.
+              </p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>Vietnam and China Manufacturing</li>
+                <li>India’s FTA Network</li>
+                <li>Doing Business in Asia 2025</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/recrutment.jpg" alt="Background Image"
+              class="slide-bg">
+          </li>
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Scale Your Operations with AI Cloud Accounting, ERP, and Office Automation</h2>
+              <p class="slide-desc">We help businesses harness the top AI-powered solutions in cloud accounting, ERP,
+                and automation to boost the performance of their operations in Asia.</p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>China's New Company Law</li>
+                <li>Avoiding PE Risks in Vietnam</li>
+                <li>New Data Security Risk Assessment</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/DSA-homepage-02.jpg" alt="Background Image"
+              class="slide-bg">
+          </li>
+          <li class="splide__slide">
+            <div class="slider-content">
+              <h2 class="slide-title">Identify Business Risks with Entity Health Checks and Partner Review Services</h2>
+              <p class="slide-desc">Doing business in Asia entails bringing on risk. We review and advise on the health
+                of your partners and companies to help you reduce risk and issues that accumulate over time.</p>
+              <a href="#" class="btn btn-outline-white">Start Your Journey</a>
+            </div>
+            <div class="trending-insights">
+              <div class="ti-heading">
+                Trending Insight
+              </div>
+              <ul class="ti-list">
+                <li>Guide to ERP Localization</li>
+                <li>Accounting and Tax Invoice Automation</li>
+                <li>Digitalization of Expenses</li>
+              </ul>
+            </div>
+            <img src="https://www.dezshira.com/userfiles/homepage/identify_business_risk.webp" alt="Background Image"
+              class="slide-bg">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="section-wrapper section-top-padding">
+    <div class="card-grid">
+        <div class="card-horizontal">
+            <div class="card-body">
+                <h3 class="heading-second">Who We Are</h3>
+                <p class="card-text">With over 30 years of expertise, Dezan Shira & Associates is a pan-Asia, multi-disciplinary professional services firm, guiding international investors and businesses through Asia's complex regulatory landscape with corporate, professional, and technology services essential for growth.</p>
+                <section class="counter-section">
+                    <div class="counter-box">
+                        <span class="counter" data-target="600">0+</span>
+                      <h3>professionals</h3>
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter" data-target="35">0</span>
+                      <h3>offices</h3>
+                      
+                    </div>
+                    <div class="counter-box">
+                        <span class="counter" data-target="21">0</span>
+                      <h3>countries</h3>
+                     
+                    </div>
+                  </section>
+                <a href="#" class="btn btn-primary">Download Brochure</a>
+                
+            </div>
+            <div class="card-image-container">
+                <script src="https://content.jwplatform.com/players/DSu3Pgpc-lKmNhB9Q.js"></script>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="section-wrapper section-top-padding">
+    <div class="card-grid">
+        <div class="card-horizontal">
+            <div class="card-image-container">
+                <img src="/img/Growth In Asia.webp"alt="Growth In Asia">
+            </div>
+            <div class="card-body">
+                <h3 class="heading-second">Our Services</h3>
+                <p class="card-text">We provide innovative, tailored advisory solutions and expert guidance on corporate services to help businesses thrive in dynamic global markets.</p>
+                <ul class="service-left">
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Audit and Financial Review</a></li>
+                    <li><a href="#">Business Advisory</a></li>
+                    <li><a href="#">Business Intelligence</a></li>
+                    <li><a href="#">China Outbound | 境外直接投资</a></li>
+                    <li><a href="#">Corporate Establishment</a></li>
+                    <li><a href="#">HR and Payroll</a></li>
+                    <li><a href="#">Mergers and Acquisitions</a></li>
+                    <li><a href="#">Risk Management and ESG</a></li>
+                    <li><a href="#">Tax</a></li>
+                    <li><a href="#">Technology</a></li>
+                  </ul>
+                <a href="#" class="text-cta-link">Connect with a China Expert</a>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="section-wrapper section-top-padding">
     <h2 class="heading-second text-center">Perspectives and Trends</h2>
     <h3 class="heading-third text-center mb-3">Our latest thinking, designed to keep you informed on key market trends</h3>
-
     <div class="card-grid">
         <div class="card card-horizontal">
             <div class="card-body">
-                <h3 class="card-title">Vietnam and China Manufacturing: Key Comparisons For Business Strategies</h3>
+                <h3 class="card-title"><a href="#" target="_blank">Vietnam and China Manufacturing: Key Comparisons For Business Strategies</a></h3>
                 <p class="card-text">Vietnam is a cost-effective, strategic "China Plus One" manufacturing hub, with low labor costs, rising tech investment, and favorable trade conditions.</p>
                 <div class="card-buttons"><a href="#" class="card-button">Read More</a></div>
                 
             </div>
             <div class="card-image-container">
-                <img src="https://www.asiabriefing.com/userfiles/country-guides/topics_images/china-where-to-invest.jpg" alt="Factory at Night" class="card-image">
+                <img src="/img/trend1.webp" alt="Factory at Night" class="card-image">
             </div>
         </div>
 
         <div class="card card-horizontal">
             <div class="card-image-container">
-                <img src="https://www.asiabriefing.com/userfiles/country-guides/topics_images/china-sector-insights.jpg" alt="Cable-Stayed Bridge" class="card-image">
+                <img src="/img/trend2.webp" alt="Cable-Stayed Bridge" class="card-image">
             </div>
             <div class="card-body">
-                <h3 class="card-title">Explore Doing Business in Asia</h3>
+                <h3 class="card-title"><a href="#" target="_blank">Explore Doing Business in Asia</a></h3>
                 <p class="card-text">This guide offers key economic, geographic, and regulatory insights to help investors, managers, and expats navigate business in India.</p>
                 <div class="card-buttons">
                     <a href="#" class="card-button">China</a>
@@ -973,7 +1146,7 @@
         </div>
     </div>
 </div>
-    <div class="section-wrapper section-top-bottom-padding">
+  <div class="section-wrapper section-top-bottom-padding">
     <h2 class="heading-second text-center">Register for Our Expert-Led Sessions</h2>
     <h3 class="heading-third text-center mb-3">Stay Ahead with Us</h3>
 
@@ -981,7 +1154,7 @@
         <div class="left-column">
             <div class="session-card-left">
                 <div class="image-container">
-                    <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/03/Dezshira-HCMC-Office-Warming_26032025-2-1.jpg?fit=300%2C200&ssl=1" alt="Seville, Spain" class="session-image">
+                    <img src="/img/span-thubnail.webp" alt="Seville, Spain" class="session-image">
                     <div class="date-badge-left">
                         <span>April</span>
                         <strong>10</strong>
@@ -989,7 +1162,7 @@
                 </div>
                 <div class="conference-details">
                     <div class="conference-type">Conference</div>
-                    <h3 class="conference-title">Meet with Alberto Vetteretti at LEA European Regional Conference & Private Equity Panel Discussion</h3>
+                    <h3 class="conference-title"><a href="#" target="_blank">Meet with Alberto Vetteretti at LEA European Regional Conference & Private Equity Panel Discussion</a></h3>
                     <p class="conference-description">In this session, our panel will share their experiences and approaches in the Private Equity landscape. You will hear perspectives from the UK, US and Asia. By the end of this...</p>
                     <a href="#" class="text-cta-link">Register</a>
                 </div>
@@ -1004,7 +1177,7 @@
                 </div>
                 <div class="session-info">
                     <div class="session-type-right">Seminar</div>
-                    <h3 class="session-title-right">Decoding Singapore's Budget 2025: Implications for Foreign Businesses and Investors</h3>
+                    <h3 class="session-title-right"><a href="#" target="_blank">Decoding Singapore's Budget 2025: Implications for Foreign Businesses and Investors</a></h3>
                     <span class="location-badge-right">SINGAPORE</span>
                 </div>
             </div>
@@ -1016,8 +1189,8 @@
                 </div>
                 <div class="session-info">
                     <div class="session-type-right">Webinar</div>
-                    <h3 class="session-title-right">Tax and Accounting In China's Digital Era: Practical Strategies for Business Advancement</h3>
-                    <span class="location-badge-right">CHINA</span>
+                    <h3 class="session-title-right"><a href="#" target="_blank">Tax and Accounting In China's Digital Era: Practical Strategies for Business Advancement</a></h3>
+                    <span class="location-badge-right badge-cb">CHINA</span>
                 </div>
             </div>
 
@@ -1028,8 +1201,8 @@
                 </div>
                 <div class="session-info">
                     <div class="session-type-right">Seminar/Hybrid Event</div>
-                    <h3 class="session-title-right">Vietnam 2025: Latest FDI Updates, Key Market Trends & Economic Outlook...</h3>
-                    <span class="location-badge-right">VIETNAM</span>
+                    <h3 class="session-title-right"><a href="#" target="_blank">Vietnam 2025: Latest FDI Updates, Key Market Trends & Economic Outlook...</a></h3>
+                    <span class="location-badge-right badge-vb">VIETNAM</span>
                 </div>
             </div>
             <a href="#" class="text-cta-link">All Virtual and In-Person Events</a>
@@ -1038,8 +1211,7 @@
 
     
 </div>
-    
-    <section class="section-top-bottom-padding section-light-gray-bg">
+  <section class="section-top-bottom-padding section-light-gray-bg">
 <div class="section-wrapper">
     <div class="featured-resources-heading">
         <h2 class="heading-second">Featured Resources</h2>
@@ -1049,8 +1221,18 @@
     <div class="card-2columns">
         <div class="card-thubnail"><img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/04/Nathaniel-Rushforth-Shares-Insights-on-Cross-Border-Data-Transfer-with-a-German-Business-Delegation-1.jpg" alt=""></div>
         <div class="card-content">
-            <h4>China Takes Top Spot on Asia Manufacturing Index 2025</h4>
+            <h4><a href="#" target="_blank">China Takes Top Spot on Asia Manufacturing Index 2025</a></h4>
             <p>For the second consecutive year, China ranks first in the Asia Manufacturing Index, maintaining its leadership despite significant shifts in its production  landscape and traditional markets. </p>
+            <div class="profile-card">
+                <div class="profile-thumbnail">
+                    <img src="https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Kyle_Freeman_200x200.jpg" alt="Qian Zhou, Editor at China Briefing" class="thumbnail" loading="lazy">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name"><a href="#">Kyle Freeman</a></div>
+                    <div class="profile-title">Partner</div>
+                    </div>
+            </div>
+            
         </div>
     </div>
     <div class="card-single-column">
@@ -1058,33 +1240,39 @@
             <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/04/Nathaniel-Rushforth-Shares-Insights-on-Cross-Border-Data-Transfer-with-a-German-Business-Delegation-1.jpg" alt="">
         </div>
         <div class="card-content">
-            <h4>China Takes Top Spot on Asia Manufacturing Index 2025</h4>
+            <h4><a href="#" target="_blank">China Takes Top Spot on Asia Manufacturing Index 2025</a></h4>
             <p>For the second consecutive year, China ranks first in the Asia Manufacturing Index, maintaining its leadership despite significant shifts in its production  landscape and traditional markets. </p>
+            <div class="session-type-right">Case Study</div>
         </div>
     </div>
     <div class="card-2columns">
         <div class="card-thubnail"><img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/03/Dezan-Shira-Associates-Engages-with-Finnish-Business-Leaders-in-Shanghai.jpg" alt=""></div>
         <div class="card-content">
-            <h4>China Takes Top Spot on Asia Manufacturing Index 2025</h4>
+            <h4><a href="#" target="_blank">China Takes Top Spot on Asia Manufacturing Index 2025</a></h4>
             <p>For the second consecutive year, China ranks first in the Asia Manufacturing Index, maintaining its leadership despite significant shifts in its production  landscape and traditional markets. </p>
+            <div class="session-type-right">Publication</div>
         </div>
     </div>
     <div class="card-single-column">
-        <div class="card-thumbnail">
-            <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/04/indchl.jpg" alt="">
-        </div>
         <div class="card-content">
-            <h4>China Takes Top Spot on Asia Manufacturing Index 2025</h4>
-            <p>For the second consecutive year, China ranks first in the Asia Manufacturing Index, maintaining its leadership despite significant shifts in its production  landscape and traditional markets. </p>
+            <vedio class="event-video-item" src="https://dp3rhc3eohw2j.cloudfront.net/Distribute/simplifying-payroll-in-asias-complex-environment/7ac51b7f-027e-4c6f-9644-48e11a479754/MP4/simplifying-payroll-in-asias-complex-environment_720.mp4" data-cover="https://resource.dezshira.com/resize/650x400/Resources/9564/Simplifying-Payroll-in-Asia-s-Complex-Environment-Multi-Country-Payroll-Software.jpg" onclick="var e=document.getElementById('eventModal');e.style.display='block';e.classList.add('show-modal');">
+                <figure class="ve">
+                    <svg height="75" viewBox="0 0 512 512" width="75" xmlns="http://www.w3.org/2000/svg"><path d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:16px"/><path d="M216.32,334.44,330.77,265.3a10.89,10.89,0,0,0,0-18.6L216.32,177.56A10.78,10.78,0,0,0,200,186.87V325.13A10.78,10.78,0,0,0,216.32,334.44Z"/></svg><img src="https://resource.dezshira.com/resize/650x400/Resources/9564/Simplifying-Payroll-in-Asia-s-Complex-Environment-Multi-Country-Payroll-Software.jpg" alt="China Regulatory Watch - IP Protection">
+                </figure>
+                <h2><a href="#">China Regulatory Watch - IP Protection</a>
+                <span>Case Study</span>
+                </h2>
+              
+              </vedio>
         </div>
     </div>
 </div>
 </div>
 </section>
-    <section class="news-section section-top-bottom-padding">
+  <section class="news-section section-top-bottom-padding">
     <div class="news-featured">
-      <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/04/Nathaniel-Rushforth-Shares-Insights-on-Cross-Border-Data-Transfer-with-a-German-Business-Delegation-1.jpg" alt="ASEAN Director Summit" class="news-image" />
-      <h3 class="news-title">ASEAN Director Addresses South China–Indonesia Summit in Shenzhen</h3>
+      <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/01/微信图片_20250120172651-scaled.jpg?fit=300%2C200&ssl=1" alt="ASEAN Director Summit" class="news-image" />
+      <h3 class="news-title"><a href="#" target="_blank">ASEAN Director Addresses South China–Indonesia Summit in Shenzhen</a></h3>
       <p class="news-description">
         On January 17, Marco Förster, ASEAN Director at Dezan Shira & Associates, participated remotely in the
         “Expert’s Briefing on Indonesia and Southern China Future Trajectory,” an event hosted by the Consulate General
@@ -1097,40 +1285,97 @@
   
       <div class="news-item">
         <span class="news-date">December 12, 2024</span>
-        <p class="news-snippet">Ines Liu Joins the “Women Leaders – Driving Business with China” Forum in Victoria</p>
+        <p class="news-snippet"><a href="#" target="_blank">Liu Joins the “Women Leaders – Driving Business with China” Forum in Victoria</a></p>
       </div>
   
       <div class="news-item">
         <span class="news-date">November 14, 2024</span>
-        <p class="news-snippet">David Stepat of Dezan Shira & Associates Shares Insights on Wealth Management Strategies at Hong Kong HNWI Planning Event</p>
+        <p class="news-snippet"><a href="#" target="_blank">David Stepat of Dezan Shira & Associates Shares Insights on Wealth Management Strategies at Hong Kong HNWI Planning Event</a></p>
       </div>
   
       <div class="news-item">
         <span class="news-date">November 12, 2024</span>
-        <p class="news-snippet">Alberto Vettoretti and Riccardo Benussi Attend LEA Global 2024 World Conference in Vienna</p>
+        <p class="news-snippet"><a href="#" target="_blank">Alberto Vettoretti and Riccardo Benussi Attend LEA Global 2024 World Conference in Vienna</a></p>
       </div>
   
       <a href="#" class="text-cta-link">View All News</a>
     </div>
   </section>
   
-    <section class="hero-section">
+  <section class="section-tb3rem-padding clients-carousel section-light-gray-bg">
+    <h2 class="heading-second text-center mb-3">Our Clients</h2>
+    <div class="splide" data-per-page="5" data-autoplay="false" data-arrows="false" data-type="slide"
+      data-pagination="true"
+      data-breakpoints='{"640":{"perPage":2,"gap":"0.7rem","height":"6rem"},"480":{"perPage":1,"gap":"0.7rem","height":"6rem"}}'>
+      <div class="splide__track">
+        <div class="splide__list">
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1728025982_Mann_Hummel.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1685893852_Mastip logo.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1728025822_RUSSELL_MINERAL_EQUIPMENT.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1685698331_ECA Italia logo.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1685893908_Metaverk logo.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1728023495_cockerill-logo.png" alt="Mann Hummel">
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy" src="https://resource.dezshira.com/Assets/1728611971_VSM.png"
+                alt="Mann Hummel"></div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy" src="https://resource.dezshira.com/Assets/1685698655_Ubisoft.png"
+                alt="Mann Hummel"></div>
+          </div>
+          <div class="splide__slide">
+            <div class="c-logo"><img loading="lazy"
+                src="https://resource.dezshira.com/Assets/1728611984_Tiger-Water.png" alt="Mann Hummel">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero-section">
     <img
-      src="/img/hero-expert.svg"
+      src="/img/hero-expert.webp"
       alt="Hero background"
       class="hero-image"
     />
-    <div class="hero-content container">
+    <div class="section-wrapper">
+    <div class="hero-content">
       <p class="hero-text">
         We provide expert advisory and corporate services across Asia, guiding
         businesses through complex markets and regulations.
       </p>
       <div class="text-btn"><a href="#" class="btn btn-primary">Talk to an expert</a></div>
     </div>
+  </div>
 
   </section>
   
-    <footer class="footer">
+
+  <footer class="footer">
   <div class="section-wrapper">
     <div class="footer-top">
       <div class="footer-section">
@@ -1223,7 +1468,54 @@
     </div>
   </div>
 </footer>
-    <script src="js/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.splide').forEach((el) => {
+        const options = {
+          perPage: parseInt(el.dataset.perPage) || 1,
+          type: el.dataset.type || 'loop',
+          autoplay: el.dataset.autoplay === 'true',
+          pagination: el.dataset.pagination !== 'false',
+          rewind: el.dataset.rewind === 'true',
+          arrows: el.dataset.arrows !== 'false',
+        };
+        if (el.dataset.breakpoints) {
+          try {
+            options.breakpoints = JSON.parse(el.dataset.breakpoints);
+          } catch (e) {
+            console.warn('Invalid breakpoints JSON for', el, e);
+          }
+        }
+        new Splide(el, options).mount();
+      });
+    });
+  </script>
+  <script>
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+      counter.innerText = '0';
+
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText;
+
+        const increment = target / 200; // Speed control
+
+        if (current < target) {
+          counter.innerText = `${Math.ceil(current + increment)}`;
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    });
+
+  </script>
 </body>
 
 </html>

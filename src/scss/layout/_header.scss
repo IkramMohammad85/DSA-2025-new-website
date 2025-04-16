@@ -264,12 +264,12 @@ $short-browser: 720px;
     &__login {
 
 
-      > a {
-        border: 1px solid v.$gray-400;
-        border-radius: 2px;
+      > a { padding-left: 0; padding-right: 0; text-decoration: underline;
+        //border: 1px solid v.$gray-400;
+        //border-radius: 2px;
 
         span {
-          font-weight: bold;
+          font-weight: normal;
           font-size: 0.875rem;
         }
       }

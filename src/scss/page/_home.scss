@@ -1,4 +1,66 @@
 @use "../base/variables" as v;
+
+.jw-breakpoint-4 .jw-display .jw-icon{width: 20px !important; height: 60px !important;}
+.jw-display-controls{    border: solid 2px #fff !important;border-radius: 50%;}
+.jwplayer.jw-flag-aspect-mode{height: 373px !important;}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+}
+
+.profile-thumbnail {
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-name {
+    color: #344C71;
+    font-size: 18px; 
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.profile-title {
+    color: #9A9A9A;
+    font-size: 1rem; 
+    margin-top: 0;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-thumbnail {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100px;
+        height: 100px;
+    }
+    .profile-info {
+        text-align: center; 
+    }
+}
+
 //Dezan Shira News
 .news-section {
     display: grid;
@@ -18,9 +80,10 @@
         font-size: 1rem;
         margin-top: 1.5rem;
         margin-bottom: 1rem;
-        color: #1a1a1a;
+        color: #222831;
         font-family: v.$font-family-inter;
         font-weight: v.$font-weight-normal;
+        a{color: #222831;}
       }
       .news-description {
         color: #535353;
@@ -49,6 +112,7 @@
           margin-top: 0.25rem;
           font-family: v.$font-family-inter;
           font-weight: v.$font-weight-normal;
+          a{color:#222831;}
         }
       }
       .news-link {
@@ -78,7 +142,30 @@
     gap: 2rem;
     .card-content{ 
         h4{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 1rem;} 
-        p{font-family: v.$font-family-inter; font-weight: v.$font-weight-normal; color: #9A9A9A; line-height: 26px;}     
+        p{font-family: v.$font-family-inter; font-weight: v.$font-weight-normal; color: #9A9A9A; line-height: 26px;}
+        a{color: #222831;}     
+        .event-video-item{position: relative;
+            .ve svg{position: absolute;  left: 45%; top: 40%; fill: #fff; z-index: 2;}
+            h2{ z-index: 1;
+                position: absolute;
+                bottom: 0;
+                color: #fff;
+                margin: 0; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 1rem; padding: 1rem; line-height: 24px;
+                span{font-size: 14px; display: block;font-family: v.$font-family-inter; font-weight: v.$font-weight-normal;}
+            a{color:#fff}
+            }
+
+            &::after {
+                content: " ";
+                background-color: rgba(0,0,0,.5);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+              }
+              
+        }
     }
     .card-2columns{ display: grid;
         grid-template-columns: 2fr 2fr; gap: 2rem;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -98,11 +185,11 @@
     }
     .card-single-column{
         display: grid;
-        grid-template-columns: 1fr; gap: 2rem;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        grid-template-columns: 1fr; gap: 1rem;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         .card-thumbnail{ height: 180px; overflow: hidden;
         }
         .card-content{
-           padding: 0rem 1rem 1rem 1rem;;
+           padding: 1rem 1rem 1rem 1rem;;
         }
     }
 
@@ -143,7 +230,6 @@
 .session-image {
     width: 100%;
     display: block;
-    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
@@ -196,6 +282,7 @@
     color: #222831;
     font-size: 1rem;
     line-height: 24px;
+    a{color: #222831;}
 }
 
 .conference-description {
@@ -208,7 +295,7 @@
 
 .session-card-right {
     border-radius: 6px;
-    padding: 15px;
+    padding: 17px;
     display: flex;
     gap: 15px;
     align-items: flex-start;
@@ -250,27 +337,29 @@
 }
 
 .session-title-right {
-    font-weight: bold;
-    color: #343a40;
-    font-size: 1rem;
+    font-weight: 400;
+    color: #222831;
     margin-bottom: 5px;
     font-family: v.$font-family-inter;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 24px;
+    a{color: #222831;}
 }
 
 .location-badge-right {
-    background-color: #f0f0f0;
+    background-color: #FFF2D4;
     color: #212529;
-    border-radius: 4px;
+    border-top-right-radius:4px;
     padding: 3px 6px;
     font-size:13px;
-    display: inline-block;
     font-family: v.$font-family-inter;
     line-height: 22px;
     position: absolute;
     right: 0;
     top: -16px;
+    &.badge-cb{ background-color: #F3CFC1; color: #D2232A;}
+    &.badge-vb{ background-color: #E0E2EE; color: #5B69B7;}
+    &.badge-ib{ background-color:#E0E2EE; color: #1d9649;}
 }
 
 //end
@@ -292,31 +381,45 @@
 .card-horizontal {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 .card-image-container {
     position: relative;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .card-image {
     display: block;
-    width: 100%;
+    //width: 100%;
     height: auto;
     object-fit: cover;
+    img{border-radius: 4px;}
+
 }
 .card-body {
-    padding: 20px;
+    //padding: 20px;
+    .heading-second{ margin-bottom: 1.5rem;}
+    .service-left{ margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        color: #535353;
+        font-size: 1rem;
+        font-family: v.$font-family-inter;
+        font-weight: v.$font-weight-normal;
+        a{color: #535353;}
+    }
 }
 
 .card-title {
     font-size: 22px;
-    font-weight: bold;
-    color: #000;
+    color: #222831;
     margin-bottom: 10px;
     font-family: v.$font-family-Poppins;
     font-weight: v.$font-weight-SemiBold;
+    a{color: #222831;}
 }
 .card-text {
     color: #495057;
@@ -350,6 +453,35 @@
     }
 }
 //end
+
+//number counter
+.counter-section {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 2rem;
+    padding: 1rem 0rem 2rem 0rem;
+    text-align: left;
+  }
+  
+  .counter-box h3 {
+    font-size: 1rem;
+    color: #0C2740;
+    margin-bottom: 0.5rem;
+    font-family: v.$font-family-Poppins;
+    font-weight: v.$font-weight-normal;
+  }
+  
+  .counter {
+    font-size: 2rem;
+    color: #0C2740;
+    font-family: v.$font-family-inter;
+    font-weight: v.$font-weight-normal;
+  }
+  .counter-box:first-child .counter:after {
+    content: "+";
+    margin-left: 0.2rem;
+  }
+  //end
 @media (max-width: 767px) {
     .card-horizontal {
         grid-template-columns: 1fr;
@@ -360,6 +492,7 @@
     }
     .card-body {
         width: 100%;
+        .service-left{grid-template-columns: 1fr;}
     }
 }
 

@@ -14,6 +14,8 @@
     white-space: nowrap;
     display: inline-block;
     width: min-content;
+    font-family: v.$font-family-inter;
+    font-weight: v.$font-weight-SemiBold;
   }
   .btn-primary {
     color: v.$white;

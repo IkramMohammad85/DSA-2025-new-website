@@ -1,5 +1,26 @@
 @use "../base/variables" as v;
 
+.slide-title {
+    font-family: v.$font-family-Poppins;
+    font-weight: v.$font-weight-SemiBold;
+    
+  }
+  
+  .slide-desc {
+    font-family: v.$font-family-inter;
+    font-weight: v.$font-weight-normal;
+    
+    
+  }
+  .ti-heading{
+    font-family: v.$font-family-Poppins;
+    font-weight: v.$font-weight-SemiBold;
+  }
+  .ti-list{
+    font-family: v.$font-family-inter;
+    font-weight: v.$font-weight-normal;
+  }
+
 .jw-breakpoint-4 .jw-display .jw-icon{width: 20px !important; height: 60px !important;}
 .jw-display-controls{    border: solid 2px #fff !important;border-radius: 50%;}
 .jwplayer.jw-flag-aspect-mode{height: 373px !important;}

@@ -259,6 +259,7 @@
     });
   </script>
 
+
   <script>
     const counters = document.querySelectorAll('.counter');
     let countersStarted = false;
@@ -266,25 +267,27 @@
     function startCounters() {
       counters.forEach(counter => {
         counter.innerText = '0';
+        const target = +counter.getAttribute('data-target');
+        const hasPlus = counter.getAttribute('data-plus') === "true";
 
         const updateCounter = () => {
-          const target = +counter.getAttribute('data-target');
-          const current = +counter.innerText;
-
+          const current = +counter.innerText.replace('+', '');
           const increment = target / 200;
 
           if (current < target) {
             counter.innerText = `${Math.ceil(current + increment)}`;
             requestAnimationFrame(updateCounter);
           } else {
-            counter.innerText = `${target}+`;
+            counter.innerText = hasPlus ? `${target}+` : `${target}`;
           }
         };
 
         updateCounter();
       });
     }
-    const options = {
+
+    // Scroll trigger
+    const observerOptions = {
       threshold: 0.4
     };
 
@@ -296,10 +299,11 @@
           observer.unobserve(entry.target);
         }
       });
-    }, options);
+    }, observerOptions);
 
     const counterSection = document.querySelector('.counter-section');
     observer.observe(counterSection);
+
 
   </script>
   <script>

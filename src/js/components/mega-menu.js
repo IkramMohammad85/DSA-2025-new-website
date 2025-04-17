@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   }
 
-  const sections = ['serviceAreas', 'industryFocus', 'resources-section-menu', 'locations-section-menu', 'about-section-menu'];
+  const sections = ['serviceAreas', 'industryFocus', 'resources-section-menu', 'locations-section-menu', 'about-section-menu','events-webinars-menu'];
   sections.forEach(setupSection);
 
   // Add hover effect for service page subheading

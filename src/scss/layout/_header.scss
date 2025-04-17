@@ -1245,6 +1245,14 @@ ul.mega-mtabs {
         }
         ul.mega-mtabs li span{ width: 190px; display: inline-block;}
     }
+    .navbar__megamenu--five{ 
+      height: auto;
+        .page-link-block{width: 50%; height: 450px;}
+        .mega-mtab-container{ 
+          height: auto;
+        }
+        ul.mega-mtabs li span{ width: 190px; display: inline-block;}
+    }
     .navbar__megamenu--two{
       height: auto;
         .page-link-block{width: 50%; height: 460px;}
@@ -1275,7 +1283,9 @@ ul.mega-mtabs {
       }
       ul.mega-mtabs li span{ width: 170px; display: inline-block;}
     }
-    .navbar__megamenu--four, .navbar__megamenu--three, .navbar__megamenu--one  {
+
+    
+    .navbar__megamenu--four, .navbar__megamenu--three, .navbar__megamenu--one, .navbar__megamenu--five  {
         .mega-mtab-content{padding-bottom: 2rem;}  
     }
     .navbar__megamenu .megamenu-wrapper .flex-wrapper--spacing { position: relative;

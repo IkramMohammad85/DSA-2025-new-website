@@ -60,3 +60,24 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(carousel, 9000);
   }
 });
+
+// toggle btn dropdwon
+
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdowns = document.querySelectorAll('.toggleBtn-dropdown');
+
+  dropdowns.forEach(dropdown => {
+    const button = dropdown.querySelector('.toggleBtn-dropdown-button');
+
+    button.addEventListener('click', (e) => {
+      e.stopPropagation(); 
+      dropdowns.forEach(d => {
+        if (d !== dropdown) d.classList.remove('open');
+      });
+      dropdown.classList.toggle('open');
+    });
+  });
+  window.addEventListener('click', () => {
+    dropdowns.forEach(dropdown => dropdown.classList.remove('open'));
+  });
+});

@@ -122,6 +122,11 @@
     font-family: v.$font-family-inter;
     font-weight: v.$font-weight-normal;
   }
+  .ti-list li{
+    &:nth-child(3), &:last-child {
+        border: none;
+    }
+  }
 
   /* Hide overlay when playing */
 .video-container[data-state="playing"] .video-overlay {

@@ -27,6 +27,16 @@
   .splide__pagination__page.is-active {
     background: #fff !important;
     transform: scale(1.5) !important;
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 4px; height: 4px;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      border-radius: 100%;
+  }
   }
 }
 
@@ -188,7 +198,7 @@
     left: 0%;
     max-width: 1440px;
     margin: 0 auto;}
-  .splide__pagination__page{  background-color: #fff; width: 10px; height: 10px; margin: 5px;
+  .splide__pagination__page{  background-color: #fff; width: 11px; height: 11px; margin: 5px;
   &.is-active{transform: scale(1.5); background: transparent !important; border: solid 1px #fff; }
   }
   .splide__list{height: 550px;}

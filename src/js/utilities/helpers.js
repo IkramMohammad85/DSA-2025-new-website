@@ -63,21 +63,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // toggle btn dropdwon
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const dropdowns = document.querySelectorAll('.toggleBtn-dropdown');
+
+//   dropdowns.forEach(dropdown => {
+//     const button = dropdown.querySelector('.toggleBtn-dropdown-button');
+
+//     button.addEventListener('click', (e) => {
+//       e.stopPropagation(); 
+//       dropdowns.forEach(d => {
+//         if (d !== dropdown) d.classList.remove('open');
+//       });
+//       dropdown.classList.toggle('open');
+//     });
+//   });
+//   window.addEventListener('click', () => {
+//     dropdowns.forEach(dropdown => dropdown.classList.remove('open'));
+//   });
+// });
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const dropdowns = document.querySelectorAll('.toggleBtn-dropdown');
 
   dropdowns.forEach(dropdown => {
     const button = dropdown.querySelector('.toggleBtn-dropdown-button');
+    const menu = dropdown.querySelector('.toggleBtn-dropdown-menu');
 
     button.addEventListener('click', (e) => {
-      e.stopPropagation(); 
+      e.stopPropagation();
+
+      // Close other dropdowns
       dropdowns.forEach(d => {
-        if (d !== dropdown) d.classList.remove('open');
+        if (d !== dropdown) d.classList.remove('open', 'drop-up');
       });
+
       dropdown.classList.toggle('open');
+
+      if (dropdown.classList.contains('open')) {
+        // Measure space
+        const rect = menu.getBoundingClientRect();
+        const spaceBelow = window.innerHeight - rect.bottom;
+        const spaceAbove = rect.top;
+
+        const requiredHeight = menu.scrollHeight;
+
+        // Add 'drop-up' class if not enough space below
+        if (spaceBelow < requiredHeight && spaceAbove > spaceBelow) {
+          dropdown.classList.add('drop-up');
+        } else {
+          dropdown.classList.remove('drop-up');
+        }
+      }
     });
   });
+
+  // Close on outside click
   window.addEventListener('click', () => {
-    dropdowns.forEach(dropdown => dropdown.classList.remove('open'));
+    dropdowns.forEach(d => d.classList.remove('open', 'drop-up'));
   });
 });

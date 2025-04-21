@@ -19,9 +19,11 @@
   }
 }
 
-.splide__pagination__page.is-active {
-  background: #525252 !important;
-  transform: scale(1) !important;
+.splide__pagination__page{
+  &.is-active {
+    background: #525252 !important;
+    transform: scale(1) !important;
+}
 }
 #main-slider{
   .splide__pagination__page.is-active {
@@ -38,6 +40,7 @@
       border-radius: 100%;
   }
   }
+
 }
 
 .country-name {
@@ -251,6 +254,7 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .embla .our-experts {
     width: 300px;
@@ -268,7 +272,7 @@
   .slide-title{font-size: 1.3rem;}
   .slide-desc{font-size: 1rem;}
   .trending-insights{
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     border-bottom: 1px solid #ccc;
     
   }
@@ -276,7 +280,7 @@
   .ti-list{
     font-size: 14px;
     line-height: 18px;
-    grid-template-columns: 1fr;
+    //grid-template-columns: 1fr;
     li{
       width: auto;border: none;
       
@@ -289,6 +293,16 @@
   }
 
   
+}
+@media (max-width: 600px) {
+  .trending-insights{max-width: 100%; left: 0; right: 0;}
+  .ti-list{grid-template-columns: 1fr;
+    li{padding-bottom: 0rem;}
+  }
+  #main-slider {
+    .splide__pagination{bottom: 26%;left: 10px;}
+    .btn{ margin-top: 0;}
+  }
 }
 .hidden {
   display: none !important;

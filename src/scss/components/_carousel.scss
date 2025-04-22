@@ -1,0 +1,240 @@
+@use "../base/variables" as v;
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.slider-content {
+  position: absolute;
+  top: 5rem;
+  left: 1.5rem;
+  color: v.$white;
+  z-index: 10;
+  max-width: 840px;
+  animation: fadeInUp 1s ease-in-out;
+
+  .slide-title {
+    font-size: 2rem;
+    animation: fadeInUp 1s ease-in-out;
+
+    a { color: v.$white; }
+  }
+
+  .slide-desc {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    animation: fadeInUp 1.3s ease-in-out;
+  }
+}
+
+.slide-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.trending-insights {
+  position: absolute;
+  bottom: 0%;
+  right: 1.5rem;
+  color: v.$black;
+  z-index: 10;
+  animation: fadeInUp 1s ease-in-out;
+  display: flex;
+  min-height: 100px;
+  background-color: v.$white;
+  max-width: 800px;
+
+  .ti-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+
+    li {
+      padding: 0 1.5rem 1.5rem;
+      border-right: solid 1px v.$strong-blue;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        color: v.$black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .ti-heading {
+    padding-left: 1.5rem; padding-right: 1.5rem; text-transform: uppercase; margin-top: 1.5rem;
+  }
+}
+.splide__pagination{
+    &__page {
+        &.is-active {
+          background: #525252 !important;
+          transform: scale(1.5);
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #525252;
+            border-radius: 100%;
+          }
+        }
+      }
+}
+#main-slider {
+  height: 550px;
+  .splide__pagination {
+    justify-content: flex-start;
+    bottom: 10%;
+    right: 0;
+    left: 0%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__page {
+      background-color: v.$white;
+      width: 11px;
+      height: 11px;
+      margin: 5px;
+
+      &.is-active {
+        transform: scale(1.5);
+        background: transparent !important;
+        border: solid 1px v.$white;
+        &::before {
+            background: v.$white;
+          
+          }
+      }
+    }
+  }
+
+  .section-wrapper {
+    position: absolute;
+    height: 550px;
+    right: 0;
+    left: 0%;
+    margin: 0 auto;
+  }
+
+  .btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    animation: fadeInUp 1.6s ease-in-out;
+  }
+
+
+
+  .splide__list {
+    height: 550px;
+  }
+}
+.clients-carousel{
+    .splide{max-width: 1245px; margin: 0 auto;}
+  }
+
+
+
+
+  @media (max-width: 1024px) {
+    .slider-content {
+      max-width: 90%;
+      .slide-title {
+        font-size: 1.3rem;
+      }
+    
+      .slide-desc {
+        font-size: 1rem;
+      }
+    }
+  
+    .trending-insights {
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .ti-heading {
+      width: auto;
+    }
+  
+    .ti-list {
+      font-size: 14px;
+      line-height: 18px;
+  
+      li {
+        width: auto;
+        border: none;
+      }
+    }
+  
+    .slide-bg {
+      height: 95vh;
+    }
+  
+    #main-slider {
+        .splide__pagination {
+            bottom: 35%;
+          }
+        .btn {
+            margin-top: 1rem;
+          }
+    }
+  }
+  @media (max-width: 768px) {
+    #main-slider {
+      .slide-content {
+        max-width: 90%;
+        top: 15%;
+        .slide-title {
+          font-size: 1.3rem;
+        }
+    
+        .slide-desc {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+@media (max-width: 600px) {
+    .trending-insights {
+      max-width: 100%;
+      left: 0;
+      right: 0;
+      .ti-list {
+        grid-template-columns: 1fr;
+    
+        li {
+          padding-bottom: 0;
+        }
+      }
+    }
+    #main-slider {
+      .splide__pagination {
+        bottom: 26%;
+        left: 10px;
+      }
+      .btn {
+        margin-top: 0;
+      }
+    }
+  }

@@ -1,3 +1,27 @@
+//home top banner slider customization
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.splide').forEach((el) => {
+    const options = {
+      perPage: parseInt(el.dataset.perPage) || 1,
+      type: el.dataset.type || 'loop',
+      autoplay: el.dataset.autoplay === 'true',
+      pagination: el.dataset.pagination !== 'false',
+      rewind: el.dataset.rewind === 'true',
+      arrows: el.dataset.arrows !== 'false',
+    };
+    if (el.dataset.breakpoints) {
+      try {
+        options.breakpoints = JSON.parse(el.dataset.breakpoints);
+      } catch (e) {
+        console.warn('Invalid breakpoints JSON for', el, e);
+      }
+    }
+    new Splide(el, options).mount();
+  });
+});
+//end
+
+//toggle read more text on asia-manufacturing-index
 document.addEventListener("DOMContentLoaded", function() {
   var buttons = document.querySelectorAll('.toggle-btnls');
   buttons.forEach(function(button) {
@@ -19,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   });
   });
-
+//end
 // Article Read More Toggle
 var articleToggle=document.querySelectorAll("a[data-togglearticle]"), i;
 for(i=0;i<articleToggle.length;++i){
@@ -35,8 +59,9 @@ for(i=0;i<articleToggle.length;++i){
     this.innerText=='more+'?this.innerText='less-':this.innerText='more+';
 
   })
-
 }
+//end
+//CB logos slide on our brands page
 document.addEventListener("DOMContentLoaded", function () {
   let slideIndex = 0;
   carousel();
@@ -60,29 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(carousel, 9000);
   }
 });
+//end
 
-// toggle btn dropdwon
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const dropdowns = document.querySelectorAll('.toggleBtn-dropdown');
-
-//   dropdowns.forEach(dropdown => {
-//     const button = dropdown.querySelector('.toggleBtn-dropdown-button');
-
-//     button.addEventListener('click', (e) => {
-//       e.stopPropagation(); 
-//       dropdowns.forEach(d => {
-//         if (d !== dropdown) d.classList.remove('open');
-//       });
-//       dropdown.classList.toggle('open');
-//     });
-//   });
-//   window.addEventListener('click', () => {
-//     dropdowns.forEach(dropdown => dropdown.classList.remove('open'));
-//   });
-// });
-
-
+// Toggle dropdown on home for service section
 document.addEventListener('DOMContentLoaded', () => {
   const dropdowns = document.querySelectorAll('.toggleBtn-dropdown');
 
@@ -93,7 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', (e) => {
       e.stopPropagation();
 
-      // Close other dropdowns
       dropdowns.forEach(d => {
         if (d !== dropdown) d.classList.remove('open', 'drop-up');
       });
@@ -101,14 +105,13 @@ document.addEventListener('DOMContentLoaded', () => {
       dropdown.classList.toggle('open');
 
       if (dropdown.classList.contains('open')) {
-        // Measure space
+
         const rect = menu.getBoundingClientRect();
         const spaceBelow = window.innerHeight - rect.bottom;
         const spaceAbove = rect.top;
 
         const requiredHeight = menu.scrollHeight;
 
-        // Add 'drop-up' class if not enough space below
         if (spaceBelow < requiredHeight && spaceAbove > spaceBelow) {
           dropdown.classList.add('drop-up');
         } else {
@@ -118,8 +121,114 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Close on outside click
   window.addEventListener('click', () => {
     dropdowns.forEach(d => d.classList.remove('open', 'drop-up'));
   });
 });
+
+//end
+
+// video on home for Who We Are section
+const container = document.querySelector(".video-container");
+const video = container.querySelector("video");
+const overlay = container.querySelector(".video-overlay");
+
+container.addEventListener("click", () => {
+  if (container.dataset.state === "initial") {
+    video.setAttribute("controls", true);
+    video.play();
+    container.dataset.state = "playing";
+    startAutoHideControls();
+  }
+});
+
+video.addEventListener("pause", () => {
+  if (container.dataset.state === "playing" && container.hasAttribute("data-no-pause") && !video.ended) {
+    video.play();
+  }
+});
+
+// Fullscreen on play
+function enterFullscreen(el) {
+  if (el.requestFullscreen) el.requestFullscreen();
+  else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+  else if (el.msRequestFullscreen) el.msRequestFullscreen();
+}
+
+function startAutoHideControls() {
+  if (!container.hasAttribute("data-autohide")) return;
+
+  let timeout;
+  const hideControls = () => {
+    video.classList.add("hide-controls");
+  };
+  const showControls = () => {
+    video.classList.remove("hide-controls");
+    clearTimeout(timeout);
+    timeout = setTimeout(hideControls, 3000);
+  };
+
+  video.addEventListener("mousemove", showControls);
+  video.addEventListener("touchstart", showControls);
+  timeout = setTimeout(hideControls, 3000);
+}
+//end
+
+//counter on home page for who we are section
+const counters = document.querySelectorAll('.counter');
+let countersStarted = false;
+
+function startCounters() {
+  counters.forEach(counter => {
+    counter.innerText = '0';
+    const target = +counter.getAttribute('data-target');
+    const hasPlus = counter.getAttribute('data-plus') === "true";
+
+    const updateCounter = () => {
+      const current = +counter.innerText.replace('+', '');
+      const increment = target / 200;
+
+      if (current < target) {
+        counter.innerText = `${Math.ceil(current + increment)}`;
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.innerText = hasPlus ? `${target}+` : `${target}`;
+      }
+    };
+
+    updateCounter();
+  });
+}
+
+// Scroll trigger
+const observerOptions = {
+  threshold: 0.4
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !countersStarted) {
+      startCounters();
+      countersStarted = true;
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+const counterSection = document.querySelector('.counter-section');
+observer.observe(counterSection);
+
+//end
+
+// toggle Expand on home page for top slide section of Trending Insight
+document.querySelectorAll('.expand-toggle').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const expander = btn.closest('.expand-sect');
+    const content = expander.querySelector('.expand-content');
+    const icon = btn.querySelector('.icon');
+
+    content.classList.toggle('open');
+    icon.textContent = content.classList.contains('open') ? '−' : '+';
+  });
+});
+//end

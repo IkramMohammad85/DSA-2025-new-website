@@ -69,12 +69,20 @@
   }
 }
 
+.btn-outline-white {
+  color:v.$white;
+  background-color: transparent;
+  border-color: v.$white;
+  &:hover {
+    color: v.$white;
+    background-color: v.$strong-blue;
+    border-color: v.$strong-blue;
+  }
+}
 // Apply to .btn-outline-secondary
 .btn-outline-secondary {
   @include btn-outline-style;
 }
-
-
 .card-btn {
   @include btn-outline-style; 
   background-color: #F0F6FC;
@@ -86,8 +94,6 @@
   min-width: 112px;
   text-decoration: none;
   text-align: center;
-
-
   &:hover {
     border-color: #217FD4;
     color: #217FD4;

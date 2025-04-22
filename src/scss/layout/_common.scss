@@ -25,7 +25,13 @@
 .d-none { display: none !important;}
 html { scroll-behavior: smooth; }
 
-    
+.c-logo {
+  width: 100px;
+  margin: 0 auto;
+  img {
+    margin: auto auto;
+  }
+}   
 //end
 /*Executive Summary */
 .landing-top-content{padding-top: 66px; padding-bottom: 66px;

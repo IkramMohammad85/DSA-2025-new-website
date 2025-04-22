@@ -1193,6 +1193,138 @@
     </div>
    
     <script src="js/main.min.js"></script>
+      <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.splide').forEach((el) => {
+        const options = {
+          perPage: parseInt(el.dataset.perPage) || 1,
+          type: el.dataset.type || 'loop',
+          autoplay: el.dataset.autoplay === 'true',
+          pagination: el.dataset.pagination !== 'false',
+          rewind: el.dataset.rewind === 'true',
+          arrows: el.dataset.arrows !== 'false',
+        };
+        if (el.dataset.breakpoints) {
+          try {
+            options.breakpoints = JSON.parse(el.dataset.breakpoints);
+          } catch (e) {
+            console.warn('Invalid breakpoints JSON for', el, e);
+          }
+        }
+        new Splide(el, options).mount();
+      });
+    });
+  </script> -->
+
+
+  <!-- <script>
+    const counters = document.querySelectorAll('.counter');
+    let countersStarted = false;
+
+    function startCounters() {
+      counters.forEach(counter => {
+        counter.innerText = '0';
+        const target = +counter.getAttribute('data-target');
+        const hasPlus = counter.getAttribute('data-plus') === "true";
+
+        const updateCounter = () => {
+          const current = +counter.innerText.replace('+', '');
+          const increment = target / 200;
+
+          if (current < target) {
+            counter.innerText = `${Math.ceil(current + increment)}`;
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.innerText = hasPlus ? `${target}+` : `${target}`;
+          }
+        };
+
+        updateCounter();
+      });
+    }
+
+    // Scroll trigger
+    const observerOptions = {
+      threshold: 0.4
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersStarted) {
+          startCounters();
+          countersStarted = true;
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    const counterSection = document.querySelector('.counter-section');
+    observer.observe(counterSection);
+
+
+  </script> -->
+
+  <!-- <script>
+    const container = document.querySelector(".video-container");
+    const video = container.querySelector("video");
+    const overlay = container.querySelector(".video-overlay");
+  
+    container.addEventListener("click", () => {
+      if (container.dataset.state === "initial") {
+        video.setAttribute("controls", true);
+        video.play();
+        container.dataset.state = "playing";
+        startAutoHideControls();
+      }
+    });
+  
+    // Optional: Prevent pause if data-no-pause exists
+    video.addEventListener("pause", () => {
+      if (container.dataset.state === "playing" && container.hasAttribute("data-no-pause") && !video.ended) {
+        video.play();
+      }
+    });
+  
+    // Fullscreen on play
+    function enterFullscreen(el) {
+      if (el.requestFullscreen) el.requestFullscreen();
+      else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+      else if (el.msRequestFullscreen) el.msRequestFullscreen();
+    }
+  
+    function startAutoHideControls() {
+      if (!container.hasAttribute("data-autohide")) return;
+  
+      let timeout;
+      const hideControls = () => {
+        video.classList.add("hide-controls");
+      };
+      const showControls = () => {
+        video.classList.remove("hide-controls");
+        clearTimeout(timeout);
+        timeout = setTimeout(hideControls, 3000);
+      };
+
+      video.addEventListener("mousemove", showControls);
+      video.addEventListener("touchstart", showControls);
+      timeout = setTimeout(hideControls, 3000);
+    }
+  </script> -->
+  
+
+  <!-- <script>
+    document.querySelectorAll('.expand-toggle').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const expander = btn.closest('.expand-sect');
+    const content = expander.querySelector('.expand-content');
+    const icon = btn.querySelector('.icon');
+
+    content.classList.toggle('open');
+    icon.textContent = content.classList.contains('open') ? '−' : '+';
+  });
+});
+
+  </script> -->
 </body>
 
 </html>

@@ -1,3 +1,43 @@
+///Accordion regular
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.accordion-reg').forEach(accordion => {
+      const autoClose = accordion.getAttribute('data-autoClose') !== 'false'; 
+  
+      accordion.querySelectorAll('.accordion-reg-button').forEach(button => {
+          button.addEventListener('click', function () {
+              const targetPanel = document.querySelector(this.dataset.bsTarget);
+              const isOpen = targetPanel.classList.contains("show");
+              const accordionItem = this.closest('.accordion-reg-item');
+              if (autoClose) {
+                  accordion.querySelectorAll('.accordion-reg-collapse').forEach(panel => {
+                      if (panel !== targetPanel) {
+                          panel.classList.remove("show");
+  
+                          const btn = accordion.querySelector(`[data-bs-target="#${panel.id}"]`);
+                          if (btn) btn.setAttribute("aria-expanded", "false");
+  
+                          const icon = btn?.querySelector(".arrow");
+                          if (icon) icon.classList.remove("rotate");
+                      }
+                  });
+              }
+              targetPanel.classList.toggle("show");
+              this.setAttribute("aria-expanded", String(!isOpen));
+  
+              const arrowIcon = this.querySelector(".arrow");
+              if (arrowIcon) {
+                  arrowIcon.classList.toggle("rotate", !isOpen);
+              }
+              if (!isOpen) {
+                  const yOffset = -100;
+                  const y = accordionItem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+              }
+          });
+      });
+  });
+  });
+
 //home top banner slider customization
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.splide').forEach((el) => {
@@ -128,51 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //end
 
-// video on home for Who We Are section
-const container = document.querySelector(".video-container");
-const video = container.querySelector("video");
-const overlay = container.querySelector(".video-overlay");
 
-container.addEventListener("click", () => {
-  if (container.dataset.state === "initial") {
-    video.setAttribute("controls", true);
-    video.play();
-    container.dataset.state = "playing";
-    startAutoHideControls();
-  }
-});
-
-video.addEventListener("pause", () => {
-  if (container.dataset.state === "playing" && container.hasAttribute("data-no-pause") && !video.ended) {
-    video.play();
-  }
-});
-
-// Fullscreen on play
-function enterFullscreen(el) {
-  if (el.requestFullscreen) el.requestFullscreen();
-  else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
-  else if (el.msRequestFullscreen) el.msRequestFullscreen();
-}
-
-function startAutoHideControls() {
-  if (!container.hasAttribute("data-autohide")) return;
-
-  let timeout;
-  const hideControls = () => {
-    video.classList.add("hide-controls");
-  };
-  const showControls = () => {
-    video.classList.remove("hide-controls");
-    clearTimeout(timeout);
-    timeout = setTimeout(hideControls, 3000);
-  };
-
-  video.addEventListener("mousemove", showControls);
-  video.addEventListener("touchstart", showControls);
-  timeout = setTimeout(hideControls, 3000);
-}
-//end
 
 //counter on home page for who we are section
 const counters = document.querySelectorAll('.counter');
@@ -232,3 +228,67 @@ document.querySelectorAll('.expand-toggle').forEach((btn) => {
   });
 });
 //end
+// video on home for Who We Are section
+const container = document.querySelector(".video-container");
+const video = container.querySelector("video");
+const overlay = container.querySelector(".video-overlay");
+
+container.addEventListener("click", () => {
+  if (container.dataset.state === "initial") {
+    video.setAttribute("controls", true);
+    video.play();
+    container.dataset.state = "playing";
+    startAutoHideControls();
+  }
+});
+
+video.addEventListener("pause", () => {
+  if (container.dataset.state === "playing" && container.hasAttribute("data-no-pause") && !video.ended) {
+    video.play();
+  }
+});
+
+// Fullscreen on play
+function enterFullscreen(el) {
+  if (el.requestFullscreen) el.requestFullscreen();
+  else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+  else if (el.msRequestFullscreen) el.msRequestFullscreen();
+}
+
+function startAutoHideControls() {
+  if (!container.hasAttribute("data-autohide")) return;
+
+  let timeout;
+  const hideControls = () => {
+    video.classList.add("hide-controls");
+  };
+  const showControls = () => {
+    video.classList.remove("hide-controls");
+    clearTimeout(timeout);
+    timeout = setTimeout(hideControls, 3000);
+  };
+
+  video.addEventListener("mousemove", showControls);
+  video.addEventListener("touchstart", showControls);
+  timeout = setTimeout(hideControls, 3000);
+}
+//end
+
+//
+
+function showRegionalOffice() {
+const selectedValue = document.getElementById("RegionaltS").value;
+document.querySelectorAll(".regional-office > div").forEach(div => {
+div.classList.add("regional-hidden");
+});
+if (selectedValue !== "Select the office") {
+const selectedOffice = document.querySelector(`.regional-office-${selectedValue.toLowerCase()}`);
+if (selectedOffice) {
+selectedOffice.classList.remove("regional-hidden");
+}
+}
+}
+
+
+
+

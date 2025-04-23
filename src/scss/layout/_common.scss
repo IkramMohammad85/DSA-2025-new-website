@@ -26,8 +26,9 @@
 html { scroll-behavior: smooth; }
 
 .c-logo {
-  width: 100px;
+  //width: 100px;
   margin: 0 auto;
+  padding: 1.7rem;
   img {
     margin: auto auto;
   }
@@ -161,6 +162,27 @@ html { scroll-behavior: smooth; }
     }
   }
       }
+
+      .our-experts {
+        width: 200px;
+        margin: 0 auto;
+      }
+      
+      .our-experts .expert-name-thumbnail img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .expert-name-thumbnail,
+      .expert-name,
+      .expert-position,
+      .expert-social-contact img {
+        text-align: center; margin: 0 auto;
+      }
+      
 @media (max-width: 667px) {
   ///Page menu
   .page-menu.success-stories {

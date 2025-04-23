@@ -131,6 +131,49 @@ input[type="submit"] {
     }
     #loading_contact {padding: 10px; color:v.$gray-600;}
 
+    .services-question-section .got-question-block form {
+        input[type="text"],
+        select,
+        input[type="tel"],
+        textarea {
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          border-bottom: 1px solid #C4C4C4;
+          background: transparent;
+          margin-bottom: 1rem;
+          padding-left: 0;
+          color: #231F20;
+        }
+        input[type="submit"] {
+            padding: 9px 20px;
+            width: 147px;
+          }
+        .form-check-input {
+          display: flex;
+          margin-top: 0;
+          margin-bottom: 1.5rem;
+          align-items: center;
+      
+          input {
+            margin-right: 1rem;
+            width: 30px;
+            height: 30px;
+          }
+      
+          span {
+            color: #727272;
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      
+        select {
+          background: url(/img/input-arrow.png) no-repeat 98% 50%;
+          color: #727272;
+        }
+      }
+      
 @media (max-width: 667px) {
 .let-discuss-form{
     .ld-form {width: 100%;

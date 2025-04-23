@@ -1,4 +1,58 @@
 @use "../base/variables" as v;
+.our-team-experts h3{ font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 24px; color: v.$black; margin-bottom: 3rem;}
+.hp-clients-panel h3 {
+    color: v.$black;
+    text-transform: none;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;
+}
+//Our Comprehensive Tax Compliance and Have Any Questions? section
+.select-change-color { color: v.$black !important;}
+.or-cta-cyp-card .or-cta .reg-contacts-addr { display: flex; flex-direction: column; }
+.or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-phone, .or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-email { display: flex; align-items: center; margin-bottom: 0.5rem; }
+.or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-phone .phone-cta-cion, .or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-email .email-cta-cion { width: 40px; height: 24px; }
+.or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-email .email-text { font-size: 1rem; }
+    .services-question-section {
+        .services-list-details{
+            h2 { text-align: left; width: 75%; line-height: 1.4; padding-top: 0.5rem;  font-size: 24px;font-family: v.$font-family-Poppins; margin-bottom: 1.5rem;
+                font-weight: v.$font-weight-SemiBold;}
+        }
+        .got-question-block {
+            width: 90%;
+            margin: 0 auto;
+            padding-left: 136px;
+            form {
+                width: 100%;
+                input[type="submit"] {
+                    font-family: v.$font-family-inter;
+                    font-weight: v.$font-weight-SemiBold;
+                  }
+              }
+              .or-cta-cyp-card {margin-top: 4.5rem;
+                h4 { color: #103D68; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-weight: 22px; }
+              }
+              h3{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 22px;}
+              
+          }
+          .regional-hidden {
+            display: none;
+        }
+    }
+
+      
+      @media (max-width: 1024px) {
+        .services-question-section .got-question-block {
+          padding-left: 70px;
+        }
+      }
+      
+      @media (max-width: 820px) {
+        .services-question-section .got-question-block {
+          padding-left: inherit;
+        }
+      }
+//end
 //The eight core tiers table
 .eight-core-tiers{padding: 0rem 0 6rem 0;
     .eight-core-head { display: flex; justify-content: space-between; width: 100%; margin: 0 auto 3rem auto; flex-direction: column;
@@ -73,7 +127,7 @@
 
 //Learn more about the ESG Framework Landscape
 .ESG-framework { background-color: #F6F6F6; padding-top: 60px; padding-bottom: 75px;
-    h2{text-align:center; margin-bottom: 62px; font-size: 24px;}
+    h2{text-align:center; margin-bottom: 62px; font-size: 24px; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;}
     .esg-main-block{display: flex; border-bottom: solid 1px #D4D3D3; padding-bottom: 60px; margin-bottom: 60px;justify-content: space-around;
     &:last-child{border: none; margin-bottom: 0; padding-bottom: 0; }
     }
@@ -83,7 +137,7 @@
     .esg-right-block{
         p, ul{color: v.$dsa-light-grey;}
         ul{margin-bottom: 0;padding-left: 1rem;}
-        h3{font-size: 20px; font-weight: 600; color: v.$dsa-medium-blue; padding: 4px 18px 18px 18px;}
+        h3{font-size: 20px; font-weight:v.$font-weight-SemiBold; font-family: v.$font-family-Poppins; color: v.$dsa-medium-blue; padding: 4px 18px 18px 18px;}
 
     }
     }
@@ -154,7 +208,7 @@
     .approach-ensures{ padding-top: 90px; padding-bottom: 53px;
         .flex-spacing{ justify-content: center;}
         .approach-ensures-container{ border-bottom: solid #D4D3D3 1px; padding-bottom: 76px;
-        h2{margin-bottom: 2rem; font-size: 24px; line-height: 28px;}
+        h2{margin-bottom: 2rem; font-size: 24px; line-height: 28px; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;}
         h3{font-size: 18px; line-height: 30px; font-weight: 500; width:69%; margin-left:auto; margin-right: auto;margin-bottom: 3rem;  color: v.$dsa-light-grey; }
         }
         }
@@ -186,7 +240,7 @@
         .esg-f-l-container{ display: flex; justify-content: space-between; flex-direction: row;
             .esg-f-l-left{  padding-right: 100px;
                 p{color: v.$dsa-light-grey;}
-                h2{ margin-bottom: 1.5rem; font-size: 24px; font-weight: bold; text-align: left;}
+                h2{ margin-bottom: 1.5rem; font-size: 24px; font-weight: v.$font-weight-SemiBold; font-family: v.$font-family-Poppins; text-align: left;}
                 .cta-link{
                     color: v.$strong-blue;
                     font-weight: 600;
@@ -220,7 +274,7 @@
         .flex-spacing{display: inherit;}
         .carousel{ padding-bottom: 3rem;}
         .carousel-inner{justify-content: center;}
-        h3{font-size: 18px; font-weight: 500; color: v.$dsa-light-grey; line-height: 1.4;text-align:center; margin-bottom: 2rem; font-size: 20px;}
+        h3{font-size: 18px; font-weight:v.$font-weight-Medium; color: v.$dsa-light-grey; line-height: 1.4;text-align:center; margin-bottom: 2rem; font-size: 20px; font-family: v.$font-family-Poppins;}
         .esg-lifecycle-container {display: flex; justify-content: center; flex-direction: row;
             .lifecycle-block{ display: flex; margin-bottom: 1.4rem;
                 .icon-ellipse {width: 45px; height: 45px; display: flex; align-items: center; background-color: #F0F6FC; justify-content: center; border-radius: 50%;  margin-right: 22px;box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; z-index: 1;
@@ -261,7 +315,7 @@
         min-height: 451px;
         .flex-spacing{display: inherit;}
         h2,p {text-align:center;   width: 75%; margin: 0 auto; margin-bottom: 2rem;}
-        h2{line-height: 30px; font-size: 24px; color: v.$black;}
+        h2{line-height: 30px; font-size: 24px; color: v.$black; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;}
         p {margin-bottom: 3rem; color: v.$dsa-light-grey; font-size: 18px; line-height: 30px;}
         
         .ibm-enizi-sp-container {display: flex; justify-content: space-between; flex-direction: row;

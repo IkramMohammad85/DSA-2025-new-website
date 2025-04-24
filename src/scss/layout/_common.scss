@@ -33,6 +33,10 @@ html { scroll-behavior: smooth; }
     margin: auto auto;
   }
 }   
+.clients-carousel{
+  .splide{max-width: 1245px; margin: 0 auto;}
+  .c-logo{padding: 3rem;}
+}
 //end
 /*Executive Summary */
 .landing-top-content{padding-top: 66px; padding-bottom: 66px;

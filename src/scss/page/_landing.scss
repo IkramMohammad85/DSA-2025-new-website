@@ -132,7 +132,7 @@
     &:last-child{border: none; margin-bottom: 0; padding-bottom: 0; }
     }
     .esg-left-block{ margin-right: 3%; margin-top: 7px;
-    img{max-width: fit-content;}
+    img{max-width: 100%;}
     }
     .esg-right-block{
         p, ul{color: v.$dsa-light-grey;}
@@ -704,6 +704,9 @@
     }
 }
 @media only screen and (min-width: 767px){
+    .ESG-framework .esg-left-block img {
+        max-width: fit-content;
+    }
     //Explore the Business Environment
         .dbp {
             .dbp-block{flex-direction: row;width: 100%;

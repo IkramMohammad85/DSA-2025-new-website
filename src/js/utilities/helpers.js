@@ -171,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //counter on home page for who we are section
+
 const counters = document.querySelectorAll('.counter');
 let countersStarted = false;
 

@@ -10,7 +10,8 @@
     transform: none;
   }
 }
-
+.splide__arrow{background: transparent !important;}
+.splide__arrow svg{fill: #525252 !important;}
 .slider-content {
   position: absolute;
   top: 5rem;

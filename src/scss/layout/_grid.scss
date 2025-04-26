@@ -24,6 +24,11 @@
       padding: 1rem;
     }
   }
+  &-row--one-third{
+    .flex-col-3per, .flex-col-7per {
+      padding: 1rem;
+    }
+  }
 
   // 3-Column Layout
   &-row--three {
@@ -109,6 +114,20 @@ main {
     &-row--two {
       .flex-col {
         flex: 0 0 calc(50% - 1%);
+        margin-right: 2%;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+    }
+    &-row--one-third {
+      .flex-col-3per {
+        flex: 0 0 calc(30% - 1%);
+        margin-right: 2%;
+
+      }
+      .flex-col-7per {
+        flex: 0 0 calc(70% - 1%);
         margin-right: 2%;
         &:nth-child(2n) {
           margin-right: 0;

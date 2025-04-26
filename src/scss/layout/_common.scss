@@ -45,6 +45,10 @@ html { scroll-behavior: smooth; }
   .c-logo{padding: 3rem;}
 }
 //end
+.page-intro{
+h2{font-size: 24px; font-family: v.$font-family-Poppins; color: #0C2740;}
+p{color: #535353;}
+}
 /*Executive Summary */
 .landing-top-content{padding-top: 66px; padding-bottom: 66px;
   .two-column-section{ display: flex; flex-direction: row;

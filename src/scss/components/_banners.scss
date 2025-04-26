@@ -1,4 +1,4 @@
-@use "../base/variables" as v; 
+@use "../base/variables" as v;
 
 .hero-section {
   position: relative;
@@ -23,61 +23,56 @@
     z-index: 1;
     max-width: 750px;
     padding: 2rem 1rem 2rem 1rem;
-    color: #fff;
+    color: v.$white;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     align-items: center;
   }
-
   .hero-text {
     font-size: 18px;
     line-height: 1.6;
     font-family: "Inter";
     font-weight: 400;
   }
-  .text-btn{
+  .text-btn {
     width: 100%;
   }
 }
-@media (min-width: 768px) {
-  .hero-section{
-    .hero-content{
-      padding: 2rem 1rem 2rem 9rem;
-    }
-  }
-
-}
-
 .masthead {
   position: relative;
-  height: 300px;
-  background: linear-gradient(90deg, v.$dsa-dark-blue 0%, v.$dsa-medium-blue 100%);
+  height: 420px;
+  background: linear-gradient(
+    90deg,
+    v.$dsa-dark-blue 0%,
+    v.$dsa-medium-blue 100%
+  );
   background-size: cover;
-
-  .section-wrapper {
-    height: 100%;
-    padding-bottom: 1rem;
-    &.flex-column{
-      align-items: center; justify-content: space-between;
-    }
-  }
 
   h1 {
     color: v.$white;
     max-width: 600px;
-    line-height: 1.4;
+    line-height: 1.2;
     font-size: 2rem;
     font-family: v.$font-family-Poppins;
     font-weight: v.$font-weight-SemiBold;
-    a{color: v.$white;}
+    margin-bottom: 0;
+    a {
+      color: v.$white;
+    }
   }
   &__text {
     position: relative;
     height: inherit;
     z-index: 2;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
+    &.justify-content-center {
+      justify-content: center;
+    }
+  }
   &__bg {
     position: absolute;
     z-index: 0;
@@ -86,21 +81,6 @@
     width: 100%;
     height: inherit;
     overflow: hidden;
-    &:before {
-      content: "";
-      position: absolute;
-      display: block;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      );
-    }
     img {
       position: absolute;
       top: 50%;
@@ -112,36 +92,75 @@
       min-height: 100%;
     }
   }
-.envizi-ibm {
-  right: 30%;
-  bottom: 28%;
-  position: absolute;
-  img{width: 120px;}
-}
-}
-  /* end */
-  //Tablets
-  @media (max-width: 767px){
-    .masthead {
-      &__bg img {
-        height: 240px;
-        left: 100%;
-        max-width: fit-content;
+  .envizi-ibm {
+    right: 30%;
+    bottom: 35%;
+    position: absolute;
+    padding: 0.5rem;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.7);
+    img {
+      width: 120px;
     }
-    .section-wrapper {
-      &.flex-column{
-        flex-wrap: wrap;
+  }
+}
+/* end */
+
+.breadcrumb {
+  padding-top: 1.5rem;
+  ul {
+    list-style: url(/img/breadArrow.svg);
+    display: flex;
+    bottom: 0;
+    padding: 1rem 0;
+    margin: 0px;
+    font-size: 0.9rem;
+    color: #C0C0C0;
+
+    li {
+      padding: 0 1.5rem 0 0.5rem;
+      font-size: 0.9rem;
+      &:first-child {
+        padding-left: 0px;
+        list-style: none;
       }
     }
+    a {
+      color: #C0C0C0;
+      font-size: 0.9rem;
+      &:hover {
+        color: #C0C0C0;
+      }
+    }
+  }
+}
+
+//Tablets
+@media (max-width: 767px) {
+  .masthead {
+    &__bg img {
+      height: 240px;
+      max-width: fit-content;
+    }
+
     &.esg-banner {
       h1 {
         font-size: 20px;
         max-width: 200px;
+      }
+      .envizi-ibm {
+        right: 16px;
+      }
     }
- 
-    .envizi-ibm {
-      right: 16px;
   }
+}
+@media (min-width: 768px) {
+  .hero-section {
+    .hero-content {
+      padding: 2rem 1rem 2rem 9rem;
     }
   }
-  }
+}
+@media (max-width: 556px) {
+  .breadcrumb ul{flex-wrap: wrap;}
+}

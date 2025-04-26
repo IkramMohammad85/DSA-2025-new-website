@@ -8,6 +8,7 @@
     font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;
 }
 //Our Comprehensive Tax Compliance and Have Any Questions? section
+.or-cta{display: grid; grid-template-columns: repeat(2, 1fr);}
 .select-change-color { color: v.$black !important;}
 .or-cta-cyp-card .or-cta .reg-contacts-addr { display: flex; flex-direction: column; }
 .or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-phone, .or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-email { display: flex; align-items: center; margin-bottom: 0.5rem; }
@@ -19,9 +20,11 @@
                 font-weight: v.$font-weight-SemiBold;}
         }
         .got-question-block {
-            width: 90%;
+            width: 60%;
             margin: 0 auto;
-            padding-left: 136px;
+            padding: 1.5rem;
+            background-color: #f7f7f7;
+            
             form {
                 width: 100%;
                 input[type="submit"] {
@@ -30,9 +33,9 @@
                   }
               }
               .or-cta-cyp-card {margin-top: 4.5rem;
-                h4 { color: #103D68; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 22px; }
+                h4 { color: #103D68; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 22px; margin-bottom: 0; margin-top: 1rem; }
               }
-              h3{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 22px;}
+              h3{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 22px; color: v.$dsa-dark-blue;}
               
           }
           .regional-hidden {
@@ -43,15 +46,11 @@
       
       @media (max-width: 1024px) {
         .services-question-section .got-question-block {
-          padding-left: 70px;
+         width: 100%;
         }
       }
       
-      @media (max-width: 820px) {
-        .services-question-section .got-question-block {
-          padding-left: inherit;
-        }
-      }
+
 //end
 //The eight core tiers table
 .eight-core-tiers{padding: 0rem 0 6rem 0;
@@ -310,27 +309,27 @@
     //end
 
     //IBM Envizi Sustainability Performance: Your journey towards net-zero
-    .ibm-enizi-sp{padding-top: 68px;  margin-bottom: 90px;
-        background: url(/img/curve-bg.webp) no-repeat center bottom #F6F6F6; background-size: cover;
+    .ibm-enizi-sp{
+        //background: url(/img/curve-bg.webp) no-repeat center bottom #F6F6F6; background-size: cover;
+        background-color: #F6F6F6;
         min-height: 451px;
         .flex-spacing{display: inherit;}
         h2,p {text-align:center;   width: 75%; margin: 0 auto; margin-bottom: 2rem;}
-        h2{line-height: 30px; font-size: 24px; color: v.$black; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;}
+        h2{line-height: 30px; font-size: 24px; color: v.$dsa-dark-blue; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;}
         p {margin-bottom: 3rem; color: v.$dsa-light-grey; font-size: 18px; line-height: 30px;}
         
         .ibm-enizi-sp-container {display: flex; justify-content: space-between; flex-direction: row;
             .ibm-enizi-sp-block{ width: 400px;  display: flex;margin-left: 2rem; margin-right: 2rem;
                 .ibm-enizi-sp-title{  margin-right: 2rem;
-                    .sp-icon{ width: 76px; height: 76px;border-radius: 50%; background-color: #4087A8; display: flex;
+                    .sp-icon{ width: 62px; height: 62px;border-radius: 50%;  display: flex;
                         align-items: center;
                         justify-content: center;
-                    img{width: 38px; height: 38px; }
-                    &.srd{ background-color: #4A9191;}
-                    &.ad{ background-color: #54997A;}
+                    img{width: 62px; height: 62px; }
+                 
                     }
                 }
                 .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$gray-700; width: 350px;
-                    h3{line-height: 24px; font-size: 1rem;font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium;}
+                    h3{line-height: 24px; font-size: 1rem;font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium; color: v.$black;}
                 }
             }
         }

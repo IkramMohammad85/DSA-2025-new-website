@@ -1927,48 +1927,6 @@
     @@include("../includes/footer.html")
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-      const tabs = document.querySelectorAll('.pricing__tab--country li a');
-      const tabContents = document.querySelectorAll('.pricing__country');
-      tabs.forEach((tab, index) => {
-      tab.addEventListener('click', function (e) {
-      e.preventDefault();
-      tabs.forEach(t => t.parentElement.classList.remove('tab--active'));
-      tabContents.forEach(content => content.classList.remove('pricing--active'));
-      tab.parentElement.classList.add('tab--active');
-      const activeTabContent = document.querySelector(this.getAttribute('data-tab'));
-      activeTabContent.classList.add('pricing--active');
-      const glideId = activeTabContent.querySelector('.glide').getAttribute('id');
-      initGlide(`#${glideId}`);
-      });
-      });
-      });
-      
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-      const toggleButton = document.querySelector(".insights-resources__toggle");
-      const menu = document.querySelector(".insights-resources__menu");
-      const options = menu.querySelectorAll("li");
-      toggleButton.addEventListener("click", function () {
-      menu.classList.toggle("show");
-      });
-      options.forEach(option => {
-      option.addEventListener("click", function () {
-      const selectedText = this.textContent;
-      const selectedValue = this.getAttribute("data-value");
-      toggleButton.textContent = selectedText;
-      menu.classList.remove("show");
-      console.log(`Selected value: ${selectedValue}`);
-      });
-      });
-      document.addEventListener("click", function (event) {
-      if (!toggleButton.contains(event.target) && !menu.contains(event.target)) {
-      menu.classList.remove("show");
-      }
-      });
-      });
-    </script>
+    
 </body>
 </html>

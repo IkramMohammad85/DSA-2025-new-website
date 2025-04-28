@@ -5,6 +5,16 @@
 /*Accordion regular*/
 .accordion-reg {
     max-width: 100%;
+    &.explore-services{
+      .accordion-reg-button.collapsed{background-color: #fff; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; padding: 20px;}
+      .accordion-reg-collapse{background-color: #fff; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; border-radius: 0;}
+      
+    }
+    &.explore-faq{
+      .accordion-reg-button.collapsed{background-color: #fff; box-shadow: rgba(33, 35, 38, 0.2) 0px 5px 5px -5px; padding: 20px;}
+      .accordion-reg-collapse{background-color: #fff; box-shadow: rgba(33, 35, 38, 0.2) 0px 5px 5px -5px; border-radius: 0;}
+      
+    }
   }
   
   .accordion-reg-header {
@@ -23,7 +33,7 @@
     font-size: 16px;
     text-align: left;
     border: none;
-    border-radius: 16px;
+    border-radius: 4px;
     cursor: pointer;
     outline: none;
     transition: background-color 0.3s ease;
@@ -39,7 +49,7 @@
   }
   
   .accordion-reg-button.collapsed {
-    background-color: #ffffff;
+    background-color: #F6F6F6;
   }
   
   .accordion-reg-button .arrow {
@@ -53,7 +63,7 @@
   .accordion-reg-collapse {
     display: none;
     padding: 15px;
-    background-color: #fff;
+    background-color: #f6f6f6;
     animation: fadeIn 0.3s ease-in-out;
     border-radius: 16px;
     border-top-left-radius: 0px;

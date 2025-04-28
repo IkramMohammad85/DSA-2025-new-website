@@ -13,7 +13,9 @@ a{color: v.$dsa-dark-blue;}
     
     background: #F6F6F6;
     padding-bottom: 4rem;
-    &__intro{width: 30%;}
+    &__intro{width: 30%;
+    h2{margin-bottom: 2rem;}
+    }
     &__tab {
       &--country {
         display: block;
@@ -68,6 +70,8 @@ a{color: v.$dsa-dark-blue;}
   }
   
   @media (max-width: 820px) {
+    .pricing__intro{width: 100%;}
+    .d-flex{flex-direction: column;}
     .flex-spacing{ flex-direction: column;}
     .flex-grid-row--one-third{flex-direction: column; flex-wrap: nowrap;}
     .bp-block {

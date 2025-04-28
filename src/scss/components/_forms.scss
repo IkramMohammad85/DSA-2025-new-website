@@ -141,9 +141,10 @@ input[type="submit"] {
           box-shadow: none;
           border-bottom: 1px solid #C4C4C4;
           background: transparent;
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
           padding-left: 0;
           color: #231F20;
+          font-size: 15px;
         }
         input[type="submit"] {
             padding: 9px 20px;
@@ -169,12 +170,16 @@ input[type="submit"] {
         }
       
         select {
-          background: url(/img/input-arrow.png) no-repeat 98% 50%;
+          background: url(/img/input-arrow.png) no-repeat 100% 50%;
           color: #727272;
+          
         }
+        
       }
+      .form-field-two-column{display: flex; gap: 1.5rem;}
       
 @media (max-width: 667px) {
+  .form-field-two-column{flex-direction: column;gap: 0rem;}
 .let-discuss-form{
     .ld-form {width: 100%;
         .code-sensitive{margin-top: 5px;}

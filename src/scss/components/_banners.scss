@@ -37,6 +37,10 @@
   }
   .text-btn {
     width: 100%;
+    .toggleBtn-dropdown-button::after{border-color: #fff;}
+    .toggleBtn-dropdown-menu{ margin-top: 0;
+    a{padding-top: 0.25rem; padding-bottom: 0.25rem;}
+    }
   }
 }
 .masthead {

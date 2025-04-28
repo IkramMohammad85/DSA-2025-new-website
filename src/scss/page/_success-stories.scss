@@ -1,5 +1,8 @@
 @use "../base/variables" as v; 
 
+.two_col{ display: grid; }
+.bp-block .event-video-item{ margin: 0.8rem 2rem 2rem 2rem; display: block;}
+
 .search-filter-block {
   padding-top: 4rem;
   .career-search_form {
@@ -231,14 +234,15 @@ ul {
   }
  
 }
-.ap-area__article { width: 365px;
+.ap-area__article { width: 340px; min-height: 300px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin-bottom: 4rem;
+
   padding-bottom: 1rem;
-  h2 {margin:1.5rem;
+  margin: 0.8rem 2rem 2rem 2rem;
+  h2 {margin:1rem 1.5rem 0rem 1.5rem;
     a{color: v.$dsa-dark-blue; }
   }
-  ul{margin: 1.5rem;}
+  ul{margin-bottom: 0;}
   &:hover {
     figure {
       img {
@@ -247,7 +251,7 @@ ul {
     }
   }
   &.cs {
-    min-height: 200px;
+    min-height: 300px;
     cursor: pointer;
     h2 {
       font-weight: 700;
@@ -349,7 +353,9 @@ ul {
       }
     }
   }
-  
+  .ap-area__article{
+    margin: 0;
+  }
 }
 
 

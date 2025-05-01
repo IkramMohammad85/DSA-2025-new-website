@@ -393,7 +393,7 @@
 
     &::after {
       content: " ";
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.2);
       position: absolute;
       top: 0;
       left: 0;
@@ -459,7 +459,7 @@
     flex: 1 1 450px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
   
   .session-card {
@@ -512,7 +512,8 @@
   }
   
   .conference-details {
-    padding: 15px;
+    padding: 15px; position: relative;
+    .badge-es{top: 0;}
   
     .conference-title {
       font-family: "Inter";
@@ -565,8 +566,9 @@
     align-items: flex-start;
     gap: 15px;
     border-radius: 6px;
-    padding: 17px;
-    box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+    padding: 28px 17px 0px 17px;
+    
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   }
   
   .date-right {
@@ -574,7 +576,12 @@
     border-radius: 6px;
     padding: 7px 18px;
     width: 60px;
-    text-align: center;
+    height: 60px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   
     strong,
     span {
@@ -623,6 +630,14 @@
     &.badge-ib {
       background-color: #E0E2EE;
       color: #1d9649;
+    }
+    &.badge-sg{
+      background-color: #FFF2D4;
+      color: #9F7700;
+    }
+    &.badge-es{
+      background-color: #D8EDE9;
+      color: #617975;
     }
   }
 //end

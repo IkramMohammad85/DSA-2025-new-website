@@ -44,6 +44,10 @@ html { scroll-behavior: smooth; }
   .splide{max-width: 1245px; margin: 0 auto;}
   .c-logo{padding: 3rem;}
 }
+.resource-splide{
+  .splide:not(.is-overflow) .splide__pagination{display: block; }
+  .splide__pagination{justify-content: flex-start;}
+}
 //end
 .page-intro{
 h2{font-size: 28px; font-family: v.$font-family-Poppins; color: #0C2740; line-height: 40px; font-weight:v.$font-weight-SemiBold; }

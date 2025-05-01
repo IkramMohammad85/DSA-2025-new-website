@@ -322,3 +322,41 @@ function showRegionalOffice() {
     }
   }
 }
+
+      // Open popup on click
+      document.querySelectorAll('[data-popup]').forEach(trigger => {
+        trigger.addEventListener('click', e => {
+          e.preventDefault();
+          const id = trigger.getAttribute('data-popup');
+          document.getElementById(id)?.classList.add('active');
+        });
+      });
+  
+      // Close popup
+      document.querySelectorAll('.popup-overlay').forEach(popup => {
+        popup.addEventListener('click', e => {
+          if (e.target === popup || e.target.classList.contains('popup-close')) {
+            popup.classList.remove('active');
+          }
+        });
+      });
+  
+      // Open dynamically
+      function openPopupById(id) {
+        document.getElementById(id)?.classList.add('active');
+      }
+      // Open the popup after 3 seconds
+          setTimeout(() => {
+          openPopupById('dynamic-popup');
+          }, 3000);
+  
+  
+      // Scroll-based popup trigger
+      let scrollTriggered = false;
+      window.addEventListener('scroll', () => {
+        if (!scrollTriggered && window.scrollY > 500) {
+          openPopupById('scroll-popup');
+          scrollTriggered = true;
+        }
+      });
+  

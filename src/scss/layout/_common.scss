@@ -85,6 +85,19 @@ html { scroll-behavior: smooth; }
   .splide:not(.is-overflow) .splide__pagination{display: block; }
   .splide__pagination{justify-content: flex-start;}
 }
+
+.connect-cta-block{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; margin-top: 2rem;
+  .connect-cta{ display: flex; align-items: center;gap: 1.3rem;
+    .icon-block{ width: 40px; height: 40px; border-radius: 50%; background-color: #CCE7FF;display: flex;
+align-items: center;justify-content: center;}
+    .text-block{color: #0C2740; line-height: 20px; font-family: v.$font-family-Poppins; font-size: 18px; font-weight:v.$font-weight-Medium;
+    a{color: #0C2740;}
+    }
+  }
+}
 //end
 .page-intro{
 h2{font-size: 28px; font-family: v.$font-family-Poppins; color: #0C2740; line-height: 40px; font-weight:v.$font-weight-SemiBold; }

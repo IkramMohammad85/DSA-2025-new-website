@@ -20,7 +20,7 @@
                 font-weight: v.$font-weight-SemiBold;}
         }
         .got-question-block {
-            width: 60%;
+            width: 70%;
             margin: 0 auto;
             padding: 1.5rem;
             background-color: #f7f7f7;
@@ -319,7 +319,7 @@
         p {margin-bottom: 3rem; color: v.$dsa-light-grey; font-size: 18px; line-height: 30px;}
         
         .ibm-enizi-sp-container {display: flex; justify-content: space-between; flex-direction: row;
-            .ibm-enizi-sp-block{ width: 400px;  display: flex;margin-left: 2rem; margin-right: 2rem;
+            .ibm-enizi-sp-block{ width: 380px;  display: flex;margin-left: 0rem; margin-right: 0rem;
                 .ibm-enizi-sp-title{  margin-right: 2rem;
                     .sp-icon{ width: 62px; height: 62px;border-radius: 50%;  display: flex;
                         align-items: center;
@@ -328,12 +328,12 @@
                  
                     }
                 }
-                .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$gray-700; width: 350px;
+                .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$gray-700; 
                     h3{line-height: 24px; font-size: 1rem;font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium; color: v.$black;}
                 }
             }
         }
-        .carousel-inner{justify-content: center;
+        .carousel-inner{
             .carousel-item{
                 &:nth-child(2){
                     .ibm-enizi-sp-block{

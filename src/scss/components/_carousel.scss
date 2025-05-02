@@ -186,8 +186,11 @@
 }
 .clients-carousel{
     .splide{max-width: 1245px; margin: 0 auto;}
+    
   }
-
+  .our-team-experts{
+    .splide__pagination{bottom: 0;}
+  }
 
 
 

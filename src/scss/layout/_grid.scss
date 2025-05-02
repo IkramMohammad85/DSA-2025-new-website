@@ -58,7 +58,7 @@
     }
   }
 }
-.section-wrapper {
+.section-wrapper, .section-wrapper-min  {
   position: relative;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -123,7 +123,7 @@ main {
     &-row--one-third {
       .flex-col-3per {
         flex: 0 0 calc(30% - 1%);
-        margin-right: 2%;
+        //margin-right: 2%;
 
       }
       .flex-col-7per {
@@ -211,10 +211,17 @@ main {
   .section-wrapper {
     max-width: 100%;
   }
+  .section-wrapper-min {
+    max-width: 100%;
+  }
 }
 @media (min-width: 1440px) {
   .section-wrapper {
     max-width: 1440px;
+    width: 100%;
+  }
+  .section-wrapper-min {
+    max-width: 1220px;
     width: 100%;
   }
 }

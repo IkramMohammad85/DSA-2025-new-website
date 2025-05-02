@@ -1,116 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tax Services in Asia</title>
+  <meta charset="UTF-8">
+  <title>Explore Brochures</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    .explore-content {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  background-color: #e0f7ff;
+  padding: 0 20px;
+  margin-top: 10px;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
+.explore-content.show {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px; /* or more depending on your content */
+  padding: 20px;
+}
 
-    .hero-banner {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
+.explore-close {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
 
-    .hero-banner img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .hero-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 47, 95, 0.6); /* semi-transparent overlay */
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 3rem 2rem;
-    }
-
-    .hero-content h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-      line-height: 1.2;
-      margin-top: 1rem;
-    }
-
-    .breadcrumb {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.875rem;
-    }
-
-    .breadcrumb a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .breadcrumb a:hover {
-      text-decoration: underline;
-    }
-
-    .breadcrumb span {
-      color: #ccc;
-    }
-
-    .breadcrumb .current {
-      font-weight: bold;
-      color: #fff;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .hero-content {
-        padding: 2rem 1rem;
-        text-align: center;
-      }
-
-      .hero-content h1 {
-        font-size: 2rem;
-      }
-
-      .breadcrumb {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <section class="hero-banner">
-    <img src="/img/esg/ESG_home-banner_2.webp" alt="Presentation in meeting room">
-    <div class="hero-content">
-      <h1>Tax Services<br>in Asia</h1>
-      <nav class="breadcrumb">
-        <a href="#">Home</a>
-        <span>›</span>
-        <a href="#">Services</a>
-        <span>›</span>
-        <span class="current">Tax</span>
-      </nav>
+
+
+    <section class="page-intro section-top-bottom-padding">
+        <div class="section-wrapper">
+          <div class="flex-grid-row flex-grid-row--one-third">
+            <div class="flex-col-3per"><h2>Our Taxation Services</h2></div>
+            <div class="flex-col-7per"> <p>Ttax environments, as well as in-depth industry knowledge and experience. Our experienced team of tax accountants, lawyers</p>
+            <div class="d-flex">
+                <a class="btn btn-primary text-cta-expnd" href="#">Make an enquiry</a>
+                <a class="text-cta-link scrollto" href="#" >Meet our team<span class="arrow-anim"></span></a>
+                <a  href="#" class="text-cta-link text-cta-expnd">Explore Brochures <span class="arrow-anim"></span></a>
+                   
+            
+            </div>
+        </div>
+      </div>
     </div>
-  </section>
+    <div class="section-light-blu-bg explore-content-position explore-content">
+      <button class="explore-close">×</button>
+      <div class="section-wrapper">
+        <div class="explore-content-block">
+          <h5>DOWNLOAD TAX BROCHURES</h5>
+        </div>
+      </div>
+    </div>
+      </section>
+      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const exploreLink = document.querySelector('.text-cta-expnd'); 
+          const exploreContent = document.querySelector('.explore-content');
+          const closeBtn = document.querySelector('.explore-close');
+      
+          if (exploreLink && exploreContent && closeBtn) {
+            exploreLink.addEventListener('click', function (e) {
+              e.preventDefault();
+              exploreContent.classList.add('show');
+            });
+      
+            closeBtn.addEventListener('click', function () {
+              exploreContent.classList.remove('show');
+            });
+          }
+        });
+      </script>
+      
+      
 
 </body>
 </html>

@@ -360,3 +360,21 @@ function showRegionalOffice() {
         }
       });
   
+      const exploreLink = document.querySelector('.text-cta-expnd'); // Selects "Explore Brochures"
+        const exploreContent = document.querySelector('.explore-content');
+        const closeBtn = document.querySelector('.explore-close');
+        const arrowRotate = exploreLink.querySelector('.arrow-anim'); // Selects the arrow inside
+    
+        if (exploreLink && exploreContent && closeBtn && arrowRotate) {
+          exploreLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            exploreContent.classList.add('show');
+            arrowRotate.classList.add('arrow-rotate'); // Rotate arrow
+          });
+    
+          closeBtn.addEventListener('click', function () {
+            exploreContent.classList.remove('show');
+            arrowRotate.classList.remove('arrow-rotate'); // Reset arrow rotation
+          });
+        }
+     

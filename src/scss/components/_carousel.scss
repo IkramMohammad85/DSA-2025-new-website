@@ -22,7 +22,8 @@
   animation: fadeInUp 1s ease-in-out;
 
   .slide-title {
-    font-size: 2rem;
+    font-size: 38px;
+    line-height: 50px;
     animation: fadeInUp 1s ease-in-out;
 
     a { color: v.$white; }
@@ -30,7 +31,8 @@
 
   .slide-desc {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 20px;
+    line-height: 30px;
     animation: fadeInUp 1.3s ease-in-out;
   }
 }
@@ -60,11 +62,11 @@
     list-style: none;
     margin: 1.5rem 0 0 0;
     padding: 0;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 24px;
 
     li {
-      padding: 0 1.5rem 1.5rem;
+      padding: 0 1.5rem 0.8rem 1.5rem;
       border-right: solid 1px v.$strong-blue;
       margin-bottom: 1rem;
 
@@ -93,8 +95,8 @@
             content: "";
             display: block;
             position: absolute;
-            width: 4px;
-            height: 4px;
+            width: 11px;
+            height: 11px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -115,17 +117,18 @@
     margin: 0 auto;
 
     &__page {
-      background-color: #D9D9D9;
-      width: 11px;
-      height: 11px;
+      background-color: #D9D9D9 !important;
+      width: 4px;
+      height: 4px;
       margin: 5px;
 
       &.is-active {
-        transform: scale(1.5);
-        background: transparent !important;
-        border: solid 1px v.$dsa-cyan-blue;
+        transform: scale(1.4);
+        background-color: #D9D9D9;
+        
         &::before {
-            background: #D9D9D9;
+          background: transparent;
+          border: solid 1px v.$dsa-cyan-blue;
           }
       }
     }
@@ -138,10 +141,10 @@
 }
 }
 #main-slider{
-  height: 550px;
+  height: 612px;
   .splide__pagination {
     justify-content: flex-start;
-    bottom: 10%;
+    bottom: 15%;
     right: 0;
     left: 0%;
     max-width: 1440px;
@@ -149,16 +152,19 @@
 
     &__page {
       background-color: v.$white;
-      width: 11px;
-      height: 11px;
+      width: 4px;
+      height: 4px;
       margin: 5px;
 
       &.is-active {
         transform: scale(1.5);
-        background: transparent !important;
+        //background: transparent !important;
         border: solid 1px v.$white;
+        background: #fff !important;
         &::before {
-            background: v.$white;
+            //background: v.$white;
+            background: transparent;
+            border: solid 1px #fff;
           
           }
       }
@@ -167,7 +173,7 @@
 
   .section-wrapper {
     position: absolute;
-    height: 550px;
+    height: 612px;
     right: 0;
     left: 0%;
     margin: 0 auto;
@@ -182,7 +188,7 @@
 
 
   .splide__list {
-    height: 550px;
+    height: 612px;
   }
 }
 .clients-carousel{

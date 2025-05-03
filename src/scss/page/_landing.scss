@@ -329,7 +329,7 @@
                     }
                 }
                 .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$gray-700; 
-                    h3{line-height: 24px; font-size: 1rem;font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium; color: v.$black;}
+                    h3{line-height: 24px; font-size: 1rem;font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium; color: v.$black; line-height: 24px;}
                 }
             }
         }
@@ -338,7 +338,7 @@
                 &:nth-child(2){
                     .ibm-enizi-sp-block{
                         .ibm-enizi-sp-text{
-                            h3{width: 60%; font-size: 16px;}
+                            h3{width: 60%; font-size: 16px; line-height: 24px;}
                             } 
                     }
                 }

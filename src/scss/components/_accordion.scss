@@ -2,6 +2,7 @@
 
 
 
+
 /*Accordion regular*/
 .accordion-reg {
     max-width: 100%;
@@ -84,5 +85,14 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  @media (min-width: 768px) {
+    .two-coulmn-accordion{
+      display: grid  ;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+
+      .accordion-reg-item{margin-bottom: 0;}
     }
   }

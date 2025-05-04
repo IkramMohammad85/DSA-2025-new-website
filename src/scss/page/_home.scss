@@ -383,7 +383,7 @@
 
     &::after {
       content: " ";
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(12, 39, 64, 0.54);
       position: absolute;
       top: 0;
       left: 0;
@@ -397,28 +397,31 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 840px;
+    //width: 840px;
     border-radius: 3px;
+    height: 320px;
 
   
     .card-content {position: relative;
       padding: 2rem 1rem 1rem 1rem;
-      min-height: 320px;
+      height: 320px;
+      width: 452px;
 
-      .profile-card{position: absolute; bottom: 20px;}
-
+      .profile-card{position: absolute; bottom: 8px;}
+      
+      .session-type-right{position: absolute; bottom: 8px;}
     }
   
     .card-thumbnail {
       position: relative;
-  
+  width: 350px;
       img {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        //width: 100%;
+        //height: 100%;
+        //object-fit: cover;
       }
     }
   }
@@ -426,7 +429,6 @@
   .card-single-column {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 520px;
     border-radius: 3px;
@@ -439,8 +441,10 @@
   
     .card-content {
       padding: 1rem;
-      min-height: 140px;
+      min-height: 96px;
       position: relative;
+      &.resources-video{padding: 0;}
+      .session-type-right{ bottom: 8px; position: absolute;}
     }
   }
 //end
@@ -516,7 +520,7 @@
   
   .conference-details {min-height: 250px;
     padding: 15px; position: relative;
-    .badge-es{top: 0;}
+    .badge-es{top: 0;right: 0;}
   
     .conference-title {
       font-family: "Inter";
@@ -544,8 +548,7 @@
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 5px;
-    position: absolute;
-    bottom: 20px;
+   
   }
   
   .conference-title,
@@ -560,7 +563,9 @@
     a {
       color: inherit;
     }
+
   }
+
   
   .conference-description {
     color: #495057;
@@ -775,16 +780,19 @@
   }
   
   .card-2columns {
-    .card-content {
+    .card-thumbnail{width: 100%;}
+    .card-content { width: 100%;height: 100%;
       .profile-card{position: inherit; bottom: 0;}
+
     }
   }
   .card-single-column{
     .card-thumbnail{height: auto;}
   }
+  .session-type-right{position: inherit; bottom: 0;}
 }
 @media (max-width: 767px) {
-  .card-2columns {
+  .card-2columns { height: auto;
     .card-thumbnail {
       img{position: inherit;}
     }
@@ -818,6 +826,18 @@
       }
     }
   
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
+  
+
+  }
+
+
+  @media (max-width: 767px) {
+
+   
     .featured-resources {
       width: auto;
       grid-template-columns: 1fr;
@@ -825,9 +845,13 @@
       .card-2columns {
         grid-template-columns: 1fr;
         width: 100%;
+        height: 100%;
+        .card-thumbnail{width: auto;}
+        .card-content{width: auto;}
       }
       .card-single-column{
         width: 100%;
+        height: 100%;
       }
     }
   
@@ -835,15 +859,20 @@
       flex-direction: column;
     }
   
-    .left-column,
-    .right-column {
-      width: 100%;
-    }
+
   
     .featured-resources-heading {
       grid-template-columns: 1fr;
     }
   }
 
-
-
+  @media (max-width: 1440px) {
+    .card-2columns {height: 100%;
+      .card-thumbnail{width: 100%;}
+    }
+    .card-2columns .card-content{width: 100%; height: 100%;
+      .profile-card{position: inherit;}
+      .session-type-right{position: inherit;}
+    }
+    .card-single-column{width: 100%;}
+  }

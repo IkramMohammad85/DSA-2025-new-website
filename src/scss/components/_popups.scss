@@ -23,23 +23,34 @@
   .popup-content {
     background: #fff;
     border-radius: 2px;
-    padding: 1.5rem;
+    padding: 4px;
     position: relative;
-    max-width: 560px;
+    max-width: 508px;
     width: 100%;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   }
 
   .popup-close,.explore-close {
     position: absolute;
-    top: 0.5rem;
-    right: 1rem;
+    top: 0.4rem;
+    right: 0.5rem;
     font-size: 1.5rem;
     background: transparent;
     border: none;
     cursor: pointer;
+    line-height: 14px;
   }
-
+  .popup-close {
+    top: -6px;
+    right: -5px;
+    font-size: 16px;
+    line-height: 9px;
+    background: #fff;
+    border-radius: 15px;
+    height: 23px;
+    width: 23px;
+}
+  
   /* Slide-in popup */
   .popup-slide-in {
     transition: all 0.4s ease;

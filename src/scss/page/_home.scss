@@ -10,6 +10,7 @@
         max-height: 300px;
         padding-top: 0.5rem;
       }
+
   }
   .expand-toggle {
     color: #222222;
@@ -32,11 +33,22 @@
       }
   }
   .trending-insights {
-    overflow: hidden;
+    //overflow: hidden;
     transition: max-height 0.4s ease;
     &.open {
         max-height: 300px;
       }
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        background: #fff;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+  }
   }
   //end
   // Dropdown toggle
@@ -135,6 +147,7 @@
   .ti-list li{
     &:nth-child(3), &:last-child {
         border: none;
+        padding-right: 0;
     }
   }
 //end

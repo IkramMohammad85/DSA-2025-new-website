@@ -671,6 +671,8 @@
 //end
 
 // Perspectives and Trends
+
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -702,6 +704,12 @@
     object-fit: cover;
     border-radius: 4px;
     //img{border-radius: 4px;}
+    &.doing-business{
+      transition: opacity 0.5s ease-in-out;
+      &.fade-out {
+        opacity: 0;
+      }
+    }
 
 }
 .card-body {
@@ -717,7 +725,10 @@
         font-weight: v.$font-weight-normal;
         a{color: #0C2740;}
     }
-
+    .card-buttons .card-btn.active{
+      color: #217fd4;
+        border: 1px solid #217fd4;
+    }
 }
 
 .card-title {

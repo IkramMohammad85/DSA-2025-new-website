@@ -30,7 +30,27 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-
+     // change image on hover card-btn
+     document.querySelectorAll('[data-imageChangeHover]').forEach(el => {
+      const targetSelector = el.dataset.imagechangehover;
+      const newImg = el.dataset.img;
+      el.addEventListener('mouseenter', () => {
+        document.querySelectorAll('.card-btn').forEach(btn => btn.classList.remove('active'));
+        el.classList.add('active');
+        const targetImg = document.querySelector(targetSelector);
+        if (targetImg && newImg) {
+          fadeImageChange(targetImg, newImg);
+        }
+      });
+    });
+    
+    function fadeImageChange(imgEl, newSrc) {
+      imgEl.classList.add('fade-out');
+      setTimeout(() => {
+        imgEl.src = newSrc;
+        imgEl.onload = () => imgEl.classList.remove('fade-out');
+      }, 150);
+    }
   /** Insights Resources Toggle */
   const toggleButton = document.querySelector(".insights-resources__toggle");
   const menu = document.querySelector(".insights-resources__menu");
@@ -127,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function carousel() {
     const slides = document.querySelectorAll(".LogoSlides");
 
-    if (slides.length === 0) return; // Prevent error if no slides exist
+    if (slides.length === 0) return; 
 
     slides.forEach(slide => {
       slide.style.display = "none";
@@ -359,22 +379,21 @@ function showRegionalOffice() {
           scrollTriggered = true;
         }
       });
-  
-      const exploreLink = document.querySelector('.text-cta-expnd'); // Selects "Explore Brochures"
+  // on click expand div
+      const exploreLink = document.querySelector('.text-cta-expnd'); 
         const exploreContent = document.querySelector('.explore-content');
         const closeBtn = document.querySelector('.explore-close');
-        const arrowRotate = exploreLink.querySelector('.arrow-anim'); // Selects the arrow inside
+        const arrowRotate = exploreLink.querySelector('.arrow-anim'); 
     
         if (exploreLink && exploreContent && closeBtn && arrowRotate) {
           exploreLink.addEventListener('click', function (e) {
             e.preventDefault();
             exploreContent.classList.add('show');
-            arrowRotate.classList.add('arrow-rotate'); // Rotate arrow
+            arrowRotate.classList.add('arrow-rotate');
           });
     
           closeBtn.addEventListener('click', function () {
             exploreContent.classList.remove('show');
-            arrowRotate.classList.remove('arrow-rotate'); // Reset arrow rotation
+            arrowRotate.classList.remove('arrow-rotate'); 
           });
         }
-     

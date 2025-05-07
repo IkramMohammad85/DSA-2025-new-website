@@ -23,7 +23,14 @@
   &-row--two {
     .flex-col {
       padding: 13px;
+      &--per52{
+        flex: 1 1 100%;
+      }
+      &--per36{
+        flex: 1 1 100%;
+      }
     }
+
   }
   &-row--one-third{
     .flex-col-3per, .flex-col-7per {

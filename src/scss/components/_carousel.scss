@@ -14,7 +14,7 @@
 .splide__arrow svg{fill: #525252 !important;}
 .slider-content {
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   left: 1.5rem;
   color: v.$white;
   z-index: 10;
@@ -206,6 +206,7 @@
       max-width: 90%;
       .slide-title {
         font-size: 1.3rem;
+        line-height: normal;
       }
     
       .slide-desc {

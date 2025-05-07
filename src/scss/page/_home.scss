@@ -800,7 +800,7 @@
 .counter-section {
     display: flex;
     //grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
+    gap: 3rem;
     padding: 0rem 0rem 2rem 0rem;
     text-align: left;
     
@@ -878,6 +878,9 @@
         
     }
     .image-container{height: auto;}
+    .card-single-column .card-content{
+      min-height: 130px;
+    }
 }
 
 @media (max-width: 768px) {

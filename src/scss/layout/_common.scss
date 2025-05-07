@@ -74,7 +74,12 @@ html { scroll-behavior: smooth; }
 .clients-panel-list{
   .c-logo { display: flex; flex-direction: column; align-items: center; align-items: center;  margin: 0 auto 2rem auto; gap: 4rem; margin-top: 1rem;
   }
+
+}
+.our-team-experts, .clients-panel-list{
   .splide__pagination{bottom: -24px;}
+  .splide__pagination__page.is-active::before{width: 4px; height: 4px;}
+  .splide__pagination__page.is-active{transform: scale(1);}
 }
 
 .clients-carousel{
@@ -101,7 +106,7 @@ align-items: center;justify-content: center;}
 //end
 .page-intro{
 h2{font-size: 28px; font-family: v.$font-family-Poppins; color: #0C2740; line-height: 40px; font-weight:v.$font-weight-SemiBold; }
-p{color: #535353; line-height: 26px;}
+p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-weight: v.$font-weight-light;}
 }
 /*Executive Summary */
 .landing-top-content{padding-top: 66px; padding-bottom: 66px;

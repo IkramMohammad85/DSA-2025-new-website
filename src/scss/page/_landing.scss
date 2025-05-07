@@ -15,14 +15,15 @@
 .or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-phone .phone-cta-cion, .or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-email .email-cta-cion { width: 40px; height: 24px; }
 .or-cta-cyp-card .or-cta .reg-contacts-addr .reg-contacts-email .email-text { font-size: 1rem; }
     .services-question-section {
+        h2{margin-bottom: 3rem;}
         .services-list-details{
             h2 { text-align: left; width: 75%; line-height: 1.4; padding-top: 0.5rem;  font-size: 24px;font-family: v.$font-family-Poppins; margin-bottom: 1.5rem;
                 font-weight: v.$font-weight-SemiBold;}
         }
         .got-question-block {
-            width: 70%;
-            margin: 0 auto;
-            padding: 1.5rem;
+            width: 428px;
+            margin-left: 54px;
+            padding: 2rem 3rem;
             background-color: #f7f7f7;
             
             form {
@@ -33,9 +34,9 @@
                   }
               }
               .or-cta-cyp-card {margin-top: 3.5rem;
-                h4 { color: #103D68; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 22px; margin-bottom: 0; margin-top: 1rem; }
+                h4 { color: #103D68; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 18px; margin-bottom: 0; margin-top: 1rem; }
               }
-              h3{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 22px; color: v.$dsa-dark-blue;}
+              h3{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 20px; color: v.$dsa-dark-blue;}
               
           }
           .regional-hidden {
@@ -314,9 +315,11 @@
         background-color: #F6F6F6;
         min-height: 451px;
         .flex-spacing{display: inherit;}
-        h2,p {text-align:center;   width: 75%; margin: 0 auto; margin-bottom: 2rem;}
-        h2{line-height: 30px; font-size: 24px; color: v.$dsa-dark-blue; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;}
-        p {margin-bottom: 3rem; color: v.$dsa-light-grey; font-size: 18px; line-height: 30px;}
+        h2,p {text-align:center;   
+            //width: 75%; 
+            margin: 0 auto; margin-bottom: 26px;}
+        h2{line-height: 36px; font-size: 28px; color: v.$dsa-dark-blue; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold;}
+        p {margin-bottom: 3rem; color: #58585b; font-size: 16px; line-height: 26px; font-family: v.$font-family-inter; font-weight: v.$font-weight-normal;}
         
         .ibm-enizi-sp-container {display: flex; justify-content: space-between; flex-direction: row;
             .ibm-enizi-sp-block{ width: 380px;  display: flex;margin-left: 0rem; margin-right: 0rem;
@@ -329,7 +332,8 @@
                     }
                 }
                 .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$gray-700; 
-                    h3{line-height: 24px; font-size: 1rem;font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium; color: v.$black; line-height: 24px;}
+                    h3{ font-size: 1rem;font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium; color: v.$black; line-height: 24px;}
+                    p{font-size: 15px; line-height: 24px; font-family: v.$font-family-inter; font-weight: v.$font-weight-light; text-align: left; margin-bottom: 0; width: auto; color: #535353;}
                 }
             }
         }

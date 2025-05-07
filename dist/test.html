@@ -5,7 +5,76 @@
   <link rel="stylesheet" href="css/main.min.css" type="text/css" />
   <link rel="stylesheet" href="/css/vendor/splide.min.css" type="text/css">
   <title>Explore Brochures</title>
-  
+  <style>
+    .video-container {
+  position: relative;
+  max-width: 800px;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  pointer-events: auto;
+}
+
+.play-button {
+  font-size: 4rem;
+  color: white;
+  pointer-events: none;
+}
+
+.video-container[data-state="playing"] .video-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video-container[data-autohide] video.hide-controls::-webkit-media-controls {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+  .card-image {
+  animation: none;
+  opacity: 1;
+  transition: none;
+}
+
+.card-image.fade-image-out-in {
+  animation: fadeImageZoomOutIn 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeImageZoomOutIn {
+  0% {
+    opacity: 1;
+   
+  }
+  40% {
+    opacity: 0;
+   
+  }
+  50% {
+    opacity: 0;
+   
+  }
+  100% {
+    opacity: 1;
+    
+  }
+}
+  </style>
 </head>
 <body>
 
@@ -43,8 +112,102 @@
         </div>
     </div>
 </div>
-      
-      <script>
+<div class="featured-resources">
+  <div class="card-2columns">
+      <div class="card-thumbnail"><img src="img/fr1.jpg" alt=""></div>
+      <div class="card-content">
+          <h4><a href="#" target="_blank">China Takes Top Spot on Asia Manufacturing Index 2025</a></h4>
+          <p>For the second consecutive year, China ranks first in the Asia Manufacturing Index, maintaining its leadership despite significant shifts in its production  landscape and traditional markets. </p>
+          <div class="profile-card">
+              <div class="profile-thumbnail">
+                  <img src="https://www.asiabriefing.com/site-mgmt-v2/new/userfiles/personnel/Kyle_Freeman_200x200.jpg" alt="Qian Zhou, Editor at China Briefing" class="thumbnail" loading="lazy">
+              </div>
+              <div class="profile-info">
+                  <div class="profile-name"><a href="#">Kyle Freeman</a></div>
+                  <div class="profile-title">Partner</div>
+                  </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="card-single-column">
+      <div class="card-thumbnail">
+        <div class="video-container" data-state="initial">
+          <video poster="https://cdn.jwplayer.com/v2/media/DSu3Pgpc/poster.jpg">
+            <source src="https://dp3rhc3eohw2j.cloudfront.net/Distribute/jwp1/2017/Introducing+Dezan+Shira+%26+Associates+2017/DSu3Pgpc/720p.mp4 " type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="video-overlay">
+            <div class="play-button">&#9658;</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-content">
+          <h4><a href="#" target="_blank">ESG Management with IBM Envizi – Science-driven, Reality-backed Reporting</a></h4>
+         
+          <div class="session-type-right">Case Study</div>
+      </div>
+  </div>
+  <div class="card-2columns">
+      <div class="card-thumbnail"><img src="img/fr2.jpg" alt=""></div>
+      <div class="card-content">
+          <h4><a href="#" target="_blank">China Takes Top Spot on Asia Manufacturing Index 2025</a></h4>
+          <p>This comprehensive guide delves into the essentials of establishing and managing a business in the UAE, covering everything from its political and economic framework to practical steps for setting up operations. The UAE’s positive investment outlook... </p>
+          <div class="session-type-right">Publication</div>
+      </div>
+  </div>
+  <div class="card-single-column">
+      <div class="card-content resources-video">
+         
+        <div class="video-container" data-state="initial" data-autohide>
+          <video class="custom-video" preload="metadata" poster="thumbnail.jpg">
+            <source src="https://dp3rhc3eohw2j.cloudfront.net/Distribute/simplifying-payroll-in-asias-complex-environment/7ac51b7f-027e-4c6f-9644-48e11a479754/MP4/simplifying-payroll-in-asias-complex-environment_720.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-overlay">
+            <div class="play-button">&#9658;</div>
+          </div>
+        </div>
+          
+          <!-- <vedio class="event-video-item" data-popup="center-popup" src="https://dp3rhc3eohw2j.cloudfront.net/Distribute/simplifying-payroll-in-asias-complex-environment/7ac51b7f-027e-4c6f-9644-48e11a479754/MP4/simplifying-payroll-in-asias-complex-environment_720.mp4" data-cover="/img/video-bg.png">
+              <figure class="ve">
+                  <svg height="75" viewBox="0 0 512 512" width="75" xmlns="http://www.w3.org/2000/svg"><path d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z" style="fill:rgba(0,0,0,.25);stroke:#fff;stroke-miterlimit:10;stroke-width:16px"/><path d="M216.32,334.44,330.77,265.3a10.89,10.89,0,0,0,0-18.6L216.32,177.56A10.78,10.78,0,0,0,200,186.87V325.13A10.78,10.78,0,0,0,216.32,334.44Z"/></svg><img src="/img/video-bg.png" alt="China Regulatory Watch - IP Protection">
+              </figure>
+              <h2><a href="#">China Regulatory Watch - IP Protection</a>
+              <span>Case Study</span>
+              </h2>
+            
+            </vedio> -->
+      </div>
+      <!-- <div class="popup-overlay center-popup" id="center-popup">
+          <div class="popup-content">
+            <button class="popup-close">&times;</button>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/Wq85aATjZvo?si=bsXeL9KF6GH9fhKZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div> -->
+  </div>
+</div>
+<div class="video-container" data-state="initial" data-autohide>
+  <video class="custom-video" preload="metadata" poster="thumbnail.jpg">
+    <source src="https://dp3rhc3eohw2j.cloudfront.net/Distribute/simplifying-payroll-in-asias-complex-environment/7ac51b7f-027e-4c6f-9644-48e11a479754/MP4/simplifying-payroll-in-asias-complex-environment_720.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay">
+    <div class="play-button">&#9658;</div>
+  </div>
+</div>
+
+<div class="video-container" data-state="initial" data-autohide>
+  <video class="custom-video" preload="metadata" poster="thumbnail.jpg">
+    <source src="https://dp3rhc3eohw2j.cloudfront.net/Distribute/simplifying-payroll-in-asias-complex-environment/7ac51b7f-027e-4c6f-9644-48e11a479754/MP4/simplifying-payroll-in-asias-complex-environment_720.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay">
+    <div class="play-button">&#9658;</div>
+  </div>
+</div>
+
+      <!-- <script>
 document.querySelectorAll('[data-imageChangeHover]').forEach(el => {
   const targetSelector = el.dataset.imagechangehover;
   const newImg = el.dataset.img;
@@ -71,10 +234,118 @@ function fadeImageChange(imgEl, newSrc) {
   }, 150);
 }
 
+      </script> -->
+      
+      <!-- <script>
+        document.querySelectorAll('[data-imageChangeHover]').forEach(el => {
+  const targetSelector = el.dataset.imagechangehover;
+  const newImg = el.dataset.img;
+
+  el.addEventListener('mouseenter', () => {
+    // Update active class
+    document.querySelectorAll('.card-btn').forEach(btn => btn.classList.remove('active'));
+    el.classList.add('active');
+
+    const targetImg = document.querySelector(targetSelector);
+    if (targetImg && newImg) {
+      animateImageChange(targetImg, newImg);
+    }
+  });
+});
+
+function animateImageChange(imgEl, newSrc) {
+  imgEl.classList.add('fade-image-out-in');
+
+  // Change image halfway through animation
+  setTimeout(() => {
+    imgEl.src = newSrc;
+  }, 250); // Half of 0.5s animation duration
+
+  // Remove animation class after complete
+  setTimeout(() => {
+    imgEl.classList.remove('fade-image-out-in');
+  }, 500);
+}
+      </script> -->
+      <script>
+        document.querySelectorAll('[data-imageChangeHover]').forEach(el => {
+  const targetSelector = el.dataset.imagechangehover;
+  const newImg = el.dataset.img;
+
+  el.addEventListener('mouseenter', () => {
+    // Switch active class
+    document.querySelectorAll('.card-btn').forEach(btn => btn.classList.remove('active'));
+    el.classList.add('active');
+
+    const imgEl = document.querySelector(targetSelector);
+    if (imgEl && newImg) {
+      animateImageChangeZoom(imgEl, newImg);
+    }
+  });
+});
+
+function animateImageChangeZoom(imgEl, newSrc) {
+  imgEl.classList.add('fade-image-out-in');
+
+  setTimeout(() => {
+    imgEl.src = newSrc;
+  }, 300); // Halfway (0.6s / 2)
+
+  setTimeout(() => {
+    imgEl.classList.remove('fade-image-out-in');
+  }, 600);
+}
+
       </script>
-      
-      
-      
+
+<script>
+  document.querySelectorAll(".video-container").forEach(container => {
+    const video = container.querySelector("video");
+    const overlay = container.querySelector(".video-overlay");
+
+    container.addEventListener("click", () => {
+  if (container.dataset.state === "initial") {
+    video.setAttribute("controls", true);
+    video.play();
+    container.dataset.state = "playing";
+    startAutoHideControls(video, container); // this is fine to keep
+  }
+});
+
+    // Prevent pausing if needed
+    video.addEventListener("pause", () => {
+      if (
+        container.dataset.state === "playing" &&
+        container.hasAttribute("data-no-pause") &&
+        !video.ended
+      ) {
+        video.play();
+      }
+    });
+  });
+
+  function enterFullscreen(el) {
+    if (el.requestFullscreen) el.requestFullscreen();
+    else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+    else if (el.msRequestFullscreen) el.msRequestFullscreen();
+  }
+
+  function startAutoHideControls(video, container) {
+    if (!container.hasAttribute("data-autohide")) return;
+
+    let timeout;
+    const hideControls = () => video.classList.add("hide-controls");
+    const showControls = () => {
+      video.classList.remove("hide-controls");
+      clearTimeout(timeout);
+      timeout = setTimeout(hideControls, 3000);
+    };
+
+    video.addEventListener("mousemove", showControls);
+    video.addEventListener("touchstart", showControls);
+    timeout = setTimeout(hideControls, 3000);
+  }
+</script>
 
 </body>
 </html>

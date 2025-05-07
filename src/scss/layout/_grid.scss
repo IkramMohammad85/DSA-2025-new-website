@@ -16,45 +16,46 @@
 
   &-col-lg {
     flex: 1 1 100%;
+    display: grid;
   }
 
   // 2-Column Layout
   &-row--two {
     .flex-col {
-      padding: 1rem;
+      padding: 13px;
     }
   }
   &-row--one-third{
     .flex-col-3per, .flex-col-7per {
-      padding: 1rem;
+      padding: 13px;
     }
   }
 
   // 3-Column Layout
   &-row--three {
     .flex-col {
-      padding: 1rem;
+      padding: 13px;
     }
   }
 
   // 4-Column Layout
   &-row--four {
     .flex-col {
-      padding: 1rem;
+      padding: 13px;
     }
   }
 
   // Fixed 3-Column Layout
   &-row--fixed-three {
     .flex-col {
-      padding: 1rem;
+      padding: 13px;
     }
   }
 
   // Fixed 4-Column Layout
   &-row--fixed-four {
     .flex-col {
-      padding: 1rem;
+      padding: 13px;
     }
   }
 }
@@ -73,11 +74,11 @@
       display: flex;
       justify-content: space-between;
       .flex-item {
-        padding: 1rem;
+        padding: 13px;
       }
     }
     .flex-item {
-      padding: 1rem;
+      padding: 13px;
     }
   }
 
@@ -85,7 +86,7 @@
     display: flex;
     justify-content: space-between;
     .flex-item {
-      padding: 1rem;
+      padding: 13px;
     }
   }
 }
@@ -113,22 +114,31 @@ main {
     }
     &-row--two {
       .flex-col {
-        flex: 0 0 calc(50% - 1%);
-        margin-right: 2%;
+        flex: 0 0 calc(50% );
+        //flex: 0 0 calc(50% - 1%);
+        //margin-right: 2%;
         &:nth-child(2n) {
           margin-right: 0;
+        }
+        &--per52{
+          flex: 1 0 calc(52% );
+        }
+        &--per36{
+          flex: 0 0 calc(36% );
         }
       }
     }
     &-row--one-third {
       .flex-col-3per {
-        flex: 0 0 calc(30% - 1%);
+        //flex: 0 0 calc(30% - 1%);
+        flex: 0 0 calc(30%);
         //margin-right: 2%;
 
       }
       .flex-col-7per {
-        flex: 0 0 calc(70% - 1%);
-        margin-right: 2%;
+        flex: 0 0 calc(70%);
+        //flex: 0 0 calc(70% - 1%);
+        //margin-right: 2%;
         &:nth-child(2n) {
           margin-right: 0;
         }

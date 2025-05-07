@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function () {
     observer.observe(counterSection);
   }
 
-  /** Home Video Who We Are Section */
+  /** Home Video Who We Are Section
   const container = document.querySelector(".video-container");
   if (container) {
     const video = container.querySelector("video");
@@ -314,6 +314,54 @@ document.addEventListener('DOMContentLoaded', function () {
       video.addEventListener("touchstart", showControls);
       timeout = setTimeout(hideControls, 3000);
     }
+  }*/
+
+
+  document.querySelectorAll(".video-container").forEach(container => {
+    const video = container.querySelector("video");
+    const overlay = container.querySelector(".video-overlay");
+
+    container.addEventListener("click", () => {
+  if (container.dataset.state === "initial") {
+    video.setAttribute("controls", true);
+    video.play();
+    container.dataset.state = "playing";
+    startAutoHideControls(video, container); // this is fine to keep
+  }
+});
+
+    // Prevent pausing if needed
+    video.addEventListener("pause", () => {
+      if (
+        container.dataset.state === "playing" &&
+        container.hasAttribute("data-no-pause") &&
+        !video.ended
+      ) {
+        video.play();
+      }
+    });
+  });
+
+  function enterFullscreen(el) {
+    if (el.requestFullscreen) el.requestFullscreen();
+    else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+    else if (el.msRequestFullscreen) el.msRequestFullscreen();
+  }
+
+  function startAutoHideControls(video, container) {
+    if (!container.hasAttribute("data-autohide")) return;
+
+    let timeout;
+    const hideControls = () => video.classList.add("hide-controls");
+    const showControls = () => {
+      video.classList.remove("hide-controls");
+      clearTimeout(timeout);
+      timeout = setTimeout(hideControls, 3000);
+    };
+
+    video.addEventListener("mousemove", showControls);
+    video.addEventListener("touchstart", showControls);
+    timeout = setTimeout(hideControls, 3000);
   }
 });
 

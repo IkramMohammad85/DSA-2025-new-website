@@ -63,7 +63,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #535353;
+    color: 8A8A8A;
     //line-height: 34px;
     font-weight: v.$font-weight-Medium;
 
@@ -123,7 +123,12 @@
       }
     }
   }
-  
+  .our-services{
+    .toggleBtn-dropdown{margin-top: 0.5rem;}
+    .toggleBtn-dropdown-button{color: #535353;}
+
+
+  }
 //end
 
 //top banner slide
@@ -153,7 +158,7 @@
 //end
 // video section Who We Are
   /* Hide overlay when playing */
-  .video-container[data-state="playing"] .video-overlay {
+  .video-container[data-state="playing"] .video-overlay, .video-container[data-state="playing"] .video-title  {
     opacity: 0;
     pointer-events: none;
   }
@@ -169,12 +174,28 @@
     max-width: 800px;
     margin: 0 auto;
     cursor: pointer;
+    .video-title{
+      position: absolute;
+      bottom: 0;
+      padding: 1rem;
+      h2{ font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; color: #fff; font-size: 1rem; line-height: 24px;
+        a{color: #fff;}
+      span{font-size: 14px; display: block; font-family: v.$font-family-inter; font-weight: v.$font-weight-normal;}
+      }
+    }
   }
   
   .video-container video {
     width: 100%;
     height: auto;
     display: block;
+  }
+  .featured-resources{
+    .video-container video {
+   
+      height: 320px;
+  
+    }
   }
   
   .video-overlay {
@@ -705,12 +726,30 @@
     border-radius: 4px;
     //img{border-radius: 4px;}
     &.doing-business{
-      transition: opacity 0.5s ease-in-out;
+      animation: none;
+      opacity: 1;
+      transition: none;
       &.fade-out {
-        opacity: 0;
+        animation: fadeImageOutIn 0.5s ease-in-out forwards;
       }
     }
 
+}
+
+
+@keyframes fadeImageOutIn {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .card-body {
     .heading-second{ margin-bottom: 1.5rem;}
@@ -718,11 +757,12 @@
         display: grid;
         //grid-template-columns: 1fr 1fr;
         grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
+        gap: 0.7rem;
         color: #0C2740;
         font-size: 1rem;
         font-family: v.$font-family-inter;
         font-weight: v.$font-weight-normal;
+        margin-bottom: 2rem;
         a{color: #0C2740;}
     }
     .card-buttons .card-btn.active{

@@ -198,7 +198,11 @@
   .our-team-experts{
     .splide__pagination{bottom: 0;}
   }
-
+  .explore-content-block{
+    .splide__arrow{width: auto; height: auto;}
+    .splide__arrow--prev{left: -1.5rem;}
+    .splide__arrow--next{right: -1.5rem;}
+  }
 
 
   @media (max-width: 1024px) {

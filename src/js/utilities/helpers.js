@@ -123,15 +123,43 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /** Home Top Banner Splide Slider */
+  // document.querySelectorAll('.splide').forEach(el => {
+  //   const options = {
+  //     perPage: parseInt(el.dataset.perPage) || 1,
+  //     type: el.dataset.type || 'loop',
+  //     autoplay: el.dataset.autoplay === 'true',
+  //     pagination: el.dataset.pagination !== 'false',
+  //     rewind: el.dataset.rewind === 'true',
+  //     arrows: el.dataset.arrows !== 'false',
+  //   };
+  //   if (el.dataset.breakpoints) {
+  //     try {
+  //       options.breakpoints = JSON.parse(el.dataset.breakpoints);
+  //     } catch (e) {
+  //       console.warn('Invalid breakpoints JSON for', el, e);
+  //     }
+  //   }
+  //   new Splide(el, options).mount();
+  // });
+  
   document.querySelectorAll('.splide').forEach(el => {
+    const type = el.dataset.type || 'loop';
+  
     const options = {
       perPage: parseInt(el.dataset.perPage) || 1,
-      type: el.dataset.type || 'loop',
+      type: type,
       autoplay: el.dataset.autoplay === 'true',
       pagination: el.dataset.pagination !== 'false',
-      rewind: el.dataset.rewind === 'true',
       arrows: el.dataset.arrows !== 'false',
+      pauseOnHover: false,
+      interval: parseInt(el.dataset.interval) || 3000, // Default to 3000ms (3 seconds)
     };
+  
+    // Only include rewind if not using loop
+    if (type !== 'loop') {
+      options.rewind = el.dataset.rewind === 'true';
+    }
+  
     if (el.dataset.breakpoints) {
       try {
         options.breakpoints = JSON.parse(el.dataset.breakpoints);
@@ -139,9 +167,26 @@ document.addEventListener('DOMContentLoaded', function () {
         console.warn('Invalid breakpoints JSON for', el, e);
       }
     }
-    new Splide(el, options).mount();
+  
+    const splide = new Splide(el, options);
+    splide.mount();
+  
+    // Pause/play autoplay on specific inner elements only
+    el.querySelectorAll('.slider-content, .trending-insights').forEach(innerEl => {
+      innerEl.addEventListener('mouseenter', () => {
+        if (splide.Components.Autoplay) {
+          splide.Components.Autoplay.pause();
+        }
+      });
+      innerEl.addEventListener('mouseleave', () => {
+        if (splide.Components.Autoplay) {
+          splide.Components.Autoplay.play();
+        }
+      });
+    });
   });
-
+  
+  
   /** Logo Slides (Our Brands Page) */
   let slideIndex = 0;
   function carousel() {
@@ -235,32 +280,37 @@ document.addEventListener('DOMContentLoaded', function () {
   /** Counter Animation in Home Who We Are Section */
   const counters = document.querySelectorAll('.counter');
   let countersStarted = false;
-
+  
   function startCounters() {
     counters.forEach(counter => {
-      counter.innerText = '0';
       const target = +counter.getAttribute('data-target');
       const hasPlus = counter.getAttribute('data-plus') === "true";
-
-      const updateCounter = () => {
-        const current = +counter.innerText.replace('+', '');
-        const increment = target / 200;
-
-        if (current < target) {
-          counter.innerText = `${Math.ceil(current + increment)}`;
+      const duration = +counter.getAttribute('data-speed') || 2000; // Duration in ms
+  
+      const startTime = performance.now();
+  
+      function updateCounter(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1); // Clamp to 1
+        const value = Math.floor(progress * target);
+  
+        counter.innerText = hasPlus ? `${value}+` : `${value}`;
+  
+        if (progress < 1) {
           requestAnimationFrame(updateCounter);
         } else {
           counter.innerText = hasPlus ? `${target}+` : `${target}`;
         }
-      };
-      updateCounter();
+      }
+  
+      requestAnimationFrame(updateCounter);
     });
   }
-
+  
   const observerOptions = {
     threshold: 0.4
   };
-
+  
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !countersStarted) {
@@ -270,11 +320,13 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }, observerOptions);
-
+  
   const counterSection = document.querySelector('.counter-section');
   if (counterSection) {
     observer.observe(counterSection);
   }
+  
+  
 
   /** Home Video Who We Are Section
   const container = document.querySelector(".video-container");
@@ -428,20 +480,30 @@ function showRegionalOffice() {
         }
       });
   // on click expand div
-      const exploreLink = document.querySelector('.text-cta-expnd'); 
-        const exploreContent = document.querySelector('.explore-content');
-        const closeBtn = document.querySelector('.explore-close');
-        const arrowRotate = exploreLink.querySelector('.arrow-anim'); 
-    
-        if (exploreLink && exploreContent && closeBtn && arrowRotate) {
-          exploreLink.addEventListener('click', function (e) {
-            e.preventDefault();
-            exploreContent.classList.add('show');
-            arrowRotate.classList.add('arrow-rotate');
-          });
-    
-          closeBtn.addEventListener('click', function () {
-            exploreContent.classList.remove('show');
-            arrowRotate.classList.remove('arrow-rotate'); 
-          });
-        }
+  document.addEventListener('DOMContentLoaded', function () {
+    const exploreLink = document.querySelector('.text-cta-expnd');
+    const exploreContent = document.querySelector('.explore-content');
+    const closeBtn = document.querySelector('.explore-close');
+  
+    // Only attempt to find .arrow-anim *inside* exploreLink if it exists
+    const arrowRotate = exploreLink?.querySelector('.arrow-anim');
+  
+    if (exploreLink && exploreContent && closeBtn && arrowRotate) {
+      exploreLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        exploreContent.classList.add('show');
+        arrowRotate.classList.add('arrow-rotate');
+      });
+  
+      closeBtn.addEventListener('click', function () {
+        exploreContent.classList.remove('show');
+        arrowRotate.classList.remove('arrow-rotate');
+      });
+    } else {
+      console.warn('One or more required elements were not found in the DOM.');
+      console.log({ exploreLink, exploreContent, closeBtn, arrowRotate });
+    }
+  });
+  
+
+

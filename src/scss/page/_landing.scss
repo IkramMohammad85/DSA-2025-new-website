@@ -328,14 +328,7 @@
         
         .ibm-enizi-sp-container {display: flex; justify-content: space-between; flex-direction: row;
             .ibm-enizi-sp-block{ width: 380px;  display: flex;margin-left: 0rem; margin-right: 0rem;
-                .ibm-enizi-sp-title{  margin-right: 2rem;
-                    .sp-icon{ width: 62px; height: 62px;border-radius: 50%;  display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    img{width: 62px; height: 62px; }
-                 
-                    }
-                }
+                .ibm-enizi-sp-title{  margin-right: 2rem;    }
                 .ibm-enizi-sp-text{padding: 0rem 0rem; color: v.$gray-700; 
                     h3{ font-size: 1rem;font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium; color: v.$black; line-height: 24px;}
                     p{font-size: 15px; line-height: 24px; font-family: v.$font-family-inter; font-weight: v.$font-weight-light; text-align: left; margin-bottom: 0; width: auto; color: #535353;}
@@ -479,9 +472,6 @@
         flex-direction: column;
         .ibm-enizi-sp-title{
             margin-right: 0;
-            .sp-icon {
-                margin: 0 auto;
-            }
         }
         .ibm-enizi-sp-text{
             padding-top: 1rem;

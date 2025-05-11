@@ -1,4 +1,5 @@
 
+@use "../base/variables" as v;
 .mt-7{margin-top: 70px !important;}
 .mb-7{margin-bottom: 70px !important;}
 .pt-7 { padding-top: 70px !important;}
@@ -20,3 +21,5 @@
 .heading-second{font-family: "Poppins"; font-weight: 700; color: #0C2740;font-size: 32px; line-height: 44px;}
 .heading-third{font-family: "Poppins"; font-weight: 400; color: #535353; font-size: 20px;}
 .explore-content-position{position: relative;}
+.rounded-circle{border-radius: 50% ;}
+.bg-secondary { background-color: v.$dsa-cyan-blue;}

@@ -276,12 +276,19 @@
   
   .news-featured {
     width: 426px;
+    
   }
   
-  .news-featured .news-image {
-    width: 100%;
-    border-radius: 4px;
-    object-fit: cover;
+  .news-featured {
+    .news-image {
+      overflow: hidden;
+      img{     
+         width: 100%;
+        border-radius: 4px;
+        object-fit: cover;
+        
+      }
+    }
   }
   
   .news-featured .news-title {
@@ -449,6 +456,7 @@
     .card-thumbnail {
       position: relative;
   width: 350px;
+  overflow: hidden;
       img {
         position: absolute;
         top: 0;

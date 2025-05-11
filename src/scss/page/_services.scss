@@ -28,7 +28,7 @@ a{color: v.$dsa-dark-blue; }
             &.tab--active {border-left: solid 0.2rem rgba(54, 125, 191, 1);
             a{font-weight: bold;}
             }
-            a{font-weight: normal;}
+            a{font-weight: normal;cursor: pointer;}
             &:last-child{margin-bottom: 0;}
             }
       }

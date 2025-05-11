@@ -104,6 +104,21 @@
             border-radius: 100%;
           }
         }
+        &::before{
+          background: 0 0;
+          border: solid 1px transparent;
+          content: "";
+          display: block;
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+      }
+      li{margin-right: 5px !important;
+      &:last-child{margin-right: 0;}
       }
 }
 

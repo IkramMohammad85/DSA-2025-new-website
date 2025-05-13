@@ -1,34 +1,41 @@
 @use "../base/variables" as v; 
 
-
-
-
-/*Accordion regular*/
+/*Accordion regular  */
 .accordion-reg {
-    max-width: 100%;
-    &.explore-services{
-      .accordion-reg-button.collapsed{background-color: #fff; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; padding: 20px 32px;}
-      .accordion-reg-collapse{background-color: #fff; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; border-radius: 0;}
-      
-    }
-    &.explore-faq{
-      .accordion-reg-button.collapsed{background-color: #fff; box-shadow: rgba(33, 35, 38, 0.2) 0px 5px 5px -5px; padding: 20px;}
-      .accordion-reg-collapse{background-color: #fff; box-shadow: rgba(33, 35, 38, 0.2) 0px 5px 5px -5px; border-radius: 0;}
-      
-    }
-
+  max-width: 100%;
+  .accordion-reg-button.collapsed {
+    background-color: v.$white;
+    padding: 20px;
   }
-  
+  .accordion-reg-collapse {
+    background-color:  v.$white;
+    border-radius: 0;
+  }
+  &.explore-services {
+    .accordion-reg-button.collapsed {
+      box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px;
+      padding: 20px 32px; 
+    }
+    .accordion-reg-collapse {
+      box-shadow:
+        rgba(0, 0, 0, 0.1) 0 1px 3px 0,
+        rgba(0, 0, 0, 0.06) 0 1px 2px 0;
+    }
+  }
+  &.explore-faq {
+    .accordion-reg-button.collapsed,
+    .accordion-reg-collapse {
+      box-shadow: rgba(33, 35, 38, 0.2) 0 5px 5px -5px;
+    }
+  }
+}
   .accordion-reg-header {
     margin: 0;
     padding: 0;
   }
-  
   .accordion-reg-item {
-
     margin-bottom: 26px;
   }
-  
   .accordion-reg-button {
     width: 100%;
     padding: 20px;
@@ -46,24 +53,19 @@
     font-weight: v.$font-weight-Medium;
     line-height: 28px;
     color: #0C2740;
+    &:hover {
+      background-color: #e2e6ea;
+    }
+    &.collapsed {
+      background-color: #F6F6F6;
+    }
+    .arrow {
+      transition: transform 0.3s ease;
+    }
   }
-  
-  .accordion-reg-button:hover {
-    background-color: #e2e6ea;
-  }
-  
-  .accordion-reg-button.collapsed {
-    background-color: #F6F6F6;
-  }
-  
-  .accordion-reg-button .arrow {
-    transition: transform 0.3s ease;
-  }
-  
   .accordion-reg-button[aria-expanded="true"] .arrow {
     transform: rotate(45deg);
   }
-  
   .accordion-reg-collapse {
     display: none;
     padding: 15px 32px 32px 32px;
@@ -73,12 +75,10 @@
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     margin-top: -16px;
+    &.show {
+      display: block;
+    }
   }
-  
-  .accordion-reg-collapse.show {
-    display: block;
-  }
-  
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -94,8 +94,6 @@
       display: grid  ;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
-
       .accordion-reg-item{margin-bottom: 0;}
     }
-    
   }

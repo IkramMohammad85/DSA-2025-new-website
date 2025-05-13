@@ -21,13 +21,14 @@
 
   /* Popup content */
   .popup-content {
-    background: #fff;
+    background: #8da1b4;
     border-radius: 2px;
-    padding: 4px;
+    padding: 14px 14px 7px 14px;
     position: relative;
-    max-width: 508px;
+    max-width: 650px;
     width: 100%;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    video{cursor: pointer;}
   }
 
   .popup-close,.explore-close {

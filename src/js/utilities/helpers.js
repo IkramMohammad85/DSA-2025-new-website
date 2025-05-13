@@ -1,3 +1,54 @@
+//hope page service section
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdownLinks = document.querySelectorAll('.toggleBtn-dropdown-menu a');
+
+  function activateCountry(link) {
+   
+    dropdownLinks.forEach(l => l.classList.remove('active'));
+    link.classList.add('active');
+
+
+    const imgSelector = link.getAttribute('data-imagechangeclick');
+    const newImgSrc = link.getAttribute('data-img');
+    if (imgSelector && newImgSrc) {
+      const img = document.querySelector(imgSelector);
+      if (img) img.src = newImgSrc;
+    }
+
+   
+    const showSelector = link.getAttribute('datashowonclick');
+    const allContents = document.querySelectorAll('.service-left');
+    allContents.forEach(content => content.classList.remove('show'));
+
+    if (showSelector) {
+      const target = document.querySelector(showSelector);
+      if (target) target.classList.add('show');
+    }
+
+
+    const cta = document.querySelector('.text-cta-link');
+    const countryName = link.textContent.trim();
+    if (cta) cta.innerHTML = `Connect with a ${countryName} Expert <span class="arrow-anim"></span>`;
+  }
+
+
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      activateCountry(link);
+    });
+  });
+
+ 
+  const firstLink = dropdownLinks[0];
+  if (firstLink) {
+    activateCountry(firstLink);
+  }
+});
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
   /** Pricing Tabs */
   const tabs = document.querySelectorAll('.pricing__tab--country li a');
@@ -503,7 +554,34 @@ function showRegionalOffice() {
       console.warn('One or more required elements were not found in the DOM.');
       console.log({ exploreLink, exploreContent, closeBtn, arrowRotate });
     }
+
+    //video popup controll
+const modal = document.getElementById("center-popup");
+const popupCloseBtn = modal ? modal.querySelector(".popup-close") : null;
+const video = document.getElementById("eventVideo");
+
+
+document.querySelectorAll('.event-video-item').forEach(trigger => {
+  trigger.addEventListener('click', e => {
+    e.preventDefault();
+    video.src = trigger.getAttribute("src");
+    video.poster = trigger.getAttribute("data-cover");
+    modal.classList.add('active');
+  });
+});
+
+
+modal.addEventListener("click", function(e) {
+  if (e.target === modal || e.target.classList.contains("popup-close")) {
+    modal.classList.remove("active");
+    video.pause();
+    video.currentTime = 0; 
+  }
+});
   });
   
+
+
+
 
 

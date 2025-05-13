@@ -389,6 +389,7 @@
     
   .event-video-item {
     position: relative;
+    cursor: pointer;
 
     .ve svg {
       position: absolute;
@@ -771,7 +772,9 @@
         font-family: v.$font-family-inter;
         font-weight: v.$font-weight-normal;
         margin-bottom: 2rem;
+        display: none;
         a{color: #0C2740;}
+        &.show{display: grid;}
     }
     .card-buttons .card-btn.active{
       color: #217fd4;

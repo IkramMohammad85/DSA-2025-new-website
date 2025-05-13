@@ -1,7 +1,10 @@
 @use "../base/variables" as v; 
 
 .two_col{ display: grid; }
-.bp-block .event-video-item{ margin: 0.8rem 1rem 2rem 1rem; display: block;}
+.bp-block .event-video-item{ 
+  //margin: 0.8rem 1rem 2rem 1rem; 
+  margin: 0;
+  display: block;}
 
 .search-filter-block {
   padding-top: 4rem;
@@ -153,6 +156,7 @@ ul {
           margin-bottom: 1.5rem;
           img,svg{ transition: v.$transition-img /* Animation */}
         }
+       
       }
 
       .popover-content {

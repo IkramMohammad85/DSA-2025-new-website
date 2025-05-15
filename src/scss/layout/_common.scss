@@ -7,12 +7,86 @@
  .selectBox select{padding: .9375rem; font-size: 1.0625rem; border: none;background: #f5f5f5;margin: 0 0 1.375rem 0;
 }
  }
+.nextprev{ display: flex; justify-content: space-between; background-color: #F5F5F5; padding: 0.5rem 1rem;
+.prev-left, .next-right {color: #000;}
+
+}
+.el-article{display: flex; justify-content: space-between;}
+.el-article-info{color: #535353;}
+.share-info{display: flex; gap: 1rem; align-items: center;}
+ .image-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem auto;
+  //max-width: 1000px;
+  //padding: 1rem;
+}
+
+/* 1 large, 2 small stacked */
+.layout-1-2 {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, auto);
+}
+.layout-1-2 .large {
+  grid-row: span 2;
+}
+
+/* 2 small stacked + 1 large */
+.layout-2-1 {
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, auto);
+}
+.layout-2-1 .large {
+  grid-row: span 2;
+}
+
+/* Two equal side-by-side */
+.layout-1-1 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Single large full-width image */
+.layout-1-large {
+  grid-template-columns: 1fr;
+}
+
+/* Common styling */
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Responsive stacking */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto;
+  }
+  .layout-1-2 .large,
+  .layout-2-1 .large {
+    grid-row: auto;
+  }
+}
+
 
  .icon-square{padding: 0; display: flex;  align-items: center;  justify-content: center;  font-weight: normal;width: 62px; height: 62px;
 svg{fill: v.$white;}
 img, svg{width: 28px; height: 28px; }
 }
-
+.subscribe-newsletter {
+  display: flex; justify-content: space-between;
+  align-items: center;
+  .subscribe-intro{
+    h3{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 28px; line-height: 50px;}
+    p{font-family: v.$font-family-inter; font-weight: v.$font-weight-light; line-height: 26px;}
+  }
+ 
+}
+.input-newsletter{ display: flex; background-color: #fff; border-radius: 3px; color: #B3B3B3;
+input{border: none; background: transparent; padding-left: 1rem;}
+}
 .gray-box-cta{
   padding: 2rem;
   h3 { font-weight: v.$font-weight-Medium; font-size: 16px;}
@@ -43,7 +117,7 @@ img, svg{width: 28px; height: 28px; }
     margin-top: 1rem;
     .expert-name-thumbnail{
       width: 108px;
-      height: 105px;
+      height: 105px; border-radius: 4px;
       overflow: hidden;
       img{height: 105px;}
       

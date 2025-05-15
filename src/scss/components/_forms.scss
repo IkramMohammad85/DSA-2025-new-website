@@ -177,7 +177,77 @@ input[type="submit"] {
         
       }
       .form-field-two-column{display: flex; gap: 1.5rem;}
-      
+      .filter-form {
+      padding-bottom: 4rem;
+/* Form Layout */
+.event-form {
+  margin: 0 auto;
+}
+
+/* Dropdowns and Inputs Row */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.form-row select {
+  padding: 0.47rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 150px;
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+  background: #f8f9fa url(../img/events/select-arrow.svg) no-repeat 96% 50%;
+}
+
+/* Search Button */
+.search-btn {
+  padding:.70rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #207fd4;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  img{width: 92px;}
+}
+.search-btn:hover {
+  background-color: #207fd4 ;
+}
+
+/* Filter Tabs */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.filter-tab {
+  padding: 0.45rem 1.2rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-tab.active {
+  border-color: #0a2540;
+  color: #0a2540;
+  font-weight: bold;
+}
+.filter-tab:hover {
+  background-color: #f2f2f2;
+}
+}
+
 @media (max-width: 667px) {
   .form-field-two-column{flex-direction: column;gap: 0rem;}
 .let-discuss-form{

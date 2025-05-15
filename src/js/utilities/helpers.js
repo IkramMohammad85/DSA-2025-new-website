@@ -578,7 +578,28 @@ modal.addEventListener("click", function(e) {
     video.currentTime = 0; 
   }
 });
+//get-in-touch
+const buttons = document.querySelectorAll("[data-show-on-click]");
+  
+buttons.forEach((button) => {
+  const targetClass = button.getAttribute("data-show-on-click");
+
+  button.addEventListener("click", function () {
+    const target = document.querySelector(`.${targetClass}`);
+
+    if (!target) return;
+
+    // Toggle visibility
+    if (target.style.display === "block") {
+      target.style.display = "none";
+    } else {
+      target.style.display = "block";
+    }
   });
+});
+  });
+
+
   
 
 

@@ -20,6 +20,14 @@
 .d-flex{ display: flex; flex-direction: row; gap:1.5rem; padding-top: 1rem;}
 .heading-second{font-family: "Poppins"; font-weight: 700; color: #0C2740;font-size: 32px; line-height: 44px;}
 .heading-third{font-family: "Poppins"; font-weight: 400; color: #535353; font-size: 20px;}
+.heading-fouth{font-family: v.$font-family-inter; font-weight: v.$font-weight-light; color: #344C71; font-size: 16px;}
 .explore-content-position{position: relative;}
+.heading-level2{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 28px; line-height: 36px;}
 .rounded-circle{border-radius: 50% ;}
 .bg-secondary { background-color: v.$dsa-cyan-blue;}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.mb45{margin-bottom: 45px !important;}
+.mt45{margin-top: 45px !important;}

@@ -8,7 +8,12 @@
    .heading-level2{font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; font-size: 28px; color: v.$dsa-dark-blue; line-height: 36px; margin-bottom: 1.188rem;
 a{color: v.$dsa-dark-blue; }
 }
-
+.get-in-touch {
+  display: none;
+}
+.get-in-touch.show {
+  display: block;
+}
   .pricing {
     
     background: #F6F6F6;

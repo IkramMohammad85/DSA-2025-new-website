@@ -51,6 +51,24 @@
   }
   }
   //end
+  .down-arrow{
+    font-size: 1rem;
+    font-weight: v.$font-weight-Medium;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &::after {
+      content: "";
+      border: 2px solid #fff;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+      transition: transform 0.2s ease;
+      margin-left: 0.5rem;
+    }
+  }
   // Dropdown toggle
   .toggleBtn-dropdown {
     position: relative;

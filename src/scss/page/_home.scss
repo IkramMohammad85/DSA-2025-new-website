@@ -728,6 +728,11 @@
     &.card-grid-inner{
       gap: 80px;
     }
+    &.card-grid-vedio{
+    .card{padding: 0;}
+    .card-image-container{ max-width: 650px;}
+    }
+
 }
 
 .card {

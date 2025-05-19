@@ -731,6 +731,8 @@
     &.card-grid-vedio{
     .card{padding: 0;}
     .card-image-container{ max-width: 650px;}
+    .card-title{font-family: v.$font-family-Poppins; font-size: 24px; line-height: 32px; font-weight: v.$font-weight-Medium; }
+    .card-text{font-weight: v.$font-weight-light; line-height: 26px; color: #0C2740;}
     }
 
 }
@@ -906,6 +908,7 @@
   .session-type-right{position: inherit; bottom: 0;}
 }
 @media (max-width: 767px) {
+  .event-video-item h2{display: none;}
   .card-2columns { height: auto;
     .card-thumbnail {
       img{position: inherit;}

@@ -594,6 +594,7 @@ buttons.forEach((button) => {
       target.style.display = "none";
     } else {
       target.style.display = "block";
+      target.scrollIntoView({ behavior: "smooth" });
     }
   });
 });

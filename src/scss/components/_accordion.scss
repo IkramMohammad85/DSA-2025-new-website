@@ -28,8 +28,9 @@
       //box-shadow: rgba(33, 35, 38, 0.2) 0 5px 5px -5px;
       border-bottom:solid 2.5px #F2F2F2 ;
     }
-   .accordion-reg-button.collapsed {padding: 0px 20px 20px 20px;}
+   .accordion-reg-button.collapsed {padding: 0px 20px 20px 0px; border-radius: 0;}
    .accordion-reg-button{color: v.$black; font-weight: v.$font-weight-normal;}
+   .accordion-reg-collapse{padding-left: 0; padding-right: 0;}
   }
 }
   .accordion-reg-header {

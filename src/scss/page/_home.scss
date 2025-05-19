@@ -728,14 +728,36 @@
     gap: 30px;
     &.card-grid-inner{
       gap: 80px;
+      .card-horizontal{align-items: start;}
+      .card-title{ font-family: v.$font-family-inter; font-weight: v.$font-weight-SemiBold; font-size: 22px; line-height: 32px;}
+      .card-text{font-weight: v.$font-weight-light;}
     }
     &.card-grid-vedio{
     .card{padding: 0;}
     .card-image-container{ max-width: 650px;}
     .card-title{font-family: v.$font-family-Poppins; font-size: 24px; line-height: 32px; font-weight: v.$font-weight-Medium; }
-    .card-text{font-weight: v.$font-weight-light; line-height: 26px; color: #0C2740;}
+    .card-text{font-weight: v.$font-weight-light;  color: #0C2740;}
     }
-
+    &.card-vertical{
+      grid-template-columns: repeat(2, 1fr);
+      .card-title{margin-top: 1.8rem;}
+      .card-horizontal{
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &.card-vertical-three-column{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        .card-horizontal{
+          background-color: #fff;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; padding-bottom: 1.5rem;
+        }
+        .card-title, .card-text, .d-flex-column{
+          padding: 0rem 1.5rem;
+        }
+        .card-title{font-size: 18px; font-family:v.$font-family-Poppins; font-weight:v.$font-weight-SemiBold;line-height: 24px;}
+        .card-image{border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+      }
+    }
 }
 
 .card {
@@ -749,6 +771,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     align-items: center;
+
 }
 
 .card-image-container {
@@ -823,7 +846,7 @@
 .card-text {
     color: #535353;
     font-size: 16px;
-    line-height:24px;
+    line-height:26px;
     margin-bottom: 1.8rem;
     font-family: v.$font-family-inter;
     font-weight: v.$font-weight-normal;

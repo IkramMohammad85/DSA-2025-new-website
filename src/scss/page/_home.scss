@@ -930,6 +930,9 @@
     .card-thumbnail{height: auto;}
   }
   .session-type-right{position: inherit; bottom: 0;}
+  .counter-inner {flex-direction: column;
+  .counter-box{ border: none; padding: 0; margin: 0; margin-bottom: 2rem;}
+}
 }
 @media (max-width: 767px) {
   .event-video-item h2{display: none;}
@@ -959,6 +962,17 @@
     .card-single-column .card-content{
       min-height: 130px;
     }
+
+    .card-grid {
+    &.card-vertical{
+      grid-template-columns: repeat(1, 1fr);
+
+      &.card-vertical-three-column{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+}
+
 }
 
 @media (max-width: 768px) {

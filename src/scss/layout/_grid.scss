@@ -36,6 +36,9 @@
     .flex-col-3per, .flex-col-7per {
       padding: 13px;
     }
+    &.padding-none{
+      .flex-col-3per, .flex-col-7per{padding: 0;}
+    }
   }
 
   // 3-Column Layout
@@ -134,6 +137,7 @@ main {
           flex: 0 0 calc(36% );
         }
       }
+      
     }
     &-row--one-third {
       .flex-col-3per {

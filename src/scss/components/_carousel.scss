@@ -153,6 +153,12 @@
     justify-content: flex-start;
     bottom: -30px;
   }
+  .splide__arrow{border: solid 1px #9A9A9A;
+  svg{height: 0.8rem; width: 0.8rem;}
+  }
+  .splide__arrow--prev{left: -15px;}
+  .splide__arrow--next{right: -15px;}
+  
 }
 &.resource-video {
 .splide__pagination{left: 182px; bottom: 20px;}

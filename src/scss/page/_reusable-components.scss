@@ -107,6 +107,16 @@
             }
             .resrcs-title{margin-bottom: 1.5rem;}
         }
+        &.small-webinar{margin-bottom: 1rem;
+          .resrcs-image{
+            width: 176px;
+            height: 128px;
+          }
+          .resrcs-body{
+            padding: 1rem 1rem 0rem 2rem; width: 77%; min-height: 128px;
+            .resrcs-title{font-size: 14px; font-weight: v.$font-weight-Medium; line-height: 24px;}
+          }
+        }
       }
   }
 
@@ -133,6 +143,9 @@
       }
   }
   
+@media (max-width: 767px) {
+  .card-resrcs.related-card{width: auto;}
+}
 
 
   

@@ -606,11 +606,25 @@ const buttons = document.querySelectorAll("[data-show-on-click]");
       }
     });
   });
+//location page
+  const imageCards = document.querySelectorAll("[data-show-on-click]");
+  imageCards.forEach(card => {
+    card.addEventListener("click", () => {
+      const targetId = card.getAttribute("data-show-on-click");
+      const target = document.getElementById(targetId);
+      document.querySelectorAll(".location-card-mian").forEach(loc => {
+        loc.classList.remove("show");
+      });
+      if (target) {
+        target.classList.add("show");
+      }
+    });
+  });
+
   });
 
 
   
-
 
 
 

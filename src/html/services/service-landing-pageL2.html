@@ -41,7 +41,7 @@
             <p>Making such a decision depends on diligent multi-country research into the numerous aspects and parameters that will affect your business, including data analysis of qualitative and quantitative factors, resulting in a better understanding of the potential destinations for expansion or relocation.</p>
             
             <div class="d-flex">
-                 <a class="btn btn-primary" href="#" target="_blank">Make an enquiry</a>
+                 <button class="btn btn-primary" data-show-on-click="get-in-touch">Make an enquiry</button>
                     <a class="text-cta-link scrollto" href="#" target="_blank">Meet our team<span class="arrow-anim"></span></a>
                     <a class="text-cta-link text-cta-expnd" href="#" target="_blank">Explore Brochures <span class="arrow-anim"></span></a>
             
@@ -1417,6 +1417,12 @@
       </section>
 </main>
     @@include("../includes/footer.html")
+    <div class="popup-overlay center-popup" id="center-popup">
+      <div class="popup-content">
+        <button class="popup-close" onclick="toggle_modal('.center-popup');">&times;</button>
+        <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
+      </div>
+    </div>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

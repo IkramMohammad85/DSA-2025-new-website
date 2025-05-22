@@ -10,7 +10,7 @@
     <meta property="og:description" content="Dezan Shira & Associates is a foreign direct investment firm providing tax, legal and accounting services in China, Hong Kong, India, Vietnam, Singapore and ASEAN."/>
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet" />
     
 </head>
 
@@ -36,7 +36,7 @@
             <p>Despite ongoing concerns about consumer confidence, the Chinese government has identified domestic demand as a priority for the nation’s economy, highlighting a government commitment to stimulating consumption and investment to bolster economic growth.</p>
             
             <div class="d-flex">
-                 <a class="btn btn-primary" href="#" target="_blank">Make an enquiry</a>
+                 <button class="btn btn-primary" data-show-on-click="get-in-touch">Make an enquiry</button>
                     <a class="text-cta-link scrollto" href="#" target="_blank">Meet our Shanghai team <span class="arrow-anim"></span></a>
                     
             
@@ -81,7 +81,7 @@
                         <a class="btn btn-outline-primary" href="#" target="_blank">See More</a>
                        </div>
             </div>
-            <div class="card-image-container">
+            <div class="card-image-container" id="map">
                 <!-- <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9861135679474!2d-74.04668968459318!3d40.68924927933573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40f6d257aebd4e97!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
     allowfullscreen=""
@@ -884,7 +884,19 @@
       </div>
     </div>
    
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+ <script src="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.js"></script>
+  <script>
+    // your own access token
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia3N1YmJhIiwiYSI6ImNqdHM4ZzZhazBtbDQ0ZnFuMmdzeWF0MGgifQ.vMXskzpsEGnPdfLjc0sdiw';
+    const map = new mapboxgl.Map({
+      container: 'map', 
+      style: 'mapbox://styles/mapbox/streets-v11', 
+      center: [114.1694, 22.3193], 
+      zoom: 10 
+    });
+    map.addControl(new mapboxgl.NavigationControl());
+  </script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

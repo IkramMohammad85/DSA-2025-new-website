@@ -580,24 +580,32 @@ modal.addEventListener("click", function(e) {
 });
 //get-in-touch
 const buttons = document.querySelectorAll("[data-show-on-click]");
-  
-buttons.forEach((button) => {
-  const targetClass = button.getAttribute("data-show-on-click");
 
-  button.addEventListener("click", function () {
-    const target = document.querySelector(`.${targetClass}`);
+  buttons.forEach((button) => {
+    const targetClass = button.getAttribute("data-show-on-click");
 
-    if (!target) return;
+    button.addEventListener("click", function () {
+      const target = document.querySelector(`.${targetClass}`);
+      if (!target) return;
 
-    // Toggle visibility
-    if (target.style.display === "block") {
-      target.style.display = "none";
-    } else {
-      target.style.display = "block";
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+      const isVisible = target.style.display === "block";
+
+      if (isVisible) {
+        target.style.display = "none";
+      } else {
+        target.style.display = "block";
+
+        // Scroll to element with 172px offset from top
+        const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
+        const scrollTo = elementTop - 85;
+
+        window.scrollTo({
+          top: scrollTo,
+          behavior: "smooth"
+        });
+      }
+    });
   });
-});
   });
 
 

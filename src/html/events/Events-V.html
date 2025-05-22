@@ -37,7 +37,7 @@
 
       <section class="page-intro section-top-bottom-padding">
         <div class="section-wrapper-min">
-          <h2 class="heading-level2 text-center mb-3">Event Finder </h2>
+          <h2 class="heading-level2 text-center">Event Finder </h2>
    
             <form class="filter-form" action="" method="GET">
               <div class="form-row">
@@ -157,6 +157,12 @@
     @@include("../components/hero-section.html")
 </main>
     @@include("../includes/footer.html")
+    <div class="popup-overlay center-popup" id="center-popup">
+      <div class="popup-content">
+        <button class="popup-close" onclick="toggle_modal('.center-popup');">&times;</button>
+        <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
+      </div>
+    </div>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

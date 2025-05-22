@@ -79,7 +79,7 @@
 .find-expert-list{
   display: flex; flex-direction: row;
   .expert-country{
-  .radio-group-wrapper { margin-right: 52px; border-bottom: solid 2px #E0E0E0; padding-bottom: 2rem; width: 240px;}
+  .radio-group-wrapper { margin-right: 65px; border-bottom: solid 2px #E0E0E0; padding-bottom: 2rem; width: 240px;}
 
 .radio-group-label {
   display: block;
@@ -98,9 +98,13 @@
   align-items: center;
   font-size: 14px;
   cursor: pointer;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.75rem;
   border-radius: 8px;
   transition: background 0.2s;
+  
+  &.selected{
+    background-color: #F2F2F2;
+  }
 }
 
 .custom-radio input[type="radio"] {
@@ -140,12 +144,20 @@ input[type="radio"]:checked + .radio-btn ~ label {
 
   }
   .experts-card{ display: grid;  grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 70px;
   .our-experts{border: none; margin-bottom: 0;
-  .experts-detail{min-height: auto;}
+  .experts-detail{min-height: auto; padding-bottom: 0;}
   }
   }
 .hidden{display: none !important;}
+&.find-location-list{
+  .experts-card{
+    gap: 50px;
+  }
+  .expert-country .radio-group-wrapper{
+    margin-right: 52px;
+  }
+}
 }
 .partners-alliances{
   background-color: #fff;

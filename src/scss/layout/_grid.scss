@@ -117,7 +117,20 @@ main {
   display: block;
 }
 
+.flex-grid-row-2column{
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    
+}
+
 @media (min-width: 768px) {
+  .flex-grid-row-2column{
+    
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+}
   .flex-grid {
     &-col {
       flex: 1;

@@ -246,7 +246,51 @@ input[type="submit"] {
 .filter-tab:hover {
   background-color: #f2f2f2;
 }
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  background-color: #fff;
+  max-width: 200px;
+  position: relative;
+  gap: 0.5rem;
 }
+
+.select-wrapper select {
+  border: none;
+  font-size: 1rem;
+  background: transparent;
+  flex: 1;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.select-icon { display: contents;
+  img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+}
+&.event-filter-form .form-row {
+  .select-wrapper{max-width: 265px;}
+  select{
+    min-width: 215px;
+  }
+}
+&.news-filter-form .form-row {
+  .select-wrapper{max-width: 295px;}
+  select{
+    min-width: 246px;
+  }
+}
+}
+
+
 
 @media (max-width: 667px) {
   .form-field-two-column{flex-direction: column;gap: 0rem;}

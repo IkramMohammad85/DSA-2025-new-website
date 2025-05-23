@@ -39,31 +39,52 @@
         <div class="section-wrapper-min">
           <h2 class="heading-level2 text-center">Event Finder </h2>
    
-            <form class="filter-form" action="" method="GET">
+            <form class="filter-form event-filter-form" action="" method="GET">
               <div class="form-row">
-                <select>
-                  <option selected>Webinar</option>
-                  <option>Conference</option>
-                  <option>Workshop</option>
-                </select>
-          
-                <select>
+<div class="select-wrapper">
+  <span class="select-icon">
+    <img src="/img/events/list-icon.svg" alt="Webinar" />
+  </span>
+  <select>
+    <option>Webinar</option>
+    <option>Seminar</option>
+    <option>Workshop</option>
+  </select>
+</div>
+<div class="select-wrapper">
+  <span class="select-icon">
+    <img src="/img/events/l-mark-black.svg" alt="Country" />
+  </span>
+<select>
                   <option selected>China</option>
                   <option>India</option>
                   <option>Vietnam</option>
                 </select>
-          
-                <select>
+</div>
+        <div class="select-wrapper">
+  <span class="select-icon">
+    <img src="/img/events/lang-icon.svg" alt="Language" />
+  </span>
+<select>
                   <option selected>Language</option>
                   <option>English</option>
                   <option>Mandarin</option>
                 </select>
+</div>  
+                
           
-                <select>
+                     <div class="select-wrapper">
+  <span class="select-icon">
+    <img src="/img/events/date-icon.svg" alt="Date" />
+  </span>
+<select>
                   <option selected>Date</option>
                   <option>Today</option>
                   <option>This Week</option>
                 </select>
+</div>   
+          
+                
           
                 <button type="submit" class="search-btn">
                   <img src="/img/events/search-icon-white.svg" width="20" height="20" alt="Search">

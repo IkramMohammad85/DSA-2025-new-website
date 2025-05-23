@@ -74,12 +74,12 @@
   z-index: 3;
 }
 .bio-top-box{ background-color: #fff; border-radius: 10px; padding: 2rem; margin-top:-200px; min-height: 290px; border: solid 1px #E0E5EB; display: flex; width: 100%; margin-bottom: 3rem;
-.bio-thumbnail{width: 230px; margin-right: 2rem;  background-color: #ddd; padding: 1rem;}
-.bio-details{width: 100%;
+.bio-thumbnail{width: 230px; margin-right: 2rem; height: 221px; }
+.bio-details{width: 76%;
 .bio-name{color: #0C2740; font-size: 30px; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-Medium; line-height: 45px;}
 .bio-position{color: #0C2740; font-size: 20px; font-family: v.$font-family-inter; font-weight: v.$font-weight-light; }
 .bio-content{
-  p{color: #535353;}
+  p{color: #535353; font-weight: v.$font-weight-light; line-height: 24px;}
 }
 .bio-head{display: flex; justify-content:space-between; align-items: start; gap: 2rem;}
 .location-social{display: flex;gap: 1rem;
@@ -176,7 +176,7 @@ input[type="radio"]:checked + .radio-btn ~ label {
 .hidden{display: none !important;}
 &.find-location-list{
   .experts-card{
-    gap: 50px;
+    gap: 47px;
   }
   .expert-country .radio-group-wrapper{
     margin-right: 52px;

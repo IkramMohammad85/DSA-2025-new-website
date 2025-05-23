@@ -10,6 +10,16 @@
     <meta property="og:description" content="Stakeholders are increasingly scrutinizing environmental, social and governance (ESG) performance—and looking for companies to rise to the challenge of delivering ESG improvements."/>
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
+    <style>
+      .splide__slide {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.splide__slide.is-visible {
+  opacity: 1;
+}
+    </style>
     
 </head>
 
@@ -705,6 +715,23 @@
     </section>
 </main>
     @@include("../includes/footer.html")
+    <script>
+      new Splide('.splide', {
+  type: 'slide',
+  perPage: 2,
+  autoplay: true,
+  pagination: false,
+  arrows: true,
+  interval: 5000,
+}).mount();
+
+splide.on('mounted move', () => {
+  document.querySelectorAll('.splide__slide').forEach((slide, i) => {
+    slide.classList.toggle('is-visible', i >= splide.index && i < splide.index + splide.options.perPage);
+  });
+});
+
+    </script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

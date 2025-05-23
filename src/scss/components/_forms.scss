@@ -202,7 +202,7 @@ input[type="submit"] {
   appearance: none;
   background-color: white;
   cursor: pointer;
-  background: #f8f9fa url(../img/events/select-arrow.svg) no-repeat 96% 50%;
+  background: #fff url(../img/events/select-arrow.svg) no-repeat 96% 50%;
 }
 
 /* Search Button */
@@ -261,7 +261,7 @@ input[type="submit"] {
 .select-wrapper select {
   border: none;
   font-size: 1rem;
-  background: transparent;
+  //background: transparent;
   flex: 1;
   appearance: none;
   outline: none;

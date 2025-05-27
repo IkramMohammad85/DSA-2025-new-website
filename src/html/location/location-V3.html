@@ -968,7 +968,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   imageCards.forEach((card, index) => {
     card.addEventListener("click", () => {
-      // Remove selected class from all
       imageCards.forEach(c => c.classList.remove("selected"));
       card.classList.add("selected");
 
@@ -976,19 +975,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const template = document.getElementById(id);
       if (!template) return;
 
-      // Remove any existing location card
       if (currentLocationCard) {
         currentLocationCard.remove();
         currentLocationCard = null;
       }
 
-      // Create and insert new location card
       const locationCard = document.createElement("div");
       locationCard.className = "location-add show";
       locationCard.innerHTML = template.innerHTML;
       currentLocationCard = locationCard;
 
-      // Calculate how many cards per row
       const cardsPerRow = getCardsPerRow(imageCards);
       const rowStart = Math.floor(index / cardsPerRow) * cardsPerRow;
       const rowEnd = Math.min(rowStart + cardsPerRow - 1, imageCards.length - 1);

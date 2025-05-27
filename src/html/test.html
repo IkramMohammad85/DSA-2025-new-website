@@ -1,172 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-     
-  <meta charset="UTF-8">
-     
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Event Listings</title>
-     
-  <style>.news-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  /* News Card */
-  .news-card {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  .news-card img {
-    width: 100%;
-    height: auto;
-  }
-  .news-info {
-    padding: 1rem;
-  }
-  .news-date {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  .news-title {
-    font-size: 1.1rem;
-    margin: 0.5rem 0;
-  }
-  .news-category {
-    font-size: 0.85rem;
-    color: #0072c6;
-    font-weight: 500;
-  }
-  
-  /* Event Card */
-  .event-card {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  }
-  .event-img {
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    position: relative;
-  }
-  .event-date {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: rgba(0,0,0,0.7);
-    color: white;
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 0.4rem 0.6rem;
-    border-radius: 5px;
-  }
-  .event-date span {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  .event-details {
-    padding: 1rem;
-  }
-  .event-type {
-    font-size: 0.85rem;
-    color: #666;
-  }
-  .event-title {
-    font-size: 1.05rem;
-    margin-top: 0.3rem;
-  }
-  
-  /* Webinar Card */
-  .webinar-card {
-    display: flex;
-    gap: 1rem;
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 1rem;
-    align-items: flex-start;
-  }
-  .webinar-date {
-    background: #0057b8;
-    color: white;
-    font-weight: bold;
-    padding: 0.8rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    text-align: center;
-  }
-  .webinar-content {
-    flex: 1;
-  }
-  .webinar-meta {
-    display: flex;
-    gap: 0.5rem;
-    font-size: 0.85rem;
-    color: #0072c6;
-    margin-bottom: 0.3rem;
-  }
-  .webinar-title {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 0.2rem;
-  }
-  .webinar-time {
-    font-size: 0.85rem;
-    color: #666;
-  }
+  <meta charset="UTF-8" />
+  <title>Office Selector - Version 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f0f0f0;
+    }
+
+    .experts-card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .experts-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .image-card-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-card {
+      cursor: pointer;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      background: white;
+      box-shadow: 0 0 0 2px transparent;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .image-card.selected {
+      box-shadow: 0 0 0 2px #007bff;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .image-card-text {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+      font-weight: bold;
+    }
+
+    .location-card-panel {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .location-card-panel.show {
+      display: block;
+      flex-basis: 100%;
+    }
+
+    .location-card {
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      border-left: 4px solid #007bff;
+    }
+
+    .heading {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .btn {
+      background: #007bff;
+      color: white;
+      padding: 0.4rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Hidden templates */
+    .location-template {
+      display: none;
+    }
   </style>
 </head>
-
 <body>
-      <div class="news-grid">
-    <!-- News Card -->
-    <div class="news-card">
-      <img src="path-to-image.jpg" alt="News Image" />
-      <div class="news-info">
-        <p class="news-date">April 10, 2025</p>
-        <h3 class="news-title">
-          Nathaniel Rushforth Shares Insights about Cross-Border Data Transfer with a German Business Delegation in Shanghai
-        </h3>
-        <p class="news-category">Thought Leadership</p>
-      </div>
-    </div>
-  
-    <!-- Event Card -->
-    <div class="event-card">
-      <div class="event-img" style="background-image: url('path-to-event-image.jpg')">
-        <div class="event-date">May<br /><span>03</span></div>
-      </div>
-      <div class="event-details">
-        <p class="event-type">Conference</p>
-        <h3 class="event-title">Meet with Alberto Vettoretti at LEA European Regional Conference & Private Equity Panel Discussion</h3>
-      </div>
-    </div>
-  
-    <!-- Webinar Listing Card -->
-    <div class="webinar-card">
-      <div class="webinar-date">May 10</div>
-      <div class="webinar-content">
-        <div class="webinar-meta">
-          <span class="webinar-type">Webinar</span>
-          <span class="webinar-location">China</span>
-        </div>
-        <h3 class="webinar-title">Navigating China's Compliance Framework in the Digital Age – Solutions for Forward-Thinking Enterprises</h3>
-        <p class="webinar-time">4:00 PM China / 3:00 PM Vietnam / 10:00 AM CEST / 9:00 AM UK</p>
-      </div>
-    </div>
-  </div>
-  
-</body>
 
+<div class="experts-card-list">
+  <div class="experts-card" id="cardRow">
+    <!-- Cards manually or dynamically written -->
+    <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc1">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office1.webp" />
+        <div class="image-card-text">Australia</div>
+      </div>
+    </div>
+
+    <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc2">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office2.webp" />
+        <div class="image-card-text">Bangladesh</div>
+      </div>
+    </div>
+
+    <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc3">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office3.webp" />
+        <div class="image-card-text">India</div>
+      </div>
+    </div>
+        <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc4">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office1.webp" />
+        <div class="image-card-text">Australia4</div>
+      </div>
+    </div>
+
+    <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc5">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office2.webp" />
+        <div class="image-card-text">Bangladesh5</div>
+      </div>
+    </div>
+
+    <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc6">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office3.webp" />
+        <div class="image-card-text">India6</div>
+      </div>
+    </div>
+        <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc7">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office1.webp" />
+        <div class="image-card-text">Australia7</div>
+      </div>
+    </div>
+
+    <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc8">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office2.webp" />
+        <div class="image-card-text">Bangladesh8</div>
+      </div>
+    </div>
+
+    <div class="image-card-wrapper">
+      <div class="image-card" data-show-on-click="loc9">
+        <img src="https://dsa-2025-gulp-setup.netlify.app/img/location/office3.webp" />
+        <div class="image-card-text">India9</div>
+      </div>
+    </div>
+
+    <!-- Add more cards here... -->
+  </div>
+</div>
+
+<!-- Hidden location-card templates -->
+<div class="location-template" id="loc1">
+  <div class="location-card">
+    <div class="heading">Australia</div>
+    <p>Suite EF06, Sydney</p>
+    <div>📞 +61 123 456</div>
+    <div>📧 <a href="mailto:australia@dezshira.com">australia@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+
+<div class="location-template" id="loc2">
+  <div class="location-card">
+    <div class="heading">Bangladesh</div>
+    <p>Gulshan, Dhaka</p>
+    <div>📞 +880 123 456</div>
+    <div>📧 <a href="mailto:bangladesh@dezshira.com">bangladesh@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+
+<div class="location-template" id="loc3">
+  <div class="location-card">
+    <div class="heading">India</div>
+    <p>New Delhi Office</p>
+    <div>📞 +91 123 456</div>
+    <div>📧 <a href="mailto:india@dezshira.com">india@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+
+<div class="location-template" id="loc4">
+  <div class="location-card">
+    <div class="heading">Australia4</div>
+    <p>Suite EF06, Sydney</p>
+    <div>📞 +61 123 456</div>
+    <div>📧 <a href="mailto:australia@dezshira.com">australia@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+
+<div class="location-template" id="loc5">
+  <div class="location-card">
+    <div class="heading">Bangladesh5</div>
+    <p>Gulshan, Dhaka</p>
+    <div>📞 +880 123 456</div>
+    <div>📧 <a href="mailto:bangladesh@dezshira.com">bangladesh@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+
+<div class="location-template" id="loc6">
+  <div class="location-card">
+    <div class="heading">India6</div>
+    <p>New Delhi Office</p>
+    <div>📞 +91 123 456</div>
+    <div>📧 <a href="mailto:india@dezshira.com">india@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+<div class="location-template" id="loc7">
+  <div class="location-card">
+    <div class="heading">Australia7</div>
+    <p>Suite EF06, Sydney</p>
+    <div>📞 +61 123 456</div>
+    <div>📧 <a href="mailto:australia@dezshira.com">australia@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+
+<div class="location-template" id="loc8">
+  <div class="location-card">
+    <div class="heading">Bangladesh8</div>
+    <p>Gulshan, Dhaka</p>
+    <div>📞 +880 123 456</div>
+    <div>📧 <a href="mailto:bangladesh@dezshira.com">bangladesh@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+
+<div class="location-template" id="loc9">
+  <div class="location-card">
+    <div class="heading">India9</div>
+    <p>New Delhi Office</p>
+    <div>📞 +91 123 456</div>
+    <div>📧 <a href="mailto:india@dezshira.com">india@dezshira.com</a></div>
+    <a href="#" class="btn">Visit Page</a>
+  </div>
+</div>
+
+<script>
+  const cardRow = document.getElementById('cardRow');
+  let infoPanel = null;
+
+  cardRow.addEventListener('click', (e) => {
+    const card = e.target.closest('.image-card');
+    if (!card) return;
+
+    const id = card.dataset.showOnClick;
+    const template = document.getElementById(id);
+
+    // Remove selected from all cards
+    document.querySelectorAll('.image-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+
+    // Remove previous panel
+    if (infoPanel) infoPanel.remove();
+
+    // Create panel
+    infoPanel = document.createElement('div');
+    infoPanel.className = 'location-card-panel show';
+    infoPanel.innerHTML = template.innerHTML;
+
+    // Find last card in the same row
+    const cards = [...document.querySelectorAll('.image-card')];
+    const wrappers = [...document.querySelectorAll('.image-card-wrapper')];
+    const index = cards.indexOf(card);
+    const top = card.getBoundingClientRect().top;
+
+    let lastInRow = card;
+    for (let i = index + 1; i < cards.length; i++) {
+      if (cards[i].getBoundingClientRect().top > top) break;
+      lastInRow = cards[i];
+    }
+
+    lastInRow.closest('.image-card-wrapper').insertAdjacentElement('afterend', infoPanel);
+  });
+</script>
+
+</body>
 </html>

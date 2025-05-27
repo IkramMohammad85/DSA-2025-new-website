@@ -11,7 +11,29 @@
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet" />
-    
+    <style>
+
+
+
+    .location-card-view {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .location-card-view.visible {
+      flex-basis: 100%;
+      display: block;
+    }
+
+    .experts-card-location {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 47px;
+    }
+
+
+
+    </style>
 </head>
 
 <body>
@@ -94,331 +116,8 @@
               </form>
             </div>
             <div class="experts-card-list">
-            <div class="experts-card mb45">
-  <div class="image-card" data-show-on-click="australia">
-    <img  src="/img/location/office1.webp" alt="">
-    <div class="image-card-text">Australia</div>
+    <div class="experts-card-location" id="cardList"></div>
   </div>
-  <div class="image-card" data-show-on-click="bangladesh">
-    <img  src="/img/location/office2.webp" alt="">
-    <div class="image-card-text">Bangladesh</div>
-  </div>
-    <div class="image-card" data-show-on-click="india">
-    <img  src="/img/location/office3.webp" alt="">
-    <div class="image-card-text">India</div>
-  </div>
-  </div>
-<div class="location-card-mian" id="australia">
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Australia</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-</div>
-<div class="location-card-mian" id="bangladesh">
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Bangladesh</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-</div>
-<div class="location-card-mian" id="india">
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">India</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-</div>
-
-  <div class="experts-card mb45">
-  <div class="image-card"  data-show-on-click="indonesia">
-    <img  src="/img/location/office4.webp" alt="">
-    <div class="image-card-text">Indonesia</div>
-  </div>
-    <div class="image-card"  data-show-on-click="japan">
-    <img  src="/img/location/office5.webp" alt="">
-    <div class="image-card-text">Japan</div>
-  </div>
-    <div class="image-card"  data-show-on-click="thailand">
-    <img  src="/img/location/office6.webp" alt="">
-    <div class="image-card-text">Thailand</div>
-  </div>
-</div>
-  <div class="location-card-mian" id="indonesia">
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Indonesia</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                       </div></div>
-      <div class="location-card-mian" id="japan">              
-     <div class="location-card office-card" >
-        <div class="location-address">
-                    <div class="heading-level3">Japan</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div></div>   
- <div class="location-card-mian" id="thailand">
-                       <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Thailand</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-                       </div>
-
-                         <div class="experts-card mb45">
-    <div class="image-card" data-show-on-click="malaysia">
-    <img  src="/img/location/office7.webp" alt="">
-    <div class="image-card-text">Malaysia</div>
-  </div>
-  <div class="image-card" data-show-on-click="mongolia">
-    <img  src="/img/location/office8.webp" alt="">
-    <div class="image-card-text">Mongolia</div>
-  </div>
-    <div class="image-card" data-show-on-click="nepal">
-    <img  src="/img/location/office9.webp" alt="">
-    <div class="image-card-text">Nepal</div>
-  </div>
-</div>
-<div class="location-card-mian" id="malaysia">
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Malaysia</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div></div>
-       <div class="location-card-mian" id="mongolia">                
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Mongolia</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div></div>
-       <div class="location-card-mian" id="nepal">                
-      <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Nepal</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-                       </div>
-
-                         <div class="experts-card mb45">
-    <div class="image-card" data-show-on-click="philippines">
-    <img  src="/img/location/office10.webp" alt="">
-    <div class="image-card-text">Philippines</div>
-  </div>
-    <div class="image-card" data-show-on-click="singapore">
-    <img  src="/img/location/office11.webp" alt="">
-    <div class="image-card-text">Singapore</div>
-  </div>
-    <div class="image-card" data-show-on-click="south-korea">
-    <img  src="/img/location/office12.webp" alt="">
-    <div class="image-card-text">South Korea</div>
-  </div>
-</div>
-
-<div class="location-card-mian" id="philippines">
-      <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Philippines</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div></div>
-    <div class="location-card-mian" id="singapore">                
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Singapore</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-                       </div>   
-                       <div class="location-card-mian" id="south-korea">
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">South Korea</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-</div> 
-
-                         <div class="experts-card mb45">
-    
-    <div class="image-card" data-show-on-click="sri-lanka">
-    <img  src="/img/location/office13.webp" alt="">
-    <div class="image-card-text">Sri Lanka</div>
-  </div>
-    <div class="image-card" data-show-on-click="vietnam">
-    <img  src="/img/location/office14.webp" alt="">
-    <div class="image-card-text">Vietnam</div>
-  </div>
-</div>
-
-   <div class="location-card-mian" id="sri-lanka">
-    <div class="location-card office-card">
-        <div class="location-address">
-                    <div class="heading-level3">Sri Lanka</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-                       </div>
-
-     <div class="location-card-mian" id="vietnam">
-    <div class="location-card office-card" >
-        <div class="location-address">
-                    <div class="heading-level3">Vietnam</div>
-                    
-                        <p>Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Chaoyang District, Beijing, China 100022 &nbsp;</p>
-                        <div class="contacts-location">
-                                        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="contacts-location">
-                                        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div></div>
-                        <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
-                        
-                       </div>
-</div>
-  </div>
-
-
-                 
-
             </div>
           </div>
           
@@ -943,6 +642,86 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script> -->
+<script>
+  const offices = [
+    { country: "Australia", image: "../img/location/office1.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Sydney", phone: "+86 (0)10 6566 0088", email: "australia@dezshira.com", url: "#" },
+    { country: "Bangladesh", image: "../img/location/office2.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Dhaka", phone: "+86 (0)10 6566 0088", email: "bangladesh@dezshira.com", url: "#" },
+    { country: "India", image: "../img/location/office3.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,New Delhi Office", phone: "+86 (0)10 6566 0088", email: "india@dezshira.com", url: "#" },
+    { country: "Japan", image: "../img/location/office1.webp", address: "Tokyo Office", phone: "+86 (0)10 6566 0088", email: "japan@dezshira.com", url: "#" },
+    { country: "Nepal", image: "../img/location/office2.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Kathmandu", phone: "+86 (0)10 6566 0088", email: "nepal@dezshira.com", url: "#" },
+    { country: "Singapore", image: "../img/location/office3.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Marina Bay", phone: "+86 (0)10 6566 0088", email: "singapore@dezshira.com", url: "#" },
+    { country: "Thailand", image: "../img/location/office1.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Bangkok", phone: "+86 (0)10 6566 0088", email: "thailand@dezshira.com", url: "#" },
+    { country: "Indonesia", image: "../img/location/office2.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Jakarta", phone: "+86 (0)10 6566 0088", email: "indonesia@dezshira.com", url: "#" },
+    { country: "Malaysia", image: "../img/location/office3.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Kuala Lumpur", phone: "+86 (0)10 6566 0088", email: "malaysia@dezshira.com", url: "#" },
+    { country: "Vietnam", image: "../img/location/office1.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Hanoi", phone: "+86 (0)10 6566 0088", email: "vietnam@dezshira.com", url: "#" },
+    { country: "China", image: "../img/location/office2.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Beijing", phone: "+86 (0)10 6566 0088", email: "china@dezshira.com", url: "#" }
+  ];
+
+  const cardList = document.getElementById('cardList');
+
+  let locationPanel = null;
+
+  offices.forEach((office, i) => {
+    const card = document.createElement('div');
+    card.className = 'image-card';
+    card.dataset.index = i;
+    card.innerHTML = `
+      <img src="${office.image}" alt="${office.country}" />
+      <div class="image-card-text">${office.country}</div>
+    `;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'image-card-wrapper';
+    wrapper.appendChild(card);
+    cardList.appendChild(wrapper);
+  });
+
+  document.addEventListener('click', e => {
+    const clickedCard = e.target.closest('.image-card');
+    if (!clickedCard) return;
+
+    const index = parseInt(clickedCard.dataset.index);
+    const office = offices[index];
+
+    document.querySelectorAll('.image-card').forEach(card => card.classList.remove('selected'));
+    clickedCard.classList.add('selected');
+
+    if (locationPanel) locationPanel.remove();
+
+    locationPanel = document.createElement('div');
+    locationPanel.className = 'location-card-view visible';
+    locationPanel.innerHTML = `
+      <div class="location-card office-card">
+        <div class="location-address">
+        <div class="heading-level3">${office.country}</div>
+        <p>${office.address}</p>
+        <div class="contacts-location">
+        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
+        <div class="phone-num">${office.phone}</div>
+        </div>
+        <div class="contacts-location">
+        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
+        <div class="email-text"> <a href="mailto:${office.email}">${office.email}</a></div>
+        </div>
+        </div>
+        <div class="location-cta"><a href="${office.url}" target="_blank" class="btn btn-outline-primary">Visit Page</a></div>
+      </div>
+    `;
+
+    // Insert after last card in the same row
+    const cards = Array.from(document.querySelectorAll('.image-card'));
+    const wrappers = Array.from(document.querySelectorAll('.image-card-wrapper'));
+    const clickedTop = clickedCard.getBoundingClientRect().top;
+
+    let lastInRow = clickedCard;
+    for (let i = index + 1; i < cards.length; i++) {
+      if (cards[i].getBoundingClientRect().top > clickedTop) break;
+      lastInRow = cards[i];
+    }
+
+    lastInRow.closest('.image-card-wrapper').insertAdjacentElement('afterend', locationPanel);
+  });
+</script>
 
 
     <script src="../js/vendor/splide.min.js"></script>

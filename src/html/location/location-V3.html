@@ -11,7 +11,31 @@
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet" />
-    
+    <style>
+
+
+
+.location-add {
+  grid-column: 1 / -1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+  pointer-events: none; /* prevent interaction when hidden */
+}
+
+.location-add.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+
+
+
+    </style>
 </head>
 
 <body>
@@ -107,8 +131,53 @@
     <img  src="/img/location/office3.webp" alt="">
     <div class="image-card-text">India</div>
   </div>
+    <div class="image-card"  data-show-on-click="indonesia">
+    <img  src="/img/location/office4.webp" alt="">
+    <div class="image-card-text">Indonesia</div>
   </div>
-<div class="location-card-mian" id="australia">
+    <div class="image-card"  data-show-on-click="japan">
+    <img  src="/img/location/office5.webp" alt="">
+    <div class="image-card-text">Japan</div>
+  </div>
+    <div class="image-card"  data-show-on-click="thailand">
+    <img  src="/img/location/office6.webp" alt="">
+    <div class="image-card-text">Thailand</div>
+  </div>
+      <div class="image-card" data-show-on-click="malaysia">
+    <img  src="/img/location/office7.webp" alt="">
+    <div class="image-card-text">Malaysia</div>
+  </div>
+  <div class="image-card" data-show-on-click="mongolia">
+    <img  src="/img/location/office8.webp" alt="">
+    <div class="image-card-text">Mongolia</div>
+  </div>
+    <div class="image-card" data-show-on-click="nepal">
+    <img  src="/img/location/office9.webp" alt="">
+    <div class="image-card-text">Nepal</div>
+  </div>
+      <div class="image-card" data-show-on-click="philippines">
+    <img  src="/img/location/office10.webp" alt="">
+    <div class="image-card-text">Philippines</div>
+  </div>
+    <div class="image-card" data-show-on-click="singapore">
+    <img  src="/img/location/office11.webp" alt="">
+    <div class="image-card-text">Singapore</div>
+  </div>
+    <div class="image-card" data-show-on-click="south-korea">
+    <img  src="/img/location/office12.webp" alt="">
+    <div class="image-card-text">South Korea</div>
+  </div>
+      <div class="image-card" data-show-on-click="sri-lanka">
+    <img  src="/img/location/office13.webp" alt="">
+    <div class="image-card-text">Sri Lanka</div>
+  </div>
+    <div class="image-card" data-show-on-click="vietnam">
+    <img  src="/img/location/office14.webp" alt="">
+    <div class="image-card-text">Vietnam</div>
+  </div>
+
+  </div>
+    <div class="location-card-mian" id="australia">
     <div class="location-card office-card">
         <div class="location-address">
                     <div class="heading-level3">Australia</div>
@@ -143,8 +212,8 @@
                         <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
                         
                        </div>
-</div>
-<div class="location-card-mian" id="india">
+                       </div>
+                       <div class="location-card-mian" id="india">
     <div class="location-card office-card">
         <div class="location-address">
                     <div class="heading-level3">India</div>
@@ -161,22 +230,8 @@
                         <div class="location-cta"><a class="btn btn-outline-primary" href="#" target="_blank">Visit Page</a></div>              
                         
                        </div>
-</div>
+                       </div>
 
-  <div class="experts-card mb45">
-  <div class="image-card"  data-show-on-click="indonesia">
-    <img  src="/img/location/office4.webp" alt="">
-    <div class="image-card-text">Indonesia</div>
-  </div>
-    <div class="image-card"  data-show-on-click="japan">
-    <img  src="/img/location/office5.webp" alt="">
-    <div class="image-card-text">Japan</div>
-  </div>
-    <div class="image-card"  data-show-on-click="thailand">
-    <img  src="/img/location/office6.webp" alt="">
-    <div class="image-card-text">Thailand</div>
-  </div>
-</div>
   <div class="location-card-mian" id="indonesia">
     <div class="location-card office-card">
         <div class="location-address">
@@ -229,20 +284,7 @@
                        </div>
                        </div>
 
-                         <div class="experts-card mb45">
-    <div class="image-card" data-show-on-click="malaysia">
-    <img  src="/img/location/office7.webp" alt="">
-    <div class="image-card-text">Malaysia</div>
-  </div>
-  <div class="image-card" data-show-on-click="mongolia">
-    <img  src="/img/location/office8.webp" alt="">
-    <div class="image-card-text">Mongolia</div>
-  </div>
-    <div class="image-card" data-show-on-click="nepal">
-    <img  src="/img/location/office9.webp" alt="">
-    <div class="image-card-text">Nepal</div>
-  </div>
-</div>
+                         
 <div class="location-card-mian" id="malaysia">
     <div class="location-card office-card">
         <div class="location-address">
@@ -295,21 +337,6 @@
                         
                        </div>
                        </div>
-
-                         <div class="experts-card mb45">
-    <div class="image-card" data-show-on-click="philippines">
-    <img  src="/img/location/office10.webp" alt="">
-    <div class="image-card-text">Philippines</div>
-  </div>
-    <div class="image-card" data-show-on-click="singapore">
-    <img  src="/img/location/office11.webp" alt="">
-    <div class="image-card-text">Singapore</div>
-  </div>
-    <div class="image-card" data-show-on-click="south-korea">
-    <img  src="/img/location/office12.webp" alt="">
-    <div class="image-card-text">South Korea</div>
-  </div>
-</div>
 
 <div class="location-card-mian" id="philippines">
       <div class="location-card office-card">
@@ -365,17 +392,7 @@
                        </div>
 </div> 
 
-                         <div class="experts-card mb45">
-    
-    <div class="image-card" data-show-on-click="sri-lanka">
-    <img  src="/img/location/office13.webp" alt="">
-    <div class="image-card-text">Sri Lanka</div>
-  </div>
-    <div class="image-card" data-show-on-click="vietnam">
-    <img  src="/img/location/office14.webp" alt="">
-    <div class="image-card-text">Vietnam</div>
-  </div>
-</div>
+
 
    <div class="location-card-mian" id="sri-lanka">
     <div class="location-card office-card">
@@ -943,6 +960,51 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script> -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cardList = document.querySelector(".experts-card-list");
+  const imageCards = document.querySelectorAll(".image-card");
+  let currentLocationCard = null;
+
+  imageCards.forEach((card, index) => {
+    card.addEventListener("click", () => {
+      // Remove selected class from all
+      imageCards.forEach(c => c.classList.remove("selected"));
+      card.classList.add("selected");
+
+      const id = card.getAttribute("data-show-on-click");
+      const template = document.getElementById(id);
+      if (!template) return;
+
+      // Remove any existing location card
+      if (currentLocationCard) {
+        currentLocationCard.remove();
+        currentLocationCard = null;
+      }
+
+      // Create and insert new location card
+      const locationCard = document.createElement("div");
+      locationCard.className = "location-add show";
+      locationCard.innerHTML = template.innerHTML;
+      currentLocationCard = locationCard;
+
+      // Calculate how many cards per row
+      const cardsPerRow = getCardsPerRow(imageCards);
+      const rowStart = Math.floor(index / cardsPerRow) * cardsPerRow;
+      const rowEnd = Math.min(rowStart + cardsPerRow - 1, imageCards.length - 1);
+      const insertAfter = imageCards[rowEnd];
+
+      insertAfter.insertAdjacentElement("afterend", locationCard);
+    });
+  });
+
+  function getCardsPerRow(cards) {
+    const top = cards[0].getBoundingClientRect().top;
+    return Array.from(cards).filter(c => c.getBoundingClientRect().top === top).length;
+  }
+});
+</script>
+
 
 
     <script src="../js/vendor/splide.min.js"></script>

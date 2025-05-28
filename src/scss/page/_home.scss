@@ -756,6 +756,10 @@
         }
         .card-title{font-size: 18px; font-family:v.$font-family-Poppins; font-weight:v.$font-weight-SemiBold;line-height: 24px;}
         .card-image{border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
+        &.case-studies-insights{
+          .card-title{ font-family: v.$font-family-inter; font-weight: v.$font-weight-Medium; font-size: 1rem; line-height: 26px; margin-top: 1rem; color: #222831;}
+          .card-horizontal{box-shadow: none; border: solid 1px #EAEAEA; border-radius: 4px;}
+        }
       }
     }
 }
@@ -778,6 +782,8 @@
     position: relative;
     overflow: hidden;
     border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .card-image {

@@ -4,6 +4,7 @@
  .common-tab-container {
     width: 75%;
     margin: 0 auto;
+    &.studies-insights{width: 100%;}
   }
   .common-tab-buttons {
     display: flex;
@@ -58,6 +59,7 @@
     border-radius: 5px;
     &:focus{outline:v.$cyan-blue-dark ;}
   }
+  .tab-dropdown{ display: none;}
  /* end*/
 //v-tab-and-advantages css
 .after-content{
@@ -180,6 +182,25 @@
   }
 }
 
+.common-tab-container{
+  &.studies-insights{
+    .common-tab-buttons{
+    box-shadow: none;
+    li{border: none;
+    .common-tab-button{
+      padding: 0.5rem 1rem;
+      border: solid 1px #E0E5EB;
+      border-radius: 20px;
+      color: #333D4C;
+      font-weight: v.$font-weight-Medium;
+      &.active, &:hover{
+        border: solid 1px #111827; color: #111827; font-weight: v.$font-weight-Medium;
+      }
+    }
+    }
+    }
+    }
+}
 
 @media  only screen and  (max-width: 667px) {
   .pathfinder .c-tab__content.cyber .c-tab__content__item .c-tab__content__btn svg {
@@ -219,6 +240,7 @@
   #tabDropdown {
     display: block;
   }
+  .tab-dropdown{display: block;}
 }
 @media only screen and  (min-width: 768px){
   .c-tab{

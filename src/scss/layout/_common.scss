@@ -450,12 +450,16 @@ html { scroll-behavior: smooth; }
   }
 
 }
-.our-team-experts, .clients-panel-list, .partners-alliances-list, .location-card-list{
+.our-team-experts, .clients-panel-list, .partners-alliances-list, .location-card-list, .gateway-dba{
   .splide__pagination{bottom: -24px;}
   .splide__pagination__page.is-active::before{width: 4px; height: 4px;}
   .splide__pagination__page.is-active{transform: scale(1);}
 }
-
+.gateway-dba{
+  .splide__pagination{bottom: -50px;}
+.splide__arrow--next{right: -50px;}
+.splide__arrow--prev{left: -50px;}
+}
 .clients-carousel{
   .splide{max-width: 1245px; margin: 0 auto;}
   .c-logo{padding: 3rem;}

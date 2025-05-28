@@ -160,6 +160,18 @@
   .splide__arrow--next{right: -15px;}
   
 }
+&.gateway-dba{
+  .splide__pagination {
+    justify-content: flex-start;
+    bottom: -30px;
+  }
+  .splide__arrow{border: solid 1px #9A9A9A;
+  svg{height: 0.8rem; width: 0.8rem;}
+  }
+  .splide__arrow--prev{left: -15px;}
+  .splide__arrow--next{right: -15px;}
+  
+}
 &.resource-video {
 .splide__pagination{left: 182px; bottom: 20px;}
 }
@@ -193,9 +205,10 @@
           }
       }
     }
+
   }
 
-  .section-wrapper {
+  .section-wrapper, .section-wrapper-min {
     position: absolute;
     height: 612px;
     right: 0;
@@ -214,6 +227,23 @@
   .splide__list {
     height: 612px;
   }
+  .splide__arrow{ 
+  background: rgb(0, 0, 0, 80%) !important;
+  svg{fill: #fff !important;height: 0.7rem !important;
+    width: .7rem !important;} 
+
+  }
+    .splide__arrows{
+    justify-content: flex-start;
+    bottom: 10%; top: inherit;
+    right: 0;
+    left: 0%;
+    max-width: 1220px;
+    margin: 0 auto;
+    position: absolute;
+    .splide__arrow--prev{left: 1.5rem;}
+    .splide__arrow--next{left: 4rem; right: inherit;}
+    }
 }
 .clients-carousel{
     .splide{max-width: 1245px; margin: 0 auto;}

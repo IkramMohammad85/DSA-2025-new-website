@@ -241,8 +241,8 @@
     max-width: 1220px;
     margin: 0 auto;
     position: absolute;
-    .splide__arrow--prev{left: 1.5rem;}
-    .splide__arrow--next{left: 4rem; right: inherit;}
+    .splide__arrow--prev{left: 1.5rem; box-shadow: rgba(0, 0, 0, 0.32) 0px 4px 4px;}
+    .splide__arrow--next{left: 4rem; right: inherit; box-shadow: rgba(0, 0, 0, 0.32) 0px 4px 4px;}
     }
 }
 .clients-carousel{

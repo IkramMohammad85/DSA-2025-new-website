@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function () {
       pagination: el.dataset.pagination !== 'false',
       arrows: el.dataset.arrows !== 'false',
       pauseOnHover: false,
-      interval: parseInt(el.dataset.interval) || 3000, // Default to 3000ms (3 seconds)
+      interval: parseInt(el.dataset.interval) || 5000, // Default to 3000ms (3 seconds)
     };
   
     // Only include rewind if not using loop

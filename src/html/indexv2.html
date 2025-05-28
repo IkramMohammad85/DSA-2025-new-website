@@ -10,6 +10,13 @@
     <link rel="preload" as="image" href="/img/top-home-slide-img/1n.webp">
     <title>Dezan Shira &amp; Associates - Homepage</title>
     <style>
+        .trending-insights .ti-list li a{  
+            display: -webkit-box;
+    -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;}
+  .trending-insights .ti-list li{margin-bottom: 2rem;}
         #main-slider{height: 711px;}
         #main-slider .splide__list{height: 711px;}
         #main-slider .section-wrapper-min{height: 711px;}
@@ -195,7 +202,7 @@
     @@include("includes/header.html")
     <section>
         <div id="main-slider" class="splide" data-rewind="true" data-autoplay="true" data-arrows="true"
-            data-type="fade" interval='5000' data-pagination="false">
+            data-type="fade" interval='20000' data-pagination="false">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
@@ -386,7 +393,7 @@
     <section class="section-top-padding section-bottom-padding section-bottom-padding-9rem gateway-dba">
         <h2 class="heading-second text-center mb-3">Your Gateway to Doing Business in Asia</h2>
         <div class="section-wrapper-min">
-            <div class="splide" data-per-page="1" data-autoplay="false" data-arrows="true" data-type="slide"
+            <div class="splide" data-per-page="1" data-autoplay="false" data-arrows="true" data-type="fade" interval='5000'
                 data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem","height":"100%"},"480":{"perPage":1,"gap":"0.7rem","height":"100%"}}'>
                 <div class="splide__track">
                     <div class="splide__list">

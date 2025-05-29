@@ -31,6 +31,7 @@
    .accordion-reg-button.collapsed {padding: 0px 20px 20px 0px; border-radius: 0;}
    .accordion-reg-button{color: v.$black; font-weight: v.$font-weight-normal;}
    .accordion-reg-collapse{padding-left: 0; padding-right: 0;}
+   .arrow img{max-width: none; margin-left: 1rem;}
   }
   &.accordion-reg-gray{
     .accordion-reg-button.collapsed{background-color: #F6F6F6;}

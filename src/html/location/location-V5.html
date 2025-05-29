@@ -12,19 +12,40 @@
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet" />
     <style>
-
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f0f0f0;
+    }
 
     .experts-card-list {
       display: flex;
-
+      flex-direction: column;
       gap: 1.5rem;
-
+      max-width: 1000px;
       margin: auto;
     }
 
+    .experts-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
+    .image-card-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
 
-
+    .image-card {
+      cursor: pointer;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 200px;
+      background: white;
+      box-shadow: 0 0 0 2px transparent;
+      transition: box-shadow 0.2s ease;
+    }
 
 
 

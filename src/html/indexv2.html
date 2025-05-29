@@ -56,7 +56,7 @@
   visibility: visible;
 }
 .counter-box:hover .hide-button:hover{text-decoration: underline;}
-        .trending-insights{max-width: 720px; right:-136px;}
+        .trending-insights{max-width: 720px; right:-80px;}
         .trending-insights .ti-list li a{  
             display: -webkit-box;
     -webkit-line-clamp: 2; 
@@ -76,6 +76,14 @@
             margin-top: 0.6rem;
             gap: 1.2rem;
         }
+
+        .card-body .service-left.service-left-2column{
+            column-count: 2;
+            column-gap: 3.3rem;
+            list-style: none; 
+            display: inherit;
+        }
+        .card-body .service-left.service-left-2column li{margin-bottom: 1.3rem;}
 
         .card-body .service-left .text-cta-link {
             color: #217FD4;
@@ -396,7 +404,7 @@
 
                 </div>
                 <div class="card-body">
-                    <ul class="service-left">
+                    <ul class="service-left service-left-2column">
                         <li><a href="https://www.dezshira.com/services/accounting-reporting">Accounting</a></li>
                         <li><a href="https://www.dezshira.com/services/audit-financial-review">Audit and Financial
                                 Review</a></li>

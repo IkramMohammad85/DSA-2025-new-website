@@ -889,7 +889,7 @@
     font-family: v.$font-family-inter;
     font-weight: v.$font-weight-normal;
   }
-  .counter-box:first-child .counter:after {
+  .counter-box:first-child .counter:after,.counter-box:nth-child(2) .counter:after {
     content: "+";
     margin-left: 0.2rem;
   }

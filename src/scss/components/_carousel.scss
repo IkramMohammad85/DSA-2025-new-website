@@ -158,6 +158,23 @@
   }
   .splide__arrow--prev{left: -15px;}
   .splide__arrow--next{right: -15px;}
+        
+        .splide__arrow--prev{left: 18px !important;}
+        .splide__arrow--next{right: 0px;left: 55px !important;}
+        .splide__arrow{
+            border: solid 1px #535353;
+            opacity: 1;
+            width: 28px;
+            height: 28px;
+            svg {
+            fill: #000 !important;
+            height: 0.5rem !important;
+            stroke: #000000;
+            stroke-width: 5px;
+        }
+        }
+        .splide__arrows{bottom: 0;position: absolute;}
+     
   
 }
 &.gateway-dba{
@@ -175,6 +192,7 @@
 &.resource-video {
 .splide__pagination{left: 182px; bottom: 20px;}
 }
+
 }
 #main-slider{
   height: 612px;
@@ -246,6 +264,11 @@
     }
   
 }
+
+
+
+    
+
 .clients-carousel{
     .splide{max-width: 1245px; margin: 0 auto;}
     

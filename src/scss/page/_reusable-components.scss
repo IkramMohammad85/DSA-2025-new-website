@@ -1,7 +1,30 @@
 @use "../base/variables" as v;
 
 //speekar list
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #ffffff;
+    position: absolute;
+    bottom: -2px;
+    right: -20px;
+    transform: rotate(314deg);
 
+&.triangle-red {
+  border-top: 25px solid #EAA68F;
+}
+&.triangle-yellow {
+  border-top: 25px solid #FFE8AF;
+}
+&.triangle-green {
+  border-top: 25px solid #ADCAA7;
+}
+&.triangle-purple {
+  border-top: 25px solid #C1C5DC;
+}
+}
 
 /* Base Card Styles */
 .card-resrcs {
@@ -36,7 +59,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(12, 39, 36, 0.5);
     color: white;
     padding: 2rem;
     border-bottom-left-radius: 4px;

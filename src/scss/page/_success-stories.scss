@@ -1,5 +1,8 @@
 @use "../base/variables" as v; 
 
+.resource-item{
+  .resource-thumb img{ max-height: 140px;object-fit: cover; width: 100%;}
+}
 .two_col{ display: grid; }
 .bp-block .event-video-item{ 
   //margin: 0.8rem 1rem 2rem 1rem; 

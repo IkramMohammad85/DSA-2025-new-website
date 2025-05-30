@@ -11,47 +11,7 @@
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet" />
-    <style>
-        .card-horizontal.home-top-service-block{ align-items: start;gap: 3rem;}
-        .card-horizontal.home-top-service-block .card-text{font-weight: 300;}
-        .card-horizontal.home-top-service-block .btn{margin-top: 1.5rem;}
-        .card-body .service-left {
-            display: grid;
-            margin-top: 0.6rem;
-            gap: 1.2rem;
-        }
-
-        .card-body .service-left.service-left-2column{
-            column-count: 2;
-            column-gap: 3.3rem;
-            list-style: none; 
-            display: inherit;
-            margin-bottom: 0;
-        }
-        .card-body .service-left.service-left-2column li{margin-bottom: 1.3rem;}
-
-        .card-body .service-left .text-cta-link {        color: #217FD4;        }
-
-        .service-left li:hover a {
-            transition: transform .4s ease;
-        }
-        .service-left li a {
-            font-weight: 500;
-        }
-
-        .service-left li:hover a:after {
-            content: "";
-            background: url(../img/Arrow-text-link.svg) no-repeat 0px 6px;
-            background-size: contain;
-            width: 15px;
-            height: 16px;
-            display: inline-block;
-            transform: translateX(0);
-            transition: transform .3s ease;
-            margin-left: 6px;
-            animation: arrowfx 0.6s ease-in-out forwards;
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -1108,14 +1068,15 @@
       <button class="navbar__hamburger navbar--mobile" aria-label="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
     </div>
   </nav>
-      <section class="masthead">
+      <section class="masthead master-text-location">
         <div class="section-wrapper">
             <div class="section-wrapper-min">
           <div class="masthead__text justify-content-center">
             <h1>China</h1>
+            <p class="mt-1">Learn about our China locations and expertise. To enquire about our services, please contact us</p>
           </div></div>
         </div>
-        <div class="masthead__bg"><img alt="Environment and Cleantech" src="/img/location/location-hero2.webp"  width="1440" height="419"></div>
+        <div class="masthead__bg banner-image-overley"><img alt="Environment and Cleantech" src="/img/location/location-hero2.webp"  width="1440" height="419"></div>
       </section>
 
       <section class="page-intro section-top-padding-5rem">
@@ -1129,7 +1090,7 @@
             <p>Despite ongoing concerns about consumer confidence, the Chinese government has identified domestic demand as a priority for the nation’s economy, highlighting a government commitment to stimulating consumption and investment to bolster economic growth.</p>
             
             <div class="d-flex">
-                 <button class="btn btn-primary" data-show-on-click="get-in-touch">Make an enquiry</button>
+                 <button class="btn btn-primary" data-show-on-click="get-in-touch">Make An Enquiry</button>
                     <a class="text-cta-link scrollto" href="#" target="_blank">Meet our Shanghai team <span class="arrow-anim"></span></a>
                     
             
@@ -1153,9 +1114,9 @@
       </div>
     </div>
       </section>
- <section class="page-intro section-top-padding-5rem section-bottom-padding-5rem">
+ <section class="page-intro section-top-padding-5rem">
       <div class="section-wrapper-min">
-<h3 class="heading-level2 text-center mb-2">Our Locations in China</h3>
+<h3 class="heading-level2 text-center mb-2">Our China Office</h3>
       <div class="location-card-list">                
             <div class="splide" data-per-page="3" data-autoplay="false"
             data-arrows="false" data-type="slide" gap="0"
@@ -1263,18 +1224,18 @@
   </div>
     </section>
 
-        <section class="services-question-section section-bottom-padding-5rem">
-      <div class="section-wrapper-min">
-        <h2 class="heading-level2 mb-3">Our Country Story</h2>
+        <section class="services-question-section">
+      <div class="section-wrapper-min section-bottom-padding-5rem section-top-padding-5rem">
+        <h2 class="heading-level2 mb-3">Regional Overview</h2>
           <div class="flex-grid flex-grid-col-lg">
               <div class="flex-col">
                   <div class="services-list-details">
 
-                      <div class="accordion-reg explore-services" id="regAccordion" data-autoclose="false">
+                      <div class="accordion-reg explore-services border-style" id="regAccordion" data-autoclose="false">
                           <div class="accordion-reg-item">
                               <h3 class="accordion-reg-header">
                                   <button class="accordion-reg-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-                                    Extensive global network <span class="arrow"><img src="/img/accordion-collp-black.svg" height="1024" alt="close and open"></span>
+                                    Market and Key Regions <span class="arrow"><img src="/img/accordion-collp-black.svg" height="1024" alt="close and open"></span>
                                   </button>
                               </h3>
                               <div id="collapseSixteen" class="accordion-reg-collapse">
@@ -1295,7 +1256,7 @@
                           <div class="accordion-reg-item">
                               <h3 class="accordion-reg-header">
                                   <button class="accordion-reg-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-                                    Keep Up to Date on Asia <span class="arrow"><img src="/img/accordion-collp-black.svg" height="1024" alt="close and open"></span>
+                                    Cross Border Investment and Trade <span class="arrow"><img src="/img/accordion-collp-black.svg" height="1024" alt="close and open"></span>
                                   </button>
                                    
                               </h3>
@@ -1311,7 +1272,7 @@
                           <div class="accordion-reg-item">
                               <h3 class="accordion-reg-header">
                                   <button class="accordion-reg-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEightteen" aria-expanded="false" aria-controls="collapseEightteen">
-                                    Access Our Expertise <span class="arrow"><img src="/img/accordion-collp-black.svg" height="1024" alt="close and open"></span>
+                                    Business Environment <span class="arrow"><img src="/img/accordion-collp-black.svg" height="1024" alt="close and open"></span>
                                   </button>
                               </h3>
                               <div id="collapseEightteen" class="accordion-reg-collapse">
@@ -1333,22 +1294,7 @@
                                   </div>
                               </div>
                           </div>
-                                  <div class="accordion-reg-item">
-                              <h3 class="accordion-reg-header">
-                                  <button class="accordion-reg-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-                                    Core Value: One-Stop Support for Businesses Expanding into Asia <span class="arrow"><img src="/img/accordion-collp-black.svg" height="1024" alt="close and open"></span>
-                                  </button>
-                              </h3>
-                              <div id="collapseNineteen" class="accordion-reg-collapse">
-                                  <div class="accordion-reg-body">
-                                    <p><span>PEO (Professional Employer Organizations) help companies to onboard staff in Asia rapidly, in full compliance with local laws, and without the investment required to set up and operate an overseas legal entity.</span></p>
-                                    <p><span>As a strategy, this allows a company to test market entry into one or more Asian countries, and then retain the option to easily scale back, switch to a different country, or upon proven success in the market, to proceed in establishing a formal presence.</span></p>
-                                    <a class="btn btn-primary scrollto hover-ripple-out" href="#cta-contact" target="_blank">Send
-                                      Enquiry</a>
-                                      <a class="btn btn-outline-primary scrollto" href="https://www.dezshira.com/services/payroll-human-resource-administration/global-staffing-solutions">Learn about how PEO works</a>
-                                  </div>
-                              </div>
-                          </div>
+                                  
                                          
                       </div>
                     </div>
@@ -1356,12 +1302,63 @@
               
           </div>
       </div>
-
-<div class="section-wrapper-min section-top-padding-5rem">
+      <section class="ibm-enizi-sp section-top-padding-5rem section-bottom-padding-5rem growth-location" id="esg-journey">
+        <div class="section-wrapper-min">
+          <h2 class="heading-level2 mb-3">Your Partner for Growth - in China for more than 30 years</h2>
+         
+          <div class="flex-spacing">
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <div class="ibm-enizi-sp-container">
+                    <div class="ibm-enizi-sp-block">
+                      <div class="ibm-enizi-sp-title">
+                        <div class="icon-square rounded-circle bg-secondary"><img alt="Increase opportunities" src="/img/fe-icon.svg" width="40" height="40"></div>
+                      </div>
+                      <div class="ibm-enizi-sp-text">
+                        <h3>Local knowledge</h3>
+                        <p>Our in-depth understanding of tax regulations across key Asian markets helps businesses navigate compliance with confidence and precision.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="ibm-enizi-sp-container">
+                    <div class="ibm-enizi-sp-block">
+                      <div class="ibm-enizi-sp-title">
+                        <div class="icon-square rounded-circle bg-secondary"><img alt="Deeper understanding" src="/img/ts-icon.svg" height="40" width="40"></div>
+                      </div>
+                      <div class="ibm-enizi-sp-text">
+                        <h3>Hands-on attention</h3>
+                        <p>From corporate advisory to annual filings, our end-to-end services simplify your tax responsibilities so you can focus on growth.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="ibm-enizi-sp-container">
+                    <div class="ibm-enizi-sp-block">
+                      <div class="ibm-enizi-sp-title">
+                        <div class="icon-square rounded-circle bg-secondary"><img alt="More insights" width="40" height="40" src="/img/rm-icon.svg"></div>
+                      </div>
+                      <div class="ibm-enizi-sp-text">
+                        <h3>Speed & flexibility</h3>
+                        <p>We identify potential risks early and provide strategic insights to help you stay ahead of regulatory changes and avoid costly penalties.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+<div class="section-wrapper-min section-top-padding-5rem section-bottom-padding-5rem">
         <div class="card-grid">
             <div class="card-horizontal home-top-service-block">
                 <div class="card-body">
-                    <h3 class="heading-level2">Areas of Expertise</h3>
+                    <h3 class="heading-level2">How We Can Help</h3>
                     <p class="card-text">We offer end-to-end support for foreign enterprises navigating the Chinese market—whether you're setting up operations for the first time or expanding an existing presence.</p>
                     <p class="card-text"></p>
 With deep local expertise and a regional perspective, we help businesses confidently operate and grow in China’s complex and evolving business landscape.</p>
@@ -1398,158 +1395,258 @@ With deep local expertise and a regional perspective, we help businesses confide
         </div>
     </div>
     </section>
-        <section class="page-intro section-top-bottom-padding section-light-gray-bg">
-        <div class="section-wrapper-min">
 
-            <div class="flex-grid-row flex-grid-row--one-third">
-                <div class="flex-col-3per">
-                    <h2 class="heading-level2">Our Clients</h2>
-                    <p>Discover our esteemed global clients across diverse sectors. We believe in providing our clients
-                        with exceptional service and a commitment to being their partner for growth in Asia.</p>
-
-                    <a href="https://www.dezshira.com/success-stories/testimonials" class="text-cta-link">See what our
-                        clients say about us <span class="arrow-anim"></span>
-                    </a>
-                </div>
-                <div class="flex-col-7per clients-panel-list">
-                    <div class="splide" data-per-page="4" data-autoplay="false" data-arrows="false" data-type="slide"
-                        data-breakpoints='{"640":{"perPage":2,"gap":"0.7rem","height":"10rem"},"480":{"perPage":1,"gap":"0.7rem","height":"10rem"}}'>
-                        <div class="splide__track">
-                            <div class="splide__list">
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client1.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-
-                                        <img loading="lazy" src="/img/clients/client2.webp" alt="Mastip" width="auto"
-                                            height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client2.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client3.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client4.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client5.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client6.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client7.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client8.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-
-                                        <img loading="lazy" src="/img/clients/client2.webp" alt="Mastip" width="auto"
-                                            height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client3.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client4.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client5.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client6.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client7.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-
-                                        <img loading="lazy" src="/img/clients/client8.webp" alt="Mastip" width="auto"
-                                            height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client2.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client3.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client4.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client5.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client6.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client7.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client8.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-
-                                        <img loading="lazy" src="/img/clients/client2.webp" alt="Mastip" width="auto"
-                                            height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client3.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client4.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client4.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client6.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                                <div class="splide__slide">
-                                    <div class="c-logo"><img loading="lazy" src="/img/clients/client7.webp"
-                                            alt="Mann Hummel" width="auto" height="40">
-                                        <img loading="lazy" src="/img/clients/client8.webp" alt="Mann Hummel"
-                                            width="auto" height="40">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
    
+
+
+      <section class="pricing section-bottom-padding-5rem section-top-padding-5rem" id="s-price">  
+        <div class="section-wrapper-min">
+          <div class="flex-spacing regular-pagination resource-splide">
+            <div class="pricing__intro">
+              <h2 class="heading-level2">Events and Insights  </h2>
+              <div class="insights-resources">
+                <button class="insights-resources__toggle">Events</button>
+                <ul class="pricing__tab--country insights-resources__menu">
+                  
+                  <li class="tab--active"><a data-tab="#pricing-vn">Doing Business in China</a></li>
+                  <li><a data-tab="#pricing-cn">Events</a></li>
+                  <li><a data-tab="#pricing-in">Brochures</a></li>
+                  <li><a data-tab="#pricing-asean">China Briefing News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pricing__country" id="pricing-cn">
+              
+      
+                 <div class="bp-block">
+<div class="card-resrcs webinar small-webinar">
+            <div class="resrcs-image" style="background-image: url('/img/events/event1.webp')">
+              <div class="resrcs-date overlay">May<br><span>07</span></div>
+            </div>
+            <div class="resrcs-body">
+              <div class="resrcs-meta"><span>Webinar</span> <div class="expt-location"><img src="/img/events/l-mark.svg" width="13" height="15" alt="location">
+                <a href="#" target="_blank"> China</a>
+              </div></div>
+              <h3 class="resrcs-title"><a href="#">Navigating China's Compliance Framework in the Digital Age – Solutions for Forward-Thinking Enterprises</a></h3>
+              
+            </div>
+          </div>
+          <div class="card-resrcs webinar small-webinar">
+            <div class="resrcs-image" style="background-image: url('/img/events/event2.webp')">
+              <div class="resrcs-date overlay">May<br><span>07</span></div>
+            </div>
+            <div class="resrcs-body">
+              <div class="resrcs-meta"><span>Webinar</span> <div class="expt-location"><img src="/img/events/l-mark.svg" width="13" height="15" alt="location">
+                <a href="#" target="_blank"> China</a>
+              </div></div>
+              <h3 class="resrcs-title"><a href="#">Navigating China's Compliance Framework in the Digital Age – Solutions for Forward-Thinking Enterprises</a></h3>
+              
+            </div>
+          </div>
+          <div class="card-resrcs webinar small-webinar">
+            <div class="resrcs-image" style="background-image: url('/img/events/event3.webp')">
+              <div class="resrcs-date overlay">May<br><span>07</span></div>
+            </div>
+            <div class="resrcs-body">
+              <div class="resrcs-meta"><span>Webinar</span> <div class="expt-location"><img src="/img/events/l-mark.svg" width="13" height="15" alt="location">
+                <a href="#" target="_blank"> China</a>
+              </div></div>
+              <h3 class="resrcs-title"><a href="#">Navigating China's Compliance Framework in the Digital Age – Solutions for Forward-Thinking Enterprises</a></h3>
+              
+            </div>
+          </div>
+                  
+            
+                 <a class="text-cta-link mt-2" href="#" target="_blank">See all events <span class="arrow-anim"></span></a>
+              </div>
+            
+            </div>
+            <div class="pricing__country pricing--active" id="pricing-vn">
+              
+                <div class="bp-block">
+                  <div class="splide" data-per-page="2" data-autoplay="false"
+                data-pagination="false" data-arrows="true" data-type="slide"
+                 data-breakpoints='{"640":{"perPage":2,"gap":"0.7rem","height":"10rem"},"480":{"perPage":1,"gap":"0.7rem","height":"10rem"}}'>
+                 <div class="splide__track">
+                     <div class="splide__list">
+                         <div class="splide__slide">
+                          <div class="ap-area__article cs broch">
+                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-business-intelligence-solutions.jpg?v2" alt="Case Studies"></a>
+                            <h2><a href="">Building Supply Chain Resilience in Asia: Country Competitiveness Benchmarking by a European Textile Manufacturer</a></h2>
+                           
+                       
+                            </div>
+                         </div>
+                       
+                         <div class="splide__slide">
+                          <div class="ap-area__article cs broch">
+                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-business-advisory-services.jpg?v2" alt="Case Studies"></a>
+                            <h2><a href="">ESG Management with IBM Envizi - Science-based sustainability needs reality-based reporting</a></h2>
+                          
+                       
+                            </div>
+                         </div>
+                   
+                         <div class="splide__slide">
+                          <div class="ap-area__article cs broch">
+                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-mergers-acquisitions-advisory.jpg?v2" alt="Case Studies"></a>
+                            <h2><a href="">US-China Trade Tensions: How a Building Products Manufacturer is Thriving Across Borders with Diversified Production</a></h2>
+                           
+                       
+                            </div>
+                         </div>
+                    
+                         <div class="splide__slide">
+                          <div class="ap-area__article cs broch">
+                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-audit-financial-review.jpg?v2" alt="Case Studies"></a>
+                            <h2><a href="">Improved IT Infrastructure and Security Controls through Cloud Based M365 Productivity Platform</a></h2>
+                           
+                       
+                            </div>
+                         </div>
+                         
+                     </div>
+                 </div>
+                </div>
+                 
+                </div>
+              
+            </div>
+            <div class="pricing__country" id="pricing-in">
+                  <div class="bp-block">
+                    <div class="splide" data-per-page="2" data-autoplay="false"
+                data-pagination="false" data-arrows="true" data-type="slide"
+                 data-breakpoints='{"640":{"perPage":2,"gap":"0.7rem","height":"auto"},"480":{"perPage":1,"gap":"0.7rem","height":"auto"}}'>
+                 <div class="splide__track">
+                     <div class="splide__list">
+                         <div class="splide__slide">
+                          <div class="ap-area__article cs broch">
+                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-business-intelligence-solutions.jpg?v2" alt="Company Brochure"></a>
+                            <h2><a href="">Company Brochure</a></h2>
+                           <ul class="brochure_lists two_col">
+                                    <li><a href="/brochure_download_status/english" target="_blank">English</a></li>
+                                    <li><a href="/brochure_download_status/german" target="_blank">Deutsch</a></li>
+                                    <li><a href="/brochure_download_status/french" target="_blank">Français</a></li>
+                                    <li><a href="/brochure_download_status/italian" target="_blank">Italiano</a></li>
+                                    <li><a href="/brochure_download_status/spanish" target="_blank">Español</a></li>
+                                    <li><a href="/brochure_download_status/chinese" target="_blank">中文宣传手册</a></li>
+                            </ul>
+                       
+                            </div>
+                         </div>
+                       
+                         <div class="splide__slide">
+                          <div class="ap-area__article cs broch">
+                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-business-advisory-services.jpg?v2" alt="Company Brochure"></a>
+                            <h2><a href="">Company Brochure</a></h2>
+                           <ul class="brochure_lists two_col">
+                                    <li><a href="/brochure_download_status/english" target="_blank">English</a></li>
+                                    <li><a href="/brochure_download_status/german" target="_blank">Deutsch</a></li>
+                                    <li><a href="/brochure_download_status/french" target="_blank">Français</a></li>
+                                    <li><a href="/brochure_download_status/italian" target="_blank">Italiano</a></li>
+                                    <li><a href="/brochure_download_status/spanish" target="_blank">Español</a></li>
+                                    <li><a href="/brochure_download_status/chinese" target="_blank">中文宣传手册</a></li>
+                            </ul>
+                       
+                            </div>
+                         </div>
+                   
+                         <div class="splide__slide">
+                          <div class="ap-area__article cs broch">
+                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-mergers-acquisitions-advisory.jpg?v2" alt="Company Brochure"></a>
+                            <h2><a href="">Company Brochure</a></h2>
+                           <ul class="brochure_lists two_col">
+                                    <li><a href="/brochure_download_status/english" target="_blank">English</a></li>
+                                    <li><a href="/brochure_download_status/german" target="_blank">Deutsch</a></li>
+                                    <li><a href="/brochure_download_status/french" target="_blank">Français</a></li>
+                                    <li><a href="/brochure_download_status/italian" target="_blank">Italiano</a></li>
+                                    <li><a href="/brochure_download_status/spanish" target="_blank">Español</a></li>
+                                    <li><a href="/brochure_download_status/chinese" target="_blank">中文宣传手册</a></li>
+                            </ul>
+                       
+                            </div>
+                         </div>
+                    
+                         <div class="splide__slide">
+                          <div class="ap-area__article cs broch">
+                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-audit-financial-review.jpg?v2" alt="Company Brochure"></a>
+                            <h2><a href="">Company Brochure</a></h2>
+                           <ul class="brochure_lists two_col">
+                                    <li><a href="/brochure_download_status/english" target="_blank">English</a></li>
+                                    <li><a href="/brochure_download_status/german" target="_blank">Deutsch</a></li>
+                                    <li><a href="/brochure_download_status/french" target="_blank">Français</a></li>
+                                    <li><a href="/brochure_download_status/italian" target="_blank">Italiano</a></li>
+                                    <li><a href="/brochure_download_status/spanish" target="_blank">Español</a></li>
+                                    <li><a href="/brochure_download_status/chinese" target="_blank">中文宣传手册</a></li>
+                            </ul>
+                       
+                            </div>
+                         </div>
+                         
+                     </div>
+                 </div>
+                </div>
+                 
+              
+              </div>
+           
+        
+          </div>
+          <div class="pricing__country" id="pricing-asean">
+         
+              <div class="bp-block">
+                <div class="right-column">
+                    <div class="session-card-right">
+                        <div class="date-right">
+                            <span>Apr</span>
+                            <strong>19</strong>
+                        </div>
+                        <div class="session-info">
+                            <div class="session-type-right">Seminar</div>
+                            <h3 class="session-title-right"><a href="#" target="_blank">Decoding Singapore's Budget 2025: Implications for Foreign Businesses and Investors</a></h3>
+                            <span class="location-badge-right badge-sg">SINGAPORE</span>
+                        </div>
+                    </div>
+        
+                    <div class="session-card-right">
+                        <div class="date-right">
+                            <span>Apr</span>
+                            <strong>12</strong>
+                        </div>
+                        <div class="session-info">
+                            <div class="session-type-right">Webinar</div>
+                            <h3 class="session-title-right"><a href="#" target="_blank">Tax and Accounting In China's Digital Era: Practical Strategies for Business Advancement</a></h3>
+                            <span class="location-badge-right badge-cb">CHINA</span>
+                        </div>
+                    </div>
+                    <div class="session-card-right">
+                      <div class="date-right">
+                          <span>Apr</span>
+                          <strong>19</strong>
+                      </div>
+                      <div class="session-info">
+                          <div class="session-type-right">Seminar</div>
+                          <h3 class="session-title-right"><a href="#" target="_blank">Decoding Singapore's Budget 2025: Implications for Foreign Businesses and Investors</a></h3>
+                          <span class="location-badge-right badge-sg">SINGAPORE</span>
+                      </div>
+                  </div>
+      
+                 <a class="text-cta-link mt-2" href="#" target="_blank">See all news <span class="arrow-anim"></span></a>
+                 
+                    
+                    
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        </div>
+        
+      </section>
       <div class="section-top-bottom-padding our-team-experts">
-        <h3 class="text-center">Key Contacts</h3>
+        <h2 class="heading-level2 text-center mb-2">Meet the Team</h2>
         <div class="section-wrapper-min">
         <div class="splide" data-per-page="4" data-autoplay="false"
         data-pagination="true" data-type="slide" data-arrows="false" gap="0"
@@ -1725,252 +1822,63 @@ With deep local expertise and a regional perspective, we help businesses confide
   </div>
     
       </div>
-
-      <section class="pricing section-bottom-padding-5rem section-top-padding-5rem" id="s-price">  
+  <section class="page-intro section-top-bottom-padding section-light-gray-bg">
         <div class="section-wrapper-min">
-          <div class="flex-spacing regular-pagination resource-splide">
-            <div class="pricing__intro">
-              <h2 class="heading-level2">Events and Insights  </h2>
-              <div class="insights-resources">
-                <button class="insights-resources__toggle">Events</button>
-                <ul class="pricing__tab--country insights-resources__menu">
-                  <li class="tab--active"><a data-tab="#pricing-cn">Events</a></li>
-                  <li><a data-tab="#pricing-in">Brochures</a></li>
-                  <li><a data-tab="#pricing-vn">Case Studies</a></li>
-                  <li><a data-tab="#pricing-asean">News</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="pricing__country pricing--active" id="pricing-cn">
-              
-      
-                 <div class="bp-block">
-<div class="card-resrcs webinar small-webinar">
-            <div class="resrcs-image" style="background-image: url('/img/events/event1.webp')">
-              <div class="resrcs-date overlay">May<br><span>07</span></div>
-            </div>
-            <div class="resrcs-body">
-              <div class="resrcs-meta"><span>Webinar</span> <div class="expt-location"><img src="/img/events/l-mark.svg" width="13" height="15" alt="location">
-                <a href="#" target="_blank"> China</a>
-              </div></div>
-              <h3 class="resrcs-title"><a href="#">Navigating China's Compliance Framework in the Digital Age – Solutions for Forward-Thinking Enterprises</a></h3>
-              
-            </div>
-          </div>
-          <div class="card-resrcs webinar small-webinar">
-            <div class="resrcs-image" style="background-image: url('/img/events/event2.webp')">
-              <div class="resrcs-date overlay">May<br><span>07</span></div>
-            </div>
-            <div class="resrcs-body">
-              <div class="resrcs-meta"><span>Webinar</span> <div class="expt-location"><img src="/img/events/l-mark.svg" width="13" height="15" alt="location">
-                <a href="#" target="_blank"> China</a>
-              </div></div>
-              <h3 class="resrcs-title"><a href="#">Navigating China's Compliance Framework in the Digital Age – Solutions for Forward-Thinking Enterprises</a></h3>
-              
-            </div>
-          </div>
-          <div class="card-resrcs webinar small-webinar">
-            <div class="resrcs-image" style="background-image: url('/img/events/event3.webp')">
-              <div class="resrcs-date overlay">May<br><span>07</span></div>
-            </div>
-            <div class="resrcs-body">
-              <div class="resrcs-meta"><span>Webinar</span> <div class="expt-location"><img src="/img/events/l-mark.svg" width="13" height="15" alt="location">
-                <a href="#" target="_blank"> China</a>
-              </div></div>
-              <h3 class="resrcs-title"><a href="#">Navigating China's Compliance Framework in the Digital Age – Solutions for Forward-Thinking Enterprises</a></h3>
-              
-            </div>
-          </div>
-                  
-            
-                 <a class="text-cta-link mt-2" href="#" target="_blank">See all events <span class="arrow-anim"></span></a>
-              </div>
-            
-            </div>
-            <div class="pricing__country" id="pricing-vn">
-              
-                <div class="bp-block">
-                  <div class="splide" data-per-page="2" data-autoplay="false"
-                data-arrows="false" data-type="slide"
-                 data-breakpoints='{"640":{"perPage":2,"gap":"0.7rem","height":"10rem"},"480":{"perPage":1,"gap":"0.7rem","height":"10rem"}}'>
-                 <div class="splide__track">
-                     <div class="splide__list">
-                         <div class="splide__slide">
-                          <div class="ap-area__article cs broch">
-                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-business-intelligence-solutions.jpg?v2" alt="Case Studies"></a>
-                            <h2><a href="">Building Supply Chain Resilience in Asia: Country Competitiveness Benchmarking by a European Textile Manufacturer</a></h2>
-                           
-                       
-                            </div>
-                         </div>
-                       
-                         <div class="splide__slide">
-                          <div class="ap-area__article cs broch">
-                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-business-advisory-services.jpg?v2" alt="Case Studies"></a>
-                            <h2><a href="">ESG Management with IBM Envizi - Science-based sustainability needs reality-based reporting</a></h2>
-                          
-                       
-                            </div>
-                         </div>
-                   
-                         <div class="splide__slide">
-                          <div class="ap-area__article cs broch">
-                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-mergers-acquisitions-advisory.jpg?v2" alt="Case Studies"></a>
-                            <h2><a href="">US-China Trade Tensions: How a Building Products Manufacturer is Thriving Across Borders with Diversified Production</a></h2>
-                           
-                       
-                            </div>
-                         </div>
-                    
-                         <div class="splide__slide">
-                          <div class="ap-area__article cs broch">
-                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-audit-financial-review.jpg?v2" alt="Case Studies"></a>
-                            <h2><a href="">Improved IT Infrastructure and Security Controls through Cloud Based M365 Productivity Platform</a></h2>
-                           
-                       
-                            </div>
-                         </div>
-                         
-                     </div>
-                 </div>
-                </div>
-                 
-                </div>
-              
-            </div>
-            <div class="pricing__country" id="pricing-in">
-                  <div class="bp-block">
-                    <div class="splide" data-per-page="2" data-autoplay="false"
-                data-arrows="false" data-type="slide"
-                 data-breakpoints='{"640":{"perPage":2,"gap":"0.7rem","height":"auto"},"480":{"perPage":1,"gap":"0.7rem","height":"auto"}}'>
-                 <div class="splide__track">
-                     <div class="splide__list">
-                         <div class="splide__slide">
-                          <div class="ap-area__article cs broch">
-                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-business-intelligence-solutions.jpg?v2" alt="Company Brochure"></a>
-                            <h2><a href="">Company Brochure</a></h2>
-                           <ul class="brochure_lists two_col">
-                                    <li><a href="/brochure_download_status/english" target="_blank">English</a></li>
-                                    <li><a href="/brochure_download_status/german" target="_blank">Deutsch</a></li>
-                                    <li><a href="/brochure_download_status/french" target="_blank">Français</a></li>
-                                    <li><a href="/brochure_download_status/italian" target="_blank">Italiano</a></li>
-                                    <li><a href="/brochure_download_status/spanish" target="_blank">Español</a></li>
-                                    <li><a href="/brochure_download_status/chinese" target="_blank">中文宣传手册</a></li>
-                            </ul>
-                       
-                            </div>
-                         </div>
-                       
-                         <div class="splide__slide">
-                          <div class="ap-area__article cs broch">
-                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-business-advisory-services.jpg?v2" alt="Company Brochure"></a>
-                            <h2><a href="">Company Brochure</a></h2>
-                           <ul class="brochure_lists two_col">
-                                    <li><a href="/brochure_download_status/english" target="_blank">English</a></li>
-                                    <li><a href="/brochure_download_status/german" target="_blank">Deutsch</a></li>
-                                    <li><a href="/brochure_download_status/french" target="_blank">Français</a></li>
-                                    <li><a href="/brochure_download_status/italian" target="_blank">Italiano</a></li>
-                                    <li><a href="/brochure_download_status/spanish" target="_blank">Español</a></li>
-                                    <li><a href="/brochure_download_status/chinese" target="_blank">中文宣传手册</a></li>
-                            </ul>
-                       
-                            </div>
-                         </div>
-                   
-                         <div class="splide__slide">
-                          <div class="ap-area__article cs broch">
-                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-mergers-acquisitions-advisory.jpg?v2" alt="Company Brochure"></a>
-                            <h2><a href="">Company Brochure</a></h2>
-                           <ul class="brochure_lists two_col">
-                                    <li><a href="/brochure_download_status/english" target="_blank">English</a></li>
-                                    <li><a href="/brochure_download_status/german" target="_blank">Deutsch</a></li>
-                                    <li><a href="/brochure_download_status/french" target="_blank">Français</a></li>
-                                    <li><a href="/brochure_download_status/italian" target="_blank">Italiano</a></li>
-                                    <li><a href="/brochure_download_status/spanish" target="_blank">Español</a></li>
-                                    <li><a href="/brochure_download_status/chinese" target="_blank">中文宣传手册</a></li>
-                            </ul>
-                       
-                            </div>
-                         </div>
-                    
-                         <div class="splide__slide">
-                          <div class="ap-area__article cs broch">
-                            <a href="" target="_blank"><img src="https://www.dezshira.com/assets/img/services/2023/thumb-audit-financial-review.jpg?v2" alt="Company Brochure"></a>
-                            <h2><a href="">Company Brochure</a></h2>
-                           <ul class="brochure_lists two_col">
-                                    <li><a href="/brochure_download_status/english" target="_blank">English</a></li>
-                                    <li><a href="/brochure_download_status/german" target="_blank">Deutsch</a></li>
-                                    <li><a href="/brochure_download_status/french" target="_blank">Français</a></li>
-                                    <li><a href="/brochure_download_status/italian" target="_blank">Italiano</a></li>
-                                    <li><a href="/brochure_download_status/spanish" target="_blank">Español</a></li>
-                                    <li><a href="/brochure_download_status/chinese" target="_blank">中文宣传手册</a></li>
-                            </ul>
-                       
-                            </div>
-                         </div>
-                         
-                     </div>
-                 </div>
-                </div>
-                 
-              
-              </div>
-           
-        
-          </div>
-          <div class="pricing__country" id="pricing-asean">
-         
-              <div class="bp-block">
-                <div class="right-column">
-                    <div class="session-card-right">
-                        <div class="date-right">
-                            <span>Apr</span>
-                            <strong>19</strong>
-                        </div>
-                        <div class="session-info">
-                            <div class="session-type-right">Seminar</div>
-                            <h3 class="session-title-right"><a href="#" target="_blank">Decoding Singapore's Budget 2025: Implications for Foreign Businesses and Investors</a></h3>
-                            <span class="location-badge-right badge-sg">SINGAPORE</span>
-                        </div>
-                    </div>
-        
-                    <div class="session-card-right">
-                        <div class="date-right">
-                            <span>Apr</span>
-                            <strong>12</strong>
-                        </div>
-                        <div class="session-info">
-                            <div class="session-type-right">Webinar</div>
-                            <h3 class="session-title-right"><a href="#" target="_blank">Tax and Accounting In China's Digital Era: Practical Strategies for Business Advancement</a></h3>
-                            <span class="location-badge-right badge-cb">CHINA</span>
-                        </div>
-                    </div>
-                    <div class="session-card-right">
-                      <div class="date-right">
-                          <span>Apr</span>
-                          <strong>19</strong>
-                      </div>
-                      <div class="session-info">
-                          <div class="session-type-right">Seminar</div>
-                          <h3 class="session-title-right"><a href="#" target="_blank">Decoding Singapore's Budget 2025: Implications for Foreign Businesses and Investors</a></h3>
-                          <span class="location-badge-right badge-sg">SINGAPORE</span>
-                      </div>
-                  </div>
-      
-                 <a class="text-cta-link mt-2" href="#" target="_blank">See all news <span class="arrow-anim"></span></a>
-                 
-                    
-                    
-                </div>
-              </div>
-            
-          </div>
+          <div class="flex-grid-row flex-grid-row--one-third mb-3">
+            <div class="flex-col-3per"><h2 class="heading-level2">More About Our China Business</h2></div>
+            <div class="flex-col-7per"> <p>To support companies’ investments and operations in Asia, we provide core expert advisory and corporate services through Dezan Shira & Associates, as well as regional thought leadership and business knowledge and market intelligence, and specialized applications and services through our brands and subsidiaries. </p>
         </div>
+      </div>
+            <div class="card-grid card-grid-inner card-vertical card-vertical-three-column">
+        <div class="card-horizontal">
+            <div class="card-body">
+                <div class="card-image-container">
+                <img src="/img/location/more-about-us-1.webp" alt="Factory at Night" height="388" width="624" class="card-image">
+            </div>
+                <h3 class="card-title"><a href="#" target="_blank">Our Clients</a></h3>
+                <p class="card-text">Since 1992, Dezan Shira & Associates has evolved from a small China consulting practice to leading professional services firm with over 30 years of Asia experience.</p>
+                
+                <div class="d-flex-column">
+                 <a class="text-cta-link" href="#" target="_blank">Learn our history <span class="arrow-anim"></span></a>
+                </div>
+            </div>
+            
         </div>
-        
-      </section>
 
-  
+        <div class="card-horizontal">
+            
+            <div class="card-body">
+                <div class="card-image-container">
+                <img src="/img/location/more-about-us-2.webp" alt="Perspectives and Trends" height="388" width="624" class="card-image doing-business">
+            </div>
+                <h3 class="card-title"><a href="#" target="_blank">Careers</a></h3>
+                <p class="card-text">Since 1992, Dezan Shira & Associates has evolved from a small China consulting practice to leading professional services firm with over 30 years of Asia experience.  </p>
+               
+                <div class="d-flex-column">
+                <a class="text-cta-link" href="#" target="_blank">Meet our people<span class="arrow-anim"></span></a>
+            </div>
+                
+            </div>
+        </div>
+                <div class="card-horizontal">
+            
+            <div class="card-body">
+                <div class="card-image-container">
+                <img src="/img/location/more-about-us-3.webp" alt="Perspectives and Trends" height="388" width="624" class="card-image doing-business">
+            </div>
+                <h3 class="card-title"><a href="#" target="_blank">Company News</a></h3>
+                <p class="card-text">Since 1992, Dezan Shira & Associates has evolved from a small China consulting practice to leading professional services firm with over 30 years of Asia experience.  </p>
+                <div class="d-flex-column">
+                <a class="text-cta-link" href="#" target="_blank">See open positions<span class="arrow-anim"></span></a>
+                
+            </div>
+                
+            </div>
+        </div>
+    
+    </div>
+    </div>
+      </section>
   <section class="hero-section">
     <img
       src="/img/hero-expert.webp"

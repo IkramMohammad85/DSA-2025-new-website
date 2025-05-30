@@ -10,6 +10,40 @@
     <link rel="preload" as="image" href="/img/top-home-slide-img/1n.webp">
     <title>Dezan Shira &amp; Associates - Homepage</title>
     <style>
+        .splide-progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  bottom: 8%;
+    top: inherit;
+    right: 0;
+    left: 240px;
+    max-width: 1220px;
+    margin: 0 auto;
+    position: absolute;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.progress-bar {
+  width: 60px;
+  height: 4px;
+  background-color: #123456;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #ccc;
+  width: 0%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
    .expand-toggle .icon{ font-weight: 300; font-size: 15px; line-height: 5px;}     
   .counter-box {
   position: relative;
@@ -69,44 +103,8 @@
         #main-slider .splide__list{height: 711px;}
         #main-slider .section-wrapper-min{height: 711px;}
         .slider-content{max-width: 740px; top: 8rem;}
-        .card-horizontal.home-top-service-block{ align-items: start;gap: 3rem;}
-        .card-horizontal.home-top-service-block .card-text{font-weight: 300;}
-        .card-horizontal.home-top-service-block .btn{margin-top: 1.5rem;}
-        .card-body .service-left {
-            display: grid;
-            margin-top: 0.6rem;
-            gap: 1.2rem;
-        }
 
-        .card-body .service-left.service-left-2column{
-            column-count: 2;
-            column-gap: 3.3rem;
-            list-style: none; 
-            display: inherit;
-        }
-        .card-body .service-left.service-left-2column li{margin-bottom: 1.3rem;}
-
-        .card-body .service-left .text-cta-link {        color: #217FD4;        }
-
-        .service-left li:hover a {
-            transition: transform .4s ease;
-        }
-        .service-left li a {
-            font-weight: 500;
-        }
-
-        .service-left li:hover a:after {
-            content: "";
-            background: url(../img/Arrow-text-link.svg) no-repeat 0px 6px;
-            background-size: contain;
-            width: 15px;
-            height: 16px;
-            display: inline-block;
-            transform: translateX(0);
-            transition: transform .3s ease;
-            margin-left: 6px;
-            animation: arrowfx 0.6s ease-in-out forwards;
-        }
+       
 
         .counter-inner .counter-box {
             border: none;
@@ -391,6 +389,7 @@
                     </li>
                 </ul>
             </div>
+ 
         </div>
     </section>
     <div class="section-wrapper-min section-top-padding section-bottom-padding">

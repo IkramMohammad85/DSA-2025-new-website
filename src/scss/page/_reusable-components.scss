@@ -1,29 +1,85 @@
 @use "../base/variables" as v;
-
+//need to finalize after approval
+.card-horizontal.home-top-service-block{ align-items: start;gap: 3rem;}
+        .card-horizontal.home-top-service-block .card-text{font-weight: 300;}
+        .card-horizontal.home-top-service-block .btn{margin-top: 1.5rem;}
+        .card-horizontal.home-top-service-block .card-body .service-left {
+            display: grid;
+            margin-top: 0.6rem;
+            gap: 1.2rem;
+        }
+        .card-horizontal.home-top-service-block .card-body .service-left.service-left-2column{
+            column-count: 2;
+            column-gap: 3.3rem;
+            list-style: none; 
+            display: inherit;
+        }
+        .card-horizontal.home-top-service-block .card-body .service-left.service-left-2column li{margin-bottom: 1.3rem;}
+        .card-horizontal.home-top-service-block .card-body .service-left .text-cta-link { color: #217FD4;}
+        .card-horizontal.home-top-service-block .service-left li:hover a {transition: transform .4s ease;}
+        .card-horizontal.home-top-service-block .service-left li a {font-weight: 500;}
+        .card-horizontal.home-top-service-block .service-left li:hover a:after {
+            content: "";
+            background: url(../img/Arrow-text-link.svg) no-repeat 0px 6px;
+            background-size: contain;
+            width: 15px;
+            height: 16px;
+            display: inline-block;
+            transform: translateX(0);
+            transition: transform .3s ease;
+            margin-left: 6px;
+            animation: arrowfx 0.6s ease-in-out forwards;
+        }
+        //end
 //speekar list
-.triangle {
+// .triangle {
+//   width: 0;
+//   height: 0;
+//   border-left: 25px solid transparent;
+//     border-right: 25px solid transparent;
+//     border-top: 25px solid #ffffff;
+//     position: absolute;
+//     bottom: -2px;
+//     right: -20px;
+//     transform: rotate(314deg);
+
+// &.triangle-red {
+//   border-top: 25px solid #EAA68F;
+// }
+// &.triangle-yellow {
+//   border-top: 25px solid #FFE8AF;
+// }
+// &.triangle-green {
+//   border-top: 25px solid #ADCAA7;
+// }
+// &.triangle-purple {
+//   border-top: 25px solid #C1C5DC;
+// }
+// }
+
+.our-team-experts .triangle {
   width: 0;
   height: 0;
   border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-top: 25px solid #ffffff;
     position: absolute;
     bottom: -2px;
     right: -20px;
     transform: rotate(314deg);
-
-&.triangle-red {
-  border-top: 25px solid #EAA68F;
 }
-&.triangle-yellow {
-  border-top: 25px solid #FFE8AF;
+.our-team-experts .splide__slide:nth-child(4n + 1) .triangle {
+  border-color: #EAA68F;
 }
-&.triangle-green {
-  border-top: 25px solid #ADCAA7;
+ 
+.our-team-experts .splide__slide:nth-child(4n + 2) .triangle{
+  border-color: #FFE8AF;
 }
-&.triangle-purple {
-  border-top: 25px solid #C1C5DC;
+ 
+.our-team-experts .splide__slide:nth-child(4n + 3) .triangle{
+  border-color: #ADCAA7;
 }
+.our-team-experts .splide__slide:nth-child(4n + 4) .triangle{
+  border-color: #C1C5DC;
 }
 
 /* Base Card Styles */

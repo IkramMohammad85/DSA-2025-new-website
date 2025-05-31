@@ -193,51 +193,115 @@ document.addEventListener('DOMContentLoaded', function () {
   //   new Splide(el, options).mount();
   // });
   
+  // document.querySelectorAll('.splide').forEach(el => {
+  //   const type = el.dataset.type || 'loop';
+  
+  //   const options = {
+  //     perPage: parseInt(el.dataset.perPage) || 1,
+  //     type: type,
+  //     autoplay: el.dataset.autoplay === 'true',
+  //     pagination: el.dataset.pagination !== 'false',
+  //     arrows: el.dataset.arrows !== 'false',
+  //     pauseOnHover: false,
+  //     interval: parseInt(el.dataset.interval) || 5000, // Default to 3000ms (3 seconds)
+  //   };
+  
+  //   // Only include rewind if not using loop
+  //   if (type !== 'loop') {
+  //     options.rewind = el.dataset.rewind === 'true';
+  //   }
+  
+  //   if (el.dataset.breakpoints) {
+  //     try {
+  //       options.breakpoints = JSON.parse(el.dataset.breakpoints);
+  //     } catch (e) {
+  //       console.warn('Invalid breakpoints JSON for', el, e);
+  //     }
+  //   }
+  
+  //   const splide = new Splide(el, options);
+  //   splide.mount();
+  
+  //   // Pause/play autoplay on specific inner elements only
+  //   el.querySelectorAll('.slider-content, .trending-insights').forEach(innerEl => {
+  //     innerEl.addEventListener('mouseenter', () => {
+  //       if (splide.Components.Autoplay) {
+  //         splide.Components.Autoplay.pause();
+  //       }
+  //     });
+  //     innerEl.addEventListener('mouseleave', () => {
+  //       if (splide.Components.Autoplay) {
+  //         splide.Components.Autoplay.play();
+  //       }
+  //     });
+  //   });
+  // });
+  
   document.querySelectorAll('.splide').forEach(el => {
-    const type = el.dataset.type || 'loop';
-  
-    const options = {
-      perPage: parseInt(el.dataset.perPage) || 1,
-      type: type,
-      autoplay: el.dataset.autoplay === 'true',
-      pagination: el.dataset.pagination !== 'false',
-      arrows: el.dataset.arrows !== 'false',
-      pauseOnHover: false,
-      interval: parseInt(el.dataset.interval) || 5000, // Default to 3000ms (3 seconds)
-    };
-  
-    // Only include rewind if not using loop
-    if (type !== 'loop') {
-      options.rewind = el.dataset.rewind === 'true';
+  const type = el.dataset.type || 'loop';
+
+  const options = {
+    perPage: parseInt(el.dataset.perPage) || 1,
+    type: type,
+    autoplay: el.dataset.autoplay === 'true',
+    pagination: el.dataset.pagination !== 'false',
+    arrows: el.dataset.arrows !== 'false',
+    pauseOnHover: false,
+    interval: parseInt(el.dataset.interval) || 5000,
+  };
+
+  if (type !== 'loop') {
+    options.rewind = el.dataset.rewind === 'true';
+  }
+
+  if (el.dataset.breakpoints) {
+    try {
+      options.breakpoints = JSON.parse(el.dataset.breakpoints);
+    } catch (e) {
+      console.warn('Invalid breakpoints JSON for', el, e);
     }
-  
-    if (el.dataset.breakpoints) {
-      try {
-        options.breakpoints = JSON.parse(el.dataset.breakpoints);
-      } catch (e) {
-        console.warn('Invalid breakpoints JSON for', el, e);
+  }
+
+  const splide = new Splide(el, options);
+  splide.mount();
+
+  // Autoplay pause on hover inside slider-content and trending-insights
+  el.querySelectorAll('.slider-content, .trending-insights').forEach(innerEl => {
+    innerEl.addEventListener('mouseenter', () => {
+      if (splide.Components.Autoplay) {
+        splide.Components.Autoplay.pause();
       }
-    }
-  
-    const splide = new Splide(el, options);
-    splide.mount();
-  
-    // Pause/play autoplay on specific inner elements only
-    el.querySelectorAll('.slider-content, .trending-insights').forEach(innerEl => {
-      innerEl.addEventListener('mouseenter', () => {
-        if (splide.Components.Autoplay) {
-          splide.Components.Autoplay.pause();
-        }
-      });
-      innerEl.addEventListener('mouseleave', () => {
-        if (splide.Components.Autoplay) {
-          splide.Components.Autoplay.play();
-        }
-      });
+    });
+    innerEl.addEventListener('mouseleave', () => {
+      if (splide.Components.Autoplay) {
+        splide.Components.Autoplay.play();
+      }
     });
   });
-  
-  
+
+  // Custom Progress bar and counter
+  const wrapper = el.parentElement.querySelector('.splide-progress-wrapper');
+  const currentIndex = wrapper?.querySelector('.current-index');
+  const totalCount = wrapper?.querySelector('.total-count');
+  const progressFill = wrapper?.querySelector('.progress-fill');
+
+  if (wrapper && currentIndex && totalCount && progressFill) {
+    const updateProgress = () => {
+      const index = splide.index + 1;
+      const total = splide.length;
+
+      currentIndex.textContent = index.toString().padStart(2, '0');
+      totalCount.textContent = total.toString().padStart(2, '0');
+
+      const percent = ((index - 1) / (total - 1)) * 100;
+      progressFill.style.width = `${percent}%`;
+    };
+
+    splide.on('mounted move', updateProgress);
+    updateProgress(); 
+  }
+});
+
   /** Logo Slides (Our Brands Page) */
   let slideIndex = 0;
   function carousel() {
@@ -656,7 +720,30 @@ const buttons = document.querySelectorAll("[data-show-on-click]");
   });
 
   
+//home page main slide progess bar with count slide number
+//   document.addEventListener('DOMContentLoaded', function () {
+//   const splide = new Splide('#main-slider', {
+//     type: 'slide', // or 'loop'
+//     perPage: 1,
+//     pagination: false,
+//     arrows: true,
+//     autoplay:true,
+//     rewind:true,
+//   });
 
+//   const currentIndex = document.querySelector('.current-index');
+//   const totalCount = document.querySelector('.total-count');
+//   const progressFill = document.querySelector('.progress-fill');
 
+//   splide.on('mounted move', function () {
+//     const index = splide.index + 1;
+//     const total = splide.length;
 
+//     currentIndex.textContent = index.toString().padStart(2, '0');
+//     totalCount.textContent = total.toString().padStart(2, '0');
+//     const progress = ((index - 1) / (total - 1)) * 100;
+//     progressFill.style.width = `${progress}%`;
+//   });
 
+//   splide.mount();
+// });

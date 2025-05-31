@@ -1,5 +1,39 @@
 @use "../base/variables" as v;
 
+//add home page progress bar counter
+  .splide-progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  bottom: 8%;
+    top: inherit;
+    right: 0;
+    left: 240px;
+    max-width: 1220px;
+    margin: 0 auto;
+    position: absolute;
+    font-size: 12px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.progress-bar {
+  width: 60px;
+  height: 4px;
+  background-color: #123456;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #ccc;
+  width: 0%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
 //expand trending insights  
 .expand-content {
     overflow: hidden;

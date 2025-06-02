@@ -10,8 +10,12 @@
     <link rel="preload" as="image" href="/img/top-home-slide-img/1n.webp">
     <title>Dezan Shira &amp; Associates - Homepage</title>
     <style>
+.ti-heading{font-size: 15px; line-height: 23px;}
+.trending-insights .ti-list{font-size: 15px; line-height: 23px;}
 
-
+.card-btn{background-color: transparent; font-weight: 600; line-height: normal; padding: 12px 18px;}
+ .card-btn:hover{background-color: transparent;}
+ .toggleBtn-dropdown .card-btn{font-weight: 400;}
    .expand-toggle .icon{ font-weight: 300; font-size: 15px; line-height: 5px;}     
   .counter-box {
   position: relative;
@@ -62,7 +66,7 @@
         .trending-insights{max-width: 720px; right:-80px;}
         .trending-insights .ti-list li a{  
             display: -webkit-box;
-    -webkit-line-clamp: 2; 
+    -webkit-line-clamp: 3; 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;}
@@ -173,7 +177,9 @@
         .resource-splide .card-resrcs.related-card .resrcs-title{font-size: 1rem;}
         .resource-splide .card-resrcs.related-card .resrcs-body{padding-left: 1.5rem; padding-right: 1.5rem;}
 
-        .resource-splide .card-resrcs.related-card .resrcs-date.overlay{min-width: 128px; background: rgba(12, 39, 64, .56);}
+        .resource-splide .card-resrcs.related-card .resrcs-date.overlay{min-width: 128px; background: rgba(12, 39, 64, .56); font-size: 1rem; line-height: normal;
+        }
+        .resource-splide .card-resrcs.related-card .resrcs-date.overlay span{font-size: 2rem;}
         .resrcs-image{height: 170px;}
 
 
@@ -418,7 +424,7 @@
                     <a class="text-cta-link hide-button" href="https://www.dezshira.com/personnel">Meet our team</a>
                 </div>
                 <div class="counter-box">
-                    <span class="counter" data-target="35" data-speed="2000">30</span>
+                    <span class="counter" data-target="33" data-speed="2000">33</span>
                     <h3>Years Experience</h3>
 <a class="text-cta-link hide-button" href="https://www.dezshira.com/services/">Explore our services</a>
                 </div>
@@ -446,12 +452,28 @@
                                             width="624" class="card-image doing-business">
                                     </div>
                                     <div class="card-body">
-                                        <h3 class="card-title"><a href="#" target="_blank">ESG Reporting in Singapore: A
-                                                Strategic Guide for Businesses</a></h3>
-                                        <p class="card-text">ESG metrics have become key performance indicators for
-                                            stakeholders to effectively evaluate a company’s commitment to environmental
-                                            impact, social responsibility, and governance practices.</p>
-                                        <a href="#" class="btn btn-outline-primary">Explore More</a>
+                                        <h3 class="card-title"><a href="#" target="_blank">Explore Doing Business in Asia</a></h3>
+                                        <p class="card-text">Our guides offers key economic, geographic, and regulatory insights to help investors, managers, and expats navigate business in Asia.</p>
+                                        <!-- <a href="#" class="btn btn-outline-primary">Explore More</a> -->
+                                         <div class="card-buttons">
+                  <a href="#" class="card-btn">China</a>
+                  <a href="#" class="card-btn">Hong Kong</a>
+                    <a href="#" class="card-btn active">India</a>
+                    <a href="#" class="card-btn">Vietnam</a>
+                    <a href="#" class="card-btn">Singapore</a>
+                    <a href="#" class="card-btn">Indonesia</a>
+                    <a href="#" class="card-btn">UAE</a>
+                    <div class="toggleBtn-dropdown">
+                        <button class="toggleBtn-dropdown-button card-btn">Others</button>
+                        <div class="toggleBtn-dropdown-menu">
+                          <a href="#" target="_blank">China</a>
+                          <a href="#" target="_blank">India</a>
+                          <a href="#" target="_blank">Vietnam</a>
+                          <a href="#" target="_blank">Indonesia</a>
+                          <a href="#" target="_blank">Singapore</a>
+                        </div>
+                      </div>
+                </div>
 
                                     </div>
                                 </div>

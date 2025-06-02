@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function () {
       currentIndex.textContent = index.toString().padStart(2, '0');
       totalCount.textContent = total.toString().padStart(2, '0');
 
-      const percent = ((index - 1) / (total - 1)) * 100;
+      const percent = ((index - 0) / (total - 0)) * 100;
       progressFill.style.width = `${percent}%`;
     };
 

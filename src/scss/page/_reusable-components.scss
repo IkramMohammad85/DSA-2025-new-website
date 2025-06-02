@@ -32,56 +32,33 @@
         }
         //end
 //speekar list
-// .triangle {
-//   width: 0;
-//   height: 0;
-//   border-left: 25px solid transparent;
-//     border-right: 25px solid transparent;
-//     border-top: 25px solid #ffffff;
-//     position: absolute;
-//     bottom: -2px;
-//     right: -20px;
-//     transform: rotate(314deg);
-
-// &.triangle-red {
-//   border-top: 25px solid #EAA68F;
-// }
-// &.triangle-yellow {
-//   border-top: 25px solid #FFE8AF;
-// }
-// &.triangle-green {
-//   border-top: 25px solid #ADCAA7;
-// }
-// &.triangle-purple {
-//   border-top: 25px solid #C1C5DC;
-// }
-// }
-
-.our-team-experts .triangle {
+.our-team-experts {
+  .triangle {
   width: 0;
   height: 0;
   border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    position: absolute;
-    bottom: -2px;
-    right: -20px;
-    transform: rotate(314deg);
+  border-right: 25px solid transparent;
+  border-top: 25px solid #dddddd;
+  position: absolute;
+  bottom: -2px;
+  right: -20px;
+  transform: rotate(314deg);
 }
-.our-team-experts .splide__slide:nth-child(4n + 1) .triangle {
+.splide__slide{
+  &:nth-child(4n + 1) .triangle {
   border-color: #EAA68F;
 }
- 
-.our-team-experts .splide__slide:nth-child(4n + 2) .triangle{
+&:nth-child(4n + 2) .triangle{
   border-color: #FFE8AF;
 }
- 
-.our-team-experts .splide__slide:nth-child(4n + 3) .triangle{
+&:nth-child(4n + 3) .triangle{
   border-color: #ADCAA7;
 }
-.our-team-experts .splide__slide:nth-child(4n + 4) .triangle{
+&:nth-child(4n + 4) .triangle{
   border-color: #C1C5DC;
 }
-
+}
+}
 /* Base Card Styles */
 .card-resrcs {
     display: flex;

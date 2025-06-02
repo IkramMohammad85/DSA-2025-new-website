@@ -6,7 +6,8 @@
   align-items: center;
   gap: 0.5rem;
   color: white;
-  bottom: 8%;
+  //bottom: 8%;
+    bottom: 9.5%;
     top: inherit;
     right: 0;
     left: 240px;
@@ -34,6 +35,7 @@
   border-radius: 4px;
   transition: width 0.3s ease;
 }
+.current-index, .total-count{display: none;}
 //expand trending insights  
 .expand-content {
     overflow: hidden;

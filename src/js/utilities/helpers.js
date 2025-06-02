@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    const cta = document.querySelector('.text-cta-link');
-    const countryName = link.textContent.trim();
-    if (cta) cta.innerHTML = `Connect with a ${countryName} Expert <span class="arrow-anim"></span>`;
+    // const cta = document.querySelector('.text-cta-link');
+    // const countryName = link.textContent.trim();
+    // if (cta) cta.innerHTML = `Connect with a ${countryName} Expert <span class="arrow-anim"></span>`;
   }
 
 

@@ -618,30 +618,6 @@ function showRegionalOffice() {
       console.warn('One or more required elements were not found in the DOM.');
       console.log({ exploreLink, exploreContent, closeBtn, arrowRotate });
     }
-
-    //video popup controll
-const modal = document.getElementById("center-popup");
-const popupCloseBtn = modal ? modal.querySelector(".popup-close") : null;
-const video = document.getElementById("eventVideo");
-
-
-document.querySelectorAll('.event-video-item').forEach(trigger => {
-  trigger.addEventListener('click', e => {
-    e.preventDefault();
-    video.src = trigger.getAttribute("src");
-    video.poster = trigger.getAttribute("data-cover");
-    modal.classList.add('active');
-  });
-});
-
-
-modal.addEventListener("click", function(e) {
-  if (e.target === modal || e.target.classList.contains("popup-close")) {
-    modal.classList.remove("active");
-    video.pause();
-    video.currentTime = 0; 
-  }
-});
 //get-in-touch
 const buttons = document.querySelectorAll("[data-show-on-click]");
 
@@ -670,7 +646,40 @@ const buttons = document.querySelectorAll("[data-show-on-click]");
       }
     });
   });
-  
+    //video popup controll
+const modal = document.getElementById("center-popup");
+const popupCloseBtn = modal ? modal.querySelector(".popup-close") : null;
+const video = document.getElementById("eventVideo");
+
+
+document.querySelectorAll('.event-video-item').forEach(trigger => {
+  trigger.addEventListener('click', e => {
+    e.preventDefault();
+    video.src = trigger.getAttribute("src");
+    video.poster = trigger.getAttribute("data-cover");
+    modal.classList.add('active');
+  });
+});
+
+
+// modal.addEventListener("click", function(e) {
+//   if (e.target === modal || e.target.classList.contains("popup-close")) {
+//     modal.classList.remove("active");
+//     video.pause();
+//     video.currentTime = 0; 
+//   }
+// });
+
+
+if (modal) {
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal || e.target.classList.contains("popup-close")) {
+      modal.classList.remove("active");
+      video.pause();
+      video.currentTime = 0;
+    }
+  });
+}
 //location page
 
   // const imageCards = document.querySelectorAll("[data-show-on-click]");

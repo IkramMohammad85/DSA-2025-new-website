@@ -154,6 +154,10 @@ a{color: #344C71; font-weight: 400;}
 span{font-size: 2rem;}
 }
 .resrcs-image{height: 170px;}
+&.related-card-small{
+  max-width: 370px;
+.resrcs-body{min-height: 158px;}
+}
       }
   }
       /* Speaking Engagements overwrite */

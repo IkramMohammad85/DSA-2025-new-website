@@ -30,7 +30,7 @@
     position: relative;
     z-index: 1;
     max-width: 750px;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 0rem 2rem 0rem;
     color: v.$white;
     display: flex;
     flex-direction: column;
@@ -205,12 +205,23 @@
         right: 16px;
       }
     }
+    &__text{
+  .feature-events{
+    ul{
+          grid-template-columns: repeat(1, 1fr);
+          gap: 2rem;
+    li{border-right: none;
+    }
+    }
   }
+    }
+  }
+
 }
 @media (min-width: 768px) {
   .hero-section {
     .hero-content {
-      padding: 2rem 1rem 2rem 7.5rem;
+      padding: 2rem 1rem 2rem 0rem;
     }
   }
 }

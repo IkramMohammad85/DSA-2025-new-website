@@ -191,6 +191,7 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  flex-direction: column;
 }
 
 .form-row select {
@@ -303,5 +304,48 @@ input[type="submit"] {
             input[type=text],input[type=email], select{ width: 100%; margin-bottom: 2rem;}
         }
     }
+}
+}
+@media (max-width: 767px) {
+.filter-form{
+  .form-row {flex-wrap:wrap;}
+}
+}
+@media (min-width: 768px) {
+.filter-form{
+    .form-row{flex-direction: row;}
+  &.event-filter-form {
+    .form-row {
+      select,input {
+    min-width: 110px;}
+    .select-wrapper{max-width: 150px;}
+    }
+
+  }
+  &.news-filter-form .form-row {
+  .select-wrapper{max-width: 280px;}
+  select, input{
+    min-width: 168px;
+  }
+}
+}
+}
+
+@media (min-width: 1200px) {
+.filter-form{ 
+
+&.event-filter-form .form-row {
+  .select-wrapper{max-width: 265px;}
+  select, input{
+    min-width: 215px;
+  }
+  
+}
+&.news-filter-form .form-row {
+  .select-wrapper{max-width: 295px;}
+  select, input{
+    min-width: 246px;
+  }
+}
 }
 }

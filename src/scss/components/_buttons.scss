@@ -85,19 +85,21 @@
 }
 .card-btn {
   @include btn-outline-style; 
-  background-color: #F0F6FC;
   color: #8A8A8A;
   border: 1px solid #8A8A8A;
   border-radius: 3px;
-  padding: 9px 18px;
+  padding: 12px 18px;
   font-size: 0.9em;
   min-width: 112px;
   text-decoration: none;
   text-align: center;
+  background-color: transparent; 
+  font-weight: 600; 
+  line-height: normal; 
   &:hover {
     border-color: #217FD4;
     color: #217FD4;
-    background-color: #F0F6FC;
+    background-color: transparent;
   }
   &-blue{
     color: #217FD4;

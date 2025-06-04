@@ -117,12 +117,18 @@
     a{color: #222831;}
   }
   /* Meta Info */
-  .resrcs-meta {
-    font-size: 0.85rem;
-    color: #798394;
-    font-weight: 500;
-  }
-
+.resrcs-meta {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+gap: 1rem;
+margin-top: 1rem;
+margin-left: 1.5rem;
+font-size: 14px;
+color: #9A9A9A;
+font-weight: 500;
+line-height: 24px;
+}
   /* news overwrite */
   .card-resrcs{
     &.news-card{  margin-bottom: 2rem;
@@ -130,12 +136,24 @@
             width: 300px; height: 180px;
           }
           .resrcs-body{ padding-left: 3rem;}
+          .resrcs-meta{padding: 0; margin: 0;}
       }
   }
     /* related event overwrite */
   .card-resrcs{
     &.related-card{
-        width: 480px;flex-direction: column;
+        //width: 480px;
+        flex-direction: column;
+        max-width: 516px; border-radius: 4px; margin-bottom: 2rem;
+        .resrcs-meta{ margin: 0; margin-bottom: 1rem;font-weight: 400;
+a{color: #344C71; font-weight: 400;}
+}
+.resrcs-title{font-size: 1rem;}
+.resrcs-body{padding-left: 1.5rem; padding-right: 1.5rem;}
+.resrcs-date.overlay{min-width: 128px; background: rgba(12, 39, 64, .56); font-size: 1rem; line-height: normal;
+span{font-size: 2rem;}
+}
+.resrcs-image{height: 170px;}
       }
   }
       /* Speaking Engagements overwrite */
@@ -148,6 +166,7 @@
       }
   }
 /* webinar overwrite */
+  .expt-location{display: flex; gap: 5px;}
   .card-resrcs{
     &.webinar {
         margin-bottom: 2rem;
@@ -156,10 +175,10 @@
             width: 35.8%; height: 180px;
           }
           .resrcs-body{padding: 1rem 3.5rem; width: 100%; min-height: 180px;
-            .resrcs-meta{display: flex; flex-direction: row; justify-content: flex-start; gap:1rem; margin-bottom: 1rem;
+            .resrcs-meta{padding: 0; margin: 0 0 0.5rem 0;
             
             }
-            .expt-location{display: flex; gap: 5px; 
+            .expt-location{
             a{color: #217FD4;}
             }
             .resrcs-title{margin-bottom: 1.5rem;}
@@ -203,6 +222,18 @@
   
 @media (max-width: 767px) {
   .card-resrcs.related-card{width: auto;}
+
+  .pagination {
+    margin: 4rem 0 3rem 0;
+    width: 100%;
+    a {
+        padding: 4px 8px;
+        margin: 0 2px;
+        font-size: 14px;
+   
+      
+      }
+  }
 }
 
 

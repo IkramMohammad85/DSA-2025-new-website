@@ -10,15 +10,16 @@
     transform: none;
   }
 }
+.splide__arrow:focus-visible{outline: none !important;}
 .splide__arrow{background: transparent !important;}
 .splide__arrow svg{fill: #525252 !important;}
 .slider-content {
   position: absolute;
-  top: 4rem;
+  top: 8rem;
   left: 1.5rem;
   color: v.$white;
   z-index: 10;
-  max-width: 840px;
+  max-width: 740px;
   animation: fadeInUp 1s ease-in-out;
 
   .slide-title {
@@ -44,48 +45,7 @@
   //filter: brightness(0.5);
 }
 
-.trending-insights {
-  position: absolute;
-  bottom: 0%;
-  right: 1.5rem;
-  color: v.$black;
-  z-index: 10;
-  animation: fadeInUp 1s ease-in-out;
-  display: flex;
-  min-height: 100px;
-  background-color: v.$white;
-  max-width: 800px;
 
-  .ti-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    list-style: none;
-    margin: 1.5rem 0 0 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 24px;
-
-    li {
-      padding: 0 1.5rem 0.8rem 1.5rem;
-      border-right: solid 1px v.$strong-blue;
-      margin-bottom: 1rem;
-
-      &:last-child {
-        border: none;
-      }
-
-      a {
-        color: v.$black;
-        text-decoration: none;
-      }
-    }
-  }
-
-  .ti-heading {
-    padding-left: 1.5rem; padding-right: 1.5rem; text-transform: uppercase; margin-top: 1.5rem;
-  }
-  &.position-right{right: 0;}
-}
 .splide__pagination{
     &__page {
         &.is-active {
@@ -121,6 +81,7 @@
       &:last-child{margin-right: 0;}
       }
 }
+
 
 
 .regular-pagination {
@@ -175,7 +136,7 @@
         }
         .splide__arrows{bottom: 0;position: absolute;}
      
-  
+
 }
 &.gateway-dba{
   .splide__pagination {
@@ -195,13 +156,14 @@
 
 }
 #main-slider{
-  height: 612px;
+  height: 711px;
   .splide__pagination {
     justify-content: flex-start;
     bottom: 15%;
     right: 0;
     left: 0%;
-    max-width: 1440px;
+    //max-width: 1440px;
+    max-width: 1220px;
     margin: 0 auto;
 
     &__page {
@@ -228,7 +190,7 @@
 
   .section-wrapper, .section-wrapper-min {
     position: absolute;
-    height: 612px;
+    height: 711px;
     right: 0;
     left: 0%;
     margin: 0 auto;
@@ -243,13 +205,11 @@
 
 
   .splide__list {
-    height: 612px;
+    height: 711px;
   }
   .splide__arrow{ opacity: 1;
   background: rgb(0, 0, 0, 32%) !important;
-  svg{fill: #fff !important;height: 0.7rem !important;
-    width: .7rem !important;} 
-
+  svg{fill: #fff !important; height: 0.5rem !important; stroke: #fff;    width: 0.7rem !important; opacity: 1;stroke-width: 4px;} 
   }
     .splide__arrows{
     justify-content: flex-start;
@@ -327,6 +287,10 @@
           }
           
     }
+  }
+  @media (max-width: 900px) {
+    #main-slider .splide__arrows{bottom: 24%;}
+  
   }
   @media (max-width: 768px) {
     #main-slider {

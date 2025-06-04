@@ -193,8 +193,9 @@
       border-radius: 20px;
       color: #333D4C;
       font-weight: v.$font-weight-Medium;
+      font-size: 14px;
       &.active, &:hover{
-        border: solid 1px #111827; color: #111827; font-weight: v.$font-weight-Medium;
+        border: solid 1px #111827; color: #111827; font-weight: v.$font-weight-Medium; background-color: #F5F7FA;
       }
     }
     }

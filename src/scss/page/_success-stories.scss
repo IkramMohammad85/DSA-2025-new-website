@@ -373,6 +373,12 @@ ul {
   .ap-area__article{
     margin: 0;
   }
+    ul {
+  &.brochure_lists { margin: 0; padding: 0 1.5rem;}
+}
+.ap-area__article{width: auto;}
+.resource-splide .splide__list{gap: 0;}
+.regular-pagination.resource-splide .splide__arrows{ bottom: -30px;}
 }
 
 

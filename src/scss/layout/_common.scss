@@ -217,16 +217,26 @@ input[type="radio"]:checked + .radio-btn ~ label {
 
 }
 &.our-testimonial{
-      figure{margin-bottom: 1rem;}
+      figure{margin-bottom: 1rem;opacity: 1;transition: opacity 0.3s ease;}
       img{margin: 0; max-height: 56px;}
-      cite{ color: #0C2740;
+      cite{ color: #0C2740; opacity: 1 ;transition: opacity 0.3s ease;
         font-style: normal;
         .quote-name{ font-weight:v.$font-weight-SemiBold; display: block;}
         .quote-title{font-weight: v.$font-weight-light; font-size: 14px;}
       }
-      .pa-text{min-height: auto; font-size: 14px; color: #535353;}
+    .pa-text{min-height: auto; font-size: 14px; color: #535353; position: relative;
+    .full-text{opacity: 0;  transition: all .5s ease; display: none;}
+  }
       .partners-alliances{
-        min-height: 318px; margin-bottom: 1rem;
+        min-height: 332px; margin-bottom: 1rem;cursor: pointer;
+        &:hover{ 
+          figure, cite{opacity: 0; display: none;}
+          .pa-text{margin-bottom: 0;
+        .full-text { opacity: 1; display: inline; transition: all .5s ease;}
+        .text-more-dots{display: none;}
+          }
+        }
+
       } 
     }
 }

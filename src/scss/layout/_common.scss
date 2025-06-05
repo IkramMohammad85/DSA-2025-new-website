@@ -204,6 +204,7 @@ input[type="radio"]:checked + .radio-btn ~ label {
   }
 }
 }
+.partners-alliances-list{
 .partners-alliances{
   background-color: #fff;
     box-shadow: rgba(0, 0, 0, .09) 0 3px 12px;
@@ -213,6 +214,21 @@ input[type="radio"]:checked + .radio-btn ~ label {
       min-height: 272px; font-weight: v.$font-weight-light; margin-bottom: 1.8rem;
     }
     img{margin: 0 auto;}
+
+}
+&.our-testimonial{
+      figure{margin-bottom: 1rem;}
+      img{margin: 0; max-height: 56px;}
+      cite{ color: #0C2740;
+        font-style: normal;
+        .quote-name{ font-weight:v.$font-weight-SemiBold; display: block;}
+        .quote-title{font-weight: v.$font-weight-light; font-size: 14px;}
+      }
+      .pa-text{min-height: auto; font-size: 14px; color: #535353;}
+      .partners-alliances{
+        min-height: 318px; margin-bottom: 1rem;
+      } 
+    }
 }
 .location-card{
   padding: 2rem;
@@ -479,7 +495,7 @@ html { scroll-behavior: smooth; }
   .splide__pagination__page.is-active::before{width: 4px; height: 4px;}
   .splide__pagination__page.is-active{transform: scale(1);}
 }
-.gateway-dba{
+.gateway-dba, .our-testimonial{
 .splide__pagination{bottom: -50px;}
 .splide__arrow--next{right: 0px;}
 .splide__arrow--prev{left: 0px;}
@@ -491,6 +507,10 @@ svg { fill: #000 !important; height: 0.5rem;     stroke: #000000; stroke-width: 
   .splide__arrow--next{right: -50px;}
 .splide__arrow--prev{left: -50px;}
 }
+}
+.our-testimonial{
+.splide__arrow--prev   {left: -50px;  }
+.splide__arrow--next {right: -50px;}
 }
 .clients-carousel{
   .splide{max-width: 1245px; margin: 0 auto;}

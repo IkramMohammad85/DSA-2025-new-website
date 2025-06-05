@@ -1175,9 +1175,10 @@ transition: opacity 0.3s ease, visibility 0.3s ease;
     }
   }
 @media (max-width: 1200px) {
-    .resource-splide {
+    .resource-splide, .our-testimonial {
     .splide__arrow{top: inherit; bottom: -50px;}
     .splide__arrow--next{right: inherit; left: 50px;}
+    .splide__arrow--prev{left: 0;}
     &.splide-three-column .splide__arrow--prev{left: 0;}
     
   }

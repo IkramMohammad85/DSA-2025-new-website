@@ -147,7 +147,13 @@
     &.news-hero-inner{height: 425px;
     h1{max-width: 100%; font-weight: v.$font-weight-Medium;}
     }
-
+  &.asiapedia-hero{
+    .text-head{max-width: 660px; margin-top: 6rem;
+    h1{max-width: inherit;}
+    .btn-outline-white{ margin-top: 2rem;}
+    }
+    .feature-events{padding-top: 5rem;}
+  }
   }
     &.personnel-hero-inner{height: 419px;
     h1{max-width: 100%;}

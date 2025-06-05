@@ -200,8 +200,7 @@ text-overflow: ellipsis;}
   
   .toggleBtn-dropdown-menu {
     display: none;
-    //position: absolute;
-    position: fixed;
+    position: absolute;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
     border-radius: 2px;
     min-width: 200px;
@@ -212,7 +211,7 @@ text-overflow: ellipsis;}
     overflow-y: auto;
     scrollbar-width: thin;
     overscroll-behavior: contain;
-    top:8%; right: 5%; 
+    top:36px; right: 0; 
   
     a {
       display: block;
@@ -223,6 +222,10 @@ text-overflow: ellipsis;}
       &:hover {
         background-color: #f1f1f1;
       }
+    }
+    &.dropdown-menu-home{
+      position: fixed;
+      top:11%; right: 5%; 
     }
   }
   .our-services{

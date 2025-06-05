@@ -149,6 +149,9 @@ main {
         &--per36{
           flex: 0 0 calc(36% );
         }
+       &.item-padding-none{
+        padding: 0;
+      }
       }
       
     }

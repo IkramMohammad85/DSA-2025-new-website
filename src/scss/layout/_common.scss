@@ -1,4 +1,14 @@
 @use "../base/variables" as v; 
+.follow-latest{
+h4{color: #0C2740; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; margin-bottom: 1rem;}
+p{margin-bottom: 1.5rem;}
+.follow-updates{ padding-right: 3rem !important;}
+.latest-inbox{padding-left: 3rem !important;
+}
+
+}
+
+
 
 #searchFilterSticky { position: sticky; top: 120px; }
 .sticky {position:-webkit-sticky; position:sticky;  }

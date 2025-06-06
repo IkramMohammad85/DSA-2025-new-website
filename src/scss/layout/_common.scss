@@ -14,8 +14,10 @@ p{margin-bottom: 1.5rem;}
         height: 100%;
     
 }
+  .btn{ margin-left: 1px;}
 }
 .latest-inbox{padding-left: 4rem !important;
+
 }
 }
 
@@ -231,7 +233,12 @@ input[type="radio"]:checked + .radio-btn ~ label {
       cite{ color: #0C2740; opacity: 1 ;transition: opacity 0.3s ease;
         font-style: normal;
         .quote-name{ font-weight:v.$font-weight-SemiBold; display: block;}
-        .quote-title{font-weight: v.$font-weight-light; font-size: 14px;}
+        .quote-title{font-weight: v.$font-weight-light; font-size: 14px; line-height: 22px;}
+        
+        &.display-thumb{
+           display: flex; gap: 1rem; align-items: center;
+           .related-thumb img{ max-width: 72px; max-height: 72px;}
+        }
       }
     .pa-text{min-height: auto; font-size: 14px; color: #535353; position: relative;
     .full-text{opacity: 0;  transition: all .5s ease; display: none;}
@@ -504,7 +511,11 @@ html { scroll-behavior: smooth; }
 .clients-panel-list{
   .c-logo { display: flex; flex-direction: column; align-items: center; align-items: center;  margin: 0 auto 2rem auto; gap: 4rem; margin-top: 1rem;
   }
-
+&.partners-panel-list{
+  .c-logo{gap: 2rem;
+  img{height: inherit;}
+  }
+}
 }
 
 

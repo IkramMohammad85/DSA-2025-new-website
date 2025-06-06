@@ -99,6 +99,7 @@
     }
     }
   }
+  .label-text{color: #fff;}
   }
   &__bg {
     position: absolute;
@@ -151,6 +152,7 @@
     .text-head{max-width: 660px; margin-top: 6rem;
     h1{max-width: inherit;}
     .btn-outline-white{ margin-top: 2rem;}
+    
     }
     .feature-events{padding-top: 5rem;}
   }
@@ -158,6 +160,11 @@
     &.personnel-hero-inner{height: 419px;
     h1{max-width: 100%;}
     }
+    &.asiapedia-inner{
+    .text-head{max-width: 460px; 
+    }
+
+  }
 &.master-text-location{
       .masthead__text{max-width: 600px;}
       p{margin-top: 1rem; font-weight: 500;}

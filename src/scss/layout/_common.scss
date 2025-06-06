@@ -203,6 +203,15 @@ input[type="radio"]:checked + .radio-btn ~ label {
     margin-right: 52px;
   }
 }
+&.search-asiapedia-list{
+
+
+  .expert-country .radio-group-wrapper{
+    margin-right: 6rem;
+      width: 278px;
+      border: none;
+  }
+}
 }
 .partners-alliances-list{
 .partners-alliances{

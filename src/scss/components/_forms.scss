@@ -120,6 +120,15 @@ input[type="submit"] {
 
 }
 /* end */
+.search-bar{ display: flex;
+input{
+  border: solid 1px #CAD0D9;
+  padding: 0.4rem 1rem; border-radius: 4px; margin-right: 0.4rem; width: 100%;
+}
+button{width: 39px; height: 39px; display: flex; justify-content: center;
+img{max-width: 16px;}
+}
+}
 .reload-captcha {
     float: right;
     margin-right: 0;

@@ -635,7 +635,7 @@ const buttons = document.querySelectorAll("[data-show-on-click]");
       } else {
         target.style.display = "block";
 
-        // Scroll to element with 172px offset from top
+        // Scroll to element with 85 offset from top
         const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
         const scrollTo = elementTop - 85;
 

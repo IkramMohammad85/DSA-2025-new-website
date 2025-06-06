@@ -24,6 +24,8 @@
 .mt-4{ margin-top: 40px;}
 .text-center{text-align: center;}
 
+.pt-1{padding-top: 1rem;}
+.pb-1{padding-bottom: 1rem;}
 .pt-2{padding-top: 2rem;}
 .pb-2{padding-bottom: 2rem;}
 .pt-3{padding-top: 3rem !important;}
@@ -65,4 +67,4 @@ hr{ border: #dfdfdf solid 1px;border-top: none;}
 .title-btn{ display: flex; justify-content: space-between;align-items: flex-start; gap: 2rem;}
 .posted-date{font-weight: v.$font-weight-light; color: #535353; line-height: 26px; display: block;}
 .border-radius4{border-radius: 6px;}
-
+.light-shadow{box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;}

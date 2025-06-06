@@ -453,9 +453,9 @@ text-overflow: ellipsis;}
       grid-template-columns: auto 1fr;
       gap: 1.5rem;
       border: none;
-      .news-thumb{
+      .news-thumb{ border-radius: 4px;;
         height: 107px; width: 177px; overflow: hidden;
-        img{height: 107px;border-radius: 4px;}
+        //img{height: 107px;border-radius: 4px;}
       }
     }
   }

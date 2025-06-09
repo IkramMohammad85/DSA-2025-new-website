@@ -9,6 +9,7 @@
 	position: relative;
 	display: inline-block;
 	color: v.$black;
+	cursor: pointer;
 	.tooltiptext {
 		visibility: hidden;
 		position: absolute;
@@ -23,11 +24,24 @@
 		transition: opacity 0.3s;
         font-size: 12px;
 		text-transform: initial;
+
 	}
 	&:hover {
 		.tooltiptext {
 			visibility: visible;
 			opacity: 1;
+		}
+	}
+&.tp-share{
+	.tooltiptext{
+		background-color: #efefef;
+		display: flex; justify-content: space-between; gap: 1rem; padding: 1rem; align-items: center;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+	}
+	.tooltip-bottom {
+	&::after {
+	border-color: transparent #efefef transparent transparent;
+	}
 		}
 	}
 }
@@ -39,6 +53,7 @@
 		bottom: 100%;
 		left: 50%;
 		margin-left: -5px;
+		transform: rotate(90deg);
 		@extend .tooltip-basic;
 	}
 }

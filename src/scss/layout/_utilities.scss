@@ -4,6 +4,9 @@
 .mb-0{margin-bottom: 0rem !important;}
 .mt-1{margin-top: 1rem !important;}
 .mb-1{margin-bottom: 1rem !important;}
+.ml-1-5{margin-left: 1.5rem !important;}
+.mr-1-5{margin-right: 1.5rem !important;}
+.mb-1{margin-bottom: 1rem !important;}
 .mt-2{margin-top: 2rem !important;}
 .mb-2{margin-bottom: 2rem !important;}
 .mr-2 { margin-right: 20px;}
@@ -48,6 +51,7 @@
 
 .section-light-gray-bg{background-color: #F6F6F6;}
 .section-light-blu-bg{background-color: #f0f6fc;}
+.light-blu-bg{background-color: #EEF6FB !important;}
 .d-flex{ display: flex; flex-direction: row; gap:2rem; padding-top: 1rem;}
 .d-flex-column{ display: flex; flex-direction: column; gap:0.5rem;}
 .heading-second{font-family: "Poppins"; font-weight: 700; color: #0C2740;font-size: 32px; line-height: 50px;}
@@ -66,5 +70,7 @@ hr{ border: #dfdfdf solid 1px;border-top: none;}
 .padding-left4rem{padding-left: 4rem !important;}    
 .title-btn{ display: flex; justify-content: space-between;align-items: flex-start; gap: 2rem;}
 .posted-date{font-weight: v.$font-weight-light; color: #535353; line-height: 26px; display: block;}
-.border-radius4{border-radius: 6px;}
+.radius-6{border-radius: 6px;}
+.radius-8{border-radius:8px;}
 .light-shadow{box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;}
+.bxsh-none{box-shadow: none !important;}

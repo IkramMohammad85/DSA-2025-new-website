@@ -821,7 +821,11 @@ text-overflow: ellipsis;}
       gap: 80px;
       .card-horizontal{align-items: start;}
       .card-title{ font-family: v.$font-family-inter; font-weight: v.$font-weight-SemiBold; font-size: 22px; line-height: 32px;}
-      .card-text{font-weight: v.$font-weight-light;}
+      .card-text{font-weight: v.$font-weight-light;
+      &.card-txt-mh{
+        min-height: 100px;
+      }
+      }
     }
     &.card-grid-vedio{
     .card{padding: 0;}

@@ -1,0 +1,13 @@
+.iit-calculatore .select{
+    height: auto;
+    select{ padding: 0 1rem;}
+}
+
+.accordion-reg.accordion-reg-gray .accordion-reg-collapse{background-color: #EEF6FE; box-shadow: none; border-top-left-radius: 0; border-top-right-radius: 0; margin-top: 0;}
+
+@media (min-width: 992px) {
+    .row {
+        padding-top: 15px;
+        display: flex;
+    }
+}

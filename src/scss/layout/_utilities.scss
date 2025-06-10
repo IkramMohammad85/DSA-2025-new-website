@@ -71,7 +71,7 @@ hr{ border: #dfdfdf solid 1px;border-top: none;}
 .gap-none{gap: 0px !important;}
 .padding-left4rem{padding-left: 4rem !important;}    
 .title-btn{ display: flex; justify-content: space-between;align-items: flex-start; gap: 2rem;
-h2{
+h2{ margin-bottom: 0;
     &:before {
 content: '';
 display: block;

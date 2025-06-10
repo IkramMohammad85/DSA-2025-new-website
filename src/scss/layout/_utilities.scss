@@ -70,7 +70,16 @@
 hr{ border: #dfdfdf solid 1px;border-top: none;}
 .gap-none{gap: 0px !important;}
 .padding-left4rem{padding-left: 4rem !important;}    
-.title-btn{ display: flex; justify-content: space-between;align-items: flex-start; gap: 2rem;}
+.title-btn{ display: flex; justify-content: space-between;align-items: flex-start; gap: 2rem;
+h2{
+    &:before {
+content: '';
+display: block;
+height: 0;
+width: 0;
+margin-top: calc((1 - 1.6) * 0.5em); }
+}
+}
 .posted-date{font-weight: v.$font-weight-light; color: #535353; line-height: 26px; display: block;}
 .radius-6{border-radius: 6px;}
 .radius-8{border-radius:8px;}

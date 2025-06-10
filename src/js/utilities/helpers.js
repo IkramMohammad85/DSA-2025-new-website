@@ -680,37 +680,31 @@ if (modal) {
     }
   });
 }
-//location page
+//sticky trigger
+  const filterTrigger = document.querySelectorAll("[data-sticky-watch]");
+    filterTrigger.forEach((filterTrigger) => {
+      const targetSelector = filterTrigger.getAttribute("data-sticky-watch");
+      const target = document.querySelector(targetSelector);
 
-  // const imageCards = document.querySelectorAll("[data-show-on-click]");
-  // imageCards.forEach(card => {
-  //   card.addEventListener("click", () => {
-  //     const targetId = card.getAttribute("data-show-on-click");
-  //     const target = document.getElementById(targetId);
-  //     document.querySelectorAll(".location-card-mian").forEach(loc => {
-  //       loc.classList.remove("show");
-  //     });
-  //     if (target) {
-  //       target.classList.add("show");
-  //     }
-  //   });
-  // });
+      if (!target) {
+        console.warn(`Sticky target not getting: ${targetSelector}`);
+        return;
+      }
 
-  //  const imageCards = document.querySelectorAll("[data-show-on-click]");
-  // imageCards.forEach(card => {
-  //   card.addEventListener("click", () => {
-  //     const targetId = card.getAttribute("data-show-on-click");
-  //     const target = document.getElementById(targetId);
-  //     document.querySelectorAll(".location-card-mian").forEach(loc => {
-  //       loc.classList.remove("show");
-  //     });
-  //     imageCards.forEach(c => c.classList.remove("selected"));
-  //     if (target) {
-  //       target.classList.add("show");
-  //       card.classList.add("selected");
-  //     }
-  //   });
-  // });
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          const darkShadow = !entry.isIntersecting;
+          target.classList.toggle("dark-shadow", darkShadow);
+        },
+        {
+          root: null,
+          threshold: 0,
+          rootMargin: '0px',
+        }
+      );
+
+      observer.observe(filterTrigger);
+    });
   });
 
   //Radio button select on location and personnel
@@ -727,6 +721,7 @@ if (modal) {
   document.querySelectorAll('.custom-radio input[type="radio"]:checked').forEach(radio => {
     radio.closest('.custom-radio').classList.add('selected');
   });
+
 
   
 //home page main slide progess bar with count slide number

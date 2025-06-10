@@ -11,29 +11,7 @@
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.16.1/mapbox-gl.css" rel="stylesheet" />
-    <style>
 
-
-
-    .location-card-view {
-      display: none;
-      animation: fadeIn 0.3s ease;
-    }
-
-    .location-card-view.visible {
-      flex-basis: 100%;
-      display: block;
-    }
-
-    .experts-card-location {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 47px;
-    }
-
-
-
-    </style>
 </head>
 
 <body>
@@ -1104,9 +1082,12 @@
 
 
             <section class="page-intro pt-5 pb-5">
+
+            
         <div class="section-wrapper-min">
           <h2 class="heading-level2 text-center mb-3">Our Global Reach</h2>
-            <form class="filter-form" action="" method="GET">
+          <div class="filter-trigger" data-sticky-watch="#filter-form"></div>
+            <form id="filter-form" class="filter-form" action="" method="GET">
               <div class="filter-buttons">
                 <button type="button" class="filter-tab active">Asia Pacific</button>
                 <button type="button" class="filter-tab">China</button>
@@ -1864,6 +1845,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lastInRow.closest('.image-card-wrapper').insertAdjacentElement('afterend', locationPanel);
   });
 </script>
+
 
 
     <script src="../js/vendor/splide.min.js"></script>

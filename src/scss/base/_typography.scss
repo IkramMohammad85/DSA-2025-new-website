@@ -95,12 +95,13 @@ body {
 
   
   a {
-    color: #103d68;
+    color: #207FD4;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-weight: 400;
   
     &:hover {
-      color: #103d68;
+      color: #0d2844;
     }
   }
   ul, ol{

@@ -10,6 +10,8 @@
     transform: none;
   }
 }
+.splide.is-focus-in .splide__pagination__page:focus{display: none !important;}
+.splide__pagination__page:focus-visible{display: none !important;}
 .splide__arrow:focus-visible{outline: none !important;}
 .splide__arrow{background: transparent !important;}
 .splide__arrow svg{fill: #525252 !important;}

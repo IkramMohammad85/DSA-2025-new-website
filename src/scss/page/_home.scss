@@ -314,6 +314,13 @@ text-overflow: ellipsis;}
     align-items: center;
     justify-content: center;
     transition: opacity 0.3s ease;
+    &.overlay-none{
+      background-color: transparent;
+       .play-button{
+        background-color: #000;
+        padding: 14px 16px;
+       }
+    }
   }
   
   .play-button {

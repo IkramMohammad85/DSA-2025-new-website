@@ -140,6 +140,7 @@ $short-browser: 720px;
         background: v.$white url(../img/icon-plus.svg) calc(100% - 1.5rem) center
           no-repeat;
         border-bottom: 1px solid v.$gray-400;
+        font-weight: 700;
 
         &:hover {
           color: v.$dsa-bright-blue;

@@ -379,7 +379,7 @@ img, svg{width: 28px; height: 28px; }
  
 }
 .input-newsletter{ display: flex; background-color: #fff; border-radius: 3px; color: #B3B3B3;
-input{border: none; background: transparent; padding-left: 1rem; font-weight: v.$font-weight-normal;color: #B3B3B3;}
+input{max-width: 100%; border: none; background: transparent; padding-left: 1rem; font-weight: v.$font-weight-normal;color: #B3B3B3;}
 button{padding-right: 1rem;}
 }
 .gray-box-cta{

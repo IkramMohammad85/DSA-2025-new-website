@@ -3,7 +3,7 @@
 .resource-item{
   .resource-thumb img{ max-height: 140px;object-fit: cover; width: 100%;}
 }
-.two_col{ display: grid; }
+.two_col{ display: grid; grid-template-columns: 2fr 1fr;}
 .bp-block .event-video-item{ 
   //margin: 0.8rem 1rem 2rem 1rem; 
   margin: 0;
@@ -169,6 +169,9 @@ ul {
         &::after{display: none;}
        }
       }
+      &.broch{
+        h2,ul{padding-left: 1.5rem; padding-right: 1.5rem;}
+      }
 
       .popover-content {
         background-color: #fff;
@@ -272,8 +275,7 @@ ul {
     a{color: v.$dsa-dark-blue; }
     span{color: v.$dsa-light-grey; font-size: 12px;}
   }
-  ul{margin-bottom: 0; margin-left: 0; max-height: 130px;
-    overflow-y: auto; }
+  ul{margin-bottom: 0; margin-left: 0;  }
   &:hover {
     figure {
       img {

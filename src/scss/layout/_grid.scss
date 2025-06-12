@@ -69,7 +69,7 @@
     }
   }
 }
-.section-wrapper, .section-wrapper-min  {
+.section-wrapper, .section-wrapper-min, .section-wrapper-small  {
   position: relative;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -251,6 +251,9 @@ main {
   .section-wrapper-min {
     max-width: 100%;
   }
+    .section-wrapper-small {
+    max-width: 100%;
+  }
 }
 @media (min-width: 1440px) {
   .section-wrapper {
@@ -259,6 +262,10 @@ main {
   }
   .section-wrapper-min {
     max-width: 1220px;
+    width: 100%;
+  }
+  .section-wrapper-small {
+    max-width: 800px;
     width: 100%;
   }
 }

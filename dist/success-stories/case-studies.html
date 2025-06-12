@@ -1064,15 +1064,15 @@
       <button class="navbar__hamburger navbar--mobile" aria-label="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
     </div>
   </nav>
-<section class="masthead">
-    <div class="masthead__text">
-      <div class="section-wrapper flex-wrapper flex-column">
-        <h1>What Our Clients Say</h1>
-      </div>
-    </div>
-    <div class="masthead__bg"><img alt="What Our Clients Say" src="/img/success-stories/What-Our-Clients-Say_1300x200.webp"></div>
-  </section>
-  <section class="page-menu success-stories">
+      <section class="masthead">
+        <div class="section-wrapper-min">
+          <div class="masthead__text justify-content-center">
+            <h1>Case Studies</h1>
+          </div>
+        </div>
+        <div class="masthead__bg"><img alt="Environment and Cleantech" src="/img/esg/banner-servicel2.webp"  width="1440" height="419"></div>
+      </section>
+  <!-- <section class="page-menu success-stories">
     <div class="section-wrapper">
       <div class="flex-spacing">
         <div class="menu-container">
@@ -1088,12 +1088,12 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="success-stories-section" style="padding-bottom:4rem;">
+  </section> -->
+    <section class="success-stories-section pt-3 pb-7">
 
     <!-- Filter form -->
 
-    <div class="section-wrapper search-filter-block">
+    <!-- <div class="section-wrapper search-filter-block">
       <form class="career-search_form events-filter__form" action="events/search" method="GET">
         <div class="search-filter-title">Filter</div>
         
@@ -1141,15 +1141,47 @@
                       </div>
           <div class="checkedValues"></div>
         </div>
-        <!-- <button class="btn btn-bright-blue" type="submit">Search</button> -->
       </form>
-    </div>
+    </div> -->
 
     <!-- end of filter form -->
+  <div class="filter-trigger" data-sticky-watch="#filter-form"></div>
+            <form id="filter-form" class="filter-form" action="" method="GET">
+              <div class="filter-buttons">
+                <a href="our-clients.html" class="filter-tab">Our Clients</a>
+                <a href="testimonials.html" class="filter-tab">Testimonials</a>
+                <a href="experts-video.html" class="filter-tab">Expert Videos</a>
+                <a href="case-studies.html" class="filter-tab active">Case Studies</a>
+                <a href="brochures.html" class="filter-tab">Brochures</a>
+              </div>
+              
+<div class="form-row mt-2">
 
-    <div class="section-wrapper">
-      <div class="ap-area__wrapper">
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Sustainability_and_ESG_Compliance">
+
+                <!-- <h2 class="heading-level2 mb-0">Filter</h2> -->
+                 <strong><span class="mb-0">Filter</span></strong>
+                          <div class="select-wrapper">
+  <span class="select-icon">
+    <img src="/img/events/list-icon.svg" alt="Service" />
+  </span>
+<select>
+                  <option selected>By Service </option>
+                  <option>Accounting Services</option>
+                  <option>Business Advisory</option>
+                  <option>Business Intelligence</option>
+                  <option>Cloud Applications</option>
+                  <option>Corporate Establishment and Governance </option>
+                  <option>Digital Expense Management - China</option>
+                </select>
+</div>
+                <button type="submit" class="search-btn">
+                  <img src="/img/events/search-icon-white.svg" width="20" height="20" alt="Search">
+                </button>
+              </div>
+            </form>
+    <div class="section-wrapper-min mt-5">
+      <div class="ap-area__wrapper  ap-wrapper_3columns mt-3">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~services~esg~ESG Management with IBM Envizi - Science-based sustainability needs reality-based reporting" target="blank">    
               <img src="https://www.dezshira.com/userfiles/case_studies/services/esg/ESG_case-study_900x506.jpg" alt="ESG Management with IBM Envizi - Science-based sustainability needs reality-based reporting"></a>
               <div class="case-study-tags tech-tag-bg"> Sustainability and ESG Compliance</div>			</figure>
@@ -1161,7 +1193,7 @@
                An civil engineering company providing integrated services, the Downer Group, standardizes and centralizes its ESG-tracking efforts with automated reporting powered by the IBM Envizi ESG Suite.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Business_Intelligence tag_service_Market_Research">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~services~bi~Building%20Supply%20Chain%20Resilience%20in%20Asia%20Country%20Competitiveness%20Benchmarking%20by%20a%20European%20Textile%20Manufacturer" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685516820_Building-Supply-Chain-Resilience-in-Asia--Country-Competitiveness-Benchmarking-by-a-European-Textile-Manufacturer.jpg" alt="Building Supply Chain Resilience in Asia: Country Competitiveness Benchmarking by a European Textile Manufacturer"></a>
               <div class="case-study-tags tech-tag-bg"> Business Intelligence | Market Research</div>			</figure>
@@ -1173,7 +1205,7 @@
                A European textile company with a manufacturing presence in China, planned to relocate their manufacturing unit to a more cost-competitive country in Asia. Through a multi-country feasibility study of eight South and Southeast Asian countries, they were able to find the most optimal choice from a cost and operational perspective.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Business_Intelligence tag_service_Supply_Chain_Re-Engineering">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Multi-Country%20Study%20to%20Identify%20Alternative%20Manufacturing%20locations%20to%20Address%20US-China%20Trade%20Tensions" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685517219_US-China-Trade-Tensions--How-a-Building-Products-Manufacturer-is-Thriving-Across-Borders-with-Diversified-Production-.jpg" alt="US-China Trade Tensions: How a Building Products Manufacturer is Thriving Across Borders with Diversified Production"></a>
               <div class="case-study-tags tech-tag-bg"> Business Intelligence | Supply Chain Re-Engineering</div>			</figure>
@@ -1185,7 +1217,7 @@
                The company required a location analysis for available options in China as well as alternate markets in Asia to shift production with an emphasis on containing the tariff exposure. Cambodia, India, Indonesia, Philippines, Malaysia, Myanmar, Thailand, and Vietnam were examined as potential alternatives.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Technology tag_service_Cloud_Applications">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~services~it~Improved%20IT%20Infrastructure%20and%20Security%20Controls%20through%20Cloud-Based%20M365%20Productivity%20Platform%20-%20Final" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685516970_Improving-IT-Infrastructure-and-Security-Controls-through-Cloud-Based-M365-Productivity-Platform.jpg" alt="Improved IT Infrastructure and Security Controls through Cloud Based M365 Productivity Platform"></a>
               <div class="case-study-tags tech-tag-bg"> Technology | Cloud Applications</div>			</figure>
@@ -1197,7 +1229,7 @@
                A China based client in the biopharmaceutical sector greatly reduced their risks of security breaches and data leaks through upgrades to their IT infrastructure.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Business_Intelligence tag_service_Market_Research">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Improving%20Competitiveness%20in%20Asia%20Manufacturing%20Cross-Country%20Benchmarking%20for%20Relocation" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685516657_Improving-Competitiveness-in-Asia-Manufacturing--Cross-Country-Benchmarking-for-Relocation-by-a-US-Hydraulics-Manufacturer.jpg" alt="Improving Competitiveness in Asia Manufacturing: Cross-Country Benchmarking for Relocation by a US Hydraulics Manufacturer"></a>
               <div class="case-study-tags tech-tag-bg"> Business Intelligence | Market Research</div>			</figure>
@@ -1209,7 +1241,7 @@
                An American hydraulic systems component manufacturer wanted to investigate the feasibility of relocating from China to an alternate location in Asia. Through a multi-country feasibility study, they select an optimal relocation destination, reduce operational costs and tariff exposure, and mitigate trade war risks. </div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Business_Intelligence">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Fortune%20500%20Consumer%20Electronics%20Company%20Reduces%20Operational%20Costs%20Through%20Labor%20Market%20Study" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685518251_Fortune 500 Consumer Electronics Company Reduces Operational Costs Through Labor Market Study.jpg" alt="Fortune 500 Consumer Electronics Company Reduces Operational Costs Through Labor Market Study"></a>
               <div class="case-study-tags tech-tag-bg"> Business Intelligence</div>			</figure>
@@ -1221,7 +1253,7 @@
                A US-based, Fortune 500 company in the consumer electronics industry relocated production after commissioning an in-depth, competitive analysis study of the labor market. After the move, the Company tapped into the location’s lower labor costs and new entity incentives</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Tax">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Automating%20the%20Issuance%20of%20VAT%20Fapiaos%20via%20Integration%20of%20ERP%20with%20Chinas%20Golden%20Tax%20System" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685517500_Automating-the-Issuance-of-VAT-Fapiaos-via-Integration-of-ERP-with-Chinas-Golden-Tax-System.jpg" alt="Automating the Issuance of VAT Fapiaos via Integration of ERP with Chinas Golden Tax System"></a>
               <div class="case-study-tags tech-tag-bg"> Tax</div>			</figure>
@@ -1233,7 +1265,7 @@
                Using accounting and tax automations to resolve inefficiencies arising from the use of different invoice management systems. </div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Business_Intelligence">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Power%20Tools%20Manufacturer%20Reduces%20Costs%20by%20Moving%20to%20Vietnam" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685518358_Power Tools Manufacturer Reduces Costs by Moving to Vietnam.jpg" alt="Power Tools Manufacturer Reduces Costs by Moving to Vietnam"></a>
               <div class="case-study-tags tech-tag-bg"> Business Intelligence</div>			</figure>
@@ -1245,7 +1277,7 @@
                To reduce costs and trade risks, a US-listed manufacturing conglomerate specializing in the production of power tools, sought to relocate their long-term operations from South China to Vietnam. The manufacturer required help from an experienced team in determining the best location, method and factory to manage the impact of relocating into a region that is still developing its supply and infrastructure network.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Business_Advisory">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_US-Based%20Online%20Media%20Agency%20Expands%20to%20China%20Despite%20Regulatory%20Complexities" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685519501_US-Based-Online-Media-Agency-Expands-to-China-Despite-Regulatory-Complexities.jpg" alt="US-Based Online Media Agency Expands to China Despite Regulatory Complexities"></a>
               <div class="case-study-tags tech-tag-bg"> Business Advisory</div>			</figure>
@@ -1257,7 +1289,7 @@
                One of the fastest growing micro-online media agencies globally, serving customers in 192 countries in 20 languages, expands presence in China to both develop the China market on the ground, and provide strong support and online performance to the Chinese market. </div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Corporate_Establishment_and_Governance">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Global%20Health%20and%20Wellness%20Company%20Enters%20a%20Highly%20Regulated%20Sector%20in%20India" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685518304_Global Heath &amp; Wellness Company Enters Highly Regulated, Direct Selling, Sector in India.jpg" alt="Global Health and Wellness Company Enters a Highly Regulated Sector in India"></a>
               <div class="case-study-tags tech-tag-bg"> Corporate Establishment and Governance</div>			</figure>
@@ -1269,7 +1301,7 @@
                A health and wellness company with offices around the world sought entry into the rapidly growing Indian marketplace. However, since direct selling is a highly regulated sector in India, the company enlisted the help of professionals familiar with the regulatory framework to avoid pitfalls and roadblocks.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Business_Advisory">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Education%20Non-Profit%20Finds%20Partners%20in%20China%20to%20Implement%20Education%20Programs" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685518191_Education Non-Profit Finds Partners in China to Implement Education Programs.jpg" alt="Education Non-Profit Finds Partners in China to Implement Education Programs"></a>
               <div class="case-study-tags tech-tag-bg"> Business Advisory</div>			</figure>
@@ -1282,7 +1314,7 @@
 industry in China via local partnerships. However, transparency in the fastgrowing industry can be a major concern for foreign investors. With our help, the client was able to come to an agreement with a partner that both protected their interests and achieved their goals.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Financial_Due_Diligence tag_service_Mergers_and_Acquisitions">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan Shira - Case Study_Adjusting Inaccuracies in Financial Statements via Due Diligence" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685517028_Adjusting Inaccuracies in Financial Statements via Due Diligence.jpg" alt="Adjusting Inaccuracies in Financial Statements "></a>
               <div class="case-study-tags tech-tag-bg"> Financial Due Diligence | Mergers and Acquisitions</div>			</figure>
@@ -1294,7 +1326,7 @@ industry in China via local partnerships. However, transparency in the fastgrowi
                In the process of acquiring a Chinese company, an overseas health and wellness firm was unsure of the accuracy the target company’s financial statements and profitability status. A comprehensive due diligence provided a clear understanding of the target company to successfully negotiate an acquisition.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Accounting_Services tag_service_ERP_and_Information_Systems tag_service_Cloud_Applications tag_service_Technology">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan Shira - Case Study_Accounting and Tax Invoice Automation" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685516503_Accounting-and-Tax-Invoice-Automation.jpg" alt="Accounting and Tax Invoice Automation"></a>
               <div class="case-study-tags tech-tag-bg"> Accounting Services | ERP and Information Systems</div>			</figure>
@@ -1306,7 +1338,7 @@ industry in China via local partnerships. However, transparency in the fastgrowi
                Using accounting and tax automations to resolve inefficiencies arising from the use of different invoice management systems.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Financial_Due_Diligence tag_service_Mergers_and_Acquisitions">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan Shira - Case Study_Verifying Key Assets and Rectification of Financial Statements" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685517094_Verifying Key Assets and Rectification of Financial Statements.jpg" alt="Verifying Key Assets and Rectification of Financial Statements "></a>
               <div class="case-study-tags tech-tag-bg"> Financial Due Diligence | Mergers and Acquisitions</div>			</figure>
@@ -1318,7 +1350,7 @@ industry in China via local partnerships. However, transparency in the fastgrowi
                Through an in-depth due diligence, a US-based health and wellness company negotiated a fair acquisition price, mitigated risks, lowered costs, and successfully entered the Chinese market.</div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Corporate_Establishment_and_Governance">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_US-Based%20SaaS%20Multinational%20Establishes%20Presence%20in%20China" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685519552_US-Based-SaaS-Multinational-Establishes-Presence-in-China.jpg" alt="US-Based SaaS Multinational Establishes Presence in China"></a>
               <div class="case-study-tags tech-tag-bg"> Corporate Establishment and Governance</div>			</figure>
@@ -1330,7 +1362,7 @@ industry in China via local partnerships. However, transparency in the fastgrowi
                Due to rapidly growing demand in China, a leading global provider of SaaSbased solutions to the services sector of the automotive industry sought to establish its operations in Shanghai. Our team conducted a comprehensive study of the client’s international business model and provided an optimized structure to upgrade the model and establish a China presence with minimal risk to HR, legal or compliance, and no impact on operations. </div>
           </div>
       </div>
-                      <div class="case_study ap-area__article cs popover-wrapper  tag_service_Accounting_Services tag_service_Digital_Expense_Management_-_China tag_service_Cloud_Applications tag_service_Technology tag_service_ERP_and_Information_Systems">
+                      <div class="case_study ap-area__article cs popover-wrapper">
           <figure> <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan Shira - Case Study_Optimization via the Digitalization of Expenses" target="blank">    
               <img src="https://resource.dezshira.com/Assets/1685516603_Optimization-via-the-Digitalization-of-Expenses.jpg" alt="Optimization via the Digitalization of Expenses"></a>
               <div class="case-study-tags tech-tag-bg"> Accounting Services | Digital Expense Management - China</div>			</figure>
@@ -1346,321 +1378,338 @@ industry in China via local partnerships. However, transparency in the fastgrowi
       </div>
     </div>
 </section>
-  <section class="cta-contact" id="cta-contact">
-    <div class="section-wrapper">
-      <div class="cta-contact__top flex-spacing">
-        <p>Enquire for more information about our services, and how we can help solve challenges for your organization</p><a onclick="toggle_visibility('.cta-contact__bot');">Contact Us</a>
-      </div>
-      <div class="cta-contact__bot">
-        <div class="cta-contact__form">
-          <form id="contact_form" method="post" action="https://www.dezshira.com/submit_mini_contact">
+  <section class="hero-section">
+    <img
+      src="/img/hero-expert.webp"
+      alt="Talk to an expert"
+      width="2000" height="554"
+      class="hero-image"
+    />
+    <div class="section-wrapper-min">
+    <div class="hero-content">
+      <p class="hero-text">
+        We provide expert advisory and corporate services across Asia, guiding
+        businesses through complex markets and regulations.
+      </p>
+      
+      <div class="text-btn">
+       
+          <button class="btn btn-outline-white down-arrow" data-show-on-click="get-in-touch">Talk to an Expert</button>
+      
+        </div>
+    </div>
+  </div>
+
+  </section>
+      <section class="let-discuss-form ldform-gray-bg get-in-touch" id="let-discuss-form">
+      <div class="section-wrapper">
+        <h2>Customize the Rankings to Your Circumstances </h2>
+        <h3>Get in touch with the form below </h3>
+        <div class="ld-form"> 
+        
+          <form method="post" action="https://www.dezshira.com/submit_mini_contact" id="contact_form">
             <input type="hidden" name="dsa_contact_token" value="">
-            <input type="hidden" name="request_uri" value="https://www.dezshira.com/landing/asiaadmin">
-            <input type="hidden" name="to" value="info@dezshira.com">
-            <input class="TokenNameKey" type="hidden" name="csrf_name" value="csrf60f567e015afd">
-            <input class="TokenValueKey" type="hidden" name="csrf_value" value="ea729e823f78c72092fa8b458f2fd4c6">
-            <div class="cta-contact__fields">
-              <div class="cta-contact__field">
-                <label class="form-field-label" for="fname">First name</label>
-                <input id="fname" name="fname" type="text" placeholder=" " required="">
-              </div>
-              <div class="cta-contact__field">
-                <label class="form-field-label" for="lname">Last name</label>
-                <input id="lname" name="lname" type="text" placeholder=" " required="">
-              </div>
-              <div class="cta-contact__field">
-                <label class="form-field-label" for="email_address">Email</label>
-                <input id="email_address" name="email_address" type="email" placeholder=" " required="">
-              </div>
-              <div class="cta-contact__field">
-                <label class="form-field-label" for="country">Country</label>
-                <select id="country" name="country" placeholder="" required="" style="background-color:white;">
-                  <option class="text-muted" value=""></option>
-                  <option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
-                  <option value="Afghanistan, Islamic State">Afghanistan, Islamic State</option>
-                  <option value="Åland Islands">&angst;land Islands</option>
-                  <option value="Albania">Albania</option>
-                  <option value="Algeria">Algeria</option>
-                  <option value="American Samoa">American Samoa</option>
-                  <option value="Andorra, Principality of">Andorra, Principality of</option>
-                  <option value="Angola">Angola</option>
-                  <option value="Anguilla">Anguilla</option>
-                  <option value="Antarctica">Antarctica</option>
-                  <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                  <option value="Argentina">Argentina</option>
-                  <option value="Armenia">Armenia</option>
-                  <option value="Aruba">Aruba</option>
-                  <option value="Australia">Australia</option>
-                  <option value="Austria">Austria</option>
-                  <option value="Azerbaijan">Azerbaijan</option>
-                  <option value="Bahamas">Bahamas</option>
-                  <option value="Bahrain">Bahrain</option>
-                  <option value="Bangladesh">Bangladesh</option>
-                  <option value="Barbados">Barbados</option>
-                  <option value="Belarus">Belarus</option>
-                  <option value="Belgium">Belgium</option>
-                  <option value="Belize">Belize</option>
-                  <option value="Benin">Benin</option>
-                  <option value="Bermuda">Bermuda</option>
-                  <option value="Bhutan">Bhutan</option>
-                  <option value="Bolivia">Bolivia</option>
-                  <option value="Bosnia-Herzegovina">Bosnia-Herzegovina</option>
-                  <option value="Botswana">Botswana</option>
-                  <option value="Bouvet Island">Bouvet Island</option>
-                  <option value="Brazil">Brazil</option>
-                  <option value="British Indian Ocean Terr.">British Indian Ocean Terr.</option>
-                  <option value="Brunei Darussalam">Brunei Darussalam</option>
-                  <option value="Bulgaria">Bulgaria</option>
-                  <option value="Burkina Faso">Burkina Faso</option>
-                  <option value="Burundi">Burundi</option>
-                  <option value="Cambodia, Kingdom of">Cambodia, Kingdom of</option>
-                  <option value="Cameroon">Cameroon</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Cape Verde">Cape Verde</option>
-                  <option value="Cayman Islands">Cayman Islands</option>
-                  <option value="Central African Republic">Central African Republic</option>
-                  <option value="Chad">Chad</option>
-                  <option value="Chile">Chile</option>
-                  <option value="China">China</option>
-                  <option value="Taiwan">Taiwan</option>
-                  <option value="Christmas Island">Christmas Island</option>
-                  <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-                  <option value="Colombia">Colombia</option>
-                  <option value="Comoros">Comoros</option>
-                  <option value="Congo">Congo</option>
-                  <option value="Cook Islands">Cook Islands</option>
-                  <option value="Costa Rica">Costa Rica</option>
-                  <option value="Croatia">Croatia</option>
-                  <option value="Cuba">Cuba</option>
-                  <option value="Curaçao">Cura&ccedil;ao</option>
-                  <option value="Cyprus">Cyprus</option>
-                  <option value="Czech Republic">Czech Republic</option>
-                  <option value="Congo, Democratic Republic">Congo, Democratic Republic</option>
-                  <option value="Denmark">Denmark</option>
-                  <option value="Djibouti">Djibouti</option>
-                  <option value="Dominica">Dominica</option>
-                  <option value="Dominican Republic">Dominican Republic</option>
-                  <option value="East Timor">East Timor</option>
-                  <option value="Ecuador">Ecuador</option>
-                  <option value="Egypt">Egypt</option>
-                  <option value="El Salvador">El Salvador</option>
-                  <option value="Equatorial Guinea">Equatorial Guinea</option>
-                  <option value="Eritrea">Eritrea</option>
-                  <option value="Estonia">Estonia</option>
-                  <option value="Ethiopia">Ethiopia</option>
-                  <option value="Falkland Islands">Falkland Islands</option>
-                  <option value="Faroe Islands">Faroe Islands</option>
-                  <option value="Fiji">Fiji</option>
-                  <option value="Finland">Finland</option>
-                  <option value="France">France</option>
-                  <option value="French Guyana">French Guyana</option>
-                  <option value="French Polynesia">French Polynesia</option>
-                  <option value="French Southern Territories">French Southern Territories</option>
-                  <option value="Gabon">Gabon</option>
-                  <option value="Gambia">Gambia</option>
-                  <option value="Georgia">Georgia</option>
-                  <option value="Germany">Germany</option>
-                  <option value="Ghana">Ghana</option>
-                  <option value="Gibraltar">Gibraltar</option>
-                  <option value="Greece">Greece</option>
-                  <option value="Greenland">Greenland</option>
-                  <option value="Grenada">Grenada</option>
-                  <option value="Guadeloupe (French)">Guadeloupe (French)</option>
-                  <option value="Guam (USA)">Guam (USA)</option>
-                  <option value="Guatemala">Guatemala</option>
-                  <option value="Guernsey">Guernsey</option>
-                  <option value="Guinea">Guinea</option>
-                  <option value="Guinea Bissau">Guinea Bissau</option>
-                  <option value="Guyana">Guyana</option>
-                  <option value="Haiti">Haiti</option>
-                  <option value="Heard and McDonald Islands">Heard and McDonald Islands</option>
-                  <option value="Holy See (Vatican City)">Holy See (Vatican City)</option>
-                  <option value="Honduras">Honduras</option>
-                  <option value="Hong Kong SAR">Hong Kong SAR</option>
-                  <option value="Hungary">Hungary</option>
-                  <option value="Iceland">Iceland</option>
-                  <option value="India">India</option>
-                  <option value="Indonesia">Indonesia</option>
-                  <option value="Iran">Iran</option>
-                  <option value="Iraq">Iraq</option>
-                  <option value="Ireland">Ireland</option>
-                  <option value="Isle of Man">Isle of Man</option>
-                  <option value="Israel">Israel</option>
-                  <option value="Italy">Italy</option>
-                  <option value="Ivory Coast (Cote D'Ivoire)">Ivory Coast (Cote D&apos;Ivoire)</option>
-                  <option value="Jamaica">Jamaica</option>
-                  <option value="Japan">Japan</option>
-                  <option value="Jersey">Jersey</option>
-                  <option value="Jordan">Jordan</option>
-                  <option value="Kazakhstan">Kazakhstan</option>
-                  <option value="Kenya">Kenya</option>
-                  <option value="Kiribati">Kiribati</option>
-                  <option value="Kuwait">Kuwait</option>
-                  <option value="Kyrgyz Republic (Kyrgyzstan)">Kyrgyz Republic (Kyrgyzstan)</option>
-                  <option value="Laos">Laos</option>
-                  <option value="Latvia">Latvia</option>
-                  <option value="Lebanon">Lebanon</option>
-                  <option value="Lesotho">Lesotho</option>
-                  <option value="Liberia">Liberia</option>
-                  <option value="Libya">Libya</option>
-                  <option value="Liechtenstein">Liechtenstein</option>
-                  <option value="Lithuania">Lithuania</option>
-                  <option value="Luxembourg">Luxembourg</option>
-                  <option value="Macau SAR">Macau SAR</option>
-                  <option value="Macedonia">Macedonia</option>
-                  <option value="Madagascar">Madagascar</option>
-                  <option value="Malawi">Malawi</option>
-                  <option value="Malaysia">Malaysia</option>
-                  <option value="Maldives">Maldives</option>
-                  <option value="Mali">Mali</option>
-                  <option value="Malta">Malta</option>
-                  <option value="Marshall Islands">Marshall Islands</option>
-                  <option value="Martinique">Martinique</option>
-                  <option value="Mauritania">Mauritania</option>
-                  <option value="Mauritius">Mauritius</option>
-                  <option value="Mayotte">Mayotte</option>
-                  <option value="Mexico">Mexico</option>
-                  <option value="Micronesia">Micronesia</option>
-                  <option value="Moldavia">Moldavia</option>
-                  <option value="Monaco">Monaco</option>
-                  <option value="Mongolia">Mongolia</option>
-                  <option value="Montenegro">Montenegro</option>
-                  <option value="Montserrat">Montserrat</option>
-                  <option value="Morocco">Morocco</option>
-                  <option value="Mozambique">Mozambique</option>
-                  <option value="Myanmar">Myanmar</option>
-                  <option value="Namibia">Namibia</option>
-                  <option value="Nauru">Nauru</option>
-                  <option value="Nepal">Nepal</option>
-                  <option value="Netherlands">Netherlands</option>
-                  <option value="New Caledonia (French)">New Caledonia (French)</option>
-                  <option value="New Zealand">New Zealand</option>
-                  <option value="Nicaragua">Nicaragua</option>
-                  <option value="Niger">Niger</option>
-                  <option value="Nigeria">Nigeria</option>
-                  <option value="Niue">Niue</option>
-                  <option value="Norfolk Island">Norfolk Island</option>
-                  <option value="North Korea">North Korea</option>
-                  <option value="Northern Mariana Islands">Northern Mariana Islands</option>
-                  <option value="Norway">Norway</option>
-                  <option value="Oman">Oman</option>
-                  <option value="Other">Other</option>
-                  <option value="Pakistan">Pakistan</option>
-                  <option value="Palau">Palau</option>
-                  <option value="Palestine, State of">Palestine, State of</option>
-                  <option value="Panama">Panama</option>
-                  <option value="Papua New Guinea">Papua New Guinea</option>
-                  <option value="Paraguay">Paraguay</option>
-                  <option value="Peru">Peru</option>
-                  <option value="Philippines">Philippines</option>
-                  <option value="Pitcairn Island">Pitcairn Island</option>
-                  <option value="Poland">Poland</option>
-                  <option value="Portugal">Portugal</option>
-                  <option value="Puerto Rico">Puerto Rico</option>
-                  <option value="Qatar">Qatar</option>
-                  <option value="Reunion (French)">Reunion (French)</option>
-                  <option value="Romania">Romania</option>
-                  <option value="Russia">Russia</option>
-                  <option value="Rwanda">Rwanda</option>
-                  <option value="S. Georgia &amp; S. Sandwich Is.">S. Georgia &amp; S. Sandwich Is.</option>
-                  <option value="Saint Barthélemy">Saint Barth&eacute;lemy</option>
-                  <option value="Saint Helena">Saint Helena</option>
-                  <option value="Saint Kitts &amp; Nevis Anguilla">Saint Kitts &amp; Nevis Anguilla</option>
-                  <option value="Saint Lucia">Saint Lucia</option>
-                  <option value="Saint Martin">Saint Martin</option>
-                  <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                  <option value="Saint Tome (Sao Tome)">Saint Tome (Sao Tome)</option>
-                  <option value="Saint Vincent &amp; Grenadines">Saint Vincent &amp; Grenadines</option>
-                  <option value="Samoa">Samoa</option>
-                  <option value="San Marino">San Marino</option>
-                  <option value="Saudi Arabia">Saudi Arabia</option>
-                  <option value="Senegal">Senegal</option>
-                  <option value="Serbia">Serbia</option>
-                  <option value="Seychelles">Seychelles</option>
-                  <option value="Sierra Leone">Sierra Leone</option>
-                  <option value="Singapore">Singapore</option>
-                  <option value="Slovak Republic">Slovak Republic</option>
-                  <option value="Slovenia">Slovenia</option>
-                  <option value="Solomon Islands">Solomon Islands</option>
-                  <option value="Somalia">Somalia</option>
-                  <option value="South Africa">South Africa</option>
-                  <option value="South Korea">South Korea</option>
-                  <option value="South Sudan">South Sudan</option>
-                  <option value="Spain">Spain</option>
-                  <option value="Sri Lanka">Sri Lanka</option>
-                  <option value="Sudan">Sudan</option>
-                  <option value="Suriname">Suriname</option>
-                  <option value="Svalbard and Jan Mayen Is.">Svalbard and Jan Mayen Is.</option>
-                  <option value="Swaziland">Swaziland</option>
-                  <option value="Sweden">Sweden</option>
-                  <option value="Switzerland">Switzerland</option>
-                  <option value="Syria">Syria</option>
-                  <option value="Tadjikistan">Tadjikistan</option>
-                  <option value="Tanzania">Tanzania</option>
-                  <option value="Thailand">Thailand</option>
-                  <option value="Togo">Togo</option>
-                  <option value="Tokelau">Tokelau</option>
-                  <option value="Tonga">Tonga</option>
-                  <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-                  <option value="Tunisia">Tunisia</option>
-                  <option value="Turkey">Turkey</option>
-                  <option value="Turkmenistan">Turkmenistan</option>
-                  <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
-                  <option value="Tuvalu">Tuvalu</option>
-                  <option value="Uganda">Uganda</option>
-                  <option value="Ukraine">Ukraine</option>
-                  <option value="United Arab Emirates">United Arab Emirates</option>
-                  <option value="United Kingdom">United Kingdom</option>
-                  <option value="United States">United States</option>
-                  <option value="Uruguay">Uruguay</option>
-                  <option value="USA Minor Outlying Islands">USA Minor Outlying Islands</option>
-                  <option value="Uzbekistan">Uzbekistan</option>
-                  <option value="Vanuatu">Vanuatu</option>
-                  <option value="Venezuela">Venezuela</option>
-                  <option value="Vietnam">Vietnam</option>
-                  <option value="Virgin Islands (British)">Virgin Islands (British)</option>
-                  <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
-                  <option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
-                  <option value="Western Sahara">Western Sahara</option>
-                  <option value="Yemen">Yemen</option>
-                  <option value="Yugoslavia (former)">Yugoslavia (former)</option>
-                  <option value="Zambia">Zambia</option>
-                  <option value="Zimbabwe">Zimbabwe</option>
-                </select>
-              </div>
-              <div class="cta-contact__field">
-                <label class="form-field-label" for="organization">Company</label>
-                <input id="organization" name="organization" type="text" placeholder=" " required="">
-              </div>
-              <div class="cta-contact__field">
-                <label class="form-field-label" for="telephone">Telephone</label>
-                <input id="telephone" name="telephone" type="text" placeholder=" " required="">
-              </div>
-              <div class="cta-contact__field cta-contact__field--2x">
-                <label class="form-field-label" for="additionalInfo">Comments</label>
-                <textarea class="form-field-textarea" id="comments" name="comments" placeholder=" " style="resize: vertical;height:150px;" required=""></textarea>
-              </div>
-              <div class="cta-contact__field"><img id="siimage" src="../img/showCaptcha.png" alt="captcha image"><br><a class="btn" id="reload_captcha" title="Reload Code">Reload</a></div>
-              <div class="cta-contact__field">
-                <label class="form-field-label" for="captcha_code">Security Code</label>
-                <input id="captcha_code" name="captcha_code" type="text" placeholder=" " required=""><small>The code is case-sensitive </small>
-              </div>
+            <input type="hidden" name="request_uri" value="https://www.dezshira.com/asia-manufacturing-index">
+            <input type="hidden" name="to" value="business.intelligence@dezshira.com">
+            
+            <input type="hidden" class="TokenNameKey" name="csrf_name" value="csrf67bd6ded16e1b">
+            <input type="hidden" class="TokenValueKey" name="csrf_value" value="e6daa1bfc072be229eea7116150e8ae6">
+                    <div class="form-field-two-column"> 
+              <input id="fname" type="text" name="fname" placeholder="First Name" required="">
+              <input id="lname" type="text" name="lname" placeholder="Last Name" required="">
             </div>
-            <div class="grid">
-              <div class="col-sm col-mb col-lg">
-                <!-- <input class="btn btn-primary btn-lg float-right" type="submit" id="submit" value="SEND"  name="SEND" />-->
-                <div class="text-center" id="loading" style="display:none;"> Processing, please wait...</div>
-                <div class="text-center" id="message"></div>
-                <!-- <p class="text-align paddTopBottom text_white">* Required</p>-->
-                <button class="btn btn-primary btn-lg float-right" id="submit" type="submit">Send</button>
-              </div>
+            <div class="form-field-two-column"> 
+              <input id="email_address" type="email" name="email_address" placeholder="Email" required="">
+              <input id="organization" type="text" name="organization" placeholder="Company" required="">
             </div>
-            <!-- /grid-->
+            <div class="form-field-one-column"> 
+              <select id="country" name="country">
+                <option selected="" value="">Choose Your Country</option>
+                <option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
+                <option value="Afghanistan, Islamic State">Afghanistan, Islamic State</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra, Principality of">Andorra, Principality of</option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla">Anguilla</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia-Herzegovina">Bosnia-Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Bouvet Island">Bouvet Island</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Terr.">British Indian Ocean Terr.</option>
+                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia, Kingdom of">Cambodia, Kingdom of</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curaçao">Curaçao</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Congo, Democratic Republic">Congo, Democratic Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="East Timor">East Timor</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Falkland Islands">Falkland Islands</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Guyana">French Guyana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Territories">French Southern Territories</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guadeloupe (French)">Guadeloupe (French)</option>
+                <option value="Guam (USA)">Guam (USA)</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guernsey">Guernsey</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea Bissau">Guinea Bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Heard and McDonald Islands">Heard and McDonald Islands</option>
+                <option value="Holy See (Vatican City)">Holy See (Vatican City)</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong SAR">Hong Kong SAR</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Ivory Coast (Cote D'Ivoire)">Ivory Coast (Cote D'Ivoire)</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jersey">Jersey</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyz Republic (Kyrgyzstan)">Kyrgyz Republic (Kyrgyzstan)</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macau SAR">Macau SAR</option>
+                <option value="Macedonia">Macedonia</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia">Micronesia</option>
+                <option value="Moldavia">Moldavia</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Caledonia (French)">New Caledonia (French)</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="North Korea">North Korea</option>
+                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Other">Other</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestine, State of">Palestine, State of</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pitcairn Island">Pitcairn Island</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion (French)">Reunion (French)</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="S. Georgia &amp; S. Sandwich Is.">S. Georgia &amp; S. Sandwich Is.</option>
+                <option value="Saint Barthélemy">Saint Barthélemy</option>
+                <option value="Saint Helena">Saint Helena</option>
+                <option value="Saint Kitts &amp; Nevis Anguilla">Saint Kitts &amp; Nevis Anguilla</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Martin">Saint Martin</option>
+                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                <option value="Saint Tome (Sao Tome)">Saint Tome (Sao Tome)</option>
+                <option value="Saint Vincent &amp; Grenadines">Saint Vincent &amp; Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovak Republic">Slovak Republic</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Korea">South Korea</option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Svalbard and Jan Mayen Is.">Svalbard and Jan Mayen Is.</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Tadjikistan">Tadjikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkiye">Turkiye</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="USA Minor Outlying Islands">USA Minor Outlying Islands</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                <option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+                <option value="Western Sahara">Western Sahara</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Yugoslavia (former)">Yugoslavia (former)</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="ASEAN Region">ASEAN Region</option>
+              </select>
+            </div>
+            <div class="form-field-one-column"> 
+              <textarea id="comments" name="comments" placeholder="Comments" rows="4" cols="50"></textarea>
+            </div>
+            <div class="form-field-one-column codecs">
+              <div class="security-Check-code">
+                <input class="form-control" id="captcha_code" name="captcha_code" type="text" placeholder="Security Code (Case sensitive)">
+                <div class="security-Check"><img id="siimage_popup" src="../img/showCaptcha.png" alt="captcha image" class="loadCaptchaImage"></div>
+              </div>
+              <div class="code-sensitive"><small class="reload-captcha" id="reload_captcha" onclick="loadCaptcha();">
+                  <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m3.508 6.726c1.765-2.836 4.911-4.726 8.495-4.726 5.518 0 9.997 4.48 9.997 9.997 0 5.519-4.479 9.999-9.997 9.999-5.245 0-9.553-4.048-9.966-9.188-.024-.302.189-.811.749-.811.391 0 .715.3.747.69.351 4.369 4.012 7.809 8.47 7.809 4.69 0 8.497-3.808 8.497-8.499 0-4.689-3.807-8.497-8.497-8.497-3.037 0-5.704 1.597-7.206 3.995l1.991.005c.414 0 .75.336.75.75s-.336.75-.75.75h-4.033c-.414 0-.75-.336-.75-.75v-4.049c0-.414.336-.75.75-.75s.75.335.75.75z" fill-rule="nonzero"></path>
+                  </svg></small></div>
+            </div>
+            <div class="form-field-one-column"> 
+              <label class="form-check-input">
+                <input type="checkbox" name="submitting" id="agree_privary_policy"><span>By submitting this form, I agree to receive communications from Dezan Shira &amp; Associates. I have read the <a href="https://www.dezshira.com/privacy-policy" target="_blank">Privacy Policy</a> and understand my personal information may be transmitted overseas.</span>
+              </label>
+            </div>
+            
+            <div>
+                <div id="loading_contact" class="text-center" style="display:none;"> Processing, please wait...</div>
+                <div id="message_contact" class="text-center"></div>
+            </div>
+
+            <div class="text-center"> 
+              <input type="submit" value="Send">
+            </div>
           </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  
   <footer class="footer">
   <div class="section-wrapper">
     <div class="footer-top">

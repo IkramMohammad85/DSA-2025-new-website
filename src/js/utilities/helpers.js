@@ -265,6 +265,28 @@ document.addEventListener('DOMContentLoaded', function () {
   const splide = new Splide(el, options);
   splide.mount();
 
+    // Pause video when slide changes
+  splide.on('move', (newIndex, oldIndex) => {
+    const oldSlide = splide.Components.Slides.getAt(oldIndex)?.slide;
+    if (!oldSlide) return;
+
+    const videoContainers = oldSlide.querySelectorAll('.video-container');
+
+    videoContainers.forEach(container => {
+      const video = container.querySelector('video');
+      const overlay = container.querySelector('.video-overlay');
+
+      if (video && container.dataset.state === 'playing') {
+        video.pause();
+        video.removeAttribute('controls');
+        container.dataset.state = 'initial';
+
+        if (overlay) {
+          overlay.style.display = 'flex'; // Show play button again
+        }
+      }
+    });
+  });
   // Autoplay pause on hover inside slider-content and trending-insights
   el.querySelectorAll('.slider-content, .trending-insights').forEach(innerEl => {
     innerEl.addEventListener('mouseenter', () => {
@@ -751,3 +773,4 @@ if (modal) {
 
 //   splide.mount();
 // });
+

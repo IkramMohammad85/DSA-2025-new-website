@@ -272,7 +272,8 @@ ul {
     a{color: v.$dsa-dark-blue; }
     span{color: v.$dsa-light-grey; font-size: 12px;}
   }
-  ul{margin-bottom: 0; margin-left: 0;}
+  ul{margin-bottom: 0; margin-left: 0; max-height: 200px;
+    overflow-y: auto; }
   &:hover {
     figure {
       img {
@@ -387,6 +388,7 @@ h2 {
 }
 }
 ul.brochure_lists {
+  max-height: 83px; overflow-y: auto;
     display: grid;
     gap: 3px;
     grid-template-columns: 2fr 1fr; margin-left: 1.5rem; margin-right: 1.5rem;

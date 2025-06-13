@@ -4,13 +4,15 @@
  .common-tab-container {
     //width: 90%;
     margin: 0 auto;
-    &.studies-insights{width: 100%;}
+    &.studies-insights{width: 100%;
+    .common-tab-buttons{ justify-content: center; background-color: transparent;position: inherit; gap: 1rem;}
+    }
   }
   .common-tab-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 0.74rem;
-    justify-content: space-evenly;
+    
     //justify-content: center;
     background-color: #f0f6fc;
     //box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px;

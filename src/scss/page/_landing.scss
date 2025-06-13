@@ -89,7 +89,7 @@
     .eight-core-table{width: 100%; margin: 0 auto 4rem auto; }
     .tier-title{cursor: pointer;
         .ml-18{margin-left: 26px;}
-        .tier{display: flex;}
+        .tier{display: flex; align-items: center;}
     }
     .tier-detail{display: none;    
     }
@@ -816,7 +816,7 @@
 @media only screen and (min-width: 1200px){
     //The eight core tiers table
     .eight-core-tiers{
-        .eight-core-table{width: 75%; }
+        .eight-core-table{width: 90%; }
         .eight-core-head { width: 75%; 
             .eight-core-left{ width: 40%;
             }
@@ -825,7 +825,7 @@
     //end
         //Explore the Business Environment
   .dbp {
-    .dbp-block{width: 90%;
+    .dbp-block{width: 100%;
         .dbp-left-block{ width: 50%;}
         .dbp-right-block{ margin-left: 4rem;
             img{ width: 500px;}

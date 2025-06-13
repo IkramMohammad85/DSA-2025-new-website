@@ -5,7 +5,10 @@
     //width: 90%;
     margin: 0 auto;
     &.studies-insights{width: 100%;
-    .common-tab-buttons{ justify-content: center; background-color: transparent;position: inherit; gap: 1rem;}
+    .common-tab-buttons{ justify-content: center; background-color: transparent;position: inherit; gap: 1rem;
+      
+    }
+
     }
   }
   .common-tab-buttons {
@@ -209,7 +212,7 @@
     box-shadow: none;
     li{border: none;
     .common-tab-button{
-      padding: 0.5rem 1rem;
+      padding: .7rem 1.5rem;
       border: solid 1px #E0E5EB;
       border-radius: 20px;
       color: #333D4C;

@@ -979,9 +979,11 @@ text-overflow: ellipsis;}
   //   content: "+";
   //   margin-left: 0.2rem;
   // }
-  .counter-inner{
+  .counter-inner{ 
   padding: 0;
   display: flex;
+  //display: grid;
+  //grid-template-columns: repeat(3, auto); 
   align-items: center;
   justify-content: center; 
   gap: 7.5rem;
@@ -989,6 +991,10 @@ text-overflow: ellipsis;}
   text-align: center; 
   padding: 0;  
   margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h3, span{
   opacity: 1;
   max-height: 100px;
@@ -1006,10 +1012,18 @@ color: #0C2740;
 font-family: v.$font-family-Poppins;
   }
 .hide-button {
-margin: auto;
+margin: 0 auto;
 opacity: 0;
 visibility: hidden;
 transition: opacity 0.3s ease, visibility 0.3s ease;
+position: absolute;
+line-height: normal;
+height: 120px;
+width: 160px;
+left: 0;
+top: 0;
+display: flex;
+justify-content: center;
 }
 &:hover{
   h3,span{
@@ -1023,6 +1037,8 @@ transition: opacity 0.3s ease, visibility 0.3s ease;
   .hide-button {
   opacity: 1;
   visibility: visible;
+    top: -60px;
+
 &:hover{text-decoration: underline;}
 }
 }

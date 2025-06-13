@@ -167,6 +167,7 @@ ul {
         position: inherit;
         h2{position: inherit !important;}
         &::after{display: none;}
+        .popover-content{box-shadow: none;}
        }
       }
       &.broch{ min-height: 300px;

@@ -29,7 +29,7 @@
     line-height: 50px;
     animation: fadeInUp 1s ease-in-out;
 
-    a { color: v.$white; }
+    a { color: v.$white; font-weight: v.$font-weight-SemiBold; }
   }
 
   .slide-desc {

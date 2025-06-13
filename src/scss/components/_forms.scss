@@ -303,6 +303,21 @@ img{max-width: 16px;}
 }
 }
 
+@keyframes fadeInForm {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hidden-filed {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  &.show {
+  display: flex;
+  animation: fadeInForm 0.5s forwards;
+}
+}
+
 
 
 @media (max-width: 667px) {

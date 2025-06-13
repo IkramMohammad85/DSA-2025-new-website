@@ -183,11 +183,7 @@ text-overflow: ellipsis;}
       border-color: #217fd4;
     }
   
-    &.drop-up .toggleBtn-dropdown-menu {
-      top: auto;
-      bottom: 100%;
-      margin-bottom: 0.5rem;
-    }
+
   }
   
   .toggleBtn-dropdown.open .toggleBtn-dropdown-button::after {
@@ -197,6 +193,11 @@ text-overflow: ellipsis;}
   .toggleBtn-dropdown.open .toggleBtn-dropdown-menu {
     display: block;
   }
+      .toggleBtn-dropdown.drop-up .toggleBtn-dropdown-menu {
+      top: auto;
+      bottom: 100%;
+      margin-bottom: 0.5rem;
+    }
   
   .toggleBtn-dropdown-menu {
     display: none;

@@ -727,6 +727,7 @@ if (modal) {
 
       observer.observe(filterTrigger);
     });
+
   });
 
   //Radio button select on location and personnel
@@ -774,3 +775,22 @@ if (modal) {
 //   splide.mount();
 // });
 
+// start typing on any of the form filed then form hidden-filed show
+  document.addEventListener('DOMContentLoaded', () => {
+    const miniCtaForm = document.getElementById('miniCtaForm');
+    let hiddenFields = miniCtaForm.querySelectorAll('.hidden-filed');
+    let hasAppeared = false;
+
+    const showHiddenFields = () => {
+      if (hasAppeared) return;
+      hiddenFields.forEach(field => {
+        field.classList.add('show');
+      });
+      hasAppeared = true;
+    };
+
+    const formInputs = miniCtaForm.querySelectorAll('input, textarea, select');
+    formInputs.forEach(input => {
+      input.addEventListener('input', showHiddenFields);
+    });
+  });

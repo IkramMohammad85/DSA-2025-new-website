@@ -15,6 +15,22 @@
       color: white;
       cursor: pointer;
     }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hidden-filed {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hidden-filed.show {
+  display: block;
+  animation: fadeIn 0.5s forwards;
+}
+#miniCtaForm{width: 350px; display: grid;}
   </style>
 </head>
 <body>
@@ -68,7 +84,19 @@
     </ul>
   </div>
 </div>
-
+<div style="padding-top: 6rem; padding-bottom: 6rem;">
+<form id="miniCtaForm">
+    <select class="formSelectOption hidden-filed" id="servicesInterestS" name="servicesInterestS">
+    <option disabled="" selected="">Services of Interest</option>
+    <option value="Accounting, Financial Reporting &amp; Review">Accounting, Financial Reporting &amp; Review</option>
+</select>
+  <input type="text" placeholder="Name" />
+  <input type="email" placeholder="Email" />
+  <input type="number" placeholder="Phone"  class="hidden-filed"/>
+  <textarea placeholder="Message"></textarea>
+  <button type="submit">Submit</button>
+</form>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
 <script>
@@ -106,6 +134,34 @@
 
 
 });
+
+// document.querySelectorAll('#myForm input, #myForm textarea').forEach(field => {
+//   field.addEventListener('input', () => {
+//     document.getElementById('myForm').classList.add('expanded');
+//   });
+// });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const miniCtaForm = document.getElementById('miniCtaForm');
+    let hiddenFields = miniCtaForm.querySelectorAll('.hidden-filed');
+    let hasAppeared = false;
+
+    const showHiddenFields = () => {
+      if (hasAppeared) return;
+      hiddenFields.forEach(field => {
+        field.classList.add('show');
+      });
+      hasAppeared = true;
+    };
+
+    const formInputs = miniCtaForm.querySelectorAll('input, textarea, select');
+    formInputs.forEach(input => {
+      input.addEventListener('input', showHiddenFields);
+    });
+  });
+
+
+
 
 </script>
 </body>

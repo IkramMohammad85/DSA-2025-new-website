@@ -1054,6 +1054,9 @@ justify-content: center;
   //end
   /* Responsive adjustments */
 @media (max-width: 500px) {
+  .news-list.news-list-thumb .news-item{
+    grid-template-columns:1fr;
+  }
   .gateway-dba {
     .card-horizontal{margin-left: 0; margin-right: 0;}
     .splide__arrow{display: none;}

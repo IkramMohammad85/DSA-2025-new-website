@@ -190,7 +190,7 @@
     }
 }
 /* end */
-.masthead-logo{position: absolute; z-index: 1; top: 45%; right: 0;}
+.masthead-logo{position: absolute; z-index: 1; top: 45%; right: 16px;}
 .breadcrumb {
   padding-top: 1.5rem;
   ul {
@@ -266,6 +266,7 @@
      max-width: 556px;
     }
   }
+  .masthead-logo{display: none;}
 }
 
 @media (max-width: 642px) {

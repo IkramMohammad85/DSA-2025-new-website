@@ -370,9 +370,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (spaceBelow < requiredHeight && spaceAbove > spaceBelow) {
           dropdown.classList.add('drop-up');
-        } else {
-          dropdown.classList.remove('drop-up');
         }
+        //  else {
+        //   dropdown.classList.remove('drop-up');
+        // }
       }
     });
   });

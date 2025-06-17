@@ -190,11 +190,13 @@ input[type="radio"]:checked + .radio-btn ~ label {
 
 
   }
+  
   .experts-card{ display: grid;  grid-template-columns: repeat(3, 1fr);
     gap: 70px;
   .our-experts{border: none; margin-bottom: 0;
   .experts-detail{min-height: auto; padding-bottom: 0;}
   }
+  .our-experts{width: auto;}
   }
 .hidden{display: none !important;}
 &.find-location-list{
@@ -395,7 +397,7 @@ button{padding-right: 1rem;}
   
  .expert-name-thumbnail{position: relative; overflow: hidden;}
  .our-experts {
-  width: auto;
+  width: 242px;
   margin: 0 auto 3rem auto;
   border: solid 2px #F2F2F2;
   border-radius: 3px;
@@ -744,7 +746,7 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
       }
 @media only screen and (min-width: 1200px) {
   .find-expert-list .experts-card{
-  .our-experts{width: auto;}
+  .our-experts{width: 242px;}
 }
 }
       

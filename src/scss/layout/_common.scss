@@ -730,11 +730,13 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
       }
     }
   }
+
       }
 
       
       
 @media (max-width: 667px) {
+
 
 .follow-latest{
 .follow-updates{ 
@@ -818,8 +820,11 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
     }
   }
   //end
-  .subscribe-newsletter{flex-direction: column;}
+  .subscribe-newsletter{flex-direction: column; align-items: flex-start;
+   .input-newsletter{margin-top: 1.5rem;}
+  }
   .masthead.event-hero.news-hero-inner{height: 100%;}
   .el-article{flex-direction: column;}
+
       }
 

@@ -156,7 +156,9 @@
     p{font-weight: v.$font-weight-light;}
     .masthead__text{ justify-content: space-evenly;  padding: 0;
       h1{font-size: 38px; line-height: 50px; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; margin-bottom: 0.8rem;}
-      .text-head{margin-top: 3rem; max-width: 700px;}
+      .text-head{margin-top: 3rem; max-width: 700px;
+         .btn-outline-white{ margin-top: 2rem;}
+      }
       h3{margin-bottom: 1rem;}
     }
     &.event-hero-l2{
@@ -270,7 +272,19 @@
 }
 
 @media (max-width: 642px) {
-.masthead.event-hero{height: 1000px;}
+.masthead{
+  &.event-hero{height: 700px;
+.masthead__text{justify-content:space-evenly;
+.text-head{margin-top: 0;}
+}
+
+}
+&.asiapedia-hero{height: 1000px;
+.masthead__text{justify-content: center;
+.text-head{margin-top: 0;}
+}
+}
+}
 }
 
 @media (max-width: 556px) {

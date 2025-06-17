@@ -752,7 +752,7 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
       
       
 @media (max-width: 667px) {
-
+   .d-flex{flex-direction: column;}
 .bio-top-box{flex-direction: column;
 .bio-thumbnail{margin-bottom: 2rem; margin-right: 0;}
 .bio-details{ width: 100%;}
@@ -771,6 +771,9 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
   
   .find-expert-list{
     flex-direction: column;
+    &.search-asiapedia-list{
+       .expert-country .radio-group-wrapper{margin-right: 0; width: 100%; margin-bottom: 2rem;}
+    }
     .experts-card{
       grid-template-columns: repeat(1, 1fr);
     }
@@ -778,6 +781,8 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
   }
   .filter-form .filter-buttons{flex-wrap: wrap;}
   .our-experts .expert-name-thumbnail img{margin: 0;}
+
+
   
   ///Page menu
   .page-menu.success-stories {

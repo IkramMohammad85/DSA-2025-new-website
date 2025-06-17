@@ -38,22 +38,44 @@
     margin-bottom: 1.5rem;
     transition: transform .5s ease;
     &.yellow-icon{
-        background: rgba(255, 203, 49, 0.3);
+        background: rgba(255, 203, 49, 0.15);
     }
     &.red-icon{
-        background: rgba(237, 28, 36, 0.3);
+        background: rgba(237, 28, 36, 0.15);
     }
     &.green-icon{
-        background: rgba(26, 150, 73, 0.3);
+        background: rgba(26, 150, 73, 0.15);
     }
     &.purple-icon{
-        background: rgba(98, 112, 181, 0.3);
+        background: rgba(98, 112, 181, 0.15);
     }
 }
 .dsa-block-title {
     h3{font-size: 18px; font-weight: bold;  color: v.$blue-theme;line-height: 24px;
     a{color: v.$blue-theme;}
     }
+}
+&.core-values{ background-color: #fff; padding: 0; grid-template-columns: repeat(4, 1fr); display: grid;
+.dsa-block{ width: 258px; height: 285px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px;margin: 0;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 0px 16px;
+    &:hover{
+        .icon-block{transform: scale(1);}
+    }
+}
+.dsa-block-title {
+    h3{font-size: 20px; font-weight: v.$font-weight-Medium;  color: v.$black;line-height: 28px; font-family: v.$font-family-Poppins; text-align: center;
+    a{color: v.$black; font-weight: v.$font-weight-Medium}
+    }
+}
+
+.popover-content { background-color: v.$white;
+    width: 258px; height: 285px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px; 
+    .popover-message{font-size: 15px; line-height: 24px; color: #535353;}
+}
+.border-dsa-red{border: solid 2px v.$dsa-red}
+.border-dsa-green{border: solid 2px v.$dsa-green}
+.border-dsa-purple{border: solid 2px v.$dsa-purple}
+.border-dsa-yellow{border: solid 2px v.$dsa-yellow}
 }
 }
 //end
@@ -198,6 +220,7 @@
 }
 //end
 @media screen and (min-width: 767px) {
+
     //Why work with Dezan Shira 
     .why-work-with-DSA{
         .flex-spacing{ flex-direction: row; flex-wrap: wrap;}
@@ -270,4 +293,16 @@
             }
     } 
   }
+}
+
+@media screen and (max-width: 1100px) {
+.why-work-with-DSA.core-values{grid-template-columns: repeat(2, 1fr);gap: 2rem;
+.dsa-block, .popover-content{width: 100%;}
+}
+}
+
+@media screen and (max-width: 667px) {
+.why-work-with-DSA.core-values{grid-template-columns: repeat(1, 1fr);gap: 2rem;
+
+}
 }

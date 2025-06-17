@@ -690,6 +690,13 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
       }
   }
 }
+.bio-top-box .bio-details{
+.bio-head{
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+}
 //.our-experts{width: auto;}
 /*end */
 }
@@ -737,7 +744,10 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
       
 @media (max-width: 667px) {
 
-
+.bio-top-box{flex-direction: column;
+.bio-thumbnail{margin-bottom: 2rem; margin-right: 0;}
+.bio-details{ width: 100%;}
+  }
 .follow-latest{
 .follow-updates{ 
 &::before {display: none; }
@@ -746,8 +756,9 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
 }
 
   .clients-panel-list .c-logo{gap: 2rem;}
-  .bio-top-box, .bio-head{flex-direction: column;}
-  .bio-thumbnail{margin-bottom: 2rem;}
+  
+
+  
   
   .find-expert-list{
     flex-direction: column;

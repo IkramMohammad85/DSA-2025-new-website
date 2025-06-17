@@ -395,7 +395,7 @@ button{padding-right: 1rem;}
   
  .expert-name-thumbnail{position: relative; overflow: hidden;}
  .our-experts {
-  width: 242px;
+  width: auto;
   margin: 0 auto 3rem auto;
   border: solid 2px #F2F2F2;
   border-radius: 3px;
@@ -697,6 +697,9 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
   margin-bottom: 2rem;
 }
 }
+.find-expert-list .experts-card{
+  grid-template-columns: repeat(2, 1fr);
+}
 //.our-experts{width: auto;}
 /*end */
 }
@@ -739,7 +742,11 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
   }
 
       }
-
+@media only screen and (min-width: 1200px) {
+  .find-expert-list .experts-card{
+  .our-experts{width: auto;}
+}
+}
       
       
 @media (max-width: 667px) {
@@ -765,8 +772,10 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
     .experts-card{
       grid-template-columns: repeat(1, 1fr);
     }
+    .expert-country .radio-group-wrapper{margin-right: 0; width: 100%; margin-bottom: 2rem;}
   }
   .filter-form .filter-buttons{flex-wrap: wrap;}
+  .our-experts .expert-name-thumbnail img{margin: 0;}
   
   ///Page menu
   .page-menu.success-stories {

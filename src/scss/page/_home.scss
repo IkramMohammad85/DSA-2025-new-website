@@ -955,8 +955,8 @@ text-overflow: ellipsis;}
     margin-bottom: 0.5rem;
     font-family: v.$font-family-Poppins;
     font-weight: v.$font-weight-SemiBold;
-    line-height: 32px;
-    a{color: #222831;}
+    line-height: 32px; 
+    a{color: #222831;font-weight: v.$font-weight-SemiBold;}
 }
 .card-text {
     color: #535353;

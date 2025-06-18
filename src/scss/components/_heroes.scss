@@ -55,7 +55,7 @@
     a{color: v.$blue-theme;}
     }
 }
-&.core-values{ background-color: #fff; padding: 0; grid-template-columns: repeat(4, 1fr); display: grid;
+&.core-values{ background-color: #fff; padding: 0; grid-template-columns: repeat(4, 1fr); display: grid; gap: 2.5rem;
 .dsa-block{ width: 258px; height: 285px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 6px;margin: 0;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 0px 16px;
     &:hover{

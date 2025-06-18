@@ -1106,13 +1106,10 @@ justify-content: center;
     .card-thumbnail {
       img{position: inherit;}
     }
-
   }
-  
     .card-horizontal {
         grid-template-columns: 1fr;
         gap: 2rem;
-        
     }
     .card-image {
         width: 100%;
@@ -1139,34 +1136,9 @@ justify-content: center;
     }
 }
 .news-list{width: auto;}
-}
-
-@media (max-width: 768px) {
-    .news-section {
-      grid-template-columns: 1fr;
-      max-width: 100%;
-  
-      .news-featured {
-        width: auto;
-      }
-    }
-  
-    .left-column,
-    .right-column {
-      width: 100%;
-    }
-  
-
-  }
-
-
-  @media (max-width: 767px) {
-
-   
-    .featured-resources {
+  .featured-resources {
       width: auto;
       grid-template-columns: 1fr;
-  
       .card-2columns {
         grid-template-columns: 1fr;
         width: 100%;
@@ -1179,19 +1151,41 @@ justify-content: center;
         height: 100%;
       }
     }
-  
     .sessions-wrapper {
       flex-direction: column;
     }
-  
-
-  
     .featured-resources-heading {
       grid-template-columns: 1fr;
     }
+}
+@media (max-width: 768px) {
+    .news-section {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+  
+      .news-featured {
+        width: auto;
+      }
+    }
+    .left-column,
+    .right-column {
+      width: 100%;
+    }
   }
-
-  @media (max-width: 1360px) {
+@media (max-width: 900px) {
+    .splide-progress-wrapper{bottom: 23.5%; left: 125px;}
+  }
+@media (max-width: 1200px) {
+    .resource-splide, .our-testimonial {
+    .splide__arrow{top: inherit; bottom: -50px;}
+    .splide__arrow--next{right: inherit; left: 50px;}
+    .splide__arrow--prev{left: 0;}
+    &.splide-three-column .splide__arrow--prev{left: 0;}
+    
+  }
+  .news-featured, .news-list{max-width: 100%; width: inherit;}
+}
+@media (max-width: 1360px) {
     .card-2columns {height: 100%;
       .card-thumbnail{width: 100%;}
     }
@@ -1206,18 +1200,4 @@ justify-content: center;
         object-fit: cover;
       }
     }
-  }
-@media (max-width: 1200px) {
-    .resource-splide, .our-testimonial {
-    .splide__arrow{top: inherit; bottom: -50px;}
-    .splide__arrow--next{right: inherit; left: 50px;}
-    .splide__arrow--prev{left: 0;}
-    &.splide-three-column .splide__arrow--prev{left: 0;}
-    
-  }
-  .news-featured, .news-list{max-width: 100%; width: inherit;}
-}
-
-  @media (max-width: 900px) {
-    .splide-progress-wrapper{bottom: 23.5%; left: 125px;}
   }

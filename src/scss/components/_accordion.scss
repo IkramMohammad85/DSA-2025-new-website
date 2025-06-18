@@ -5,7 +5,7 @@
   max-width: 100%;
   .accordion-reg-button.collapsed {
     background-color: v.$white;
-    padding: 20px;
+    padding: 20px 20px;
   }
   .accordion-reg-collapse {
     background-color:  v.$white;
@@ -96,7 +96,7 @@
   }
   .accordion-reg-collapse {
     display: none;
-    padding: 15px 32px 32px 32px;
+    padding: 15px 20px 32px 20px;
     background-color: #f6f6f6;
     animation: fadeIn 0.3s ease-in-out;
     border-radius: 16px;

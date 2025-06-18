@@ -1,5 +1,32 @@
 $pricing-header-height: 80px;
 $mobile-bp-min: 1040px;
+.pricing__intro{
+    &.include-price-table {
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    .pricing__tab--country {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    .tab--active {
+    font-weight: 700;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #217fd4;
+    font-size: 18px;
+    border-left: none;
+}
+ li+li {
+    margin-left: 2rem;
+    font-size: 18px;
+}
+li{ padding: 0; margin: 0; border-left: none;}
+}
+}
+}
 
 .intro {
   &__link {
@@ -100,6 +127,7 @@ font-size: 14px;
         padding: 0.2rem 0  0.2rem 0;
         color: #858f9f;
         line-height: 24px;
+        cursor: pointer;
 
         + a {
           //margin-left: 2rem;

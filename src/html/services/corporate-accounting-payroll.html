@@ -11,7 +11,36 @@
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <link rel="stylesheet" href="../css/account-table.min.css" type="text/css">
+    <!-- <style>
 
+        .pricing__intro.include-price-table {
+    text-align: center;
+    
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    
+}
+ .pricing__intro.include-price-table .pricing__tab--country {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+}
+ .pricing__intro.include-price-table .pricing__tab--country .tab--active {
+    font-weight: 700;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #217fd4;
+    font-size: 18px;
+    border-left: none;
+}
+ .pricing__intro.include-price-table .pricing__tab--country li+li {
+    margin-left: 2rem;
+    font-size: 18px;
+}
+.pricing__intro.include-price-table  .pricing__tab--country li{ padding: 0; margin: 0; border-left: none;}
+    </style> -->
     
 </head>
 
@@ -33,7 +62,6 @@
         </div>
         <div class="masthead__bg"><img alt="Tax Services in Asia" src="/img/esg/banner-serviceV2.webp" width="1440" height="419"></div>
       </section>
-
       <section class="page-intro pt-5 pb-5">
         <div class="section-wrapper-min">
           <div class="flex-grid-row flex-grid-row--one-third">
@@ -98,7 +126,6 @@
       </div>
     </div>
       </section>
-      
       <section class="ibm-enizi-sp pt-5 pb-5" id="esg-journey">
         <div class="section-wrapper-min">
           <h2>Key Advantages of Our Tax Support</h2>
@@ -152,187 +179,756 @@
           </div>
         </div>
       </section>
-    <section class="pt-5 pb-5 pricing__country pricing--active" id="pricing-acccount">
-       
+    <section class="pricing pt-7 pb-7" id="s-price">
+    <div class="pricing__intro include-price-table ">
+        <h2>Explore solutions and packages by country</h2>
+        <ul class="pricing__tab--country">
+            <li class="tab--active"><a data-tab="#pricing-cn">China</a></li>
+            <li><a data-tab="#pricing-vn">Vietnam</a></li>
+            <li><a data-tab="#pricing-sg">Singapore</a></li>
+            <li><a data-tab="#pricing-hk">Hong Kong SAR</a></li>
+        </ul>
+    </div>
+    <div class="pricing__country pricing--active" id="pricing-cn">
         <div class="pricing__inner">
-          <div class="pricing__tab--inner"><a class="tab--active" data-tab="#pricing-table-cn">Packages</a><a data-tab="#pricing-writeup-cn">Software</a></div>
+            <div class="pricing__tab--inner"><a class="tab--active" data-tab="#pricing-table-cn">Packages</a><a data-tab="#pricing-writeup-cn">Software</a></div>
         </div>
         <div class="pricing__table pricing__content content--active" id="pricing-table-cn">
-          <div class="table-wrapper">
-            <div class="pricing__table--col pricing__table--col1">
-              <div class="pricing__header"></div>
-              <ul class="pricing__list">
-                <li style="height: 74px;"><span>Monthly rates start from (CNY)</span>
-                  <aside class="pricing__tooltip">
-                    <p>Reference price at USD1:CNY7 f/x rate.</p>
-                  </aside>
-                </li>
-                <li><span>Bookkeeping</span>
-                  <aside class="pricing__tooltip">
-                    <p>Number of bookkeeping transactions processed each month.</p>
-                  </aside>
-                </li>
-                <li><span>Statutory Tax Filing</span>
-                  <aside class="pricing__tooltip">
-                    <p>Preparation and submission of statutory tax filings.</p>
-                  </aside>
-                </li>
-                <li><span>Statutory Financial Statements</span>
-                  <aside class="pricing__tooltip">
-                    <p>Preparation and delivery of statutory monthly statements.</p>
-                  </aside>
-                </li>
-                <li><span>Online Analytics Dashboard </span>
-                  <aside class="pricing__tooltip">
-                    <p>View financial highlights and search expense items remotely on any device.</p>
-                  </aside>
-                </li>
-                <li><span>Expense Management Software </span>
-                  <aside class="pricing__tooltip">
-                    <p>A robust expense management tool for China, included at no charge for the number of users specified.</p>
-                  </aside>
-                </li>
-                <li><span>Management Reports</span>
-                  <aside class="pricing__tooltip">
-                    <p>Monthly reports catering to headquarter requirements and shared securely over MS infrastructure.</p>
-                  </aside>
-                </li>
-                <li><span>Bank and Tax Office Interfaces</span>
-                  <aside class="pricing__tooltip">
-                    <p>Local interactions with banking and tax officers to communicate on routine issues.</p>
-                  </aside>
-                </li>
-                <li><span>Virtual Meetings</span>
-                  <aside class="pricing__tooltip">
-                    <p>Regular calls to review your accounts using enterprise collaboration tools.</p>
-                  </aside>
-                </li>
-                <li><span>Advanced Online Reporting</span>
-                  <aside class="pricing__tooltip">
-                    <p>Advanced financial reporting tool powered by Microsoft Management Reporter.</p>
-                  </aside>
-                </li>
-              </ul>
-              <div class="pricing__legends">
-                <h4>Notes</h4><span class="pricing__legend pricing__legend--tick">Included</span><span class="pricing__legend pricing__legend--circle">Optional</span>
-              </div>
+            <div class="table-wrapper">
+                <div class="pricing__table--col pricing__table--col1">
+                    <div class="pricing__header"></div>
+                    <ul class="pricing__list">
+                        <li> <span>Bookkeeping</span>
+                            <aside class="pricing__tooltip">
+                                <p>Number of bookkeeping transactions processed each month.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Statutory Tax Filing</span>
+                            <aside class="pricing__tooltip">
+                                <p>Preparation and submission of statutory tax filings.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Statutory Financial Statements</span>
+                            <aside class="pricing__tooltip">
+                                <p>Preparation and delivery of statutory monthly statements.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Online Analytics Dashboard </span>
+                            <aside class="pricing__tooltip">
+                                <p>View financial highlights and search expense items remotely on any device.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Expense Management Software </span>
+                            <aside class="pricing__tooltip">
+                                <p>A robust expense management tool for China, included at no charge for the number of users specified.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Management Reports</span>
+                            <aside class="pricing__tooltip">
+                                <p>Monthly reports catering to headquarter requirements and shared securely over MS infrastructure.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Bank and Tax Office Interfaces</span>
+                            <aside class="pricing__tooltip">
+                                <p>Local interactions with banking and tax officers to communicate on routine issues.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Virtual Meetings</span>
+                            <aside class="pricing__tooltip">
+                                <p>Regular calls to review your accounts using enterprise collaboration tools.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Advanced Online Reporting</span>
+                            <aside class="pricing__tooltip">
+                                <p>Advanced financial reporting tool powered by Microsoft Management Reporter.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Monthly rates start from (CNY)</span>
+                            <aside class="pricing__tooltip">
+                                <p>Reference price at USD1:CNY7 f/x rate.</p>
+                            </aside>
+                        </li>
+                    </ul>
+                    <div class="pricing__legends">
+                        <h4>Notes</h4><span class="pricing__legend pricing__legend--tick">Included</span><span class="pricing__legend pricing__legend--circle">Optional</span>
+                    </div>
+                </div>
+                <div class="pricing__table--col pricing__table--col2">
+                    <div class="pricing__header">
+                        <h3>Starter</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For small companies with < USD 200k revenue P/A and up to 5 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 20 transactions</li>
+                        <li data-title="Statutory Tax Filing"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management Software">Includes 5 users</li>
+                        <li data-title="Management Reports"> <img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Bank and Tax Office Interfaces"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Virtual Meetings"> <img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Advanced Online Reporting"> <img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (CNY)"><span>2,000 CNY </span><span>286 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col3">
+                    <div class="pricing__header">
+                        <h3>Moving Up</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For small companies with < USD 1m revenue P/A and up to 15 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 50 transactions</li>
+                        <li data-title="Statutory Tax Filing"> <img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management Software">Includes 10 users</li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Bank and Tax Office Interfaces"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Once Monthly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (CNY)"><span>6,000 CNY </span><span>857 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col4">
+                    <div class="pricing__header">
+                        <h3>Enterprise</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For companies with more than USD 1m P/A and up to 30 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 100 transactions</li>
+                        <li data-title="Statutory Tax Filing"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management Software">Includes 15 users</li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Bank and Tax Office Interfaces"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Twice Monthly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (CNY)"><span>10,000 CNY</span><span>1,429 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col5">
+                    <div class="pricing__header">
+                        <h3>Large Enterprise</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For larger companies with customized requirements and unlimited headcount</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Unlimited</li>
+                        <li data-title="Statutory Tax Filing"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management Software">Includes 5,000 users</li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Bank and Tax Office Interfaces"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Once Weekly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (CNY)"> <span>To be discussed</span><span>&nbsp;</span></li>
+                    </ul>
+                </div>
             </div>
-            <div class="pricing__table--col pricing__table--col2">
-              <div class="pricing__header">
-                <h3>Starter</h3>
-                <aside class="pricing__tooltip">
-                  <p>For small companies with &lt; USD 200k revenue P/A and up to 5 employees</p>
-                </aside>
-              </div>
-              <ul class="pricing__list">
-                <li class="pricing__list--cost" data-title="Monthly rates start from (CNY)"><span>2,000 CNY </span><span>286 USD</span></li>
-                <li data-title="Bookkeeping">Up to 20 transactions</li>
-                <li data-title="Statutory Tax Filing"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Statutory Financial Statements"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Online Analytics Dashboard"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Expense Management Software">Includes 5 users</li>
-                <li data-title="Management Reports"><img src="/assets/img/icon-circle.svg" alt=""></li>
-                <li data-title="Bank and Tax Office Interfaces"><img src="/assets/img/icon-circle.svg" alt=""></li>
-                <li data-title="Virtual Meetings"><img src="/assets/img/icon-circle.svg" alt=""></li>
-                <li data-title="Advanced Online Reporting"><img src="/assets/img/icon-circle.svg" alt=""></li>
-              </ul>
-            </div>
-            <div class="pricing__table--col pricing__table--col3">
-              <div class="pricing__header">
-                <h3>Moving Up</h3>
-                <aside class="pricing__tooltip">
-                  <p>For small companies with &lt; USD 1m revenue P/A and up to 15 employees</p>
-                </aside>
-              </div>
-              <ul class="pricing__list">
-                <li class="pricing__list--cost" data-title="Monthly rates start from (CNY)"><span>6,000 CNY </span><span>857 USD</span></li>
-                <li data-title="Bookkeeping">Up to 50 transactions</li>
-                <li data-title="Statutory Tax Filing"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Statutory Financial Statements"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Online Analytics Dashboard"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Expense Management Software">Includes 10 users</li>
-                <li data-title="Management Reports"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Bank and Tax Office Interfaces"><img src="/assets/img/icon-circle.svg" alt=""></li>
-                <li data-title="Virtual Meetings">Once Monthly</li>
-                <li data-title="Advanced Online Reporting"><img src="/assets/img/icon-circle.svg" alt=""></li>
-              </ul>
-            </div>
-            <div class="pricing__table--col pricing__table--col4">
-              <div class="pricing__header">
-                <h3>Enterprise</h3>
-                <aside class="pricing__tooltip">
-                  <p>For companies with more than USD 1m P/A and up to 30 employees</p>
-                </aside>
-              </div>
-              <ul class="pricing__list">
-                <li class="pricing__list--cost" data-title="Monthly rates start from (CNY)"><span>10,000 CNY</span><span>1,429 USD</span></li>
-                <li data-title="Bookkeeping">Up to 100 transactions</li>
-                <li data-title="Statutory Tax Filing"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Statutory Financial Statements"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Online Analytics Dashboard"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Expense Management Software">Includes 15 users</li>
-                <li data-title="Management Reports"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Bank and Tax Office Interfaces"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Virtual Meetings">Twice Monthly</li>
-                <li data-title="Advanced Online Reporting"><img src="/assets/img/icon-tick.svg" alt=""></li>
-              </ul>
-            </div>
-            <div class="pricing__table--col pricing__table--col5">
-              <div class="pricing__header">
-                <h3>Large Enterprise</h3>
-                <aside class="pricing__tooltip">
-                  <p>For larger companies with customized requirements and unlimited headcount</p>
-                </aside>
-              </div>
-              <ul class="pricing__list">
-                <li class="pricing__list--cost" data-title="Monthly rates start from (CNY)"><span>To be discussed</span><span>&nbsp;</span></li>
-                <li data-title="Bookkeeping">Unlimited</li>
-                <li data-title="Statutory Tax Filing"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Statutory Financial Statements"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Online Analytics Dashboard"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Expense Management Software">Includes 5,000 users</li>
-                <li data-title="Management Reports"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Bank and Tax Office Interfaces"><img src="/assets/img/icon-tick.svg" alt=""></li>
-                <li data-title="Virtual Meetings">Once Weekly</li>
-                <li data-title="Advanced Online Reporting"><img src="/assets/img/icon-tick.svg" alt=""></li>
-              </ul>
-            </div>
-          </div>
         </div>
         <div class="pricing__writeup pricing__content" id="pricing-writeup-cn">
-          <div class="writeup-wrapper">
-            <p>Software options we offer for China:</p>
-            <ul>
-              <li>If you are a small business without your own accounting software, we can provide you with our secure online accounting system, powered by Microsoft, at no charge!</li>
-              <li>We can also use any locally compliant accounting software that your company owns or help you implement or integrate a custom ERP or financial system of your own.</li>
-            </ul><a href="/landing/digital-expense-management">Learn about Digitizing Expense Management in China</a>
-            <h3>Why choose us</h3>
-            <h4>Secure and integrated</h4>
-            <p>We process clients&rsquo; transactions and reporting using secure, enterprise grade financial and reporting software. Our system is a protected Microsoft processing and file sharing environment, which we customize to meet the needs of small or medium sized customers, and integrate with important productivity, reporting, and back office apps.</p>
-            <h4>Better Data and Controls</h4>
-            <p>Our accounting method provides a more controlled process with clear internal checkpoints and more robust datasets which we leverage on your behalf during your accounting cycle. At each step, we can put the right person on the job, to produce better and more streamlined outcomes without overcharging fees.</p>
-            <h4>Analytics Dashboards</h4>
-            <p>Each month, to compliment the monthly reports that you receive and the communications with your Accounting Manager, you also receive access to online PowerBI reports. These reports can be used from any device to check your monthly finances, or search for certain expense items, with just a few clicks.</p>
-            <h3>Software Features</h3>
-            <p class="less-margin">The accounting processing software that we use internally provides:</p>
-            <ul>
-              <li>easy-use&nbsp;online monthly report dashboards</li>
-              <li>seamless integration with local tax software (China Golden Tax System)</li>
-            </ul>
-            <p class="less-margin">Our accounting module can be optionally configured to integrate with other services and feature-rich tools:</p>
-            <ul>
-              <li>Customized chart of accounts and reporting</li>
-              <li>Integration with banking institutions for remote and online payment approvals and processing</li>
-              <li>Integrated Digital Expense Management software (for PO&rsquo;s and reimbursements)</li>
-              <li>Advanced reporting tools (beyond the included basic dashboards)</li>
-              <li>Robust cloud-based accounting reports in near real-time</li>
-              <li>Online HR administration</li>
-              <li>ERP</li>
-            </ul>
-            <p>We can utilize the same processing engine for all our locations in China. Clients with multiple locations can enjoy the same standards in reporting and the cost benefits of a consolidated service!</p>
-          </div>
+            <div class="writeup-wrapper">
+                <p>Software options we offer for China:</p>
+                <ul>
+                    <li>If you are a small business without your own accounting software, we can provide you with our secure online accounting system, powered by Microsoft, at no charge!</li>
+                    <li>We can also use any locally compliant accounting software that your company owns or help you implement or integrate a custom ERP or financial system of your own.</li>
+                </ul><a href="/landing/digital-expense-management">Learn about Digitizing Expense Management in China</a>
+                <h3>Why choose us</h3>
+                <h4>Secure and integrated</h4>
+                <p>We process clients’ transactions and reporting using secure, enterprise grade financial and reporting software. Our system is a protected Microsoft processing and file sharing environment, which we customize to meet the needs of small or medium sized customers, and integrate with important productivity, reporting, and back office apps.</p>
+                <h4>Better Data and Controls</h4>
+                <p>Our accounting method provides a more controlled process with clear internal checkpoints and more robust datasets which we leverage on your behalf during your accounting cycle. At each step, we can put the right person on the job, to produce better and more streamlined outcomes without overcharging fees.</p>
+                <h4>Analytics Dashboards</h4>
+                <p>Each month, to compliment the monthly reports that you receive and the communications with your Accounting Manager, you also receive access to online PowerBI reports. These reports can be used from any device to check your monthly finances, or search for certain expense items, with just a few clicks.</p>
+                <h3>Software Features</h3>
+                <p class="less-margin">The accounting processing software that we use internally provides:</p>
+                <ul>
+                    <li>easy-use online monthly report dashboards</li>
+                    <li>seamless integration with local tax software (China Golden Tax System)</li>
+                </ul>
+                <p class="less-margin">Our accounting module can be optionally configured to integrate with other services and feature-rich tools:</p>
+                <ul>
+                    <li>Customized chart of accounts and reporting</li>
+                    <li>Integration with banking institutions for remote and online payment approvals and processing</li>
+                    <li>Integrated Digital Expense Management software (for PO’s and reimbursements)</li>
+                    <li>Advanced reporting tools (beyond the included basic dashboards)</li>
+                    <li>Robust cloud-based accounting reports in near real-time</li>
+                    <li>Online HR administration</li>
+                    <li>ERP</li>
+                </ul>
+                <p>We can utilize the same processing engine for all our locations in China. Clients with multiple locations can enjoy the same standards in reporting and the cost benefits of a consolidated service!</p>
+            </div>
         </div>
-    </section>
+    </div>
+    <div class="pricing__country" id="pricing-vn">
+        <div class="pricing__inner">
+            <div class="pricing__tab--inner"><a class="tab--active" data-tab="#pricing-table-vn">Packages</a><a data-tab="#pricing-writeup-vn">Software</a></div>
+        </div>
+        <div class="pricing__table pricing__content content--active" id="pricing-table-vn">
+            <div class="table-wrapper">
+                <div class="pricing__table--col pricing__table--col1">
+                    <div class="pricing__header"></div>
+                    <ul class="pricing__list">
+                        <li> <span>Bookkeeping</span>
+                            <aside class="pricing__tooltip">
+                                <p>Number of bookkeeping transactions processed each month.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Cashier Management</span>
+                            <aside class="pricing__tooltip">
+                                <p>Number of online payments processed each month (other payment types are optional).</p>
+                            </aside>
+                        </li>
+                        <li> <span>Statutory Tax Filing</span>
+                            <aside class="pricing__tooltip">
+                                <p>Preparation and submission of statutory tax filings.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Statutory Financial Statements</span>
+                            <aside class="pricing__tooltip">
+                                <p>Preparation and delivery of statutory monthly statements.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Online Analytics Dashboard </span>
+                            <aside class="pricing__tooltip">
+                                <p>View financial highlights and search expense items remotely on any device.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Expense Management </span>
+                            <aside class="pricing__tooltip">
+                                <p>A tool for managing expense reimbursements.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Management Reports</span>
+                            <aside class="pricing__tooltip">
+                                <p>Monthly general ledger and cash flow reports in Excel format.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Bank and Tax Office Interfaces</span>
+                            <aside class="pricing__tooltip">
+                                <p>Local interactions with banking and tax officers to communicate on routine issues.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Virtual Meetings</span>
+                            <aside class="pricing__tooltip">
+                                <p>Regular calls to review your accounts using enterprise collaboration tools.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Advanced Online Reporting</span>
+                            <aside class="pricing__tooltip">
+                                <p>An advanced financial reporting tool.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Monthly rates start from (VND)</span>
+                            <aside class="pricing__tooltip">
+                                <p>Reference price at USD1:VND 23445 f/x rate.</p>
+                            </aside>
+                        </li>
+                    </ul>
+                    <div class="pricing__legends">
+                        <h4>Notes</h4><span class="pricing__legend pricing__legend--tick">Included</span><span class="pricing__legend pricing__legend--circle">Optional </span>
+                    </div>
+                </div>
+                <div class="pricing__table--col pricing__table--col2">
+                    <div class="pricing__header">
+                        <h3>Starter</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For small companies with < USD 200k revenue P/A and up to 5 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 20 transactions</li>
+                        <li data-title="Cashier Management">Up to 10 payments</li>
+                        <li data-title="Statutory Tax Filing"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management">Not yet available</li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Bank and Tax Office Interfaces"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Virtual Meetings"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (VND)"><span>4,640,000 VND</span><span>200 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col3">
+                    <div class="pricing__header">
+                        <h3>Moving Up</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For small companies with < USD 1m revenue P/A and up to 15 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 50 transactions</li>
+                        <li data-title="Cashier Management">Up to 25 payments</li>
+                        <li data-title="Statutory Tax Filing"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management">Not yet available</li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Bank and Tax Office Interfaces"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Once Monthly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (VND)"><span>16,242,000 VND</span><span>700 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col4">
+                    <div class="pricing__header">
+                        <h3>Enterprise</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For companies with more than USD 1m P/A and up to 30 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 100 transactions</li>
+                        <li data-title="Cashier Management">Up to 50 payments</li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Bank and Tax Office Interfaces"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Twice Monthly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (VND)"><span>20,882,000 VND</span><span>900 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col5">
+                    <div class="pricing__header">
+                        <h3>Large Enterprise</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For larger companies with customized requirements and unlimited headcount</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Unlimited</li>
+                        <li data-title="Cashier Management">Unlimited</li>
+                        <li data-title="Statutory Tax Filing"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Analytics Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Bank and Tax Office Interfaces"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Once Weekly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (VND)"><span>To be discussed</span><span>&nbsp;</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pricing__writeup pricing__content" id="pricing-writeup-vn">
+            <div class="writeup-wrapper">
+                <p>Software options we offer for Vietnam:</p>
+                <ul>
+                    <li>If you do not have your own accounting software and are a smaller business, we can provide you with our secure online accounting system, AMIS.VN at no charge.</li>
+                    <li>Alternatively, we can also use any locally compliant accounting software that your company owns or help you to implement or integrate a customize ERP or financial system of your own.</li>
+                </ul>
+                <h3>About AMIS</h3>
+                <p>AMIS is a secure and locally compliant software. It is popular in Vietnam among small and medium sized companies operating in the market. </p>
+                <p>We own the software but provide it to our smaller clients as an included part of our basic services. We also pass the realized efficiency savings of using this software back to you as a value-add.</p>
+                <p>We process clients’ transactions and reporting using this secure financial and reporting software. This provides a more controlled process with clear internal checkpoints, and more robust data sets, which we can leverage throughout your accounting cycle on your behalf. At each step, we put the right person to the job, to produce better and more streamlined outcomes, without overcharging fees.</p>
+                <p>Each month, to compliment the monthly reports that you receive and the communications with your Accounting Manager, you will also have access to online reports by MISA. These reports can be accessed from any device to check your monthly finances, or search for certain expense items, with just a few clicks.</p>
+                <h3>AMIS.VN Features</h3>
+                <ul>
+                    <li>Easy-use online monthly report dashboards</li>
+                    <li>Online reports and item searching</li>
+                    <li>Accessible from any PC or mobile device (version on mobile is integrated with AI application such as CFO features and HR features which allow the CEO to grasp all the finance and human resource situations of the company with a few simple questions)</li>
+                    <li>Invoice management functionality</li>
+                    <li>Banking integration for remote and online bill payments and bank reconciliation (some institutions only)</li>
+                    <li>Seamless integration with local tax software</li>
+                </ul>
+                <p class="less-margin">Optionally, depending on the clients’ needs, we can configure our recommended accounting software to provide:</p>
+                <ul>
+                    <li>Customized chart of accounts and reporting</li>
+                    <li>Advanced reporting tools</li>
+                    <li>ERP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pricing__country" id="pricing-sg">
+        <div class="pricing__inner">
+            <div class="pricing__tab--inner"><a class="tab--active" data-tab="#pricing-table-sg">Packages</a><a data-tab="#pricing-writeup-sg">Software</a></div>
+        </div>
+        <div class="pricing__table pricing__content content--active" id="pricing-table-sg">
+            <div class="table-wrapper">
+                <div class="pricing__table--col pricing__table--col1">
+                    <div class="pricing__header"></div>
+                    <ul class="pricing__list">
+                        <li> <span>Bookkeeping</span>
+                            <aside class="pricing__tooltip">
+                                <p>Number of bookkeeping transactions processed each month.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Cashier Management</span>
+                            <aside class="pricing__tooltip">
+                                <p>Number of online payments processed each month (other payment types are optional).</p>
+                            </aside>
+                        </li>
+                        <li> <span>Multiple Currency Option</span>
+                            <aside class="pricing__tooltip">
+                                <p>Bookkeeping in multiple currencies.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Statutory Financial Statements</span>
+                            <aside class="pricing__tooltip">
+                                <p>Preparation and delivery of statutory monthly statements.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Online Report Dashboard </span>
+                            <aside class="pricing__tooltip">
+                                <p>View financial highlights and search expense items remotely on any device.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Expense Management </span>
+                            <aside class="pricing__tooltip">
+                                <p>A tool for managing expense reimbursements.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Management Reports</span>
+                            <aside class="pricing__tooltip">
+                                <p>Monthly general ledger and AR & AP reports in Excel format.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Preferred Accounting Software</span>
+                            <aside class="pricing__tooltip">
+                                <p>Including XERO, MYOB, USB, Oracle, ACCPAC or Zetta System among other.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Virtual Meetings</span>
+                            <aside class="pricing__tooltip">
+                                <p>Regular calls to review your accounts using enterprise collaboration tools.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Advanced Online Reporting</span>
+                            <aside class="pricing__tooltip">
+                                <p>Advanced financial reporting tool powered by a reporting tool integration.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Monthly rates start from (SGD)</span>
+                            <aside class="pricing__tooltip">
+                                <p>Reference price at USD1:SGD 1.39 f/x rate.</p>
+                            </aside>
+                        </li>
+                    </ul>
+                    <div class="pricing__legends">
+                        <h4>Notes</h4><span class="pricing__legend pricing__legend--tick">Included</span><span class="pricing__legend pricing__legend--circle">Optional </span>
+                    </div>
+                </div>
+                <div class="pricing__table--col pricing__table--col2">
+                    <div class="pricing__header">
+                        <h3>Starter</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For small companies with < USD 200k revenue P/A and up to 5 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 20 transactions</li>
+                        <li data-title="Cashier Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Multiple Currency Option"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Report Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Preferred Accounting Software"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (SGD)"><span>100 SGD</span><span>72 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col3">
+                    <div class="pricing__header">
+                        <h3>Moving Up</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For small companies with < USD 1m revenue P/A and up to 15 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 50 transactions</li>
+                        <li data-title="Cashier Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Multiple Currency Option"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Report Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Preferred Accounting Software"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Once Monthly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (SGD)"><span>250 SGD</span><span>180 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col4">
+                    <div class="pricing__header">
+                        <h3>Enterprise</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For companies with more than USD 1m P/A and up to 30 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 100 transactions</li>
+                        <li data-title="Cashier Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Multiple Currency Option"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Report Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Preferred Accounting Software"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Twice Monthly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (SGD)"><span>400 SGD</span><span>287 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col5">
+                    <div class="pricing__header">
+                        <h3>Large Enterprise</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For larger companies with customized requirements and unlimited headcount</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Unlimited</li>
+                        <li data-title="Cashier Management"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Multiple Currency Option"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Report Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Preferred Accounting Software"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Once Weekly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (SGD)"><span>To be discussed</span><span>&nbsp;</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pricing__writeup pricing__content" id="pricing-writeup-sg">
+            <div class="writeup-wrapper">
+                <p>We offer accounting software options to clients in Singapore:</p>
+                <ul>
+                    <li>If you do not have your own accounting software, we’ll recommend XERO, and as a XERO Partner we can help provide and get you started on this secure online accounting platform, at no charge.</li>
+                    <li>Alternatively, if your organization uses another accounting, financial or ERP system, we can help you implement, integrate, or customize it for local compliance.</li>
+                </ul>
+                <h3>About XERO</h3>
+                <p>XERO is a secure software used by tens of thousands of small and medium sized companies around the world.</p>
+                <p>We include XERO as a part of our basic services for our clients with smaller businesses. We also pass the realized efficiency savings of using this software back to you as a value-add.</p>
+                <p>We process clients’ transactions and reporting using this secure financial and reporting software. This provides a more controlled process with clear internal checkpoints, and more robust data sets, which we can leverage throughout your accounting cycle on your behalf. At each step, we put the right person on the job, to produce better and more streamlined outcomes, without overcharging fees.</p>
+                <p>Each month, to compliment the monthly reports that you receive and the communications with your Accounting Manager, you will also have access to online reports by XERO. These reports can be accessed from any device to check your monthly finances, or search for certain expense items, with just a few clicks.</p>
+                <h3>XERO Features</h3>
+                <ul>
+                    <li>Easy-use online monthly report dashboards</li>
+                    <li>Invoice management functionality</li>
+                    <li>Expense management modules for PO’s and reimbursements</li>
+                    <li>Basic payroll management</li>
+                    <li>Seamless integration with banking institutions for remote and online bill payments and bank reconciliation</li>
+                </ul>
+                <p class="less-margin">Optionally, depending on the clients’ needs, we can configure our recommended accounting software to provide:</p>
+                <ul>
+                    <li>Customized chart of accounts and reporting</li>
+                    <li>Inventory management</li>
+                    <li>Claims management</li>
+                    <li>Advanced reporting tools: Robust cloud-based accounting reports in near real time</li>
+                    <li>Online HR administration</li>
+                    <li>ERP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pricing__country" id="pricing-hk">
+        <div class="pricing__inner">
+            <div class="pricing__tab--inner"><a class="tab--active" data-tab="#pricing-table-hk">Packages</a><a data-tab="#pricing-writeup-hk">Software</a></div>
+        </div>
+        <div class="pricing__table pricing__content content--active" id="pricing-table-hk">
+            <div class="table-wrapper">
+                <div class="pricing__table--col pricing__table--col1">
+                    <div class="pricing__header"></div>
+                    <ul class="pricing__list">
+                        <li> <span>Bookkeeping</span>
+                            <aside class="pricing__tooltip">
+                                <p>Number of bookkeeping transactions processed each month.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Cashier Management</span>
+                            <aside class="pricing__tooltip">
+                                <p>Number of online payments processed each month (other payment types are optional)</p>
+                            </aside>
+                        </li>
+                        <li> <span>Multiple Currency Option</span>
+                            <aside class="pricing__tooltip">
+                                <p>Bookkeeping in multiple currencies.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Statutory Financial Statements</span>
+                            <aside class="pricing__tooltip">
+                                <p>Preparation and delivery of statutory monthly statements.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Online Report Dashboard </span>
+                            <aside class="pricing__tooltip">
+                                <p>View financial highlights and search expense items remotely on any device.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Expense Management </span>
+                            <aside class="pricing__tooltip">
+                                <p>A tool for managing expense reimbursements.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Management Reports</span>
+                            <aside class="pricing__tooltip">
+                                <p>Monthly general ledger and AR & AP reports in Excel format.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Subscription to XERO</span>
+                            <aside class="pricing__tooltip">
+                                <p>Invite unlimited users to XERO.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Virtual Meetings</span>
+                            <aside class="pricing__tooltip">
+                                <p>Regular calls to review your accounts using enterprise collaboration tools.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Advanced Online Reporting</span>
+                            <aside class="pricing__tooltip">
+                                <p>Advanced financial reporting tool powered by Microsoft Management Reporter.</p>
+                            </aside>
+                        </li>
+                        <li> <span>Monthly rates start from (HKD)</span>
+                            <aside class="pricing__tooltip">
+                                <p>Reference price at USD1:HKD 7.7 f/x rate.</p>
+                            </aside>
+                        </li>
+                    </ul>
+                    <div class="pricing__legends">
+                        <h4>Notes</h4><span class="pricing__legend pricing__legend--tick">Included</span><span class="pricing__legend pricing__legend--circle">Optional </span>
+                    </div>
+                </div>
+                <div class="pricing__table--col pricing__table--col2">
+                    <div class="pricing__header">
+                        <h3>Starter</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For small companies with < USD 200k revenue P/A and up to 5 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 20 transactions</li>
+                        <li data-title="Cashier Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Multiple Currency Option"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Report Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Subscription to XERO"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (HKD)"><span>800 HKD</span><span>104 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col3">
+                    <div class="pricing__header">
+                        <h3>Moving Up</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For small companies with < USD 1m revenue P/A and up to 15 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 50 transactions</li>
+                        <li data-title="Cashier Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Multiple Currency Option"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Report Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Subscription to XERO"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Once Monthly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (HKD)"><span>1,800 HKD</span><span>234 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col4">
+                    <div class="pricing__header">
+                        <h3>Enterprise</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For companies with more than USD 1m P/A and up to 30 employees</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Up to 100 transactions</li>
+                        <li data-title="Cashier Management"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li data-title="Multiple Currency Option"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Report Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Subscription to XERO"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Twice Monthly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-circle.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (HKD)"><span>3,200 HKD</span><span>413 USD</span></li>
+                    </ul>
+                </div>
+                <div class="pricing__table--col pricing__table--col5">
+                    <div class="pricing__header">
+                        <h3>Large Enterprise</h3>
+                        <aside class="pricing__tooltip">
+                            <p>For larger companies with customized requirements and unlimited headcount</p>
+                        </aside>
+                    </div>
+                    <ul class="pricing__list">
+                        <li data-title="Bookkeeping">Unlimited</li>
+                        <li data-title="Cashier Management"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Multiple Currency Option"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Statutory Financial Statements"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Online Report Dashboard"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Expense Management"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Management Reports"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Subscription to XERO"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li data-title="Virtual Meetings">Once Weekly</li>
+                        <li data-title="Advanced Online Reporting"><img src="/img/icon-tick.svg" alt=""></li>
+                        <li class="pricing__list--cost" data-title="Monthly rates start from (HKD)"><span>To be discussed</span><span>&nbsp;</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pricing__writeup pricing__content" id="pricing-writeup-hk">
+            <div class="writeup-wrapper">
+                <p>We offer accounting software options to clients in Hong Kong SAR:</p>
+                <ul>
+                    <li>If you do not have your own accounting software, we’ll recommend XERO, and as a XERO Partner we can help provide and get you started on this secure online accounting platform, at no charge.</li>
+                    <li>Alternatively, if your organization uses another accounting, financial or ERP system, we can help you implement, integrate, or customize it for local compliance.</li>
+                </ul>
+                <h3>About XERO</h3>
+                <p>XERO is a secure software used by tens of thousands of small and medium sized companies around the world.</p>
+                <p>We include XERO as a part of our basic services for our clients with smaller businesses. We also pass the realized efficiency savings of using this software back to you as a value-add.</p>
+                <p>We process clients’ transactions and reporting using this secure financial and reporting software. This provides a more controlled process with clear internal checkpoints, and more robust data sets, which we can leverage throughout your accounting cycle on your behalf. At each step, we put the right person on the job, to produce better and more streamlined outcomes, without overcharging fees.</p>
+                <p>Each month, to compliment the monthly reports that you receive and the communications with your Accounting Manager, you will also have access to online reports by XERO. These reports can be accessed from any device to check your monthly finances, or search for certain expense items, with just a few clicks.</p>
+                <h3>XERO Features</h3>
+                <ul>
+                    <li>Easy-use online monthly report dashboards</li>
+                    <li>Invoice management functionality</li>
+                    <li>Expense management modules for PO’s and reimbursements</li>
+                    <li>Basic payroll management</li>
+                    <li>Seamless integration with banking institutions for remote and online bill payments and bank reconciliation</li>
+                </ul>
+                <p class="less-margin">Optionally, depending on the clients’ needs, we can configure our recommended accounting software to provide:</p>
+                <ul>
+                    <li>Customized chart of accounts and reporting</li>
+                    <li>Inventory management</li>
+                    <li>Claims management</li>
+                    <li>Advanced reporting tools: Robust cloud-based accounting reports in near real-time</li>
+                    <li>Online HR administration</li>
+                    <li>ERP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
       <div class="section-light-blu-bg">
         <div class="section-wrapper regular-pagination resource-video">
         <div class="splide" data-per-page="1" data-autoplay="false"
@@ -692,7 +1288,7 @@
 
 
       </section>
-      <section class="pricing pt-5 pb-5" id="s-price">  
+      <section class="pricing pt-5 pb-5">  
         <div class="section-wrapper-min">
           <div class="flex-spacing regular-pagination resource-splide">
             <div class="pricing__intro">
@@ -700,14 +1296,14 @@
               <div class="insights-resources">
                 <button class="insights-resources__toggle">Expert Videos</button>
                 <ul class="pricing__tab--country insights-resources__menu">
-                  <li><a data-tab="#pricing-cn">Expert Videos</a></li>
-                  <li><a data-tab="#pricing-in">Brochures</a></li>
-                  <li class="tab--active"><a data-tab="#pricing-vn">Case Studies</a></li>
-                  <li><a data-tab="#pricing-asean">News and Events</a></li>
+                  <li><a data-tab="#expert-videos">Expert Videos</a></li>
+                  <li><a data-tab="#brochures">Brochures</a></li>
+                  <li class="tab--active"><a data-tab="#case-studies">Case Studies</a></li>
+                  <li><a data-tab="#news-events">News and Events</a></li>
                 </ul>
               </div>
             </div>
-            <div class="pricing__country" id="pricing-cn">
+            <div class="pricing__country" id="expert-videos">
               
       
                   <div class="bp-block">
@@ -783,7 +1379,7 @@
               </div>
             
             </div>
-            <div class="pricing__country pricing--active" id="pricing-vn">
+            <div class="pricing__country pricing--active" id="case-studies">
               
                 <div class="bp-block">
                   <div class="splide" data-per-page="2" data-autoplay="false" data-pagination="false"
@@ -834,7 +1430,7 @@
                 </div>
               
             </div>
-            <div class="pricing__country" id="pricing-in">
+            <div class="pricing__country" id="brochures">
                   <div class="bp-block">
                     <div class="splide" data-per-page="2" data-autoplay="false" data-pagination="false"
                 data-arrows="true" data-type="slide"
@@ -914,7 +1510,7 @@
            
         
           </div>
-          <div class="pricing__country" id="pricing-asean">
+          <div class="pricing__country" id="news-events">
          
               <div class="bp-block">
                 <div class="right-column">
@@ -1767,103 +2363,11 @@
       </div>
     </div>
     
-    <!-- <script>
-      const modal = document.getElementById("center-popup");
-      const closeBtn = modal.querySelector(".popup-close");
-      const video = document.getElementById("eventVideo");
-    
-      // Add click event to all video triggers
-      document.querySelectorAll('.event-video-item').forEach(trigger => {
-        trigger.addEventListener('click', e => {
-          e.preventDefault();
-          video.src = trigger.getAttribute("src");
-          video.poster = trigger.getAttribute("data-cover");
-          modal.classList.add('active');
-        });
-      });
-    
-      // Close popup when clicking close button or outside
-      modal.addEventListener("click", function(e) {
-        if (e.target === modal || e.target.classList.contains("popup-close")) {
-          modal.classList.remove("active");
-          video.pause();
-          video.currentTime = 0; // optional: reset playback to start
-        }
-      });
-    </script> -->
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const buttons = document.querySelectorAll("[data-show-on-click]");
-      
-        buttons.forEach((button) => {
-          const targetClass = button.getAttribute("data-show-on-click");
-      
-          button.addEventListener("click", function () {
-            const target = document.querySelector(`.${targetClass}`);
-      
-            if (!target) return;
-      
-            // Toggle visibility
-            if (target.style.display === "block") {
-              target.style.display = "none";
-            } else {
-              target.style.display = "block";
-            }
-          });
-        });
-      });
-      </script> -->
+   
 
       
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
-<script>
-// Accounting Tabs: Country Tabs
-if (document.querySelector('.pricing') !== null) {
-  let showCountry;
-  const pricingCountryTabs = document.querySelectorAll(".pricing__tab--country a");
-  const countryItems = document.querySelectorAll(".pricing__country");
 
-  if (pricingCountryTabs.length > 0) {
-    pricingCountryTabs.forEach(tab => tab.addEventListener('click', function () {
-      if (this.parentElement.classList.contains("tab--active")) {
-        return
-      } else {
-        pricingCountryTabs.forEach(tab => tab.parentElement.classList.remove("tab--active"));
-        this.parentElement.classList.add("tab--active");
-        showCountry = document.querySelector(this.dataset.tab);
-        countryItems.forEach(country => country.classList.remove("pricing--active"));
-        showCountry.classList.add("pricing--active");
-      }
-    }));
-  }
-}
-
-// Accounting Tabs: Pricing Content Tabs
-function countryTab(country) {
-  let showItem;
-  const tabs = country.querySelectorAll('.pricing__tab--inner a');
-  const items = country.querySelectorAll('.pricing__content');
-
-  tabs.forEach(tab => tab.addEventListener('click', function () {
-    if(this.classList.contains('tab--active')) {
-      return
-    } else {
-      tabs.forEach(tab => tab.classList.remove("tab--active"));
-      this.classList.add("tab--active");
-      showItem = document.querySelector(this.dataset.tab);
-      items.forEach(item => item.classList.remove("content--active"));
-      showItem.classList.add("content--active");      
-    }
-  }));
-}
-
-if (document.querySelector('.pricing__country') !== null) {
-  const countries = document.querySelectorAll('.pricing__country');
-  countries.forEach(function(country) {
-    countryTab(country);
-  });
-}
-</script>
 </body>
 </html>

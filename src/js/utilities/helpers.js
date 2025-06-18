@@ -46,11 +46,57 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+ /** Pricing Tabs updated JS**/
+document.querySelectorAll('.pricing').forEach(pricingSection => {
+  const outerTabs = pricingSection.querySelectorAll('.pricing__tab--country li a');
+  const outerContents = pricingSection.querySelectorAll('.pricing__country');
 
+  if (outerTabs.length > 0 && outerContents.length > 0) {
+    outerTabs.forEach(tab => {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        outerTabs.forEach(t => t.parentElement.classList.remove('tab--active'));
+        outerContents.forEach(c => c.classList.remove('pricing--active'));
+
+        this.parentElement.classList.add('tab--active');
+        const targetId = this.getAttribute('data-tab');
+        const target = pricingSection.querySelector(targetId);
+        if (target) {
+          target.classList.add('pricing--active');
+        }
+      });
+    });
+  }
+
+  // inner (nested) tabs control
+  const countries = pricingSection.querySelectorAll('.pricing__country');
+  countries.forEach(country => {
+    const innerTabs = country.querySelectorAll('.pricing__tab--inner a');
+    const innerContents = country.querySelectorAll('.pricing__content');
+
+    if (innerTabs.length > 0 && innerContents.length > 0) {
+      innerTabs.forEach(tab => {
+        tab.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          innerTabs.forEach(t => t.classList.remove('tab--active'));
+          innerContents.forEach(c => c.classList.remove('content--active'));
+
+          this.classList.add('tab--active');
+          const targetId = this.getAttribute('data-tab');
+          const target = country.querySelector(targetId);
+          if (target) {
+            target.classList.add('content--active');
+          }
+        });
+      });
+    }
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
-  /** Pricing Tabs */
+  /** Pricing Tabs
   const tabs = document.querySelectorAll('.pricing__tab--country li a');
   const tabContents = document.querySelectorAll('.pricing__country');
 
@@ -80,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     });
-  }
+  } */
      // change image on hover card-btn
      document.querySelectorAll('[data-imageChangeHover]').forEach(el => {
       const targetSelector = el.dataset.imagechangehover;

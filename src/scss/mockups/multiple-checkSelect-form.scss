@@ -5,12 +5,22 @@
 
 	.selectbox {
 		position: relative;
+        display: flex
+;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    background-color: #fff;
+ 
+padding: .5rem .75rem;
+    gap: .5rem;
 		select {
 			width: 100%;
-			font-weight: normal;
-			border-radius: 3px;
-			color: #58585b;
-			font-size: .9375rem;
+			border: none;
+            background-color: transparent;
+            background: transparent url(../img/events/select-arrow.svg) no-repeat 96% 50%;
+            padding: 0;
 		}
 	}
 	.selectbox-over {
@@ -58,28 +68,42 @@
 }
 
 .career-search_form {
-    background: #f7f7f7;
-    padding: 1rem;
-    box-shadow: rgba(17, 17, 26, .1) 0 1px 0;
-    flex-direction: column;
-    border: 0;
-    display: flex
-;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
+    display: flex;
+        position: sticky;
+    top: 85px;
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 1;
+        width: 99.5vw;
+    margin-left: calc(-50vw + 50%);
+
+    
+}
+.selectbox-with-checkbox{max-width: 265px;}
+.search-btn {
+    padding: .7rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #207fd4;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .3s ease;
+    height: 42px;
 }
 @media (min-width: 667px) {
     .events-filter__form.career-search_form{
- 
-        flex-direction: row;
-        padding-bottom: 0;
+    gap: 1rem;
+    justify-content: center;
+
     
 }}
 
 @media (min-width: 767px) {
 	.selectbox-with-checkbox {
 		flex: 0 0 calc(30% - 1.5%);
-		margin-right: 0.3rem;
+	
 		.checkedValues{margin-bottom: 0;}
 		&.vertical-form{ margin-right: 0px;
 			.selectbox-checkboxes{width: 230px;}
@@ -89,7 +113,7 @@
 
   @media (min-width: 1100px) {
 	.selectbox-with-checkbox {
-		margin-right: 0.4rem;
+		
 		.checkedValues{margin-bottom: 0;}
 		&.vertical-form{ margin-right: 0px;
 			.selectbox-checkboxes{width: 162px;}
@@ -98,7 +122,7 @@
   }
   @media (min-width: 1300px) {
 	.selectbox-with-checkbox {
-		margin-right: 0.7rem;
+		
 		.checkedValues{margin-bottom: 0;}
 		&.vertical-form{ margin-right: 0px;
 			.selectbox-checkboxes{width: 201px;}
@@ -107,7 +131,7 @@
   }
   @media (min-width: 1400px) {
 	.selectbox-with-checkbox {
-		margin-right: 1rem;
+		
 		.checkedValues{margin-bottom: 0;}
 		&.vertical-form{ margin-right: 0px;
 			.selectbox-checkboxes{width: 230px;}

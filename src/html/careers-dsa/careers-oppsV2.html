@@ -82,119 +82,118 @@
 </button>
 </div>
             </form> -->
-          <form class="career-search_form events-filter__form" action="events/search" method="GET">
+<form class="career-search_form events-filter__form" action="career/search" method="GET" id="career_search_form">
             <div class="selectbox-with-checkbox">
               <div class="selectbox">
+                <span class="select-icon">
+    <img src="/img/events/l-mark-black.svg" alt="Country">
+  </span>
                 <select>
                   <option>By Location</option>
                 </select>
                 <div class="selectbox-over"></div>
               </div>
               <div class="selectbox-checkboxes d-none">
-                <label for="china">
-                  <input id="china" type="checkbox" data-label="China">                    China
-                </label>
-                <label for="india">
-                  <input id="india" type="checkbox" data-label="India">                    India
-                </label>
-                <label for="vietnam">
-                  <input id="vietnam" type="checkbox" data-label="Vietnam">                    Vietnam
-                </label>
-                <label for="hong-kong">
-                  <input id="hong-kong" type="checkbox" data-label="Hong Kong">                    Hong Kong
-                </label>
-                <label for="singapore">
-                  <input id="singapore" type="checkbox" data-label="Singapore">                    Singapore
-                </label>
-                <label for="other-regions">
-                  <input id="other-regions" type="checkbox" data-label="Other Regions">                    Other Regions
-                </label>
-              </div>
+				                <label for="location_china">
+                  <input class="location_checkbox" id="location_china" name="location[]" type="checkbox" data-label="China" value="china"> China                </label>
+				                <label for="location_hongkong">
+                  <input class="location_checkbox" id="location_hongkong" name="location[]" type="checkbox" data-label="Hong Kong" value="hongkong"> Hong Kong                </label>
+				                <label for="location_india">
+                  <input class="location_checkbox" id="location_india" name="location[]" type="checkbox" data-label="India" value="india"> India                </label>
+				                <label for="location_vietnam">
+                  <input class="location_checkbox" id="location_vietnam" name="location[]" type="checkbox" data-label="Vietnam" value="vietnam"> Vietnam                </label>
+				                <label for="location_singapore">
+                  <input class="location_checkbox" id="location_singapore" name="location[]" type="checkbox" data-label="Singapore" value="singapore"> Singapore                </label>
+				                <label for="location_indonesia">
+                  <input class="location_checkbox" id="location_indonesia" name="location[]" type="checkbox" data-label="Indonesia" value="indonesia"> Indonesia                </label>
+				                <label for="location_malaysia">
+                  <input class="location_checkbox" id="location_malaysia" name="location[]" type="checkbox" data-label="Malaysia" value="malaysia"> Malaysia                </label>
+				                <label for="location_dubai">
+                  <input class="location_checkbox" id="location_dubai" name="location[]" type="checkbox" data-label="Dubai" value="dubai"> Dubai                </label>
+				                <label for="location_other-regions">
+                  <input class="location_checkbox" id="location_other-regions" name="location[]" type="checkbox" data-label="Other Regions" value="other-regions"> Other Regions                </label>
+				              </div>
               <div class="checkedValues"></div>
             </div>
             <div class="selectbox-with-checkbox">
               <div class="selectbox">
+                <span class="select-icon">
+    <img src="/img/events/list-icon.svg" alt="Function">
+  </span>
                 <select>
                   <option>Function </option>
                 </select>
                 <div class="selectbox-over"></div>
               </div>
               <div class="selectbox-checkboxes d-none">
-                <label for="AsiaBriefingEditorial">
-                  <input id="AsiaBriefingEditorial" checked="" name="type_detail[]" type="checkbox" value="AsiaBriefingEditorial" data-label="Asia Briefing Editorial"> Asia Briefing Editorial
-                </label>
-                <label for="InternationalBusinessAdvisory">
-                  <input id="InternationalBusinessAdvisory" name="type_detail[]" type="checkbox" value="InternationalBusinessAdvisory" data-label="International Business Advisory"> International Business Advisory
-                </label>
-                <label for="marketing">
-                  <input id="marketing" name="type_detail[]" type="checkbox" value="marketing" data-label="Marketing"> Marketing
-                </label>
-                <label for="BusinessAdvisoryServices">
-                  <input id="BusinessAdvisoryServices" name="type_detail[]" type="checkbox" value="BusinessAdvisoryServices" data-label="Business Advisory Services"> Business Advisory Services
-                </label>
-                <label for="CorporateAccountingServices">
-                  <input id="CorporateAccountingServices" name="type_detail[]" type="checkbox" value="CorporateAccountingServices" data-label="Corporate Accounting Services"> Corporate Accounting Services
-                </label>
-                <label for="it">
-                  <input id="it" name="type_detail[]" type="checkbox" value="it" data-label="IT"> IT
-                </label>
-                <label for="HRAdministration">
-                  <input id="HRAdministration" name="type_detail[]" type="checkbox" value="HRAdministration" data-label="HR &amp; Administration"> HR &amp; Administration
-                </label>
-              </div>
+
+			                  <label for="function_Asia Briefing Editorial">
+                  <input class="function_checkbox" id="function_Asia Briefing Editorial" name="function[]" type="checkbox" data-label="Asia Briefing Editorial" value="Asia+Briefing+Editorial"> Asia Briefing Editorial                </label>
+				                <label for="function_International Business Advisory">
+                  <input class="function_checkbox" id="function_International Business Advisory" name="function[]" type="checkbox" data-label="International Business Advisory" value="International+Business+Advisory"> International Business Advisory                </label>
+				                <label for="function_Marketing">
+                  <input class="function_checkbox" id="function_Marketing" name="function[]" type="checkbox" data-label="Marketing" value="Marketing"> Marketing                </label>
+				                <label for="function_Business Advisory Services">
+                  <input class="function_checkbox" id="function_Business Advisory Services" name="function[]" type="checkbox" data-label="Business Advisory Services" value="Business+Advisory+Services"> Business Advisory Services                </label>
+				                <label for="function_Corporate Accounting Services">
+                  <input class="function_checkbox" id="function_Corporate Accounting Services" name="function[]" type="checkbox" data-label="Corporate Accounting Services" value="Corporate+Accounting+Services"> Corporate Accounting Services                </label>
+				                <label for="function_IT">
+                  <input class="function_checkbox" id="function_IT" name="function[]" type="checkbox" data-label="IT" value="IT"> IT                </label>
+				                <label for="function_HR &amp; Administration">
+                  <input class="function_checkbox" id="function_HR &amp; Administration" name="function[]" type="checkbox" data-label="HR &amp; Administration" value="HR+%26+Administration"> HR &amp; Administration                </label>
+				              </div>
               <div class="checkedValues"></div>
             </div>
             <div class="selectbox-with-checkbox">
               <div class="selectbox">
+                <span class="select-icon">
+    <img src="/img/events/list-icon.svg" alt="Function">
+  </span>
                 <select>
                   <option> Role</option>
                 </select>
                 <div class="selectbox-over"></div>
               </div>
               <div class="selectbox-checkboxes d-none">
-                <label for="role_all">
-                  <input id="role_all" name="role[]" value="all" type="checkbox" data-label="All"> All
-                </label>
-                <label for="assistant">
-                  <input id="assistant" name="role[]" type="checkbox" value="assistant" data-label="Assistant (Intern)"> Assistant (Intern)
-                </label>
-                <label for="associate">
-                  <input id="associate" name="role[]" type="checkbox" value="associate" data-label="Associate"> Associate
-                </label>
-                <label for="manager">
-                  <input id="manager" name="role[]" type="checkbox" value="manager" data-label="Manager"> Manager
-                </label>
-                <label for="director">
-                  <input id="director" name="role[]" type="checkbox" value="director" data-label="Director"> Director
-                </label>
-                <label for="researcheditorial">
-                  <input id="researcheditorial" name="role[]" type="checkbox" value="researcheditorial" data-label="Research &amp; Editorial"> Research &amp; Editorial
-                </label>
+
+			  	                <label for="role_Assistant (Intern)">
+                  <input class="role_checkbox" id="role_Assistant (Intern)" name="role[]" type="checkbox" data-label="Assistant (Intern)" value="Assistant+%28Intern%29"> Assistant (Intern)                </label>
+				                <label for="role_Associate">
+                  <input class="role_checkbox" id="role_Associate" name="role[]" type="checkbox" data-label="Associate" value="Associate"> Associate                </label>
+				                <label for="role_Manager">
+                  <input class="role_checkbox" id="role_Manager" name="role[]" type="checkbox" data-label="Manager" value="Manager"> Manager                </label>
+				                <label for="role_Director">
+                  <input class="role_checkbox" id="role_Director" name="role[]" type="checkbox" data-label="Director" value="Director"> Director                </label>
+				                <label for="role_Research &amp; Editorial">
+                  <input class="role_checkbox" id="role_Research &amp; Editorial" name="role[]" type="checkbox" data-label="Research &amp; Editorial" value="Research+%26+Editorial"> Research &amp; Editorial                </label>
+				
               </div>
               <div class="checkedValues"></div>
             </div>
             <div class="selectbox-with-checkbox">
               <div class="selectbox">
+                <span class="select-icon">
+    <img src="/img/events/list-icon.svg" alt="Function">
+  </span>
                 <select>
                   <option> Type</option>
                 </select>
                 <div class="selectbox-over"></div>
               </div>
               <div class="selectbox-checkboxes d-none">
-                <label for="type_all">
-                  <input id="type_all" name="type[]" type="checkbox" value="Type" data-label="All"> All
-                </label>
-                <label for="intern">
-                  <input id="intern" name="type[]" type="checkbox" value="Intern" data-label="Intern"> Intern
-                </label>
-                <label for="permanent">
-                  <input id="permanent" name="type[]" type="checkbox" value="permanent" data-label="Permanent"> Permanent
-                </label>
+
+			                  <label for="type_intern">
+                  <input class="type_checkbox" id="type_intern" name="type[]" type="checkbox" data-label="Intern" value="intern"> Intern                </label>
+				                <label for="type_permanent">
+                  <input class="type_checkbox" id="type_permanent" name="type[]" type="checkbox" data-label="Permanent" value="permanent"> Permanent                </label>
+								
               </div>
               <div class="checkedValues"></div>
             </div>
-            <button class="btn btn-bright-blue" type="submit">Search</button>
-          </form>
+            <button type="submit" class="search-btn">
+<img src="/img/events/search-icon-white.svg" width="20" height="20" alt="Search">
+</button>
+</form>
 
             <div class="current-job-openings">
                 <ul class="current-openings">
@@ -407,6 +406,61 @@
     </div>
 
 <script>
+  class DropdownCheckbox {
+    constructor() {
+      this.triggers = document.querySelectorAll('.selectbox-with-checkbox');
+      this.init();
+    }
+
+    init() {
+      this.triggers.forEach((trigger) => {
+        const dropdown = trigger.querySelector('.selectbox-checkboxes');
+        const output = trigger.querySelector('.checkedValues');
+
+        // main selectbox click
+        const toggleArea = trigger.querySelector('.selectbox, .selectbox-over');
+        trigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.closeAllDropdowns(trigger);
+          dropdown.classList.toggle('d-none');
+        });
+
+        // checkbox changes
+        const checkboxes = trigger.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener('change', () => {
+            const checked = trigger.querySelectorAll('input[type="checkbox"]:checked');
+            output.innerHTML = "";
+            checked.forEach((cb) => {
+              const label = cb.getAttribute('data-label') || cb.value;
+              output.innerHTML += `<span>${label}</span> `;
+            });
+          });
+        });
+      });
+
+      // Close all on outside click
+      window.addEventListener('click', () => {
+        this.closeAllDropdowns();
+      });
+    }
+
+    closeAllDropdowns(exceptionEl = null) {
+      document.querySelectorAll('.selectbox-checkboxes').forEach((dropdown) => {
+        if (!exceptionEl || !exceptionEl.contains(dropdown)) {
+          dropdown.classList.add('d-none');
+        }
+      });
+    }
+  }
+
+  // on DOM ready
+  window.addEventListener('DOMContentLoaded', () => {
+    new DropdownCheckbox();
+  });
+</script>
+
+<script>
 var careerSearchForm=document.getElementById("career_search_form");
 careerSearchForm.addEventListener("submit",function(f){
 	f.preventDefault();
@@ -492,7 +546,7 @@ function generateCareerSearchSubmitLink(){
 
 
 window.addEventListener('load', function() {
-		// Loading Checked boxes by default...
+		// Loading Checked
 		var checkedCheckboxes=document.querySelectorAll(".career-search_form input[type=checkbox]:checked");
 
 		for(i=0;i<checkedCheckboxes.length;i++){
@@ -503,79 +557,7 @@ window.addEventListener('load', function() {
 
 		}
 });
-
-    class dropdownCheckbox {
-
-    constructor() {
-      this.trigger = document.querySelectorAll('.selectbox-with-checkbox');
-      this.target = document.querySelectorAll('.selectbox-checkboxes');
-      
-      this.init();
-    }
-  
-    init() {
-      for (let i = 0; i < this.trigger.length; i++) {
-        this.handleClick(this.trigger[i]);
-        
-        var allCheckbox=this.trigger[i].querySelectorAll(".selectbox-checkboxes input[type=checkbox]");
-        for (let ic = 0; ic < allCheckbox.length; ic++) {
-            allCheckbox[ic].addEventListener('change',function(ec){
-
-                var _currentTrigger=this.parentNode.parentNode.parentNode;
-                
-                var allCheckedBoxes=_currentTrigger.querySelectorAll(".selectbox-checkboxes input[type=checkbox]:checked");
-                var outputDiv=_currentTrigger.querySelector(".checkedValues");
-
-                outputDiv.innerHTML="";
-                for (let i = 0; i < allCheckedBoxes.length; i++) {
-                    var checkbox=allCheckedBoxes[i];
-                    
-                    outputDiv.innerHTML+="<span>"+checkbox.getAttribute("data-label")+"</span>";
-                }
-
-            })
-        }
-
-      }
-  
-      window.addEventListener('click', (event) => {
-        event.stopPropagation();
-        this.closeAllDropdowns();
-      });
-    }
-  
-    closeAllDropdowns(){
-      const openDropdowns = document.querySelectorAll('.selectbox-checkboxes');
-  
-      for (let i = 0; i < openDropdowns.length; i++) {
-
-        if(!openDropdowns[i].classList.contains("d-none")){
-            openDropdowns[i].classList.toggle("d-none");
-        }
-
-      }
-    }
-  
-    handleClick(el) {
-        el.addEventListener('click', (event) => {
-          this.closeAllDropdowns();
-        //   event.preventDefault();
-          event.stopPropagation();
-          this.doDropdownAction(el,event);
-        });
-  
-    }
-
-  
-    doDropdownAction(el,event){
-      if ((event.target != el && event.target.parentNode != el)) {
-        el.querySelector('.selectbox-checkboxes').classList.toggle('d-none');
-      }
-    }
-  }
-  
 </script>
-
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

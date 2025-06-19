@@ -85,6 +85,7 @@ input[type="submit"] {
           input[type=submit]:hover {
             background-color: v.$dsa-medium-blue;
           }
+
     }
     .security-Check-code {
         border-radius: 5px;
@@ -118,6 +119,10 @@ input[type="submit"] {
         }
     }
 
+          &.ct-form{
+            .ld-form{max-width: 800px; width: 100%;}
+             
+          }
 }
 /* end */
 .search-bar{ display: flex;

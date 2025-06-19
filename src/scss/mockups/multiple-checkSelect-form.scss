@@ -69,14 +69,17 @@ padding: .5rem .75rem;
 
 .career-search_form {
     display: flex;
-        position: sticky;
+    position: sticky;
     top: 85px;
     background-color: #fff;
     padding-top: 2rem;
     padding-bottom: 2rem;
     z-index: 1;
-        width: 99.5vw;
+    width: 99.5vw;
     margin-left: calc(-50vw + 50%);
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 
     
 }

@@ -21,7 +21,9 @@ li{ margin-bottom: 0; border-bottom: solid 1px #ddd;
 .scroll-menubar{display:flex; justify-content: space-between; gap: 2rem; align-items: center; flex-wrap: wrap;
 a{color: #0C2740; font-weight: v.$font-weight-Medium; font-family: v.$font-family-Poppins;}
 .btn {color: #fff;}
+
 }
+.left-align-menu{display: flex; flex-wrap: wrap; gap: 2.5rem;}
 .experts-card-location {display: flex; flex-wrap: wrap; gap: 47px;
 .location-card-view{display: none;  animation: fadeIn 0.3s ease;
 &.visible {
@@ -284,6 +286,7 @@ span{font-size: 2rem;}
       }
      
   }
+     .left-align-menu{gap: 1.5rem;} 
 }
 @media (max-width: 767px) {
   .find-expert-list.find-asiapedia-list {
@@ -310,7 +313,7 @@ span{font-size: 2rem;}
       }
      
   }
-      
+  
         
 }
 

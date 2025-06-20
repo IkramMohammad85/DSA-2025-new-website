@@ -27,6 +27,15 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+.btn-plus-minus{ padding: 8px;}
+.filed-btn-group{
+  display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 49%;
+    align-items: flex-start;
+    select{width: 100% !important;}
+}
 
 /* Let’s Discuss the Right Resources for Your State */
 .let-discuss-form {
@@ -37,7 +46,7 @@ input[type="submit"] {
     h3{text-align: center; font-weight: normal; color: v.$dsa-grey; font-size: 1.125rem;}
     .ld-form {
         width: 642px; margin: 3rem auto 0 auto;
-        input[type=text], select, textarea, input[type=checkbox],input[type=email] {
+        input[type=text], select, textarea, input[type=checkbox],input[type=email],input[type=password] {
             border-color: #D0D5DD;
             border-radius: 8px;
             box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 5px 0px, rgba(0, 0, 0, 0.05) 0px 0px 1px 0px;
@@ -45,12 +54,16 @@ input[type="submit"] {
             color: #667085;
             font-size: 14px;
         }
-        .form-field-two-column, .form-field-one-column{
+        .form-field-two-column, .form-field-one-column, .form-field-three-column{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             margin-bottom: 30px;
-            input[type=text],input[type=email], select{ height: 48px;width: 48%;}
+            input[type=text],input[type=email],input[type=password], select{ height: 48px;width: 48%;}
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .form-field-three-column{
+           input[type=text],input[type=email],input[type=password], select{ height: 48px;width: 33%;}
         }
         .form-field-one-column{
             textarea{
@@ -74,16 +87,16 @@ input[type="submit"] {
             
         }
         input[type=submit] {
-            background-color: v.$dsa-cyan-blue;
+            background-color: #207fd4;
             color: v.$white;
             padding: 9px 20px;
             border: none;
-            border-radius: 2px;
+            border-radius: 3px;
             cursor: pointer;
             width: 147px;
           }
           input[type=submit]:hover {
-            background-color: v.$dsa-medium-blue;
+            background-color: #207fd4;
           }
 
     }
@@ -190,7 +203,7 @@ img{max-width: 16px;}
         }
         
       }
-      .form-field-two-column{display: flex; gap: 1.5rem;}
+      .form-field-two-column, .form-field-three-column, .form-field-one-column{display: flex; gap: 1.5rem;}
       .filter-form { padding-top:2rem; width: 99.5vw; margin-left: calc(-50vw + 50%);
       padding-bottom: 2rem; position: sticky; top: 85px; background-color: #fff; z-index: 2;
 /* Form Layout */
@@ -326,12 +339,13 @@ img{max-width: 16px;}
 
 
 @media (max-width: 667px) {
-  .form-field-two-column{flex-direction: column;gap: 0rem;}
+  .form-field-two-column, .form-field-three-column{flex-direction: column;gap: 0rem;}
+  .filed-btn-group{width: 100%;}
 .let-discuss-form{
     .ld-form {width: 100%;
         .code-sensitive{margin-top: 5px;}
         .reload-captcha{margin-right: 0; margin-top: 0; margin-left: 5px;}
-        .form-field-two-column{ flex-direction: column; margin-bottom: 0px;
+        .form-field-two-column, .form-field-three-column{ flex-direction: column; margin-bottom: 0px;
             input[type=text],input[type=email], select{ width: 100%; margin-bottom: 2rem;}
         }
     }

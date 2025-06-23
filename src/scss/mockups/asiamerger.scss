@@ -1,0 +1,141 @@
+.divider-line-blue {
+    border: solid 2px #217fd4;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ap-area__header {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+.subhead {
+    color: #0c2740;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: .5px;
+}
+
+    .s-layout__main {
+        padding: 0rem 4rem 0rem 4rem;
+                table{
+                    th{background-color: #fff; width: 40%;}
+                    
+             td, th{border: none; vertical-align: top; padding: 0; padding-right: 1rem; padding-bottom: 1rem;}
+        }
+        .pagination{margin: 0; justify-content: flex-start;}
+        .form-inline{width: 20%;}
+    }
+
+    .map-area__detail {
+        h4, h5{font-size: 1rem;}
+
+    }
+    .list ul {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 0.97rem;
+    li{
+       
+    margin-bottom: 10px;
+    padding-left: 0rem;
+    padding-right: 0;
+    display: flex;
+    border: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 18px;
+a {
+    color: #58585b;
+    &:hover {
+    color: #217fd4;
+}
+}
+&:before {
+    content: "";
+    display: inline-block;
+    background: url(https://www.dezshira.com/assets_v2/img/sprite-all.svg) no-repeat -109px -40px;
+    width: 9px;
+    height: 9px;
+    margin-right: 0.5rem;
+    margin-top: 5px;
+}
+    }
+}
+.ap-area__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.map-area__list {
+    
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    transition: border 1s ease;
+}
+.ma-area__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #344e70;
+    font-weight: 600;
+    font-size: 14px;
+    background: #e9ecef;
+    padding: 5px 10px;
+
+}
+.ma-area__content {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ma-area__content .s-details {
+    width: 85%;
+}
+.map-area__list .hp-news__links {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: .875rem;
+}
+.map-area__list h3 {
+    font-size: 1.0625rem;
+    margin-bottom: 1rem;
+    color: #344e70;
+    a{font-weight: bold; color: #344e70;}
+}
+.ap-area__filter{margin-top: 1rem; margin-bottom: 1rem;}
+.ap-area__filter--label{font-weight: bold;}
+.ap-area__filter label, .ap-area__filter p {
+    display: inline-block;
+    font-size: .875rem;
+    margin-bottom: .25rem;
+    color: #58585b;
+    font-weight: bold;
+    a{
+            color: #344e70;
+    cursor: pointer;
+    }
+}
+.filter--scroll {
+    max-height: 370px;
+    overflow: auto;
+}
+.mna--industry {
+    width: 90%;
+    line-height: 1.1em;
+    margin-bottom: 0.8em;
+}
+
+@media (max-width: 767px) {
+    .s-layout__main { padding: 0;}
+    .ma-area__content {
+    flex-wrap: wrap;
+}
+}

@@ -227,7 +227,9 @@ input[type="radio"]:checked + .radio-btn ~ label {
       min-height: 272px; font-weight: v.$font-weight-light; margin-bottom: 1.8rem;
     }
     img{margin: 0 auto;}
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 &.our-testimonial{
       figure{margin-bottom: 1rem;opacity: 1;transition: opacity 0.3s ease;}
@@ -250,7 +252,7 @@ input[type="radio"]:checked + .radio-btn ~ label {
         &:hover{ 
           figure, cite{opacity: 0; display: none;}
           .pa-text{margin-bottom: 0;
-        .full-text { opacity: 1; display: inline; transition: all .5s ease;}
+        .full-text { opacity: 1; display: inline; transition: all .5s ease;   animation: fadeInUp 1s ease-in-out;}
         .text-more-dots{display: none;}
           }
         }
@@ -399,12 +401,13 @@ button{padding-right: 1rem;}
  .our-experts {
   width: 242px;
   margin: 0 auto 3rem auto;
-  border: solid 2px #F2F2F2;
   border-radius: 3px;
   .expert-name{font-weight: v.$font-weight-SemiBold;  color: #111; margin-bottom: 0.2rem; font-size: 14px;
   a{color:#111;}
   }
-  .experts-detail{padding: 1rem; position: relative; min-height: 180px;font-family: v.$font-family-inter;}
+  .experts-detail{padding: 1rem; position: relative; min-height: 180px;font-family: v.$font-family-inter;
+    border: solid 2px #F2F2F2; border-top: 0;
+  }
   .expert-social-contact{ display: flex; margin-top: 1rem;
     img{margin-right: 0.5rem;}
   
@@ -429,7 +432,7 @@ button{padding-right: 1rem;}
       width: 151px;
       margin: 1.5rem 0 0 0;
       flex-direction: column;
-      .experts-detail{padding-right: 0; padding-left: 0; width: auto;}
+      .experts-detail{padding-right: 0; padding-left: 0; width: auto; border: none;}
       .expert-name-thumbnail{ width: 151px;
       height: 147px;
       img{height: 147px; width: 151px;}
@@ -438,7 +441,7 @@ button{padding-right: 1rem;}
   }
 
 }
-
+.speaker-list .experts-detail{border: none;}
 .our-experts .expert-name-thumbnail img {
   display: block;
   margin: 0 auto;

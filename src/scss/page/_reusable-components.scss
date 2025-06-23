@@ -51,7 +51,7 @@ a{color: #0C2740; font-weight: v.$font-weight-Medium; font-family: v.$font-famil
 .pagination{ margin-left: -18px; justify-content: flex-start; margin-bottom: 0;}
 .type-label{font-size: 1rem; font-weight: v.$font-weight-SemiBold; margin-bottom: 1.2rem;}
   }
-
+.experts-detail{border: none;}
 }
 
 //need to finalize after approval
@@ -95,8 +95,8 @@ a{color: #0C2740; font-weight: v.$font-weight-Medium; font-family: v.$font-famil
   border-right: 25px solid transparent;
   border-top: 25px solid #dddddd;
   position: absolute;
-  bottom: -2px;
-  right: -20px;
+  bottom: -3px;
+  right: -16px;
   transform: rotate(314deg);
 }
 .splide__slide{

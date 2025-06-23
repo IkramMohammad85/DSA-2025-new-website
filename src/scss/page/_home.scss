@@ -837,8 +837,10 @@ text-overflow: ellipsis;}
     }
     &.card-grid-vedio{
     .card{padding: 0;}
-    .card-image-container{ max-width: 650px;}
-    .card-title{font-family: v.$font-family-Poppins; font-size: 24px; line-height: 32px; font-weight: v.$font-weight-Medium; }
+    .card-image-container{ max-width: 650px; border-radius: 0;}
+    .card-title{font-family: v.$font-family-Poppins; font-size: 24px; line-height: 32px; font-weight: v.$font-weight-Medium; margin-bottom: 1rem;
+    a{font-weight: v.$font-weight-Medium; color: #0C2740;}
+    }
     .card-text{font-weight: v.$font-weight-light;  color: #0C2740;}
     }
     &.card-vertical{

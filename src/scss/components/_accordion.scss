@@ -56,6 +56,13 @@
     border-radius: 4px;
   }
   }
+    &.accordion-reg-white{
+      .accordion-reg-item{
+        box-shadow: rgba(0, 0, 0, .05) 0 0 0 1px; margin-top: 0;
+      }
+.accordion-reg-button.collapsed{box-shadow: none;}
+.accordion-reg-collapse{box-shadow: none;}
+  }
 }
   .accordion-reg-header {
     margin: 0;

@@ -192,6 +192,12 @@
       p{margin-top: 1rem; font-weight: 500;}
     }
     &.small-banner-height{height: 210px;}
+
+&.cnt-min-h{
+  .text-head{
+    max-width: 600px;
+  }
+}
 }
 /* end */
 .masthead-logo{position: absolute; z-index: 1; top: 45%; right: 16px;}
@@ -286,6 +292,12 @@
 .text-head{margin-top: 0;}
 }
 }
+}
+.masthead.cnt-min-h{ height: 100%;
+.text-head{
+  .btn{margin-bottom: 1rem;}
+}
+.masthead__text{position: relative;}
 }
 }
 

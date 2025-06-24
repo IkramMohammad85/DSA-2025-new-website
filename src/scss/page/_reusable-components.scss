@@ -1,4 +1,32 @@
 @use "../base/variables" as v;
+//login-page
+.login-reg-block{
+.asia-logomark{
+  img{width: 200px; margin: 0 auto 1.5rem auto;}
+}
+.signup-box{text-align: center;
+img{margin: 0 auto;}
+p{color: #fff; line-height: 18px; margin: 1.5rem 0;}
+}
+.subhead {
+    color: #0c2740;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: .5px;
+}
+.splide__pagination__page.is-active{
+  background: #fff !important;
+  transform: scale(1) !important;
+}
+}
+.navbar__signupbox h3.subhead {
+    color: #fff;
+
+}
+
+//end
 .current-openings{ margin: 0; padding: 0; list-style: none; 
 li{ margin-bottom: 0; border-bottom: solid 1px #ddd;
   //display: flex; 

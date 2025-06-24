@@ -577,8 +577,9 @@ $short-browser: 720px;
     a {
       display: block;
       width: 100%;
-      margin-top: 1rem;
-      padding: 0.75rem 0;
+    
+      //margin-top: 1rem;
+      padding: 1rem 0;
       line-height: 1;
       font-size: 0.75rem;
       font-weight: bold;
@@ -645,9 +646,11 @@ $short-browser: 720px;
     button {
       border: 0;
       color: v.$white;
-      background-color: v.$dsa-bright-blue;
+      //background-color: v.$dsa-bright-blue;
+      background-color: #207fd4;
       padding: 0.75rem 0;
       width: 100%;
+      border-radius: 3px;
 
       &:hover {
         background-color: v.$dsa-cyan-blue;

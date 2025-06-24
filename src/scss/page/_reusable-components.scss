@@ -1,9 +1,7 @@
 @use "../base/variables" as v;
 //login-page
 .login-reg-block{
-.asia-logomark{
-  img{width: 200px; margin: 0 auto 1.5rem auto;}
-}
+
 .signup-box{text-align: center; margin-bottom: 2rem;
 img{margin: 0 auto;}
 p{color: #fff; line-height: 18px; margin: 1.5rem 0;}
@@ -27,6 +25,9 @@ p{color: #fff; line-height: 18px; margin: 1.5rem 0;}
     letter-spacing: .5px;
 }
 
+}
+.asia-logomark{
+  img{width: 200px; margin: 0 auto 1.5rem auto;}
 }
 .navbar__signupbox {
     

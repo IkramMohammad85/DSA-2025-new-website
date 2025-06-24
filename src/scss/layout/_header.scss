@@ -517,6 +517,8 @@ $short-browser: 720px;
       text-align: center;
       color: v.$dsa-dark-blue;
       background: v.$white;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
 
       p {
         margin: 0;
@@ -558,14 +560,10 @@ $short-browser: 720px;
     padding: 2rem;
     color: v.$white;
     background: linear-gradient(135deg, #0c2740 0%, #314d77 100%);
-.subhead {
-    color: #0c2740;
-    font-size: .75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    letter-spacing: .5px;
-}
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
     h3.subhead {
       color: v.$white;
     }
@@ -649,13 +647,14 @@ $short-browser: 720px;
     background-color: v.$gray-200;
     //padding: 0.75rem 0;
     width: 100%;
-
+     
+      border-bottom-right-radius: 3px;
     button {
       border: 0;
       color: v.$white;
       //background-color: v.$dsa-bright-blue;
       background-color: #207fd4;
-      padding: 0.75rem 0;
+      padding: 1rem 0;
       width: 100%;
       border-radius: 3px;
 

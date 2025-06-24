@@ -37,23 +37,30 @@
       </section>
 
       <section class="page-intro pt-5 pb-7">
+        <div class="asia-logomark text-center mb-3" style="margin: 0 auto; justify-content: center;"><img src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo"></div>
         <div class="section-wrapper-min">
-                    <div class="flex-grid-row flex-grid-row--one-third mb-2">
-            <div class="flex-col-3per">
+                    <div class="flex-grid-row flex-grid-row--two mb-2 "> 
+            <div class="flex-col">
                 <h2>Login to Asiapedia</h2>
+                        <div class="navbar__loginbox" style="border-top-right-radius: 3px;">
+          <h3 class="subhead">Member Login</h3>
+          <form class="navbar__loginform" action="/login" method="POST">
+            
+            <input type="hidden" class="TokenNameKey" name="csrf_name" value="csrf685a2a90414d6">
+            <input type="hidden" class="TokenValueKey" name="csrf_value" value="60073f65ae270d534e46ea411a9ebb14">
+                    <input type="hidden" value="" name="goto">
+            
+            <div class="navbar__loginitems">
+              <input type="email" name="email" placeholder="Email Address" require="">
+              <input type="password" name="password" placeholder="Password" require="">
+              <a class="reset-link" href="/forgot-password">Forgot password?</a>
             </div>
-            <div class="flex-col-7per">
-                <p> Asiapedia is a collection of resources based on our practical experience of assisting thousands of clients doing business in Asia. It’s the product of more than 300 team members collaborating across 35 offices across China, ASEAN, India and Asia, from the perspective of foreign investors needs. </p>
-            </div>
+            <button type="submit" style="padding: 0.75rem 0;">Log In</button>
+          </form>
         </div>
-          <div class="flex-grid-row flex-grid-row--one-third">
-            <div class="flex-col-3per"> <div class="asia-logomark"><img src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo"></div>
             </div>
-            <div class="flex-col-7per login-reg-block"> 
-<!--            
-            <p class="text-center">A place to gain knowledge and better understand business in Asia</p> -->
-            <div class="navbar__accessbox--bot">
-        <div class="navbar__signupbox" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
+            <div class="flex-col">
+                        <div class="navbar__signupbox" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
           <h3 class="subhead">Create Member Account </h3>
           <div class="navbar__signupbox__slider">
         <div class="splide" data-per-page="1" data-autoplay="false"
@@ -87,25 +94,9 @@
 
           </div><a href="/register">Sign Up Now</a>
         </div>
-        <div class="navbar__loginbox" style="border-top-right-radius: 3px;">
-          <h3 class="subhead">Member Login</h3>
-          <form class="navbar__loginform" action="/login" method="POST">
-            
-            <input type="hidden" class="TokenNameKey" name="csrf_name" value="csrf685a2a90414d6">
-            <input type="hidden" class="TokenValueKey" name="csrf_value" value="60073f65ae270d534e46ea411a9ebb14">
-                    <input type="hidden" value="" name="goto">
-            
-            <div class="navbar__loginitems">
-              <input type="email" name="email" placeholder="Email Address" require="">
-              <input type="password" name="password" placeholder="Password" require="">
-              <a class="reset-link" href="/forgot-password">Forgot password?</a>
             </div>
-            <button type="submit" style="padding: 0.75rem 0;">Log In</button>
-          </form>
         </div>
-      </div>
-        </div>
-      </div>
+
     </div>
     </section>
         <section class="page-intro pt-5 pb-7 section-light-gray-bg">
@@ -128,65 +119,71 @@
               <div class="splide__list">
              <div class="splide__slide">
                 <div class="partners-alliances client-portal">
+                    <img loading="lazy" class="mb-2"
+                        src="/img/about-us/dsa-alliance.jpg" alt="Mann Hummel" width="auto" height="40">
                     <div class="heading-level3">Dezan Shira Asian Alliance </div>
                         <div class="pa-text">Dezan Shira & Associates leads an alliance of highly capable firms in Asia to better support our clients’ activities throughout the region. Through this alliance, we assist with practice development and provide joint client services in smaller emerging nations across Asia. </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         <img loading="lazy" class="mt-2"
-                        src="/img/about-us/dsa-alliance.jpg" alt="Mann Hummel" width="auto" height="40">
+                         
                        </div>
             </div>
         
              <div class="splide__slide">
                 <div class="partners-alliances client-portal">
+                     <img loading="lazy" class="mb-2"
+                        src="/img/about-us/etl-global.jpg" alt="Mann Hummel" width="auto" height="40">
                     <div class="heading-level3">ETL Group</div>
                         <div class="pa-text">Dezan Shira & Associates is a member of ETL Group. ETL is Europe's largest tax and legal consultancy group and maintains a network of 870 firms in over 50 countries to provide unique range of consulting services to European businesses looking to expand. </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         <img loading="lazy" class="mt-2"
-                        src="/img/about-us/etl-global.jpg" alt="Mann Hummel" width="auto" height="40">
+                        
                        </div>
             </div>
              <div class="splide__slide">
                 <div class="partners-alliances client-portal">
+                    <img loading="lazy" class="mb-2"
+                        src="/img/about-us/lea-global.jpg" alt="Mann Hummel" width="auto" height="40">
                     <div class="heading-level3">LEA Global</div>
                         <div class="pa-text">Dezan Shira & Associates is a member of the LEA Global, the world’s fourth largest accounting global network, with more than 226 accounting practices, and 620 offices in 110 countries.  </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         <img loading="lazy" class="mt-2"
-                        src="/img/about-us/lea-global.jpg" alt="Mann Hummel" width="auto" height="40">
+                         
                        </div>
             </div>
           
             <div class="splide__slide">
                 <div class="partners-alliances client-portal">
+                    <img loading="lazy" class="mb-2"
+                        src="/img/about-us/dsa-alliance.jpg" alt="Mann Hummel" width="auto" height="40">
                     <div class="heading-level3">Dezan Shira Asian Alliance </div>
                         <div class="pa-text">Dezan Shira & Associates leads an alliance of highly capable firms in Asia to better support our clients’ activities throughout the region. Through this alliance, we assist with practice development and provide joint client services in smaller emerging nations across Asia. </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         <img loading="lazy" class="mt-2"
-                        src="/img/about-us/dsa-alliance.jpg" alt="Mann Hummel" width="auto" height="40">
+                         
                        </div>
             </div>
         
              <div class="splide__slide">
                 <div class="partners-alliances client-portal">
+                    <img loading="lazy" class="mb-2"
+                        src="/img/about-us/etl-global.jpg" alt="Mann Hummel" width="auto" height="40">
                     <div class="heading-level3">ETL Group</div>
                         <div class="pa-text">Dezan Shira & Associates is a member of ETL Group. ETL is Europe's largest tax and legal consultancy group and maintains a network of 870 firms in over 50 countries to provide unique range of consulting services to European businesses looking to expand. </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         <img loading="lazy" class="mt-2"
-                        src="/img/about-us/etl-global.jpg" alt="Mann Hummel" width="auto" height="40">
+                         
                        </div>
             </div>
              <div class="splide__slide">
                 <div class="partners-alliances client-portal">
+                    <img loading="lazy" class="mb-2"
+                        src="/img/about-us/lea-global.jpg" alt="Mann Hummel" width="auto" height="40">
                     <div class="heading-level3">LEA Global</div>
                         <div class="pa-text">Dezan Shira & Associates is a member of the LEA Global, the world’s fourth largest accounting global network, with more than 226 accounting practices, and 620 offices in 110 countries </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         <img loading="lazy" class="mt-2"
-                        src="/img/about-us/lea-global.jpg" alt="Mann Hummel" width="auto" height="40">
+                         
                        </div>
             </div>
                 

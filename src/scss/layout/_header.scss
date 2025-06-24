@@ -498,7 +498,7 @@ $short-browser: 720px;
     &__logo {
       width: 200px;
       height: auto;
-      margin-bottom: 0.5rem;
+      margin: 0 auto 0.5rem auto;
     }
 
     &__close {
@@ -558,7 +558,14 @@ $short-browser: 720px;
     padding: 2rem;
     color: v.$white;
     background: linear-gradient(135deg, #0c2740 0%, #314d77 100%);
-
+.subhead {
+    color: #0c2740;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: .5px;
+}
     h3.subhead {
       color: v.$white;
     }

@@ -8,6 +8,15 @@
 img{margin: 0 auto;}
 p{color: #fff; line-height: 18px; margin: 1.5rem 0;}
 }
+
+.splide__pagination__page.is-active{
+  background: #fff !important;
+  transform: scale(1);
+  &::before{
+     display: none;
+  }
+
+}
 .subhead {
     color: #0c2740;
     font-size: .75rem;
@@ -15,10 +24,6 @@ p{color: #fff; line-height: 18px; margin: 1.5rem 0;}
     text-transform: uppercase;
     margin-bottom: 1rem;
     letter-spacing: .5px;
-}
-.splide__pagination__page.is-active{
-  background: #fff !important;
-  transform: scale(1) !important;
 }
 }
 .navbar__signupbox h3.subhead {

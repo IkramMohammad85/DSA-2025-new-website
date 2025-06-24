@@ -1021,37 +1021,41 @@
             </aside>
           </li>
           <li class="navbar__iconmenu__login"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
-            <aside class="navbar__accessbox">
+            <aside class="navbar__accessbox login-reg-block">
               <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
                 <p>A place to gain knowledge and better understand business in Asia</p><a class="navbar__accessbox__close" href="#" onclick="toggle_modal('.navbar__accessbox');"><span class="sprite-close"></span></a>
               </div>
               <div class="navbar__accessbox--bot">
                 <div class="navbar__signupbox">
                   <h3 class="subhead">Create an account</h3>
-                  <div class="navbar__signupbox__slider">
-                    <div class="glide__track" data-glide-el="track">
-                      <div class="glide__slides">
-                        <div class="glide__slide"><span class="sprite-login sprite-login-1"></span>
-                          <p>Download our FREE magazines and guides</p>
-                        </div>
-                        <div class="glide__slide"><span class="sprite-login sprite-login-2"></span>
-                          <p>Stay up-to-date on breaking news, regulatory updates and Asia Briefing Publications</p>
-                        </div>
-                        <div class="glide__slide"><span class="sprite-login sprite-login-3"></span>
-                          <p>Access presentations, webinars, podcasts, reports, Q&As and more</p>
-                        </div>
-                        <div class="glide__slide"><span class="sprite-login sprite-login-4"></span>
-                          <p>Track paid orders and connect with our support team</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="glide__bullets" data-glide-el="controls[nav]">
-                      <div class="glide__bullet" data-glide-dir="=0"></div>
-                      <div class="glide__bullet" data-glide-dir="=1"></div>
-                      <div class="glide__bullet" data-glide-dir="=2"></div>
-                      <div class="glide__bullet" data-glide-dir="=3"></div>
-                    </div>
-                  </div><a href="#">Sign Up Now</a>
+        <div class="splide" data-per-page="1" data-autoplay="false"
+        data-pagination="true" data-type="slide" data-arrows="false" gap="0"
+        data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem"},"480":{"perPage":1,"gap":"0.7rem"}}'>
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide">
+                    <div class="signup-box">
+                    <img src="https://www.dezshira.com/assets/img/icon-signup-1.svg" alt="">
+                  <p>Download our FREE magazines and guides</p>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                   <img src="https://www.dezshira.com/assets/img/icon-signup-2.svg" alt="">
+                  <p>Stay up to date with breaking news, regulatory updates, and Asia Briefing publications</p>
+                </div></div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                   <img src="https://www.dezshira.com/assets/img/icon-signup-3.svg" alt="">
+                  <p>Access presentations, webinars, podcasts, reports, Q&amp;As and more</p>
+                </div></div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                  <img src="https://www.dezshira.com/assets/img/icon-signup-4.svg" alt="">
+                  <p>Track paid orders and connect with our support team</p>
+                </div></div>
+                </div></div></div>
+                  <a href="#">Sign Up Now</a>
                 </div>
                 <div class="navbar__loginbox">
                   <h3 class="subhead">Member Login</h3>

@@ -11,13 +11,39 @@
     <link rel="stylesheet" href="/css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="/css/vendor/splide.min.css" type="text/css">
     <style>
+        .navbar__accessbox--top p{
+width: 80%; margin: 1rem auto auto; font-weight: bold;
+        }
          .asia-logomark {
             display: flex;
             align-items: center;
             height: 100%;
          }
         .asia-logomark img{margin: 0;}
-        .login-reg-block .subhead{text-align: center;}
+        .login-reg-block .subhead{text-align: left; font-size: 18px; text-transform: none;}
+        .signup-box img{ width: 60px; margin: 2rem auto;}
+        .login-box-l{
+            background-color: #fff; padding: 2rem; border-radius: 8px;     border: solid 8px #eeeeee;
+        }
+        .signup-box-r {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .login-reg-block .signup-box-r .signup-box p{color: #000;}
+        .login-reg-block .signup-box-r .signup-box{width: 60%; margin: 0 auto 3rem auto;}
+        .login-reg-block .login-box-l .navbar__loginform{width: 70%;}
+        .login-reg-block .login-box-l .navbar__loginform input[type=email], .login-reg-block .navbar__loginform input[type=password]{
+            border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, .05) 0 0 5px 0, rgba(0, 0, 0, .05) 0 0 1px 0;
+    padding: 0 1rem;
+    color: #667085;
+    font-size: 14px;
+    height: 48px;
+        }
+        .login-reg-block .signup-box-r .splide__pagination__page.is-active{
+            background-color: #333 !important;
+        }
     </style>
 
 </head>
@@ -36,13 +62,15 @@
         <div class="masthead__bg"><img alt="Industries" src="/img/asiapedia-hero.jpg" width="1440" height="644"></div>
       </section>
 
-      <section class="page-intro pt-5 pb-7">
-        <div class="asia-logomark text-center mb-3" style="margin: 0 auto; justify-content: center;"><img src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo"></div>
+      <section class="page-intro pt-7 pb-5">
+        <!-- <div class="asia-logomark text-center mb-3" style="margin: 0 auto; justify-content: center;"><img src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo"></div> -->
         <div class="section-wrapper-min">
-                    <div class="flex-grid-row flex-grid-row--two mb-2 "> 
+                    <div class="flex-grid-row flex-grid-row--two mb-2 login-reg-block" style="align-items: center;"> 
             <div class="flex-col">
+                <div class="login-box-l">
                 <h2>Login to Asiapedia</h2>
-                        <div class="navbar__loginbox" style="border-top-right-radius: 3px;">
+                <p>Asiapedia is a collection of resources based on our practical experience of assisting thousands of clients doing business in Asia. It’s the product of more than 300 team members collaborating across 35 offices across China, ASEAN, India and Asia, from the perspective of foreign investors needs.</p>
+                        
           <h3 class="subhead">Member Login</h3>
           <form class="navbar__loginform" action="/login" method="POST">
             
@@ -55,13 +83,13 @@
               <input type="password" name="password" placeholder="Password" require="">
               <a class="reset-link" href="/forgot-password">Forgot password?</a>
             </div>
-            <button type="submit" style="padding: 0.75rem 0;">Log In</button>
+            <button type="submit" class="btn btn-primary">Log In</button>
           </form>
-        </div>
+    </div>
             </div>
             <div class="flex-col">
-                        <div class="navbar__signupbox" style="border-top-right-radius: 0; border-bottom-right-radius: 0;">
-          <h3 class="subhead">Create Member Account </h3>
+             <div class="signup-box-r">           
+          <h2>Create Member Account </h3>
           <div class="navbar__signupbox__slider">
         <div class="splide" data-per-page="1" data-autoplay="false"
         data-pagination="true" data-type="slide" data-arrows="false" gap="0"
@@ -92,9 +120,9 @@
                 </div></div></div>
             
 
-          </div><a href="/register">Sign Up Now</a>
-        </div>
-            </div>
+          </div><a class="btn btn-outline-primary" href="/register">Sign Up Now</a>
+        </div></div>
+           
         </div>
 
     </div>

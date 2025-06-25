@@ -285,7 +285,7 @@ img{max-width: 16px;}
   background-color: #fff;
   max-width: 200px;
   position: relative;
-  gap: 0.5rem;
+  //gap: 0.5rem;
 }
 
 .select-wrapper select {
@@ -297,6 +297,7 @@ img{max-width: 16px;}
   outline: none;
   cursor: pointer;
   padding: 0;
+  padding-left: 0.5rem;
 }
 
 .select-icon { display: contents;

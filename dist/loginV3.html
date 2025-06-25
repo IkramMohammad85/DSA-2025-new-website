@@ -19,8 +19,8 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
             align-items: center;
             height: 100%;
          }
-        .asia-logomark img{margin: 0;}
-        .login-reg-block .subhead{text-align: left; font-size: 18px; text-transform: none;}
+        .asia-logomark img{margin: 0 auto; width: 160px;}
+        .login-reg-block .subhead{text-align: center; font-size: 16px; text-transform: none;}
         .signup-box img{ width: 60px; margin: 2rem auto;}
         .login-box-l{
             background-color: #fff; padding: 2rem; border-radius: 8px;     border: solid 8px #eeeeee;
@@ -28,11 +28,12 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
         .signup-box-r {
             align-items: center;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; padding: 2rem;
         }
+         .signup-box-r p{font-size: 15px; line-height:normal;}
         .login-reg-block .signup-box-r .signup-box p{color: #000;}
         .login-reg-block .signup-box-r .signup-box{width: 60%; margin: 0 auto 3rem auto;}
-        .login-reg-block .login-box-l .navbar__loginform{width: 70%;}
+        .login-reg-block .login-box-l .navbar__loginform{width: 70%; margin: 0 auto;}
         .login-reg-block .login-box-l .navbar__loginform input[type=email], .login-reg-block .navbar__loginform input[type=password]{
             border-radius: 3px;
     box-shadow: rgba(0, 0, 0, .05) 0 0 5px 0, rgba(0, 0, 0, .05) 0 0 1px 0;
@@ -44,6 +45,7 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
         .login-reg-block .signup-box-r .splide__pagination__page.is-active{
             background-color: #333 !important;
         }
+        .partners-alliances-list .partners-alliances.client-portal img{margin: 0 auto;}
     </style>
 
 </head>
@@ -1123,9 +1125,8 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
                     <div class="flex-grid-row flex-grid-row--two mb-2 login-reg-block" style="align-items: center;"> 
             <div class="flex-col">
                 <div class="login-box-l">
-                <h2>Login to Asiapedia</h2>
-                <p>Asiapedia is a collection of resources based on our practical experience of assisting thousands of clients doing business in Asia. It’s the product of more than 300 team members collaborating across 35 offices across China, ASEAN, India and Asia, from the perspective of foreign investors needs.</p>
-                        
+                <div class="asia-logomark text-center mb-1"><img src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo"></div>   
+                <h2 class="text-center">Login to Asiapedia</h2>
           <h3 class="subhead">Member Login</h3>
           <form class="navbar__loginform" action="/login" method="POST">
             
@@ -1144,8 +1145,9 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
             </div>
             <div class="flex-col">
              <div class="signup-box-r"> 
-                <div class="asia-logomark text-center mb-2"><img src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo"></div>          
-          <h2>Create Member Account </h3>
+       
+          <h2 class="mb-1">Create Member Account </h3>
+            <p class="text-center">Asiapedia is a collection of resources based on our practical experience of assisting thousands of clients doing business in Asia. </p>
           <div class="navbar__signupbox__slider">
         <div class="splide" data-per-page="1" data-autoplay="false"
         data-pagination="true" data-type="slide" data-arrows="false" gap="0"
@@ -1205,7 +1207,7 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
                 <div class="partners-alliances client-portal">
                     <img loading="lazy" class="mb-2"
                         src="/img/asiaadmin-logo.svg" alt="asiaadmin" width="auto" height="25">
-                    <div class="heading-level3">AsiaAdmin - Cloud HR & Payroll </div>
+                    <div class="heading-level3 text-center">AsiaAdmin - Cloud HR & Payroll </div>
                         <div class="pa-text">Dezan Shira & Associates leads an alliance of highly capable firms in Asia to better support our clients’ activities throughout the region. Through this alliance, we assist with practice development and provide joint client services in smaller emerging nations across Asia. </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
@@ -1217,7 +1219,7 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
                 <div class="partners-alliances client-portal">
                      <img loading="lazy" class="mb-2"
                         src="/img/FinOps-logo.svg" alt="FinOps" width="auto" height="50">
-                    <div class="heading-level3">FinOps - Cloud Accounting & ERP</div>
+                    <div class="heading-level3 text-center">FinOps - Cloud Accounting & ERP</div>
                         <div class="pa-text">Dezan Shira & Associates is a member of ETL Group. ETL is Europe's largest tax and legal consultancy group and maintains a network of 870 firms in over 50 countries to provide unique range of consulting services to European businesses looking to expand. </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
@@ -1228,7 +1230,7 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
                 <div class="partners-alliances client-portal">
                     <img loading="lazy" class="mb-2"
                         src="/img/sharePointOnline-logo.svg" alt="sharePointOnline" width="auto" height="51">
-                    <div class="heading-level3">Sharepoint Archives for Clients</div>
+                    <div class="heading-level3 text-center">Sharepoint Archives for Clients</div>
                         <div class="pa-text">Dezan Shira & Associates is a member of the LEA Global, the world’s fourth largest accounting global network, with more than 226 accounting practices, and 620 offices in 110 countries.  </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
@@ -1240,7 +1242,7 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
                 <div class="partners-alliances client-portal">
                     <img loading="lazy" class="mb-2"
                         src="/img/asiaadmin-logo.svg" alt="asiaadmin" width="auto" height="25">
-                    <div class="heading-level3">AsiaAdmin - Cloud HR & Payroll </div>
+                    <div class="heading-level3 text-center">AsiaAdmin - Cloud HR & Payroll </div>
                         <div class="pa-text">Dezan Shira & Associates leads an alliance of highly capable firms in Asia to better support our clients’ activities throughout the region. Through this alliance, we assist with practice development and provide joint client services in smaller emerging nations across Asia. </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
@@ -1252,7 +1254,7 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
                 <div class="partners-alliances client-portal">
                     <img loading="lazy" class="mb-2"
                         src="/img/FinOps-logo.svg" alt="FinOps" width="auto" height="50">
-                    <div class="heading-level3">FinOps - Cloud Accounting & ERP</div>
+                    <div class="heading-level3 text-center">FinOps - Cloud Accounting & ERP</div>
                         <div class="pa-text">Dezan Shira & Associates is a member of ETL Group. ETL is Europe's largest tax and legal consultancy group and maintains a network of 870 firms in over 50 countries to provide unique range of consulting services to European businesses looking to expand. </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
@@ -1263,7 +1265,7 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
                 <div class="partners-alliances client-portal">
                     <img loading="lazy" class="mb-2"
                         src="/img/sharePointOnline-logo.svg" alt="sharePointOnline" width="auto" height="51">
-                    <div class="heading-level3">Sharepoint Archives for Clients</div>
+                    <div class="heading-level3 text-center">Sharepoint Archives for Clients</div>
                         <div class="pa-text">Dezan Shira & Associates is a member of the LEA Global, the world’s fourth largest accounting global network, with more than 226 accounting practices, and 620 offices in 110 countries </div>
                         <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
                         <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>

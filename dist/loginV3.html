@@ -11,45 +11,23 @@
     <link rel="stylesheet" href="/css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="/css/vendor/splide.min.css" type="text/css">
     <style>
-        .navbar__accessbox--top p{
-width: 80%; margin: 1rem auto auto; font-weight: bold;
-        }
-         .asia-logomark {
-            display: flex;
-            align-items: center;
-            height: 100%;
-         }
+        .navbar__accessbox--top p{width: 80%; margin: 1rem auto auto; font-weight: bold;}
+        .asia-logomark {display: flex; align-items: center;height: 100%;}
         .asia-logomark img{margin: 0 auto; width: 160px;}
-         .login-reg-block{padding: 0;border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
-         .login-reg-block .flex-col{padding: 0;}
+        .login-reg-block{padding: 0;border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+        .login-reg-block .flex-col{padding: 0;}
         .login-reg-block .subhead{text-align: center; font-size: 16px; text-transform: none;}
-         .login-reg-block h2{text-align: center; font-size: 18px; text-transform: none;}
+        .login-reg-block h2{text-align: center; font-size: 18px; text-transform: none;}
         .signup-box img{ width: auto; height: 65px; margin: 2rem auto;}
-        .login-box-l{
-            background-color: #f1f8ff;  padding: 2rem;   
-             /* border: solid 8px #eeeeee; */
-        }
-        .signup-box-r {
-            align-items: center;
-            display: flex;
-            flex-direction: column; 
-            width: 80%; margin: 0 auto;
-        }
-         .signup-box-r p{font-size: 15px; line-height:normal;}
+        .login-box-l{background-color: #f1f8ff;  padding: 2rem;}
+        .signup-box-r {align-items: center; display: flex; flex-direction: column;width: 80%; margin: 0 auto;}
+        .signup-box-r p{font-size: 15px; line-height:normal;}
         .login-reg-block .signup-box-r .signup-box p{color: #000;}
         .login-reg-block .signup-box-r .signup-box{width: 70%; margin: 0 auto 2rem auto;}
         .login-reg-block .login-box-l .navbar__loginform{width: 70%; margin: 0 auto;}
-        .login-reg-block .login-box-l .navbar__loginform input[type=email], .login-reg-block .navbar__loginform input[type=password]{
-            border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, .05) 0 0 5px 0, rgba(0, 0, 0, .05) 0 0 1px 0;
-    padding: 0 1rem;
-    color: #667085;
-    font-size: 14px;
-    height: 48px;
-        }
-        .login-reg-block .signup-box-r .splide__pagination__page.is-active{
-            background-color: #333 !important;
-        }
+        .login-reg-block .login-box-l .navbar__loginform input[type=email], .login-reg-block .navbar__loginform input[type=password]{border-radius: 3px; box-shadow: rgba(0, 0, 0, .05) 0 0 5px 0, rgba(0, 0, 0, .05) 0 0 1px 0;
+    padding: 0 1rem; color: #667085; font-size: 14px; height: 48px; }
+        .login-reg-block .signup-box-r .splide__pagination__page.is-active{background-color: #333 !important;}
         .partners-alliances-list .partners-alliances.client-portal img{margin: 0 auto;}
     </style>
 
@@ -1153,8 +1131,8 @@ width: 80%; margin: 1rem auto auto; font-weight: bold;
           <h2 class="mb-1">Create Member Account </h2>
             <p class="text-center mb-1">Asiapedia is a collection of resources based on our practical experience of assisting thousands of clients doing business in Asia. </p>
           <div class="navbar__signupbox__slider">
-        <div class="splide" data-per-page="1" data-autoplay="false"
-        data-pagination="true" data-type="slide" data-arrows="false" gap="0"
+        <div class="splide" data-per-page="1" data-autoplay="true" data-type="fade" interval='5000'
+        data-pagination="true"  data-arrows="false" gap="0"
         data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem"},"480":{"perPage":1,"gap":"0.7rem"}}'>
         <div class="splide__track">
             <div class="splide__list">

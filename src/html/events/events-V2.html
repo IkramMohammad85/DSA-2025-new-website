@@ -18,6 +18,8 @@
     text-decoration: none;
     padding: .3rem 1rem !important;
 }
+.navbar__iconmenu>li:nth-child(2){position: inherit;}
+.navbar__iconmenu>li:nth-child(1){position: relative;}
     </style>
     
 </head>
@@ -183,12 +185,7 @@
     @@include("../components/hero-section.html")
 </main>
     @@include("../includes/footer.html")
-    <div class="popup-overlay center-popup" id="center-popup">
-      <div class="popup-content">
-        <button class="popup-close" onclick="toggle_modal('.center-popup');">&times;</button>
-        <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
-      </div>
-    </div>
+
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

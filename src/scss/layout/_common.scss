@@ -1,4 +1,7 @@
 @use "../base/variables" as v; 
+  .hp-event-date{    color: #fff; text-align: center; font-weight: normal; font-size: 14px; background: rgba(0, 20, 38, .56); padding: 15px 1rem; border-radius: 3px;
+  span{ display: block; color: #fff;}
+  }
 .follow-latest{
 h4{color: #0C2740; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; margin-bottom: 1rem;}
 p{margin-bottom: 1.5rem;}

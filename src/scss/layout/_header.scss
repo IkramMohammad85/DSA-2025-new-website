@@ -488,11 +488,13 @@ $short-browser: 720px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s ease-out;
+    display: none;
 
     &.show-modal {
       opacity: 1;
       visibility: visible;
       z-index: 1;
+      display: block;
     }
 
     &__logo {

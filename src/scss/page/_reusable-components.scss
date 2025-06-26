@@ -279,12 +279,13 @@ span{font-size: 2rem;}
   .expt-location{display: flex; gap: 5px;}
   .card-resrcs{
     &.webinar {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem; align-items: center;
         //box-shadow: none;
         .resrcs-image{
             width: 35.8%; height: 180px;
           }
-          .resrcs-body{padding: 1rem 3.5rem; width: 100%; min-height: 180px;
+          .resrcs-body{padding: 1rem 3.5rem; width: 100%; 
+            //min-height: 180px;
             .resrcs-meta{padding: 0; margin: 0 0 0.5rem 0;
             
             }

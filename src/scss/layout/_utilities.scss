@@ -91,6 +91,7 @@ margin-top: calc((1 - 1.6) * 0.5em); }
 .dark-shadow { box-shadow: 0 2px 8px rgba(0,0,0,.1)}
 
 .justify-end{justify-content: end;}
+.justify-center{justify-content: center;}
 .fd-col{flex-direction: column;}
 @media only screen and (max-width: 1100px){
   .padding-left4rem{padding-left: 0 !important;}

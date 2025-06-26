@@ -237,7 +237,7 @@ line-height: 24px;
 }
   /* news overwrite */
   .card-resrcs{
-    &.news-card{  margin-bottom: 2rem;
+    &.news-card{  margin-bottom: 2rem; align-items: center;
         .resrcs-image{
             width: 300px; height: 180px;
           }

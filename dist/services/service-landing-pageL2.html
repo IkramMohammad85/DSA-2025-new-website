@@ -1318,7 +1318,7 @@
                 <div class="flex-col flex-col--per36">
                     <div class="got-question-block" id="gotQuestion">
                         <h3>Have Any Questions?</h3>
-                        <p>Reach out to our local experts</p>
+                        <p>Reach out to our local experts, we’ll respond within one business day.</p>
                         <form action="post">
                           <div class="form-field-two-column"> 
                             <select class="formSelectOption" id="servicesInterestS" name="servicesInterestS">
@@ -1366,7 +1366,16 @@
                           <div class="form-field-one-column"> 
                             <textarea id="commentsAreaS" name="commentsS" placeholder="Message" rows="2" cols="50"></textarea>
                           </div>
-                         
+            <div class="form-field-one-column codecs">
+              <div class="security-Check-code">
+                <input class="form-control" id="captcha_code" name="captcha_code" type="text" placeholder="Security Code (Case sensitive)">
+                <div class="security-Check"><img id="siimage_popup" src="../img/showCaptcha.png" alt="captcha image" class="loadCaptchaImage"></div>
+              </div>
+              <div class="code-sensitive"><small class="reload-captcha" id="reload_captcha" onclick="loadCaptcha();">
+                  <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m3.508 6.726c1.765-2.836 4.911-4.726 8.495-4.726 5.518 0 9.997 4.48 9.997 9.997 0 5.519-4.479 9.999-9.997 9.999-5.245 0-9.553-4.048-9.966-9.188-.024-.302.189-.811.749-.811.391 0 .715.3.747.69.351 4.369 4.012 7.809 8.47 7.809 4.69 0 8.497-3.808 8.497-8.499 0-4.689-3.807-8.497-8.497-8.497-3.037 0-5.704 1.597-7.206 3.995l1.991.005c.414 0 .75.336.75.75s-.336.75-.75.75h-4.033c-.414 0-.75-.336-.75-.75v-4.049c0-.414.336-.75.75-.75s.75.335.75.75z" fill-rule="nonzero"></path>
+                  </svg></small></div>
+            </div>
                           <div class="form-field-one-column"> 
                             <label class="form-check-input">
                               <input type="checkbox" name="submittingS"><span>I agree to receive communications from Dezan Shira &amp; Associates and accept the<a href="https://www.dezshira.com/privacy-policy"> Privacy Policy</a></span>
@@ -1376,59 +1385,7 @@
                             <input type="submit" class="btn btn-primary" value="Send">
                           </div>
                         </form>
-                        <div class="or-cta-cyp-card">
-                          <div class="or-cta">
-                            <h4>Find An Office</h4>
-                            <form action="post">
-                              <div class="form-field-one-column">
-                                <select class="formSelectOption" id="RegionaltS" name="regionalS" onchange="showRegionalOffice()">
-                                  <option value="Select the office" selected="">Select the office</option>
-                                  <option value="china">China</option>
-                                  <option value="india">India</option>
-                                  <option value="vietnam">Vietnam</option>
-                                </select>
-                                <div class="regional-office">
-                                  <div class="regional-office-china regional-hidden">
-                                    <div class="reg-contacts-addr">
-                                      <div class="reg-contacts-phone">
-                                        <div class="phone-cta-cion"><img alt="Phone" src="../img/phone-icon.svg" width="24" height="24"></div>
-                                        <div class="phone-num">+86 (0)10 6566 0088</div>
-                                      </div>
-                                      <div class="reg-contacts-email">
-                                        <div class="email-cta-cion"><img alt="Email" src="../img/email-icon.svg" width="23" height="16"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">china@dezshira.com</a></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="regional-office-india regional-hidden">
-                                    <div class="reg-contacts-addr">
-                                      <div class="reg-contacts-phone">
-                                        <div class="phone-cta-cion"><img alt="Phone" src="../img/phone-icon.svg" width="24" height="24"></div>
-                                        <div class="phone-num">+91 80 6185 2024</div>
-                                      </div>
-                                      <div class="reg-contacts-email">
-                                        <div class="email-cta-cion"><img alt="Email" src="../img/email-icon.svg" width="23" height="16"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">india@dezshira.com</a></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="regional-office-vietnam regional-hidden">
-                                    <div class="reg-contacts-addr">
-                                      <div class="reg-contacts-phone">
-                                        <div class="phone-cta-cion"><img alt="Phone" src="../img/phone-icon.svg" width="24" height="24"></div>
-                                        <div class="phone-num">+84 24 3942 0476</div>
-                                      </div>
-                                      <div class="reg-contacts-email">
-                                        <div class="email-cta-cion"><img alt="Email" src="../img/email-icon.svg" width="23" height="16"></div>
-                                        <div class="email-text"> <a href="mailto:china@dezshira.com">vietnam@dezshira.com</a></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
+             
                       </div>
                 </div>
             </div>

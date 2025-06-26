@@ -357,10 +357,11 @@ img{max-width: 16px;}
         .code-sensitive{margin-top: 5px;}
         .reload-captcha{margin-right: 0; margin-top: 0; margin-left: 5px;}
         .form-field-two-column, .form-field-three-column{ flex-direction: column; margin-bottom: 0px;
-            input[type=text],input[type=email], select{ width: 100%; margin-bottom: 2rem;}
+            input[type=text],input[type=email],input[type=password], select{ width: 100%; margin-bottom: 2rem;}
         }
     }
 }
+.services-question-section .got-question-block.ask-contact{width: 100%;}
 }
 @media (max-width: 767px) {
 .filter-form{

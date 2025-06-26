@@ -827,7 +827,11 @@ text-overflow: ellipsis;}
     gap: 30px;
     &.card-grid-inner{
       gap: 80px;
-      .card-horizontal{align-items: start;}
+      .card-horizontal{align-items: start;
+      &.card-h-pos{  position: relative;
+      .d-flex-column{position: absolute; bottom: 1rem;}
+      }
+      }
       .card-title{ font-family: v.$font-family-inter; font-weight: v.$font-weight-SemiBold; font-size: 22px; line-height: 32px;}
       .card-text{font-weight: v.$font-weight-light;
       &.card-txt-mh{

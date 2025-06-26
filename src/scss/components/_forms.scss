@@ -158,7 +158,9 @@ img{max-width: 16px;}
     }
     #loading_contact {padding: 10px; color:v.$gray-600;}
 
-    .services-question-section .got-question-block form {
+    .services-question-section .got-question-block {
+        &.ask-contact{width: 90%; margin: 0;}
+      form {
         input[type="text"],
         select,
         input[type="tel"],
@@ -201,8 +203,16 @@ img{max-width: 16px;}
           color: #727272;
           
         }
-        
+        .codecs{
+          display: flex;gap:0.5rem; margin: 1rem 0; align-items: center;
+          .security-Check-code{ display: flex; width: 100%; 
+          .loadCaptchaImage{ height: 40px;border: solid #c4c4c4 1px; border-radius: 3px;border-bottom-left-radius: 0;}
+          input{margin-bottom: 0;}
+          }
+        }
+       
       }
+    }
       .form-field-two-column, .form-field-three-column, .form-field-one-column{display: flex; gap: 1.5rem;}
       .filter-form { padding-top:2rem; width: 99.5vw; margin-left: calc(-50vw + 50%);
       padding-bottom: 2rem; position: sticky; top: 85px; background-color: #fff; z-index: 2;

@@ -1,6 +1,8 @@
 @use "../base/variables" as v; 
   .hp-event-date{    color: #fff; text-align: center; font-weight: normal; font-size: 14px; background: rgba(0, 20, 38, .56); padding: 15px 1rem; border-radius: 3px;
-  span{ display: block; color: #fff;}
+  span{ display: block; color: #fff;
+  }
+  .date{ font-size: 15px; font-weight: 700; margin-top: 0;}
   }
 .follow-latest{
 h4{color: #0C2740; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; margin-bottom: 1rem;}

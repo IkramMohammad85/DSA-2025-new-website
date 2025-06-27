@@ -1163,6 +1163,11 @@ justify-content: center;
     .featured-resources-heading {
       grid-template-columns: 1fr;
     }
+    .gateway-dba.dba-home .card-horizontal{
+
+      .heading-level2{width: 90%; margin: 0 auto;}
+    }
+
 }
 @media (max-width: 768px) {
     .news-section {
@@ -1180,6 +1185,19 @@ justify-content: center;
   }
 @media (max-width: 900px) {
     .splide-progress-wrapper{bottom: 23.5%; left: 125px;}
+  }
+@media (max-width: 1024px) {
+    .counter-inner .popover-content{width: 100%; justify-content: center;}
+    .trending-insights{
+  right: 0;}
+      .gateway-dba.dba-home .card-horizontal{
+        align-items: start;
+              .card-body{
+        height: 280px;
+        overflow-y: scroll;
+      }
+       .splide__arrow{display: none;}
+    }
   }
 @media (max-width: 1200px) {
     .resource-splide, .our-testimonial {

@@ -333,6 +333,13 @@ span{font-size: 2rem;}
           &:hover:not(.active) {background-color: #ebeef4;}
       }
   }
+
+@media (max-width: 1220px) {
+.card-horizontal.home-top-service-block .card-body .service-left.service-left-2column{
+  column-gap: 1.5rem;
+}
+}
+
 @media (max-width: 1024px) {
     .current-openings {
     li{flex-direction: column;   grid-template-columns: auto 210px auto;

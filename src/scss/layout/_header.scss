@@ -1506,7 +1506,10 @@ ul.mega-mtabs {
     }
     ul.mega-mtabs{width: 300px;}
     }  
-
-    @media screen and (min-device-width: 1100px) and (max-device-width: 1290px) { 
-      .navbar__logo img{height: 26px;}
+      @media screen and (max-device-width: 1290px) { 
+      .navbar__logo img{height: 40px;}
   }
+    @media screen and (max-device-width: 1136px) { 
+      .navbar__logo img{height: 34px;}
+  }
+

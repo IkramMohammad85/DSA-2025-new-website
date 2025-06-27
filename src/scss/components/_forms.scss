@@ -171,9 +171,11 @@ img{max-width: 16px;}
           border-bottom: 1px solid #C4C4C4;
           background: transparent;
           margin-bottom: 0.5rem;
-          padding-left: 0;
+          //padding-left: 0;
           color: #231F20;
           font-size: 15px;
+          padding-left: 0.5rem;
+          padding-right: 1.5rem;
         }
         input[type="submit"] {
             padding: 9px 20px;

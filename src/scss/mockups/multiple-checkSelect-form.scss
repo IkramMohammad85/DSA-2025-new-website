@@ -97,6 +97,15 @@
   transition: background 0.3s ease;
   height: 42px;
 }
+
+
+@media (max-width: 570px) {
+  .events-filter__form.career-search_form{ gap: 0;}
+  .selectbox-with-checkbox {
+    flex: 0 0 100%;
+    max-width: 92%;
+  }
+}
 @media (min-width: 667px) {
   .events-filter__form.career-search_form {
     gap: 1rem;

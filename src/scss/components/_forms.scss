@@ -369,6 +369,7 @@ img{max-width: 16px;}
 .filter-form{
   .form-row {flex-wrap:wrap;}
 }
+.filter-form.event-filter-form .form-row .select-wrapper{ max-width: 100%; width: 90%;}
 }
 @media (min-width: 768px) {
 .filter-form{

@@ -47,17 +47,18 @@
     }
 
       
-      @media (max-width: 1024px) {
+      @media (max-width: 1100px) {
         .services-question-section .got-question-block {
          width: 100%;
-        }
-      }
-      
-      @media (max-width: 768px) {
-        .services-question-section .got-question-block {
          margin-left: 0;
         }
       }
+      
+    //   @media (max-width: 768px) {
+    //     .services-question-section .got-question-block {
+    //      margin-left: 0;
+    //     }
+    //   }
 
 //end
 //The eight core tiers table

@@ -159,7 +159,7 @@
   &.event-hero{
     height: 700px;
     p{font-weight: v.$font-weight-light;}
-    .masthead__text{ justify-content: space-evenly;  padding: 0;
+    .masthead__text{ justify-content: space-evenly;  padding: 0; padding-right: 1.5rem;
       h1{font-size: 38px; line-height: 50px; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; margin-bottom: 0.8rem;}
       .text-head{margin-top: 3rem; max-width: 700px;
          .btn-outline-white{ margin-top: 2rem;}
@@ -314,6 +314,7 @@
      max-width: 100%;
     }
   }
+  .masthead.event-hero.event-hero-l2{height: 720px;}
 }
 
 @media (min-width: 768px) {

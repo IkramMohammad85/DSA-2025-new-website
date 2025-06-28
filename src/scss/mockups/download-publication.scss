@@ -56,11 +56,12 @@ margin-bottom: 1rem;}
 #btn_start_download{min-width: 200px;padding: 0.75rem 1rem;}
 @media (max-width: 1024px) {
 .masthead__text.justify-content-center{max-width: 50%;}
-.guide-download-sec {position: absolute;bottom: -210px; right: 3%; z-index: 3;}
+.guide-download-sec {position: absolute;bottom: -210px; right: 5%; z-index: 3;}
+.download-publication-form{width: 320px; margin-right: 4%; float: right;}
 }
 @media (max-width: 767px) {
 #scrollToForm{display: block;}
-.download-publication-form{margin-top: 0;}
+.download-publication-form{margin-top: 0; width: 100%; margin-right: 0; float: none;}
 .masthead.small-banner-height{ height: 550px; min-height: 550px;}
 .guide-download-sec{position: absolute; bottom: 40px; right: 0; left: 40px;}
 .guide-download-sec img{width: 170px;}

@@ -133,9 +133,10 @@ a {
     margin-bottom: 0.8em;
 }
 
-@media (max-width: 767px) {
-    .s-layout__main { padding: 0;}
+@media (max-width: 1100px) {
+    .s-layout__main { padding: 3rem 0 0 0;}
     .ma-area__content {
     flex-wrap: wrap;
 }
 }
+

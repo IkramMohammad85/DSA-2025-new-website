@@ -1108,7 +1108,8 @@
               <form>
                 
 <div class="radio-group-wrapper">
-  <label class="radio-group-label">Asia Pacific</label>
+  <label class="radio-group-label accordion-topic" data-toggle="accordion">Asia Pacific <span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
+  <!-- <label class="radio-group-label">Asia Pacific</label> -->
   <div class="custom-radio-list">
     <label class="custom-radio selected">
       <input type="radio" name="city" value="Australia" checked>
@@ -1851,7 +1852,20 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
+      label.addEventListener('click', function () {
+        const radioWrapper = this.closest('.radio-group-wrapper');
+        const radioList = wrapper.querySelector('.custom-radio-list');
+        const topicArrow = this.querySelector('.accordion-arrow');
 
+        radioList.classList.toggle('open');
+        this.classList.toggle('open'); 
+      });
+    });
+  });
+</script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

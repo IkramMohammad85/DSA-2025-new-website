@@ -2105,7 +2105,21 @@
     </div>
   </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
+      label.addEventListener('click', function () {
+        const radioWrapper = this.closest('.radio-group-wrapper');
+        const radioList = wrapper.querySelector('.custom-radio-list');
+        const topicArrow = this.querySelector('.accordion-arrow');
 
+        radioList.classList.toggle('open');
+        this.classList.toggle('open'); 
+      });
+    });
+
+  });
+</script>
   <script src="../js/vendor/splide.min.js"></script>
   <script src="../js/main.min.js"></script>
 

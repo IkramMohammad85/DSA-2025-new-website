@@ -127,21 +127,51 @@ a {color: #535353;}
       li{font-weight: v.$font-weight-light; color: #535353; line-height: 29px;}
       
     }
+
+    
 .find-expert-list{
   display: flex; flex-direction: row;
   .expert-country{
   .radio-group-wrapper { margin-right: 65px; border-bottom: solid 2px #E0E0E0; padding-bottom: 2rem; width: 240px;}
 
 .radio-group-label {
-  display: block;
+  //display: block;
   font-weight: 600;
   margin-bottom: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &.open .accordion-arrow {
+  transform: rotate(180deg); 
+}
+  
+}
+.accordion-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 12px;
+}
+.accordion-topic{
+  background-color: #f3f3f3;
+    padding: 10px 10px;
+    border-radius: 3px;
+    display: flex !important;
+    justify-content: space-between;
 }
 
 .custom-radio-list {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+
+  &.open {
+  max-height: 1000px; 
+}
 }
 
 .custom-radio {
@@ -888,3 +918,11 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
 
       }
 
+@media (min-width: 769px) {
+ .find-expert-list .expert-country{
+.custom-radio-list { max-height: none; overflow: visible;}
+.accordion-arrow { display: none;}
+.accordion-topic{background-color: inherit;  padding: 0;  border-radius: none;}
+ } 
+
+}

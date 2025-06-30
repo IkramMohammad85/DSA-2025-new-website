@@ -1095,7 +1095,7 @@
         <input type="search" placeholder="Search">
         <button class="btn btn-primary" type="submit"><img alt="Infographics" src="/img/search-icon-white.svg" width="16" height="16"></i></button>
     </div>
-  <label class="radio-group-label">Topic</label>
+    <label class="radio-group-label accordion-topic" data-toggle="accordion">Topic <span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
   <div class="custom-radio-list">
     <label class="custom-radio selected">
       <input type="radio" name="city" value="All" checked>
@@ -1688,7 +1688,20 @@
       </div>
     </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
+      label.addEventListener('click', function () {
+        const radioWrapper = this.closest('.radio-group-wrapper');
+        const radioList = wrapper.querySelector('.custom-radio-list');
+        const topicArrow = this.querySelector('.accordion-arrow');
 
+        radioList.classList.toggle('open');
+        this.classList.toggle('open'); 
+      });
+    });
+  });
+</script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

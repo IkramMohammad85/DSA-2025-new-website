@@ -155,7 +155,7 @@ text-overflow: ellipsis;}
   .toggleBtn-dropdown {
     position: relative;
     display: inline-block;
-    .card-btn{font-weight: 400;}
+    .card-btn{font-weight: v.$font-weight-SemiBold; font-family: v.$font-family-inter; font-size: .9em; justify-content: center;}
   }
   
   .toggleBtn-dropdown-button {

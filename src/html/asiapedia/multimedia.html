@@ -32,15 +32,15 @@
             <section class="page-intro pt-5 pb-5">
         <div class="section-wrapper-min">
           <div class="find-expert-list search-asiapedia-list mt-2">
-            <div class="expert-country">
-              <form>
-                
-<div class="radio-group-wrapper">
+<div class="expert-country">  
+<div class="radio-group-wrapper list-acc-wrapper">
+   <label class="accordion-topic list-acc-label" data-toggle="accordion">Search Topic Filter<span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
+   <div class="list-acc-block">
     <div class="search-bar mb-2">
         <input type="search" placeholder="Search">
         <button class="btn btn-primary" type="submit"><img alt="Infographics" src="/img/search-icon-white.svg" width="16" height="16"></i></button>
     </div>
-   <label class="radio-group-label accordion-topic" data-toggle="accordion">Topic <span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
+  <label class="radio-group-label">Topic</label>
   <div class="custom-radio-list">
     <label class="custom-radio selected">
       <input type="radio" name="city" value="All" checked>
@@ -71,14 +71,8 @@
     <label class="custom-radio"><input type="radio" name="city" value="HR and Payroll"><span class="radio-btn"></span><span class="radio-label-text">HR and Payroll</span></label>
     <label class="custom-radio"><input type="radio" name="city" value="Legal and M&A"><span class="radio-btn"></span><span class="radio-label-text">Legal and M&A</span></label>
   </div>
-
-
-
-
 </div>
-
-
-              </form>
+</div>
             </div>
             <div class="experts-card-list">
                 <div class="title-btn mb-1">
@@ -227,7 +221,21 @@
       </div>
     </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
+      label.addEventListener('click', function () {
+        const listAccWrapper = this.closest('.list-acc-wrapper');
+        const listAccBlock = wrapper.querySelector('.list-acc-block');
+        const topicArrow = this.querySelector('.accordion-arrow');
 
+        listAccBlock.classList.toggle('open');
+        this.classList.toggle('open'); 
+      });
+    });
+
+  });
+</script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

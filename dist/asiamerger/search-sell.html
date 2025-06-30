@@ -1096,6 +1096,9 @@
         <div class="section-wrapper-min">
           <div class="flex-grid-row flex-grid-row--one-third padding-none">
             <div class="flex-col-3per">
+                <div class="find-expert-list">
+                    <div class="expert-country">
+                <div class="radio-group-wrapper">
                 <label class="subhead ap-area__dropdown" data-toggle="accordion">Filter By</label>
   <div class="custom-radio-list">
                 <form id="ap-filter" action="" method="GET" onsubmit="return false;">
@@ -1164,8 +1167,8 @@
             <div class="divider-line-blue"></div>    
     <a href="/contact" class="text-cta-link">Get listed on Asiamerger <span class="arrow-anim"></span></a>
     <a href="/asiamerger/search?type=buy" class="text-cta-link">Go to investors search <span class="arrow-anim"></span></a>
-    </div>
-</div>
+    </div></div>
+</div></div></div>
                          
             </div>
             <div class="flex-col-7per"> 
@@ -2145,7 +2148,21 @@ An investment of USD 5 million will support a 6,000 sqm indoor facility, produci
     </div>
   </div>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
+      label.addEventListener('click', function () {
+        const radioWrapper = this.closest('.radio-group-wrapper');
+        const radioList = wrapper.querySelector('.custom-radio-list');
+        const topicArrow = this.querySelector('.accordion-arrow');
 
+        radioList.classList.toggle('open');
+        this.classList.toggle('open'); 
+      });
+    });
+
+  });
+</script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

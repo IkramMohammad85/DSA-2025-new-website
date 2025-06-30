@@ -128,24 +128,23 @@ a {color: #535353;}
       
     }
 
-    
-.find-expert-list{
-  display: flex; flex-direction: row;
-  .expert-country{
-  .radio-group-wrapper { margin-right: 65px; border-bottom: solid 2px #E0E0E0; padding-bottom: 2rem; width: 240px;}
-
-.radio-group-label {
-  //display: block;
-  font-weight: 600;
-  margin-bottom: 1rem;
+.list-acc-block {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+  &.open {
+  max-height: 1000px; 
+}
+}
+.list-acc-label {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
   &.open .accordion-arrow {
   transform: rotate(180deg); 
 }
-  
 }
 .accordion-arrow {
   display: inline-block;
@@ -156,24 +155,25 @@ a {color: #535353;}
   background-color: #f3f3f3;
     padding: 10px 10px;
     border-radius: 3px;
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
 }
+.find-expert-list{
+  display: flex; flex-direction: row;
+  .expert-country{
+  .radio-group-wrapper { margin-right: 65px; border-bottom: solid 2px #E0E0E0; padding-bottom: 2rem; width: 240px;}
 
+.radio-group-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
 .custom-radio-list {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.4s ease;
-
-  &.open {
-  max-height: 1000px; 
 }
-}
-
 .custom-radio {
   display: flex;
   align-items: center;
@@ -188,7 +188,6 @@ a {color: #535353;}
   border-radius: 8px;
 }
 }
-
 .custom-radio input[type="radio"] {
   display: none;
 }
@@ -919,10 +918,8 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
       }
 
 @media (min-width: 769px) {
- .find-expert-list .expert-country{
-.custom-radio-list { max-height: none; overflow: visible;}
+.list-acc-block  { max-height: none; overflow: visible; }
 .accordion-arrow { display: none;}
-.accordion-topic{background-color: inherit;  padding: 0;  border-radius: none;}
- } 
+.accordion-topic{ display: none;}
 
 }

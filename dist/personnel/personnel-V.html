@@ -1097,6 +1097,7 @@
 
             <section class="page-intro pb-5 pt-3">
         <div class="section-wrapper-min">
+          
           <h2 class="heading-level2 text-center">Find an Expert </h2>
            <div class="filter-trigger" data-sticky-watch="#filter-form"></div>
             <form id="filter-form" class="filter-form" action="" method="GET">
@@ -1110,11 +1111,11 @@
             </form>
           <div class="find-expert-list">
             <div class="expert-country">
-              <form>
-                
+              <div class="list-acc-wrapper">
+               <label class="accordion-topic list-acc-label" data-toggle="accordion">Search Expert Filter<span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
+    <div class="list-acc-block">           
 <div class="radio-group-wrapper">
-  <label class="radio-group-label accordion-topic" data-toggle="accordion">China <span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
-  <!-- <label class="radio-group-label">China</label> -->
+  <label class="radio-group-label">China </label>
   <div class="custom-radio-list">
     <label class="custom-radio selected">
       <input type="radio" name="city" value="Hong Kong SAR" checked>
@@ -1141,10 +1142,10 @@
     <label class="custom-radio"><input type="radio" name="city" value="Tianjin"><span class="radio-btn"></span><span class="radio-label-text">Tianjin</span></label>
     <label class="custom-radio"><input type="radio" name="city" value="Zhongshan"><span class="radio-btn"></span><span class="radio-label-text">Zhongshan</span></label>
   </div>
+</div></div> 
+
 </div>
-
-
-              </form>
+              
             </div>
             <div class="experts-card">
               <div class="our-experts">
@@ -1738,11 +1739,11 @@
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
       label.addEventListener('click', function () {
-        const radioWrapper = this.closest('.radio-group-wrapper');
-        const radioList = wrapper.querySelector('.custom-radio-list');
+        const listAccWrapper = this.closest('.list-acc-wrapper');
+        const listAccBlock = wrapper.querySelector('.list-acc-block');
         const topicArrow = this.querySelector('.accordion-arrow');
 
-        radioList.classList.toggle('open');
+        listAccBlock.classList.toggle('open');
         this.classList.toggle('open'); 
       });
     });

@@ -832,12 +832,14 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
   .find-expert-list{
     flex-direction: column;
     &.search-asiapedia-list{
-       .expert-country .radio-group-wrapper{margin-right: 0; width: 100%; margin-bottom: 2rem;}
+       .expert-country .radio-group-wrapper{margin-right: 0; width: 100%; 
+        margin-bottom: 0rem;
+      }
     }
     .experts-card{
       grid-template-columns: repeat(1, 1fr);
     }
-    .expert-country .radio-group-wrapper{margin-right: 0; width: 100%; margin-bottom: 2rem;}
+    .expert-country .radio-group-wrapper{margin-right: 0; width: 100%; margin-bottom: 0rem;}
     .our-experts{margin: 0 0 3rem 0;}
   }
   .filter-form .filter-buttons{flex-wrap: wrap;}

@@ -50,10 +50,11 @@
             <h2 class="heading-level2 mt-2 mb-2 text-center">Explore Offices</h2>
           <div class="find-expert-list find-location-list">
             <div class="expert-country">
-              <form>
-                
+      <div class="list-acc-wrapper">
+  <label class="accordion-topic list-acc-label" data-toggle="accordion">Search Offices Filter<span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
+    <div class="list-acc-block">
 <div class="radio-group-wrapper">
-  <label class="radio-group-label accordion-topic" data-toggle="accordion">Asia Pacific <span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
+  <label class="radio-group-label">Asia Pacific</label>
   <!-- <label class="radio-group-label">Asia Pacific</label> -->
   <div class="custom-radio-list">
     <label class="custom-radio selected">
@@ -89,11 +90,11 @@
 </span></label>
 
 
-  </div>
+  </div></div></div>
 </div>
 
 
-              </form>
+        
             </div>
             <div class="experts-card-list">
     <div class="experts-card-location" id="cardList"></div>
@@ -707,14 +708,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
       label.addEventListener('click', function () {
-        const radioWrapper = this.closest('.radio-group-wrapper');
-        const radioList = wrapper.querySelector('.custom-radio-list');
+        const listAccWrapper = this.closest('.list-acc-wrapper');
+        const listAccBlock = wrapper.querySelector('.list-acc-block');
         const topicArrow = this.querySelector('.accordion-arrow');
 
-        radioList.classList.toggle('open');
+        listAccBlock.classList.toggle('open');
         this.classList.toggle('open'); 
       });
     });
+
   });
 </script>
     <script src="../js/vendor/splide.min.js"></script>

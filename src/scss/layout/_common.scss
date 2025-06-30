@@ -152,12 +152,14 @@ a {color: #535353;}
   font-size: 12px;
 }
 .accordion-topic{
-  background-color: #f3f3f3;
-    padding: 10px 10px;
-    border-radius: 3px;
+  background-color: #fff;
+    padding: 10px 13px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
+    border: solid 1px #207fd4;
+    color: #207fd4;
 }
 .find-expert-list{
   display: flex; flex-direction: row;

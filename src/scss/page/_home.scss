@@ -1125,6 +1125,9 @@ justify-content: center;
   .counter-inner {flex-direction: column; gap: 3rem;
   //.counter-box{ margin-bottom: 2rem;}
 }
+.card-buttons {
+   justify-content: center;
+}
 }
 @media (max-width: 767px) {
   .event-video-item h2{display: none;}
@@ -1187,7 +1190,7 @@ justify-content: center;
 
       .heading-level2{width: 90%; margin: 0 auto;}
     }
-
+.card-image-container{order: -1;}
 }
 @media (max-width: 768px) {
     .news-section {

@@ -75,7 +75,7 @@ a{color: #0C2740; font-weight: v.$font-weight-Medium; font-family: v.$font-famil
 
 }
 .left-align-menu{display: flex; flex-wrap: wrap; gap: 2.5rem;}
-.experts-card-location {display: flex; flex-wrap: wrap; gap: 47px;
+.experts-card-location {display: flex; flex-wrap: wrap; gap: 47px; justify-content: center;
 .location-card-view{display: none;  animation: fadeIn 0.3s ease;
 &.visible {
       flex-basis: 100%;

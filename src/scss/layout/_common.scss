@@ -478,7 +478,7 @@ button{padding-right: 1rem;}
       .experts-detail{padding-right: 0; padding-left: 0; width: auto; border: none;}
       .expert-name-thumbnail{ width: 151px;
       height: 147px;
-      img{height: 147px; width: 151px;}
+      img{height: 147px; width: 151px; object-fit: cover;}
     }
     }
   }

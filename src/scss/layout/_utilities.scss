@@ -98,6 +98,6 @@ margin-top: calc((1 - 1.6) * 0.5em); }
   .padding-left4rem{padding-left: 0 !important;}
   .title-btn{flex-wrap: wrap;}
 }
-// @media (max-width: 667px) {
-//     .d-flex { flex-direction: column; }
-// }
+@media (max-width: 667px) {
+    .d-flex { flex-wrap: wrap; }
+}

@@ -93,11 +93,11 @@ margin-top: calc((1 - 1.6) * 0.5em); }
 .justify-end{justify-content: end;}
 .justify-center{justify-content: center;}
 .fd-col{flex-direction: column;}
+.hide{display: none !important;}
 @media only screen and (max-width: 1100px){
   .padding-left4rem{padding-left: 0 !important;}
   .title-btn{flex-wrap: wrap;}
 }
-@media (max-width: 667px) {
-    .d-flex { flex-direction: column; }
-}
-.hide{display: none !important;}
+// @media (max-width: 667px) {
+//     .d-flex { flex-direction: column; }
+// }

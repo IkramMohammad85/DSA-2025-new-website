@@ -11,6 +11,32 @@
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <link rel="stylesheet" href="../css/account-table.min.css" type="text/css">
+        <style>
+.navbar__iconmenu__login>a{
+    color: #357dc0 !important;
+    background-image: none;
+    border: solid 1px #357dc0;
+    text-decoration: none;
+    padding: .3rem 1rem !important;
+}
+.navbar__iconmenu>li:nth-child(2){position: relative;}
+.navbar__iconmenu>li:nth-child(1){position: inherit;}
+
+.lng-change {width: 150px; display: flex !important; justify-content: space-between; align-items: center; font-size: 15px;}
+.lng-change img{width: 18px;}
+.navbar__iconmenu>li>a.lng-change:after {
+content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; }
+.navbar__desks.navbar__lng{
+    width: 150px;
+    top: 62px;
+    left: inherit;
+    right: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    }
+.navbar__desks.navbar__lng a:hover{ background-color: inherit;}
+    </style>
+
     <!-- <style>
 
         .pricing__intro.include-price-table {
@@ -46,7 +72,7 @@
 
 <body>
     <main class="home country-section" id="wrapper">
-    @@include("../includes/header.html")
+    @@include("../includes/headerV3.html")
       <section class="masthead">
         <div class="section-wrapper-min">
           <div class="masthead__text justify-content-center">

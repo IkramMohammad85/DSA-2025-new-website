@@ -11,6 +11,32 @@
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <link rel="stylesheet" href="../css/account-table.min.css" type="text/css">
+        <style>
+.navbar__iconmenu__login>a{
+    color: #357dc0 !important;
+    background-image: none;
+    border: solid 1px #357dc0;
+    text-decoration: none;
+    padding: .3rem 1rem !important;
+}
+.navbar__iconmenu>li:nth-child(2){position: relative;}
+.navbar__iconmenu>li:nth-child(1){position: inherit;}
+
+.lng-change {width: 150px; display: flex !important; justify-content: space-between; align-items: center; font-size: 15px;}
+.lng-change img{width: 18px;}
+.navbar__iconmenu>li>a.lng-change:after {
+content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; }
+.navbar__desks.navbar__lng{
+    width: 150px;
+    top: 62px;
+    left: inherit;
+    right: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    }
+.navbar__desks.navbar__lng a:hover{ background-color: inherit;}
+    </style>
+
     <!-- <style>
 
         .pricing__intro.include-price-table {
@@ -1021,32 +1047,6 @@
           <li><a href="#" class="hover-ripple-out">Contact Us</a></li>
         </ul>
         <ul class="navbar__iconmenu">
-          <li><a href="#" data-twice="1" aria-label="Search here"><i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i></a>
-            <div class="navbar__search">
-              <div class="section-wrapper">
-                <div class="navbar__search__box">
-                  <input type="search" name="" placeholder="Search">
-                  <button type="submit"><i class="icon-search"></i></button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li><a href="#" data-twice="2" aria-label="Desk here"><i class="icon-sphere" aria-hidden="true"></i></a>
-            <aside class="navbar__desks">
-              <ul>
-                <li><a class="sprite-flag sprite-flag-us" href="#">North American Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-uk" href="#">UK and Ireland Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-fr" href="#">French Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-de" href="#">German Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-it" href="#">Italian Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-ru" href="#">Russian Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-es" href="#">Spanish Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-cn" href="#">Chinese Desk</a></li>
-                <li><a class="sprite-flag-uae" href="#">Middle East Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-au" href="#">Australian Desk</a></li>
-              </ul>
-            </aside>
-          </li>
           <li class="navbar__iconmenu__login"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
             <aside class="navbar__accessbox login-reg-block">
               <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
@@ -1097,6 +1097,24 @@
               </div>
             </aside>
           </li>
+          <li><a href="#" data-twice="0" aria-label="Desk here" class="lng-change">Global (EN) <img src="/img/globe-lng.svg" alt="globe logo"></a>
+            <aside class="navbar__desks navbar__lng">
+              <ul>
+                <li><a href="#">中文</a></li>
+
+              </ul>
+            </aside>
+          <!-- </li>
+          <li><a href="#" data-twice="0" aria-label="Search here"><i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i></a>
+            <div class="navbar__search">
+              <div class="section-wrapper">
+                <div class="navbar__search__box">
+                  <input type="search" name="" placeholder="Search">
+                  <button type="submit"><img src="/img/icon-magnifier-white.svg" alt="search" style="width: 20px;"></button>
+                </div>
+              </div>
+            </div>
+          </li> -->
         </ul>
       </div>
       <button class="navbar__hamburger navbar--mobile" aria-label="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>

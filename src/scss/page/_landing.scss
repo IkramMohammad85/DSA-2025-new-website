@@ -481,7 +481,7 @@
                 .ibm-enizi-sp-block{
         flex-direction: column;
         .ibm-enizi-sp-title{
-            margin-right: 0;
+            margin-right: 0; margin-bottom: 1rem;
         }
         .ibm-enizi-sp-text{
             padding-top: 1rem;
@@ -492,6 +492,9 @@
             }
         
             .carousel-item:nth-child(2) .ibm-enizi-sp-block .ibm-enizi-sp-text h3{width: auto; text-align: center;}
+        }
+        .ibm-enizi-sp {
+            h2{margin-bottom: 2rem;}
         }
         }
      //

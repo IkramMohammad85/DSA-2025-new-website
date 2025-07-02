@@ -1080,6 +1080,9 @@ justify-content: center;
       }
        .splide__arrow{display: none;}
     }
+        .trending-insights{
+      background-color: rgb(12, 39, 65, 100%);
+    }
   }  
 @media (max-width: 500px) {
   .news-list.news-list-thumb .news-item{
@@ -1213,6 +1216,7 @@ justify-content: center;
     .right-column {
       width: 100%;
     }
+
   }
 @media (max-width: 900px) {
     .splide-progress-wrapper{bottom: 23.5%; left: 125px;}

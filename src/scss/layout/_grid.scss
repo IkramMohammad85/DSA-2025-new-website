@@ -123,7 +123,9 @@ main {
     display: grid;
     
 }
-
+@media (max-width: 557px) {
+  .flex-grid-row--two .flex-col{padding: 0;}
+}
 @media (min-width: 768px) {
   .flex-grid-row-2column{
     grid-template-columns: repeat(2, 1fr);

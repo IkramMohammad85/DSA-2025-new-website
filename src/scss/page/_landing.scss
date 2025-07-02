@@ -454,7 +454,9 @@
     }
 }
 //end
-
+@media (max-width: 557px) {
+  .services-question-section .got-question-block{padding: 1rem;}
+}
 @media only screen and  (max-width: 667px){
         //Explore the Business Environment
         .dbp {

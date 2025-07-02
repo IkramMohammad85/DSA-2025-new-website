@@ -103,5 +103,7 @@ a{color: v.$dsa-dark-blue; }
 }
 @media (max-width: 667px) {
     .d-flex { flex-wrap: wrap; }
-    .heading-level2{font-size: 24px; padding-left: 1.5rem; padding-right: 1.5rem;}
+    .heading-level2{font-size: 24px; 
+        // padding-left: 1.5rem; padding-right: 1.5rem;
+    }
 }

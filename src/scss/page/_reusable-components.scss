@@ -360,6 +360,11 @@ span{font-size: 2rem;}
   }
   }
 }
+@media (max-width: 906px) {
+ .experts-card-location {
+    justify-content: start;
+  }
+}
 @media (max-width: 767px) {
   .find-expert-list.find-asiapedia-list {
     .expert-country .radio-group-wrapper{max-width: 100%; width: auto;}
@@ -395,7 +400,11 @@ span{font-size: 2rem;}
   }
         
 }
-
+@media (max-width: 667px) {
+     .experts-card-location {
+    justify-content: center;
+  }
+}
 @media (max-width: 557px) {
   .card-resrcs{
     &.webinar{flex-direction: column;
@@ -409,4 +418,5 @@ span{font-size: 2rem;}
   }
   .card-horizontal.home-top-service-block .service-left li:hover a:after {display: none; }
   .card-horizontal.home-top-service-block .service-left li:hover a {color: #217FD4; }
+
 }

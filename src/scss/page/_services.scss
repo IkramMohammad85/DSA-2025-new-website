@@ -75,7 +75,9 @@
     .pricing__intro{width: 100%;}
  
     .flex-spacing{ flex-direction: column;}
-    .flex-grid-row--one-third{flex-direction: column; flex-wrap: nowrap;}
+    .flex-grid-row--one-third{
+      //flex-direction: column; 
+      flex-wrap: wrap;}
     .bp-block {
         width: auto;
     }

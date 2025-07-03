@@ -154,10 +154,10 @@ a{color: #0C2740; font-weight: v.$font-weight-Medium; font-family: v.$font-famil
 }
 .splide__slide{
   &:nth-child(4n + 1) .triangle {
-  border-color: #EAA68F;
+  border-color: #FFE8AF;
 }
 &:nth-child(4n + 2) .triangle{
-  border-color: #FFE8AF;
+  border-color: #EAA68F;
 }
 &:nth-child(4n + 3) .triangle{
   border-color: #ADCAA7;

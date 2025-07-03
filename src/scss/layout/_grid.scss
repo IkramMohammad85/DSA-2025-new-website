@@ -274,15 +274,18 @@ main {
     }
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1220px) {
   .section-wrapper {
-    max-width: 100%;
+    //max-width: 100%;
+    max-width: 1220px;
   }
   .section-wrapper-min {
-    max-width: 100%;
+    //max-width: 100%;
+    max-width: 1220px;
   }
     .section-wrapper-small {
-    max-width: 100%;
+    //max-width: 100%;
+    max-width: 1220px;
   }
 }
 @media (min-width: 1440px) {

@@ -598,13 +598,13 @@ height: 28px;
 svg { fill: #000 !important; height: 0.5rem;     stroke: #000000; stroke-width: 5px;}
 }
 &.dba-home{
-  .splide__arrow--next{right: -50px;}
-.splide__arrow--prev{left: -50px;}
+  .splide__arrow--next{right: -40px;}
+.splide__arrow--prev{left: -40px;}
 }
 }
 .our-testimonial{
-.splide__arrow--prev   {left: -50px;  }
-.splide__arrow--next {right: -50px;}
+.splide__arrow--prev   {left: -40px;  }
+.splide__arrow--next {right: -40px;}
 }
 .clients-carousel{
   .splide{max-width: 1245px; margin: 0 auto;}
@@ -619,13 +619,13 @@ svg { fill: #000 !important; height: 0.5rem;     stroke: #000000; stroke-width: 
 height: 28px;
 svg { fill: #000 !important; height: 0.5rem;     stroke: #000000; stroke-width: 5px;}
 }
-  .splide__list {gap: 1.3rem;}
+  // .splide__list {gap: 1.3rem;}
   .splide__track { max-width: 1072px; margin: 0 auto;}
   &.splide-three-column{
     .splide__track { max-width: 1220px; }
-    .splide__list {gap: 0.3rem;}
-      .splide__arrow--prev   {left: -50px;  }
-.splide__arrow--next {right: -50px;}
+    // .splide__list {gap: 2.5rem;}
+      .splide__arrow--prev   {left: -40px;  }
+.splide__arrow--next {right: -40px;}
   }
 }
 
@@ -810,9 +810,12 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
 
       
 @media (max-width: 667px) {
+
+  .resource-splide.splide-three-column .splide__list{gap: 0;}
   .location-card.office-card{flex-wrap: wrap;
   .location-address{width: auto;}
    .location-cta{margin-top: 2rem;}
+   .studies-insights .splide__list{gap: 0;}
   }
 
 //.d-flex{flex-direction: column;}

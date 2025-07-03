@@ -923,7 +923,7 @@ text-overflow: ellipsis;}
 .studies-insights{ 
   &.resource-splide{
     .splide__track{
-      max-width: inherit;
+      max-width: 1172px;
     }
   }
   .card-horizontal{
@@ -931,11 +931,12 @@ text-overflow: ellipsis;}
     box-shadow: none;
     border: solid 1px #eaeaea;
     border-radius: 4px;
-    //max-width: 360px;
-    margin-bottom: 2rem;
+    max-width: 360px;
+    //margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
  
-    .card-image-container{
-      img{
+    .card-image-container{ height: 162px;
+      img{ overflow: hidden;
   
       border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -953,10 +954,10 @@ text-overflow: ellipsis;}
        min-height: 112px;
 }
   }
-  .splide__list { gap: 2.6rem;
-    justify-content: space-between;}
-  .splide__slide{width: 362px !important;
-    flex: 0 0 362px !important;}
+  // .splide__list { gap: 2.6rem;
+  //   justify-content: space-between;}
+  // .splide__slide{width: 362px !important;
+  //   flex: 0 0 362px !important;}
     .text-cta-link{margin-top: 10px;}
 }
 @keyframes fadeImageOutIn {
@@ -1102,16 +1103,21 @@ justify-content: center;
  .clients-panel-list{
 .splide__pagination{justify-content: center;}
  }
+//        .resource-splide.splide-three-column{
+//        .splide__slide {
+//     width: 363px !important;
+//     flex: 0 0 363px !important;
+// }
+
+//        }
  @media (max-width: 1440px) {
       .trending-insights{right: 0;}
       .gateway-dba.dba-home, .resource-splide.splide-three-column {
-    .splide__track{margin-left: 4rem; margin-right: 4rem; max-width: 1220px;}
-    .splide__arrow--next{right: 0;}
-    .splide__arrow--prev{left: 0;}
+    .splide__track{max-width: 1220px;}
+    //.splide__arrow--next{right: 0;}
+    //.splide__arrow--prev{left: 0;}
       }
-      // .resource-splide.splide-three-column{
-      //   .splide__arrow{top: 50%; bottom: inherit;}
-      // }
+
  }
 @media (max-width: 1024px) {
   .card-grid{
@@ -1139,6 +1145,10 @@ justify-content: center;
     }
   }  
 @media (max-width: 500px) {
+//     .resource-splide.splide-three-column .splide__slide {
+//     width: 328px !important;
+//     flex: 0 0 328px !important;
+// }
   .news-list.news-list-thumb .news-item{
     grid-template-columns:1fr;
   }
@@ -1193,6 +1203,7 @@ justify-content: center;
     .splide__arrow{top: 50%; bottom: inherit;}
     .splide__arrow--next{right: 0; left: inherit;}
     .splide__arrow--prev{left: 0;}}
+    .studies-insights .splide__list{gap: 0;}
 }
 @media (max-width: 767px) {
   .event-video-item h2{display: none;}

@@ -252,7 +252,7 @@ line-height: 24px;
     &.related-card{
         //width: 480px;
         flex-direction: column;
-        max-width: 516px; border-radius: 4px; margin-bottom: 2rem;
+        max-width: 516px; border-radius: 4px; margin: 0 auto 2rem auto;
         .resrcs-meta{ margin: 0; margin-bottom: 1rem;font-weight: 400;
 a{color: #344C71; font-weight: 400;}
 }
@@ -263,7 +263,7 @@ span{font-size: 2rem;}
 }
 .resrcs-image{height: 170px;}
 &.related-card-small{
-  max-width: 370px;
+  max-width: 360px;
   //max-width: 336px;
 .resrcs-body{
   //min-height: 158px;

@@ -1102,7 +1102,11 @@ justify-content: center;
  .clients-panel-list{
 .splide__pagination{justify-content: center;}
  }
-@media (max-width: 1440px) {
+ @media (max-width: 1440px) {
+      .trending-insights{
+  right: 0;}
+ }
+@media (max-width: 1024px) {
   .card-grid{
     &.card-vertical{
       &.card-vertical-three-column{grid-template-columns: repeat(2, 1fr);}

@@ -1103,8 +1103,13 @@ justify-content: center;
 .splide__pagination{justify-content: center;}
  }
  @media (max-width: 1440px) {
-      .trending-insights{
-  right: 0;}
+      .trending-insights{right: 0;}
+      .gateway-dba.dba-home, .resource-splide.splide-three-column {
+    .splide__track{margin-left: 4rem; margin-right: 4rem; max-width: 1220px;}
+    .splide__arrow--next{right: 0;}
+    .splide__arrow--prev{left: 0;}
+      }
+      
  }
 @media (max-width: 1024px) {
   .card-grid{
@@ -1116,7 +1121,8 @@ justify-content: center;
     .counter-inner .popover-content{width: 100%; justify-content: center;}
     .trending-insights{
   right: 0;}
-      .gateway-dba.dba-home .card-horizontal{
+      .gateway-dba.dba-home {
+        .card-horizontal{
         align-items: start;
               .card-body{
         height: 280px;
@@ -1124,6 +1130,8 @@ justify-content: center;
       }
        .splide__arrow{display: none;}
     }
+    
+      }
         .trending-insights{
       background-color: rgb(12, 39, 65, 100%);
     }

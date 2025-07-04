@@ -79,7 +79,7 @@
         font-size: 14px;
         th {background-color: v.$white;}
     }
-    .table {
+    .table {display: inline;
         td{word-break: normal;}
         th,td{border: none;
             &:first-child{width: 150px; text-align: left; }
@@ -546,6 +546,16 @@
     }
 }
 //end
+.eight-core-table {
+    th:first-child, td:first-child, p{
+ position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        background-color: #F6F6F6;
+        z-index: 1;
+    }
+}
+
 }
 @media only screen and (max-width: 1024px){
     //Learn more about the ESG Framework Landscape

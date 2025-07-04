@@ -852,6 +852,7 @@ text-overflow: ellipsis;}
       .card-title{margin-top: 1.8rem;}
       .card-horizontal{
         grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
       }
       &.card-vertical-three-column{
         grid-template-columns: repeat(3, 1fr);

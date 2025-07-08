@@ -440,8 +440,8 @@ button{padding-right: 1rem;}
   
  .expert-name-thumbnail{position: relative; overflow: hidden; z-index: 2; border-radius: 4px;}
  .our-experts {
-  //width: 242px;
-  width: auto;
+  width: 242px;
+  //width: auto;
   margin: 0 auto 3rem auto;
   border-radius: 3px;
   .expert-name{font-weight: v.$font-weight-SemiBold;  color: #111; margin-bottom: 0.2rem; font-size: 14px;
@@ -742,6 +742,14 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
 
 }
 @media only screen and (max-width: 1000px){
+
+  .follow-latest{
+.section-wrapper-min{padding: 0;}
+.follow-updates{ 
+&::before {display: none; }
+}
+.latest-inbox, .follow-updates{padding: 2rem !important;}
+}
   /*Executive Summary */
 .landing-top-content{
   .two-column-section{flex-direction: column;
@@ -824,12 +832,7 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
 .bio-thumbnail{margin-bottom: 2rem; margin-right: 0;}
 .bio-details{ width: 100%;}
   }
-.follow-latest{
-.follow-updates{ 
-&::before {display: none; }
-}
-.latest-inbox, .follow-updates{padding: 2rem !important;}
-}
+
 
   .clients-panel-list .c-logo{gap: 2rem;}
   

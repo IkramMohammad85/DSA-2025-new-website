@@ -1200,6 +1200,13 @@ justify-content: center;
 }
 }
 @media (max-width: 640px) {
+  .news-section {gap: 1.5rem;}
+  .news-list.news-list-thumb{ gap: 1.5rem;
+    .news-item {
+      border-top: solid 1px #ddd; padding-top: 1.5rem;
+      .news-thumb{display: none;}
+    }
+  }
   .clients-panel-list.resource-splide{
     .splide__arrow{top: 50%; bottom: inherit;}
     .splide__arrow--next{right: 0; left: inherit;}

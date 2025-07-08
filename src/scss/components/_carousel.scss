@@ -266,13 +266,15 @@
   @media (max-width: 1024px) {
     .slider-content {
       max-width: 90%;
+      top: 5rem;
       .slide-title {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         line-height: normal;
       }
     
       .slide-desc {
-        font-size: 1rem;
+        font-size: 17px;
+        line-height: 26px;
       }
     }
   

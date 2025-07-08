@@ -100,10 +100,13 @@
 
 
 @media (max-width: 570px) {
-  .events-filter__form.career-search_form{ gap: 0;}
+  .events-filter__form.career-search_form{ gap: 0; flex-direction: column;
+    .list-acc-label, .list-acc-block{width: 90%; margin: 2rem auto 0 auto;}
+    
+  }
   .selectbox-with-checkbox {
     flex: 0 0 100%;
-    max-width: 92%;
+    max-width: 100%;
   }
 }
 @media (min-width: 667px) {

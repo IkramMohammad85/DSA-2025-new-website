@@ -1137,7 +1137,11 @@
 </button>
 </div>
             </form> -->
-<form class="career-search_form events-filter__form" action="career/search" method="GET" id="career_search_form">
+
+<form class="career-search_form events-filter__form list-acc-wrapper" action="career/search" method="GET" id="career_search_form">
+   
+   <label class="accordion-topic list-acc-label" data-toggle="accordion">Search Job Openings Filter<span class="accordion-arrow"><img alt="Infographics" src="/img/input-arrow.png" width="16" height="16"></span></label>
+   <div class="list-acc-block car-list-block">
             <div class="selectbox-with-checkbox">
               <div class="selectbox">
                 <span class="select-icon">
@@ -1248,7 +1252,7 @@
             <button type="submit" class="search-btn">
 <img src="/img/events/search-icon-white.svg" width="20" height="20" alt="Search">
 </button>
-</form>
+</div></form>
 
             <div class="current-job-openings">
                 <ul class="current-openings">
@@ -1706,6 +1710,21 @@ window.addEventListener('load', function() {
 
 		}
 });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
+      label.addEventListener('click', function () {
+        const listAccWrapper = this.closest('.list-acc-wrapper');
+        const listAccBlock = wrapper.querySelector('.list-acc-block');
+        const topicArrow = this.querySelector('.accordion-arrow');
+
+        listAccBlock.classList.toggle('open');
+        this.classList.toggle('open'); 
+      });
+    });
+
+  });
 </script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>

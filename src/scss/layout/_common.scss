@@ -440,7 +440,8 @@ button{padding-right: 1rem;}
   
  .expert-name-thumbnail{position: relative; overflow: hidden; z-index: 2; border-radius: 4px;}
  .our-experts {
-  width: 242px;
+  //width: 242px;
+  width: auto;
   margin: 0 auto 3rem auto;
   border-radius: 3px;
   .expert-name{font-weight: v.$font-weight-SemiBold;  color: #111; margin-bottom: 0.2rem; font-size: 14px;
@@ -926,7 +927,20 @@ p{color: #535353; line-height: 26px; font-family: v.$font-family-inter; font-wei
       }
 
 @media (min-width: 668px) {
-.list-acc-block  { max-height: none; overflow: visible; }
+.list-acc-block  { max-height: none; overflow: visible; 
+  &.car-list-block{
+  display: flex;
+    width: 99.5vw;
+    margin-left: calc(-50vw + 50%);
+    gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    
+}
+
+}
+
 .accordion-arrow { display: none;}
 .accordion-topic{ display: none;}
 

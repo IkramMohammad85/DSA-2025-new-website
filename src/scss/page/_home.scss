@@ -1198,6 +1198,9 @@ justify-content: center;
 .card-buttons {
    justify-content: center;
 }
+
+
+
 }
 @media (max-width: 640px) {
   .news-section {gap: 1.5rem;}
@@ -1322,3 +1325,20 @@ justify-content: center;
       }
     }
   }
+@media (max-width: 640px) {
+
+      .resource-splide, .our-testimonial {
+  
+    .splide__arrow--next{right: 39%; left: inherit;}
+    .splide__arrow--prev{left: 39%;}
+    &.splide-three-column {
+      .splide__arrow--prev{left: 0;}
+      .splide__arrow--next{right: 0%;}
+    }
+    
+  }
+   .studies-insights.resource-splide {
+      .splide__arrow--prev{left: 0;}
+      .splide__arrow--next{right: 0%;}
+    }
+}

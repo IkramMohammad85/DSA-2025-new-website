@@ -1111,6 +1111,7 @@ justify-content: center;
 // }
 
 //        }
+.contact-mv{display:none;}
  @media (max-width: 1440px) {
       .trending-insights{right: 0;}
       .gateway-dba.dba-home, .resource-splide.splide-three-column {
@@ -1203,6 +1204,7 @@ justify-content: center;
 
 }
 @media (max-width: 640px) {
+
   .news-section {gap: 1.5rem;}
   .news-list.news-list-thumb{ gap: 1.5rem;
     .news-item {
@@ -1296,6 +1298,11 @@ justify-content: center;
   }
 @media (max-width: 900px) {
     .splide-progress-wrapper{bottom: 23.5%; left: 125px;}
+    
+  }
+  @media (max-width: 1000px) {
+
+      .contact-mv{display: inline-block; position: relative; right: 50px;}
     
   }
 

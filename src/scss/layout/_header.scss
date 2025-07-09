@@ -780,7 +780,7 @@ $short-browser: 720px;
   &__hamburger {
     position: absolute;
     top: 1.5rem;
-    right: 1.5rem;
+    right: 1rem;
     width: 2rem;
     height: 2rem;
     margin: 0;
@@ -793,7 +793,7 @@ $short-browser: 720px;
     span {
       display: block;
       position: absolute;
-      width: 100%;
+      width: 66%;
       height: 0.125rem;
       margin: 0;
       padding: 0;
@@ -812,11 +812,11 @@ $short-browser: 720px;
       }
 
       &:before {
-        margin-top: -0.75rem;
+        margin-top: -0.30rem;
       }
 
       &:after {
-        margin-top: 0.75rem;
+        margin-top: 0.30rem;
       }
     }
 

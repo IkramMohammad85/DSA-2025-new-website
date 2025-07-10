@@ -4,13 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.min.css" type="text/css" />
-    <link rel="stylesheet" href="/css/vendor/splide.min.css" type="text/css">
-    <!-- <link rel="stylesheet" href="../css/carousel.min.css" type="text/css" /> -->
-    <link rel="preload" as="image" href="/img/top-home-slide-img/1n.webp">
-    <link rel="preload" href="../fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="../fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Preload critical fonts -->
+<link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Preload critical image -->
+<link rel="preload" as="image" href="/img/top-home-slide-img/1n.webp">
+
+<!-- Async CSS loading using media and onload trick -->
+<link rel="stylesheet" href="/css/main.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/css/main.min.css"></noscript>
+
+<link rel="stylesheet" href="/css/vendor/splide.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/css/vendor/splide.min.css"></noscript>
+
     <title>Dezan Shira &amp; Associates - Homepage</title>
 </head>
 
@@ -2375,8 +2383,8 @@
         <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
       </div>
     </div>
-    <script src="/js/vendor/splide.min.js"></script>
-    <script src="js/main.min.js"></script>
+<script src="/js/vendor/splide.min.js" defer></script>
+<script src="/js/main.min.js" defer></script>
     
 
 </body>

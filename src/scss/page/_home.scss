@@ -123,7 +123,9 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 overflow: hidden;
 text-decoration: none;
-text-overflow: ellipsis;}
+text-overflow: ellipsis;
+&:hover{text-decoration: underline;}
+}
     }
   }
     .ti-heading {

@@ -1,31 +1,36 @@
 @use "../base/variables" as v;
-.banner-image-overley:after {
-  display: block;
-  position: absolute;
-  background-image: linear-gradient(to left, rgba(32, 127, 212, 0) 0, #2a70ae 100%);
-  content: '';
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  opacity: 0.8;
+/**Black overley  and blue overlay*/
+.banner-image-overley {
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to left,
+      rgba(32, 127, 212, 0) 0%,
+      #2a70ae 100%
+    );
+    opacity: 0.8;
+    z-index: 0;
+  }
 
+  &.image-overley-black::after {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    opacity: 1;
+    z-index: 1;
+  }
 }
-// .banner-image-overley.image-overley-black::after {
-//   background-image: linear-gradient(to left, rgba(32, 127, 212, 0) 0, #000 100%);
-//   }
-
-  .banner-image-overley.image-overley-black::after {
-  background-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.60) 50%,
-    rgba(0, 0, 0, 0.8) 100%
-   
-  );
-  opacity: 1;
-  z-index: 1; 
-}
+/**end*/
+/**footer cta banner*/
 .hero-section {
   position: relative;
   display: flex;
@@ -69,6 +74,7 @@
     }
   }
 }
+/**end*/
 .masthead {
   position: relative;
   height: 420px;
@@ -145,17 +151,7 @@
       min-height: 100%;
     }
   }
-  .envizi-ibm {
-    right: 30%;
-    bottom: 35%;
-    position: absolute;
-    padding: 0.5rem;
-    border-radius: 2px;
-    background: rgba(0, 0, 0, 0.7);
-    img {
-      width: 120px;
-    }
-  }
+
   &.event-hero{
     height: 700px;
     p{font-weight: v.$font-weight-normal;}
@@ -170,7 +166,6 @@
       .text-head{max-width: 800px; margin-top: 0;}
       h1{max-width: 100%;}
       p{margin-top: 2rem; margin-bottom: 2.5rem; font-size: 16px; line-height: 30px; font-weight: v.$font-weight-SemiBold;}
-      
     }
     &.news-hero-inner{height: 425px;
     h1{max-width: 100%; font-weight: v.$font-weight-Medium; font-size: 2rem; line-height: 45px;}
@@ -178,7 +173,6 @@
   &.asiapedia-hero{
     .text-head{max-width: 660px; margin-top: 6rem;
     h1{max-width: inherit;}
-    .btn-outline-white{ margin-top: 2rem;}
     
     }
     .feature-events{padding-top: 5rem;}
@@ -192,10 +186,10 @@
     }
 
   }
-&.master-text-location{
-      .masthead__text{max-width: 600px;}
-      p{margin-top: 1rem; font-weight: 500;}
-    }
+// &.master-text-location{
+//       .masthead__text{max-width: 600px;}
+//       p{margin-top: 1rem; font-weight: 500;}
+//     }
     &.small-banner-height{height: 210px;}
 
 &.cnt-min-h{
@@ -209,28 +203,20 @@
 .breadcrumb {
   padding-top: 1.5rem;
   ul {
-    list-style: url(/img/breadArrow.svg);
     display: flex;
-    bottom: 0;
     padding: 1rem 0;
     margin: 0px;
-    font-size: 0.9rem;
-    color: #C0C0C0;
 
     li {
       padding: 0 1.5rem 0 0.5rem;
       font-size: 0.9rem;
       &:first-child {
         padding-left: 0px;
-        list-style: none;
       }
     }
     a {
       color: #C0C0C0;
       font-size: 0.9rem;
-      &:hover {
-        color: #C0C0C0;
-      }
     }
   }
       &.justify-content-end{
@@ -255,27 +241,15 @@
 @media (max-width: 1100px) {
   .masthead { height: 222px;
     &__bg img {
-      //height: 240px;
       height: auto;
       max-width: fit-content;
-    }
-
-    &.esg-banner {
-      h1 {
-        font-size: 20px;
-        max-width: 200px;
-      }
-      .envizi-ibm {
-        right: 16px;
-      }
     }
     &__text{
   .feature-events{
     ul{
-          grid-template-columns: repeat(1, 1fr);
-          gap: 2rem;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
     li{border-right: none;
-      
     }
     }
   }

@@ -12,9 +12,11 @@
 }
 .splide.is-focus-in .splide__pagination__page:focus{display: none !important;}
 .splide__pagination__page:focus-visible{display: none !important;}
-.splide__arrow:focus-visible{outline: none !important;}
-.splide__arrow{background: transparent !important;}
-.splide__arrow svg{fill: #525252 !important;}
+.splide__arrow{background: transparent !important;
+  &:focus-visible{outline: none !important;}
+svg{fill: #525252 !important;}
+}
+
 .slider-content {
   position: absolute;
   top: 8rem;
@@ -122,9 +124,9 @@
   .splide__arrow--prev{left: -15px;}
   .splide__arrow--next{right: -15px;}
         
-        .splide__arrow--prev{left: 18px !important;}
-        .splide__arrow--next{right: 0px;left: 55px !important;}
-        .splide__arrow{
+  .splide__arrow--prev{left: 18px !important;}
+  .splide__arrow--next{right: 0px;left: 55px !important;}
+  .splide__arrow{
             border: solid 1px #535353;
             opacity: 1;
             width: 28px;
@@ -136,7 +138,7 @@
             stroke-width: 5px;
         }
         }
-        .splide__arrows{bottom: 0;position: absolute;}
+  .splide__arrows{bottom: 0;position: absolute;}
      
 
 }
@@ -189,7 +191,6 @@
     }
 
   }
-
   .section-wrapper, .section-wrapper-min {
     position: absolute;
     height: 711px;
@@ -197,15 +198,11 @@
     left: 0%;
     margin: 0 auto;
   }
-
   .btn {
     margin-top: 2rem;
     padding: 0.75rem 1.5rem;
     animation: fadeInUp 1.6s ease-in-out;
   }
-
-
-
   .splide__list {
     height: 711px;
   }
@@ -249,15 +246,21 @@
 // #main-slider .splide__list{height: 87vh;}
 //   }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-#main-slider{height: 60vh;}
-#main-slider .section-wrapper-min{height:  60vh;}
-#main-slider .splide__list{height: 60vh;}
+#main-slider{height: 60vh;
+.section-wrapper-min{height:  60vh;}
+.splide__list{height: 60vh;}
+}
+// #main-slider .section-wrapper-min{height:  60vh;}
+// #main-slider .splide__list{height: 60vh;}
 .splide-progress-wrapper{left: 145px;}
 }
   @media screen and (min-width: 1025px) and (max-width: 1366px) {
-  #main-slider{height: 87vh;}
-#main-slider .section-wrapper-min{height:  87vh;}
-#main-slider .splide__list{height: 87vh;}
+  #main-slider{height: 87vh;
+  .section-wrapper-min{height:  87vh;}
+   .splide__list{height: 87vh;}
+  }
+// #main-slider .section-wrapper-min{height:  87vh;}
+// #main-slider .splide__list{height: 87vh;}
 .slider-content{top: 4rem;
   max-width: 800px;
 }

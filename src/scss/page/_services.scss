@@ -1,19 +1,9 @@
 
 @use "../base/variables" as v;
 
-   .fbn-block .cb-news .evnt-date a{ color:#e2001a !important;}
-   .fbn-block .vb-news .evnt-date a{ color:#7d64ab !important;}
-   .fbn-block .ib-news .evnt-date a{ color:#1d9649 !important;}
-   .fbn-block .aseanb-news .evnt-date a{ color:#2d3790 !important;}
-
-.get-in-touch {
-  display: none;
-}
-.get-in-touch.show {
-  display: block;
-}
-  .pricing {
-    
+.get-in-touch {display: none;}
+.get-in-touch.show { display: block;}
+.pricing {
     background: #F6F6F6;
     &__intro{width: 30%;
     h2{margin-bottom: 2rem;}
@@ -73,10 +63,8 @@
   
   @media (max-width:1100px) {
     .pricing__intro{width: 100%;}
- 
     .flex-spacing{ flex-direction: column;}
     .flex-grid-row--one-third{
-      //flex-direction: column; 
       flex-wrap: wrap;}
     .bp-block {
         width: auto;

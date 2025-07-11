@@ -271,7 +271,9 @@ span{font-size: 2rem;}
             }
             .resrcs-title{margin-bottom: 1.5rem;}
         }
-        &.small-webinar{margin-bottom: 1rem;
+
+      }
+    &.small-webinar{margin-bottom: 1rem;
           .resrcs-image{
             width: 176px;
             height: 128px;
@@ -281,7 +283,6 @@ span{font-size: 2rem;}
             .resrcs-title{font-size: 14px; font-weight: v.$font-weight-Medium; line-height: 24px;}
           }
         }
-      }
   }
   .expt-location{display: flex; gap: 5px;}
   
@@ -374,10 +375,12 @@ span{font-size: 2rem;}
     &.webinar{flex-direction: column;
   .resrcs-image{ max-width: 100%; width: 100%;}
   .resrcs-body{padding-left: 0px; padding-right: 0;}
-  &.small-webinar{
-    .resrcs-image{ max-width: 100%; width: 100%;}
-    .resrcs-body{padding-left: 0px; padding-right: 0; width: 100%;}
+
   }
+    &.small-webinar{flex-direction: column;
+    .resrcs-image{ max-width: 100%; width: 100%;}
+    .resrcs-body{width: 100%;}
+    .resrcs-meta{margin-left: 0;}
   }
   }
   .card-horizontal{

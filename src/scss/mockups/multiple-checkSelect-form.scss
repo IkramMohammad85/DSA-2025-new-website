@@ -100,6 +100,7 @@
 
 
 @media (max-width: 570px) {
+.event-filter-form .list-acc-block.open{ margin-bottom: 2rem;}
   .events-filter__form.career-search_form{ gap: 0; flex-direction: column;
     .list-acc-label, .list-acc-block{width: 90%; margin: 2rem auto 0 auto;}
     

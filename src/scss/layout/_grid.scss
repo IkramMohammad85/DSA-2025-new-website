@@ -126,14 +126,15 @@ main {
 @media (max-width: 1100px) {
   .flex-grid-row--one-third .pl-4{padding: 0;}
 }
+@media (max-width: 767px) {
+  .flex-grid-row--one-third .pl-4{padding: 3rem 0 0 0;}
+}
 @media (max-width: 557px) {
   .flex-grid-row--two .flex-col{padding: 0;}
 }
 @media (min-width: 768px) {
   .flex-grid-row-2column{
     grid-template-columns: repeat(2, 1fr);
-    
-    
 }
   .flex-grid {
     &-col {

@@ -130,7 +130,7 @@ a {color: #535353;}
   max-height: 0;
   transition: max-height 0.4s ease;
   &.open {
-  max-height: 1000px; 
+  max-height: 1000px; padding-bottom: 0.3rem; 
 }
 }
 .list-acc-label {

@@ -282,6 +282,7 @@ span{font-size: 2rem;}
             padding: 1rem 1rem 0rem 2rem; width: 72%; min-height: 128px;
             .resrcs-title{font-size: 14px; font-weight: v.$font-weight-Medium; line-height: 24px;}
           }
+          .resrcs-meta{margin-left: 0;}
         }
   }
   .expt-location{display: flex; gap: 5px;}
@@ -380,7 +381,7 @@ span{font-size: 2rem;}
     &.small-webinar{flex-direction: column;
     .resrcs-image{ max-width: 100%; width: 100%;}
     .resrcs-body{width: 100%;}
-    .resrcs-meta{margin-left: 0;}
+    
   }
   }
   .card-horizontal{

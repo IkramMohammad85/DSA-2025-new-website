@@ -1011,7 +1011,7 @@ text-overflow: ellipsis;
     line-height: 32px; 
     a{color: #222831;font-weight: v.$font-weight-SemiBold;}
 }
-.card-text {
+.card-text, .card-text p {
     color: #535353;
     font-size: 16px;
     line-height:26px;

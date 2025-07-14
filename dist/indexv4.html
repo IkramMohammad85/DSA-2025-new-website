@@ -24,9 +24,22 @@
 }
 
 .card-horizontal.home-top-service-block > * {
-  flex: 1 1 calc(48% - 0.5rem); /* two items per row, accounting for the gap */
+  flex: 1 1 calc(48% - 0.5rem); /* two items per row,*/
   box-sizing: border-box;
 } 
+  .news-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .news-section .news-featured,
+  .news-section .news-list {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
 }
     </style>
 </head>

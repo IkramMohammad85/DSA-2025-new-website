@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <style>
-    html {font-size: calc(1rem + 0.2vw); }
+    @media screen and (min-width: 769px) and (max-width: 1024px) { 
+    .card-horizontal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: start;
+    }
+    }  
     </style>
 </head>
 

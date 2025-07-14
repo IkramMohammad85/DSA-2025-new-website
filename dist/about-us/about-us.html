@@ -19,12 +19,19 @@
     gap: 5rem;
     align-items: start;
     }
-    .card-body{
+    @supports (display: grid) {
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    }
+
+    /* .card-body{
         flex: 0 0 60%;
     }
     .card-image-container{
         flex: 0 0 40%;
-    }
+    } */
     .card-text p {
     color: #535353;
     font-size: 16px;

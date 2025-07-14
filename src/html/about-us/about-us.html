@@ -15,14 +15,19 @@
    
 
    
-.card-horizontal {
-  display: flex; 
-}
-.card-horizontal .card-body, .card-horizontal .card-image-container{
-    flex: 0 0 50%;
-}
 
 
+.card-grid.card-grid-inner .card-horizontal{
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 1rem;             
+  padding: 1rem;
+}
+
+.card-grid.card-grid-inner .card-horizontal > * {
+  flex: 1 1 calc(50% - 0.5rem); /* two items per row, accounting for the gap */
+  box-sizing: border-box;
+}
     </style>
 </head>
 

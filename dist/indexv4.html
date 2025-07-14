@@ -15,6 +15,20 @@
     <link rel="preload" href="../fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <title>Dezan Shira &amp; Associates - Homepage</title>
+    <style>
+        @media screen and (max-width: 768px), (max-device-width: 768px) { 
+  .home-top-service-block .card-horizontal{
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 2%;             
+}
+
+.home-top-service-block .card-horizontal > * {
+  flex: 1 1 calc(48% - 0.5rem); /* two items per row, accounting for the gap */
+  box-sizing: border-box;
+} 
+}
+    </style>
 </head>
 
 <body>

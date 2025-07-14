@@ -41,18 +41,10 @@
 
   // Top Section Grid
   &-top {
-    // display: grid;
-    // grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));;
-    // gap: 2rem;
-    // margin-bottom: 2rem;
-      display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  > * {
-  flex: 1 1 180px; /* allows items to shrink and grow with a base width of 180px */
-  box-sizing: border-box;
-}
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   // Logo Area
@@ -172,11 +164,27 @@
       }
     }
   }
+  
+ 
   @media (min-width: 1366px) {
     &-top {
       grid-template-columns: 4fr 1fr 2fr 1fr 2fr;
     }
   }
+}
+  @media screen and (min-width: 769px) and (max-width: 1024px) { 
+.footer{
+  &-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  > * {
+  flex: 1 1 180px; /* allows items to shrink and grow with a base width of 180px */
+  box-sizing: border-box;
+}
+}
+}
 
 }
 

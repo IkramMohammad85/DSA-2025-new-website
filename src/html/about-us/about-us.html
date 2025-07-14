@@ -16,15 +16,13 @@
 
    
 .card-horizontal {
-  display: flex; /* fallback */
+  display: flex; 
+}
+.card-horizontal .card-body, .card-horizontal .card-image-container{
+    flex: 0 0 50%;
 }
 
-@supports (display: grid) {
-  .card-horizontal {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
     </style>
 </head>
 

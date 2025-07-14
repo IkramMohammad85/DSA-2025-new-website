@@ -1,4 +1,19 @@
 @use "../base/variables" as v;
+@mixin cta-arrow {
+&:after {
+            content: "";
+            background: url(../img/Arrow-text-link.svg) no-repeat 0px 6px;
+            background-size: contain;
+            width: 15px;
+            height: 16px;
+            display: inline-block;
+            transform: translateX(0);
+            transition: transform .3s ease;
+            margin-left: 6px;
+            animation: arrowfx 0.6s ease-in-out forwards;
+        }
+}
+
 //login-page and popup
 .login-reg-block{
 .signup-box{text-align: center; margin-bottom: 2rem;
@@ -109,18 +124,7 @@ a{color: #0C2740; font-weight: v.$font-weight-Medium; font-family: v.$font-famil
     li{
       &:hover {
         a {transition: transform .4s ease;
-        &:after {
-            content: "";
-            background: url(../img/Arrow-text-link.svg) no-repeat 0px 6px;
-            background-size: contain;
-            width: 15px;
-            height: 16px;
-            display: inline-block;
-            transform: translateX(0);
-            transition: transform .3s ease;
-            margin-left: 6px;
-            animation: arrowfx 0.6s ease-in-out forwards;
-        }
+        @include cta-arrow;
         }
       }
       a {font-weight: 500;}

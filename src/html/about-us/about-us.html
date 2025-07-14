@@ -13,19 +13,18 @@
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <style>
    
-    .card-horizontal {
-    display: flex;
-    flex-wrap: wrap;
-    }
-    @supports (display: grid) {
-    .card-horizontal {
+
+   
+.card-horizontal {
+  display: block; /* fallback */
+}
+
+@supports (display: grid) {
+  .card-horizontal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
-    align-items: start;
-    }
-    }
-   
+  }
+}
     </style>
 </head>
 

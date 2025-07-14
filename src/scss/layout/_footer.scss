@@ -41,10 +41,18 @@
 
   // Top Section Grid
   &-top {
-    display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    // display: grid;
+    // grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));;
+    // gap: 2rem;
+    // margin-bottom: 2rem;
+      display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  > * {
+  flex: 1 1 180px; /* allows items to shrink and grow with a base width of 180px */
+  box-sizing: border-box;
+}
   }
 
   // Logo Area

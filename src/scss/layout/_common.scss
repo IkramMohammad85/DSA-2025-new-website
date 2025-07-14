@@ -710,7 +710,7 @@ end*/
       }
     }
     .experts-card{
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr); align-self: center;
     }
     .expert-country .radio-group-wrapper{margin-right: 0; width: 100%; margin-bottom: 0rem;}
     .our-experts{margin: 0 0 3rem 0;}
@@ -721,8 +721,8 @@ end*/
   .subscribe-newsletter{flex-direction: column; align-items: flex-start;
    .input-newsletter{margin-top: 1.5rem;}
   }
-  .masthead.event-hero.news-hero-inner{height: 550px;}
-  .el-article{flex-direction: column;}
+  .masthead.event-hero.news-hero-inner{height: 350px;}
+  .el-article{flex-direction: column; gap: 2rem;}
 
       }
 

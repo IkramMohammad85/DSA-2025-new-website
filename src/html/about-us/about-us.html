@@ -14,33 +14,19 @@
     <style>
     @media screen and (min-width: 769px) and (max-width: 1024px) { 
     .card-horizontal {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(359px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     align-items: start;
     }
-    @supports (display: grid) {
-    .grid-container {
+        @supports (display: grid) {
+    .card-horizontal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     }
-
-    /* .card-body{
-        flex: 0 0 60%;
     }
-    .card-image-container{
-        flex: 0 0 40%;
-    } */
-    .card-text p {
-    color: #535353;
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 1.8rem;
-    font-family: Inter;
-    font-weight: 400;
-        }
-    }  
+    }  /* tablet */
     </style>
 </head>
 

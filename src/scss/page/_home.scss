@@ -83,7 +83,7 @@
   animation: fadeInUp 1s ease-in-out;
   display: flex;
   min-height: 100px;
-    max-width: 720px; right:-80px;background-color: rgb(12, 39, 65, 40%);
+    max-width: 720px; right:-80px;background-color: rgb(12, 39, 65, 80%);
     transition: max-height 0.4s ease;
     &.open {
         max-height: 300px;
@@ -99,7 +99,7 @@
         height: 100%;
         z-index: -1;
   }
-  &:after{ background-color: rgb(12, 39, 65, 40%)}
+  &:after{ background-color: rgb(12, 39, 65, 80%)}
     .ti-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

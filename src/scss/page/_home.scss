@@ -1290,6 +1290,11 @@ justify-content: center;
     .splide__arrow--next{right: inherit; left: 50px;}
     .splide__arrow--prev{left: 0;}
     &.splide-three-column .splide__arrow--prev{left: 0;}
+        &.partners-logo-slide{
+      .splide__arrow{top: 50%; bottom: inherit;}
+      .splide__arrow--next{right: 0; left: inherit;}
+      .splide__arrow--prev{left: 0;}
+    }
   }
   .news-featured, .news-list{max-width: 100%; width: inherit;}
 }
@@ -1317,6 +1322,7 @@ justify-content: center;
       .splide__arrow--prev{left: 0;}
       .splide__arrow--next{right: 0%;}
     }
+
   }
    .studies-insights.resource-splide {
       .splide__arrow--prev{left: 0;}

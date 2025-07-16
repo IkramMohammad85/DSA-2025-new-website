@@ -685,6 +685,11 @@ end*/
 .latest-inbox, .follow-updates{padding: 2rem !important;width: 100%;}
 }
 }
+@media only screen and (min-width: 768px) {
+  .follow-latest{
+  .flex-grid-row{flex-wrap: inherit;}
+}
+}
 @media only screen and (min-width: 1200px) {
   .find-expert-list .experts-card{
   .our-experts{width: 242px;}

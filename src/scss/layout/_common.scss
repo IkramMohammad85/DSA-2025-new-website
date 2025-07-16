@@ -652,6 +652,21 @@ end*/
 }
 
 }
+
+
+
+@media only screen and (max-width: 1100px) {
+.follow-latest{
+.section-wrapper-min{padding: 0;}
+.follow-updates{ 
+&::before {display: none; }
+}
+.latest-inbox, .follow-updates{padding: 2rem !important;width: 100%;}
+}
+.find-expert-list .experts-card{
+  grid-template-columns: repeat(2, 1fr);
+}
+}
 @media only screen and (max-width: 1000px){
 
   /*Executive Summary */
@@ -668,22 +683,12 @@ end*/
   margin-bottom: 2rem;
 }
 }
-.find-expert-list .experts-card{
-  grid-template-columns: repeat(2, 1fr);
-}
 
+.find-expert-list .experts-card{
+  grid-template-columns: repeat(1, 1fr);
+}
 /*end */
 
-}
-
-@media only screen and (max-width: 1100px) {
-.follow-latest{
-.section-wrapper-min{padding: 0;}
-.follow-updates{ 
-&::before {display: none; }
-}
-.latest-inbox, .follow-updates{padding: 2rem !important;width: 100%;}
-}
 }
 @media only screen and (min-width: 768px) {
   .follow-latest{

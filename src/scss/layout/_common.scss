@@ -653,13 +653,7 @@ end*/
 
 }
 @media only screen and (max-width: 1000px){
-.follow-latest{
-.section-wrapper-min{padding: 0;}
-.follow-updates{ 
-&::before {display: none; }
-}
-.latest-inbox, .follow-updates{padding: 2rem !important;}
-}
+
   /*Executive Summary */
 .landing-top-content{
   .two-column-section{flex-direction: column;
@@ -682,6 +676,15 @@ end*/
 
 }
 
+@media only screen and (max-width: 1100px) {
+.follow-latest{
+.section-wrapper-min{padding: 0;}
+.follow-updates{ 
+&::before {display: none; }
+}
+.latest-inbox, .follow-updates{padding: 2rem !important;width: 100%;}
+}
+}
 @media only screen and (min-width: 1200px) {
   .find-expert-list .experts-card{
   .our-experts{width: 242px;}

@@ -1318,7 +1318,7 @@ justify-content: center;
   .resource-splide, .our-testimonial {
     .splide__arrow--next{right: 39%; left: inherit;}
     .splide__arrow--prev{left: 39%;}
-    &.splide-three-column {
+    &.splide-three-column, &.splide-two-column {
       .splide__arrow--prev{left: 0;}
       .splide__arrow--next{right: 0%;}
     }

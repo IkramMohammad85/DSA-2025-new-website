@@ -259,7 +259,7 @@ input[type="radio"]:checked + .radio-btn ~ label {
     img{margin: 0 auto;}
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:flex-start;
     &.client-portal{
       .pa-text{min-height: 200px;}
       img{width: 100px; margin: 0;}

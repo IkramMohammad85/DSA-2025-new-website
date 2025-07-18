@@ -1491,7 +1491,10 @@ ul.mega-mtabs {
       max-width: 100% !important;
     }
   }
+  //  .navbar__logo img{height: 34px; width: auto;}
 }
+
+
 
 @media screen and (max-width: 1099px){
     .mega-menu-close-btn{display: none;}
@@ -1506,10 +1509,12 @@ ul.mega-mtabs {
     }
     ul.mega-mtabs{width: 300px;}
     }  
-      @media screen and (max-device-width: 1314px) { 
-      .navbar__logo img{height: 40px;}
+
+@media screen and (max-device-width: 1314px) { 
+      .navbar__logo img{height: 57px;width: auto;}
   }
-    @media screen and (max-device-width: 1136px) { 
-      .navbar__logo img{height: 34px; width: auto;}
-  }
+
+  //   @media screen and (max-device-width: 1136px) { 
+  //     .navbar__logo img{height: 34px; width: auto;}
+  // }
 

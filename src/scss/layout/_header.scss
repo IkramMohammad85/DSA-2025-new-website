@@ -46,11 +46,9 @@ $short-browser: 720px;
       //width: 100%;
       //max-height: 48px;
       max-height: 57px;
+      //width: auto;
 
-      @media (max-width: 480px) {
-        max-width: 240px;
-        height: auto;
-      }
+
     }
   }
 
@@ -1471,7 +1469,12 @@ ul.mega-mtabs {
   }
 }
 }
-
+@media (max-width: 480px) {
+        .navbar__logo img{
+        max-width: 240px;
+        //height: 36px;
+      }
+      }
 @media (max-width: 576px) {
   .navbar{
     &__loginform {
@@ -1511,7 +1514,7 @@ ul.mega-mtabs {
     }  
 
 @media screen and (max-device-width: 1314px) { 
-      .navbar__logo img{height: 57px;width: auto;}
+      .navbar__logo img{max-height: 57px;}
   }
 
   //   @media screen and (max-device-width: 1136px) { 

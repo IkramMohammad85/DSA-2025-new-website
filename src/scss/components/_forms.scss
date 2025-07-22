@@ -159,7 +159,9 @@ img{max-width: 16px;}
     #loading_contact {padding: 10px; color:v.$gray-600;}
 
     .services-question-section .got-question-block {
-        &.ask-contact{width: 90%; margin: 0;}
+        &.ask-contact{width: 90%; margin: 0; background-color: #f0f6fc;
+        h3{color: #207fd4; margin-bottom: 10px;}
+        }
       form {
         input[type="text"],
         select,
@@ -201,7 +203,7 @@ img{max-width: 16px;}
         }
       
         select {
-          background: url(/img/input-arrow.png) no-repeat 100% 50%;
+          background: url(../img/input-arrow.png) no-repeat 100% 50%;
           color: #727272;
           
         }

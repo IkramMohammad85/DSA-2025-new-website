@@ -1040,7 +1040,7 @@ $short-browser: 720px;
 .cta-banner-block .b-cta-list a:after, .page-link-block .b-cta-list a:after {
                     content: "";
                     display: inline-block;
-                    background: url(/img/esg-cta-arrow.svg) no-repeat left top;
+                    background: url(../img/esg-cta-arrow.svg) no-repeat left top;
                     width: 6px;
                     height: 8px;
                     margin-left: .5rem;
@@ -1180,7 +1180,7 @@ ul.mega-mtabs {
       span{
           &:after{content: "";
               display: inline-block;
-              background: url(/img/arrowb-d.png) no-repeat left top;
+              background: url(../img/arrowb-d.png) no-repeat left top;
               width:17px;
               height: 12px;
               margin-left: .5rem;
@@ -1433,7 +1433,7 @@ ul.mega-mtabs {
           content: '';
           display: inline-block;       
           margin-left: .5rem;
-          background: url(/img/mm-images/mgm_arrow_right_icon-n.svg) no-repeat right center;
+          background: url(../img/mm-images/mgm_arrow_right_icon-n.svg) no-repeat right center;
           width:17px;
           height: 12px;
           vertical-align: middle;

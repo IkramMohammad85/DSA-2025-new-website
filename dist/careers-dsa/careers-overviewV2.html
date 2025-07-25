@@ -8,9 +8,17 @@
 		<meta name="description" content="Stakeholders are increasingly scrutinizing environmental, social and governance (ESG) performance—and looking for companies to rise to the challenge of delivering ESG improvements." />
     <meta property="og:title" content="Services | Sustainability & ESG Compliance"/>
     <meta property="og:description" content="Stakeholders are increasingly scrutinizing environmental, social and governance (ESG) performance—and looking for companies to rise to the challenge of delivering ESG improvements."/>
-    <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
-    <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css"> -->
     <link rel="preload" as="image" href="/img/news/Career_landing.webp">
+
+    <!-- Preload critical resources -->
+    <!-- Async CSS -->
+    <link rel="stylesheet" href="../css/main.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
+
+    <link rel="stylesheet" href="../css/vendor/splide.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="../css/vendor/splide.min.css"></noscript>
 
 </head>
 
@@ -1767,8 +1775,8 @@
     </div>
   </div>
 </footer>
-    <script src="../js/vendor/splide.min.js"></script>
-    <script src="../js/main.min.js"></script>
+    <script src="../js/vendor/splide.min.js" defer></script>
+    <script src="../js/main.min.js" defer></script>
 
 </body>
 </html>

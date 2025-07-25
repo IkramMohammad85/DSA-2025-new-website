@@ -49,9 +49,14 @@
 
   // Logo Area
   &-logo {
-    img {
-      margin-bottom: 4rem;
-    }
+    // img {
+    //   margin-bottom: 4rem;
+    // }
+    img[alt*="Dezan Shira & Associates Logo"] {
+  width: 326px;
+  height: 34px;
+}
+    
   }
 
   // Each Section

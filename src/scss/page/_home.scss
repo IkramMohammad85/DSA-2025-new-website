@@ -864,7 +864,11 @@ text-overflow: ellipsis;
         gap: 2.5rem;
         .card-horizontal{
           background-color: #fff;
-          box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; padding-bottom: 1.5rem;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; padding-bottom: 2rem;
+          position: relative;
+          .d-flex-column{
+            position: absolute; bottom: 0.8rem;
+          }
         }
         .card-title, .card-text, .d-flex-column{
           padding: 0rem 1.5rem;

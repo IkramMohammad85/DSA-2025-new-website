@@ -865,10 +865,11 @@ text-overflow: ellipsis;
         .card-horizontal{
           background-color: #fff;
           box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; padding-bottom: 2rem;
-          position: relative;
+          position: relative; 
           .d-flex-column{
             position: absolute; bottom: 0.8rem;
           }
+          .card-text{min-height: 200px;}
         }
         .card-title, .card-text, .d-flex-column{
           padding: 0rem 1.5rem;
@@ -1301,6 +1302,13 @@ justify-content: center;
     }
   }
   .news-featured, .news-list{max-width: 100%; width: inherit;}
+  .card-grid.card-vertical.card-vertical-three-column{
+     .card-horizontal {
+      .card-text{min-height: inherit;}
+      .d-flex-column{ position: inherit;}
+     }
+  }
+
 }
 @media (max-width: 1360px) {
     .card-2columns {height: 100%;

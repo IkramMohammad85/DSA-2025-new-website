@@ -3665,12 +3665,14 @@ main {
   margin-left: 0.5rem;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .navbar__iconmenu > li > a {
   color: #0c2740;
   display: inline-block;
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
+  cursor: pointer;
 }
 .navbar__iconmenu > li > a:hover {
   color: #357DC0;
@@ -3689,9 +3691,12 @@ main {
   position: relative;
 }
 .navbar__iconmenu__login > a {
-  padding-left: 0;
-  padding-right: 0;
-  text-decoration: underline;
+  color: #357dc0;
+  background-image: none;
+  border: solid 1px #357dc0;
+  text-decoration: none;
+  padding: 0.3rem 1rem !important;
+  border-radius: 2px;
 }
 .navbar__iconmenu__login > a span {
   font-weight: normal;
@@ -4990,6 +4995,11 @@ ul.mega-mtabs.tabs-margin-top {
 @media (min-width: 1100px) and (max-width: 1269px) {
   .navbar__logo img {
     max-height: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .trending-insights .ti-list li {
+    min-height: 70px;
   }
 }
 .hp-country-banner {

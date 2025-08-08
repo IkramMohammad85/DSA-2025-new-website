@@ -78,9 +78,10 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     border-bottom-right-radius: 3px;
     }
 .navbar__desks.navbar__lng a:hover{ background-color: inherit;}
+.lng-switcher-mob .lng-switcher:after {margin-left: 5px;}
 
 .lng-switcher-mob{display: flex; position: relative;}
-.lng-switcher{display: flex; align-items: center; gap: 0.5rem; color: #0c2740; font-size: 15px;    }
+.lng-switcher{display: flex; align-items: center;  color: #0c2740; font-size: 15px;    }
 .lng-switcher:hover{color: #357dc0;}
 .lng-list {opacity: 0; visibility: hidden; pointer-events: none;}
 .lng-list.show { opacity: 1;  visibility: visible;  pointer-events: auto;}
@@ -96,10 +97,11 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     padding: .3rem 1rem ;
     border-radius: 2px ;}
     .login-lan{display: flex; gap: 1.3rem;}
+    .lng-switcher span.mr-5{margin-right: 5px;}
 @media (max-width: 1100px) {
-    .login-lan{ min-width: 90px; position: absolute; right: 66px;top: 30px;    }
+    .login-lan{ min-width: 90px; position: absolute; right: 60px;top: 30px;    }
     .login-cta{display: none;}
-    .lng-switcher{display: flex; align-items:center; gap: 0.3rem; background-color: #f1f1f1; padding: 2px 6px;    border-radius: 3px; font-size: 12px;}
+    .lng-switcher{display: flex; align-items:center;  background-color: #f1f1f1; padding: 2px 6px;    border-radius: 3px; font-size: 12px;}
     .lng-switcher span{display: none;}
     .lng-switcher-mob a{color: #0c2740;}
     .lng-switcher-mob{display: inline-block; position: relative;
@@ -1267,7 +1269,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                 </div>
               </div>
             </aside>
-    <div class="lng-switcher-mob"><a href="#" aria-label="language here" class="lng-switcher"><span>Global</span> <span>(</span>EN<span>)</span></a>
+    <div class="lng-switcher-mob"><a href="#" aria-label="language here" class="lng-switcher"><span class="mr-5">Global</span>  <span>(</span>EN<span>)</span></a>
             <aside class="lng-list">
               <ul>
                 <li><a href="indexv4-cn.html">中文</a></li>

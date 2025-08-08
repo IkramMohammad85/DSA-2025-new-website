@@ -101,10 +101,15 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     .lng-switcher{display: flex; align-items:center; gap: 0.3rem; background-color: #f1f1f1; padding: 2px 6px;    border-radius: 3px; font-size: 12px;}
     .lng-switcher span{display: none;}
     .lng-switcher-mob a{color: #0c2740;}
-    .lng-switcher-mob{display: inline-block; position: relative; margin-right: 2.5rem;}
+    .lng-switcher-mob{display: inline-block; position: relative;
+         /* margin-right: 2.5rem; */
+        }
     .lng-list{top:20px; width: 94px; }
     .lng-list ul li a{padding: 0.5rem;}
 
+}
+@media (max-width: 480px) {
+    .navbar__logo img { max-width: 185px;}
 }
     </style>
 </head>

@@ -3691,7 +3691,7 @@ main {
   position: relative;
 }
 .navbar__iconmenu__login > a {
-  color: #357dc0;
+  color: #357dc0 !important;
   background-image: none;
   border: solid 1px #357dc0;
   text-decoration: none;

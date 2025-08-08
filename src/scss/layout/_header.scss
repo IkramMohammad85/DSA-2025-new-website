@@ -265,13 +265,13 @@ $short-browser: 720px;
 
     &__login {
 
-
+   
       > a { 
         //padding-left: 0; padding-right: 0; 
         //text-decoration: underline;
         //border: 1px solid v.$gray-400;
         //border-radius: 2px;
-            color: #357dc0;
+            color: #357dc0 !important;
             background-image: none;
             border: solid 1px #357dc0;
             text-decoration: none;
@@ -282,7 +282,8 @@ $short-browser: 720px;
           font-weight: normal;
           font-size: 0.875rem;
         }
-      }
+      
+    }
     }
 
     &__loggedin {

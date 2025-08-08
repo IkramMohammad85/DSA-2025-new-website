@@ -59,15 +59,17 @@
     text-decoration: none;
     padding: .3rem 1rem !important;
     border-radius: 2px !important;
-}
+} 
 .navbar__iconmenu>li:nth-child(2){position: relative;}
-.navbar__iconmenu>li:nth-child(1){position: inherit;} */
-
+.navbar__iconmenu>li:nth-child(1){position: inherit;}
+*/
 .lng-change {display: flex !important; justify-content: space-between; align-items: center; font-size: 15px; min-width: 80px;}
 .lng-change img{width: 18px;}
-.navbar__iconmenu>li>a.lng-change:after {
+.lng-change:after, .lng-switcher-mob .lng-switcher:after {
 content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; }
-.navbar__desks.navbar__lng{
+/* .navbar__iconmenu>li>a.lng-change:after {
+content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; } */
+.navbar__desks.navbar__lng, .lng-list{
     width: 125px;
     top: 62px;
     left: inherit;
@@ -76,6 +78,34 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     border-bottom-right-radius: 3px;
     }
 .navbar__desks.navbar__lng a:hover{ background-color: inherit;}
+
+.lng-switcher-mob{display: flex; position: relative;}
+.lng-switcher{display: flex; align-items: center; gap: 0.5rem; color: #0c2740; font-size: 15px;    }
+.lng-switcher:hover{color: #357dc0;}
+.lng-list {opacity: 0; visibility: hidden; pointer-events: none;}
+.lng-list.show { opacity: 1;  visibility: visible;  pointer-events: auto;}
+.lng-list{position: absolute;font-size: .875rem; top:34px; background-color: #fff; transition: opacity .2s ease-out; }
+.lng-list ul {margin: 0; padding: 0; list-style: none;}
+.lng-list ul li a{padding: 1rem 1rem; font-weight: bold; display: block;}
+.login-cta{color: #357dc0 ;
+    font-weight: 400;
+    font-size: .875rem;
+    background-image: none;
+    border: solid 1px #357dc0;
+    text-decoration: none;
+    padding: .3rem 1rem ;
+    border-radius: 2px ;}
+    .login-lan{display: flex; gap: 1.3rem;}
+@media (max-width: 1100px) {
+    .login-cta{display: none;}
+    .lng-switcher{display: flex; align-items:center; gap: 0.3rem; background-color: #f1f1f1; padding: 2px 6px;    border-radius: 3px; font-size: 12px;}
+    .lng-switcher span{display: none;}
+    .lng-switcher-mob a{color: #0c2740;}
+    .lng-switcher-mob{display: inline-block; position: relative; margin-right: 2.5rem;}
+    .lng-list{top:20px; width: 94px; }
+    .lng-list ul li a{padding: 0.5rem;}
+
+}
     </style>
 </head>
 
@@ -1058,10 +1088,10 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
           </li>
           <li><a href="#">Contact Us</a></li>
         </ul>
-        <ul class="navbar__iconmenu">
+        <!-- <ul class="navbar__iconmenu">
           <li style="position: inherit;">
             <a href="#" data-twice="1" aria-label="Search here">
-                <!-- <i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i> -->
+                <i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i>
             </a>
             <div class="navbar__search">
               <div class="section-wrapper">
@@ -1146,8 +1176,66 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
               </ul>
             </aside>
            </li>
-        </ul>
+        </ul> -->
       </div>
+      <div class="login-lan">
+      <a href="#" onclick="toggle_modal('.navbar__accessbox');" class="login-cta"><span>Login</span></a>
+            <aside class="navbar__accessbox login-reg-block">
+              <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
+                <p>Thousands of free articles, guides, publications, and videos about doing business in Asia</p><a class="navbar__accessbox__close" href="#" onclick="toggle_modal('.navbar__accessbox');"><span class="sprite-close"></span></a>
+              </div>
+              <div class="navbar__accessbox--bot">
+                <div class="navbar__signupbox">
+                  <h3 class="subhead">Create Member Account </h3>
+        <div class="splide" data-per-page="1" data-autoplay="false"
+        data-pagination="true" data-type="slide" data-arrows="false" gap="0"
+        data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem"},"480":{"perPage":1,"gap":"0.7rem"}}'>
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide">
+                    <div class="signup-box">
+                    <img src="/img/icon-signup-1.svg" alt="">
+                  <p>Download our guides and publications</p>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                   <img src="/img/icon-signup-2.svg" alt="">
+                  <p>Search and access our archives of presentations, webinars, reports, and more </p>
+                </div></div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                   <img src="/img/icon-signup-3.svg" alt="">
+                  <p>Stay up to date with breaking news and regulatory updates by Asia Briefing</p>
+                </div></div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                  <img src="/img/icon-signup-4.svg" alt="">
+                  <p>Receive doing business tips and updates from Dezan Shira & Associates </p>
+                </div></div>
+                </div></div></div>
+                  <a href="#">Sign Up Now</a>
+                </div>
+                <div class="navbar__loginbox">
+                  <h3 class="subhead">Member Login</h3>
+                  <div class="navbar__loginform">
+                    <div class="navbar__loginitems">
+                      <input type="email" placeholder="Email Address">
+                      <input type="password" placeholder="Password"><a class="reset-link" href="#">Forgot password?</a>
+                    </div>
+                    <button>Log In</button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+    <div class="lng-switcher-mob"><a href="#" aria-label="language here" class="lng-switcher">中文</a>
+            <aside class="lng-list">
+              <ul>
+                <li><a href="indexv4.html">Global(EN)</a></li>
+              </ul>
+            </aside>
+        </div>
+        </div>
       <a href="/v2_2025/contact" class="contact-mv"><img src="/img/contact-mail.svg" width="20px" alt="contact"></a>
       <button class="navbar__hamburger navbar--mobile" aria-label="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
     </div>
@@ -2737,6 +2825,23 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
         <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
       </div>
     </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const switcher = document.querySelector('.lng-switcher');
+    const list = document.querySelector('.lng-list');
+
+    switcher.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      list.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.lng-switcher-mob')) {
+        list.classList.remove('show');
+      }
+    });
+  });
+</script>
     <script src="/js/vendor/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     

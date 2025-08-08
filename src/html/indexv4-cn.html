@@ -59,15 +59,17 @@
     text-decoration: none;
     padding: .3rem 1rem !important;
     border-radius: 2px !important;
-}
+} 
 .navbar__iconmenu>li:nth-child(2){position: relative;}
-.navbar__iconmenu>li:nth-child(1){position: inherit;} */
-
+.navbar__iconmenu>li:nth-child(1){position: inherit;}
+*/
 .lng-change {display: flex !important; justify-content: space-between; align-items: center; font-size: 15px; min-width: 80px;}
 .lng-change img{width: 18px;}
-.navbar__iconmenu>li>a.lng-change:after {
+.lng-change:after, .lng-switcher-mob .lng-switcher:after {
 content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; }
-.navbar__desks.navbar__lng{
+/* .navbar__iconmenu>li>a.lng-change:after {
+content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; } */
+.navbar__desks.navbar__lng, .lng-list{
     width: 125px;
     top: 62px;
     left: inherit;
@@ -76,6 +78,34 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     border-bottom-right-radius: 3px;
     }
 .navbar__desks.navbar__lng a:hover{ background-color: inherit;}
+
+.lng-switcher-mob{display: flex; position: relative;}
+.lng-switcher{display: flex; align-items: center; gap: 0.5rem; color: #0c2740; font-size: 15px;    }
+.lng-switcher:hover{color: #357dc0;}
+.lng-list {opacity: 0; visibility: hidden; pointer-events: none;}
+.lng-list.show { opacity: 1;  visibility: visible;  pointer-events: auto;}
+.lng-list{position: absolute;font-size: .875rem; top:34px; background-color: #fff; transition: opacity .2s ease-out; }
+.lng-list ul {margin: 0; padding: 0; list-style: none;}
+.lng-list ul li a{padding: 1rem 1rem; font-weight: bold; display: block;}
+.login-cta{color: #357dc0 ;
+    font-weight: 400;
+    font-size: .875rem;
+    background-image: none;
+    border: solid 1px #357dc0;
+    text-decoration: none;
+    padding: .3rem 1rem ;
+    border-radius: 2px ;}
+    .login-lan{display: flex; gap: 1.3rem;}
+@media (max-width: 1100px) {
+    .login-cta{display: none;}
+    .lng-switcher{display: flex; align-items:center; gap: 0.3rem; background-color: #f1f1f1; padding: 2px 6px;    border-radius: 3px; font-size: 12px;}
+    .lng-switcher span{display: none;}
+    .lng-switcher-mob a{color: #0c2740;}
+    .lng-switcher-mob{display: inline-block; position: relative; margin-right: 2.5rem;}
+    .lng-list{top:20px; width: 94px; }
+    .lng-list ul li a{padding: 0.5rem;}
+
+}
     </style>
 </head>
 
@@ -1189,6 +1219,23 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
         <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
       </div>
     </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const switcher = document.querySelector('.lng-switcher');
+    const list = document.querySelector('.lng-list');
+
+    switcher.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      list.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.lng-switcher-mob')) {
+        list.classList.remove('show');
+      }
+    });
+  });
+</script>
     <script src="/js/vendor/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     

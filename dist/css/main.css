@@ -2908,6 +2908,7 @@ input[type=submit] {
   border: none;
 }
 
+/*common css properties*/
 .accordion-reg-header {
   margin: 0;
   padding: 0;
@@ -8564,10 +8565,7 @@ ul.brochure_lists li + li:before {
   display: flex;
   font-family: "Inter";
   font-weight: 300;
-  height: 18px;
-  left: 22%;
-  top: 46%;
-  position: absolute;
+  height: 2px;
   transform: translateY(-51%);
   justify-content: center;
   align-items: center;

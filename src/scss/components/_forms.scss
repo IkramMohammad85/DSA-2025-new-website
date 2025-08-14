@@ -14,7 +14,7 @@ textarea {
 }
 select {
   background: v.$gray-100
-    url(../img/down-arroe-select.webp) 
+    url(../img//down-arroe-select.webp) 
     no-repeat 98% 50%;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -203,7 +203,7 @@ img{max-width: 16px;}
         }
       
         select {
-          background: url(../img/input-arrow.png) no-repeat 100% 50%;
+          background: url(../img//input-arrow.png) no-repeat 100% 50%;
           color: #727272;
           
         }
@@ -219,7 +219,7 @@ img{max-width: 16px;}
     }
       .form-field-two-column, .form-field-three-column, .form-field-one-column{display: flex; gap: 1.5rem;}
       .filter-form { padding-top:2rem; width: 99.5vw; margin-left: calc(-50vw + 50%);
-      padding-bottom: 2rem; position: sticky; top: 85px; background-color: #fff; z-index: 2;
+      padding-bottom: 2rem; position: sticky; top: 85px; background-color: v.$white; z-index: 2;
 /* Form Layout */
 .event-form {
   margin: 0 auto;
@@ -242,9 +242,9 @@ img{max-width: 16px;}
   border-radius: 4px;
   min-width: 150px;
   appearance: none;
-  background-color: white;
+  background-color: v.$white;
   cursor: pointer;
-  background: #fff url(../img/events/select-arrow.svg) no-repeat 96% 50%;
+  background: v.$white url(../img///events/select-arrow.svg) no-repeat 96% 50%;
 }
 
 /* Search Button */
@@ -253,7 +253,7 @@ img{max-width: 16px;}
   font-size: 1rem;
   border: none;
   background-color: #207fd4;
-  color: white;
+  color: v.$white;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -275,7 +275,7 @@ img{max-width: 16px;}
 .filter-tab {
   padding: 0.45rem 1.2rem;
   border: 1px solid #ccc;
-  background-color: white;
+  background-color: v.$white;
   border-radius: 25px;
   font-size: 0.95rem;
   cursor: pointer;
@@ -296,7 +296,7 @@ img{max-width: 16px;}
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 0.5rem 0.75rem;
-  background-color: #fff;
+  background-color: v.$white;
   max-width: 200px;
   position: relative;
   //gap: 0.5rem;

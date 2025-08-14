@@ -93,7 +93,7 @@
         content: "";
         display: block;
         position: absolute;
-        background: #fff;
+        background: v.$white;
         top: 0;
         right: -100%;
         width: 100%;
@@ -118,7 +118,7 @@
         border: none;
       }
 
-      a{  color: #fff;
+      a{  color: v.$white;
 display: -webkit-box;
 -webkit-line-clamp: 3; 
 -webkit-box-orient: vertical;
@@ -131,7 +131,7 @@ text-overflow: ellipsis;
   }
     .ti-heading {
     padding-left: 1.5rem; padding-right: 1.5rem; text-transform: uppercase; margin-top: 1.5rem;
-    font-size: 15px; line-height: 23px;color: #fff;
+    font-size: 15px; line-height: 23px;color: v.$white;
   }
   }
 
@@ -139,13 +139,13 @@ text-overflow: ellipsis;
   .down-arrow{
     font-size: 1rem;
     font-weight: v.$font-weight-Medium;
-    color: #fff;
+    color: v.$white;
     cursor: pointer;
     display: flex;
     align-items: center;
     &::after {
       content: "";
-      border: 2px solid #fff;
+      border: 2px solid v.$white;
       border-width: 0 2px 2px 0;
       display: inline-block;
       padding: 3px;
@@ -212,7 +212,7 @@ text-overflow: ellipsis;
     min-width: 200px;
     z-index: 1000;
     margin-top: 0.5rem;
-    background-color: #fff;
+    background-color: v.$white;
     max-height: 200px;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -289,8 +289,8 @@ text-overflow: ellipsis;
       position: absolute;
       bottom: 0;
       padding: 1rem;
-      h2{ font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; color: #fff; font-size: 1rem; line-height: 24px;
-        a{color: #fff;}
+      h2{ font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; color: v.$white; font-size: 1rem; line-height: 24px;
+        a{color: v.$white;}
       span{font-size: 14px; display: block; font-family: v.$font-family-inter; font-weight: v.$font-weight-normal;}
       }
     }
@@ -331,9 +331,9 @@ text-overflow: ellipsis;
   
   .play-button {
     font-size: 2rem;
-    color: #fff;
+    color: v.$white;
     pointer-events: none;
-    border: 3px solid #fff;
+    border: 3px solid v.$white;
     padding: 1rem;
     line-height: 1;
     border-radius: 50%;
@@ -517,7 +517,7 @@ text-overflow: ellipsis;
       position: absolute;
       left: 45%;
       top: 40%;
-      fill: #fff;
+      fill: v.$white;
       z-index: 2;
     }
 
@@ -525,7 +525,7 @@ text-overflow: ellipsis;
       z-index: 1;
       position: absolute;
       bottom: 0;
-      color: #fff;
+      color: v.$white;
       margin: 0;
       font-family: v.$font-family-Poppins;
       font-weight: v.$font-weight-SemiBold;
@@ -541,7 +541,7 @@ text-overflow: ellipsis;
       }
 
       a {
-        color: #fff;
+        color: v.$white;
       }
     }
 
@@ -663,7 +663,7 @@ text-overflow: ellipsis;
     padding: 1rem 2rem;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: v.$white;
     font-family: v.$font-family-Poppins;
     font-weight: v.$font-weight-SemiBold;
     gap: 0.5rem;
@@ -747,7 +747,7 @@ text-overflow: ellipsis;
     padding: 17px 17px 17px 17px;
     box-shadow: rgba(99, 99, 99, 0.1) 0px 1px 4px 0px;
     margin-bottom: 0.5rem;
-    background-color: #fff;
+    background-color: v.$white;
     h3{margin-bottom: 0;}
   }
   
@@ -864,7 +864,7 @@ text-overflow: ellipsis;
         grid-template-columns: repeat(3, 1fr);
         gap: 2.5rem;
         .card-horizontal{
-          background-color: #fff;
+          background-color: v.$white;
           box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; padding-bottom: 1.5rem;
           gap: 0rem;
           //position: relative; 
@@ -930,7 +930,7 @@ text-overflow: ellipsis;
 
 }
 .gateway-dba {
- .card {padding: 0; border-radius: 0; background-color: #fff; }
+ .card {padding: 0; border-radius: 0; background-color: v.$white; }
  .card-horizontal { gap: 2.5rem;  margin-left: 50px;  margin-right: 50px; }
  &.dba-home{
  .card-horizontal { margin-left: 0px;  margin-right: 0px; }

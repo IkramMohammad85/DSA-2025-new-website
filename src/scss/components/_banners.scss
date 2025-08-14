@@ -56,11 +56,11 @@
     line-height: 1.6;
     font-family: "Inter";
     font-weight: 400;
-    color: #fff;
+    color: v.$white;
   }
   .text-btn {
     width: 100%;
-    .toggleBtn-dropdown-button::after{border-color: #fff;}
+    .toggleBtn-dropdown-button::after{border-color: v.$white;}
     .toggleBtn-dropdown-button{color: v.$white;}
     .toggleBtn-dropdown-menu{ margin-top: 0;
     a{padding-top: 0.25rem; padding-bottom: 0.25rem;}
@@ -104,25 +104,25 @@
       justify-content: center;
     }
 
-    p{color: #fff; margin-bottom: 0;}
+    p{color: v.$white; margin-bottom: 0;}
     h3{font-size: 14px; font-family: v.$font-family-inter; font-weight: v.$font-weight-light; color: v.$white; text-transform: uppercase;}
     .feature-events{
     ul{margin:0; padding: 0; list-style: none;      display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 2rem;
-    li{font-size: 15px; font-weight: v.$font-weight-Medium;border-right: solid 1px #fff;
+    li{font-size: 15px; font-weight: v.$font-weight-Medium;border-right: solid 1px v.$white;
       padding-right: 1rem; display: flex; gap: 1rem; align-items: start;
 
-      a{color: #fff; font-weight: bold;}
+      a{color: v.$white; font-weight: bold;}
       &:last-child{border: none;}
-      .news-date{font-size: 12px; color: #fff; font-weight: normal;}
+      .news-date{font-size: 12px; color: v.$white; font-weight: normal;}
     }
     }
 &.feat-news{
   li{flex-direction: column; gap: 0.8rem;}
 }
   }
-  .label-text{color: #fff;}
+  .label-text{color: v.$white;}
   }
   &__bg {
     position: absolute;
@@ -149,7 +149,10 @@
     height: 700px;
     p{font-weight: v.$font-weight-normal;}
     .masthead__text{ justify-content: space-evenly;  padding: 0; padding-right: 1.5rem;
-      h1{font-size: 38px; line-height: 50px; font-family: v.$font-family-Poppins; font-weight: v.$font-weight-SemiBold; margin-bottom: 0.8rem;}
+      h1{font-size: 38px; line-height: 50px; 
+      //font-family: v.$font-family-Poppins; 
+      //font-weight: v.$font-weight-SemiBold; 
+      margin-bottom: 0.8rem;}
       .text-head{margin-top: 3rem; max-width: 700px;
          .btn-outline-white{ margin-top: 2rem;}
       }
@@ -158,10 +161,14 @@
     &.event-hero-l2{ height: 640px;
       .text-head{max-width: 800px; margin-top: 0;}
       h1{max-width: 100%;}
-      p{margin-top: 2rem; margin-bottom: 2.5rem; font-size: 16px; line-height: 30px; font-weight: v.$font-weight-SemiBold;}
+      p{margin-top: 2rem; margin-bottom: 2.5rem; font-size: 16px; line-height: 30px; 
+        font-weight: v.$font-weight-SemiBold;
+      }
     }
     &.news-hero-inner{height: 425px;
-    h1{max-width: 100%; font-weight: v.$font-weight-SemiBold; font-size: 2rem; line-height: 45px;}
+    h1{max-width: 100%; 
+      //font-weight: v.$font-weight-SemiBold; 
+      font-size: 2rem; line-height: 45px;}
     }
   &.asiapedia-hero{
     .text-head{max-width: 660px; margin-top: 6rem;
@@ -180,10 +187,7 @@
     }
 
   }
-// &.master-text-location{
-//       .masthead__text{max-width: 600px;}
-//       p{margin-top: 1rem; font-weight: 500;}
-//     }
+
 &.small-banner-height{height: 210px;}
 
 &.cnt-min-h{
@@ -251,7 +255,6 @@
 &.cnt-min-h{ height: 320px;}
 &.asiapedia-inner {height: 320px;}
 &.personnel-hero-inner{height: 220px;}
-
   }
   
   .hero-section {

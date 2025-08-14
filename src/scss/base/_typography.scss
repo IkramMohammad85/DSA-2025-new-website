@@ -1,4 +1,4 @@
-
+@use "../base/variables" as v;
 // font Inter
 @font-face {
   font-family: "Inter";
@@ -57,7 +57,7 @@ body {
 
   
   a {
-    color: #207FD4;
+    color: v.$strong-blue;
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 400;
@@ -78,10 +78,10 @@ body {
   
   
   blockquote {
-    border-left: 4px solid #007bff;
+    border-left: 4px solid v.$strong-blue;
     padding: 0.5rem 1rem;
     font-style: italic;
-    color: #666;
+    color: v.$gray40;
   }
   
   code {

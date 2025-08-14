@@ -18,10 +18,10 @@
 .login-reg-block{
 .signup-box{text-align: center; margin-bottom: 2rem;
 img{margin: 0 auto;}
-p{color: #fff; line-height: 18px; margin: 1.5rem 0;}
+p{color: v.$white; line-height: 18px; margin: 1.5rem 0;}
 }
 .splide__pagination__page.is-active{
-  background: #fff !important;
+  background: v.$white !important;
   transform: scale(1);
   &::before{
      display: none;
@@ -52,7 +52,7 @@ p{color: #fff; line-height: 18px; margin: 1.5rem 0;}
     position: relative;
     transition: transform .2s linear;
     width: 8px;
-     h3.subhead{color: #fff;}
+     h3.subhead{color: v.$white;}
 }
 }
 //end
@@ -75,7 +75,7 @@ li{ margin-bottom: 0; border-bottom: solid 1px #ddd;
 //end
 .scroll-menubar{display:flex; justify-content: space-between; gap: 2rem; align-items: center; flex-wrap: wrap;
 a{color: #0C2740; font-weight: v.$font-weight-Medium; font-family: v.$font-family-Poppins;}
-.btn {color: #fff;}
+.btn {color: v.$white;}
 }
 .left-align-menu{display: flex; flex-wrap: wrap; gap: 2.5rem;}
 .experts-card-location {display: flex; flex-wrap: wrap; gap: 47px; justify-content: flex-start;
@@ -167,7 +167,7 @@ a{color: #0C2740; font-weight: v.$font-weight-Medium; font-family: v.$font-famil
 .card-resrcs {
     display: flex;
     flex-direction: row;
-    background: #fff;
+    background: v.$white;
     border-radius: 10px;
     align-items: flex-start;
     overflow: hidden;

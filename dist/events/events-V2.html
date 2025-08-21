@@ -10,6 +10,7 @@
     <meta property="og:description" content="Stakeholders are increasingly scrutinizing environmental, social and governance (ESG) performance—and looking for companies to rise to the challenge of delivering ESG improvements."/>
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
+    <link rel="preload" as="image" href="/img/events/events-hero.webp" type="image/webp" fetchpriority="high">
 <style>
 .navbar__iconmenu__login>a{
     color: #357dc0 !important;
@@ -1109,45 +1110,48 @@
               <div class="form-row mb-2">
 <div class="select-wrapper">
   <span class="select-icon">
-    <img src="/img/events/list-icon.svg" alt="Webinar" />
+    <img src="/img/events/l-mark-black.svg" alt="location" />
   </span>
-  <select>
-    <option>Webinar</option>
-    <option>Seminar</option>
-    <option>Workshop</option>
-  </select>
-</div>
-<div class="select-wrapper">
-  <span class="select-icon">
-    <img src="/img/events/l-mark-black.svg" alt="Country" />
-  </span>
-<select>
-                  <option selected>China</option>
-                  <option>India</option>
-                  <option>Vietnam</option>
-                </select>
+<select name="location">
+                            <option value="">All location</option>
+                            <option value="asean">ASEAN</option>
+                            <option value="asia">Asia</option>
+                            <option value="china">China</option>
+                            <option value="hong-kong">Hong Kong SAR</option>
+                            <option value="india">India</option>
+                            <option value="indonesia">Indonesia</option>
+                            <option value="vietnam">Vietnam</option>
+                            <option value="singapore">Singapore</option>
+                            <option value="europe">Europe</option>
+                            <option value="north-america">North America</option>
+                            <option value="central-and-latin-america">Central &amp; Latin America</option>
+                            <option value="oceania">Oceania</option>
+                            <option value="middle-east">Middle East</option>
+                            <option value="africa">Africa</option>
+                        </select>
 </div>
 <div class="select-wrapper">
   <span class="select-icon">
     <img src="/img/events/lang-icon.svg" alt="Language" />
   </span>
-<select>
-                  <option selected>Language</option>
-                  <option>English</option>
-                  <option>Mandarin</option>
-                </select>
-</div>  
-                
-          
-                     <div class="select-wrapper">
+<select name="language">
+                            <option value="">By language</option>
+                            <option value="15">English</option>
+                            <option value="19">German</option>
+                            <option value="18">Italian</option>
+                            <option value="20">Spanish</option>
+                            <option value="21">French</option>
+                            <option value="112">Chinese</option>
+                        </select>
+</div>
+<div class="select-wrapper">
   <span class="select-icon">
     <img src="/img/events/date-icon.svg" alt="Date" />
   </span>
 <input type="date" id="eventDate" name="eventDate">
-</div>   
-          
-                
-          
+</div> 
+<input type="text" name="search" placeholder="Keyword" class="select-wrapper">
+
                 <button type="submit" class="search-btn">
                   <img src="/img/events/search-icon-white.svg" width="20" height="20" alt="Search">
                 </button>
@@ -1239,7 +1243,7 @@
 
     <section class="hero-section">
     <img
-      src="/img/hero-expert.webp"
+      src="/img/location/Enquiry banner_5.webp"
       alt="Talk to an expert"
       width="2000" height="554"
       class="hero-image"/>
@@ -1252,7 +1256,7 @@
       
       <div class="text-btn">
        
-          <button class="btn btn-outline-white down-arrow" data-show-on-click="get-in-touch">Talk to an Expert</button>
+          <button class="btn btn-outline-white down-arrow" data-show-on-click="get-in-touch">Get in touch</button>
       
         </div>
     </div>

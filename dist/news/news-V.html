@@ -1108,7 +1108,7 @@
 
       <section class="page-intro pt-5 pb-2">
         <div class="section-wrapper-min">
-          <h2 class="heading-level2 text-center mb-3">News Filter</h2>
+          <h2 class="heading-level2 text-center mb-2">News Filter</h2>
         <div class="filter-trigger" data-sticky-watch="#filter-form"></div>
             <form id="filter-form" class="filter-form news-filter-form" action="" method="GET">
               
@@ -1116,31 +1116,30 @@
 
                 <div class="select-wrapper">
   <span class="select-icon">
-    <img src="/img/events/list-icon.svg" alt="Webinar" />
+    <img src="/img/events/l-mark-black.svg" alt="Webinar" />
   </span>
-<select>
-                  <option selected>All</option>
-                  <option>Conference</option>
-                  <option>Workshop</option>
-                </select>
+<select name="category">
+                            <option value="">All Locations</option>
+                            <option value="ASEAN">ASEAN</option>
+                            <option value="China">China</option>
+                            <option value="India">India</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="UAE">UAE</option>
+                        </select>
 </div>
                 
-                          <div class="select-wrapper">
-  <span class="select-icon">
-    <img src="/img/events/l-mark-black.svg" alt="location" />
-  </span>
-<select>
-                  <option selected>China</option>
-                  <option>India</option>
-                  <option>Vietnam</option>
-                </select>
-</div>
+                          
                 <div class="select-wrapper">
   <span class="select-icon">
     <img src="/img/events/date-icon.svg" alt="Date" />
   </span>
 <input type="date" id="newsDate" name="newsDate">
 </div>
+<input type="text" name="search" placeholder="Search news..." class="select-wrapper">
           
                 
           

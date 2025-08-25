@@ -1314,7 +1314,7 @@
                     <div class="got-question-block" id="gotQuestion">
                         <h3>Have Any Questions?</h3>
                         <p>Reach out to our local experts</p>
-                        <form action="post">
+                        <form action="post" id="miniCtaForm">
                           <div class="form-field-two-column"> 
                             <select class="formSelectOption" id="servicesInterestS" name="servicesInterestS">
                               <option disabled="" selected="">Services of Interest</option>
@@ -1361,7 +1361,18 @@
                           <div class="form-field-one-column"> 
                             <textarea id="commentsAreaS" name="commentsS" placeholder="Message" rows="2" cols="50"></textarea>
                           </div>
-                         
+<div class="form-field-one-column mb-1 hidden-filed">
+        <div class="codecs">
+            <div class="security-Check-code">
+                <input class="form-control" id="contact_form_captcha_code" name="captcha_code" type="text" placeholder="Code (case-sensitive)">
+                <div class="security-Check"><img id="siimage_popup" src="../img/showCaptcha.png" alt="captcha image" class="loadCaptchaImage"></div>
+            </div>
+            <div class="code-sensitive"><small class="reload-captcha" id="contact_form_reload_captcha" data-captcha-reload="">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m3.508 6.726c1.765-2.836 4.911-4.726 8.495-4.726 5.518 0 9.997 4.48 9.997 9.997 0 5.519-4.479 9.999-9.997 9.999-5.245 0-9.553-4.048-9.966-9.188-.024-.302.189-.811.749-.811.391 0 .715.3.747.69.351 4.369 4.012 7.809 8.47 7.809 4.69 0 8.497-3.808 8.497-8.499 0-4.689-3.807-8.497-8.497-8.497-3.037 0-5.704 1.597-7.206 3.995l1.991.005c.414 0 .75.336.75.75s-.336.75-.75.75h-4.033c-.414 0-.75-.336-.75-.75v-4.049c0-.414.336-.75.75-.75s.75.335.75.75z" fill-rule="nonzero"></path>
+                    </svg></small></div>
+        </div>
+    </div>
                           <div class="form-field-one-column"> 
                             <label class="form-check-input">
                               <input type="checkbox" name="submittingS"><span>I agree to receive communications from Dezan Shira &amp; Associates and accept the<a href="https://www.dezshira.com/privacy-policy"> Privacy Policy</a></span>

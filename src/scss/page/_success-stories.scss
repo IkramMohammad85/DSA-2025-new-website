@@ -244,8 +244,12 @@ ul {
           margin-top: 2rem;
         }
         img {
-          width: unset;
-          min-height: unset;
+          //width: unset;
+          //min-height: unset;
+          transition: transform .5s ease;
+          max-width: 230px;
+          max-height: 60px;
+
         }
       }
     }

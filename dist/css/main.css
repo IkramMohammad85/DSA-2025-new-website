@@ -6532,8 +6532,9 @@ ul.brochure_lists li + li:before {
   margin-top: 2rem;
 }
 .success-stories-section .ap-area__wrapper .ap-area__article.quotes img {
-  width: unset;
-  min-height: unset;
+  transition: transform 0.5s ease;
+  max-width: 230px;
+  max-height: 60px;
 }
 .success-stories-section .ap-area__wrapper#videoList .ap-area__article.cs figure {
   max-height: 205px;

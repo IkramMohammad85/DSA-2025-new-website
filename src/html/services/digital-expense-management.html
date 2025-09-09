@@ -13,7 +13,12 @@
     <link rel="stylesheet" href="../css/account-table.min.css" type="text/css">
     <link rel="preload" as="image" href="/img/about-us/DigitalExpenseManagement-1ijiym.webp" type="image/webp" fetchpriority="high">
      
-    
+    <style>
+      .masthead__text.mini_banner {
+    justify-content: center;
+    max-width: 500px;
+}
+    </style>
 </head>
 
 <body>
@@ -21,7 +26,7 @@
     @@include("../includes/header.html")
       <section class="masthead">
         <div class="section-wrapper-min">
-          <div class="masthead__text justify-content-center">
+          <div class="masthead__text justify-content-center mini_banner">
             <h1>Digital Expense Management</h1>
           </div>
         </div>
@@ -96,7 +101,7 @@
           </div>
         </div>
       </section>
-      <div class="section-light-blu-bg mb-7">
+      <div class="section-light-blu-bg mb-7 mt-5">
         <div class="section-wrapper-min regular-pagination resource-video">
         <div class="splide" data-per-page="1" data-autoplay="false"
         data-arrows="false" data-type="slide"
@@ -427,7 +432,7 @@
             </div>
         </div>
       </section>
-      <section class="pricing pt-5 pb-5">  
+      <section class="pricing pt-5 pb-5" style="background-color: #f6f6f6;">  
         <div class="section-wrapper-min">
           <div class="flex-spacing regular-pagination resource-splide">
             <div class="pricing__intro">

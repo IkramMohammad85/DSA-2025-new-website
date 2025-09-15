@@ -154,7 +154,7 @@ ol {
 }
 
 b, strong, b a, strong a {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 blockquote {
@@ -2717,7 +2717,6 @@ input[type=submit] {
 }
 .footer-logo img[alt*="Dezan Shira & Associates Logo"] {
   width: 326px;
-  height: 34px;
   margin-bottom: 4rem;
 }
 .footer-section h4 {
@@ -3643,6 +3642,8 @@ main {
   background-color: #3471b7;
 }
 .navbar__loginform {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4558,6 +4559,7 @@ ul.mega-mtabs.tabs-margin-top {
   .navbar__loginform {
     display: block;
     max-width: 100% !important;
+    width: 100%;
   }
   .navbar__loginbox {
     display: block;

@@ -1,43 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Updates | Dezan Shira &amp; Associates - Establishing and Growing Your Asia Business</title>
-		<meta name="description" content="Stakeholders are increasingly scrutinizing environmental, social and governance (ESG) performance—and looking for companies to rise to the challenge of delivering ESG improvements." />
-    <meta property="og:title" content="Services | Sustainability & ESG Compliance"/>
-    <meta property="og:description" content="Stakeholders are increasingly scrutinizing environmental, social and governance (ESG) performance—and looking for companies to rise to the challenge of delivering ESG improvements."/>
-    <link rel="stylesheet" href="/css/main.min.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/index-option1.css" type="text/css" />
+  
+    
+    <!-- <link rel="preload" as="style" href="/css/main.min.css" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/main.min.css"></noscript> -->
     <link rel="stylesheet" href="/css/vendor/splide.min.css" type="text/css">
-    <link rel="preload" as="image" href="/img/about-us/Asiapedia login.webp" type="image/webp" fetchpriority="high">
+    <!-- <link rel="stylesheet" href="/css/vendor/splide.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/css/vendor/splide.min.css"></noscript> -->
+    <link rel="preload" href="../fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Business, Legal, Tax, Accounting, Payroll in Asia | Dezan Shira & Associates</title>
+	<meta name="description" content="Corporate establishment, business & tax advisory, compliance, accounting, payroll, due diligence and financial review services for multinationals in Asia" />
+	<meta name="keyword" content="" />
+    <link rel="preload" as="image" href="/img/top-home-slide-img/top-home-slide-img/Hero-EDO.webp" type="image/webp" fetchpriority="high">
     <style>
-        .navbar__accessbox--top p{width: 80%; margin: 1rem auto auto; font-weight: bold;}
-        .asia-logomark {display: flex; align-items: center;height: 100%;}
-        .asia-logomark img{margin: 0 auto; width: 160px;}
-        .login-reg-block{padding: 0;border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
-        .login-reg-block .flex-col{padding: 0;width: 100%;}
-        .login-reg-block .subhead{text-align: center; font-size: 16px; text-transform: none;}
-        .login-reg-block h2{text-align: center; font-size: 18px; text-transform: none;}
-        .signup-box img{ width: auto; height: 65px; margin: 2rem auto;}
-        .login-box-l{background-color: #f1f8ff;  padding: 2rem; min-height: 400px;}
-        .signup-box-r {align-items: center; display: flex; flex-direction: column;width: 80%; margin: 2rem auto;}
-        .signup-box-r p{font-size: 15px; line-height:normal;}
-        .login-reg-block .signup-box-r .signup-box p{color: #000;}
-        .login-reg-block .signup-box-r .signup-box{width: 70%; margin: 0 auto 2rem auto;}
-        /* .login-reg-block .login-box-l .navbar__loginform{width: 70%; margin: 0 auto;} */
-        .login-reg-block .login-box-l .navbar__loginform input[type=email], .login-reg-block .navbar__loginform input[type=password]{border-radius: 3px; box-shadow: rgba(0, 0, 0, .05) 0 0 5px 0, rgba(0, 0, 0, .05) 0 0 1px 0;
-    padding: 0 1rem; color: #667085; font-size: 14px; height: 48px; }
-        .login-reg-block .signup-box-r .splide__pagination__page.is-active{background-color: #333 !important;}
-        .partners-alliances-list .partners-alliances.client-portal img{margin: 0 auto;}
-    </style>
+  @media screen and (min-width: 769px) and (max-width: 1024px) { 
+  .card-horizontal.home-top-service-block{
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 2%;             
+}
 
+.card-horizontal.home-top-service-block > * {
+  flex: 1 1 calc(48% - 0.5rem); /* two items per row,*/
+  box-sizing: border-box;
+} 
+  .news-section {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    box-sizing: border-box;
+    
+  }
+
+  .news-section .news-featured
+  {
+    flex: 1 1 38%;
+    width: 38%;
+  }
+    .news-section .news-list {
+    flex: 1 1 58%;
+    width: 58%;
+  }
+
+}
+    </style>
+<style>
+/* .navbar__iconmenu__login>a{
+    color: #357dc0 !important;
+    background-image: none;
+    border: solid 1px #357dc0;
+    text-decoration: none;
+    padding: .3rem 1rem !important;
+    border-radius: 2px !important;
+} 
+.navbar__iconmenu>li:nth-child(2){position: relative;}
+.navbar__iconmenu>li:nth-child(1){position: inherit;}
+*/
+.lng-change {display: flex !important; justify-content: space-between; align-items: center; font-size: 15px; min-width: 80px;}
+.lng-change img{width: 18px;}
+.lng-change:after, .lng-switcher-mob .lng-switcher:after {
+content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; }
+/* .navbar__iconmenu>li>a.lng-change:after {
+content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; } */
+.navbar__desks.navbar__lng, .lng-list{
+    width: 125px;
+    top: 62px;
+    left: inherit;
+    right: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    }
+.navbar__desks.navbar__lng a:hover{ background-color: inherit;}
+.lng-switcher-mob .lng-switcher:after {margin-left: 5px;}
+
+.lng-switcher-mob{display: flex; position: relative;}
+.lng-switcher{display: flex; align-items: center;  color: #0c2740; font-size: 15px;    }
+.lng-switcher:hover{color: #357dc0;}
+.lng-list {opacity: 0; visibility: hidden; pointer-events: none;}
+.lng-list.show { opacity: 1;  visibility: visible;  pointer-events: auto;}
+.lng-list{position: absolute;font-size: .875rem; top:34px; background-color: #fff; transition: opacity .2s ease-out; }
+.lng-list ul {margin: 0; padding: 0; list-style: none;}
+.lng-list ul li a{padding: 1rem 1rem; font-weight: bold; display: block;}
+.login-cta{color: #357dc0 ;
+    font-weight: 400;
+    font-size: .875rem;
+    background-image: none;
+    border: solid 1px #357dc0;
+    text-decoration: none;
+    padding: .3rem 1rem ;
+    border-radius: 2px ;}
+    .login-lan{display: flex; gap: 1.3rem;}
+    .lng-switcher span.mr-5{margin-right: 5px;}
+@media (max-width: 1100px) {
+    .login-lan{ min-width: 90px; position: absolute; right: 60px;top: 30px;    }
+    .login-cta{display: none;}
+    .lng-switcher{display: flex; align-items:center;  background-color: #f1f1f1; padding: 2px 6px;    border-radius: 3px; font-size: 12px;}
+    .lng-switcher span{display: none;}
+    .lng-switcher-mob a{color: #0c2740;}
+    .lng-switcher-mob{display: inline-block; position: relative;
+         /* margin-right: 2.5rem; */
+        }
+    .lng-list{top:20px; width: 94px; }
+    .lng-list ul li a{padding: 0.5rem;}
+
+}
+@media (max-width: 480px) {
+    .navbar__logo img { max-width: 185px;}
+}
+@media (min-width: 1100px) {
+    .navbar__megamenu--two ul.mega-mtabs li span { width: 315px;}
+}
+ 
+@media (min-width: 1500px) {
+    ul.mega-mtabs { width: 345px;}
+}
+
+
+    </style>
 </head>
 
 <body>
-    <main class="home country-section" id="wrapper">
     <nav class="navbar">
-    <div class="navbar__wrapper"><a class="navbar__logo" href="index.html"><img src="/img/DSA logo_640x96.webp" alt="logo" sizes="(max-width: 480px) 240px,  380px" width="auto" height="57" sloading="lazy"></a>
+    <div class="navbar__wrapper"><a class="navbar__logo" href="index.html"><img src="/img/DSA logo_640x96.webp" alt="logo" sizes="(max-width: 480px) 240px,  380px" width="640" height="96" loading="lazy" style="width: auto;"></a>
       <div class="navbar__menuwrap navbar--desktop">
         <ul class="navbar__menu">
           <li><a class="navbar__togglemenu" href="javascript:void(0);" aria-expanded="false" data-twice="0">About Us</a>
@@ -1008,35 +1100,11 @@
               </div>
             </div>
           </li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#" class="hover-ripple-out">Contact Us</a></li>
         </ul>
         <ul class="navbar__iconmenu">
-          <li><a href="#" data-twice="1" aria-label="Search here"><i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i></a>
-            <div class="navbar__search">
-              <div class="section-wrapper">
-                <div class="navbar__search__box">
-                  <input type="search" name="" placeholder="Search">
-                  <button type="submit"><i class="icon-search"></i></button>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li><a href="#" data-twice="2" aria-label="Desk here"><i class="icon-sphere" aria-hidden="true"></i></a>
-            <aside class="navbar__desks">
-              <ul>
-                <li><a class="sprite-flag sprite-flag-us" href="#">North American Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-uk" href="#">UK and Ireland Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-fr" href="#">French Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-de" href="#">German Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-it" href="#">Italian Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-ru" href="#">Russian Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-es" href="#">Spanish Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-cn" href="#">Chinese Desk</a></li>
-                <li><a class="sprite-flag-uae" href="#">Middle East Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-au" href="#">Australian Desk</a></li>
-              </ul>
-            </aside>
-          </li>
+            <li style="width: 24px;"></li>
+            <li style="width: 24px;"></li>
           <li class="navbar__iconmenu__login"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
             <aside class="navbar__accessbox login-reg-block">
               <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
@@ -1087,184 +1155,1608 @@
               </div>
             </aside>
           </li>
+          <li><a href="#" data-twice="0" aria-label="Desk here"><img src="/img/globe-lng.svg" alt="globe logo" style="width: 20px;"></a>
+            <aside class="navbar__desks">
+              <ul>
+                <li><a class="sprite-flag sprite-flag-us" href="#">North American Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-uk" href="#">UK and Ireland Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-fr" href="#">French Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-de" href="#">German Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-it" href="#">Italian Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-ru" href="#">Russian Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-es" href="#">Spanish Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-cn" href="#">Chinese Desk</a></li>
+                <li><a class="sprite-flag-uae" href="#">Middle East Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-au" href="#">Australian Desk</a></li>
+              </ul>
+            </aside>
+          <!-- </li>
+          <li><a href="#" data-twice="0" aria-label="Search here"><i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i></a>
+            <div class="navbar__search">
+              <div class="section-wrapper">
+                <div class="navbar__search__box">
+                  <input type="search" name="" placeholder="Search">
+                  <button type="submit"><img src="/img/icon-magnifier-white.svg" alt="search" style="width: 20px;"></button>
+                </div>
+              </div>
+            </div>
+          </li> -->
         </ul>
       </div>
-      <a href="/v2_2025/contact" class="contact-mv"><img src="/img/contact-mail.svg" width="20px" alt="contact"></a>
-      <button class="navbar__hamburger navbar--mobile" aria-contact-maillabel="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
+      <button class="navbar__hamburger navbar--mobile" aria-label="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
     </div>
   </nav>
-      <section class="masthead">
-        <div class="section-wrapper-min">
-          <div class="masthead__text justify-content-center">
-            <div class="text-head">
-            <h1>Welcome to our Portals login </h1>
-          </div>
-        </div>
-        </div>
-        <div class="masthead__bg"><img alt="Industries" src="/img/about-us/Asiapedia login.webp" width="1440" height="644"></div>
-      </section>
-
-      <section class="pt-7 pb-5">
-        <!-- <div class="asia-logomark text-center mb-3" style="margin: 0 auto; justify-content: center;"><img src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo"></div> -->
-        <div class="section-wrapper-min">
-                    <div class="flex-grid-row flex-grid-row--two mb-2 login-reg-block" style="align-items: center;"> 
-            <div class="flex-col">
-                <div class="login-box-l">
-                <div class="asia-logomark text-center mb-2"><img src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo"></div>   
-                <h2 class="text-center mb-1">Member Login</h2>
-          <form class="navbar__loginform" action="/login" method="POST">
-            
-            <input type="hidden" class="TokenNameKey" name="csrf_name" value="csrf685a2a90414d6">
-            <input type="hidden" class="TokenValueKey" name="csrf_value" value="60073f65ae270d534e46ea411a9ebb14">
-                    <input type="hidden" value="" name="goto">
-            
-            <div class="navbar__loginitems">
-              <input type="email" name="email" placeholder="Email Address" require="">
-              <input type="password" name="password" placeholder="Password" require="">
-              <a class="reset-link" href="/forgot-password">Forgot password?</a>
-            </div>
-            <button type="submit" class="btn btn-primary">Log In</button>
-          </form>
-    </div>
-            </div>
-            <div class="flex-col">
-             <div class="signup-box-r"> 
-       
-          <h2 class="mb-1">Create Member Account </h2>
-            <p class="text-center mb-1">Asiapedia is a collection of resources based on our practical experience of assisting thousands of clients doing business in Asia. </p>
-          <div class="navbar__signupbox__slider">
-        <div class="splide" data-per-page="1" data-autoplay="true" data-type="fade" interval='5000'
-        data-pagination="true"  data-arrows="false" gap="0"
-        data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem"},"480":{"perPage":1,"gap":"0.7rem"}}'>
-        <div class="splide__track">
-            <div class="splide__list">
-                <div class="splide__slide">
-                    <div class="signup-box">
-                    <img src="/img/publication-signup-icon.svg" alt="">
-                  <p>Download our latest reports, guides and publication</p>
-                  </div>
+    <section>
+        <div id="main-slider" class="splide" data-rewind="true" data-autoplay="true" data-arrows="true"
+            data-type="fade" interval='20000' data-pagination="false">
+            <div class="splide__track">
+                <ul class="splide__list">
+<li class="splide__slide">
+              <div class="section-wrapper-min">
+                <div class="slider-content">
+                  <h2 class="slide-title">
+                    <a href="https://www.dezshira.com/landing/market-entry" target="_blank">
+                      Boost Your Growth by Expanding into Asia's Rapidly Growing Markets                    </a>
+                  </h2>
+                  <p class="slide-desc">
+                    We enable companies to select and establish their presence in new markets. Our advisors can help advance your plans and strategic objectives.                  </p>
+                  <a href="https://www.dezshira.com/landing/market-entry" class="btn btn-outline-white">
+                    Start Your Journey                  </a>
                 </div>
-                <div class="splide__slide">
-                    <div class="signup-box">
-                   <img src="/img/icon-news-signup.svg" alt="">
-                  <p>Search and access our archives of presentations, webinars, reports, and more </p>
-                </div></div>
-                <div class="splide__slide">
-                    <div class="signup-box">
-                   <img src="https://www.dezshira.com/assets/img/icon-signup-3.svg" alt="">
-                  <p>Stay up to date with breaking news and regulatory updates by Asia Briefing</p>
-                </div></div>
-                <div class="splide__slide">
-                    <div class="signup-box">
-                  <img src="https://www.dezshira.com/assets/img/icon-signup-4.svg" alt="">
-                  <p>Receive doing business tips and updates from Dezan Shira & Associates </p>
-                </div></div>
-                </div></div></div>
-            
 
-          </div><a class="btn btn-outline-primary" href="/register">Sign Up Now</a>
-        </div></div>
-           
+                                  <div class="trending-insights expand-sect">
+                    <button class="expand-toggle">
+                      <span class="icon">+</span>
+                    </button>
+                    <div class="ti-heading">Trending Insights</div>
+                    <ul class="ti-list expand-content">
+                                              <li>
+                          <a href="https://www.dezshira.com/asia-manufacturing-index" target="_blank">
+                            Asia Manufacturing Index 2025                           </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.asiabriefing.com/store/search?type_detail=report-guide&amp;language=15&amp;brand=dsa&amp;page=1" target="_blank">
+                            Doing Business in Asia 2025: Download Our Country Guides                           </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.china-briefing.com/news/us-china-relations-in-the-trump-2-0-implications/" target="_blank">
+                            US-China Relations in a Trump 2.0 Era                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.vietnam-briefing.com/news/vietnam-manufacturing-tracker.html/" target="_blank">
+                            Vietnam Manufacturing Tracker: 2024-25                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.asiabriefing.com/tariff-updates" target="_blank">
+                            US-China Tariff Updates                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.asiabriefing.com/store/book/investing-across-borders-opportunities-in-the-johor-singapore-sez-10203.html" target="_blank">
+                            Investing Across Borders: The Johor–Singapore SEZ                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                              </div>
+
+              <img
+                src="img/top-home-slide-img/Hero_slide1-8di5ke.webp"
+                alt="Boost Your Growth by Expanding into Asia's Rapidly Growing Markets"
+                class="slide-bg"
+                width="1920"
+                height="880"
+                fetchpriority="high"
+              >
+            </li>
+                    <li class="splide__slide">
+                        <div class="section-wrapper-min">
+                            <div class="slider-content">
+                                <h2 class="slide-title"><a href="https://www.dezshira.com/landing/market-entry"
+                                        target="_blank">Navigate Tariff Risks by Diversifying Your Supply Chain and
+                                        Markets across Asia</a>
+                                </h2>
+                                <p class="slide-desc">Country benchmarking, tariff advisory, location selection, and
+                                    partner matchmaking can help companies stay ahead of tariff and supply chain
+                                    disruptions by operating in the right markets.
+                                </p>
+                                <a href="https://www.dezshira.com/landing/market-entry"
+                                    class="btn btn-outline-white">Explore Options</a>
+                            </div>
+
+                            <div class="trending-insights expand-sect">
+                                <button class="expand-toggle">
+                                    <span class="icon">+</span>
+                                </button>
+                                <div class="ti-heading">
+                                    Trending Insights
+                                </div>
+                                <ul class="ti-list expand-content">
+                                    <li><a href="#" target="_blank">Asia Manufacturing Index 2025</a></li>
+                                    <li><a href="#" target="_blank">Doing Business in Asia 2025: Download our Country
+                                            Guides </a></li>
+                                    <li><a href="#" target="_blank">US-China Relations in a Trump 2.0 Era</a></li>
+                                    <li><a href="#" target="_blank">Vietnam Manufacturing Tracker: 2024-25</a></li>
+                                    <li><a href="#" target="_blank">China Clarifies Cross-Border Data Transfer Rules:
+                                            Key Takeaways from Official Q&A</a></li>
+                                    <li><a href="#" target="_blank">China Manufacturing Tracker 2025</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="/img/top-home-slide-img/Navigate-Tariff-Risks_1920x800.webp" alt="Navigate Tariff Risks" class="slide-bg"
+                            width="1920" height="880">
+                    </li>
+                    <li class="splide__slide">
+                        <div class="section-wrapper-min">
+                            <div class="slider-content">
+                                <h2 class="slide-title"><a
+                                        href="https://www.dezshira.com/landing/erp-advisory-localization-and-integration"
+                                        target="_blank">Scale Your Operations with AI Cloud Accounting, ERP, and Office
+                                        Automation</a></h2>
+                                <p class="slide-desc">We help businesses harness the top AI-powered solutions in cloud
+                                    accounting, ERP, and automation to boost the performance of their operations in
+                                    Asia.</p>
+                                <a href="https://www.dezshira.com/landing/erp-advisory-localization-and-integration"
+                                    class="btn btn-outline-white">Start Your Journey</a>
+                            </div>
+                            <div class="trending-insights expand-sect">
+                                <button class="expand-toggle">
+                                    <span class="icon">+</span>
+                                </button>
+                                <div class="ti-heading">
+                                    Trending Insights
+                                </div>
+                                <ul class="ti-list expand-content">
+                                    <li><a href="#" target="_blank">Vietnam and China Manufacturing: Key Comparisons for
+                                            Business
+                                            Strategies</a></li>
+                                    <li><a href="#" target="_blank">Singapore as a Gateway to South East Asia</a></li>
+                                    <li><a href="#" target="_blank">India’s FTA Network: Updates in 2025</a></li>
+                                    <li><a href="#" target="_blank">Doing Business in Asia 2025: Download our Country
+                                            Guides</a></li>
+                                    <li><a href="#" target="_blank">Corporate Taxation and Compliance Regime in
+                                            India</a></li>
+                                    <li><a href="#" target="_blank">Import and Export Procedures in India</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="/img/top-home-slide-img/Scale-your-operations_1920x800.webp" alt="Seamlessly Manage Your Operations"
+                            class="slide-bg" width="1920" height="800">
+                    </li>
+                    <li class="splide__slide">
+                        <div class="section-wrapper-min">
+                            <div class="slider-content">
+                                <h2 class="slide-title"><a
+                                        href="https://www.dezshira.com/services/information-technology-solutions"
+                                        target="_blank">Seamlessly Manage Your Operations across Multiple Countries in
+                                        Asia</a></h2>
+                                </h2>
+                                <p class="slide-desc">Trusted for over 30 years and with one of the largest footprint in
+                                    the region, we help clients manage single or complex structures across Asia with our
+                                    core capabilities in accounting, reporting, tax, HR, IT, ERP and technology
+                                    services.
+                                </p>
+                                <a href="https://www.dezshira.com/services/information-technology-solutions"
+                                    class="btn btn-outline-white">How We Can Help</a>
+                            </div>
+                            <div class="trending-insights expand-sect">
+                                <div class="ti-heading">
+                                    <button class="expand-toggle">
+                                        <span class="icon">+</span>
+                                    </button>
+                                    Trending Insights
+                                </div>
+                                <ul class="ti-list expand-content">
+                                    <li><a href="#" target="_blank">Guide to ERP Localization and Compliance in China -
+                                            Publication</a>
+                                    </li>
+                                    <li><a href="#" target="_blank">PIPL 2023/24: Cross-Border Data Transfer in China
+                                            Handbook -
+                                            Publication</a></li>
+                                    <li><a href="#" target="_blank">Accounting and Tax Invoice Automation - Case
+                                            Study</a></li>
+                                    <li><a href="#" target="_blank">Digitalization of Expenses - Case Study</a></li>
+                                    <li><a href="#" target="_blank">US-Based SaaS Multinational Establishes Presence in
+                                            China - Case Study</a></li>
+                                    <li><a href="#" target="_blank">Verifying Key Assets and Rectification of Financial
+                                            Statements - Case Study </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="/img/top-home-slide-img/Seamlessly-mannage-your_1920x800.webp" alt="Build Your Asia Team" class="slide-bg"
+                            width="1920" height="800">
+                    </li>
+                    <li class="splide__slide">
+                        <div class="section-wrapper-min">
+                            <div class="slider-content">
+                                <h2 class="slide-title"><a
+                                        href="https://www.dezshira.com/services/business-intelligence-solutions/economic-development-organizations "
+                                        target="_blank">Support Economic Development with Asia Trade and Investment Programs</a></h2>
+                                </h2>
+                                <p class="slide-desc">We help economic development organizations grow exports, attract investors, and create opportunities for local businesses through in-market expertise, research, and matchmaking across Asia.
+                                </p>
+                                <a href="https://www.dezshira.com/services/business-intelligence-solutions/economic-development-organizations "
+                                    class="btn btn-outline-white">Empower Your Region</a>
+                            </div>
+                            <div class="trending-insights expand-sect">
+                                <div class="ti-heading">
+                                    <button class="expand-toggle">
+                                        <span class="icon">+</span>
+                                    </button>
+                                    Trending Insights
+                                </div>
+                                <ul class="ti-list expand-content">
+                                    <li><a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Improving%20Competitiveness%20in%20Asia%20Manufacturing%20Cross-Country%20Benchmarking%20for%20Relocation" target="_blank">Improving Competitiveness in Asia Manufacturing</a>
+                                    </li>
+                                    <li><a href="https://www.dezshira.com/brochure_download_status/services~Dezan%20Shira%20-%20Business%20Intelligence_Business%20Matchmaking%20Brochure" target="_blank">Business Matchmaking Brochure</a></li>
+                                    <li><a href="https://www.dezshira.com/brochure_download_status/services~Dezan%20Shira%20-%20HR%20Payroll_Professional%20Employer%20Organization%20Services" target="_blank">Professional Employer Organization Services</a></li>
+                                    <li><a href="https://www.dezshira.com/library/publications/investing-across-borders-opportunities-in-the-johor-singapore-sez-10203.html" target="_blank">Investing Across Borders: The Johor–Singapore SEZ</a></li>
+                                    <li><a href="https://www.dezshira.com/library/publications/india-s-emerging-enterprises-charting-the-next-decade-of-sme-growth-10236.html" target="_blank">India's Emerging Enterprises: New Decade of SME Growth</a></li>
+                                    <li><a href="https://www.dezshira.com/multimedia/view/vietnam-in-transition-key-changes-in-tax-trade-and-investment-rule.html" target="_blank">Vietnam in Transition: New Tax, Trade, and Investment Rules</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img src="/img/top-home-slide-img/Hero-EDO.webp" alt="Build Your Asia Team" class="slide-bg"
+                            width="1920" height="800">
+                    </li>
+                </ul>
+            </div>
+            <div class="splide-progress-wrapper">
+  <span class="current-index"></span>
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+  <span class="total-count"></span>
+</div>
         </div>
-
-    </div>
     </section>
-        <section class="page-intro pt-5 pb-7 section-light-gray-bg">
-      <div class="section-wrapper-min">
-              <div class="flex-grid-row flex-grid-row--one-third mb-2">
-            <div class="flex-col-3per"><h2>Login to a Client Portals</h2></div>
-            <div class="flex-col-7per"> <p>We partner with organisations across the world to give us a truly global presence. Discover each of our regions’ key partners below. Lorem ipsum donor la view it se donor lorem bene.  </p>
-                
-                
-                    
-                    
+    <div class="section-wrapper-min pt-6 pb-6">
+        <div class="card-grid">
+            <div class="card-horizontal home-top-service-block">
+                <div class="card-body">
+                    <h3 class="heading-level2 mb-1">Your Partner for Growth in Asia</h3>
+                    <p class="card-text">Dezan Shira & Associates is a pan-Asia professional services firm helping
+                        international businesses navigate Asia’s regulatory landscape through corporate, advisory, and
+                        technology solutions. Our experts provide tailored support across key Asian markets, empowering
+                        clients to operate with confidence and agility.</p>
+
+                    <!-- <a href="#" class="btn btn-outline-primary" data-show-on-click="get-in-touch">Make an enquiry</a> -->
+                    <button class="btn btn-primary" data-show-on-click="get-in-touch">Make an enquiry</button>
+
+                </div>
+                <div class="card-body">
+                    <ul class="service-left service-left-2column mb-0">
+                        <li><a href="https://www.dezshira.com/services/accounting-reporting">Accounting</a></li>
+                        <li><a href="https://www.dezshira.com/services/audit-financial-review">Audit and Financial
+                                Review</a></li>
+                        <li><a href="https://www.dezshira.com/services/business-advisory-services">Business Advisory</a>
+                        </li>
+                        <li><a href="https://www.dezshira.com/services/business-intelligence-solutions">Business
+                                Intelligence</a></li>
+                        <li><a href="https://www.dezshira.com/cn/services/outbound-direct-investment">China Outbound |
+                                境外直接投资</a></li>
+                        <li><a
+                                href="https://www.dezshira.com/services/business-advisory-services/corporate-establishment">Corporate
+                                Establishment</a></li>
+                        <li><a href="https://www.dezshira.com/services/government-and-economic-development">Government and Economic Development</a></li>
+                        <li><a href="https://www.dezshira.com/services/payroll-human-resource-administration">HR and
+                                Payroll</a></li>
+                        <li><a href="https://www.dezshira.com/services/business-advisory/mergers-acquisitions-services">Mergers
+                                and Acquisitions</a></li>
+                        <li><a href="https://www.dezshira.com/services/risk-management-compliance">Risk Management and
+                                ESG</a></li>
+                        <li><a href="https://www.dezshira.com/services/tax">Tax</a></li>
+                        <li><a href="https://www.dezshira.com/services/information-technology-solutions">Technology</a>
+                        </li>
+                        <a href="#" class="text-cta-link">Explore all our services t</a>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="counter-section-main">
+        <img src="/img/counter-bg.jpg" alt="counter" width="2000" height="197" class="counter-image">
+        <div class="section-wrapper-min">
+            <div class="counter-section counter-inner">
+                <div class="counter-box popover-wrapper">
+                    <span class="counter" data-target="600" data-speed="2000">600</span>
+                    <h3>Professionals</h3>
+                    <div class="popover-content"><a class="text-cta-link" href="https://www.dezshira.com/personnel">Meet our team</a></div>
+                </div>
+                <div class="counter-box popover-wrapper">
+                    <span class="counter" data-target="33" data-speed="2000">33</span>
+                    <h3>Years Experience</h3>
+
+                    <div class="popover-content"><a class="text-cta-link" href="https://www.dezshira.com/services/">Explore our services</a></div>
+                </div>
+                <div class="counter-box popover-wrapper">
+                    <span class="counter" data-target="21" data-speed="2000">21</span>
+                    <h3>Countries</h3>
+
+                <div class="popover-content"><a class="text-cta-link" href="https://www.dezshira.com/office">See Locations</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="pt-6 pb-9 gateway-dba dba-home">
+        <h2 class="heading-level2 text-center mb-3">Explore Key Markets in Asia</h2>
+        <div class="section-wrapper-min">
+            <div class="splide" data-per-page="1" data-autoplay="false" data-arrows="true" data-type="fade" interval='5000'
+                data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem","height":"100%"},"480":{"perPage":1,"gap":"0.7rem","height":"100%"}}'>
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="card-grid">
+                                <div class="card card-horizontal">
+                                    <div class="card-image-container">
+                                        <img src="/img/DB-portals.webp" alt="Perspectives and Trends" height="388"
+                                            width="624" class="card-image doing-business">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title"><a href="#" target="_blank">Doing Business Portals by Country</a></h3>
+                                        <p class="card-text">Explore our Online Doing Business Guides for practical, country-specific guidance on investment, tax, and compliance across Asia. Stay informed with expert insights and actionable updates tailored for foreign investors and businesses.</p>
+                                        <!-- <a href="#" class="btn btn-outline-primary">Explore More</a> -->
+                                         <div class="card-buttons">
+                  <a href="#" class="card-btn">China</a>
+                  <a href="#" class="card-btn">Hong Kong SAR</a>
+                  <a href="#" class="card-btn">India</a>
+                  <a href="#" class="card-btn">Indonesia</a>
+                  <a href="#" class="card-btn">Vietnam</a>
+                  <a href="#" class="card-btn">Singapore</a>
+                  <a href="#" class="card-btn">UAE</a>
+                    <div class="toggleBtn-dropdown">
+                        <button class="toggleBtn-dropdown-button card-btn">Others</button>
+                        <div class="toggleBtn-dropdown-menu">
+                          <a href="#" target="_blank">Bangladesh</a>
+                          <a href="#" target="_blank">Japan</a>
+                          <a href="#" target="_blank">Malaysia</a>
+                          <a href="#" target="_blank">Philippines</a>
+                          <a href="#" target="_blank">South Korea</a>
+                          <a href="#" target="_blank">Sri Lanka</a>
+                          <a href="#" target="_blank">Thailand</a>
+                          <a href="#" target="_blank">Turkiye</a>
+                          <a href="#" target="_blank">More</a>
+                        </div>
+                      </div>
+                </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="splide__slide">
+                            <div class="card-grid">
+                                <div class="card card-horizontal">
+                                    <div class="card-image-container">
+                                        <img src="/img/ESG.webp" alt="Perspectives and Trends" height="388"
+                                            width="624" class="card-image doing-business">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title"><a href="#" target="_blank">Sustainability and ESG Reporting</a></h3>
+                                        <p class="card-text">ESG metrics have become key performance indicators for stakeholders to effectively evaluate a company’s commitment to environmental impact, social responsibility, and governance practices.</p>
+                                        <a href="#" class="btn btn-outline-white">Find Solutions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card-grid">
+                                <div class="card card-horizontal">
+                                    <div class="card-image-container">
+                                        <img src="/img/AMI.webp" alt="Perspectives and Trends" height="388"
+                                            width="624" class="card-image doing-business">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title"><a href="#" target="_blank">Asia Manufacturing Index</a></h3>
+                                        <p class="card-text">Gain data-driven insights into Asia’s manufacturing landscape with our Asia Manufacturing Index. Compare markets, benchmark opportunities, and explore strategic trends to support investment and supply chain decisions across the region.</p>
+                                        <a href="#" class="btn btn-outline-white">See Rankings</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="pt-6 pb-6 section-light-gray-bg resource-splide splide-three-column" >
+       <div class="section-wrapper-min">
+           <h2 class="heading-level2 text-center mb-3">Register for Our Expert-Led Sessions</h2>
+
+           <div class="splide" data-per-page="3" data-autoplay="false" data-arrows="true" data-type="slide"
+               data-pagination="false"
+               data-breakpoints='{"1024":{"perPage":2,"gap":"2rem"},"640":{"perPage":1,"gap":"0rem"},"480":{"perPage":1,"gap":"0rem"}}'>
+               <div class="splide__track">
+                   <div class="splide__list">
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10245/image-12_1.png')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>17</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Summit</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/international-supply-chain-logistics-summit-2025-10245.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/international-supply-chain-logistics-summit-2025-10245.html"> International Supply Chain & Logistics Summit 2025</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10241/Webinar_Indonesia-Budget-2026-Cost-Structures-Incentives-and-Strategic-Planning-for-Investors.jpg')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>17</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/indonesia-budget-2026-cost-structures-incentives-and-strategic-planning-for-investors.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/indonesia-budget-2026-cost-structures-incentives-and-strategic-planning-for-investors.html">Indonesia Budget 2026: Cost Structures, Incentives, and Strategic Planning for  Investors</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>18</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/cn-management-measures-for-compliance-audits-on-the-protection-of-personal-information.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/cn-management-measures-for-compliance-audits-on-the-protection-of-personal-information.html">[CN] 个人信息保护合规审计管理办法</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>18</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Training</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/management-measures-for-compliance-audits-on-the-protection-of-personal-information.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/management-measures-for-compliance-audits-on-the-protection-of-personal-information.html">Management Measures for Compliance Audits on the Protection of Personal Information </a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>24</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/india-s-provident-fund-framework-for-expatriates-in-2025-key-updates-ssa-benefits-and-withdrawal-procedures-10246.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/india-s-provident-fund-framework-for-expatriates-in-2025-key-updates-ssa-benefits-and-withdrawal-procedures-10246.html">India’s Provident Fund Framework for Expatriates in 2025: Key Updates, SSA Benefits, and Withdrawal Procedures</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10222/Banner-Image-Vietnam-Webinar-DACH_1.png')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>24</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Seminar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/erfolgreich-in-vietnam-standort-bewerten-geschaftskultur-verstehen-markenerfolg-schaffen.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/erfolgreich-in-vietnam-standort-bewerten-geschaftskultur-verstehen-markenerfolg-schaffen.html">Erfolgreich in Vietnam: Standort bewerten, Geschäftskultur verstehen, Markenerfolg schaffen</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>25</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/can-connect-webinar-vietnam-economic-business-outlook-with-cancham-vietnam-10247.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/can-connect-webinar-vietnam-economic-business-outlook-with-cancham-vietnam-10247.html">Can-Connect Webinar: Vietnam Economic & Business Outlook | With CanCham Vietnam</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10242/ship_HP.jpg')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>25</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/assessing-the-impact-of-us-tariffs-on-asia.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/assessing-the-impact-of-us-tariffs-on-asia.html">Assessing the Impact of US Tariffs on Asia</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10244/Image-34_1.jpg')">
+                                       <div class="resrcs-date overlay">
+                                           Sep<br><span>27</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/hand-tools-fastener-expo-2025-10244.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/hand-tools-fastener-expo-2025-10244.html">Hand Tools & Fastener Expo 2025</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>15</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/asean-opportunities-2025-growth-strategies-for-australian-businesses.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/asean-opportunities-2025-growth-strategies-for-australian-businesses.html">Unlocking ASEAN Advantage: Growth Strategies for Australian Businesses</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>16</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
+                                            alt="location">
+                                        <a href="/events/details/timor-leste-unlocking-opportunities-in-asia-s-youngest-nation.html" target="_blank"> Spain</a>
+                                    </div> -->
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="/events/details/timor-leste-unlocking-opportunities-in-asia-s-youngest-nation.html">Timor-Leste: Unlocking Opportunities in Asia’s Youngest Nation</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                          </div>
+               </div>
+           </div>
+           <div class="text-center"><a href="/events" class=" btn btn-outline-primary">All Events</a></div>
+
+       </div>
+   </section>
+
+    <section class="pt-6 pb-6">
+        <div class="section-wrapper-min">
+
+            <h2 class="heading-level2 mb-2 text-center">Case Studies and Insights</h2>
+            <div class="common-tab-container studies-insights resource-splide">
+            <ul class="common-tab-buttons">
+                <li>
+                    <button class="common-tab-button active" data-tab="studiesTab">Case Studies</button>
+                </li>
+                <li>
+                    <button class="common-tab-button" data-tab="leadershipTab">Thought Leadership</button>
+                </li>
+                <li>
+                    <button class="common-tab-button" data-tab="publicationsTab">Publications</button>
+                </li>
+                <li>
+                    <button class="common-tab-button" data-tab="webinarsTab">Webinar Replays</button>
+                </li>
+            </ul>
+            <div class="common-tab-content" id="studiesTab">
            
+            <div class="news-section cs-insights">
+
+                <div class="news-featured">
+                    <div class="news-image">
+                        <a
+                            href="#"
+                            target="_blank">
+                        <img src="https://resource.dezshira.com/Assets/1756950012_Australian Trade Mission Builds.jpg" alt="Featured News" /></a>
+                                            <div class="news-details">
+                    <span class="news-date">Case Studies</span>
+                    <h3 class="news-title"><a href="https://www.dezshira.com/brochure_download_status/case_studies~services~GovED~Dezan%20Shira%20-%20Case%20Study_Australian%20Trade%20Mission%20Builds%20High-Value%20Partnerships%20Through%20Business%20Matchmaking%20in%20Vietnam" target="blank">Australian Trade Mission Builds High-Value Partnerships Through Business Matchmaking in Vietnam</a></h3></div>
+                    </div>
+
+
+                </div>
+                                <div class="news-list">
+                    <div class="news-item">
+                        
+                        <div class="news-details">
+                                                    <span class="news-date">Case Studies</span>
+                        <p class="news-snippet"><a href="https://www.dezshira.com/brochure_download_status/case_studies~services~bi~Building%20Supply%20Chain%20Resilience%20in%20Asia%20Country%20Competitiveness%20Benchmarking%20by%20a%20European%20Textile%20Manufacturer" target="_blank">Building Supply Chain Resilience in Asia: Country Competitiveness Benchmarking by a European Textile Manufacturer</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="news-item">
+                       
+                        <div class="news-details">
+                        <span class="news-date">Case Studies</span>
+                        <p class="news-snippet"><a href="https://www.dezshira.com/brochure_download_status/case_studies~services~esg~ESG Management with IBM Envizi - Science-based sustainability needs reality-based reporting" target="_blank">ESG Management with IBM Envizi - Science-based sustainability needs reality-based reporting</a></p>
+                                </div>
+                    </div>
+
+                    <div class="news-item">
+                       
+                        <div class="news-details">
+                        <span class="news-date">Case Studies</span>
+                        <p class="news-snippet"><a href="https://www.dezshira.com/brochure_download_status/case_studies~services~GovED~Dezan%20Shira%20-%20Case%20Study_Australian%20Trade%20Mission%20Builds%20High-Value%20Partnerships%20Through%20Business%20Matchmaking%20in%20Vietnam" target="_blank">Australian Trade Mission Builds High-Value Partnerships Through Business Matchmaking in Vietnam</a></p>
+                                </div>
+                    </div>
+             
+                </div>
+        
+                   
+            </div>
+            <div class="text-right">
+            <a class="text-cta-link" href="#" target="_blank">View all case studies<span class="arrow-anim"></span></a></div>
+            </div>
+            <div class="common-tab-content" id="leadershipTab" style="display: none;">
+            <div class="news-section cs-insights">
+
+                <div class="news-featured">
+                    <div class="news-image">
+                        <a
+                            href="#"
+                            target="_blank">
+                        <img src="https://www.china-briefing.com/news/wp-content/uploads/2025/07/How-Are-Tariffs-Impacting-Chinese-Exports-to-the-US.jpg" alt="Featured News" /></a>
+                                            <div class="news-details">
+                    <span class="news-date">Thought Leadership</span>
+                    <h3 class="news-title"><a href="https://www.china-briefing.com/news/us-imports-from-china-tariff-impact/" target="_blank">How Are Tariffs Impacting Chinese Exports to the US?</a></h3></div>
+                    </div>
+
+
+                </div>
+                                <div class="news-list">
+                    <div class="news-item">
+                        
+                        <div class="news-details">
+                                                    <span class="news-date">Thought Leadership</span>
+                        <p class="news-snippet"><a href="https://www.china-briefing.com/news/us-imports-from-china-tariff-impact/" target="_blank">
+                                                     How Are Tariffs Impacting Chinese Exports to the US?                                                 </a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="news-item">
+                       
+                        <div class="news-details">
+                        <span class="news-date">Thought Leadership</span>
+                        <p class="news-snippet"><a href="https://www.china-briefing.com/news/cross-border-restructuring-geopolitical-supply-chain-risks/" target="_blank">
+                                                     Cross-Border Restructuring: A Strategic Response to Rising Geopolitical and Supply Chain Risks                                                 </a></p>
+                                </div>
+                    </div>
+
+                    <div class="news-item">
+                       
+                        <div class="news-details">
+                        <span class="news-date">Thought Leadership</span>
+                        <p class="news-snippet"><a href="https://www.china-briefing.com/news/chinas-economy-in-h1-2025-gdp-trade-and-fdi-highlights/" target="_blank">
+                                                     China’s Economy in H1 2025: GDP, Trade, and FDI Highlights                                                 </a></p>
+                                </div>
+                    </div>
+             
+                </div>
+               
+                   
+            </div>
+         
+                <div class="text-right">
+                <a class="text-cta-link" href="#" target="_blank">View all insights<span class="arrow-anim"></span></a></div>
+            </div>
+            <div class="common-tab-content" id="publicationsTab" style="display: none;">
+            <div class="news-section cs-insights">
+
+                <div class="news-featured">
+                    <div class="news-image">
+                        <a
+                            href="#"
+                            target="_blank">
+                        <img src="https://resource.dezshira.com/resize/260x360/Publications/10250/ASB-2025-09-issue_cover.jpg" alt="Featured News" /></a>
+                                            <div class="news-details">
+                    <span class="news-date">Publications</span>
+                    <h3 class="news-title"><a href="/store/book/customs-trade-strategy-indonesia-investor-guide.html">Customs and Trade Strategy in Indonesia: An Investor's Guide</a></h3></div>
+                    </div>
+
+
+                </div>
+                                <div class="news-list">
+                    <div class="news-item">
+                        
+                        <div class="news-details">
+                                                    <span class="news-date">Publications</span>
+                        <p class="news-snippet"><a href="https://www.asiabriefing.com/store/book/investing-in-malaysia-key-sectors-and-opportunities-for-foreign-investors-chinese-10238.html" target="_blank">投资马来西亚：重点行业与外资机遇</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="news-item">
+                       
+                        <div class="news-details">
+                        <span class="news-date">PublicationsY</span>
+                        <p class="news-snippet"><a href="https://www.asiabriefing.com/store/book/introduction-doing-business-asean-2025-chinese.html" target="_blank">东盟投资营商指南2025</a></p>
+                                </div>
+                    </div>
+
+                    <div class="news-item">
+                       
+                        <div class="news-details">
+                        <span class="news-date">Publications</span>
+                        <p class="news-snippet"><a href="https://www.asiabriefing.com/store/book/tapping-into-india-s-tier-2-and-tier-3-cities-a-practical-playbook-for-foreign-investors-10243.html" target="_blank">Tapping into India’s Tier 2 and Tier 3 Cities: A Practical Playbook for Foreign Investors</a></p>
+                                </div>
+                    </div>
+             
+                </div>
+               
+                   
+            </div>
+                
+
+                <div class="text-right">
+                <a class="text-cta-link" href="#" target="_blank">View all publications<span class="arrow-anim"></span></a></div>
+            </div>
+            <div class="common-tab-content" id="webinarsTab" style="display: none;">
+            <div class="news-section cs-insights">
+
+                <div class="news-featured">
+                    <div class="news-image">
+                        <a
+                            href="#"
+                            target="_blank">
+                        <img src="https://www.dezshira.com/assets/img/asiapedia/thumb-event.jpg" alt="Featured News" /></a>
+                                            <div class="news-details">
+                    <span class="news-date">Webinars</span>
+                    <h3 class="news-title"><a href="/multimedia/view/investing-in-indonesia-s-construction-projects-a-comprehensive-guide-for-fdi.html">Investing in Indonesia’s Construction Projects: A Comprehensive Guide for FDI </a></h3></div>
+                    </div>
+
+
+                </div>
+                                <div class="news-list">
+                    <div class="news-item">
+                        
+                        <div class="news-details">
+                                                    <span class="news-date">Webinars</span>
+                        <p class="news-snippet"><a href="https://www.dezshira.com/multimedia/view/india-2025-bis-certification-reforms-supporting-compliance-market-expansion-chinese-exporters.html" target="_blank">[CN] India's Mandatory BIS Certification in 2025 中国产品出口印度：2025年BIS认证新规与应对指南（中文）</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="news-item">
+                       
+                        <div class="news-details">
+                        <span class="news-date">Webinars</span>
+                        <p class="news-snippet"><a href="https://www.dezshira.com/multimedia/view/corporate-social-responsibility-in-india-2025-applicability-compliance-and-strategic-impact-for-business-10213.html" target="_blank">Corporate Social Responsibility in India 2025: Applicability, Compliance, and Strategic Impact On Your Business</a></p>
+                                </div>
+                    </div>
+
+                    <div class="news-item">
+                       
+                        <div class="news-details">
+                        <span class="news-date">Webinars</span>
+                        <p class="news-snippet"><a href="https://www.dezshira.com/multimedia/view/india-s-free-trade-agreement-revival-opportunities-risks-and-strategic-impact-on-global-businesses-10225.html" target="_blank">India’s Free Trade Agreement Revival in 2025 : Opportunities, Risks, and Strategic Impact on Global Businesses</a></p>
+                                </div>
+                    </div>
+             
+                </div>
+               
+                   
+            </div>
+                <div class="text-right">
+                 <a class="text-cta-link" href="#" target="_blank">View all webinars<span class="arrow-anim"></span></a></div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pt-6 pb-6 section-light-gray-bg resource-splide splide-three-column">
+        <div class="section-wrapper-min">
+            <h2 class="heading-level2 text-center mb-3">Dezan Shira News</h2>
+            <div class="studies-insights resource-splide">
+            <div class="splide" data-per-page="3" data-autoplay="false" data-arrows="false" data-type="slide"
+                data-pagination="false"
+                     data-breakpoints='{
+       "1024": { "perPage": 2, "gap": "1.5rem", "arrows": true },
+       "768": { "perPage": 2, "gap": "1rem", "arrows": true },
+       "480": { "perPage": 1, "gap": "0", "arrows": true }
+     }'>
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                                                <div class="card-horizontal">
+                        <div class="card-body">
+                            <div class="card-image-container">
+                                <img src="https://www.dezshira.com/updates/wp-content/uploads/2025/08/WhatsApp_Image_2025-08-22_at_10.47.40_ddb907cf-2.jpg" alt="Factory at Night" height="388" width="624"
+                                    class="card-image">
+                            </div>
+                            <div class="resrcs-meta"><span>August 27, 2025</span> </div>
+                            <h3 class="card-title"><a href="https://www.dezshira.com/v2_2025/brochure_download_status/case_studies~services~esg~ESG Management with IBM Envizi - Science-based sustainability needs reality-based reporting" target="_blank">Navigating The New Era of Australia-China Relations: Ines Liu Shares Critical Insights for Success at ACETIE 2025</a></h3>
+                        </div>
+
+                    </div>
+                        </div>
+
+                        <div class="splide__slide">
+                            <div class="card-horizontal">
+
+                        <div class="card-body">
+                            <div class="card-image-container">
+                                <img src="https://www.dezshira.com/updates/wp-content/uploads/2025/08/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-08-22_100750_402.jpg" alt="Perspectives and Trends" height="388" width="624"
+                                    class="card-image doing-business">
+                            </div>
+                            <div class="resrcs-meta"><span>August 22, 2025</span> </div>
+                            <h3 class="card-title"><a href="https://www.dezshira.com/v2_2025/brochure_download_status/case_studies~services~bi~Building%20Supply%20Chain%20Resilience%20in%20Asia%20Country%20Competitiveness%20Benchmarking%20by%20a%20European%20Textile%20Manufacturer" target="_blank">Vivie Wei Speaks on Vietnam’s Textile Industry Transformation at Intertextile Shanghai Home Textiles 2025</a></h3>
+                        </div>
+                    </div>
+                        </div>
+
+                        <div class="splide__slide">
+                            <div class="card-horizontal">
+
+                        <div class="card-body">
+                            <div class="card-image-container">
+                                <img src="https://www.dezshira.com/updates/wp-content/uploads/2025/08/Image-32-1.jpg" alt="Perspectives and Trends" height="388" width="624"
+                                    class="card-image doing-business">
+                            </div>
+                            <div class="resrcs-meta"><span>August 14, 2025</span> </div>
+                            <h3 class="card-title"><a href="https://www.dezshira.com/v2_2025/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Multi-Country%20Study%20to%20Identify%20Alternative%20Manufacturing%20locations%20to%20Address%20US-China%20Trade%20Tensions" target="_blank">Dezan Shira & Associates India Team Meets Austrian Trade Commissioner in New Delhi</a>
+                            </h3>
+
+
+
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+<div class="text-center"><a href="#" class="btn btn-outline-primary">View all news</a></div>
+
+
+
+        </div>
+    </section>
+    <section class="pt-6 pb-6">
+        <div class="section-wrapper-min">
+
+            <div class="flex-grid-row flex-grid-row--one-third padding-none">
+                <div class="flex-col-3per">
+                    <h2 class="heading-level2 mb-1">Our Clients</h2>
+                    <p>Discover our esteemed global clients across diverse sectors. We believe in providing our clients with exceptional service and a commitment to being their partner for growth in Asia.</p>
+
+<a href="https://www.dezshira.com/success-stories/testimonials" class="text-cta-link">See what our clients say about us<span class="arrow-anim"></span>
+                    </a>
+                </div>
+                <div class="flex-col-7per clients-panel-list resource-splide">
+                    <div class="splide" data-per-page="4" data-autoplay="false" data-arrows="false" data-type="slide"
+                        data-breakpoints='{"640":{"perPage": 2,"gap": "0.7rem","height": "auto"},"480":{"perPage": 1,"gap": "0.7rem","height": "auto" }}'>
+                        <div class="splide__track">
+<div class="splide__list">
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728025982_Mann_Hummel.webp" 
+                    data-src="/img/clients/1728025982_Mann_Hummel.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728025920_cosmoaesthetics.webp" 
+                    data-src="/img/clients/1728025920_cosmoaesthetics.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width: 70px;height: 50px;">
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728025859_Lotto-logo-AV.webp" 
+                    data-src="/img/clients/1728025859_Lotto-logo-AV.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728025822_RUSSELL_MINERAL_EQUIPMENT.webp" 
+                    data-src="/img/clients/1728025822_RUSSELL_MINERAL_EQUIPMENT.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728025782_MaryKay.webp" 
+                    data-src="/img/clients/1728025782_MaryKay.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728025722_mim_software.webp" 
+                    data-src="/img/clients/1728025722_mim_software.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width: 65px;height: 65px;">
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728023495_cockerill-logo.webp" 
+                    data-src="/img/clients/1728023495_cockerill-logo.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1685894047_Flow Traders Logo.webp" 
+                    data-src="/img/clients/1685894047_Flow Traders Logo.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width:165px;">
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728024901_Corman_SPA.webp" 
+                    data-src="/img/clients/1728024901_Corman_SPA.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1685893699_Finmasi Group logo.webp" 
+                    data-src="/img/clients/1685893699_Finmasi Group logo.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width: 62px;">
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1685893587_DosBros.webp" 
+                    data-src="/img/clients/1685893587_DosBros.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728024961_GoldenAuroraFreshFruit.webp" 
+                    data-src="/img/clients/1728024961_GoldenAuroraFreshFruit.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width: 60px;">
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1685893852_Mastip logo.webp" 
+                    data-src="/img/clients/1685893852_Mastip logo.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728025492_EasySea Logo.webp" 
+                    data-src="/img/clients/1728025492_EasySea Logo.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1685893908_Metaverk logo.webp" 
+                    data-src="/img/clients/1685893908_Metaverk logo.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1685698655_Ubisoft.webp" 
+                    data-src="/img/clients/1685698655_Ubisoft.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1685698331_ECA Italia logo.webp" 
+                    data-src="/img/clients/1685698331_ECA Italia logo.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width: 58px;height: 47px;">
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728023325_Marcum Asia.webp" 
+                    data-src="/img/clients/1728023325_Marcum Asia.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                >
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728025021_AimDirect.webp" 
+                    data-src="/img/clients/1728025021_AimDirect.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1685505033_Occhio.webp" 
+                    data-src="/img/clients/1685505033_Occhio.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width: 60px;">
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/Hauraton.webp" 
+                    data-src="/img/clients/Hauraton.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/Organica.webp" 
+                    data-src="/img/clients/Organica.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width: 50px;height: 61px;">
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/ping.webp" 
+                    data-src="/img/clients/ping.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728612542_King_of_Truffles_logo.webp" 
+                    data-src="/img/clients/1728612542_King_of_Truffles_logo.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728612489_fertiglobal.webp" 
+                    data-src="/img/clients/1728612489_fertiglobal.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728612507_Bloomsbury_Institute.webp" 
+                    data-src="/img/clients/1728612507_Bloomsbury_Institute.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728612519_Genie_Networks.webp" 
+                    data-src="/img/clients/1728612519_Genie_Networks.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    >
+                </div>
+
+                                <div class="logo-thumbnail"><img class="lazy" src="/img/clients/1728611984_Tiger-Water.webp" 
+                    data-src="/img/clients/1728611984_Tiger-Water.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+               >
+                </div>
+                                </div>
+            </div>
+                        <div class="splide__slide">
+                <div class="c-logo">
+
+                <div class="logo-thumbnail">
+                <img class="lazy" src="/img/clients/1728611971_VSM.webp" 
+                    data-src="/img/clients/1728611971_VSM.webp"
+                    alt="Client Logo"
+                    width="auto"
+                    height="40"
+                    style="width: 96px;height: 35px;">
+                </div>
+
+                                </div>
+            </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero-section">
+    <img
+      src="/img/hero-expert.webp"
+      alt="Talk to an expert"
+      width="2000" height="554"
+      class="hero-image"/>
+    <div class="section-wrapper-min">
+    <div class="hero-content">
+      <p class="hero-text">
+        We provide expert advisory and corporate services across Asia, guiding
+        businesses through complex markets and regulations.
+      </p>
+      
+      <div class="text-btn">
+       
+          <button class="btn btn-outline-white down-arrow" data-show-on-click="get-in-touch">Talk to an Expert</button>
+      
+        </div>
+    </div>
+  </div>
+
+  </section>
+      <section class="let-discuss-form ldform-gray-bg get-in-touch" id="let-discuss-form">
+      <div class="section-wrapper">
+        <h2>Customize the Rankings to Your Circumstances </h2>
+        <h3>Get in touch with the form below </h3>
+        <div class="ld-form"> 
+        
+          <form method="post" action="https://www.dezshira.com/submit_mini_contact" id="contact_form">
+            <input type="hidden" name="dsa_contact_token" value="">
+            <input type="hidden" name="request_uri" value="https://www.dezshira.com/asia-manufacturing-index">
+            <input type="hidden" name="to" value="business.intelligence@dezshira.com">
+            
+            <input type="hidden" class="TokenNameKey" name="csrf_name" value="csrf67bd6ded16e1b">
+            <input type="hidden" class="TokenValueKey" name="csrf_value" value="e6daa1bfc072be229eea7116150e8ae6">
+                    <div class="form-field-two-column"> 
+              <input id="fname" type="text" name="fname" placeholder="First Name" required="">
+              <input id="lname" type="text" name="lname" placeholder="Last Name" required="">
+            </div>
+            <div class="form-field-two-column"> 
+              <input id="email_address" type="email" name="email_address" placeholder="Email" required="">
+              <input id="organization" type="text" name="organization" placeholder="Company" required="">
+            </div>
+            <div class="form-field-one-column"> 
+              <select id="country" name="country">
+                <option selected="" value="">Choose Your Country</option>
+                <option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
+                <option value="Afghanistan, Islamic State">Afghanistan, Islamic State</option>
+                <option value="Åland Islands">Åland Islands</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="American Samoa">American Samoa</option>
+                <option value="Andorra, Principality of">Andorra, Principality of</option>
+                <option value="Angola">Angola</option>
+                <option value="Anguilla">Anguilla</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Aruba">Aruba</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bermuda">Bermuda</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia-Herzegovina">Bosnia-Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Bouvet Island">Bouvet Island</option>
+                <option value="Brazil">Brazil</option>
+                <option value="British Indian Ocean Terr.">British Indian Ocean Terr.</option>
+                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cambodia, Kingdom of">Cambodia, Kingdom of</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Cape Verde">Cape Verde</option>
+                <option value="Cayman Islands">Cayman Islands</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Christmas Island">Christmas Island</option>
+                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Cook Islands">Cook Islands</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Curaçao">Curaçao</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Congo, Democratic Republic">Congo, Democratic Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="East Timor">East Timor</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Falkland Islands">Falkland Islands</option>
+                <option value="Faroe Islands">Faroe Islands</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="French Guyana">French Guyana</option>
+                <option value="French Polynesia">French Polynesia</option>
+                <option value="French Southern Territories">French Southern Territories</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Gibraltar">Gibraltar</option>
+                <option value="Greece">Greece</option>
+                <option value="Greenland">Greenland</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guadeloupe (French)">Guadeloupe (French)</option>
+                <option value="Guam (USA)">Guam (USA)</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guernsey">Guernsey</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea Bissau">Guinea Bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Heard and McDonald Islands">Heard and McDonald Islands</option>
+                <option value="Holy See (Vatican City)">Holy See (Vatican City)</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hong Kong SAR">Hong Kong SAR</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Isle of Man">Isle of Man</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Ivory Coast (Cote D'Ivoire)">Ivory Coast (Cote D'Ivoire)</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jersey">Jersey</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyz Republic (Kyrgyzstan)">Kyrgyz Republic (Kyrgyzstan)</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macau SAR">Macau SAR</option>
+                <option value="Macedonia">Macedonia</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Martinique">Martinique</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mayotte">Mayotte</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia">Micronesia</option>
+                <option value="Moldavia">Moldavia</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Caledonia (French)">New Caledonia (French)</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Niue">Niue</option>
+                <option value="Norfolk Island">Norfolk Island</option>
+                <option value="North Korea">North Korea</option>
+                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Other">Other</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestine, State of">Palestine, State of</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Pitcairn Island">Pitcairn Island</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Reunion (French)">Reunion (French)</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="S. Georgia &amp; S. Sandwich Is.">S. Georgia &amp; S. Sandwich Is.</option>
+                <option value="Saint Barthélemy">Saint Barthélemy</option>
+                <option value="Saint Helena">Saint Helena</option>
+                <option value="Saint Kitts &amp; Nevis Anguilla">Saint Kitts &amp; Nevis Anguilla</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Martin">Saint Martin</option>
+                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                <option value="Saint Tome (Sao Tome)">Saint Tome (Sao Tome)</option>
+                <option value="Saint Vincent &amp; Grenadines">Saint Vincent &amp; Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovak Republic">Slovak Republic</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Korea">South Korea</option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Svalbard and Jan Mayen Is.">Svalbard and Jan Mayen Is.</option>
+                <option value="Swaziland">Swaziland</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Tadjikistan">Tadjikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Togo">Togo</option>
+                <option value="Tokelau">Tokelau</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkiye">Turkiye</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="USA Minor Outlying Islands">USA Minor Outlying Islands</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                <option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+                <option value="Western Sahara">Western Sahara</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Yugoslavia (former)">Yugoslavia (former)</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="ASEAN Region">ASEAN Region</option>
+              </select>
+            </div>
+            <div class="form-field-one-column"> 
+              <textarea id="comments" name="comments" placeholder="Comments" rows="4" cols="50"></textarea>
+            </div>
+            <div class="form-field-one-column codecs">
+              <div class="security-Check-code">
+                <input class="form-control" id="captcha_code" name="captcha_code" type="text" placeholder="Security Code (Case sensitive)">
+                <div class="security-Check"><img id="siimage_popup" src="../img/showCaptcha.png" alt="captcha image" class="loadCaptchaImage"></div>
+              </div>
+              <div class="code-sensitive"><small class="reload-captcha" id="reload_captcha" onclick="loadCaptcha();">
+                  <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m3.508 6.726c1.765-2.836 4.911-4.726 8.495-4.726 5.518 0 9.997 4.48 9.997 9.997 0 5.519-4.479 9.999-9.997 9.999-5.245 0-9.553-4.048-9.966-9.188-.024-.302.189-.811.749-.811.391 0 .715.3.747.69.351 4.369 4.012 7.809 8.47 7.809 4.69 0 8.497-3.808 8.497-8.499 0-4.689-3.807-8.497-8.497-8.497-3.037 0-5.704 1.597-7.206 3.995l1.991.005c.414 0 .75.336.75.75s-.336.75-.75.75h-4.033c-.414 0-.75-.336-.75-.75v-4.049c0-.414.336-.75.75-.75s.75.335.75.75z" fill-rule="nonzero"></path>
+                  </svg></small></div>
+            </div>
+            <div class="form-field-one-column"> 
+              <label class="form-check-input">
+                <input type="checkbox" name="submitting" id="agree_privary_policy"><span>By submitting this form, I agree to receive communications from Dezan Shira &amp; Associates. I have read the <a href="https://www.dezshira.com/privacy-policy" target="_blank">Privacy Policy</a> and understand my personal information may be transmitted overseas.</span>
+              </label>
+            </div>
+            
+            <div>
+                <div id="loading_contact" class="text-center" style="display:none;"> Processing, please wait...</div>
+                <div id="message_contact" class="text-center"></div>
+            </div>
+
+            <div class="text-center"> 
+              <input type="submit" value="Send">
+            </div>
+          </form>
         </div>
       </div>
-      <div class="partners-alliances-list ">                
-            <div class="splide" data-per-page="3" data-autoplay="false"
-            data-arrows="false" data-type="slide" gap="0"
-             data-breakpoints='{"1024":{"perPage":2,"gap":"2rem"},"667":{"perPage":1,"gap":"0.7rem"}}'>
-             <div class="splide__track">
-              <div class="splide__list">
-             <div class="splide__slide">
-                <div class="partners-alliances client-portal">
-                    <img loading="lazy" class="mb-2"
-                        src="/img/asiaadmin-logo.svg" alt="asiaadmin" width="auto" height="25">
-                    <div class="heading-level3 text-center">AsiaAdmin - Cloud HR & Payroll </div>
-                        <div class="pa-text">Dezan Shira & Associates leads an alliance of highly capable firms in Asia to better support our clients’ activities throughout the region. Through this alliance, we assist with practice development and provide joint client services in smaller emerging nations across Asia. </div>
-                        <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
-                        <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         
-                       </div>
-            </div>
-        
-             <div class="splide__slide">
-                <div class="partners-alliances client-portal">
-                     <img loading="lazy" class="mb-2"
-                        src="/img/FinOps-logo.svg" alt="FinOps" width="auto" height="50">
-                    <div class="heading-level3 text-center">FinOps - Cloud Accounting & ERP</div>
-                        <div class="pa-text">Dezan Shira & Associates is a member of ETL Group. ETL is Europe's largest tax and legal consultancy group and maintains a network of 870 firms in over 50 countries to provide unique range of consulting services to European businesses looking to expand. </div>
-                        <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
-                        <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                        
-                       </div>
-            </div>
-             <div class="splide__slide">
-                <div class="partners-alliances client-portal">
-                    <img loading="lazy" class="mb-2"
-                        src="/img/sharePointOnline-logo.svg" alt="sharePointOnline" width="auto" height="51">
-                    <div class="heading-level3 text-center">Sharepoint Archives for Clients</div>
-                        <div class="pa-text">Dezan Shira & Associates is a member of the LEA Global, the world’s fourth largest accounting global network, with more than 226 accounting practices, and 620 offices in 110 countries.  </div>
-                        <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
-                        <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         
-                       </div>
-            </div>
-          
-            <div class="splide__slide">
-                <div class="partners-alliances client-portal">
-                    <img loading="lazy" class="mb-2"
-                        src="/img/asiaadmin-logo.svg" alt="asiaadmin" width="auto" height="25">
-                    <div class="heading-level3 text-center">AsiaAdmin - Cloud HR & Payroll </div>
-                        <div class="pa-text">Dezan Shira & Associates leads an alliance of highly capable firms in Asia to better support our clients’ activities throughout the region. Through this alliance, we assist with practice development and provide joint client services in smaller emerging nations across Asia. </div>
-                        <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
-                        <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         
-                       </div>
-            </div>
-        
-             <div class="splide__slide">
-                <div class="partners-alliances client-portal">
-                    <img loading="lazy" class="mb-2"
-                        src="/img/FinOps-logo.svg" alt="FinOps" width="auto" height="50">
-                    <div class="heading-level3 text-center">FinOps - Cloud Accounting & ERP</div>
-                        <div class="pa-text">Dezan Shira & Associates is a member of ETL Group. ETL is Europe's largest tax and legal consultancy group and maintains a network of 870 firms in over 50 countries to provide unique range of consulting services to European businesses looking to expand. </div>
-                        <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
-                        <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         
-                       </div>
-            </div>
-             <div class="splide__slide">
-                <div class="partners-alliances client-portal">
-                    <img loading="lazy" class="mb-2"
-                        src="/img/sharePointOnline-logo.svg" alt="sharePointOnline" width="auto" height="51">
-                    <div class="heading-level3 text-center">Sharepoint Archives for Clients</div>
-                        <div class="pa-text">Dezan Shira & Associates is a member of the LEA Global, the world’s fourth largest accounting global network, with more than 226 accounting practices, and 620 offices in 110 countries </div>
-                        <a class="text-cta-link" href="#" target="_blank">Login<span class="arrow-anim"></span></a>
-                        <a class="text-cta-link" href="#" target="_blank">Request a demo <span class="arrow-anim"></span></a>
-                         
-                       </div>
-            </div>
-                
-            </div>
-             </div>
-            </div></div>
-       
-  </div>
     </section>
+  
 
-</main>
     <footer class="footer">
   <div class="section-wrapper">
     <div class="footer-top">
@@ -1360,114 +2852,33 @@
     </div>
   </div>
 </footer>
-    <script>
-  const offices = [
-    { country: "Australia", image: "../img/location/office1.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Sydney", phone: "+86 (0)10 6566 0088", email: "australia@dezshira.com", url: "#" },
-    { country: "Bangladesh", image: "../img/location/office2.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue, Dhaka", phone: "+86 (0)10 6566 0088", email: "bangladesh@dezshira.com", url: "#" },
-    { country: "India", image: "../img/location/office3.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,New Delhi Office", phone: "+86 (0)10 6566 0088", email: "india@dezshira.com", url: "#" },
-    { country: "Japan", image: "../img/location/office1.webp", address: "Tokyo Office", phone: "+86 (0)10 6566 0088", email: "japan@dezshira.com", url: "#" },
-    { country: "Nepal", image: "../img/location/office2.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Kathmandu", phone: "+86 (0)10 6566 0088", email: "nepal@dezshira.com", url: "#" },
-    { country: "Singapore", image: "../img/location/office3.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Marina Bay", phone: "+86 (0)10 6566 0088", email: "singapore@dezshira.com", url: "#" },
-    { country: "Thailand", image: "../img/location/office1.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Bangkok", phone: "+86 (0)10 6566 0088", email: "thailand@dezshira.com", url: "#" },
-    { country: "Indonesia", image: "../img/location/office2.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Jakarta", phone: "+86 (0)10 6566 0088", email: "indonesia@dezshira.com", url: "#" },
-    { country: "Malaysia", image: "../img/location/office3.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Kuala Lumpur", phone: "+86 (0)10 6566 0088", email: "malaysia@dezshira.com", url: "#" },
-    { country: "Vietnam", image: "../img/location/office1.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Hanoi", phone: "+86 (0)10 6566 0088", email: "vietnam@dezshira.com", url: "#" },
-    { country: "China", image: "../img/location/office2.webp", address: "Suite EF06, East Tower, Twin Towers, B-12, Jian Guo Men Wai Avenue,Beijing", phone: "+86 (0)10 6566 0088", email: "china@dezshira.com", url: "#" }
-  ];
-
-  const cardList = document.getElementById('cardList');
-
-  let locationPanel = null;
-
-  offices.forEach((office, i) => {
-    const card = document.createElement('div');
-    card.className = 'image-card';
-    card.dataset.index = i;
-    card.innerHTML = `
-      <img src="${office.image}" alt="${office.country}" />
-      <div class="image-card-text">${office.country}</div>
-    `;
-
-    const wrapper = document.createElement('div');
-    wrapper.className = 'image-card-wrapper';
-    wrapper.appendChild(card);
-    cardList.appendChild(wrapper);
-  });
-
-  document.addEventListener('click', e => {
-    const clickedCard = e.target.closest('.image-card');
-    if (!clickedCard) return;
-
-    const index = parseInt(clickedCard.dataset.index);
-    const office = offices[index];
-
-    document.querySelectorAll('.image-card').forEach(card => card.classList.remove('selected'));
-    clickedCard.classList.add('selected');
-
-    if (locationPanel) locationPanel.remove();
-
-    locationPanel = document.createElement('div');
-    locationPanel.className = 'location-card-view visible';
-    locationPanel.innerHTML = `
-      <div class="location-card office-card">
-        <div class="location-address">
-        <div class="heading-level3">${office.country}</div>
-        <p>${office.address}</p>
-        <div class="contacts-location">
-        <div class="phone-cta-cion"><img alt="" src="../img/location/phone-icon-b.svg"></div>
-        <div class="phone-num">${office.phone}</div>
-        </div>
-        <div class="contacts-location">
-        <div class="email-cta-cion"><img alt="" src="../img/location/mail-icon-b.svg"></div>
-        <div class="email-text"> <a href="mailto:${office.email}">${office.email}</a></div>
-        </div>
-        </div>
-        <div class="location-cta"><a href="${office.url}" target="_blank" class="btn btn-outline-primary">Visit Page</a></div>
+    <div class="popup-overlay center-popup" id="center-popup">
+      <div class="popup-content">
+        <button class="popup-close" onclick="toggle_modal('.center-popup');">&times;</button>
+        <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
       </div>
-    `;
-
-    const cards = Array.from(document.querySelectorAll('.image-card'));
-    const wrappers = Array.from(document.querySelectorAll('.image-card-wrapper'));
-    const clickedTop = clickedCard.getBoundingClientRect().top;
-
-    let lastInRow = clickedCard;
-    for (let i = index + 1; i < cards.length; i++) {
-      if (cards[i].getBoundingClientRect().top > clickedTop) break;
-      lastInRow = cards[i];
-    }
-
-    lastInRow.closest('.image-card-wrapper').insertAdjacentElement('afterend', locationPanel);
-  });
-</script>
+    </div>
     <script>
-function add_interest_fields() {
-    var topic_of_interest_2 = document.getElementById('topic_of_interest_2');
-    topic_of_interest_2.classList.remove('hide');
+  document.addEventListener("DOMContentLoaded", function () {
+    const switcher = document.querySelector('.lng-switcher');
+    const list = document.querySelector('.lng-list');
 
-    var topic_of_interest_3 = document.getElementById('topic_of_interest_3');
-    topic_of_interest_3.classList.remove('hide');
-}
+    switcher.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      list.classList.toggle('show');
+    });
 
-function remove_interest_fields(i) {
-    var topic_of_interest = document.getElementById('topic_of_interest_' + i);
-    topic_of_interest.classList.add('hide');
-}
-
-function add_country_city_interest() {
-    var country_city_interest_2 = document.getElementById('country_city_interest_2');
-    country_city_interest_2.classList.remove('hide');
-
-    var country_city_interest_3 = document.getElementById('country_city_interest_3');
-    country_city_interest_3.classList.remove('hide');
-}
-
-function remove_country_city_interest(i) {
-    var country_city_interest = document.getElementById('country_city_interest_' + i);
-    country_city_interest.classList.add('hide');
-}
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.lng-switcher-mob')) {
+        list.classList.remove('show');
+      }
+    });
+  });
 </script>
     <script src="/js/vendor/splide.min.js"></script>
-    <script src="/js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
+    
 
 </body>
+
 </html>

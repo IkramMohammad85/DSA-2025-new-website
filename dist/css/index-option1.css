@@ -177,5 +177,8 @@
   .counter-image {
     display: none;
   }
+  .gateway-dba .card-image-container .card-image {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=index-option1.css.map */

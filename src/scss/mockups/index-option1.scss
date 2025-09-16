@@ -94,5 +94,6 @@ background: linear-gradient(178deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 1
 @media (max-width: 667px) {
     .counter-section-main {background: #396d9c; padding-bottom:2rem; padding-top: 2rem;}
     .counter-image{display: none;}
+    .gateway-dba .card-image-container .card-image{height: auto;}
     
 }

@@ -46,53 +46,54 @@
   height: 467px;
 }
 
-.news-section.cs-insights .news-list {
-  gap: 1.6rem;
-}
-.news-section.cs-insights .news-list .news-item {
-  padding-bottom: 1.6rem;
-}
-.news-section.cs-insights .news-list .news-item:last-child {
-  border: 0;
-}
-.news-section.cs-insights .news-featured .news-image {
+.counter-section-main {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
-.news-section.cs-insights .news-featured .news-image a {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-.news-section.cs-insights .news-featured .news-image a:before {
-  content: "";
+
+.counter-section-main .counter-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background: #FFF;
-  background: linear-gradient(178deg, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+  height: auto;
+  object-fit: contain;
+  z-index: 0;
+  background-color: #336b9c;
 }
-.news-section.cs-insights .news-featured .news-image img {
-  object-fit: cover;
-  height: 372px;
-}
-.news-section.cs-insights .news-featured .news-image .news-details {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 0rem 1.5rem 0rem 1.5rem;
-}
-.news-section.cs-insights .news-featured .news-image .news-details .news-title a {
+
+.counter-inner .counter {
   color: #fff;
 }
-.news-section.cs-insights .news-featured .news-image .news-details .news-title a::before {
-  display: none;
+
+.counter-inner .counter-box h3 {
+  color: #fff;
 }
-.news-section.cs-insights .news-featured .news-image .news-details .news-date {
-  color: #E9E9E9;
-  font-weight: 500;
+
+.counter-inner .popover-content {
+  background-color: #0f3b60;
+  padding-left: 2rem;
+  width: 15rem;
+  border-radius: 3px;
+  min-height: 60px;
+  top: 22px;
+}
+
+.counter-inner .counter-box:first-child .popover-content {
+  width: 216px;
+}
+
+.counter-inner .counter-box:nth-child(2) .popover-content {
+  width: 256px;
+}
+
+.counter-inner .counter-box:last-child .popover-content {
+  width: 208px;
 }
 
 .studies-insights .card {
@@ -154,8 +155,21 @@
   .gateway-dba.dba-home .card-horizontal .card-body {
     padding: 1.5rem;
   }
+  .counter-section-main {
+    padding-bottom: 0;
+    padding-top: 1rem;
+    min-height: 96px;
+  }
 }
 @media (max-width: 667px) {
+  .counter-section-main {
+    background: #396d9c;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .counter-image {
+    display: none;
+  }
   .studies-insights .card-horizontal {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -172,4 +186,4 @@
     height: auto;
   }
 }
-/*# sourceMappingURL=index-option2.css.map */
+/*# sourceMappingURL=index-option3.css.map */

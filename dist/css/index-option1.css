@@ -47,16 +47,13 @@
 }
 
 .counter-section-main {
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-}
-
-.counter-section-main {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 .counter-section-main .counter-image {
@@ -108,7 +105,6 @@
 .news-section.cs-insights .news-list .news-item:last-child {
   border: 0;
 }
-
 .news-section.cs-insights .news-featured .news-image {
   position: relative;
 }
@@ -155,12 +151,10 @@
   }
   .gateway-dba .card-horizontal {
     min-height: 100%;
+    gap: 1rem;
   }
   .gateway-dba .card-image-container .card-image {
     height: 100%;
-  }
-  .gateway-dba .card-horizontal {
-    gap: 1rem;
   }
   .counter-section-main {
     padding-bottom: 0;

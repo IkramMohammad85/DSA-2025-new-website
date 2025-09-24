@@ -84,7 +84,8 @@ ease-in-out;}
         }
     }
 }
-.studies-insights .card-horizontal{background-color: #fff;}
+.studies-insights .card-horizontal{background-color: #fff; max-width: 100%; margin: 0; margin-bottom: 2rem;}
+.studies-insights .splide__slide{ margin-right: 2rem;}
 
 
 @media (max-width: 1024px) {

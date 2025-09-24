@@ -162,13 +162,6 @@
 
 .studies-insights .card-horizontal {
   background-color: #fff;
-  max-width: 100%;
-  margin: 0;
-  margin-bottom: 2rem;
-}
-
-.studies-insights .splide__slide {
-  margin-right: 2rem;
 }
 
 @media (max-width: 1024px) {
@@ -199,6 +192,26 @@
   }
   .gateway-dba .card-image-container .card-image {
     height: auto;
+  }
+}
+@media (min-width: 1440px) {
+  .studies-insights .card-horizontal {
+    margin: 0;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+  .studies-insights .splide__slide {
+    margin-right: 2rem;
+    width: 31.5% !important;
+  }
+  .card-resrcs.related-card.related-card-small {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .splide-three-column .splide__slide {
+    margin-right: 2rem;
+    width: 31.4% !important;
   }
 }
 /*# sourceMappingURL=index-option1-v1.css.map */

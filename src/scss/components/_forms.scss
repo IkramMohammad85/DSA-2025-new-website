@@ -77,13 +77,15 @@ input[type="submit"] {
             align-items: center;
             span{
                 font-size: 14px;
-                line-height: normal;
+                line-height: 20px;
                 color: #4E4E4E;
                 a{text-decoration: underline; color: #4E4E4E;
                     &:hover{text-decoration: none;}
                     }
             }
-            input{margin-right: 1rem; width: 30px; height: auto;}
+            input{margin-right: 1rem; 
+              //width: 30px; 
+              height: auto;}
             
         }
         input[type=submit] {

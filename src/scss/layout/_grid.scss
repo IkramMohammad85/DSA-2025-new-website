@@ -127,8 +127,12 @@ main {
 @media (max-width: 1100px) {
   .flex-grid-row--one-third .pl-4{padding: 0;}
 }
+@media (max-width: 900px) {
+  .flex-col-3per.padding-left4rem{padding-left: 2rem !important;}
+}
 @media (max-width: 767px) {
   .flex-grid-row--one-third .pl-4{padding: 3rem 0 0 0;}
+
 }
 @media (max-width: 557px) {
   .flex-grid-row--two .flex-col{padding: 0;}

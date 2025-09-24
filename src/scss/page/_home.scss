@@ -1117,9 +1117,10 @@ justify-content: center;
   }
   //end
   /* Responsive adjustments */
- .clients-panel-list{
+ .clients-panel-list, .our-team-experts{
 .splide__pagination{justify-content: center;}
  }
+.our-team-experts.resource-splide .splide__track{max-width: 100%;}
 //        .resource-splide.splide-three-column{
 //        .splide__slide {
 //     width: 363px !important;
@@ -1352,7 +1353,7 @@ justify-content: center;
       .news-thumb{display: none;}
     }
   }
-  .clients-panel-list.resource-splide{
+  .clients-panel-list.resource-splide, .our-team-experts.resource-splide{
     .splide__arrow{top: 50%; bottom: inherit;}
     .splide__arrow--next{right: 0; left: inherit;}
     .splide__arrow--prev{left: 0;}}

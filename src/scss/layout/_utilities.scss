@@ -102,13 +102,12 @@ a{color: v.$dsa-dark-blue; }
   .title-btn{flex-wrap: wrap;}
 }
 @media (max-width: 767px) {
-      .padding-left4rem{padding-left: 0 !important;}
+      .padding-left4rem{padding-left: 13 !important;}
       .pl-4{padding-left: 0rem !important;}
-
 }
 
 @media (max-width: 667px) {
-      .padding-left4rem{padding-left: 0 !important;}
+    
       .pl-4{padding-left: 0rem !important;}
     .d-flex { flex-wrap: wrap; }
     .heading-level2{font-size: 24px; 

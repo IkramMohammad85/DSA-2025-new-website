@@ -497,7 +497,7 @@ html { scroll-behavior: smooth; }
 }
 /* end*/
 /* splide splide__pagination and arrow*/
-.our-team-experts, .clients-panel-list, .partners-alliances-list, .location-card-list, .gateway-dba{
+.our-team-experts, .clients-panel-list, .partners-alliances-list, .location-card-list, .gateway-dba, .our-team-experts{
   .splide__pagination{bottom: -24px;}
   .splide__pagination__page.is-active::before{width: 4px; height: 4px;}
   .splide__pagination__page.is-active{transform: scale(1);}
@@ -666,6 +666,10 @@ end*/
 .find-expert-list .experts-card{
   grid-template-columns: repeat(2, 1fr);
 }
+.our-experts.expert-list{flex-direction: column;
+.experts-detail{padding-left: 0; width: 100%;}
+}
+
 }
 @media only screen and (max-width: 1000px){
 

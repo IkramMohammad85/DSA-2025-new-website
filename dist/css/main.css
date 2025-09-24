@@ -1330,7 +1330,7 @@ input[type=submit] {
 }
 .let-discuss-form .ld-form .form-check-input span {
   font-size: 14px;
-  line-height: normal;
+  line-height: 20px;
   color: #4E4E4E;
 }
 .let-discuss-form .ld-form .form-check-input span a {
@@ -1342,7 +1342,6 @@ input[type=submit] {
 }
 .let-discuss-form .ld-form .form-check-input input {
   margin-right: 1rem;
-  width: 30px;
   height: auto;
 }
 .let-discuss-form .ld-form input[type=submit] {
@@ -2937,6 +2936,11 @@ main {
 @media (max-width: 1100px) {
   .flex-grid-row--one-third .pl-4 {
     padding: 0;
+  }
+}
+@media (max-width: 900px) {
+  .flex-col-3per.padding-left4rem {
+    padding-left: 2rem !important;
   }
 }
 @media (max-width: 767px) {
@@ -5428,14 +5432,14 @@ html {
 
 /* end*/
 /* splide splide__pagination and arrow*/
-.our-team-experts .splide__pagination, .clients-panel-list .splide__pagination, .partners-alliances-list .splide__pagination, .location-card-list .splide__pagination, .gateway-dba .splide__pagination {
+.our-team-experts .splide__pagination, .clients-panel-list .splide__pagination, .partners-alliances-list .splide__pagination, .location-card-list .splide__pagination, .gateway-dba .splide__pagination, .our-team-experts .splide__pagination {
   bottom: -24px;
 }
-.our-team-experts .splide__pagination__page.is-active::before, .clients-panel-list .splide__pagination__page.is-active::before, .partners-alliances-list .splide__pagination__page.is-active::before, .location-card-list .splide__pagination__page.is-active::before, .gateway-dba .splide__pagination__page.is-active::before {
+.our-team-experts .splide__pagination__page.is-active::before, .clients-panel-list .splide__pagination__page.is-active::before, .partners-alliances-list .splide__pagination__page.is-active::before, .location-card-list .splide__pagination__page.is-active::before, .gateway-dba .splide__pagination__page.is-active::before, .our-team-experts .splide__pagination__page.is-active::before {
   width: 4px;
   height: 4px;
 }
-.our-team-experts .splide__pagination__page.is-active, .clients-panel-list .splide__pagination__page.is-active, .partners-alliances-list .splide__pagination__page.is-active, .location-card-list .splide__pagination__page.is-active, .gateway-dba .splide__pagination__page.is-active {
+.our-team-experts .splide__pagination__page.is-active, .clients-panel-list .splide__pagination__page.is-active, .partners-alliances-list .splide__pagination__page.is-active, .location-card-list .splide__pagination__page.is-active, .gateway-dba .splide__pagination__page.is-active, .our-team-experts .splide__pagination__page.is-active {
   transform: scale(1);
 }
 
@@ -5671,6 +5675,13 @@ end*/
   }
   .find-expert-list .experts-card {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .our-experts.expert-list {
+    flex-direction: column;
+  }
+  .our-experts.expert-list .experts-detail {
+    padding-left: 0;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -6158,16 +6169,13 @@ hr {
 }
 @media (max-width: 767px) {
   .padding-left4rem {
-    padding-left: 0 !important;
+    padding-left: 13 !important;
   }
   .pl-4 {
     padding-left: 0rem !important;
   }
 }
 @media (max-width: 667px) {
-  .padding-left4rem {
-    padding-left: 0 !important;
-  }
   .pl-4 {
     padding-left: 0rem !important;
   }
@@ -9079,8 +9087,12 @@ ul.brochure_lists li + li:before {
 }
 
 /* Responsive adjustments */
-.clients-panel-list .splide__pagination {
+.clients-panel-list .splide__pagination, .our-team-experts .splide__pagination {
   justify-content: center;
+}
+
+.our-team-experts.resource-splide .splide__track {
+  max-width: 100%;
 }
 
 .contact-mv {
@@ -9371,15 +9383,15 @@ ul.brochure_lists li + li:before {
   .news-list.news-list-thumb .news-item .news-thumb {
     display: none;
   }
-  .clients-panel-list.resource-splide .splide__arrow {
+  .clients-panel-list.resource-splide .splide__arrow, .our-team-experts.resource-splide .splide__arrow {
     top: 50%;
     bottom: inherit;
   }
-  .clients-panel-list.resource-splide .splide__arrow--next {
+  .clients-panel-list.resource-splide .splide__arrow--next, .our-team-experts.resource-splide .splide__arrow--next {
     right: 0;
     left: inherit;
   }
-  .clients-panel-list.resource-splide .splide__arrow--prev {
+  .clients-panel-list.resource-splide .splide__arrow--prev, .our-team-experts.resource-splide .splide__arrow--prev {
     left: 0;
   }
   .studies-insights .splide__list {

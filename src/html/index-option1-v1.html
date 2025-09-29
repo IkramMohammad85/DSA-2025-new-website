@@ -21,6 +21,10 @@
 	<meta name="keyword" content="" />
     <link rel="preload" as="image" href="/img/top-home-slide-img/top-home-slide-img/Hero-EDO.webp" type="image/webp" fetchpriority="high">
     <style>
+        @media (max-width: 480px) {
+    .navbar__logo img { max-width: 185px;}
+
+}
   @media screen and (min-width: 769px) and (max-width: 1024px) { 
   .card-horizontal.home-top-service-block{
   display: flex;
@@ -112,9 +116,8 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     .lng-list ul li a{padding: 0.5rem;}
 
 }
-@media (max-width: 480px) {
-    .navbar__logo img { max-width: 185px;}
-}
+
+
 @media (min-width: 1100px) {
     .navbar__megamenu--two ul.mega-mtabs li span { width: 315px;}
 }
@@ -974,9 +977,8 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
         <div class="section-wrapper-min">
             <h2 class="heading-level2 text-center mb-3">Dezan Shira News</h2>
             <div class="studies-insights resource-splide">
-            <div class="splide" data-per-page="3" data-autoplay="false" data-arrows="true" data-type="slide"
-                data-pagination="false"
-                     data-breakpoints='{
+            <div id="#splide04" class="splide" data-autoplay="false" data-arrows="true" data-type="slide"
+                data-pagination="false" data-breakpoints='{
        "1024": { "perPage": 2, "gap": "1.5rem", "arrows": true },
        "768": { "perPage": 2, "gap": "1rem", "arrows": true },
        "480": { "perPage": 1, "gap": "0", "arrows": true }
@@ -1446,6 +1448,23 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     });
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Splide('#splide04', {
+      perPage: 3,   // default desktop
+      gap: '1rem',
+      arrows: true,
+      autoplay: false,
+      pagination: false,
+      breakpoints: {
+        1024: { perPage: 2, gap: '1rem' },
+        768:  { perPage: 2, gap: '0.5rem' },
+        480:  { perPage: 1, gap: '0' }  // 👈 mobile
+      }
+    }).mount();
+  });
+</script>
+
     <script src="/js/vendor/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     

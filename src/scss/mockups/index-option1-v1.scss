@@ -95,15 +95,17 @@ ease-in-out;}
 .gateway-dba.dba-home .splide__slide .card-horizontal .card-body{height: 350px;  }
 .gateway-dba.dba-home .splide__slide .card-horizontal .card-body .card-btn{min-width: 130px; padding: 12px;}
 .counter-section-main { padding-bottom: 0; padding-top: 1rem; min-height: 96px;}
+.counter-inner .popover-content{min-height: 64px;}
 }
 @media (max-width: 667px) {
     .counter-section-main {background: #396d9c; padding-bottom:2rem; padding-top: 2rem;}
-    .counter-inner .counter-box .popover-content{left: -50%; right: -50%; padding-left: 0; margin: 0 auto; top: 24px;}
+    .counter-inner .counter-box .popover-content{left: -50%; right: -50%; padding-left: 0; margin: 0 auto; padding-top: 1.1rem; padding-bottom: 1.1rem;}
     .counter-section-main .counter-inner{gap: 3rem;}
+    
     .counter-image{display: none;}
     .gateway-dba .card-image-container .card-image{height: auto;}
-    .gateway-dba.dba-home .splide__slide .card-horizontal .card-body{height: 64vh;  overflow-y: inherit; }
-//.gateway-dba.dba-home .splide__slide:first-child .card-horizontal .card-body{height: 100%; overflow-y: inherit;}
+    .gateway-dba.dba-home .splide__slide .card-horizontal .card-body{height: 100%;  overflow-y: inherit; }
+.gateway-dba.dba-home .splide__slide:first-child .card-horizontal .card-body{height: 100%; }
 
 }
 
@@ -112,4 +114,5 @@ ease-in-out;}
 .studies-insights .splide__slide{ margin-right: 2rem;  width: 31.5% !important;}
 .card-resrcs.related-card.related-card-small{ max-width: 100%;margin: 0; margin-bottom: 2rem;}
 .splide-three-column  .splide__slide{ margin-right: 2rem; width: 31.4% !important;}
+
 }

@@ -218,12 +218,18 @@
   .gateway-dba .card-image-container .card-image {
     height: auto;
   }
+  .gateway-dba.dba-home .splide__slide:first-child .card-horizontal .card-body {
+    height: auto !important;
+  }
   .gateway-dba.dba-home .splide__slide .card-horizontal .card-body {
-    height: 100%;
+    height: auto !important;
     overflow-y: inherit;
   }
-  .gateway-dba.dba-home .splide__slide:first-child .card-horizontal .card-body {
-    height: 100%;
+  .gateway-dba.dba-home .splide__slide .card-horizontal {
+    height: 580px;
+  }
+  .gateway-dba.dba-home .splide__slide.is-active.is-visible#splide02-slide01 .card-horizontal {
+    height: 800px;
   }
 }
 @media (min-width: 1440px) {

@@ -21,6 +21,19 @@
 	<meta name="keyword" content="" />
     <link rel="preload" as="image" href="/img/top-home-slide-img/top-home-slide-img/Hero-EDO.webp" type="image/webp" fetchpriority="high">
     <style>
+
+    .navbar{background-color: transparent;box-shadow:none; transition: background-color 0.3s ease;}
+    .navbar.navbar-bgHover { background-color: #fff; }
+    .navbar:hover{background-color: #fff;box-shadow:initial;}
+    .navbar__menuwrap{background-color: transparent;} 
+    #main-slider{margin-top: -85px;}   
+    .navbar__menu > li > a{color: #fff;}
+    .navbar__iconmenu__login > a{border-color: #fff; color: #fff !important}
+    .navbar:hover .navbar__menu > li > a, .navbar.navbar-bgHover .navbar__menu > li > a {color: initial;}
+    .navbar:hover  .navbar__menuwrap, .navbar.navbar-bgHover .navbar__menuwrap {background-color: initial;} 
+.navbar:hover .navbar__iconmenu__login > a, .navbar.navbar-bgHover .navbar__iconmenu__login > a {border-color: initial; color: initial !important}
+.navbar:hover .navbar__menu > li:last-child > a, .navbar.navbar-bgHover .navbar__menu > li:last-child > a{color: #fff;}
+
         @media (max-width: 480px) {
     .navbar__logo img { max-width: 185px;}
 
@@ -132,7 +145,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
 
 <body>
     <nav class="navbar">
-    <div class="navbar__wrapper"><a class="navbar__logo" href="index.html"><img src="/img/DSA logo_640x96.webp" alt="logo" sizes="(max-width: 480px) 240px,  380px" width="640" height="96" loading="lazy" style="width: auto;"></a>
+    <div class="navbar__wrapper"><a class="navbar__logo" href="index.html"><img id="logoDSA" src="/img/DSA-main-logo-white.svg" alt="logo" sizes="(max-width: 480px) 240px,  380px" width="640" height="96" loading="lazy" style="width: auto;"></a>
       <div class="navbar__menuwrap navbar--desktop">
         <ul class="navbar__menu">
           <li><a class="navbar__togglemenu" href="javascript:void(0);" aria-expanded="false" data-twice="0">About Us</a>
@@ -1158,7 +1171,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
               </div>
             </aside>
           </li>
-          <li><a href="#" data-twice="0" aria-label="Desk here"><img src="/img/globe-lng.svg" alt="globe logo" style="width: 20px;"></a>
+          <li><a href="#" data-twice="0" aria-label="Desk here"><img id="globeIcon" src="/img/globe-lng-white.svg" alt="globe logo" style="width: 20px;"></a>
             <aside class="navbar__desks">
               <ul>
                 <li><a class="sprite-flag sprite-flag-us" href="#">North American Desk</a></li>
@@ -1485,7 +1498,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
         <h2 class="heading-level2 text-center mb-3">Explore Key Markets in Asia</h2>
         <div class="section-wrapper-min">
             <div class="splide" data-per-page="1" data-autoplay="false" data-arrows="true" data-type="fade" interval='5000'
-                data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem","height":"100%"},"480":{"perPage":1,"gap":"0.7rem","height":"auto"}}'>
+                data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem","height":"100%"},"480":{"perPage":1,"gap":"0.7rem","height":"100%"}}'>
                 <div class="splide__track">
                     <div class="splide__list">
                         <div class="splide__slide">
@@ -2932,7 +2945,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     new Splide('#splide04', {
-      perPage: 3,  
+      perPage: 3,   
       gap: '1rem',
       arrows: true,
       autoplay: false,
@@ -2945,10 +2958,85 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     }).mount();
   });
 </script>
+<!-- <script>
+const navbar = document.querySelector(".navbar");
+const logoDSA = document.getElementById("logoDSA");
+const globeIcon = document.getElementById("globeIcon");
 
+// Change images on hover
+navbar.addEventListener("mouseenter", () => {
+  logoDSA.src = "/img/DSA-main-logo-black.svg";
+  globeIcon.src = "/img/globe-lng.svg";
+});
 
+navbar.addEventListener("mouseleave", () => {
+  logoDSA.src = "/img/DSA-main-logo-white.svg";
+  globeIcon.src = "/img/globe-lng-white.svg";
+});
 
+// Add navbar-bgHover class on scroll
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {      
+    navbar.classList.add("navbar-bgHover");
+  } else {
+    navbar.classList.remove("navbar-bgHover");
+  }
+});
 
+</script> -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar");
+  const logoDSA = navbar.querySelector(".navbar__logo img");
+  const globeIcon = navbar.querySelector('a[aria-label="Desk here"] img');
+
+  // Define image sources
+  const images = {
+    logoDSA: {
+      default: "/img/DSA-main-logo-white.svg",
+      hover: "/img/DSA-main-logo-black.svg",
+      scroll: "/img/DSA-main-logo-black.svg"
+    },
+    globeIcon: {
+      default: "/img/globe-lng-white.svg",
+      hover: "/img/globe-lng.svg",
+      scroll: "/img/globe-lng.svg"
+    }
+  };
+
+  // 🔹 Handle hover effect
+  navbar.addEventListener("mouseenter", () => {
+    logoDSA.src = images.logoDSA.hover;
+    globeIcon.src = images.globeIcon.hover;
+  });
+
+  navbar.addEventListener("mouseleave", () => {
+    // If navbar has bg-colored, keep scroll images, else reset to default
+    if (navbar.classList.contains("navbar-bgHover")) {
+      logoDSA.src = images.logoDSA.scroll;
+      globeIcon.src = images.globeIcon.scroll;
+    } else {
+      logoDSA.src = images.logoDSA.default;
+      globeIcon.src = images.globeIcon.default;
+    }
+  });
+
+  // 🔹 Handle scroll effect
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("navbar-bgHover");
+      logoDSA.src = images.logoDSA.scroll;
+      globeIcon.src = images.globeIcon.scroll;
+    } else {
+      navbar.classList.remove("navbar-bgHover");
+      logoDSA.src = images.logoDSA.default;
+      globeIcon.src = images.globeIcon.default;
+    }
+  });
+});
+
+</script>
     <script src="/js/vendor/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     

@@ -4597,14 +4597,14 @@ ul.mega-mtabs.tabs-margin-top {
     width: 300px;
   }
 }
-@media screen and (max-device-width: 1314px) {
+@media (min-width: 1200px) and (max-width: 1314px) {
   .navbar__logo img {
-    max-height: 57px;
+    max-height: 40px;
   }
 }
-@media (min-width: 1100px) and (max-width: 1269px) {
+@media (min-width: 1100px) and (max-width: 1200px) {
   .navbar__logo img {
-    max-height: 25px;
+    max-height: 26px;
   }
 }
 @media (min-width: 1200px) {

@@ -212,6 +212,11 @@
     height: 800px;
   }
 }
+@media (min-width: 1025px) and (max-width: 1366px) {
+  #main-slider .slide-bg {
+    height: 796px;
+  }
+}
 @media (min-width: 1440px) {
   .studies-insights .card-horizontal {
     margin: 0;

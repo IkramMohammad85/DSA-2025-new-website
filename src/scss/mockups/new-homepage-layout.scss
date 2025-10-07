@@ -142,7 +142,11 @@
     }
 //end
 }
-
+@media (min-width: 1025px) and (max-width: 1366px) {
+    #main-slider .slide-bg {
+        height: 796px;
+    }
+}
 @media ( min-width: 1440px) {
 //slide responosve fixed    
 .studies-insights .card-horizontal{margin: 0; margin-bottom: 2rem; max-width: 100%;}

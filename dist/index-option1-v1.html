@@ -2816,23 +2816,38 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
     <div class="footer-top">
       <div class="footer-section">
         <div class="footer-logo">
-          <a href="#"><img src="/img/DSAlogoWhite.webp" width="326" height="34" alt="Dezan Shira & Associates Logo" /></a>
+          <a href="https://www.dezshira.com/"><img src="/img/DSAlogoWhite.webp" width="326" height="34" alt="Dezan Shira & Associates Logo" /></a>
         </div>
         <h4>Connect with us</h4>
         <ul>
-          <li><a href="#">Enquiry Form</a></li>
-          <li><a href="#">International Desks</a></li>
+          <li><a href="https://www.dezshira.com/contact">Enquiry Form</a></li>
+          <li><a href="https://www.dezshira.com/international-desk">International Desks</a></li>
           <li>
             <form class="footer-office">
-              <select>
-                <option selected disabled>Find an Office</option>
-                <option>China</option>
-                <option>India</option>
-                <option>Vietnam</option>
-                <option>Australia</option>
-                <option>Hong-Kong</option>
-                <option>singapore</option>
-              </select>
+              <select onchange="if(this.value) window.location.href=this.value">
+                  <option selected disabled>Find an Office</option>
+                  <option value="https://www.dezshira.com/location/australia">Australia</option>
+                  <option value="https://www.dezshira.com/office/bangladesh.html">Bangladesh</option>
+                  <option value="https://www.dezshira.com/office/china?q=/office/china/&">China</option>
+                  <option value="https://www.dezshira.com/office/hong-kong.html">Hong Kong SAR</option>
+                  <option value="https://www.dezshira.com/office/india">India</option>
+                  <option value="https://www.dezshira.com/office/indonesia/jakarta.html">Indonesia</option>
+                  <option value="https://www.dezshira.com/office/tokyo.html">Japan</option>
+                  <option value="https://www.dezshira.com/office/malaysia.html">Malaysia</option>
+                  <option value="https://www.dezshira.com/office/mongolia.html">Mongolia</option>
+                  <option value="https://www.dezshira.com/office/nepal.html">Nepal</option>
+                  <option value="https://www.dezshira.com/office/philippines.html">Philippines</option>
+                  <option value="https://www.dezshira.com/office/singapore.html">Singapore</option>
+                  <option value="https://www.dezshira.com/office/seoul.html">South Korea</option>
+                  <option value="https://www.dezshira.com/office/sri-lanka.html">Sri Lanka</option>
+                  <option value="https://www.dezshira.com/office/thailand.html">Thailand</option>
+                  <option value="https://www.dezshira.com/office/vietnam">Vietnam</option>
+                  <option value="https://www.dezshira.com/office/dubai.html">United Arab Emirates</option>
+                  <option value="https://www.dezshira.com/office/munich.html">Germany</option>
+                  <option value="https://www.dezshira.com/office/italy">Italy</option>
+                  <option value="https://www.dezshira.com/office/usa/washningtondc.html">United States</option>
+                </select>
+
             </form>
           </li>
         </ul>

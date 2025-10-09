@@ -3,18 +3,24 @@
   box-shadow: none;
   transition: background-color 0.5s ease;
 }
-.navbar:hover {
-  background-color: #fff;
-  box-shadow: initial;
-}
 .navbar.navbar-bgHover {
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar.navbar-bgHover .navbar__hamburger span:before, .navbar.navbar-bgHover .navbar__hamburger span:after, .navbar.navbar-bgHover .navbar__hamburger span {
+  background-color: #0c2740;
+}
+.navbar.navbar-bgHover .navbar__hamburger.menu-show span {
+  background-color: transparent;
 }
 
 .navbar__menuwrap {
   background-color: transparent;
   transition: 0.5s;
+}
+
+.navbar__hamburger span:before, .navbar__hamburger span:after, .navbar__hamburger span {
+  background-color: #fff;
 }
 
 #main-slider {
@@ -76,6 +82,10 @@
 
 ul.mega-mtabs li span a {
   color: #3f3f3f;
+}
+
+img:focus-visible, .navbar__logo:focus-visible {
+  outline-style: none;
 }
 
 .gateway-dba .card {
@@ -320,9 +330,27 @@ ul.mega-mtabs li span a {
     height: 800px;
   }
 }
+@media (max-width: 1100px) {
+  .navbar:hover .navbar__menuwrap, .navbar.navbar-bgHover .navbar__menuwrap {
+    background-color: #fff;
+  }
+  .navbar:hover .navbar__menu > li:last-child > a {
+    color: initial;
+  }
+}
 @media (min-width: 1025px) and (max-width: 1366px) {
   #main-slider .slide-bg {
     height: 100vh;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1200px) {
+  .navbar__logo img {
+    max-height: 18px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1314px) {
+  .navbar__logo img {
+    max-height: 28px;
   }
 }
 @media (min-width: 1100px) {

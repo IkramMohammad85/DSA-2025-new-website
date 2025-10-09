@@ -17,7 +17,7 @@
     <title>Business, Legal, Tax, Accounting, Payroll in Asia | Dezan Shira & Associates</title>
 	<meta name="description" content="Corporate establishment, business & tax advisory, compliance, accounting, payroll, due diligence and financial review services for multinationals in Asia" />
 	<meta name="keyword" content="" />
-    <link rel="preload" as="image" href="/img/top-home-slide-img/top-home-slide-img/Hero-EDO.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="/img/top-home-slide-img/Hero-EDO.webp" type="image/webp" fetchpriority="high">
     
 </head>
 
@@ -1140,6 +1140,7 @@
           </li> -->
         </ul>
       </div>
+      <a href="/v2_2025/contact" class="contact-mv"  aria-label="contact mail"><img src="/img/contact-mail-w.svg" width="20px" alt="contact"></a>
       <button class="navbar__hamburger navbar--mobile" aria-label="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
     </div>
   </nav>
@@ -2853,23 +2854,7 @@
         <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
       </div>
     </div>
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const switcher = document.querySelector('.lng-switcher');
-    const list = document.querySelector('.lng-list');
 
-    switcher.addEventListener('click', function (e) {
-      e.preventDefault(); 
-      list.classList.toggle('show');
-    });
-
-    document.addEventListener('click', function (e) {
-      if (!e.target.closest('.lng-switcher-mob')) {
-        list.classList.remove('show');
-      }
-    });
-  });
-</script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     new Splide('#splide04', {
@@ -2918,7 +2903,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
   const logoDSA = navbar.querySelector(".navbar__logo img");
   const globeIcon = navbar.querySelector('a[aria-label="Desk here"] img');
-
+  const contactMail = navbar.querySelector('a[aria-label="contact mail"] img');
+  const toggleMenu = document.querySelector(".navbar__togglemenu");
   // Define image
   const images = {
     logoDSA: {
@@ -2930,41 +2916,64 @@ document.addEventListener("DOMContentLoaded", () => {
       default: "/img/globe-lng-white.svg",
       hover: "/img/globe-lng.svg",
       scroll: "/img/globe-lng.svg"
+    },
+    contactMail: {
+      default: "/img/contact-mail-w.svg",
+      hover: "/img/contact-mail.svg",
+      scroll: "/img/contact-mail.svg"
     }
   };
 
-  // hover effect
+  const setImages = (state) => {
+    logoDSA.src = images.logoDSA[state];
+    globeIcon.src = images.globeIcon[state];
+    contactMail.src = images.contactMail[state];
+  };
+  // Hover effect
   navbar.addEventListener("mouseenter", () => {
-    logoDSA.src = images.logoDSA.hover;
-    globeIcon.src = images.globeIcon.hover;
+    navbar.classList.add("navbar-bgHover");
+    setImages("hover");
   });
-
   navbar.addEventListener("mouseleave", () => {
-    // If navbar bg-colored, keep scroll images, else reset to default
-    if (navbar.classList.contains("navbar-bgHover")) {
-      logoDSA.src = images.logoDSA.scroll;
-      globeIcon.src = images.globeIcon.scroll;
+    if (window.scrollY <= 50 && !navbar.classList.contains("menu-open")) {
+      navbar.classList.remove("navbar-bgHover");
+      setImages("default");
     } else {
-      logoDSA.src = images.logoDSA.default;
-      globeIcon.src = images.globeIcon.default;
+      setImages("scroll");
     }
   });
 
-  // scroll effect
+  // Scroll effect
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       navbar.classList.add("navbar-bgHover");
-      logoDSA.src = images.logoDSA.scroll;
-      globeIcon.src = images.globeIcon.scroll;
+      setImages("scroll");
     } else {
-      navbar.classList.remove("navbar-bgHover");
-      logoDSA.src = images.logoDSA.default;
-      globeIcon.src = images.globeIcon.default;
+      if (!navbar.matches(":hover") && !navbar.classList.contains("menu-open")) {
+        navbar.classList.remove("navbar-bgHover");
+        setImages("default");
+      }
     }
   });
-});
 
+  if (toggleMenu) {
+    toggleMenu.addEventListener("click", () => {
+      navbar.classList.toggle("menu-open");
+      if (navbar.classList.contains("menu-open")) {
+        navbar.classList.add("navbar-bgHover");
+        setImages("scroll");
+      } else {
+        if (window.scrollY <= 50 && !navbar.matches(":hover")) {
+          navbar.classList.remove("navbar-bgHover");
+          setImages("default");
+        }
+      }
+    });
+  }
+});
 </script>
+
+
     <script src="/js/vendor/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     

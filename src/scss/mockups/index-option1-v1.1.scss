@@ -1,0 +1,158 @@
+.navbar{background-color: transparent;box-shadow:none; transition: background-color 0.5s ease;
+&:hover{background-color: #fff;box-shadow:initial;}
+&.navbar-bgHover { background-color: #fff;box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+}
+.navbar__menuwrap{background-color: transparent;transition: 0.5s;} 
+
+#main-slider{margin-top: -85px;} 
+#main-slider .splide__list{height: 100vh;}
+#main-slider{height: 100vh;}
+#main-slider .section-wrapper, #main-slider .section-wrapper-min{height: 100vh;}
+
+.slider-content{top: 10rem;}
+.navbar__logo img a:focus-visible{border: none; outline: none;}
+.expand-toggle{top: 28px; left: 108px; bottom: inherit;}
+
+
+.navbar__menu > li > a{color: #fff;}
+.navbar__iconmenu__login > a{border-color: #fff; color: #fff !important}
+.navbar:hover .navbar__menu > li > a, .navbar.navbar-bgHover .navbar__menu > li > a {color: initial;}
+.navbar:hover  .navbar__menuwrap, .navbar.navbar-bgHover .navbar__menuwrap {background-color: initial;} 
+.navbar:hover .navbar__iconmenu__login > a, .navbar.navbar-bgHover .navbar__iconmenu__login > a {border-color: initial; color: initial !important}
+.navbar:hover .navbar__menu > li:last-child > a, .navbar.navbar-bgHover .navbar__menu > li:last-child > a{color: #fff;}
+ul.mega-mtabs li span a { color: #3f3f3f;}
+
+.gateway-dba .card { background-color: #3C3B3D}
+.gateway-dba .card .card-body {padding-top: 2.5rem; padding-bottom: 2.5rem; padding-right: 2.5rem; display: flex; flex-direction: column;}
+.gateway-dba .card .card-body .card-title a, .gateway-dba .card .card-body .card-text{color: #fff; text-align: left;}
+.gateway-dba .card .card-body .card-btn{border: 1px solid #FFF; color: #fff;transition: all 0.25s 
+ease-in-out;}
+.gateway-dba .card .card-body .card-btn:hover {
+    border-color: #207fd4;
+    color: #fff;
+    background-color: #207fd4;
+}
+.gateway-dba .card .card-body .card-btn a{color: #FFF;}
+.gateway-dba .card .card-body .toggleBtn-dropdown-button::after{border-color: #fff;}
+
+.gateway-dba .card-grid{border-radius: 4px; overflow: hidden;}
+.gateway-dba .card-horizontal{min-height: 467px;}
+.gateway-dba .card-image-container { border-radius: 0;}
+.gateway-dba .card-image-container .card-image{border-radius: 0; height: 467px;}
+
+.counter-section-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 4rem; padding-bottom: 3rem;
+}
+.counter-section-main .counter-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 0;
+    background-color: #336b9c;
+}
+.counter-inner .counter{color: #fff;}
+.counter-inner .counter-box h3{color: #fff;}
+.counter-inner .popover-content{ 
+    background-color: #3a6e9e; 
+    padding-left: 2rem; width: 15rem; border-radius: 3px; min-height: 60px; top: 22px;
+
+}
+.counter-inner .popover-content .text-cta-link{color: #fff;}
+.counter-inner .popover-content .text-cta-link::after {
+    background: url(../img/ArrowWht-text-link.svg) no-repeat right top;
+}
+.counter-inner .counter-box:first-child .popover-content{width: 216px;}
+.counter-inner .counter-box:nth-child(2) .popover-content{width: 256px;}
+.counter-inner .counter-box:last-child .popover-content{width: 208px;}
+
+.news-section.cs-insights{
+    .news-list{ gap: 1.6rem;
+    .news-item{ padding-bottom: 1.6rem;
+    &:last-child{border: 0;}
+    }
+    }
+    .news-featured{
+    .news-image {position: relative;
+    a { position: relative; height: 100%; width: 100%;
+        &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    background: linear-gradient(178deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+}
+    img { object-fit: cover; height: 372px;}
+    .news-details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    .news-title a{color: #fff;
+    &::before{display: none;}
+    }
+    .news-date{color: #E9E9E9; font-weight: 500;}
+        }
+        }
+    }
+}
+
+.studies-insights .card-horizontal{background-color: #fff;}
+.card-horizontal.home-top-service-block .card-body .service-left.service-left-2column{gap: 3rem;}
+
+
+@media (max-width: 480px) {
+    .navbar__logo img { max-width: 185px;}
+    .slider-content{top: 6.7rem;}
+}
+
+@media (max-width: 1024px) {
+.gateway-dba.dba-home .card-horizontal .card-body {  padding: 1.5rem;  }
+.gateway-dba .card-horizontal{min-height: 100%;gap: 1rem;}
+.gateway-dba .card-image-container .card-image{ height: 100%;}
+.gateway-dba.dba-home .splide__slide .card-horizontal .card-body{height: 350px;  }
+.gateway-dba.dba-home .splide__slide .card-horizontal .card-body .card-btn{min-width: 130px; padding: 12px;}
+.counter-section-main { padding-bottom: 0; padding-top: 1rem; min-height: 96px;}
+.counter-inner .popover-content{min-height: 64px;}
+}
+@media (max-width: 667px) {
+    .counter-section-main {background: #396d9c; padding-bottom:2rem; padding-top: 2rem;}
+    .counter-inner .counter-box .popover-content{left: -50%; right: -50%; padding-left: 0; margin: 0 auto; padding-top: 1.1rem; padding-bottom: 1.1rem;}
+    .counter-section-main .counter-inner{gap: 3rem;}
+    .counter-image{display: none;}
+    
+    .gateway-dba .card-image-container .card-image{height: auto;}
+    .gateway-dba.dba-home .splide__slide:first-child .card-horizontal .card-body{height:auto !important; }
+    .gateway-dba.dba-home .splide__slide .card-horizontal .card-body{height: auto !important;  overflow-y: inherit; }
+    .gateway-dba.dba-home .splide__slide .card-horizontal{height: 580px;}
+    .gateway-dba.dba-home .splide__slide.is-active.is-visible#splide02-slide01 .card-horizontal{ height: 800px;}
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+    #main-slider .slide-bg {height: 100vh;}
+}
+@media (min-width: 1100px) {
+    .navbar__megamenu--two ul.mega-mtabs li span { width: 315px;}
+    .navbar__togglemenu[aria-expanded=true] { color: #fff;}
+}
+@media (min-width: 1500px) {
+    ul.mega-mtabs { width: 345px;}
+}
+@media ( min-width: 1440px) {
+.studies-insights .card-horizontal{margin: 0; margin-bottom: 2rem; max-width: 100%;}
+.studies-insights .splide__slide{ margin-right: 2rem;  width: 31.5% !important;}
+.card-resrcs.related-card.related-card-small{ max-width: 100%;margin: 0; margin-bottom: 2rem;}
+.splide-three-column  .splide__slide{ margin-right: 2rem; width: 31.4% !important;}
+
+}

@@ -5,9 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/index-option1-v1.css" type="text/css" />
-  
-    
+    <link rel="stylesheet" href="css/index-option1-v1.1.css" type="text/css" />
     <!-- <link rel="preload" as="style" href="/css/main.min.css" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/main.min.css"></noscript> -->
     <link rel="stylesheet" href="/css/vendor/splide.min.css" type="text/css">
@@ -20,138 +18,7 @@
 	<meta name="description" content="Corporate establishment, business & tax advisory, compliance, accounting, payroll, due diligence and financial review services for multinationals in Asia" />
 	<meta name="keyword" content="" />
     <link rel="preload" as="image" href="/img/top-home-slide-img/top-home-slide-img/Hero-EDO.webp" type="image/webp" fetchpriority="high">
-    <style>
-
-    .navbar{background-color: transparent;box-shadow:none; transition: background-color 0.3s ease;}
-    .navbar.navbar-bgHover { background-color: #fff;box-shadow: 0 2px 8px rgba(0,0,0,.1); }
-    .navbar:hover{background-color: #fff;box-shadow:initial;}
-    .navbar__menuwrap{background-color: transparent;} 
-    #main-slider{margin-top: -85px;}   
-    .navbar__menu > li > a{color: #fff;}
-    .navbar__iconmenu__login > a{border-color: #fff; color: #fff !important}
-    .navbar:hover .navbar__menu > li > a, .navbar.navbar-bgHover .navbar__menu > li > a {color: initial;}
-    .navbar:hover  .navbar__menuwrap, .navbar.navbar-bgHover .navbar__menuwrap {background-color: initial;} 
-.navbar:hover .navbar__iconmenu__login > a, .navbar.navbar-bgHover .navbar__iconmenu__login > a {border-color: initial; color: initial !important}
-.navbar:hover .navbar__menu > li:last-child > a, .navbar.navbar-bgHover .navbar__menu > li:last-child > a{color: #fff;}
-
-#main-slider .splide__list{height: 796px;}
-#main-slider{height: 796px;}
-#main-slider .section-wrapper, #main-slider .section-wrapper-min{height: 796px;}
-.slider-content{top: 13rem;}
-.navbar__logo img a:focus-visible{border: none; outline: none;}
-
-@media (max-width: 480px) {
-    .navbar__logo img { max-width: 185px;}
-}
-  @media screen and (min-width: 769px) and (max-width: 1024px) { 
-  .card-horizontal.home-top-service-block{
-  display: flex;
-  flex-wrap: wrap;      
-  gap: 2%;             
-}
-
-.card-horizontal.home-top-service-block > * {
-  flex: 1 1 calc(48% - 0.5rem); /* two items per row,*/
-  box-sizing: border-box;
-} 
-  .news-section {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    box-sizing: border-box;
     
-  }
-
-  .news-section .news-featured
-  {
-    flex: 1 1 38%;
-    width: 38%;
-  }
-    .news-section .news-list {
-    flex: 1 1 58%;
-    width: 58%;
-  }
-
-}
-@media (min-width: 1025px) and (max-width: 1366px) {
-    #main-slider .slide-bg {
-        height: 796px;
-    }
-}
-    </style>
-<style>
-/* .navbar__iconmenu__login>a{
-    color: #357dc0 !important;
-    background-image: none;
-    border: solid 1px #357dc0;
-    text-decoration: none;
-    padding: .3rem 1rem !important;
-    border-radius: 2px !important;
-} 
-.navbar__iconmenu>li:nth-child(2){position: relative;}
-.navbar__iconmenu>li:nth-child(1){position: inherit;}
-*/
-.lng-change {display: flex !important; justify-content: space-between; align-items: center; font-size: 15px; min-width: 80px;}
-.lng-change img{width: 18px;}
-.lng-change:after, .lng-switcher-mob .lng-switcher:after {
-content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; }
-/* .navbar__iconmenu>li>a.lng-change:after {
-content: ""; display: block; transform: translateX(0%) scale(.8); background: url(../img/sprite-all.svg) no-repeat -150px -40px; width: 16px;  height: 10px; } */
-.navbar__desks.navbar__lng, .lng-list{
-    width: 125px;
-    top: 62px;
-    left: inherit;
-    right: 0px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    }
-.navbar__desks.navbar__lng a:hover{ background-color: inherit;}
-.lng-switcher-mob .lng-switcher:after {margin-left: 5px;}
-
-.lng-switcher-mob{display: flex; position: relative;}
-.lng-switcher{display: flex; align-items: center;  color: #0c2740; font-size: 15px;    }
-.lng-switcher:hover{color: #357dc0;}
-.lng-list {opacity: 0; visibility: hidden; pointer-events: none;}
-.lng-list.show { opacity: 1;  visibility: visible;  pointer-events: auto;}
-.lng-list{position: absolute;font-size: .875rem; top:34px; background-color: #fff; transition: opacity .2s ease-out; }
-.lng-list ul {margin: 0; padding: 0; list-style: none;}
-.lng-list ul li a{padding: 1rem 1rem; font-weight: bold; display: block;}
-.login-cta{color: #357dc0 ;
-    font-weight: 400;
-    font-size: .875rem;
-    background-image: none;
-    border: solid 1px #357dc0;
-    text-decoration: none;
-    padding: .3rem 1rem ;
-    border-radius: 2px ;}
-    .login-lan{display: flex; gap: 1.3rem;}
-    .lng-switcher span.mr-5{margin-right: 5px;}
-@media (max-width: 1100px) {
-    .login-lan{ min-width: 90px; position: absolute; right: 60px;top: 30px;    }
-    .login-cta{display: none;}
-    .lng-switcher{display: flex; align-items:center;  background-color: #f1f1f1; padding: 2px 6px;    border-radius: 3px; font-size: 12px;}
-    .lng-switcher span{display: none;}
-    .lng-switcher-mob a{color: #0c2740;}
-    .lng-switcher-mob{display: inline-block; position: relative;
-         /* margin-right: 2.5rem; */
-        }
-    .lng-list{top:20px; width: 94px; }
-    .lng-list ul li a{padding: 0.5rem;}
-
-}
-
-
-@media (min-width: 1100px) {
-    .navbar__megamenu--two ul.mega-mtabs li span { width: 315px;}
-    .navbar__togglemenu[aria-expanded=true] { color: #fff;}
-}
- 
-@media (min-width: 1500px) {
-    ul.mega-mtabs { width: 345px;}
-}
-
-
-    </style>
 </head>
 
 <body>
@@ -1281,7 +1148,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
             data-type="fade" interval='20000' data-pagination="false">
             <div class="splide__track">
                 <ul class="splide__list">
-<li class="splide__slide">
+                <li class="splide__slide">
               <div class="section-wrapper-min">
                 <div class="slider-content">
                   <h2 class="slide-title">
@@ -1336,11 +1203,11 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                 height="880"
                 fetchpriority="high"
               >
-            </li>
+                </li>
                     <li class="splide__slide">
                         <div class="section-wrapper-min">
                             <div class="slider-content">
-                                <h2 class="slide-title"><a href="https://www.dezshira.com/landing/market-entry"
+                                <h2 class="slide-title"><a href="https://www.dezshira.com/services/business-intelligence/supply-chain-engineering"
                                         target="_blank">Navigate Tariff Risks by Diversifying Your Supply Chain and
                                         Markets across Asia</a>
                                 </h2>
@@ -1348,7 +1215,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                     partner matchmaking can help companies stay ahead of tariff and supply chain
                                     disruptions by operating in the right markets.
                                 </p>
-                                <a href="https://www.dezshira.com/landing/market-entry"
+                                <a href="https://www.dezshira.com/services/business-intelligence/supply-chain-engineering"
                                     class="btn btn-outline-white">Explore Options</a>
                             </div>
 
@@ -1360,14 +1227,30 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                     Trending Insights
                                 </div>
                                 <ul class="ti-list expand-content">
-                                    <li><a href="#" target="_blank">Asia Manufacturing Index 2025</a></li>
-                                    <li><a href="#" target="_blank">Doing Business in Asia 2025: Download our Country
-                                            Guides </a></li>
-                                    <li><a href="#" target="_blank">US-China Relations in a Trump 2.0 Era</a></li>
-                                    <li><a href="#" target="_blank">Vietnam Manufacturing Tracker: 2024-25</a></li>
-                                    <li><a href="#" target="_blank">China Clarifies Cross-Border Data Transfer Rules:
-                                            Key Takeaways from Official Q&A</a></li>
-                                    <li><a href="#" target="_blank">China Manufacturing Tracker 2025</a></li>
+                                    <li>
+                          <a href="https://www.dezshira.com/asia-manufacturing-index" target="_blank">
+                            Asia Manufacturing Index 2025                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.asiabriefing.com/store/search?type_detail=report-guide&amp;language=15&amp;brand=dsa&amp;page=1" target="_blank">
+                            Doing Business in Asia 2025: Download Our Country Guides                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.china-briefing.com/news/us-china-relations-in-the-trump-2-0-implications/" target="_blank">
+                            US-China Relations in a Trump 2.0 Era                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.vietnam-briefing.com/news/vietnam-manufacturing-tracker.html/" target="_blank">
+                            Vietnam Manufacturing Tracker: 2024-25                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.china-briefing.com/news/china-clarifies-cross-border-data-transfer-rules-official-qa/" target="_blank">
+                            China Clarifies Cross-Border Data Transfer Rules                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.china-briefing.com/news/china-manufacturing-industry-tracker-2024-25/" target="_blank">
+                            China Manufacturing Tracker 2025                          </a>
+                        </li>
                                 </ul>
                             </div>
                         </div>
@@ -1378,13 +1261,13 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                         <div class="section-wrapper-min">
                             <div class="slider-content">
                                 <h2 class="slide-title"><a
-                                        href="https://www.dezshira.com/landing/erp-advisory-localization-and-integration"
+                                        href="https://www.dezshira.com/services/information-technology-solutions"
                                         target="_blank">Scale Your Operations with AI Cloud Accounting, ERP, and Office
                                         Automation</a></h2>
                                 <p class="slide-desc">We help businesses harness the top AI-powered solutions in cloud
                                     accounting, ERP, and automation to boost the performance of their operations in
                                     Asia.</p>
-                                <a href="https://www.dezshira.com/landing/erp-advisory-localization-and-integration"
+                                <a href="https://www.dezshira.com/services/information-technology-solutions"
                                     class="btn btn-outline-white">Start Your Journey</a>
                             </div>
                             <div class="trending-insights expand-sect">
@@ -1395,16 +1278,30 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                     Trending Insights
                                 </div>
                                 <ul class="ti-list expand-content">
-                                    <li><a href="#" target="_blank">Vietnam and China Manufacturing: Key Comparisons for
-                                            Business
-                                            Strategies</a></li>
-                                    <li><a href="#" target="_blank">Singapore as a Gateway to South East Asia</a></li>
-                                    <li><a href="#" target="_blank">India’s FTA Network: Updates in 2025</a></li>
-                                    <li><a href="#" target="_blank">Doing Business in Asia 2025: Download our Country
-                                            Guides</a></li>
-                                    <li><a href="#" target="_blank">Corporate Taxation and Compliance Regime in
-                                            India</a></li>
-                                    <li><a href="#" target="_blank">Import and Export Procedures in India</a></li>
+                                    <li>
+                          <a href="#https://www.china-briefing.com/doing-business-guide/china/taxation-and-accounting/understanding-accounting-software-and-erp-landscape-in-china" target="_blank">
+                            China’s ERP and Accounting Software Landscape                          </a>
+                        </li>
+                                              <li>
+                          <a href="#https://www.asiabriefing.com/store/book/transforming-business-operations-digital-accounting-erp-application.html" target="_blank">
+                            Transforming Business with Digital ERP Solutions                          </a>
+                        </li>
+                                              <li>
+                          <a href="#https://www.dezshira.com/brochure_download_status/case_studies~services~Accounting%20and%20Tax%20Invoice%20Automation  " target="_blank">
+                            Case Study: AI-Powered Invoice Automation                          </a>
+                        </li>
+                                              <li>
+                          <a href="/services/information-technology/erp-advisory-localization-and-integration" target="_blank">
+                            ERP Advisory, Localization, and Integration                          </a>
+                        </li>
+                                              <li>
+                          <a href="/multimedia/view/modern-erp-implementation-in-vietnam-best-practices-for-seamless-integration-regulatory-compliance.html" target="_blank">
+                            ERP Implementation in Vietnam: Best Practices                          </a>
+                        </li>
+                                              <li>
+                          <a href="#https://www.dezshira.com/brochure_download_status/case_studies~services~Optimization%20via%20the%20Digitalization%20of%20Expenses " target="_blank">
+                            Case Study: Expense Management Digitalization                          </a>
+                        </li>
                                 </ul>
                             </div>
                         </div>
@@ -1415,7 +1312,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                         <div class="section-wrapper-min">
                             <div class="slider-content">
                                 <h2 class="slide-title"><a
-                                        href="https://www.dezshira.com/services/information-technology-solutions"
+                                        href="https://www.dezshira.com/manage-across-asia"
                                         target="_blank">Seamlessly Manage Your Operations across Multiple Countries in
                                         Asia</a></h2>
                                 </h2>
@@ -1424,7 +1321,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                     core capabilities in accounting, reporting, tax, HR, IT, ERP and technology
                                     services.
                                 </p>
-                                <a href="https://www.dezshira.com/services/information-technology-solutions"
+                                <a href="https://www.dezshira.com/manage-across-asia"
                                     class="btn btn-outline-white">How We Can Help</a>
                             </div>
                             <div class="trending-insights expand-sect">
@@ -1435,19 +1332,18 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                     Trending Insights
                                 </div>
                                 <ul class="ti-list expand-content">
-                                    <li><a href="#" target="_blank">Guide to ERP Localization and Compliance in China -
-                                            Publication</a>
-                                    </li>
-                                    <li><a href="#" target="_blank">PIPL 2023/24: Cross-Border Data Transfer in China
-                                            Handbook -
-                                            Publication</a></li>
-                                    <li><a href="#" target="_blank">Accounting and Tax Invoice Automation - Case
-                                            Study</a></li>
-                                    <li><a href="#" target="_blank">Digitalization of Expenses - Case Study</a></li>
-                                    <li><a href="#" target="_blank">US-Based SaaS Multinational Establishes Presence in
-                                            China - Case Study</a></li>
-                                    <li><a href="#" target="_blank">Verifying Key Assets and Rectification of Financial
-                                            Statements - Case Study </a></li>
+                                     <li>
+                          <a href="https://www.dezshira.com/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Improving%20Competitiveness%20in%20Asia%20Manufacturing%20Cross-Country%20Benchmarking%20for%20Relocation " target="_blank">
+                            Asia Manufacturing: Key Relocation Considerations                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.dezshira.com/library/publications/the-china-strategy-cross-border-restructuring-for-supply-chain-resilience-10189.html " target="_blank">
+                            The China Strategy: Restructuring Supply Chains                          </a>
+                        </li>
+                                              <li>
+                          <a href="https://www.dezshira.com/multimedia/view/unlocking-cross-border-success-odi-opportunities-and-considerations-for-indian-enterprises.html" target="_blank">
+                            India ODI: Unlocking Cross-Border Expansion                          </a>
+                        </li>
                                 </ul>
                             </div>
                         </div>
@@ -1458,12 +1354,12 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                         <div class="section-wrapper-min">
                             <div class="slider-content">
                                 <h2 class="slide-title"><a
-                                        href="https://www.dezshira.com/services/business-intelligence-solutions/economic-development-organizations "
+                                        href="https://www.dezshira.com/services/government-and-economic-development"
                                         target="_blank">Support Economic Development with Asia Trade and Investment Programs</a></h2>
                                 </h2>
                                 <p class="slide-desc">We help economic development organizations grow exports, attract investors, and create opportunities for local businesses through in-market expertise, research, and matchmaking across Asia.
                                 </p>
-                                <a href="https://www.dezshira.com/services/business-intelligence-solutions/economic-development-organizations "
+                                <a href="https://www.dezshira.com/services/government-and-economic-development"
                                     class="btn btn-outline-white">Empower Your Region</a>
                             </div>
                             <div class="trending-insights expand-sect">
@@ -1536,7 +1432,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                         <li><a href="https://www.dezshira.com/services/tax">Tax</a></li>
                         <li><a href="https://www.dezshira.com/services/information-technology-solutions">Technology</a>
                         </li>
-                        <a href="#" class="text-cta-link">Explore all our services</a>
+                        <a href="https://www.dezshira.com/services?q=/services/&" class="text-cta-link">Explore all our services</a>
                     </ul>
 
                 </div>
@@ -1587,25 +1483,25 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                         <p class="card-text">Explore our Online Doing Business Guides for practical, country-specific guidance on investment, tax, and compliance across Asia. Stay informed with expert insights and actionable updates tailored for foreign investors and businesses.</p>
                                         <!-- <a href="#" class="btn btn-outline-primary">Explore More</a> -->
                                          <div class="card-buttons">
-                  <a href="#" class="card-btn">China</a>
-                  <a href="#" class="card-btn">Hong Kong SAR</a>
-                  <a href="#" class="card-btn">India</a>
-                  <a href="#" class="card-btn">Indonesia</a>
-                  <a href="#" class="card-btn">Vietnam</a>
-                  <a href="#" class="card-btn">Singapore</a>
-                  <a href="#" class="card-btn">UAE</a>
+                  <a href="https://www.china-briefing.com/doing-business-guide/china" target="_blank" class="card-btn">China</a>
+                  <a href="https://www.china-briefing.com/doing-business-guide/hong-kong" target="_blank" class="card-btn">Hong Kong SAR</a>
+                  <a href="https://www.india-briefing.com/doing-business-guide/india" target="_blank" class="card-btn">India</a>
+                  <a href="https://www.aseanbriefing.com/doing-business-guide/indonesia" target="_blank" class="card-btn">Indonesia</a>
+                  
+                  <a href="https://www.aseanbriefing.com/doing-business-guide/singapore" target="_blank" class="card-btn">Singapore</a>
+                  <a href="https://www.middleeastbriefing.com/doing-business-guide/uae" target="_blank" class="card-btn">UAE</a>
+                  <a href="https://www.vietnam-briefing.com/doing-business-guide/vietnam" target="_blank" class="card-btn">Vietnam</a>
                     <div class="toggleBtn-dropdown">
                         <button class="toggleBtn-dropdown-button card-btn">Others</button>
                         <div class="toggleBtn-dropdown-menu">
-                          <a href="#" target="_blank">Bangladesh</a>
-                          <a href="#" target="_blank">Japan</a>
-                          <a href="#" target="_blank">Malaysia</a>
-                          <a href="#" target="_blank">Philippines</a>
-                          <a href="#" target="_blank">South Korea</a>
-                          <a href="#" target="_blank">Sri Lanka</a>
-                          <a href="#" target="_blank">Thailand</a>
-                          <a href="#" target="_blank">Turkiye</a>
-                          <a href="#" target="_blank">More</a>
+                            <a href="https://www.dezshira.com/library/search?locations=38" target="_blank"  onclick="window.open(this.href, '_blank'); return false;">ASEAN</a>
+                            <a href="https://www.dezshira.com/library/search?locations=335" target="_blank"  onclick="window.open(this.href, '_blank'); return false;">Bangladesh</a>
+                            <a href="https://www.dezshira.com/library/search?locations=326" target="_blank"  onclick="window.open(this.href, '_blank'); return false;">Japan</a>
+                            <a href="https://www.dezshira.com/library/search?locations=73" target="_blank"  onclick="window.open(this.href, '_blank'); return false;">Malaysia</a>
+                            <a href="https://www.dezshira.com/library/search?locations=109" target="_blank"  onclick="window.open(this.href, '_blank'); return false;">Middle East</a>
+                            <a href="https://www.dezshira.com/library/search?locations=331" target="_blank"  onclick="window.open(this.href, '_blank'); return false;">Philippines</a>
+                            <a href="https://www.dezshira.com/library/search?locations=110" target="_blank"  onclick="window.open(this.href, '_blank'); return false;">South Korea</a>
+                            <a href="https://www.dezshira.com/library/search" target="_blank"  onclick="window.open(this.href, '_blank'); return false;">More</a>
                         </div>
                       </div>
                 </div>
@@ -1623,9 +1519,9 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                             width="624" class="card-image doing-business">
                                     </div>
                                     <div class="card-body">
-                                        <h3 class="card-title"><a href="#" target="_blank">Sustainability and ESG Reporting</a></h3>
+                                        <h3 class="card-title"><a href="https://www.dezshira.com/services/risk-management/esg-compliance-and-sustainability" target="_blank">Sustainability and ESG Reporting</a></h3>
                                         <p class="card-text">ESG metrics have become key performance indicators for stakeholders to effectively evaluate a company’s commitment to environmental impact, social responsibility, and governance practices.</p>
-                                        <a href="#" class="btn btn-outline-white">Find Solutions</a>
+                                        <a href="https://www.dezshira.com/services/risk-management/esg-compliance-and-sustainability" class="btn btn-outline-white">Find Solutions</a>
                                     </div>
                                 </div>
                             </div>
@@ -1638,9 +1534,9 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                             width="624" class="card-image doing-business">
                                     </div>
                                     <div class="card-body">
-                                        <h3 class="card-title"><a href="#" target="_blank">Asia Manufacturing Index</a></h3>
+                                        <h3 class="card-title"><a href="https://www.dezshira.com/asia-manufacturing-index" target="_blank">Asia Manufacturing Index</a></h3>
                                         <p class="card-text">Gain data-driven insights into Asia’s manufacturing landscape with our Asia Manufacturing Index. Compare markets, benchmark opportunities, and explore strategic trends to support investment and supply chain decisions across the region.</p>
-                                        <a href="#" class="btn btn-outline-white">See Rankings</a>
+                                        <a href="https://www.dezshira.com/asia-manufacturing-index" class="btn btn-outline-white">See Rankings</a>
                                     </div>
                                 </div>
                             </div>
@@ -1664,186 +1560,6 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
 
                                                   <div class="splide__slide">
                                <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10245/image-12_1.png')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>17</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Summit</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/international-supply-chain-logistics-summit-2025-10245.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/international-supply-chain-logistics-summit-2025-10245.html"> International Supply Chain & Logistics Summit 2025</a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10241/Webinar_Indonesia-Budget-2026-Cost-Structures-Incentives-and-Strategic-Planning-for-Investors.jpg')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>17</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Webinar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/indonesia-budget-2026-cost-structures-incentives-and-strategic-planning-for-investors.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/indonesia-budget-2026-cost-structures-incentives-and-strategic-planning-for-investors.html">Indonesia Budget 2026: Cost Structures, Incentives, and Strategic Planning for  Investors</a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>18</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Webinar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/cn-management-measures-for-compliance-audits-on-the-protection-of-personal-information.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/cn-management-measures-for-compliance-audits-on-the-protection-of-personal-information.html">[CN] 个人信息保护合规审计管理办法</a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>18</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Training</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/management-measures-for-compliance-audits-on-the-protection-of-personal-information.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/management-measures-for-compliance-audits-on-the-protection-of-personal-information.html">Management Measures for Compliance Audits on the Protection of Personal Information </a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>24</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Webinar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/india-s-provident-fund-framework-for-expatriates-in-2025-key-updates-ssa-benefits-and-withdrawal-procedures-10246.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/india-s-provident-fund-framework-for-expatriates-in-2025-key-updates-ssa-benefits-and-withdrawal-procedures-10246.html">India’s Provident Fund Framework for Expatriates in 2025: Key Updates, SSA Benefits, and Withdrawal Procedures</a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10222/Banner-Image-Vietnam-Webinar-DACH_1.png')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>24</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Seminar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/erfolgreich-in-vietnam-standort-bewerten-geschaftskultur-verstehen-markenerfolg-schaffen.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/erfolgreich-in-vietnam-standort-bewerten-geschaftskultur-verstehen-markenerfolg-schaffen.html">Erfolgreich in Vietnam: Standort bewerten, Geschäftskultur verstehen, Markenerfolg schaffen</a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>25</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Webinar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/can-connect-webinar-vietnam-economic-business-outlook-with-cancham-vietnam-10247.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/can-connect-webinar-vietnam-economic-business-outlook-with-cancham-vietnam-10247.html">Can-Connect Webinar: Vietnam Economic & Business Outlook | With CanCham Vietnam</a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10242/ship_HP.jpg')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>25</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Webinar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/assessing-the-impact-of-us-tariffs-on-asia.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/assessing-the-impact-of-us-tariffs-on-asia.html">Assessing the Impact of US Tariffs on Asia</a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
-                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10244/Image-34_1.jpg')">
-                                       <div class="resrcs-date overlay">
-                                           Sep<br><span>27</span></div>
-                                   </div>
-                                   <div class="resrcs-body">
-                                       <div class="resrcs-meta">
-                                           <span>Webinar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/hand-tools-fastener-expo-2025-10244.html" target="_blank"> Spain</a>
-                                    </div> -->
-                                       </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/hand-tools-fastener-expo-2025-10244.html">Hand Tools & Fastener Expo 2025</a></h3>
-
-                                   </div>
-                               </div>
-                           </div>
-
-                                                  <div class="splide__slide">
-                               <div class="card-resrcs related-card related-card-small">
                                    <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
                                        <div class="resrcs-date overlay">
                                            Oct<br><span>15</span></div>
@@ -1851,12 +1567,8 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                    <div class="resrcs-body">
                                        <div class="resrcs-meta">
                                            <span>Webinar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/asean-opportunities-2025-growth-strategies-for-australian-businesses.html" target="_blank"> Spain</a>
-                                    </div> -->
                                        </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/asean-opportunities-2025-growth-strategies-for-australian-businesses.html">Unlocking ASEAN Advantage: Growth Strategies for Australian Businesses</a></h3>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/unlocking-asean-advantage-growth-strategies-for-australian-businesses.html">Unlocking ASEAN Advantage: Growth Strategies for Australian Businesses</a></h3>
 
                                    </div>
                                </div>
@@ -1871,12 +1583,137 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                    <div class="resrcs-body">
                                        <div class="resrcs-meta">
                                            <span>Webinar</span>
-                                           <!-- <div class="expt-location"><img src="https://dsa-2025-gulp-setup.netlify.app/img/l-mark-h.svg" width="13" height="15"
-                                            alt="location">
-                                        <a href="/events/details/timor-leste-unlocking-opportunities-in-asia-s-youngest-nation.html" target="_blank"> Spain</a>
-                                    </div> -->
                                        </div>
-                                       <h3 class="resrcs-title"><a href="/events/details/timor-leste-unlocking-opportunities-in-asia-s-youngest-nation.html">Timor-Leste: Unlocking Opportunities in Asia’s Youngest Nation</a></h3>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/timor-leste-unlocking-opportunities-in-asia-s-youngest-nation.html">Timor-Leste: Unlocking Opportunities in Asia’s Youngest Nation</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>17</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>>
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/decoding-india-s-goods-and-services-tax-2-0-what-it-means-for-your-business-10260.html">Decoding India’s Goods and Services Tax 2.0: What it Means for Your Business</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10257/Invest-in-Malaysia-Meet-Our-Expert-in-Shenzhen.jpg')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>20</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/shenzhen--malaysia-strategy-consultation-10257.html">【深圳/Shenzhen】马来西亚投资策略现场咨询 | Malaysia Strategy Consultation</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>22</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/vietnam-industrial-zone-benchmarking-2025-choosing-the-right-location-for-fdi-success.html">Vietnam Industrial Zone Benchmarking 2025: Choosing the Right Location for FDI Success</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>23</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/indonesia-eu-comprehensive-economic-partnership-agreement-cepa-new-opportunities-for-fdi.html">Indonesia Reopens Its FDI Gates: Major Regulatory Reforms and the New EU Trade Deal</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10253/China-Monthly-Tax-Brief-August-2025.jpg')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>28</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/foreign-firms-tax-health-in-china-case-studies-in-turning-compliance-into-strategic-confidence.html">Foreign Firms' Tax Health in China: Case Studies in Turning Compliance into Strategic Confidence</a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10264/OPPORTNITA-DI-BUSINESS-IN-INDIA_5.png')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>28</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/doing-business-in-india-opportunities-challenges-and-strategies-for-italian-companies-10264.html">[Partner Event] Doing Business in India: Opportunities, Challenges and Strategies for Italian Companies </a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://d2h56l9e5xqoi4.cloudfront.net/temp/Events/default_events_hp.webp')">
+                                       <div class="resrcs-date overlay">
+                                           Oct<br><span>29</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/managing-people-in-china-practical-strategies-for-hr-compliance-and-cross-cultural-effectiveness-for-fies.html">Managing People in China: Practical Strategies for HR Compliance and Cross-Cultural Effectiveness for FIEs </a></h3>
+
+                                   </div>
+                               </div>
+                           </div>
+
+                                                  <div class="splide__slide">
+                               <div class="card-resrcs related-card related-card-small">
+                                   <div class="resrcs-image" style="background-image: url('https://resource.dezshira.com/Events/10263/Chinas-New-Judicial-Interpretation-II-on-Labor-Disputes.jpg')">
+                                       <div class="resrcs-date overlay">
+                                           Nov<br><span>06</span></div>
+                                   </div>
+                                   <div class="resrcs-body">
+                                       <div class="resrcs-meta">
+                                           <span>Webinar</span>
+                                       </div>
+                                       <h3 class="resrcs-title"><a href="https://www.dezshira.com/events/details/cn-non-compete-agreements-china-2025-key-compliance-practical-guidance.html">[CN] Non-Compete Agreements in China 2025: Key Compliance and Practical Guidance | 新政背景下的竞业限制：给企业的合规与实务要点解析</a></h3>
 
                                    </div>
                                </div>
@@ -1885,7 +1722,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                           </div>
                </div>
            </div>
-           <div class="text-center"><a href="/events" class=" btn btn-outline-primary">All Events</a></div>
+           <div class="text-center"><a href="https://www.dezshira.com/events" class=" btn btn-outline-primary">All Events</a></div>
 
        </div>
    </section>
@@ -1916,7 +1753,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                 <div class="news-featured">
                     <div class="news-image">
                         <a
-                            href="#"
+                            href="https://www.dezshira.com/brochure_download_status/case_studies~services~GovED~Dezan%20Shira%20-%20Case%20Study_Australian%20Trade%20Mission%20Builds%20High-Value%20Partnerships%20Through%20Business%20Matchmaking%20in%20Vietnam"
                             target="_blank">
                         <img src="https://resource.dezshira.com/Assets/1756950012_Australian Trade Mission Builds.jpg" alt="Featured News" /></a>
                                             <div class="news-details">
@@ -1945,7 +1782,6 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                     </div>
 
                     <div class="news-item">
-                       
                         <div class="news-details">
                         <span class="news-date">Case Studies</span>
                         <p class="news-snippet"><a href="https://www.dezshira.com/brochure_download_status/case_studies~services~GovED~Dezan%20Shira%20-%20Case%20Study_Australian%20Trade%20Mission%20Builds%20High-Value%20Partnerships%20Through%20Business%20Matchmaking%20in%20Vietnam" target="_blank">Australian Trade Mission Builds High-Value Partnerships Through Business Matchmaking in Vietnam</a></p>
@@ -1957,7 +1793,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                    
             </div>
             <div class="text-right">
-            <a class="text-cta-link" href="#" target="_blank">View all case studies<span class="arrow-anim"></span></a></div>
+            <a class="text-cta-link" href="https://www.dezshira.com/success-stories/case-studies" target="_blank">View all case studies<span class="arrow-anim"></span></a></div>
             </div>
             <div class="common-tab-content" id="leadershipTab" style="display: none;">
             <div class="news-section cs-insights">
@@ -1965,7 +1801,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                 <div class="news-featured">
                     <div class="news-image">
                         <a
-                            href="#"
+                            href="https://www.china-briefing.com/news/us-imports-from-china-tariff-impact/"
                             target="_blank">
                         <img src="https://www.china-briefing.com/news/wp-content/uploads/2025/07/How-Are-Tariffs-Impacting-Chinese-Exports-to-the-US.jpg" alt="Featured News" /></a>
                                             <div class="news-details">
@@ -2010,7 +1846,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
             </div>
          
                 <div class="text-right">
-                <a class="text-cta-link" href="#" target="_blank">View all insights<span class="arrow-anim"></span></a></div>
+                <a class="text-cta-link" href="https://www.asiabriefing.com/insights" target="_blank">View all insights<span class="arrow-anim"></span></a></div>
             </div>
             <div class="common-tab-content" id="publicationsTab" style="display: none;">
             <div class="news-section cs-insights">
@@ -2061,7 +1897,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                 
 
                 <div class="text-right">
-                <a class="text-cta-link" href="#" target="_blank">View all publications<span class="arrow-anim"></span></a></div>
+                <a class="text-cta-link" href="https://www.asiabriefing.com/store" target="_blank">View all publications<span class="arrow-anim"></span></a></div>
             </div>
             <div class="common-tab-content" id="webinarsTab" style="display: none;">
             <div class="news-section cs-insights">
@@ -2069,12 +1905,12 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                 <div class="news-featured">
                     <div class="news-image">
                         <a
-                            href="#"
+                            href="https://www.dezshira.com/multimedia/view/investing-in-indonesia-s-construction-projects-a-comprehensive-guide-for-fdi.html"
                             target="_blank">
                         <img src="https://www.dezshira.com/assets/img/asiapedia/thumb-event.jpg" alt="Featured News" /></a>
                                             <div class="news-details">
                     <span class="news-date">Webinars</span>
-                    <h3 class="news-title"><a href="/multimedia/view/investing-in-indonesia-s-construction-projects-a-comprehensive-guide-for-fdi.html">Investing in Indonesia’s Construction Projects: A Comprehensive Guide for FDI </a></h3></div>
+                    <h3 class="news-title"><a href="https://www.dezshira.com/multimedia/view/investing-in-indonesia-s-construction-projects-a-comprehensive-guide-for-fdi.html">Investing in Indonesia’s Construction Projects: A Comprehensive Guide for FDI </a></h3></div>
                     </div>
 
 
@@ -2110,7 +1946,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                    
             </div>
                 <div class="text-right">
-                 <a class="text-cta-link" href="#" target="_blank">View all webinars<span class="arrow-anim"></span></a></div>
+                 <a class="text-cta-link" href="https://www.dezshira.com/library/search?type=Webinar+Replay" target="_blank">View all webinars<span class="arrow-anim"></span></a></div>
             </div>
             </div>
         </div>
@@ -2135,13 +1971,13 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                                 <div class="card-horizontal">
                         <div class="card-body">
                             <div class="card-image-container">
-                                <a href="/updates/2025/09/engagement-with-australian-embassy-and-austrade-highlights-vietnam-australia-trade-priorities.html">
-                        <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/09/Dan-and-Marco-at-Australian-Embassy-Hanoi-17-Sep-2025.png" alt="Engagement with Australian Embassy and AusTrade Highlights Vietnam-Australia Trade Priorities" style="max-height:290px;">
+                                <a href="https://www.dezshira.com/updates/2025/09/dezan-shira-associates-at-the-95th-saudi-national-day-celebration-in-beijing.html">
+                        <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/09/Weixin-Image_20250926172823_89_18-scaled.jpg" alt="Dezan Shira &amp; Associates at the 95th Saudi National Day Celebration in Beijing" style="max-height:290px;">
                         </a>
                             </div>
-                            <div class="resrcs-meta"><span>September 24, 2025</span> </div>
-                            <h3 class="card-title"><a href="/updates/2025/09/engagement-with-australian-embassy-and-austrade-highlights-vietnam-australia-trade-priorities.html">
-                                Engagement with Australian Embassy and AusTrade Highlights Vietnam-Australia Trade Priorities                            </a></h3>
+                            <div class="resrcs-meta"><span>September 29, 2025</span> </div>
+                            <h3 class="card-title"><a href="/updates/2025/09/dezan-shira-associates-at-the-95th-saudi-national-day-celebration-in-beijing.html">
+                                Dezan Shira &amp; Associates at the 95th Saudi National Day Celebration in Beijing                            </a></h3>
                         </div>
 
                     </div>
@@ -2152,13 +1988,13 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
 
                         <div class="card-body">
                             <div class="card-image-container">
-                                <a href="/updates/2025/09/dezan-shira-associate-experts-join-panel-on-highlights-innovation-technology-and-talent-development-by-the-embassy-of-sweden.html">
-                                <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/09/Business-Sweden-Tien-and-Lita-Sep-25_6-1.jpg" height="241" width="560" alt="Dezan Shira &amp; Associate Experts Join Panel on Highlights Innovation, Technology, and Talent Development by the Embassy of Sweden">
+                                <a href="https://www.dezshira.com/updates/2025/09/ankur-munjal-appointment-representative-council-indo-australian-chamber-of-commerce.html">
+                                <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/09/India-Australia-Chart-New-Economic-Roadmap-1.jpg" height="241" width="560"  class="card-image" alt="Dezan Shira &amp; Associates Congratulates Ankur Munjal on His Appointment to the Representative Council of the Indo-Australian Chamber of Commerce">
                                 </a>
                             </div>
-                            <div class="resrcs-meta"><span>September 19, 2025</span> </div>
-                            <h3 class="card-title"><a href="/updates/2025/09/dezan-shira-associate-experts-join-panel-on-highlights-innovation-technology-and-talent-development-by-the-embassy-of-sweden.html">
-                                        Dezan Shira &amp; Associate Experts Join Panel on Highlights Innovation, Technology, and Talent Development by the Embassy of Sweden                                    </a></h3>
+                            <div class="resrcs-meta"><span>September 29, 2025</span> </div>
+                            <h3 class="card-title"><a href="https://www.dezshira.com/updates/2025/09/ankur-munjal-appointment-representative-council-indo-australian-chamber-of-commerce.html">
+                                        Dezan Shira &amp; Associates Congratulates Ankur Munjal on His Appointment to the Representative Council of the Indo-Australian Chamber of Commerce                                    </a></h3>
                         </div>
                     </div>
                         </div>
@@ -2168,12 +2004,13 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
 
                         <div class="card-body">
                             <div class="card-image-container">
-                                <a href="/updates/2025/09/navigating-a-new-era-dezan-shira-associates-at-the-launch-of-victorias-china-strategy.html">
-                                <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/09/Image-8.jpg" height="241" width="560" alt="Navigating a New Era: Dezan Shira &amp; Associates at the Launch of Victoria’s China Strategy">
+                                <a href="https://www.dezshira.com/updates/2025/09/india-office-meets-the-team-at-embassy-of-belgium-in-new-delhi.html">
+                                <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/09/image.jpeg" height="241" width="560" alt="Dezan Shira &amp; Associates’ India office Meets the Team at Embassy of Belgium in New Delhi" class="card-image">
                                 </a>
                             </div>
-                            <div class="resrcs-meta"><span>September 17, 2025</span> </div>
-                            <h3 class="card-title"><a href="/updates/2025/09/navigating-a-new-era-dezan-shira-associates-at-the-launch-of-victorias-china-strategy.html">Navigating a New Era: Dezan Shira &amp; Associates at the Launch of Victoria’s China Strategy </a>
+                            <div class="resrcs-meta"><span>September 26, 2025</span> </div>
+                            <h3 class="card-title"><a href="https://www.dezshira.com/updates/2025/09/india-office-meets-the-team-at-embassy-of-belgium-in-new-delhi.html">
+                                        Dezan Shira &amp; Associates’ India office Meets the Team at Embassy of Belgium in New Delhi                                    </a>
                             </h3>
 
 
@@ -2185,11 +2022,12 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                                                 <div class="card-horizontal">
                         <div class="card-body">
                             <div class="card-image-container">
-                                <img src="https://www.dezshira.com/updates/wp-content/uploads/2025/08/WhatsApp_Image_2025-08-22_at_10.47.40_ddb907cf-2.jpg" alt="Factory at Night" height="388" width="624"
-                                    class="card-image">
+                                <a href="https://www.dezshira.com/updates/2025/09/signing-ceremony-indonesia-eu-comprehensive-economic-partnership-agreement-in-bali.html">
+                                <img src="https://www.dezshira.com/updates/wp-content/uploads/2025/08/WhatsApp_Image_2025-08-22_at_10.47.40_ddb907cf-2.jpg" alt="Factory at Night" height="388" width="624" class="card-image"></a>
                             </div>
-                            <div class="resrcs-meta"><span>August 27, 2025</span> </div>
-                            <h3 class="card-title"><a href="https://www.dezshira.com/v2_2025/brochure_download_status/case_studies~services~esg~ESG Management with IBM Envizi - Science-based sustainability needs reality-based reporting" target="_blank">Navigating The New Era of Australia-China Relations: Ines Liu Shares Critical Insights for Success at ACETIE 2025</a></h3>
+                            <div class="resrcs-meta"><span>September 26, 2025</span> </div>
+                            <h3 class="card-title"><a href="https://www.dezshira.com/updates/2025/09/signing-ceremony-indonesia-eu-comprehensive-economic-partnership-agreement-in-bali.html">
+                                        Dezan Shira &amp; Associates Attends the Signing Ceremony of the Indonesia – EU Comprehensive Economic Partnership Agreement in Bali                                    </a></h3>
                         </div>
 
                     </div>
@@ -2200,11 +2038,11 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
 
                         <div class="card-body">
                             <div class="card-image-container">
-                                <img src="https://www.dezshira.com/updates/wp-content/uploads/2025/08/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-08-22_100750_402.jpg" alt="Perspectives and Trends" height="388" width="624"
-                                    class="card-image doing-business">
+                                <a href="https://www.dezshira.com/updates/2025/09/alberto-vettoretti-moderates-indonesia-southern-china-business-forum-2025.html">
+                                <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/09/ZR5_3383-scaled.jpeg" alt="Perspectives and Trends" height="388" width="624"                                  class="card-image doing-business"></a>
                             </div>
-                            <div class="resrcs-meta"><span>August 22, 2025</span> </div>
-                            <h3 class="card-title"><a href="https://www.dezshira.com/v2_2025/brochure_download_status/case_studies~services~bi~Building%20Supply%20Chain%20Resilience%20in%20Asia%20Country%20Competitiveness%20Benchmarking%20by%20a%20European%20Textile%20Manufacturer" target="_blank">Vivie Wei Speaks on Vietnam’s Textile Industry Transformation at Intertextile Shanghai Home Textiles 2025</a></h3>
+                            <div class="resrcs-meta"><span>September 24, 2025</span> </div>
+                            <h3 class="card-title"><a href="https://www.dezshira.com/updates/2025/09/alberto-vettoretti-moderates-indonesia-southern-china-business-forum-2025.html">Managing Partner Alberto Vettoretti Moderates Panel at Indonesia – Southern China Business Forum 2025</a></h3>
                         </div>
                     </div>
                         </div>
@@ -2214,11 +2052,12 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
 
                         <div class="card-body">
                             <div class="card-image-container">
-                                <img src="https://www.dezshira.com/updates/wp-content/uploads/2025/08/Image-32-1.jpg" alt="Perspectives and Trends" height="388" width="624"
-                                    class="card-image doing-business">
+                                <a href="https://www.dezshira.com/updates/2025/09/signing-ceremony-indonesia-eu-comprehensive-economic-partnership-agreement-in-bali.html">
+                                <img src="https://i0.wp.com/www.dezshira.com/updates/wp-content/uploads/2025/09/Image-2.png" alt="Perspectives and Trends" height="388" width="624"
+                                    class="card-image doing-business"></a>
                             </div>
-                            <div class="resrcs-meta"><span>August 14, 2025</span> </div>
-                            <h3 class="card-title"><a href="https://www.dezshira.com/v2_2025/brochure_download_status/case_studies~2023~Dezan%20Shira%20-%20Case%20Study_Multi-Country%20Study%20to%20Identify%20Alternative%20Manufacturing%20locations%20to%20Address%20US-China%20Trade%20Tensions" target="_blank">Dezan Shira & Associates India Team Meets Austrian Trade Commissioner in New Delhi</a>
+                            <div class="resrcs-meta"><span>September 26, 2025</span> </div>
+                            <h3 class="card-title"><a href="https://www.dezshira.com/updates/2025/09/signing-ceremony-indonesia-eu-comprehensive-economic-partnership-agreement-in-bali.html">Dezan Shira &amp; Associates Attends the Signing Ceremony of the Indonesia – EU Comprehensive Economic Partnership Agreement in Bali</a>
                             </h3>
 
 
@@ -2229,7 +2068,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                     </div>
                 </div>
             </div></div>
-<div class="text-center"><a href="#" class="btn btn-outline-primary">View all news</a></div>
+<div class="text-center"><a href="https://www.dezshira.com/updates/" class="btn btn-outline-primary">View all news</a></div>
 
 
 
@@ -3080,7 +2919,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const logoDSA = navbar.querySelector(".navbar__logo img");
   const globeIcon = navbar.querySelector('a[aria-label="Desk here"] img');
 
-  // Define image sources
+  // Define image
   const images = {
     logoDSA: {
       default: "/img/DSA-main-logo-white.svg",
@@ -3094,14 +2933,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // 🔹 Handle hover effect
+  // hover effect
   navbar.addEventListener("mouseenter", () => {
     logoDSA.src = images.logoDSA.hover;
     globeIcon.src = images.globeIcon.hover;
   });
 
   navbar.addEventListener("mouseleave", () => {
-    // If navbar has bg-colored, keep scroll images, else reset to default
+    // If navbar bg-colored, keep scroll images, else reset to default
     if (navbar.classList.contains("navbar-bgHover")) {
       logoDSA.src = images.logoDSA.scroll;
       globeIcon.src = images.globeIcon.scroll;
@@ -3111,7 +2950,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 🔹 Handle scroll effect
+  // scroll effect
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       navbar.classList.add("navbar-bgHover");

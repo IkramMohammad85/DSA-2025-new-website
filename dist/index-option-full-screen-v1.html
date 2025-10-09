@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/index-option1-v1.css" type="text/css" />
-  
-    
     <!-- <link rel="preload" as="style" href="/css/main.min.css" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/main.min.css"></noscript> -->
     <link rel="stylesheet" href="/css/vendor/splide.min.css" type="text/css">
@@ -1201,7 +1199,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
         <ul class="navbar__iconmenu">
             <li style="width: 24px;"></li>
             <li style="width: 24px;"></li>
-          <li class="navbar__iconmenu__login"><a href="https://www.dezshira.com/login" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
+          <li class="navbar__iconmenu__login"><a href="https://www.dezshira.com/login"><span>Login</span></a>
             <aside class="navbar__accessbox login-reg-block">
               <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
                 <p>Thousands of free articles, guides, publications, and videos about doing business in Asia</p><a class="navbar__accessbox__close" href="#" onclick="toggle_modal('.navbar__accessbox');"><span class="sprite-close"></span></a>
@@ -1287,7 +1285,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
             data-type="fade" interval='20000' data-pagination="false">
             <div class="splide__track">
                 <ul class="splide__list">
-<li class="splide__slide">
+                <li class="splide__slide">
               <div class="section-wrapper-min">
                 <div class="slider-content">
                   <h2 class="slide-title">
@@ -1342,7 +1340,7 @@ content: ""; display: block; transform: translateX(0%) scale(.8); background: ur
                 height="880"
                 fetchpriority="high"
               >
-            </li>
+                </li>
                     <li class="splide__slide">
                         <div class="section-wrapper-min">
                             <div class="slider-content">
@@ -3058,7 +3056,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const logoDSA = navbar.querySelector(".navbar__logo img");
   const globeIcon = navbar.querySelector('a[aria-label="Desk here"] img');
 
-  // Define image sources
+  // Define image
   const images = {
     logoDSA: {
       default: "/img/DSA-main-logo-white.svg",
@@ -3072,14 +3070,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // 🔹 Handle hover effect
+  // hover effect
   navbar.addEventListener("mouseenter", () => {
     logoDSA.src = images.logoDSA.hover;
     globeIcon.src = images.globeIcon.hover;
   });
 
   navbar.addEventListener("mouseleave", () => {
-    // If navbar has bg-colored, keep scroll images, else reset to default
+    // If navbar  bg-colored, keep scroll images, else reset to default
     if (navbar.classList.contains("navbar-bgHover")) {
       logoDSA.src = images.logoDSA.scroll;
       globeIcon.src = images.globeIcon.scroll;
@@ -3089,7 +3087,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 🔹 Handle scroll effect
+  //scroll effect
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       navbar.classList.add("navbar-bgHover");

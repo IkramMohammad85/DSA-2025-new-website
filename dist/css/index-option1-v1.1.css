@@ -1,10 +1,5 @@
-.navbar__menu > li > a {
-  font-family: "Inter", sans-serif;
-  font-variation-settings: "wght" 700;
-}
-
-body {
-  font-family: "Inter", sans-serif;
+.gateway-dba .card .card-body .card-btn, .toggleBtn-dropdown .card-btn {
+  font-weight: 500;
 }
 
 .navbar {

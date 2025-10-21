@@ -331,7 +331,7 @@ img:focus-visible, .navbar__logo:focus-visible {
     height: 580px;
   }
   .gateway-dba.dba-home .splide__slide.is-active.is-visible#splide02-slide01 .card-horizontal {
-    height: 800px;
+    height: 850px;
   }
 }
 @media (max-width: 1100px) {

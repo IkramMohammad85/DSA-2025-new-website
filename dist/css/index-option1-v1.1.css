@@ -1,5 +1,6 @@
 .gateway-dba .card .card-body .card-btn, .toggleBtn-dropdown .card-btn, .gateway-dba .card .card-body .btn {
   font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 
 .navbar__menu > li > a {

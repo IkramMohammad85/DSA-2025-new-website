@@ -11,6 +11,10 @@
   font-weight: 500;
 }
 
+.navbar__wrapper {
+  border-bottom: none;
+}
+
 .navbar {
   background-color: transparent;
   box-shadow: none;

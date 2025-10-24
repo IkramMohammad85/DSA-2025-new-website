@@ -469,7 +469,7 @@ document.addEventListener('DOMContentLoaded', function () {
     counters.forEach(counter => {
       const target = +counter.getAttribute('data-target');
       const hasPlus = counter.getAttribute('data-plus') === "true";
-      const duration = +counter.getAttribute('data-speed') || 2000; // Duration in ms
+      const duration = +counter.getAttribute('data-speed') || 50; // Duration in ms
   
       const startTime = performance.now();
   

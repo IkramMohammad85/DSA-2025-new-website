@@ -18,7 +18,42 @@
 	<meta name="description" content="Corporate establishment, business & tax advisory, compliance, accounting, payroll, due diligence and financial review services for multinationals in Asia" />
 	<meta name="keyword" content="" />
     <link rel="preload" as="image" href="/img/top-home-slide-img/Hero-EDO.webp" type="image/webp" fetchpriority="high">
+<style>
+    #counter{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6e6e7;
+  padding: 40px 0px;
+  width: 100%;
+}
+#counter .item{
+  background: #fff;
+  width: 200px;
+  padding: 35px 40px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+-moz-box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+box-shadow: 0px 0px 38px -8px rgba(0,0,0,0.34);
+} 
+#counter .item .count{
+  color: #e8b12d;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+#counter .item h3{
+  color: #4f4e28;
+  text-transform: capitalize;
+}
 
+#counter .counter-box .item:first-child .count:after, #counter .counter-box .item:nth-child(2) .count:after {
+    content: "+";
+    margin-left: 0.2rem;
+}
+</style>
     
 </head>
 
@@ -332,21 +367,27 @@
     <section class="counter-section-main">
         <img src="/img/counter-bg.webp" alt="counter" width="2000" height="197" class="counter-image">
         <div class="section-wrapper-min">
-            <div class="counter-section counter-inner">
+            <div class="counter-section counter-inner" id="counter">
                 <div class="counter-box popover-wrapper">
-                    <span class="counter" data-target="600" data-speed="2000"></span>
-                    <h3>Professionals</h3>
+<div class="item">
+       <h1 class="count" data-number="15" ></h1>
+       <h3 class="text">year+ Eexperience</h3>
+    </div>
                     <div class="popover-content"><a class="text-cta-link" href="https://www.dezshira.com/personnel">Meet our team</a></div>
                 </div>
                 <div class="counter-box popover-wrapper">
-                    <span class="counter" data-target="33" data-speed="2000">33</span>
-                    <h3>Years Experience</h3>
+                   <div class="item">
+       <h1 class="count" data-number="50" ></h1>
+       <h3 class="text">Reward</h3>
+    </div>
 
                     <div class="popover-content"><a class="text-cta-link" href="https://www.dezshira.com/services/">Explore our services</a></div>
                 </div>
                 <div class="counter-box popover-wrapper">
-                    <span class="counter" data-target="21" data-speed="2000">21</span>
-                    <h3>Countries</h3>
+                   <div class="item">
+       <h1 class="count" data-number="400" ></h1>
+       <h3 class="text">happy clients</h3>
+    </div>
 
                 <div class="popover-content"><a class="text-cta-link" href="https://www.dezshira.com/office">See Locations</a></div>
                 </div>
@@ -956,11 +997,10 @@
 
 <a href="https://www.dezshira.com/success-stories/testimonials" class="text-cta-link">See what our clients say about us<span class="arrow-anim"></span>
                     </a>
-                    
                 </div>
                 <div class="flex-col-7per clients-panel-list resource-splide">
-          <div class="splide" data-per-page="4" data-autoplay="false" data-arrows="false" data-type="slide"  
-                        data-breakpoints='{"640":{"perPage": 2,"gap": "0.7rem","height": "auto","arrows": "true","pagination": false},"375":{"perPage": 1,"gap": "0.7rem","height": "auto","arrows": "true","pagination": false}}'>
+                    <div class="splide" data-per-page="4" data-autoplay="false" data-arrows="false" data-type="slide"
+                        data-breakpoints='{"640":{"perPage": 2,"gap": "0.7rem","height": "auto"},"480":{"perPage": 1,"gap": "0.7rem","height": "auto" }}'>
                         <div class="splide__track">
 <div class="splide__list">
                                                             <div class="splide__slide">
@@ -1232,7 +1272,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+<script>
+    let count = document.querySelectorAll(".count")
+let arr = Array.from(count)
 
+
+
+arr.map(function(item){
+  let startnumber = 0
+
+  function counterup(){
+  startnumber++
+  item.innerHTML= startnumber
+   
+  if(startnumber == item.dataset.number){
+      clearInterval(stop)
+  }
+}
+
+let stop =setInterval(function(){
+  counterup()
+},50)
+
+})
+</script>
     <script src="/js/vendor/splide.min.js"></script>
     <script src="js/main.min.js"></script>
     

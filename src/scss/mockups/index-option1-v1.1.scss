@@ -2,6 +2,7 @@
 .gateway-dba .card .card-body .card-btn, .toggleBtn-dropdown .card-btn, .gateway-dba .card .card-body .btn{ font-weight: 500;font-family: "Inter", sans-serif;}
 .navbar__menu > li > a{font-weight: 500;}
 .btn {font-weight: 500;}
+.navbar__wrapper{border-bottom:none;}
 .navbar{background-color: transparent;box-shadow:none; transition: background-color 0.5s ease;
 
 &.navbar-bgHover { background-color: #fff;box-shadow: 0 2px 8px rgba(0,0,0,.1); 

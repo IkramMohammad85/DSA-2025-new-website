@@ -14,17 +14,21 @@
     <link rel="preload" as="image" href="/img/about-us/dsa-case-study-banner.jpg" type="image/webp" fetchpriority="high">
      
     <style>
-    .masthead__text.mini_banner { justify-content: center; max-width: 500px;}
+    /* html { scroll-padding-top: 100px;} */
+    h2[id], div[id] {scroll-margin-top: 100px;}
+    .masthead.case-studies-banner h1{max-width: 750px;line-height: 1.3;}
     .our-experts{background-color: #fff;}
     ul li { margin-bottom: 6px; }
     ul li{ font-weight: 300; color: #535353;  line-height: 29px; }
     .linear-blue-gradient {background: linear-gradient(-180deg, #4C8FD5 0%, #284B6F 100%);}
-    .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block{flex-direction: column; width: 190px;}
+    .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block{flex-direction: column; width: 235px;}
     .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-title{ margin-right: 0;}
     .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-title .icon-square{ margin: 0 0 1rem 0;}
     .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text h3{ font-weight: 600;}
     .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p{ color: #344C71; font-weight: 500;}
     .ibm-enizi-sp.client-snapshot .carousel-inner{ justify-content: center; gap: 2rem;}
+    .ibm-enizi-sp.client-snapshot .carousel-inner .carousel-item{margin-bottom: 0;}
+    .ibm-enizi-sp.client-snapshot .carousel-inner .carousel-item:nth-child(2){width: 190px;}
     .section-light-blu-bg { background-color: #f0f6fc !important;}
 
     .experts-quotes-card{ display: flex; gap: 2rem;}
@@ -32,7 +36,10 @@
     .experts-quotes-section h3 {font-family: Poppins; font-weight: 600; font-size: 28px;  color: #000; margin-bottom:3rem;}
     .quote-icon{ float: left; margin-right: 1rem;}
     .quote-icon img{width: 30px; height: 25px;}
-    .experts-quote p{color: #535353;}
+    .experts-quote p{color: #535353; line-height: 30px; margin-bottom: 1rem;}
+
+    .experts-quote .experts-detail .expert-name,  .experts-quote .experts-detail .expert-position{font-size: 13px;}
+    .experts-quote .experts-detail .expert-name{font-weight: 600;}
 
     .in-this-card{
       min-height: 280px;
@@ -40,15 +47,16 @@
       margin-top: -180px;
       padding: 2.5rem;
       margin-bottom: 3rem;
+      margin-left: 1rem;
     }
     .in-this-card h3{ color: #fff; font-size: 16px; margin-bottom: 1rem;}
     .in-this-card ul{ margin: 0; padding: 0; list-style: none;}
-    .in-this-card ul li{ color: #fff; font-size: 16px; line-height: 25px; margin-bottom: 0.5rem;}
+    .in-this-card ul li{ color: #fff; font-size: 16px; line-height: 22px; margin-bottom: 0.8rem;}
     .in-this-card ul li:last-child{ margin-bottom:0rem;}
     .in-this-card ul li a{ color: #fff;}
     .in-this-card ul li a:hover{ text-decoration: underline;}
 
-    .rhs-form-card .services-question-section .got-question-block{ width: auto; margin-left: 0; padding-left: 2rem; padding-right: 2rem;}
+    .rhs-form-card .services-question-section .got-question-block{ width: auto; margin-left: 1rem; padding-left: 2rem; padding-right: 2rem;}
     .services-question-section .got-question-block form input[type=email] {
     border: none;
     border-radius: 0;
@@ -71,6 +79,7 @@
     animation-timing-function:ease-in;
     transition: all .5s ease;
 }
+.services-question-section .got-question-block form input[type=tel], .services-question-section .got-question-block form input[type=text], .services-question-section .got-question-block form select, .services-question-section .got-question-block form textarea{font-size: 14px;}
 
 @media (max-width: 667px) {
   .experts-quotes-card{flex-direction: column-reverse;}
@@ -78,9 +87,11 @@
   .ibm-enizi-sp.client-snapshot .carousel-inner{justify-content: flex-start; gap: 0;}
   .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p{text-align: center;}
   .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block{width: auto; margin-left: 0;margin-right: 0;}
-  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-title .icon-square{    margin-left: auto; margin-right: auto; }
-   .rhs-form-card .services-question-section .got-question-block{margin-bottom: 10rem;}
-   .masthead.case-studies-banner{height: 420px;}
+  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-title .icon-square{margin-left: auto; margin-right: auto; }
+  .ibm-enizi-sp.client-snapshot .carousel-inner .carousel-item:nth-child(2){width:auto;}
+  .rhs-form-card .services-question-section .got-question-block{margin-bottom: 10rem;}
+  .in-this-card{margin-right: 0;}
+  .masthead.case-studies-banner{height: 420px;}
 }
     </style>
 </head>
@@ -90,7 +101,7 @@
     @@include("../includes/header.html")
       <section class="masthead case-studies-banner">
         <div class="section-wrapper-min">
-          <div class="masthead__text justify-content-center mini_banner">
+          <div class="masthead__text justify-content-center">
             <h1>Establishment of Air-Conditioning, Heating, and Refrigeration Institute (AHRI)’s Southeast Asia Hub in Singapore</h1>
           </div>
         </div>
@@ -101,11 +112,11 @@
           <div class="flex-grid-row flex-grid-row--one-third">
             
             <div class="flex-col-7per">
-              <h2>Facilitated AHRI’s seamless RO setup</h2>
+              <h2 id="facilitatedAhri">Facilitated AHRI’s seamless RO setup</h2>
               <p>With Southeast Asia’s HVAC market expanding rapidly, AHRI sought to establish a regional presence to strengthen proximity to policymakers, partners, and consumers.</p>
         <p>We supported AHRI in evaluating multiple ASEAN jurisdictions and identifying Singapore as the optimal base for its first regional office. Our advisory covered every stage—from regulatory assessment and structure alignment to operational setup—ensuring full compliance and smooth execution.</p>
         <p>Through our guidance, AHRI successfully established a compliant representative office in Singapore, reinforcing its leadership in global standards, energy efficiency, and sustainable HVACR development across Southeast Asia.</p>
-        <h2>Challenge</h2>
+        <h2 id="challenge">Challenge</h2>
         <p>Establishing a regional base required AHRI to navigate multiple layers of complexity, each with potential for delays, additional costs, and credibility risks, unless effectively managed:</p>
         <ul>
           <li>Initial assessment: Reviewed AHRI’s organizational objectives and regional needs to define the most suitable establishment route.</li>
@@ -114,7 +125,7 @@
           <li>Operational setup: Advised on governance, scope of permitted activities, and best practices for stakeholder engagement.
           </li>
         </ul>
-        <h2>Solution</h2>
+        <h2 id="solution">Solution</h2>
         <p>Dezan Shira & Associates provided structured support across legal, procedural, and operational areas, allowing AHRI to focus on its core mission of industry engagement:</p>
         <ul>
           <li>Regulatory compliance: Ensured the representative office adhered to Singapore’s laws and administrative requirements.</li>
@@ -122,7 +133,7 @@
           <li>Stakeholder expectations: Built credibility with local authorities, industry groups, and international partners.</li>
           <li>Operational clarity: Designed a representative office structure that reflected AHRI’s non-commercial mandate while enabling effective advocacy and member engagement.</li>
         </ul>
-        <h2>Impact</h2>
+        <h2 id="impact" class="scrollto">Impact</h2>
         <p>With Dezan Shira & Associates’ support, AHRI inaugurated its Singapore Representative Office in September 2025. The launch was attended by senior government officials, business leaders, and industry representatives, signalling strong local recognition.</p>
         <p>The new Singapore office enables AHRI to:</p>
         <ul>
@@ -131,7 +142,7 @@
           <li>Promote harmonized standards and fair competition within the sector.</li>
         </ul>
         <p>This milestone strengthens AHRI’s global advocacy role and supports regional climate and development goals.</p>
-        <h2>Strategic significance and key takeaways</h2>
+        <h2 id="keyTakeaways">Strategic significance and key takeaways</h2>
         <p>AHRI’s expansion into Singapore demonstrates how global industry associations can enhance their regional presence through compliant, strategically positioned structures. Singapore’s governance, transparency, and connectivity made it an ideal choice for a non-profit representative office focused on advocacy rather than trade.</p>
         <h2>Key takeaways:</h2>
         <ul>
@@ -150,10 +161,12 @@
           <div class="in-this-card animate moveTOCbox delay-v2">
             <h3>In this section</h3>
             <ul>
-              <li><a href="#">Case Study introduction</a></li>
+              <li><a href="#facilitatedAhri">Facilitated AHRI’s seamless RO setup</a></li>
+              <li><a href="#challenge">Challenge</a></li>
+              <li><a href="#solution">Solution</a></li>
+              <li><a href="#impact" class="scrollto">Impact</a></li>
+              <li><a href="#keyTakeaways">Strategic significance and key takeaways</a></li>
               <li><a href="#clientSnapshot">Client Snapshot</a></li>
-              <li><a href="#">Our Approach</a></li>
-              <li><a href="#">Our Role</a></li>
               <li><a href="#insightsFromOurExperts">Expert Insights</a></li>
               <li><a href="#contactOurExperts ">Contact Experts</a></li>
               <li><a href="#ourClients">Our Clients</a></li>
@@ -321,12 +334,12 @@
 
 
 
-      <div class="pb-3 pt-7 experts-quotes-section our-team-experts" id="insightsFromOurExperts">
+      <div class="pb-5 pt-5 experts-quotes-section our-team-experts" id="insightsFromOurExperts">
         <h3 class="text-center">Insights from Our Experts</h3>
         <div class="section-wrapper-min">
         <div class="splide" data-per-page="2" data-autoplay="false"
         data-pagination="false" data-type="slide" data-arrows="false" gap="4rem"
-        data-breakpoints='{"1600":{"perPage":2,"gap":"6rem"},"1024":{"perPage":2,"gap":"0.7rem"},"640":{"perPage":1,"gap":"0.7rem", "pagination":true},"480":{"perPage":1,"gap":"0.7rem"}}'>
+        data-breakpoints='{"1600":{"perPage":2,"gap":"4rem"},"1024":{"perPage":2,"gap":"0.7rem"},"640":{"perPage":1,"gap":"0.7rem", "pagination":true},"480":{"perPage":1,"gap":"0.7rem"}}'>
         <div class="splide__track">
             <div class="splide__list">
                   <div class="splide__slide">
@@ -339,15 +352,18 @@
               </a>
             </div>
 
-            <div class="experts-detail">
+            <!-- <div class="experts-detail">
               <div class="expert-name">David Stepat</div>
               <div class="expert-position">Country Director (Singapore), Dezan Shira & Associates</div>
-              <div class="expert-social-contact"></div>
-            </div>
+            </div> -->
           </div>
                     </div>
                     <div class="experts-quote">
                         <p><i class="quote-icon"><img alt="Streamline Reporting" src="/img/svg/quote-light-blue-icon.svg" height="30" width="35"></i>Setting up a representative office in Singapore requires not only regulatory compliance but also strategic positioning within the country’s robust standards ecosystem. AHRI’s case highlights the value of aligning organizational objectives with Singapore’s policy landscape.</p>
+                                    <div class="experts-detail">
+              <div class="expert-name">David Stepat</div>
+              <div class="expert-position">Country Director (Singapore), Dezan Shira & Associates</div>
+            </div>
                     </div></div>
                 </div>
                 <div class="splide__slide">
@@ -360,15 +376,20 @@
               </a>
             </div>
 
-            <div class="experts-detail">
+            <!-- <div class="experts-detail">
               <div class="expert-name">Marco Förster</div>
               <div class="expert-position">ASEAN Director, Dezan Shira & Associates</div>
               <div class="expert-social-contact"></div>
-            </div>
+            </div> -->
           </div>
                 </div>
                   <div class="experts-quote">
-                        <p><i class="quote-icon"><img alt="Streamline Reporting" src="/img/svg/quote-light-blue-icon.svg" height="30" width="35"></i>Our role was to provide clarity from both a procedural and strategic standpoint—ensuring AHRI could operate confidently and engage effectively with regional stakeholders..</p>
+                        <p><i class="quote-icon"><img alt="Streamline Reporting" src="/img/svg/quote-light-blue-icon.svg" height="30" width="35"></i>Our role was to provide clarity from both a procedural and strategic standpoint—ensuring AHRI could operate confidently and engage effectively with regional stakeholders.</p>
+                        <div class="experts-detail">
+                        <div class="expert-name">Marco Förster</div>
+                        <div class="expert-position">ASEAN Director, Dezan Shira & Associates</div>
+             
+            </div>
                     </div>
                     </div>
                 </div>
@@ -379,7 +400,7 @@
   </div>
     
       </div>
-      <div class="pb-7 pt-7 our-team-experts section-light-gray-bg" id="contactOurExperts">
+      <div class="pb-7 pt-5 our-team-experts section-light-gray-bg" id="contactOurExperts">
         <h3 class="text-center">Contact Our Experts</h3>
         <div class="section-wrapper-min">
         <div class="splide" data-per-page="4" data-autoplay="false"

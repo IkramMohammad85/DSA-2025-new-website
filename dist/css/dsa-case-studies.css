@@ -188,10 +188,6 @@ ul li {
   transition: all 0.5s ease;
 }
 
-.services-question-section .got-question-block form input[type=tel], .services-question-section .got-question-block form input[type=text], .services-question-section .got-question-block form select, .services-question-section .got-question-block form textarea {
-  font-size: 14px;
-}
-
 @media (max-width: 667px) {
   .experts-quotes-card {
     flex-direction: column-reverse;
@@ -229,6 +225,18 @@ ul li {
   }
   .masthead.case-studies-banner {
     height: 420px;
+  }
+}
+@media (max-width: 900px) {
+  .in-this-card {
+    display: none;
+  }
+  .flex-grid-row--one-third .flex-col-7per, .flex-grid-row--one-third .flex-col-3per {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .widget_0 {
+    display: none;
   }
 }
 /*# sourceMappingURL=dsa-case-studies.css.map */

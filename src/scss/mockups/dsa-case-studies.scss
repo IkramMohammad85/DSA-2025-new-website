@@ -64,7 +64,7 @@
     animation-timing-function:ease-in;
     transition: all .5s ease;
 }
-.services-question-section .got-question-block form input[type=tel], .services-question-section .got-question-block form input[type=text], .services-question-section .got-question-block form select, .services-question-section .got-question-block form textarea{font-size: 14px;}
+
 
 @media (max-width: 667px) {
   .experts-quotes-card{flex-direction: column-reverse;}
@@ -77,4 +77,10 @@
   .rhs-form-card .services-question-section .got-question-block{margin-bottom: 10rem; margin-left: 0;}
   .in-this-card{margin-left: 0;}
   .masthead.case-studies-banner{height: 420px;}
+}
+@media (max-width: 900px) {
+.in-this-card{display: none;}
+.flex-grid-row--one-third .flex-col-7per, .flex-grid-row--one-third .flex-col-3per{ width: 100%; flex: 0 0 100%;}
+.widget_0{display: none;}
+
 }

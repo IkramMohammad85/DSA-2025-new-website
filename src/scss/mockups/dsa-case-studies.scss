@@ -1,4 +1,4 @@
-    h2[id][id] {scroll-margin-top: 120px;}
+    h2[id]{scroll-margin-top: 120px;}
     div[id] {scroll-margin-top: 80px;}
     .masthead.case-studies-banner h1{max-width: 750px;line-height: 1.3;}
     .our-experts{background-color: #fff;}
@@ -94,9 +94,7 @@
     transition: all .5s ease;
 }
 
-
 @media (max-width: 667px) {
-
   .ibm-enizi-sp{
     &.client-snapshot{
       .carousel-inner{justify-content: flex-start; gap: 0;
@@ -116,7 +114,6 @@
   .in-this-card{margin-left: 0;}
   .masthead.case-studies-banner{height: 420px;}
 }
-
 @media (min-width: 767px) and (max-width: 1024px) {
     .carousel-item {
         flex: inherit;
@@ -125,18 +122,13 @@
     .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block{width: auto;}
     .ibm-enizi-sp.client-snapshot .carousel-indicators{display: none;}
 }
-@media (max-width: 768px) {
-  .experts-quotes-card{flex-direction: column-reverse;}
-  .experts-quotes-section .our-experts{margin-left: 0; margin-right: 0; margin-bottom: 0;}
- 
-}
-
-
 @media (max-width: 900px) {
 .in-this-card{display: none;}
 .flex-grid-row--one-third .flex-col-7per, .flex-grid-row--one-third .flex-col-3per{ width: 100%; flex: 0 0 100%;}
 .widget_0{display: none;}
-
 }
-
+@media (max-width: 768px) {
+  .experts-quotes-card{flex-direction: column-reverse;}
+  .experts-quotes-section .our-experts{margin-left: 0; margin-right: 0; margin-bottom: 0;}
+}
 

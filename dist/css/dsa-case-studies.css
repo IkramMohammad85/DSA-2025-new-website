@@ -1,4 +1,4 @@
-h2[id][id] {
+h2[id] {
   scroll-margin-top: 120px;
 }
 
@@ -204,16 +204,6 @@ ul li {
     display: none;
   }
 }
-@media (max-width: 768px) {
-  .experts-quotes-card {
-    flex-direction: column-reverse;
-  }
-  .experts-quotes-section .our-experts {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-}
 @media (max-width: 900px) {
   .in-this-card {
     display: none;
@@ -224,6 +214,16 @@ ul li {
   }
   .widget_0 {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .experts-quotes-card {
+    flex-direction: column-reverse;
+  }
+  .experts-quotes-section .our-experts {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=dsa-case-studies.css.map */

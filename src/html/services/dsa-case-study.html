@@ -10,7 +10,6 @@
     <meta property="og:description" content="Stakeholders are increasingly scrutinizing environmental, social and governance (ESG) performance—and looking for companies to rise to the challenge of delivering ESG improvements."/>
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
-    <link rel="stylesheet" href="../css/account-table.min.css" type="text/css">
     <link rel="stylesheet" href="../css/dsa-case-studies.min.css" type="text/css">
     <link rel="preload" as="image" href="/img/about-us/dsa-case-study-banner.jpg" type="image/webp" fetchpriority="high">
      
@@ -20,6 +19,7 @@
 <body>
     <main class="home country-section" id="wrapper">
     @@include("../includes/header.html")
+   <!-- Banner section -->
       <section class="masthead case-studies-banner">
         <div class="section-wrapper-min">
           <div class="masthead__text justify-content-center">
@@ -28,20 +28,20 @@
         </div>
         <div class="masthead__bg"><img alt="Tax Services in Asia" src="/img/about-us/dsa-case-study-banner.jpg" width="1440" height="419"></div>
       </section>
+    <!-- Banner section end-->  
+
+     <!-- Intro section with TOC section -->
       <section class="page-intro pt-5 pb-5">
         <div class="section-wrapper-min">
           <div class="flex-grid-row flex-grid-row--one-third">
-            
             <div class="flex-col-7per">
               <h2 id="facilitatedAhri">Facilitated AHRI’s seamless RO setup</h2>
               <p>With Southeast Asia’s HVAC market expanding rapidly, AHRI sought to establish a regional presence to strengthen proximity to policymakers, partners, and consumers.</p>
         <p>We supported AHRI in evaluating multiple ASEAN jurisdictions and identifying Singapore as the optimal base for its first regional office. Our advisory covered every stage—from regulatory assessment and structure alignment to operational setup—ensuring full compliance and smooth execution.</p>
         <p>Through our guidance, AHRI successfully established a compliant representative office in Singapore, reinforcing its leadership in global standards, energy efficiency, and sustainable HVACR development across Southeast Asia.</p>
-
         <div class="d-flex mb-4">
             <a class="btn btn-primary" href="#gotQuestion">Make An Enquiry</a>
         </div>
-
         <h2 id="challenge">Challenge</h2>
         <p>Establishing a regional base required AHRI to navigate multiple layers of complexity, each with potential for delays, additional costs, and credibility risks, unless effectively managed:</p>
         <ul>
@@ -75,7 +75,6 @@
           <li>Regulatory alignment early in the process ensures smooth approvals and sustainable operations.</li>
           <li>A localized base strengthens long-term influence in regional policy and standards development.</li>
         </ul>
-
         </div>
         <div class="flex-col-3per">
           <div class="rhs_widgets  widget_0">
@@ -89,8 +88,6 @@
               <li><a href="#keyTakeaways">Strategic significance and key takeaways</a></li>
               <li><a href="#clientSnapshot">Client Snapshot</a></li>
               <li><a href="#insightsFromOurExperts">Expert Insights</a></li>
-              <!-- <li><a href="#contactOurExperts ">Contact Experts</a></li>
-              <li><a href="#ourClients">Our Clients</a></li> -->
             </ul>
           </div></div>
           <div class="rhs_widgets  widget_1">
@@ -99,9 +96,7 @@
           <div class="got-question-block" id="gotQuestion">
             <h3 class="mb-1">Have Any Questions?</h3>
             <p>Reach out to our local experts</p>
-
             <form method="post" action="https://www.dezshira.com/submit_mini_contact" id="services_side_full_form">
-
     <input type="hidden" name="dsa_contact_token" value="">
 <input type="hidden" name="request_uri" value="https://www.dezshira.com/services/business-advisory-services">
 <input type="hidden" name="to" value="info@dezshira.com">
@@ -132,22 +127,18 @@
 <option value="Vietnam">Vietnam</option>
         </select>
     </div>
-
     <div class="form-field-one-column">
         <input id="contact_form_full_name" type="text" name="full_name" placeholder="Name" required="">
     </div>
     <div class="form-field-one-column">
         <input id="contact_form_email_address" type="email" name="email_address" placeholder="Email" required="" data-validate-email="">
     </div>
-    <!--.form-field-one-column   input#company(type='text' name='company' placeholder='Company Name')
-    -->
     <div class="form-field-one-column">
         <input id="contact_form_organization" type="text" name="organization" placeholder="Company" required="">
     </div>
     <div class="form-field-one-column">
         <textarea id="contact_form_comments" name="comments" placeholder="Message" rows="2" cols="50" required=""></textarea>
     </div>
-
     <div class="form-field-one-column mb-1 hidden-filed">
         <div class="codecs">
             <div class="security-Check-code">
@@ -160,36 +151,33 @@
                     </svg></small></div>
         </div>
     </div>
-
     <div class="form-field-one-column">
         <label class="form-check-input" for="agree_privary_policy">
             <input type="checkbox" name="agree_privary_policy" id="agree_privary_policy"><span>I agree to receive communications from Dezan Shira &amp;
                 Associates and accept the<a href="https://www.dezshira.com/privacy-policy"> Privacy Policy</a></span>
         </label>
     </div>
-
     <div class="form-field-one-column">
         <div id="loading" class="text-center alert" style="display:none;" data-loading=""> Processing, please wait...</div>
         <div id="message" class="text-center" data-message=""></div>
     </div>
-
     <div class="text-center">
         <input type="submit" class="btn btn-primary" value="Send" id="submit">
     </div>
 </form>
-
           </div></div></div>
         </div>
         </div>
       </div>
     </div>
-
       </section>
+<!-- Intro section end -->
+
+<!-- Client Snapshot section -->
       <div id="clientSnapshot"></div>
       <section class="ibm-enizi-sp pt-5 pb-5 section-light-blu-bg client-snapshot" id="esg-journey">
         <div class="section-wrapper-min">
           <h2 class="mb-5">Client Snapshot</h2>
-          
           <div class="flex-spacing">
             <div class="carousel">
               <div class="carousel-inner">
@@ -251,10 +239,9 @@
           </div>
         </div>
       </section>
+<!-- Client Snapshot section end -->
 
-
-
-
+<!-- Insights from Our Experts section -->
       <div class="pb-5 pt-5 experts-quotes-section our-team-experts" id="insightsFromOurExperts">
         <h3 class="text-center">Insights from Our Experts</h3>
         <div class="section-wrapper-min">
@@ -272,11 +259,6 @@
                 <img src="https://d2h56l9e5xqoi4.cloudfront.net/dsa/images/personnel/rect_1/david-stepat.webp" alt="David Stepat" id="profile_image" style="object-fit: cover;">
               </a>
             </div>
-
-            <!-- <div class="experts-detail">
-              <div class="expert-name">David Stepat</div>
-              <div class="expert-position">Country Director (Singapore), Dezan Shira & Associates</div>
-            </div> -->
           </div>
                     </div>
                     <div class="experts-quote">
@@ -296,12 +278,6 @@
                 <img src="https://d2h56l9e5xqoi4.cloudfront.net/dsa/images/personnel/rect_1/marco-foerster.webp" alt="Marco Förster" id="profile_image" style="object-fit: cover;">
               </a>
             </div>
-
-            <!-- <div class="experts-detail">
-              <div class="expert-name">Marco Förster</div>
-              <div class="expert-position">ASEAN Director, Dezan Shira & Associates</div>
-              <div class="expert-social-contact"></div>
-            </div> -->
           </div>
                 </div>
                   <div class="experts-quote">
@@ -309,7 +285,6 @@
                         <div class="experts-detail">
                         <div class="expert-name">Marco Förster</div>
                         <div class="expert-position">ASEAN Director, Dezan Shira & Associates</div>
-             
             </div>
                     </div>
                     </div>
@@ -319,8 +294,10 @@
         </div>
     </div>
   </div>
-    
       </div>
+<!-- Insights from Our Experts section end -->
+
+<!-- Contact Our Experts section -->
       <div class="pb-7 pt-5 our-team-experts section-light-gray-bg" id="contactOurExperts">
         <h3 class="text-center">Contact Our Experts</h3>
         <div class="section-wrapper-min">
@@ -329,7 +306,6 @@
         data-breakpoints='{"1024":{"perPage":3,"gap":"0.7rem"},"640":{"perPage":2,"gap":"0.7rem", "arrows":true, "pagination":false},"480":{"perPage":1,"gap":"0.7rem"}}'>
         <div class="splide__track">
 <div class="splide__list">
-
                                             <div class="splide__slide">
                             <div class="our-experts">
                                 <div class="expert-name-thumbnail"><a
@@ -599,9 +575,11 @@
   </div>
     
       </div>
+<!-- Contact Our Experts section end -->
+
+<!-- Our Clients section -->
     <section class="pt-6 pb-6" id="ourClients">
         <div class="section-wrapper-min">
-
             <div class="flex-grid-row flex-grid-row--one-third padding-none">
                 <div class="flex-col-3per">
                     <h2 class="heading-level2 mb-1">Our Clients</h2>
@@ -800,22 +778,15 @@
             </div>
         </div>
     </section>
-
+<!-- Our Clients section end -->
 </main>
     @@include("../includes/footer.html")
-    <div class="popup-overlay center-popup" id="center-popup">
-      <div class="popup-content">
-        <button class="popup-close" onclick="toggle_modal('.center-popup');">&times;</button>
-        <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
-      </div>
-    </div>
-    
-   
+
+<!-- JS for top intro section right side widget -->
 <script>
   //Get the button
     var tocWidget = document.querySelector(".in-this-card");
     var rhsFormCard = document.querySelector(".rhs-form-card");
-
 
     window.onscroll = function() {
     scrollFunction()
@@ -832,9 +803,7 @@
     }
     }
 
-
     // Auto Widget placement
-
     var rhs_widgets = document.querySelectorAll(".rhs_widgets");
 
     for (wm = 0; wm <= rhs_widgets.length; wm++) {
@@ -847,7 +816,7 @@
 
     }
 </script>
-      
+<!-- end -->  
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

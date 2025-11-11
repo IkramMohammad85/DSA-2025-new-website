@@ -1,3 +1,4 @@
+/* html { scroll-padding-top: 100px;} */
 h2[id][id] {
   scroll-margin-top: 120px;
 }
@@ -17,6 +18,9 @@ div[id] {
 
 ul li {
   margin-bottom: 6px;
+}
+
+ul li {
   font-weight: 300;
   color: #535353;
   line-height: 29px;
@@ -26,51 +30,77 @@ ul li {
   background: linear-gradient(-180deg, #4C8FD5 0%, #284B6F 100%);
 }
 
-.section-light-blu-bg {
-  background-color: #f0f6fc !important;
-}
-
 .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block {
   flex-direction: column;
   width: 235px;
 }
-.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .icon-square {
+
+.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-title {
+  margin-right: 0;
+}
+
+.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-title .icon-square {
   margin: 0 0 1rem 0;
 }
+
 .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text h3 {
   font-weight: 600;
 }
+
 .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text h3 a {
-  font-weight: 600;
   color: #000;
+  font-weight: 600;
 }
-.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p, .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text a {
+
+.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p {
   color: #344C71;
   font-weight: 500;
 }
+
+.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p a {
+  color: #344C71;
+  font-weight: 500;
+}
+
 .ibm-enizi-sp.client-snapshot .carousel-inner {
   justify-content: center;
   gap: 2rem;
 }
+
 .ibm-enizi-sp.client-snapshot .carousel-inner .carousel-item {
   margin-bottom: 0;
 }
+
 .ibm-enizi-sp.client-snapshot .carousel-inner .carousel-item:nth-child(2) {
   width: 190px;
+}
+
+.section-light-blu-bg {
+  background-color: #f0f6fc !important;
 }
 
 .experts-quotes-card {
   display: flex;
   gap: 2rem;
 }
+
 .experts-quotes-card .our-experts.expert-list.expert-list-one-column {
   margin-top: 0;
+}
+
+.experts-quotes-section h3 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 3rem;
 }
 
 .quote-icon {
   float: left;
   margin-right: 1rem;
 }
+
 .quote-icon img {
   width: 30px;
   height: 25px;
@@ -81,9 +111,11 @@ ul li {
   line-height: 30px;
   margin-bottom: 1rem;
 }
+
 .experts-quote .experts-detail .expert-name, .experts-quote .experts-detail .expert-position {
   font-size: 13px;
 }
+
 .experts-quote .experts-detail .expert-name {
   font-weight: 600;
 }
@@ -96,33 +128,36 @@ ul li {
   margin-bottom: 3rem;
   margin-left: 1rem;
 }
+
 .in-this-card h3 {
   color: #fff;
   font-size: 16px;
   margin-bottom: 1rem;
 }
+
 .in-this-card ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .in-this-card ul li {
   color: #fff;
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 0.8rem;
 }
+
 .in-this-card ul li:last-child {
   margin-bottom: 0rem;
 }
+
 .in-this-card ul li a {
   color: #fff;
 }
+
 .in-this-card ul li a:hover {
   text-decoration: underline;
-}
-.in-this-card.sticky-toc-section {
-  margin-top: 0px;
 }
 
 .rhs-form-card .services-question-section .got-question-block {
@@ -131,7 +166,8 @@ ul li {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.rhs-form-card .services-question-section .got-question-block form input[type=email] {
+
+.services-question-section .got-question-block form input[type=email] {
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -149,6 +185,10 @@ ul li {
   top: 180px;
 }
 
+.in-this-card.sticky-toc-section {
+  margin-top: 0px;
+}
+
 .animate {
   animation-duration: 1s;
   animation-name: animate-fade;
@@ -159,52 +199,6 @@ ul li {
 }
 
 @media (max-width: 667px) {
-  .ibm-enizi-sp.client-snapshot .carousel-inner {
-    justify-content: flex-start;
-    gap: 0;
-  }
-  .ibm-enizi-sp.client-snapshot .carousel-inner .carousel-item {
-    flex: 0 0 100%;
-  }
-  .ibm-enizi-sp.client-snapshot .carousel-inner .carousel-item:nth-child(2) {
-    width: auto;
-  }
-  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block {
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p {
-    text-align: center;
-  }
-  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-title .icon-square {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .rhs-form-card .services-question-section .got-question-block {
-    margin-bottom: 2rem;
-    margin-left: 0;
-  }
-  .in-this-card {
-    margin-left: 0;
-  }
-  .masthead.case-studies-banner {
-    height: 420px;
-  }
-}
-@media (min-width: 767px) and (max-width: 1024px) {
-  .carousel-item {
-    flex: inherit;
-    margin-bottom: 0;
-  }
-  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block {
-    width: auto;
-  }
-  .ibm-enizi-sp.client-snapshot .carousel-indicators {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
   .experts-quotes-card {
     flex-direction: column-reverse;
   }
@@ -212,6 +206,35 @@ ul li {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+  }
+  .ibm-enizi-sp.client-snapshot .carousel-inner {
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p {
+    text-align: center;
+  }
+  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-title .icon-square {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ibm-enizi-sp.client-snapshot .carousel-inner .carousel-item:nth-child(2) {
+    width: auto;
+  }
+  .rhs-form-card .services-question-section .got-question-block {
+    margin-bottom: 10rem;
+    margin-left: 0;
+  }
+  .in-this-card {
+    margin-left: 0;
+  }
+  .masthead.case-studies-banner {
+    height: 420px;
   }
 }
 @media (max-width: 900px) {
@@ -226,4 +249,4 @@ ul li {
     display: none;
   }
 }
-/*# sourceMappingURL=dsa-case-studies.css.map */
+/*# sourceMappingURL=dsa-case-studies-backup.css.map */

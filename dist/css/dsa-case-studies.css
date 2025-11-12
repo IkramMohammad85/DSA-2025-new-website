@@ -44,9 +44,15 @@ ul li {
   font-weight: 600;
   color: #000;
 }
-.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p, .ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text a {
+.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p {
+  color: #344C71;
+}
+.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p a {
   color: #344C71;
   font-weight: 500;
+}
+.ibm-enizi-sp.client-snapshot .ibm-enizi-sp-container .ibm-enizi-sp-block .ibm-enizi-sp-text p a:hover {
+  text-decoration: underline;
 }
 .ibm-enizi-sp.client-snapshot .carousel-inner {
   justify-content: center;

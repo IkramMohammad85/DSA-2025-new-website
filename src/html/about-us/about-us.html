@@ -9,8 +9,12 @@
     <meta property="og:description" content="Dezan Shira & Associates is a foreign direct investment firm providing tax, legal and accounting services in China, Hong Kong, India, Vietnam, Singapore and ASEAN."/>
     <link rel="preload" as="image" href="/img/about-us/About-Us.webp" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/lng-change.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <style>
+    .login-cta{color: #357dc0; border-color: #357dc0;}
+    .lng-switcher { color: #0c2740;}
+    .lng-change:after, .lng-switcher-mob .lng-switcher:after{border-color: #0c2740;}
 @media screen and (min-width: 769px) and (max-width: 1024px) { .card-grid.card-grid-inner .card-horizontal{
   display: flex;
   flex-wrap: wrap;      
@@ -28,7 +32,7 @@
 
 <body>
     <main class="home country-section" id="wrapper">
-    @@include("../includes/headerV4.html")
+    @@include("../includes/headerV3-abs-en.html")
       <section class="masthead">
         <div class="section-wrapper-min">
           <div class="masthead__text justify-content-center">
@@ -351,7 +355,23 @@
 
 </main>
     @@include("../includes/footer.html")
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const switcher = document.querySelector('.lng-switcher');
+    const list = document.querySelector('.lng-list');
 
+    switcher.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      list.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.lng-switcher-mob')) {
+        list.classList.remove('show');
+      }
+    });
+  });
+</script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

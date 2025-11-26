@@ -9,8 +9,12 @@
     <meta property="og:description" content="Dezan Shira & Associates is a foreign direct investment firm providing tax, legal and accounting services in China, Hong Kong, India, Vietnam, Singapore and ASEAN."/>
     <link rel="preload" as="image" href="/img/about-us/About-Us.webp" type="image/webp" fetchpriority="high">
     <link rel="stylesheet" href="../css/main.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/lng-change.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <style>
+    .login-cta{color: #357dc0; border-color: #357dc0;}
+    .lng-switcher { color: #0c2740;}
+    .lng-change:after, .lng-switcher-mob .lng-switcher:after{border-color: #0c2740;}
 @media screen and (min-width: 769px) and (max-width: 1024px) { .card-grid.card-grid-inner .card-horizontal{
   display: flex;
   flex-wrap: wrap;      
@@ -28,16 +32,10 @@
 
 <body>
     <main class="home country-section" id="wrapper">
-    <style>
-    .service-page-subheading.mobile-view-cta{display: none;}
-  @media screen and (max-width: 700px) {
-    #industryFocus .page-link-block{ display: none;}
-    .service-page-subheading.mobile-view-cta{ display: block; margin: 0 0 1rem 0; padding-left: 24px; padding-top: 0;}
-     }
-  
-</style>
-<nav class="navbar">
-    <div class="navbar__wrapper"><a class="navbar__logo" href="index.html"><img src="/img/DSA logo_640x96.webp" alt="logo" sizes="(max-width: 480px) 240px,  380px" width="auto" height="57" sloading="lazy"></a>
+    <nav class="navbar">
+    <div class="navbar__wrapper"><a class="navbar__logo" href="index.html"><img src="/img/DSA logo_640x96.webp" alt="logo" sizes="(max-width: 480px) 240px,  380px" width="auto" height="57" sloading="lazy">
+      <!-- <img src="/img/logo-black.webp" alt="logo" sizes="(max-width: 480px) 240px,  380px" width="640" height="96" loading="lazy"> -->
+    </a>
       <div class="navbar__menuwrap navbar--desktop">
         <ul class="navbar__menu">
           <li><a class="navbar__togglemenu" href="javascript:void(0);" aria-expanded="false" data-twice="0">About Us</a>
@@ -199,14 +197,19 @@
                         <li rel="mgtab26"> <span>Business Advisory</span></li>
                         <li rel="mgtab27"> <span>Business Intelligence</span></li>
                         <li rel="mgtab28"> <span>Corporate Establishment</span></li>
-                        <li rel="mgtab30"> <span>HR and Payroll</span></li>
+                        <!--li(rel='mgtab29') span Due Diligence
+                        -->
+                        
+                      <li rel="mgtab30"><span>HR and Payroll</span></li>
+                        <li rel="mgtab49"> <span>Government and Economic Development</span></li>
+                        <!--li(rel='mgtab31') span Intellectual Property
+                        -->
                         <li rel="mgtab32"> <span>Mergers and Acquisitions</span></li>
                         <li rel="mgtab44"> <span>Risk Management and ESG</span></li>
                         <li rel="mgtab45"> <span>Tax</span></li>
                         <li rel="mgtab46"> <span>Technology</span></li>
                       </ul>
                       <div class="mega-mtab-container padding-top-tab-content">
-                        <h4 class="service-page-subheading mobile-view-cta"> <a href="https://www.dezshira.com/services?q=/services/&">All Our Services </a></h4> 
                         <h3 class="d_active mega-mtab-heading" rel="mgtab0">Accounting</h3>
                         <div class="mega-mtab-content" id="mgtab0">
                           <div class="page-link-block">
@@ -313,6 +316,23 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">Contact us today</a><a href="https://www.dezshira.com/brochure">View our corporate brochures</a><a href="https://www.dezshira.com/success-stories/testimonials">Success stories</a></div>
                           </div>
                         </div>
+                        <h3 class="mega-mtab-heading" rel="mgtab49">Government and Economic Development</h3>
+                        <div class="mega-mtab-content" id="mgtab49">
+                          <div class="page-link-block">
+                            <h3 class="service-page-heading">Government and Economic Development</h3>
+                            <h4 class="service-page-subheading"><a href="https://www.dezshira.com/services/government-and-economic-development">Government and Economic Development Services</a></h4>
+                            <ul>
+                      <li><a href="/services/business-intelligence-solutions">Business and Market intelligence</a></li>
+                      <li><a href="/services/government-and-economic-development#In-Market Representation">In-Market Representation</a></li>
+                      <li> <a href="/services/government-and-economic-development#Trade%20Missions%20%26%20Trade%20Shows">Trade Missions and Trade Shows</a></li>
+                      <li><a href="/services/payroll-human-resource-administration/global-staffing-solutions">Overseas Office Staffing Solutions</a></li>
+                    </ul>
+                          </div>
+                          <div class="cta-banner-block"><a href="#"><img src="https://d2h56l9e5xqoi4.cloudfront.net/dsa/images/EDO-g87094.webp" width="900" height="506"></a>
+                            <p>Our services support economic development organizations with practical expertise in Asia, enabling them to deliver stronger results for trade, investment, and regional growth.</p>
+                            <div class="b-cta-list"><a href="https://www.dezshira.com/contact">Contact us today</a><a href="https://www.dezshira.com/brochure">View our corporate brochures</a><a href="https://www.dezshira.com/success-stories/testimonials">Success stories</a></div>
+                          </div>
+                        </div>
                         <h3 class="mega-mtab-heading" rel="mgtab32">Mergers and Acquisitions</h3>
                         <div class="mega-mtab-content" id="mgtab32">
                           <div class="page-link-block">
@@ -407,7 +427,7 @@
                         <li rel="mgtab42"> <span>Trade and E-commerce</span></li>
                       </ul>
                       <div class="mega-mtab-container padding-top-tab-content">
-                        <h3 class="d_active mega-mtab-heading" rel="mgtab01"><a href="https://www.dezshira.com/industries">Education</a></h3>
+                        <h3 class="d_active mega-mtab-heading" rel="mgtab01">Education</h3>
                         <div class="mega-mtab-content" id="mgtab01">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Education</h3>
@@ -425,7 +445,7 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab34"><a href="https://www.dezshira.com/industries">Entertainment and Sports</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab34">Entertainment and Sports</h3>
                         <div class="mega-mtab-content" id="mgtab34">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Entertainment and Sports</h3>
@@ -443,7 +463,7 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab35"><a href="https://www.dezshira.com/industries">Environment and Cleantech</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab35">Environment and Cleantech</h3>
                         <div class="mega-mtab-content" id="mgtab35">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Environment and Cleantech</h3>
@@ -461,7 +481,7 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab36"><a href="https://www.dezshira.com/industries">Food and Beverage</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab36">Food and Beverage</h3>
                         <div class="mega-mtab-content" id="mgtab36">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Food and Beverage</h3>
@@ -479,7 +499,7 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab37"><a href="https://www.dezshira.com/industries">Healthcare</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab37">Healthcare</h3>
                         <div class="mega-mtab-content" id="mgtab37">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Healthcare</h3>
@@ -497,7 +517,7 @@
                             <div class="b-cta-list"><a href="#">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab38"><a href="https://www.dezshira.com/industries">Information Technology</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab38">Information Technology</h3>
                         <div class="mega-mtab-content" id="mgtab38">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Information Technology</h3>
@@ -515,7 +535,7 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab39"><a href="https://www.dezshira.com/industries">Manufacturing</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab39">Manufacturing</h3>
                         <div class="mega-mtab-content" id="mgtab39">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Manufacturing</h3>
@@ -533,7 +553,7 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab40"><a href="https://www.dezshira.com/industries">Non-Governmental Organizations</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab40">Non-Governmental Organizations</h3>
                         <div class="mega-mtab-content" id="mgtab40">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Non-Governmental Organizations</h3>
@@ -551,7 +571,7 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab41"><a href="https://www.dezshira.com/industries">Professional Services</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab41">Professional Services</h3>
                         <div class="mega-mtab-content" id="mgtab41">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Professional Services</h3>
@@ -569,7 +589,7 @@
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">See how we can support your business</a></div>
                           </div>
                         </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab42"><a href="https://www.dezshira.com/industries">Trade and E-commerce</a></h3>
+                        <h3 class="mega-mtab-heading" rel="mgtab42">Trade and E-commerce</h3>
                         <div class="mega-mtab-content" id="mgtab42">
                           <div class="page-link-block">
                             <h3 class="service-page-heading">Trade and E-commerce</h3>
@@ -595,31 +615,32 @@
               </div>
             </div>
           </li>
+
           <li><a class="navbar__togglemenu" href="#" aria-expanded="false" data-twice="0">Events & Webinars</a>
             <div class="navbar__megamenu navbar__megamenu--five">
               <div class="megamenu-wrapper">
                 <div class="flex-wrapper--spacing">
                   <div class="mega-mtabs-wrapper" id="events-webinars-menu">
-                   
                     <ul class="mega-mtabs">
-                      <li rel="mgtab90"> <span>ASEAN</span></li>
-                      <li rel="mgtab91"> <span>China</span></li>
-                      <li rel="mgtab92"> <span>India </span></li>
-                      <li rel="mgtab93"> <span>Indonesia</span></li>
-                      <li rel="mgtab94"> <span>Hong Kong SAR</span></li>
-                      <li class="active" rel="mgtab96"> <span>Singapore </span></li>
-                      <li rel="mgtab95"> <span>Vietnam</span></li>
+                      <li rel="mgtab90"> <span>About Us</span></li>
+                      <li rel="mgtab91"> <span>Careers</span></li>
+                      <li rel="mgtab92"> <span>Events </span></li>
+                      <li rel="mgtab93"> <span>News</span></li>
+                      <li rel="mgtab94"> <span>Media and Partners</span></li>
+                      <li class="active" rel="mgtab96"> <span>Personnel </span></li>
+                      <li rel="mgtab95"> <span>Client Success Stories</span></li>
                     </ul>
                     <div class="mega-mtab-container">
-                       <h4 class="service-page-subheading mobile-view-cta"> <a href="https://www.dezshira.com/events">All Upcoming Events </a></h4>  
-                      <h3 class="mega-mtab-heading" rel="mgtab90">ASEAN</h3>
+                      <h3 class="mega-mtab-heading" rel="mgtab90">About Us</h3>
                       <div class="mega-mtab-content" id="mgtab90">
                         <div class="page-link-block">
-                          <div class="service-page-heading"><a href="#">Events in ASEAN</a></div>
-                                                    <ul class="news-events-margin">
-                            <li><a href="https://www.dezshira.com/updates/2024/08/claremont-graduate-university-emba-students-insightful-asean-market-opportunities.html">Dezan Shira & Associates Hosts Claremont Graduate University EMBA Students for Insightful Session on ASEAN Market Opportunities and China+1 Strategy</a><span class="date">August 8, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/08/giovanni-lovisetti-participates-design-innovation-hub-milan-summer-youth-festival.html">Giovanni Lovisetti Participates in the 4th Edition of the China-Italy Design Innovation Hub Milan Summer Youth Festival in Milan</a><span class="date">August 2, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/07/dezan-shira-associates-hosts-panel-on-vietnams-personal-data-protection-decree.html">Dezan Shira & Associates Hosts Panel on Vietnam’s Personal Data Protection Decree</a><span class="date">July 30, 2024</span></li>
+                          <div class="service-page-heading">Who We Are</div>
+                          <ul>
+                            <li><a href="https://www.dezshira.com/about-us/our-firm.html">Company Overview</a></li>
+                            <li><a href="https://www.asiabriefing.com/">Asia Briefing</a></li>
+                            <li>    <a href="https://www.dezshira.com/about-us/asian-alliance.html">Asian Alliance</a></li>
+                            <li><a href="https://www.dezshira.com/about-us/history-milestones.html">History</a></li>
+                            <li><a href="https://www.dezshira.com/about-us/our-brands.html">Legacy of Our Brands </a></li>
                           </ul>
                         </div>
                         <div class="cta-banner-block"><a href="#"><img src="/img/mm-images/about-us/About-Us.webp" width="900" height="506"></a>
@@ -627,14 +648,15 @@
                           <div class="b-cta-list"><a href="https://www.dezshira.com/success-stories/testimonials">Contact our local experts</a><a href="https://www.dezshira.com/success-stories/testimonials">Success stories</a></div>
                         </div>
                       </div>
-                      <h3 class="mega-mtab-heading" rel="mgtab91">China</h3>
+                      <h3 class="mega-mtab-heading" rel="mgtab91">Careers</h3>
                       <div class="mega-mtab-content" id="mgtab91">
                         <div class="page-link-block">
-                          <div class="service-page-heading"><a href="#">Events in China</a></div>
-                                                    <ul class="news-events-margin">
-                            <li><a href="https://www.dezshira.com/updates/2024/08/claremont-graduate-university-emba-students-insightful-asean-market-opportunities.html">Dezan Shira & Associates Hosts Claremont Graduate University EMBA Students for Insightful Session on ASEAN Market Opportunities and China+1 Strategy</a><span class="date">August 8, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/08/giovanni-lovisetti-participates-design-innovation-hub-milan-summer-youth-festival.html">Giovanni Lovisetti Participates in the 4th Edition of the China-Italy Design Innovation Hub Milan Summer Youth Festival in Milan</a><span class="date">August 2, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/07/dezan-shira-associates-hosts-panel-on-vietnams-personal-data-protection-decree.html">Dezan Shira & Associates Hosts Panel on Vietnam’s Personal Data Protection Decree</a><span class="date">July 30, 2024</span></li>
+                          <div class="service-page-heading">Careers</div>
+                          <ul>
+                            <li><a href="https://www.dezshira.com/career#s-showcase">Our Core Values </a></li>
+                            <li><a href="https://www.dezshira.com/career/search?type=permanent">Career Opportunities</a></li>
+                            <li><a href="https://www.dezshira.com/career/search?role=Assistant+%28Intern%29">Internship Positions</a></li>
+                            <li><a href="https://www.dezshira.com/career#Meet_Our_People">Meet Our People  </a></li>
                           </ul>
                         </div>
                         <div class="cta-banner-block"><a href="#"><img src="/img/mm-images/about-us/Careers.webp" width="900" height="506"></a>
@@ -642,11 +664,11 @@
                           <div class="b-cta-list"><a href="https://www.dezshira.com/contact">Join our team    </a></div>
                         </div>
                       </div>
-                      <h3 class="mega-mtab-heading" rel="mgtab93">India</h3>
+                      <h3 class="mega-mtab-heading" rel="mgtab93">News</h3>
                       <div class="mega-mtab-content" id="mgtab93">
                         <div class="page-link-block">
-                          <div class="service-page-heading"><a href="#">Events in India</a></div>
-                   
+                          <div class="service-page-heading">Company News</div>
+                          <h4 class="service-page-subheading sp-padd-b"> <a href="https://www.dezshira.com/updates">All company news</a></h4>
                           <ul class="news-events-margin">
                             <li><a href="https://www.dezshira.com/updates/2024/08/claremont-graduate-university-emba-students-insightful-asean-market-opportunities.html">Dezan Shira & Associates Hosts Claremont Graduate University EMBA Students for Insightful Session on ASEAN Market Opportunities and China+1 Strategy</a><span class="date">August 8, 2024</span></li>
                             <li><a href="https://www.dezshira.com/updates/2024/08/giovanni-lovisetti-participates-design-innovation-hub-milan-summer-youth-festival.html">Giovanni Lovisetti Participates in the 4th Edition of the China-Italy Design Innovation Hub Milan Summer Youth Festival in Milan</a><span class="date">August 2, 2024</span></li>
@@ -658,15 +680,16 @@
                           <div class="b-cta-list"><a href="https://www.dezshira.com/updates/">Our latest company updates</a></div>
                         </div>
                       </div>
-                      <h3 class="mega-mtab-heading" rel="mgtab92">Indonesia</h3>
+                      <h3 class="mega-mtab-heading" rel="mgtab92">Events</h3>
                       <div class="mega-mtab-content" id="mgtab92">
                         <div class="page-link-block">
-                          <div class="service-page-heading"><a href="#">Events in Indonesia</a></div>
-                          
+                          <div class="service-page-heading">Latest Events</div>
+                          <h4 class="service-page-subheading sp-padd-b"><a href="https://www.dezshira.com/events">See our upcoming events</a></h4>
                           <ul class="news-events-margin">
-                            <li><a href="https://www.dezshira.com/updates/2024/08/claremont-graduate-university-emba-students-insightful-asean-market-opportunities.html">Dezan Shira & Associates Hosts Claremont Graduate University EMBA Students for Insightful Session on ASEAN Market Opportunities and China+1 Strategy</a><span class="date">August 8, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/08/giovanni-lovisetti-participates-design-innovation-hub-milan-summer-youth-festival.html">Giovanni Lovisetti Participates in the 4th Edition of the China-Italy Design Innovation Hub Milan Summer Youth Festival in Milan</a><span class="date">August 2, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/07/dezan-shira-associates-hosts-panel-on-vietnams-personal-data-protection-decree.html">Dezan Shira & Associates Hosts Panel on Vietnam’s Personal Data Protection Decree</a><span class="date">July 30, 2024</span></li>
+                            <li><span class="date event-d">Tuesday, August 20, 2024</span><a href="https://www.dezshira.com/events/details/critical-considerations-for-manufacturing-investments-in-vietnam.html">Critical Considerations for Manufacturing Investments in Vietnam</a></li>
+                            <li><span class="date event-d"> Thursday, August 22, 2024</span><a href="https://www.dezshira.com/events/details/navigating-profit-repatriation-china-foreign-exchange-environment.html">Navigating Profit Repatriation in China's Foreign Exchange Environment</a></li>
+                            <li><span class="date event-d"> Wednesday, August 28, 2024</span><a href="https://www.dezshira.com/events/details/unlocking-cross-border-success-odi-opportunities-and-considerations-for-indian-enterprises.html">Unlocking Cross-Border Success: ODI Opportunities and Considerations for Indian Enterprises</a></li>
+                            <li><span class="date event-d"> Thursday, September 5, 2024</span><a href="https://www.dezshira.com/events/details/data-compliance-china-healthcare-sector-insights-pharma-medtech-hospital-collaborations.html">Data Compliance in China's Healthcare Sector: Insights for Pharma, MedTech, and Hospital Collaborations</a></li>
                           </ul>
                           <div class="b-cta-list"><a href="https://www.dezshira.com/register">See all our upcoming events</a></div>
                         </div>
@@ -675,14 +698,13 @@
                           <div class="b-cta-list"><a href="https://www.dezshira.com/register">See all our upcoming events</a><a href="https://www.dezshira.com/register">Subscribe to our newsletter to receive updates in your inbox</a></div>
                         </div>
                       </div>
-                      <h3 class="mega-mtab-heading" rel="mgtab94">Hong kong SAR </h3>
+                      <h3 class="mega-mtab-heading" rel="mgtab94">Media and Partnerships</h3>
                       <div class="mega-mtab-content" id="mgtab94">
                         <div class="page-link-block">
-                          <div class="service-page-heading"><a href="#">Hong kong SAR </a></div>
-                                                    <ul class="news-events-margin">
-                            <li><a href="https://www.dezshira.com/updates/2024/08/claremont-graduate-university-emba-students-insightful-asean-market-opportunities.html">Dezan Shira & Associates Hosts Claremont Graduate University EMBA Students for Insightful Session on ASEAN Market Opportunities and China+1 Strategy</a><span class="date">August 8, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/08/giovanni-lovisetti-participates-design-innovation-hub-milan-summer-youth-festival.html">Giovanni Lovisetti Participates in the 4th Edition of the China-Italy Design Innovation Hub Milan Summer Youth Festival in Milan</a><span class="date">August 2, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/07/dezan-shira-associates-hosts-panel-on-vietnams-personal-data-protection-decree.html">Dezan Shira & Associates Hosts Panel on Vietnam’s Personal Data Protection Decree</a><span class="date">July 30, 2024</span></li>
+                          <div class="service-page-heading">Media and Partnerships</div>
+                          <ul>
+                            <li><a href="https://www.dezshira.com/about-us/media.html">Media</a></li>
+                            <li><a href="https://www.dezshira.com/partnerships/global">Partnerships</a></li>
                           </ul>
                         </div>
                         <div class="cta-banner-block"><a href="#"><img src="/img/mm-images/about-us/Media-&amp;-Partnerships.webp" width="900" height="506"></a>
@@ -690,14 +712,15 @@
                           <div class="b-cta-list"><a href="https://www.dezshira.com/contact">Contact our local experts</a><a href="https://www.dezshira.com/success-stories/testimonials">Success stories</a></div>
                         </div>
                       </div>
-                      <h3 class="mega-mtab-heading" rel="mgtab95">Singapore</h3>
+                      <h3 class="mega-mtab-heading" rel="mgtab95">Client Success Stories</h3>
                       <div class="mega-mtab-content" id="mgtab95">
                         <div class="page-link-block">
-                          <div class="service-page-heading"><a href="#">Events in Singapore</a></div>
-                                                    <ul class="news-events-margin">
-                            <li><a href="https://www.dezshira.com/updates/2024/08/claremont-graduate-university-emba-students-insightful-asean-market-opportunities.html">Dezan Shira & Associates Hosts Claremont Graduate University EMBA Students for Insightful Session on ASEAN Market Opportunities and China+1 Strategy</a><span class="date">August 8, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/08/giovanni-lovisetti-participates-design-innovation-hub-milan-summer-youth-festival.html">Giovanni Lovisetti Participates in the 4th Edition of the China-Italy Design Innovation Hub Milan Summer Youth Festival in Milan</a><span class="date">August 2, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/07/dezan-shira-associates-hosts-panel-on-vietnams-personal-data-protection-decree.html">Dezan Shira & Associates Hosts Panel on Vietnam’s Personal Data Protection Decree</a><span class="date">July 30, 2024</span></li>
+                          <div class="service-page-heading">Client Success Stories</div>
+                          <ul>
+                            <li> <a href="https://www.dezshira.com/success-stories/our-clients">Our Clients</a></li>
+                            <li><a href="https://www.dezshira.com/success-stories/brochures">Brochures</a></li>
+                            <li><a href="https://www.dezshira.com/success-stories/case-studies">Case Studies</a></li>
+                            <li><a href="https://www.dezshira.com/success-stories/experts-videos">Expert Series Videos</a></li>
                           </ul>
                         </div>
                         <div class="cta-banner-block"><a href="#"><img src="/img/mm-images/resources/Success-Stories.webp" width="900" height="506"></a>
@@ -705,15 +728,23 @@
                           <div class="b-cta-list"><a href="https://www.dezshira.com/contact">Learn how we help businesses thrive in Asia</a></div>
                         </div>
                       </div>
-                      <h3 class="d_active mega-mtab-heading" rel="mgtab96">Vietnam</h3>
+                      <h3 class="d_active mega-mtab-heading" rel="mgtab96">Personnel</h3>
                       <div class="mega-mtab-content" id="mgtab96">
                         <div class="page-link-block">
-                          <div class="service-page-heading"><a href="#">Events in Vietnam</a></div>
-                        
-                                                   <ul class="news-events-margin">
-                            <li><a href="https://www.dezshira.com/updates/2024/08/claremont-graduate-university-emba-students-insightful-asean-market-opportunities.html">Dezan Shira & Associates Hosts Claremont Graduate University EMBA Students for Insightful Session on ASEAN Market Opportunities and China+1 Strategy</a><span class="date">August 8, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/08/giovanni-lovisetti-participates-design-innovation-hub-milan-summer-youth-festival.html">Giovanni Lovisetti Participates in the 4th Edition of the China-Italy Design Innovation Hub Milan Summer Youth Festival in Milan</a><span class="date">August 2, 2024</span></li>
-                            <li><a href="https://www.dezshira.com/updates/2024/07/dezan-shira-associates-hosts-panel-on-vietnams-personal-data-protection-decree.html">Dezan Shira & Associates Hosts Panel on Vietnam’s Personal Data Protection Decree</a><span class="date">July 30, 2024</span></li>
+                          <div class="service-page-heading">Personnel</div>
+                          <h4 class="service-page-subheading"><a href="https://www.dezshira.com/personnel">All personnel </a></h4>
+                          <ul class="two-column-list">
+                            <li><a href="https://www.dezshira.com/personnel/tag/china-beijing">China</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/dubai"> Dubai</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/german">Germany</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/hong-kong">Hong Kong SAR</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/india-delhi">India</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/italy">Italy</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/indonesia">Indonesia</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/mongolia">Mongolia</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/singapore">Singapore</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/vietnam-hanoi">Vietnam</a></li>
+                            <li><a href="https://www.dezshira.com/personnel/tag/usa">United States</a></li>
                           </ul>
                         </div>
                         <div class="cta-banner-block"><a href="#"><img src="/img/mm-images/about-us/Personnel.webp" width="900" height="506"></a>
@@ -728,6 +759,7 @@
               </div>
             </div>
           </li>
+
           <li><a class="navbar__togglemenu" href="#" aria-expanded="false" data-twice="0">Resources</a>
             <div class="navbar__megamenu navbar__megamenu--three">
               <div class="megamenu-wrapper">
@@ -871,7 +903,6 @@
                       <li rel="mgtab23"> <span>International Desks</span></li>
                     </ul>
                     <div class="mega-mtab-container">
-                      <h4 class="service-page-subheading mobile-view-cta"> <a href="https://www.dezshira.com/office">All Global Offices </a></h4>   
                       <h3 class="d_active mega-mtab-heading" rel="mgtab19">Asia Pacific</h3>
                       <div class="mega-mtab-content" id="mgtab19">
                         <div class="page-link-block pa-right-padding">
@@ -999,7 +1030,10 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
         <ul class="navbar__iconmenu">
-          <li><a href="#" data-twice="1" aria-label="Search here"><i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i></a>
+          <!-- <li style="position: inherit;">
+            <a href="#" data-twice="1" aria-label="Search here">
+                <i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i>
+            </a>
             <div class="navbar__search">
               <div class="section-wrapper">
                 <div class="navbar__search__box">
@@ -1024,8 +1058,8 @@
                 <li><a class="sprite-flag sprite-flag-au" href="#">Australian Desk</a></li>
               </ul>
             </aside>
-          </li>
-          <li class="navbar__iconmenu__login"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
+          </li> -->
+          <!-- <li class="navbar__iconmenu__login" style="position: inherit;"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
             <aside class="navbar__accessbox login-reg-block">
               <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
                 <p>Thousands of free articles, guides, publications, and videos about doing business in Asia</p><a class="navbar__accessbox__close" href="#" onclick="toggle_modal('.navbar__accessbox');"><span class="sprite-close"></span></a>
@@ -1074,11 +1108,110 @@
                 </div>
               </div>
             </aside>
-          </li>
+          </li> -->
+<!-- <li><a data-twice="0" aria-label="Desk here" class=""><img src="https://www.dezshira.com/img/globe-lng.svg" alt="International Desk" style="width: 20px;"></a>
+            <aside class="navbar__desks">
+              <ul>
+                <li><a class="sprite-flag sprite-flag-us" href="/location/north-america">North American Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-uk" href="/location/uk-ireland">UK and Ireland Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-de" href="/location/germany">German Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-it" href="/location/italy">Italian Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-es" href="/location/spain">Spanish Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-cn" href="/location/china">Chinese Desk</a></li>
+                <li><a class="sprite-flag-uae" href="/location/middle-east"><img alt="Middle East Desk" src="https://www.dezshira.com/img/uae-flag-icon.svg" class="uae-flag" style="width: 20px;margin-right: 10px;">Middle East Desk</a></li>
+                <li><a class="sprite-flag sprite-flag-au" href="/location/australia">Australian Desk</a></li>
+              </ul>
+            </aside>
+          </li> -->
+          <!-- <li><a href="#" data-twice="0" aria-label="Desk here" class="lng-change">中文</a>
+            <aside class="navbar__desks navbar__lng">
+              <ul>
+                <li><a href="indexv4.html">Global (EN)</a></li>
+
+              </ul>
+            </aside>
+
+           </li> -->
+          <!--<li><a href="#" data-twice="0" aria-label="Search here"><i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i></a>
+            <div class="navbar__search">
+              <div class="section-wrapper">
+                <div class="navbar__search__box">
+                  <input type="search" name="" placeholder="Search">
+                  <button type="submit"><img src="/img/icon-magnifier-white.svg" alt="search" style="width: 20px;"></button>
+                </div>
+              </div>
+            </div>
+          </li> -->
+                    <!-- <li><a href="#" data-twice="0" aria-label="Desk here" class="lng-change">Global (EN)</a>
+            <aside class="navbar__desks navbar__lng">
+              <ul>
+                <li><a href="indexv4-cn.html">中文</a></li>
+
+              </ul>
+            </aside>
+           </li> -->
         </ul>
       </div>
+      <div class="login-lan">
+      <a href="#" onclick="toggle_modal('.navbar__accessbox');" class="login-cta"><span>Login</span></a>
+            <aside class="navbar__accessbox login-reg-block">
+              <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
+                <p>Thousands of free articles, guides, publications, and videos about doing business in Asia</p><a class="navbar__accessbox__close" href="#" onclick="toggle_modal('.navbar__accessbox');"><span class="sprite-close"></span></a>
+              </div>
+              <div class="navbar__accessbox--bot">
+                <div class="navbar__signupbox">
+                  <h3 class="subhead">Create Member Account </h3>
+        <div class="splide" data-per-page="1" data-autoplay="false"
+        data-pagination="true" data-type="slide" data-arrows="false" gap="0"
+        data-breakpoints='{"640":{"perPage":1,"gap":"0.7rem"},"480":{"perPage":1,"gap":"0.7rem"}}'>
+        <div class="splide__track">
+            <div class="splide__list">
+                <div class="splide__slide">
+                    <div class="signup-box">
+                    <img src="/img/icon-signup-1.svg" alt="">
+                  <p>Download our guides and publications</p>
+                  </div>
+                </div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                   <img src="/img/icon-signup-2.svg" alt="">
+                  <p>Search and access our archives of presentations, webinars, reports, and more </p>
+                </div></div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                   <img src="/img/icon-signup-3.svg" alt="">
+                  <p>Stay up to date with breaking news and regulatory updates by Asia Briefing</p>
+                </div></div>
+                <div class="splide__slide">
+                    <div class="signup-box">
+                  <img src="/img/icon-signup-4.svg" alt="">
+                  <p>Receive doing business tips and updates from Dezan Shira & Associates </p>
+                </div></div>
+                </div></div></div>
+                  <a href="#">Sign Up Now</a>
+                </div>
+                <div class="navbar__loginbox">
+                  <h3 class="subhead">Member Login</h3>
+                  <div class="navbar__loginform">
+                    <div class="navbar__loginitems">
+                      <input type="email" placeholder="Email Address">
+                      <input type="password" placeholder="Password"><a class="reset-link" href="#">Forgot password?</a>
+                    </div>
+                    <button>Log In</button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+    <div class="lng-switcher-mob"><a href="#" aria-label="language here" class="lng-switcher"><span class="mr-5">Global</span>  <span>(</span>EN<span>)</span></a>
+            <aside class="lng-list">
+              <ul>
+                <li><a href="about-us-cn.html">中文</a></li>
+              </ul>
+            </aside>
+        </div>
+        </div>
       <a href="/v2_2025/contact" class="contact-mv"><img src="/img/contact-mail.svg" width="20px" alt="contact"></a>
-      <button class="navbar__hamburger navbar--mobile" aria-contact-maillabel="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
+      <button class="navbar__hamburger navbar--mobile" aria-label="Open navigation menu" onclick="toggle_visibility('.navbar__menuwrap');"><span></span></button>
     </div>
   </nav>
       <section class="masthead">
@@ -1843,7 +1976,23 @@
     </div>
   </div>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const switcher = document.querySelector('.lng-switcher');
+    const list = document.querySelector('.lng-list');
 
+    switcher.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      list.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.lng-switcher-mob')) {
+        list.classList.remove('show');
+      }
+    });
+  });
+</script>
     <script src="../js/vendor/splide.min.js"></script>
     <script src="../js/main.min.js"></script>
 

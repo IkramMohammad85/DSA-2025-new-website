@@ -12,21 +12,20 @@
     <link rel="stylesheet" href="../css/lng-change.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <style>
-
     .login-cta{color: #357dc0; border-color: #357dc0;}
     .lng-switcher { color: #0c2740;}
     .lng-change:after, .lng-switcher-mob .lng-switcher:after{border-color: #0c2740;}
-@media screen and (min-width: 769px) and (max-width: 1024px) { .card-grid.card-grid-inner .card-horizontal{
-  display: flex;
-  flex-wrap: wrap;      
-  gap: 2rem;             
-  padding: 1rem;
-}
-.card-grid.card-grid-inner .card-horizontal > * {
-  flex: 1 1 calc(48% - 0.5rem); /* two items per row, accounting for the gap */
-  box-sizing: border-box;
-} 
-}  
+    @media screen and (min-width: 769px) and (max-width: 1024px) { .card-grid.card-grid-inner .card-horizontal{
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 2rem;             
+    padding: 1rem;
+    }
+    .card-grid.card-grid-inner .card-horizontal > * {
+    flex: 1 1 calc(48% - 0.5rem); /* two items per row, accounting for the gap */
+    box-sizing: border-box;
+    } 
+    }  
 </style>
 
 </head>
@@ -200,9 +199,7 @@
                         <li rel="mgtab28"> <span>Corporate Establishment</span></li>
                         <!--li(rel='mgtab29') span Due Diligence
                         -->
-                        
-                      <li rel="mgtab30"><span>HR and Payroll</span></li>
-                        <li rel="mgtab49"> <span>Government and Economic Development</span></li>
+                        <li rel="mgtab30"> <span>HR and Payroll</span></li>
                         <!--li(rel='mgtab31') span Intellectual Property
                         -->
                         <li rel="mgtab32"> <span>Mergers and Acquisitions</span></li>
@@ -314,23 +311,6 @@
                           </div>
                           <div class="cta-banner-block"><a href="#"><img src="/img/mm-images/service-areas/HR.webp" width="900" height="506"></a>
                             <p>Our HR services in Asia ensure your business meets local compliance, attracts top talent, and implements effective HR strategies for sustained growth.</p>
-                            <div class="b-cta-list"><a href="https://www.dezshira.com/contact">Contact us today</a><a href="https://www.dezshira.com/brochure">View our corporate brochures</a><a href="https://www.dezshira.com/success-stories/testimonials">Success stories</a></div>
-                          </div>
-                        </div>
-                        <h3 class="mega-mtab-heading" rel="mgtab49">Government and Economic Development</h3>
-                        <div class="mega-mtab-content" id="mgtab49">
-                          <div class="page-link-block">
-                            <h3 class="service-page-heading">Government and Economic Development</h3>
-                            <h4 class="service-page-subheading"><a href="https://www.dezshira.com/services/government-and-economic-development">Government and Economic Development Services</a></h4>
-                            <ul>
-                      <li><a href="/services/business-intelligence-solutions">Business and Market intelligence</a></li>
-                      <li><a href="/services/government-and-economic-development#In-Market Representation">In-Market Representation</a></li>
-                      <li> <a href="/services/government-and-economic-development#Trade%20Missions%20%26%20Trade%20Shows">Trade Missions and Trade Shows</a></li>
-                      <li><a href="/services/payroll-human-resource-administration/global-staffing-solutions">Overseas Office Staffing Solutions</a></li>
-                    </ul>
-                          </div>
-                          <div class="cta-banner-block"><a href="#"><img src="https://d2h56l9e5xqoi4.cloudfront.net/dsa/images/EDO-g87094.webp" width="900" height="506"></a>
-                            <p>Our services support economic development organizations with practical expertise in Asia, enabling them to deliver stronger results for trade, investment, and regional growth.</p>
                             <div class="b-cta-list"><a href="https://www.dezshira.com/contact">Contact us today</a><a href="https://www.dezshira.com/brochure">View our corporate brochures</a><a href="https://www.dezshira.com/success-stories/testimonials">Success stories</a></div>
                           </div>
                         </div>
@@ -617,7 +597,7 @@
             </div>
           </li>
 
-          <li><a class="navbar__togglemenu" href="#" aria-expanded="false" data-twice="0">Events & Webinars</a>
+          <!-- <li><a class="navbar__togglemenu" href="#" aria-expanded="false" data-twice="0">Events & Webinars</a>
             <div class="navbar__megamenu navbar__megamenu--five">
               <div class="megamenu-wrapper">
                 <div class="flex-wrapper--spacing">
@@ -759,7 +739,7 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> -->
 
           <li><a class="navbar__togglemenu" href="#" aria-expanded="false" data-twice="0">Resources</a>
             <div class="navbar__megamenu navbar__megamenu--three">
@@ -1030,8 +1010,8 @@
           </li>
           <li><a href="#">Contact Us</a></li>
         </ul>
-        <ul class="navbar__iconmenu">
-          <!-- <li style="position: inherit;">
+        <!-- <ul class="navbar__iconmenu">
+          <li style="position: inherit;">
             <a href="#" data-twice="1" aria-label="Search here">
                 <i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i>
             </a>
@@ -1059,8 +1039,8 @@
                 <li><a class="sprite-flag sprite-flag-au" href="#">Australian Desk</a></li>
               </ul>
             </aside>
-          </li> -->
-          <!-- <li class="navbar__iconmenu__login" style="position: inherit;"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
+          </li>
+          <li class="navbar__iconmenu__login"  style="position: inherit;"><a href="#" onclick="toggle_modal('.navbar__accessbox');"><span>Login</span></a>
             <aside class="navbar__accessbox login-reg-block">
               <div class="navbar__accessbox--top"><img class="navbar__accessbox__logo" src="/img/asiapedia-logo-tagline-black.svg" alt="Asiapedia logo">
                 <p>Thousands of free articles, guides, publications, and videos about doing business in Asia</p><a class="navbar__accessbox__close" href="#" onclick="toggle_modal('.navbar__accessbox');"><span class="sprite-close"></span></a>
@@ -1109,49 +1089,16 @@
                 </div>
               </div>
             </aside>
-          </li> -->
-<!-- <li><a data-twice="0" aria-label="Desk here" class=""><img src="https://www.dezshira.com/img/globe-lng.svg" alt="International Desk" style="width: 20px;"></a>
-            <aside class="navbar__desks">
-              <ul>
-                <li><a class="sprite-flag sprite-flag-us" href="/location/north-america">North American Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-uk" href="/location/uk-ireland">UK and Ireland Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-de" href="/location/germany">German Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-it" href="/location/italy">Italian Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-es" href="/location/spain">Spanish Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-cn" href="/location/china">Chinese Desk</a></li>
-                <li><a class="sprite-flag-uae" href="/location/middle-east"><img alt="Middle East Desk" src="https://www.dezshira.com/img/uae-flag-icon.svg" class="uae-flag" style="width: 20px;margin-right: 10px;">Middle East Desk</a></li>
-                <li><a class="sprite-flag sprite-flag-au" href="/location/australia">Australian Desk</a></li>
-              </ul>
-            </aside>
-          </li> -->
-          <!-- <li><a href="#" data-twice="0" aria-label="Desk here" class="lng-change">中文</a>
+          </li>
+          <li><a href="#" data-twice="0" aria-label="Desk here" class="lng-change">中文</a>
             <aside class="navbar__desks navbar__lng">
               <ul>
                 <li><a href="indexv4.html">Global (EN)</a></li>
 
               </ul>
             </aside>
-
-           </li> -->
-          <!--<li><a href="#" data-twice="0" aria-label="Search here"><i aria-hidden="true"><img src="/img/icon-magnifier.svg" width="20px" alt="Search"></i></a>
-            <div class="navbar__search">
-              <div class="section-wrapper">
-                <div class="navbar__search__box">
-                  <input type="search" name="" placeholder="Search">
-                  <button type="submit"><img src="/img/icon-magnifier-white.svg" alt="search" style="width: 20px;"></button>
-                </div>
-              </div>
-            </div>
-          </li> -->
-                    <!-- <li><a href="#" data-twice="0" aria-label="Desk here" class="lng-change">Global (EN)</a>
-            <aside class="navbar__desks navbar__lng">
-              <ul>
-                <li><a href="indexv4-cn.html">中文</a></li>
-
-              </ul>
-            </aside>
-           </li> -->
-        </ul>
+           </li>
+        </ul> -->
       </div>
       <div class="login-lan">
       <a href="#" onclick="toggle_modal('.navbar__accessbox');" class="login-cta"><span>Login</span></a>
@@ -1203,10 +1150,10 @@
                 </div>
               </div>
             </aside>
-    <div class="lng-switcher-mob"><a href="#" aria-label="language here" class="lng-switcher"><span class="mr-5">Global</span>  <span>(</span>EN<span>)</span></a>
+    <div class="lng-switcher-mob"><a href="#" aria-label="language here" class="lng-switcher">中文</a>
             <aside class="lng-list">
               <ul>
-                <li><a href="about-us-cn.html">中文</a></li>
+                <li><a href="about-us.html">Global (EN)</a></li>
               </ul>
             </aside>
         </div>
@@ -1977,7 +1924,7 @@
     </div>
   </div>
 </footer>
-    <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const switcher = document.querySelector('.lng-switcher');
     const list = document.querySelector('.lng-list');

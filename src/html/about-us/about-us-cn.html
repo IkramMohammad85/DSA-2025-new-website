@@ -12,28 +12,27 @@
     <link rel="stylesheet" href="../css/lng-change.css" type="text/css" />
     <link rel="stylesheet" href="../css/vendor/splide.min.css" type="text/css">
     <style>
-
     .login-cta{color: #357dc0; border-color: #357dc0;}
     .lng-switcher { color: #0c2740;}
     .lng-change:after, .lng-switcher-mob .lng-switcher:after{border-color: #0c2740;}
-@media screen and (min-width: 769px) and (max-width: 1024px) { .card-grid.card-grid-inner .card-horizontal{
-  display: flex;
-  flex-wrap: wrap;      
-  gap: 2rem;             
-  padding: 1rem;
-}
-.card-grid.card-grid-inner .card-horizontal > * {
-  flex: 1 1 calc(48% - 0.5rem); /* two items per row, accounting for the gap */
-  box-sizing: border-box;
-} 
-}  
+    @media screen and (min-width: 769px) and (max-width: 1024px) { .card-grid.card-grid-inner .card-horizontal{
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 2rem;             
+    padding: 1rem;
+    }
+    .card-grid.card-grid-inner .card-horizontal > * {
+    flex: 1 1 calc(48% - 0.5rem); /* two items per row, accounting for the gap */
+    box-sizing: border-box;
+    } 
+    }  
 </style>
 
 </head>
 
 <body>
     <main class="home country-section" id="wrapper">
-    @@include("../includes/headerV3-abs-en.html")
+    @@include("../includes/headerV3-abs-cn.html")
       <section class="masthead">
         <div class="section-wrapper-min">
           <div class="masthead__text justify-content-center">
@@ -356,7 +355,7 @@
 
 </main>
     @@include("../includes/footer.html")
-    <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const switcher = document.querySelector('.lng-switcher');
     const list = document.querySelector('.lng-list');

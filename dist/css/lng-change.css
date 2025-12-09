@@ -5,12 +5,12 @@
   font-size: 15px;
   min-width: 80px;
 }
-
 .lng-change img {
   width: 18px;
 }
 
-.lng-change:after, .lng-switcher-mob .lng-switcher:after {
+.lng-change:after,
+.lng-switcher-mob .lng-switcher:after {
   content: "";
   border: 2px solid #fff;
   border-width: 0 2px 2px 0;
@@ -20,7 +20,8 @@
   transition: transform 0.2s ease;
 }
 
-.navbar__desks.navbar__lng, .lng-list {
+.navbar__desks.navbar__lng,
+.lng-list {
   width: 125px;
   top: 62px;
   left: inherit;
@@ -33,13 +34,12 @@
   background-color: inherit;
 }
 
-.lng-switcher-mob .lng-switcher:after {
-  margin-left: 5px;
-}
-
 .lng-switcher-mob {
   display: flex;
   position: relative;
+}
+.lng-switcher-mob .lng-switcher:after {
+  margin-left: 5px;
 }
 
 .lng-switcher {
@@ -48,7 +48,6 @@
   color: #fff;
   font-size: 15px;
 }
-
 .lng-switcher:hover {
   color: #357dc0;
 }
@@ -57,32 +56,26 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-
-.lng-list.show {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.lng-list {
   position: absolute;
   font-size: 0.875rem;
   top: 34px;
   background-color: #fff;
   transition: opacity 0.2s ease-out;
 }
-
 .lng-list ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .lng-list ul li a {
   padding: 1rem 1rem;
   font-weight: bold;
   display: block;
+}
+.lng-list.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .login-cta {
@@ -105,12 +98,12 @@
   border: solid 1px #357dc0;
   color: #357dc0;
 }
-
 .navbar-bgHover .lng-switcher {
   color: #0c2740;
 }
 
-.navbar-bgHover .lng-change:after, .navbar-bgHover .lng-switcher-mob .lng-switcher:after {
+.navbar-bgHover .lng-change:after,
+.navbar-bgHover .lng-switcher-mob .lng-switcher:after {
   border-color: #0c2740;
 }
 
@@ -139,12 +132,12 @@
   .lng-switcher span {
     display: none;
   }
-  .lng-switcher-mob a {
-    color: #0c2740;
-  }
   .lng-switcher-mob {
     display: inline-block;
     position: relative;
+  }
+  .lng-switcher-mob a {
+    color: #0c2740;
   }
   .lng-list {
     top: 20px;
@@ -153,7 +146,8 @@
   .lng-list ul li a {
     padding: 0.5rem;
   }
-  .lng-change:after, .lng-switcher-mob .lng-switcher:after {
+  .lng-change:after,
+  .lng-switcher-mob .lng-switcher:after {
     border-color: #0c2740;
   }
 }

@@ -1168,38 +1168,38 @@
                 <tr class="table-second" style="background: #fff;">
                   <th></th>  
                   <th></th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/BD-flag.svg" width="53" height="33" alt="BD"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabB" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/BD-flag.svg" width="53" height="33" alt="BD"></a>
                           <span class="tooltiptext tooltip-bottom">Bangladesh</span>
                         </div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/CN-flag.svg" width="53" height="33" alt="CN"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a  data-tab="dectabC" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/CN-flag.svg" width="53" height="33" alt="CN"></a>
                   <span class="tooltiptext tooltip-bottom">China</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/IN-flag.svg" width="53" height="33" alt="IN"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabI" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/IN-flag.svg" width="53" height="33" alt="IN"></a>
                   <span class="tooltiptext tooltip-bottom">India</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/ID-flag.svg" width="53" height="33" alt="ID"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a  data-tab="dectabIN" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/ID-flag.svg" width="53" height="33" alt="ID"></a>
                   <span class="tooltiptext tooltip-bottom">Indonesia</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/JP-flag.svg" width="53" height="33" alt="JP"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabJ" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/JP-flag.svg" width="53" height="33" alt="JP"></a>
                   <span class="tooltiptext tooltip-bottom">Japan</span></div>
                   </th>
-                  <th style="text-align: center;"><div class="tooltip"> <a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/MY-flag.svg" width="53" height="33" alt="MY"></a>
+                  <th style="text-align: center;"><div class="tooltip"> <a data-tab="dectabM" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/MY-flag.svg" width="53" height="33" alt="MY"></a>
                   <span class="tooltiptext tooltip-bottom">Malaysia</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/PH-flag.svg" width="53" height="33" alt="PH" class="tooltip"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabP" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/PH-flag.svg" width="53" height="33" alt="PH" class="tooltip"></a>
                   <span class="tooltiptext tooltip-bottom">Philippines</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/SG-flag.svg" width="53" height="33" alt="SG"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabS" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/SG-flag.svg" width="53" height="33" alt="SG"></a>
                   <span class="tooltiptext tooltip-bottom">Singapore</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/KR-flag.svg" width="53" height="33" alt="KR"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><div data-tab="dectabSK" class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/KR-flag.svg" width="53" height="33" alt="KR"></a>
                   <span class="tooltiptext tooltip-bottom">South Korea</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/TH-flag.svg" width="53" height="33" alt="TH"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabT" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/TH-flag.svg" width="53" height="33" alt="TH"></a>
                   <span class="tooltiptext tooltip-bottom">Thailand</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/VN-flag.svg" width="53" height="33" alt="VN"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabV" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/VN-flag.svg" width="53" height="33" alt="VN"></a>
                   <span class="tooltiptext tooltip-bottom">Vietnam</span></div>
                   </th>
                 </tr>
@@ -3313,6 +3313,36 @@
     </div>
   </div>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const container = document.querySelector(".common-tab-container");
+    if (!container) return;
+
+    function showTab(tabId) {
+        const tabContents = container.querySelectorAll(".common-tab-content");
+        const tabButtons = container.querySelectorAll(".common-tab-button");
+
+        tabContents.forEach(content => content.style.display = "none");
+        const target = container.querySelector(`#${tabId}`);
+        if (target) target.style.display = "block";
+
+        tabButtons.forEach(button => button.classList.remove("active"));
+        const activeButton = container.querySelector(`.common-tab-button[data-tab="${tabId}"]`);
+        if (activeButton) activeButton.classList.add("active");
+    }
+
+    // scroll tab open on click country flag
+    document.querySelectorAll(".scrollto").forEach(link => {
+        link.addEventListener("click", function () {
+            const tabId = this.getAttribute("data-tab");
+            if (tabId) showTab(tabId);
+        });
+    });
+
+});
+</script>
+
     <script src="/js/vendor/splide.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>

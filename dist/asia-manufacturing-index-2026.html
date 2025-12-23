@@ -17,15 +17,12 @@
       .table-responsive .f-table{width: 100%;  max-width: 100%;  border-collapse: collapse;}
       .table-responsive .f-table tbody th, td { white-space: nowrap; }
       .table-responsive .f-table thead th, td { white-space: nowrap; }
-        table.f-table>tbody>tr>td{border: none;border-bottom: 1px solid #ddd; text-align: center; }
-        table.f-table>thead>tr>th {border: none; vertical-align: bottom; background-color: #e4ecf4;}
-
-          
-    .tabel-social{position: sticky; right: 0;  width: 30px;  float: right; top: 85px; list-style: none; padding: 0; margin: 0;}
-    .tabel-social li {margin-bottom: 0.5rem;}
-    .eight-core-tiers .td-label{display: flex; align-items: center; justify-content: center; height: 30px; width: 30px;}
-    .eight-core-table .tooltip .tooltiptext{width: 92px;}
-          
+      table.f-table>tbody>tr>td{border: none;border-bottom: 1px solid #ddd; text-align: center; }
+      table.f-table>thead>tr>th {border: none; vertical-align: bottom; background-color: #e4ecf4;}
+      .tabel-social{position: sticky; right: 0;  width: 30px;  float: right; top: 85px; list-style: none; padding: 0; margin: 0;}
+      .tabel-social li {margin-bottom: 0.5rem;cursor: pointer;}
+      .eight-core-tiers .td-label{display: flex; align-items: center; justify-content: center; height: 30px; width: 30px;}
+      .eight-core-table .tooltip .tooltiptext{width: 92px;}
     </style>
 </head>
 
@@ -1141,10 +1138,10 @@
           </div>
                       <ul class="tabel-social">
                  <li><img alt="Share" src="/img/share.svg"  width="15" height="15"></li>
-                <li><a href="https://www.linkedin.com/company/51688" aria-label="Follow us on linkedin"><img alt="linkedin" src="/img/Li.svg"  width="20" height="20"></a></li>
-                                <li><a href="https://twitter.com/dezanshira" aria-label="Follow us on Twitter"><img alt="X" src="/img/X-d.svg"  width="20" height="20"></a></li>
-                                <li><a href="https://www.facebook.com/DezanShira" aria-label="Follow us on Facebook"><img alt="Facebook" src="/img/FB.svg"  width="20" height="20"></a></li>
-                                <li><a href="https://www.dezshira.com/contact" aria-label="Follow us on Email"><img alt="Email" src="/img/email.svg"  width="20" height="20"></a></li>
+                <li><a onclick="shareLinkedIn()" aria-label="Follow us on linkedin"><img alt="linkedin" src="/img/Li.svg"  width="20" height="20"></a></li>
+                                <li><a onclick="shareTwitter()" aria-label="Follow us on Twitter"><img alt="X" src="/img/X-d.svg"  width="20" height="20"></a></li>
+                                <li><a onclick="shareFacebook()" aria-label="Follow us on Facebook"><img alt="Facebook" src="/img/FB.svg"  width="20" height="20"></a></li>
+                                <li><a onclick="shareEmail()" aria-label="Follow us on Email"><img alt="Email" src="/img/email.svg"  width="20" height="20"></a></li>
             </ul>
           <div class="eight-core-table">
 
@@ -1159,7 +1156,7 @@
                   <th scope="col" style="text-align: center;"> <a class="scrollto" href="#dynamic-emerging-countries">ID</a></th>
                   <th scope="col" style="text-align: center;"> <a class="scrollto" href="#dynamic-emerging-countries">JP</a></th>
                   <th scope="col" style="text-align: center;"> <a class="scrollto" href="#dynamic-emerging-countries">MY</a></th>
-                  <th scope="col" style="text-align: center;"> <a class="scrollto" href="#dynamic-emerging-countries">PH</a></th>
+                  <th scope="col" style="text-align: center;vertical-align: top;"> <a class="scrollto" href="#dynamic-emerging-countries">PH</a></th>
                   <th scope="col" style="text-align: center;"> <a class="scrollto" href="#dynamic-emerging-countries">SG</a></th>
                   <th scope="col" style="text-align: center;"> <a href="#" target="_blank">KR</a></th>
                   <th scope="col" style="text-align: center;"> <a class="scrollto" href="#dynamic-emerging-countries">TH</a></th>
@@ -1168,39 +1165,28 @@
                 <tr class="table-second" style="background: #fff;">
                   <th></th>  
                   <th></th>
-                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabB" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/BD-flag.svg" width="53" height="33" alt="BD"></a>
-                          <span class="tooltiptext tooltip-bottom">Bangladesh</span>
-                        </div>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabB" class="scrollto" href="#dynamic-emerging-countries"><img src="/img/country-flags/BD.webp" width="45" height="30" alt="BD"></a><span class="tooltiptext tooltip-bottom">Bangladesh</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a  data-tab="dectabC" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/CN-flag.svg" width="53" height="33" alt="CN"></a>
-                  <span class="tooltiptext tooltip-bottom">China</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a  data-tab="dectabC" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/CN.webp" width="45" height="30" alt="CN"></a><span class="tooltiptext tooltip-bottom">China</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabI" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/IN-flag.svg" width="53" height="33" alt="IN"></a>
-                  <span class="tooltiptext tooltip-bottom">India</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabI" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/IN.webp" width="45" height="30" alt="IN"></a><span class="tooltiptext tooltip-bottom">India</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a  data-tab="dectabIN" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/ID-flag.svg" width="53" height="33" alt="ID"></a>
-                  <span class="tooltiptext tooltip-bottom">Indonesia</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a  data-tab="dectabIN" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/ID.webp" width="45" height="30" alt="ID"></a><span class="tooltiptext tooltip-bottom">Indonesia</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabJ" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/JP-flag.svg" width="53" height="33" alt="JP"></a>
-                  <span class="tooltiptext tooltip-bottom">Japan</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabJ" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/JP.webp" width="45" height="30" alt="JP"></a><span class="tooltiptext tooltip-bottom">Japan</span></div>
                   </th>
-                  <th style="text-align: center;"><div class="tooltip"> <a data-tab="dectabM" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/MY-flag.svg" width="53" height="33" alt="MY"></a>
-                  <span class="tooltiptext tooltip-bottom">Malaysia</span></div>
+                  <th style="text-align: center;"><div class="tooltip"> <a data-tab="dectabM" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/MY.webp" width="45" height="30" alt="MY"></a><span class="tooltiptext tooltip-bottom">Malaysia</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabP" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/PH-flag.svg" width="53" height="33" alt="PH" class="tooltip"></a>
+                  <th style="text-align: center; vertical-align: top;"> <div class="tooltip"><a data-tab="dectabP" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/PH.webp" width="45" height="30" alt="PH" class="tooltip"></a>
                   <span class="tooltiptext tooltip-bottom">Philippines</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabS" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/SG-flag.svg" width="53" height="33" alt="SG"></a>
-                  <span class="tooltiptext tooltip-bottom">Singapore</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabS" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/SG.webp" width="45" height="30" alt="SG"></a><span class="tooltiptext tooltip-bottom">Singapore</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><div data-tab="dectabSK" class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/KR-flag.svg" width="53" height="33" alt="KR"></a>
-                  <span class="tooltiptext tooltip-bottom">South Korea</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><div data-tab="dectabSK" class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"><img src="/img/country-flags/KR.webp" width="45" height="30" alt="KR"></a><span class="tooltiptext tooltip-bottom">South Korea</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabT" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/TH-flag.svg" width="53" height="33" alt="TH"></a>
-                  <span class="tooltiptext tooltip-bottom">Thailand</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabT" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/TH.webp" width="45" height="30" alt="TH"></a><span class="tooltiptext tooltip-bottom">Thailand</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabV" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country/VN-flag.svg" width="53" height="33" alt="VN"></a>
-                  <span class="tooltiptext tooltip-bottom">Vietnam</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabV" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/VN.webp" width="45" height="30" alt="VN"></a><span class="tooltiptext tooltip-bottom">Vietnam</span></div>
                   </th>
                 </tr>
               </thead>
@@ -3342,6 +3328,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+<script>
+const shareUrl = encodeURIComponent(window.location.href);
+const shareText = encodeURIComponent(document.title);
+
+function openPopup(url) {
+  window.open(
+    url,
+    'share-window',
+    'width=600,height=500,scrollbars=yes'
+  );
+}
+
+function shareFacebook() {
+  openPopup(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`);
+}
+
+function shareTwitter() {
+  openPopup(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`);
+}
+
+function shareLinkedIn() {
+  openPopup(`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`);
+}
+
+function shareEmail() {
+  window.location.href = `mailto:?subject=${shareText}&body=${shareUrl}`;
+}
+</script>
+
 
     <script src="/js/vendor/splide.min.js"></script>
     <script src="js/main.min.js"></script>

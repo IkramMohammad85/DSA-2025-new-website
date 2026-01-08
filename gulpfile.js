@@ -26,9 +26,9 @@ const paths = {
   htmlDest: "./dist",
 };
 
-// -------------------- STYLES --------------------
+// *** style ***
 
-// DEV CSS (with sourcemaps)
+// dev CSS (with sourcemaps)
 function stylesDev() {
   return src(paths.scss)
     .pipe(sourcemaps.init())
@@ -38,7 +38,7 @@ function stylesDev() {
     .pipe(isNetlify ? dest(paths.cssDest) : browserSync.stream());
 }
 
-// PROD CSS (minified, no sourcemap comment)
+// Prod CSS (minified, no sourcemap comment)
 function stylesProd() {
   return src(paths.scss)
     .pipe(sass().on("error", sass.logError))
@@ -48,7 +48,7 @@ function stylesProd() {
     .pipe(dest(paths.cssDest));
 }
 
-// -------------------- SCRIPTS --------------------
+// *** scripts ***
 
 function scripts() {
   return src(paths.js)
@@ -62,7 +62,7 @@ function scripts() {
     .pipe(isNetlify ? dest(paths.jsDest) : browserSync.stream());
 }
 
-// -------------------- HTML --------------------
+// *** HTML ***
 
 function html() {
   return src(paths.html)
@@ -71,7 +71,7 @@ function html() {
     .pipe(isNetlify ? dest(paths.htmlDest) : browserSync.stream());
 }
 
-// -------------------- WATCH (DEV ONLY) --------------------
+// ***Watch (dev only) ***
 
 function watchFiles() {
   browserSync.init({
@@ -84,12 +84,12 @@ function watchFiles() {
   watch("src/html/**/*.html", html);
 }
 
-// -------------------- TASK EXPORTS --------------------
+//  ***Task in three part*** 
 
-// 🔥 Netlify build task
+// Netlify build task
 exports.build = series(stylesProd, scripts, html);
 
-// 👨‍💻 Local development
+// Local development
 exports.dev = series(html, scripts, stylesDev, watchFiles);
 
 // Default = dev

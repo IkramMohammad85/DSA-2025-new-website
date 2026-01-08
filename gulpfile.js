@@ -26,7 +26,7 @@ const paths = {
   htmlDest: "./dist",
 };
 
-// *** style ***
+// -------------------- style --------------------
 
 // dev CSS (with sourcemaps)
 function stylesDev() {
@@ -48,7 +48,7 @@ function stylesProd() {
     .pipe(dest(paths.cssDest));
 }
 
-// *** scripts ***
+// -------------------- scripts --------------------
 
 function scripts() {
   return src(paths.js)
@@ -62,7 +62,7 @@ function scripts() {
     .pipe(isNetlify ? dest(paths.jsDest) : browserSync.stream());
 }
 
-// *** HTML ***
+// -------------------- HTML --------------------
 
 function html() {
   return src(paths.html)
@@ -71,7 +71,7 @@ function html() {
     .pipe(isNetlify ? dest(paths.htmlDest) : browserSync.stream());
 }
 
-// ***Watch (dev only) ***
+// -------------------- Watch (dev only) --------------------
 
 function watchFiles() {
   browserSync.init({
@@ -84,7 +84,7 @@ function watchFiles() {
   watch("src/html/**/*.html", html);
 }
 
-//  ***Task in three part*** 
+// -------------------- Task Experts --------------------
 
 // Netlify build task
 exports.build = series(stylesProd, scripts, html);

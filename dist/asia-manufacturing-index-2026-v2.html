@@ -31,7 +31,9 @@
 
       .eight-core-tiers .table-striped{font-size: 14px;}
       .eight-core-tiers .td-label{display: flex; align-items: center; justify-content: center; height: 35px; width: 35px; margin: 0 auto;}
+      .eight-core-tiers .table th img{max-width: inherit;}
       .eight-core-tiers .table-striped td{white-space: initial; font-size: 14px;}
+      .eight-core-table .tooltip{display: inline;}
       .eight-core-table .tooltip .tooltiptext{width: 92px;}
       .common-tab-content .dec-heade-title img{border-radius: 0;}
       .light-borde-shadow{box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;}
@@ -1208,7 +1210,7 @@
           <h2 class="heading-level2 text-center">The 2026 Asia Manufacturing Index Rankings </h2>
           <div class="eight-core-head">   
             <p> <strong>Explore how each of the 11 countries analyzed rank across the eight core pillars central to location decisions.</strong></p>
-            <p><strong>Parameters are scored 1-100, 100 being the best. Pillars are ranked 1-11, 1 being the best.</strong> <br><br>BD (Bangladesh); CN (China); IN (India); ID (Indonesia); JP (Japan); MY (Malaysia); PH (Philippines); SG (Singapore);  KR (South Korea); TH (Thailand); VN (Vietnam)</p>
+            <p><strong>Parameters are scored 0-100, 100 being the best. Pillars are ranked 1-11, 1 being the best.</strong> <br><br>BD (Bangladesh); CN (China); IN (India); ID (Indonesia); JP (Japan); MY (Malaysia); PH (Philippines); SG (Singapore);  KR (South Korea); TH (Thailand); VN (Vietnam)</p>
           </div>
                       <ul class="tabel-social">
                  <li><img alt="Share" src="/img/share.svg"  width="20" height="20"></li>
@@ -1230,7 +1232,7 @@
                   <th scope="col" style="text-align: center;"> <a data-tab="dectabIN" class="scrollto" href="#dynamic-emerging-countries">ID</a></th>
                   <th scope="col" style="text-align: center;"> <a data-tab="dectabJ" class="scrollto" href="#dynamic-emerging-countries">JP</a></th>
                   <th scope="col" style="text-align: center;"> <a data-tab="dectabM" class="scrollto" href="#dynamic-emerging-countries">MY</a></th>
-                  <th scope="col" style="text-align: center;vertical-align: top;"> <a data-tab="dectabP" class="scrollto" href="#dynamic-emerging-countries">PH</a></th>
+                  <th scope="col" style="text-align: center;"> <a data-tab="dectabP" class="scrollto" href="#dynamic-emerging-countries">PH</a></th>
                   <th scope="col" style="text-align: center;"> <a data-tab="dectabS" class="scrollto" href="#dynamic-emerging-countries">SG</a></th>
                   <th scope="col" style="text-align: center;"> <a data-tab="dectabSK" class="scrollto" href="#dynamic-emerging-countries">KR</a></th>
                   <th scope="col" style="text-align: center;"> <a data-tab="dectabT" class="scrollto" href="#dynamic-emerging-countries">TH</a></th>
@@ -1251,14 +1253,14 @@
                   </th>
                   <th style="text-align: center;"><div class="tooltip"> <a data-tab="dectabM" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/MY.webp" width="45" height="30" alt="MY"></a><span class="tooltiptext tooltip-bottom">Malaysia</span></div>
                   </th>
-                  <th style="text-align: center; vertical-align: top;"> <div class="tooltip"><a data-tab="dectabP" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/PH.webp" width="45" height="30" alt="PH" class="tooltip"></a>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabP" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/PH.webp" width="45" height="30" alt="PH" class="tooltip"></a>
                   <span class="tooltiptext tooltip-bottom">Philippines</span></div>
                   </th>
                   <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabS" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/SG.webp" width="45" height="30" alt="SG" class="light-borde-shadow"></a><span class="tooltiptext tooltip-bottom">Singapore</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><div data-tab="dectabSK" class="tooltip"><a class="scrollto" href="#dynamic-emerging-countries"><img src="/img/country-flags/KR.webp" width="45" height="30" alt="KR" class="light-borde-shadow"></a><span class="tooltiptext tooltip-bottom">South Korea</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabSK" class="scrollto" href="#dynamic-emerging-countries"><img src="/img/country-flags/KR.webp" width="45" height="30" alt="SK" class="light-borde-shadow"></a><span class="tooltiptext tooltip-bottom">South Korea</span></div>
                   </th>
-                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabT" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/TH.webp" width="45" height="30" alt="TH"></a><span class="tooltiptext tooltip-bottom">Thailand</span></div>
+                  <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabT" class="scrollto" href="#dynamic-emerging-countries"><img src="/img/country-flags/TH.webp" width="45" height="30" alt="TH"></a><span class="tooltiptext tooltip-bottom">Thailand</span></div>
                   </th>
                   <th style="text-align: center;"> <div class="tooltip"><a data-tab="dectabV" class="scrollto" href="#dynamic-emerging-countries"> <img src="/img/country-flags/VN.webp" width="45" height="30" alt="VN"></a><span class="tooltiptext tooltip-bottom">Vietnam</span></div>
                   </th>
@@ -2553,45 +2555,6 @@
             </div>
                 
               </div>
-              <div class="common-tab-content" id="dectabV" style="display: none;">
-                <div class="dec-heade-title"><img src="/img/country-flags/VN.webp" width="53" height="33" alt="Vietnam">Vietnam - Ranked 3<sup>rd</sup></div>
-                 <div class="table-responsive">
-                                <table width="100%" class="f-table mb-3">
-                    <thead>
-                        <tr>
-                            <th>Economy</th>
-                            <th>Political Risk</th>
-                            <th>Business Environment</th>
-                            <th>International Trade</th>
-                            <th>Tax Policy</th>
-                            <th>Infrastructure</th>
-                            <th>Workforce</th>
-                            <th>Innovation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>5</td>
-                            <td>5</td>
-                            <td>3</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>7</td>
-                            <td>8</td>
-                        </tr>
-                    </tbody>
-                </table></div>
-                <p><strong>Overview - </strong>Vietnam’s ascent to third place reflects its status as one of the fastest growing and most dynamic manufacturing destinations in Asia. Over the past decade, the country has transitioned from a low-cost assembly hub into a more sophisticated industrial base, supported by consistent FDI inflows from the United States, South Korea, Japan, China, Taiwan, and Europe. Key sectors include electronics, smartphones, textiles and garments, footwear, furniture, automotive components, and renewable energy equipment. </p><span class="dots">... </span>
-                <p class="more-text">The country’s strong trade integration remains a defining advantage. In addition to the ASEAN Free Trade Area (AFTA), Vietnam participates in a wide portfolio of high-quality free trade agreements, including CPTPP, EVFTA, RCEP, and UKVFTA. These agreements provide unparalleled preferential access to major markets and significantly enhance Vietnam’s attractiveness for export-oriented manufacturers. Customs modernization and improvements to trade facilitation continue to reduce lead times and compliance costs.</p>
-                <p class="more-text">Vietnam’s workforce offers a combination of competitive wages and rising skill levels. The population is young, and vocational education programs are improving, although gaps remain in advanced engineering, automation, and managerial talent. Despite rising labor costs in major industrial hubs such as Hanoi and Ho Chi Minh City, Vietnam remains cost-competitive relative to regional peers and continues to attract large-scale relocations from China under the China-plus-one strategy. </p>
-                <p class="more-text">Infrastructure development has accelerated, with major expressways, deep-sea ports, and airports coming online. Industrial parks and special economic zones are expanding, though demand often exceeds supply in high-priority provinces. Constraints include limited energy supply capacity in certain regions, slow administrative processes, and congestion in major cities. Improvements in governance and regulatory consistency remain priorities, but the overall business environment continues to evolve in a positive direction.</p>
-                <p class="more-text">Vietnam’s medium-term outlook is strong. The country is transitioning into higher-value manufacturing, supported by growing supply chain depth in electronics and renewable energy. Continued upgrades in policy, infrastructure, and workforce skills will determine how successfully Vietnam consolidates its upward trajectory. </p>
-                <button class="toggle-btnls">Read full summary</button>
-                <div class="d-flex justify-end">
-                    <a class="scrollto text-cta-link " href="#let-discuss-form ">Talk to us about Vietnam's ranking and your strategy<span class="arrow-anim"></span></a>
-            </div>
-              </div>
               <div class="common-tab-content" id="dectabS" style="display: none;">
                 <div class="dec-heade-title"><img src="/img/country-flags/SG.webp" width="53" height="33" alt="Singapore">Singapore - Ranked 4<sup>th</sup></div>
                  <div class="table-responsive">
@@ -2711,6 +2674,45 @@
                 <button class="toggle-btnls">Read full summary</button>
                 <div class="d-flex justify-end">
                 <a class="scrollto text-cta-link " href="#let-discuss-form ">Talk to us about Thailand's ranking and your strategy<span class="arrow-anim"></span></a>
+            </div>
+              </div>
+              <div class="common-tab-content" id="dectabV" style="display: none;">
+                <div class="dec-heade-title"><img src="/img/country-flags/VN.webp" width="53" height="33" alt="Vietnam">Vietnam - Ranked 3<sup>rd</sup></div>
+                 <div class="table-responsive">
+                                <table width="100%" class="f-table mb-3">
+                    <thead>
+                        <tr>
+                            <th>Economy</th>
+                            <th>Political Risk</th>
+                            <th>Business Environment</th>
+                            <th>International Trade</th>
+                            <th>Tax Policy</th>
+                            <th>Infrastructure</th>
+                            <th>Workforce</th>
+                            <th>Innovation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table></div>
+                <p><strong>Overview - </strong>Vietnam’s ascent to third place reflects its status as one of the fastest growing and most dynamic manufacturing destinations in Asia. Over the past decade, the country has transitioned from a low-cost assembly hub into a more sophisticated industrial base, supported by consistent FDI inflows from the United States, South Korea, Japan, China, Taiwan, and Europe. Key sectors include electronics, smartphones, textiles and garments, footwear, furniture, automotive components, and renewable energy equipment. </p><span class="dots">... </span>
+                <p class="more-text">The country’s strong trade integration remains a defining advantage. In addition to the ASEAN Free Trade Area (AFTA), Vietnam participates in a wide portfolio of high-quality free trade agreements, including CPTPP, EVFTA, RCEP, and UKVFTA. These agreements provide unparalleled preferential access to major markets and significantly enhance Vietnam’s attractiveness for export-oriented manufacturers. Customs modernization and improvements to trade facilitation continue to reduce lead times and compliance costs.</p>
+                <p class="more-text">Vietnam’s workforce offers a combination of competitive wages and rising skill levels. The population is young, and vocational education programs are improving, although gaps remain in advanced engineering, automation, and managerial talent. Despite rising labor costs in major industrial hubs such as Hanoi and Ho Chi Minh City, Vietnam remains cost-competitive relative to regional peers and continues to attract large-scale relocations from China under the China-plus-one strategy. </p>
+                <p class="more-text">Infrastructure development has accelerated, with major expressways, deep-sea ports, and airports coming online. Industrial parks and special economic zones are expanding, though demand often exceeds supply in high-priority provinces. Constraints include limited energy supply capacity in certain regions, slow administrative processes, and congestion in major cities. Improvements in governance and regulatory consistency remain priorities, but the overall business environment continues to evolve in a positive direction.</p>
+                <p class="more-text">Vietnam’s medium-term outlook is strong. The country is transitioning into higher-value manufacturing, supported by growing supply chain depth in electronics and renewable energy. Continued upgrades in policy, infrastructure, and workforce skills will determine how successfully Vietnam consolidates its upward trajectory. </p>
+                <button class="toggle-btnls">Read full summary</button>
+                <div class="d-flex justify-end">
+                    <a class="scrollto text-cta-link " href="#let-discuss-form ">Talk to us about Vietnam's ranking and your strategy<span class="arrow-anim"></span></a>
             </div>
               </div>
             </div>

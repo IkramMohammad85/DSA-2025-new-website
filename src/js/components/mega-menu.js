@@ -256,6 +256,7 @@ if (document.querySelector('.navbar__menuwrap') !== null) {
 }
 
 // Icon menu
+/** 
 const navbar__iconmenu = document.querySelector('.navbar__iconmenu');
 const iconItems = document.querySelectorAll('ul.navbar__iconmenu > li > a');
 
@@ -274,7 +275,36 @@ navbar__iconmenu.addEventListener('mouseleave', function (event) {
   clearIconMenu();
   resetCount();
 });
-    
+    */
+document.addEventListener('DOMContentLoaded', function () {
+
+  const navbar__iconmenu = document.querySelector('.navbar__iconmenu');
+  const iconItems = document.querySelectorAll('ul.navbar__iconmenu > li > a');
+
+  // correct loop condition
+  for (let i = 0; i < iconItems.length; i++) {
+    const iconItem = iconItems[i];
+
+    if (iconItem.hasAttribute('data-twice')) {
+      iconItem.addEventListener('click', function (e) {
+        e.preventDefault();
+        clearIconMenu();
+        this.classList.toggle('menu-opened');
+        checkTwice(this);
+      });
+    }
+  }
+
+  // null check before addEventListener
+  if (navbar__iconmenu) {
+    navbar__iconmenu.addEventListener('mouseleave', function () {
+      clearIconMenu();
+      resetCount();
+    });
+  }
+
+});
+
 // Close the menu when clicking outside
 document.addEventListener('click', function (event) {
   if (!navbar__iconmenu.contains(event.target)) {

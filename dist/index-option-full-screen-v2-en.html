@@ -2642,10 +2642,27 @@
         <video id="eventVideo" src="" controls="" width="100%" poster=""> </video>
       </div>
     </div>
-    
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const switcher = document.querySelector('.lng-switcher');
+    const list = document.querySelector('.lng-list');
+
+    switcher.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      list.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.lng-switcher-mob')) {
+        list.classList.remove('show');
+      }
+    });
+  });
+</script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.querySelector(".navbar");
+  if (!navbar) return;
   const logoDSA = navbar.querySelector(".navbar__logo img");
   const globeIcon = navbar.querySelector('a[aria-label="Desk here"] img');
   const contactMail = navbar.querySelector('a[aria-label="contact mail"] img');
@@ -2669,11 +2686,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  const setImages = (state) => {
-    logoDSA.src = images.logoDSA[state];
-    globeIcon.src = images.globeIcon[state];
-    contactMail.src = images.contactMail[state];
-  };
+const setImages = (state) => {
+  if (logoDSA) logoDSA.src = images.logoDSA[state];
+  if (globeIcon) globeIcon.src = images.globeIcon[state];
+  if (contactMail) contactMail.src = images.contactMail[state];
+};
   // Hover effect
   navbar.addEventListener("mouseenter", () => {
     navbar.classList.add("navbar-bgHover");

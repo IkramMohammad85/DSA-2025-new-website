@@ -2643,7 +2643,80 @@
       </div>
     </div>
     
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar");
+  const logoDSA = navbar.querySelector(".navbar__logo img");
+  const globeIcon = navbar.querySelector('a[aria-label="Desk here"] img');
+  const contactMail = navbar.querySelector('a[aria-label="contact mail"] img');
+  const toggleMenu = document.querySelector(".navbar__togglemenu");
+  // Define image
+  const images = {
+    logoDSA: {
+      default: "/img/DSA-main-logo-white.svg",
+      hover: "/img/DSA-main-logo-black.svg",
+      scroll: "/img/DSA-main-logo-black.svg"
+    },
+    globeIcon: {
+      default: "/img/globe-lng-white.svg",
+      hover: "/img/globe-lng.svg",
+      scroll: "/img/globe-lng.svg"
+    },
+    contactMail: {
+      default: "/img/contact-mail-w.svg",
+      hover: "/img/contact-mail.svg",
+      scroll: "/img/contact-mail.svg"
+    }
+  };
 
+  const setImages = (state) => {
+    logoDSA.src = images.logoDSA[state];
+    globeIcon.src = images.globeIcon[state];
+    contactMail.src = images.contactMail[state];
+  };
+  // Hover effect
+  navbar.addEventListener("mouseenter", () => {
+    navbar.classList.add("navbar-bgHover");
+    setImages("hover");
+  });
+  navbar.addEventListener("mouseleave", () => {
+    if (window.scrollY <= 50 && !navbar.classList.contains("menu-open")) {
+      navbar.classList.remove("navbar-bgHover");
+      setImages("default");
+    } else {
+      setImages("scroll");
+    }
+  });
+
+  // Scroll effect
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("navbar-bgHover");
+      setImages("scroll");
+    } else {
+      if (!navbar.matches(":hover") && !navbar.classList.contains("menu-open")) {
+        navbar.classList.remove("navbar-bgHover");
+        setImages("default");
+      }
+    }
+  });
+
+  if (toggleMenu) {
+    toggleMenu.addEventListener("click", () => {
+      navbar.classList.toggle("menu-open");
+      if (navbar.classList.contains("menu-open")) {
+        navbar.classList.add("navbar-bgHover");
+        setImages("scroll");
+      } else {
+        if (window.scrollY <= 50 && !navbar.matches(":hover")) {
+          navbar.classList.remove("navbar-bgHover");
+          setImages("default");
+        }
+      }
+    });
+  }
+});
+</script>
 
 
     <script src="/js/vendor/splide.min.js"></script>

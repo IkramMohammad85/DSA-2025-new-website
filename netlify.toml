@@ -1,5 +1,5 @@
 [build]
-command = "npx gulp build"
+command = "node node_modules/gulp/bin/gulp.js build"
 publish = "dist"
 
 [[headers]]

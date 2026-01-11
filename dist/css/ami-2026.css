@@ -1,0 +1,136 @@
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+}
+.table-responsive table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+.table-responsive table th td {
+  white-space: nowrap;
+}
+
+table.f-table > tbody > tr > td {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+table.f-table > thead > tr > th {
+  border: none;
+  vertical-align: bottom;
+  background-color: #e4ecf4;
+}
+
+table.f-table > thead > tr > th, table.f-table > tbody > tr > td {
+  width: 146px;
+  white-space: normal;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tabel-social {
+  position: sticky;
+  right: 0;
+  width: 30px;
+  float: right;
+  top: 85px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.tabel-social li {
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+}
+
+.eight-core-tiers .table-striped {
+  font-size: 14px;
+}
+.eight-core-tiers .table-striped td {
+  white-space: initial;
+  font-size: 14px;
+}
+.eight-core-tiers .table-striped .striped-first-td span {
+  margin-top: 0.4rem;
+}
+.eight-core-tiers .td-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  margin: 0 auto;
+}
+.eight-core-tiers .table th img {
+  max-width: inherit;
+}
+.eight-core-tiers .arrow-move img {
+  max-width: none;
+}
+
+.eight-core-table .tooltip {
+  display: inline;
+}
+.eight-core-table .tooltip .tooltiptext {
+  width: 92px;
+}
+
+.common-tab-content .dec-heade-title img {
+  border-radius: 0;
+}
+
+.common-tab-container {
+  margin: 0;
+}
+
+.light-borde-shadow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.services-question-section.ami-cta .got-question-block {
+  width: 100%;
+  margin-left: 0;
+  padding: 2rem;
+}
+.services-question-section.ami-cta .got-question-block h3 {
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.assist-text {
+  font-weight: 200;
+  font-style: italic;
+  color: #828282;
+  display: block;
+  width: 70%;
+}
+
+.masthead h1 {
+  max-width: 350px;
+}
+
+.landing-top-content .two-column-section .left-section-block ul {
+  color: #666;
+}
+
+@media (max-width: 1070px) {
+  .tabel-social {
+    display: flex;
+    width: auto;
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .eight-core-tiers .table td:first-child, .eight-core-tiers .table th:first-child {
+    width: 194px;
+  }
+}
+@media only screen and (min-width: 1001px) {
+  .eight-core-tiers .table td:first-child, .eight-core-tiers .table th:first-child {
+    width: 218px;
+  }
+}
+/*# sourceMappingURL=ami-2026.css.map */

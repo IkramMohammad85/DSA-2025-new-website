@@ -221,7 +221,7 @@ if (document.querySelector('.c-accordion') !== null) {
       e.preventDefault();
       const accordionState = this.getAttribute('aria-expanded');
 
-      for (i = 0; i < accordionItems.length; i++) {
+      for (let i = 0; i < accordionItems.length; i++) {
         accordionItems[i].setAttribute('aria-expanded', 'false');
       }
 
@@ -241,7 +241,7 @@ if (document.querySelector('.navbar__menuwrap') !== null) {
   function toggleAccordion() {
     const toggleItem = this.getAttribute('aria-expanded');
     
-    for (i = 0; i < mobileNavItems.length; i++) {
+    for (let i = 0; i < mobileNavItems.length; i++) {
       mobileNavItems[i].setAttribute('aria-expanded', 'false');
     }
     

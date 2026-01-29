@@ -71,10 +71,11 @@ table.f-table > thead > tr > th, table.f-table > tbody > tr > td {
 }
 
 .eight-core-table .tooltip {
-  display: inline;
+  display: block;
 }
 .eight-core-table .tooltip .tooltiptext {
   width: 92px;
+  z-index: 2;
 }
 
 .common-tab-content .dec-heade-title img {
@@ -126,6 +127,7 @@ table.f-table > thead > tr > th, table.f-table > tbody > tr > td {
 @media only screen and (max-width: 1000px) {
   .eight-core-tiers .table td:first-child, .eight-core-tiers .table th:first-child {
     width: 194px;
+    min-width: 194px;
   }
 }
 @media only screen and (min-width: 1001px) {

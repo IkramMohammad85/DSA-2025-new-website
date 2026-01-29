@@ -27,8 +27,10 @@ th td { white-space: nowrap; }
       }
         
       .eight-core-table {
-        .tooltip{display: inline;
-        .tooltiptext{width: 92px;}
+        .tooltip{
+          //display: inline;
+          display: block;
+        .tooltiptext{width: 92px; z-index: 2;}
         }
       }
       
@@ -53,7 +55,7 @@ th td { white-space: nowrap; }
       .tabel-social{ display: flex; width: auto; gap: 1rem;}
       }
       @media only screen and (max-width: 1000px) {
-    .eight-core-tiers .table td:first-child, .eight-core-tiers .table th:first-child {width: 194px;}
+    .eight-core-tiers .table td:first-child, .eight-core-tiers .table th:first-child {width: 194px; min-width: 194px;}
       }
       @media only screen and (min-width: 1001px) {
     .eight-core-tiers .table td:first-child, .eight-core-tiers .table th:first-child {width: 218px;}

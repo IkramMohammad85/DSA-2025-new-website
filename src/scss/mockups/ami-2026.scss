@@ -24,6 +24,7 @@ th td { white-space: nowrap; }
         .td-label{display: flex; align-items: center; justify-content: center; height: 35px; width: 35px; margin: 0 auto;}
         .table th img{max-width: inherit;}
         .arrow-move img{max-width: none;}
+         .table-second th{background-color: transparent;}
       }
         
       .eight-core-table {
@@ -31,6 +32,7 @@ th td { white-space: nowrap; }
           //display: inline;
           display: block;
         .tooltiptext{width: 92px; z-index: 2;}
+        .tooltip-bottom{margin-left: -46px;}
         }
       }
       
@@ -45,7 +47,6 @@ th td { white-space: nowrap; }
             }
         }
       }
-      
      .assist-text{font-weight: 200; font-style: italic; color: #828282; display: block; width: 70%;}
      .masthead h1{max-width: 350px;}
      .landing-top-content .two-column-section .left-section-block ul{color: #666;}

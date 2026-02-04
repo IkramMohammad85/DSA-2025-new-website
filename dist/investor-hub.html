@@ -92,19 +92,33 @@
 
 </style>
 <style>
-
-
-/* Trigger */
-.search-trigger {
-  margin: 40px;
-  padding: 12px 22px;
-  border-radius: 999px;
-  border: 1px solid #ddd;
-  background: #fff;
-  cursor: pointer;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Overlay */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f4f6fb;
+  padding: 40px;
+}
+
+/* ===== MAIN SEARCH INPUT (TRIGGER) ===== */
+.select-wrapper {
+  width: 300px;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.select-wrapper:focus {
+  border-color: #2563eb;
+}
+
+/* ===== OVERLAY ===== */
 .search-overlay {
   position: fixed;
   inset: 0;
@@ -117,7 +131,7 @@
   z-index: 9999;
 }
 
-/* Panel */
+/* ===== SEARCH PANEL ===== */
 .search-panel {
   width: 92%;
   max-width: 760px;
@@ -129,7 +143,7 @@
   position: relative;
 }
 
-/* Input */
+/* ===== POPUP INPUT ===== */
 .search-input {
   width: 100%;
   padding: 18px 54px 18px 18px;
@@ -150,7 +164,7 @@
   color: #fff;
 }
 
-/* Close */
+/* ===== CLOSE ===== */
 .search-close {
   position: absolute;
   top: 34px;
@@ -161,7 +175,7 @@
   cursor: pointer;
 }
 
-/* Results */
+/* ===== RESULTS ===== */
 .search-results {
   margin-top: 16px;
   list-style: none;
@@ -176,8 +190,7 @@
   transition: background 0.2s, transform 0.15s;
 }
 
-.search-results li:hover,
-.search-results li.active {
+.search-results li:hover {
   background: #f1f5ff;
   transform: translateX(4px);
 }
@@ -193,6 +206,7 @@
   font-size: 14px;
 }
 
+/* ===== ANIMATION ===== */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -1499,13 +1513,21 @@
 
 
                     
-<button class="search-trigger">🔍 Search</button>
+<!-- 🔥 YOUR SEARCH INPUT (TRIGGER) -->
+<input
+  type="text"
+  name="search"
+  placeholder="Keyword"
+  class="select-wrapper"
+  id="mainSearchInput"
+/>
 
+<!-- SEARCH POPUP -->
 <div class="search-overlay" id="searchOverlay">
   <div class="search-panel" id="searchPanel">
     <input
       class="search-input"
-      id="searchInput"
+      id="popupSearchInput"
       placeholder="Search articles, tools, FAQs…"
       autocomplete="off"
     />
@@ -1650,9 +1672,10 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  const triggerInput = document.getElementById("mainSearchInput");
   const overlay = document.getElementById("searchOverlay");
   const panel = document.getElementById("searchPanel");
-  const input = document.getElementById("searchInput");
+  const popupInput = document.getElementById("popupSearchInput");
   const results = document.getElementById("searchResults");
 
   const searchData = [
@@ -1666,30 +1689,34 @@ document.addEventListener("DOMContentLoaded", () => {
     "How to improve credit score"
   ];
 
-  let currentMatches = [];
+  let matches = [];
 
-  document.querySelector(".search-trigger").onclick = () => {
+  /* OPEN POPUP WHEN TRIGGER INPUT FOCUSED */
+  triggerInput.addEventListener("focus", () => {
     overlay.style.display = "flex";
-    input.focus();
-  };
+    popupInput.value = triggerInput.value;
+    popupInput.focus();
+    popupInput.dispatchEvent(new Event("input"));
+  });
 
-  document.getElementById("closeSearch").onclick = closeSearch;
-  overlay.onclick = closeSearch;
+  document.getElementById("closeSearch").onclick = closePopup;
+  overlay.onclick = closePopup;
   panel.onclick = e => e.stopPropagation();
 
   document.addEventListener("keydown", e => {
-    if (e.key === "Escape") closeSearch();
+    if (e.key === "Escape") closePopup();
   });
 
-  function closeSearch() {
+  function closePopup() {
     overlay.style.display = "none";
     results.innerHTML = "";
   }
 
-  input.addEventListener("input", () => {
-    const query = input.value.trim().toLowerCase();
+  /* LIVE SEARCH */
+  popupInput.addEventListener("input", () => {
+    const query = popupInput.value.trim().toLowerCase();
     results.innerHTML = "";
-    currentMatches = [];
+    matches = [];
 
     if (!query) {
       results.innerHTML =
@@ -1697,17 +1724,17 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    currentMatches = searchData.filter(item =>
+    matches = searchData.filter(item =>
       item.toLowerCase().includes(query)
     );
 
-    if (!currentMatches.length) {
+    if (!matches.length) {
       results.innerHTML =
         '<li class="search-empty">No results found</li>';
       return;
     }
 
-    currentMatches.forEach(item => {
+    matches.forEach(item => {
       const highlighted = item.replace(
         new RegExp(query, "gi"),
         m => `<span>${m}</span>`
@@ -1717,24 +1744,24 @@ document.addEventListener("DOMContentLoaded", () => {
       li.innerHTML = highlighted;
 
       li.onclick = () => {
-        input.value = item;
-        closeSearch();
+        triggerInput.value = item;
+        closePopup();
       };
 
       results.appendChild(li);
     });
   });
 
-  /* 🔥 ENTER KEY HANDLER */
-  input.addEventListener("keydown", e => {
+  /* ENTER KEY */
+  popupInput.addEventListener("keydown", e => {
     if (e.key === "Enter") {
       e.preventDefault();
-
-      if (currentMatches.length) {
-        input.value = currentMatches[0]; // pick first match
+      if (matches.length) {
+        triggerInput.value = matches[0];
+      } else {
+        triggerInput.value = popupInput.value;
       }
-
-      closeSearch();
+      closePopup();
     }
   });
 });

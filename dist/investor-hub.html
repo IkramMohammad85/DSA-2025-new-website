@@ -1315,7 +1315,13 @@
 <div class="radio-group-wrapper">
      <label class="radio-group-label mb-0">Browse our content</label>
     <div class="d-flex" style="gap:10px"> 
-                            <input type="text" name="search" placeholder="Keyword" class="select-wrapper">
+                           <input
+  type="text"
+  name="search"
+  placeholder="Keyword"
+  class="select-wrapper"
+  id="mainSearchInput"
+/>
                             <button type="submit" class="search-btn">
                                 <img src="https://dsa-2025-gulp-setup.netlify.app/img/events/search-icon-white.svg" width="20" height="20" alt="Search">
                             </button>
@@ -1504,13 +1510,7 @@
 
                     
 <!-- 🔥 YOUR SEARCH INPUT (TRIGGER) -->
-<input
-  type="text"
-  name="search"
-  placeholder="Keyword"
-  class="select-wrapper"
-  id="mainSearchInput"
-/>
+
 
 <!-- SEARCH POPUP -->
 <div class="search-overlay" id="searchOverlay">
@@ -1669,14 +1669,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const results = document.getElementById("searchResults");
 
   const searchData = [
-    "Savings account opening process",
-    "Best tax saving investment options",
-    "Personal loan eligibility calculator",
-    "Home loan EMI calculator",
-    "Credit card comparison guide",
-    "Fixed deposit interest rates 2026",
-    "Documents required for personal loan",
-    "How to improve credit score"
+    "Accounting",
+    "Audit and Financial Review",
+    "Business Advisory",
+    "Business Intelligence",
+    "China Outbound | 境外直接投资",
+    "Corporate Establishment",
+    "Government and Economic Development",
+    "HR and Payroll",
+    "Mergers and Acquisitions",
+    "Risk Management and ESG",
+    "Tax",
+    "Technology"
   ];
 
   let matches = [];

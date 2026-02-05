@@ -1693,7 +1693,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let matches = [];
 
-  /* OPEN POPUP WHEN TRIGGER INPUT FOCUSED */
   triggerInput.addEventListener("focus", () => {
     overlay.style.display = "flex";
     popupInput.value = triggerInput.value;
@@ -1714,7 +1713,6 @@ document.addEventListener("DOMContentLoaded", () => {
     results.innerHTML = "";
   }
 
-  /* LIVE SEARCH */
   popupInput.addEventListener("input", () => {
     const query = popupInput.value.trim().toLowerCase();
     results.innerHTML = "";
@@ -1754,7 +1752,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ENTER KEY */
+
   popupInput.addEventListener("keydown", e => {
     if (e.key === "Enter") {
       e.preventDefault();

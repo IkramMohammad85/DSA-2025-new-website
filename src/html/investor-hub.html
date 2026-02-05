@@ -94,7 +94,7 @@
 <style>
 
 
-/* ===== MAIN SEARCH INPUT (TRIGGER) ===== */
+
 .select-wrapper {
   width: 300px;
   padding: 14px 16px;
@@ -108,7 +108,7 @@
   border-color: #2563eb;
 }
 
-/* ===== OVERLAY ===== */
+
 .search-overlay {
   position: fixed;
   inset: 0;
@@ -121,40 +121,40 @@
   z-index: 9999;
 }
 
-/* ===== SEARCH PANEL ===== */
+
 .search-panel {
   width: 92%;
   max-width: 760px;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 22px;
   box-shadow: 0 30px 80px rgba(0,0,0,0.3);
   animation: slideUp 0.3s ease;
   position: relative;
 }
 
-/* ===== POPUP INPUT ===== */
+
 .search-input {
   width: 100%;
   padding: 18px 54px 18px 18px;
   font-size: 18px;
-  border-radius: 14px;
+  border-radius: 10px;
   border: 1px solid #e2e2e2;
   outline: none;
-  caret-color: #2563eb;
+  caret-color: #207fd4;
   user-select: text !important;
 }
 
 .search-input:focus {
-  border-color: #2563eb;
+  border-color: #207fd4;
 }
 
 .search-input::selection {
-  background: #2563eb;
+  background: #207fd4;
   color: #fff;
 }
 
-/* ===== CLOSE ===== */
+
 .search-close {
   position: absolute;
   top: 34px;
@@ -165,7 +165,7 @@
   cursor: pointer;
 }
 
-/* ===== RESULTS ===== */
+
 .search-results {
   margin-top: 16px;
   list-style: none;
@@ -175,18 +175,20 @@
 
 .search-results li {
   padding: 14px 16px;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s;
+  border: solid 1px #ddd;
+  margin-bottom: 1rem;
 }
 
 .search-results li:hover {
   background: #f1f5ff;
-  transform: translateX(4px);
+  
 }
 
 .search-results span {
-  color: #2563eb;
+  color: #207fd4;
   font-weight: 600;
 }
 
@@ -196,7 +198,7 @@
   font-size: 14px;
 }
 
-/* ===== ANIMATION ===== */
+
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -207,6 +209,12 @@
     transform: translateY(0) scale(1);
   }
 }
+
+.latest-resources{box-shadow: rgba(0, 0, 0, .10) 0 3px 8px; border-radius: 4px; }
+.experts-card-location.asiapedia-card .latest-resources .image-card img{border-radius: 0;}
+.latest-resources .resrcs-meta, .latest-resources .image-card-text{ margin-left: 1rem;}
+.latest-resources .resrcs-meta{display: flex; justify-content: space-between; padding-right: 1rem;}
+.latest-tag{ color: #207fd4;}
 </style>
 
 </head>
@@ -367,23 +375,23 @@
 <div class="experts-card-location asiapedia-card" id="cardList">
 
 
-                    <div class="image-card-wrapper card-animate in-view">
+                    <div class="image-card-wrapper card-animate in-view latest-resources">
                         <div class="image-card">
                             <a href="/external/https%3A%2F%2Fwww.vietnam-briefing.com%2Fdoing-business-guide%2Fvietnam%2Fwhy-vietnam">
                             <img src="https://resource.dezshira.com/resize/350x150/countryguide/Vietnam/why-vietnam_thumb_1.jpg" alt="An Introduction to Doing Business in India 2026">
                             </a>
                         </div>
-                        <div class="resrcs-meta" style="margin-left:0;"><span>Portal</span></div>
+                        <div class="resrcs-meta"><span>Portal</span> <span class="latest-tag">Latest</span></div>
                         <div class="image-card-text pt-1"><a href="/external/https%3A%2F%2Fwww.vietnam-briefing.com%2Fdoing-business-guide%2Fvietnam%2Fwhy-vietnam">Why Invest in Vietnam?</a></div>
                     </div>
 
-                    <div class="image-card-wrapper card-animate in-view">
+                    <div class="image-card-wrapper card-animate in-view latest-resources">
                         <div class="image-card">
                             <a href="https://www.vietnam-briefing.com/news/understanding-vietnams-amended-investment-law-key-changes-for-businesses-cn.html/">
                             <img src="https://www.vietnam-briefing.com/news/wp-content/uploads/2025/12/Vietnam-Investment-Law-300x169.jpg" alt="An Introduction to Doing Business in India 2026">
                             </a>
                         </div>
-                        <div class="resrcs-meta" style="margin-left:0;"><span>News</span></div>
+                        <div class="resrcs-meta"><span>News</span><span class="latest-tag">Latest</span></div>
                         <div class="image-card-text pt-1"><a href="https://www.vietnam-briefing.com/news/understanding-vietnams-amended-investment-law-key-changes-for-businesses-cn.html/">解读越南修订版《投资法》：企业需关注的关键变化</a></div>
                     </div>
 

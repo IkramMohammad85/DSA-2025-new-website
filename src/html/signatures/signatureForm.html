@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://www.dezshira.com/themes/dsa/js/jquery.min.js"></script>
+<link href="https://www.india-briefing.com/themes/ib/css/bundle.css" rel="stylesheet">
+<link href="https://www.dezshira.com/themes/dsa/css/bundle.css" rel="stylesheet">
+<meta charset="utf-8">
+<title>Signature Generation Tool for Dezan Shira & Associates </title>
+</head>
+<body>
+<div id="signature_app" style="padding:40px;"> <a href="https://www.dezshira.com/" id="logo" data-target="#logoDownload"><img alt="" src="https://dsa-2021.netlify.app/assets/img/DSA_30_sig-300x37_blue.jpg" srcset="https://dsa-2021.netlify.app/assets/img/Logo-sig-30years_96dpi.jpg" class="mrg-left40 logo margin4Top"></a>
+  <hr />
+  <h1 class="page-title">Signature Generation Tool for Dezan Shira & Associates</h1>
+
+  <div class="alert alert-danger">
+    This tool is for use with <strong>Outlook Desktop Client only.</strong><br />
+    If you are using browser or another version contact <a href="mailto:design-marketing@dezshira.com">design-marketing@dezshira.com</a> for instructions and assistance.
+  </div>
+
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="txt_name">Name:</label>
+      <input type="text" name="name" id="txt_name" placeholder="Name" class="form-control" required />
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="txt_position">Position:</label>
+      <input type="text" name="position" id="txt_position" placeholder="Position" class="form-control" required />
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-4">
+      <label for="txt_telephone">Telephone:</label>
+      <input type="text" name="telephone" id="txt_telephone" placeholder="Enter Phone +86 21 8888 8888" class="form-control" />
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-2">
+      <label for="txt_ext">Ext.</label>
+      <input type="text" name="ext" id="txt_ext" placeholder="8888" class="form-control" />
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="txt_mobile">Mobile:</label>
+      <input type="text" name="mobile" id="txt_mobile" placeholder="Enter Mobile +86 21 8888 8888" class="form-control" />
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="txt_fax">Fax:</label>
+      <input type="text" name="fax" id="txt_fax" placeholder="Enter Fax +86 21 8888 8888" class="form-control" />
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="txt_email">Email:</label>
+      <input type="email" name="email" id="txt_email" placeholder="Email" class="form-control" />
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="txt_office">Office:</label>
+      <select name="office" id="office" id="txt_office" class="form-control">
+      </select>
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="select_desk">International Desk:</label>
+      <select name="desk" id="select_desk" class="form-control">
+        <option value="none">None</option>
+        <option value="asean">ASEAN Desk</option>
+        <option value="australian">Australian Desk</option>
+        <option value="italian">Italian Desk</option>
+        <option value="french">French Desk</option>
+        <option value="german">German Desk</option>
+        <option value="spanish">Spanish Desk</option>
+        <option value="us">North American Desk</option>
+        <option value="russian">Russian Desk</option>
+        <option value="uk_ireland_1">UK and Ireland Desk</option>
+      </select>
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="banner">Banner</label>
+      <select name="banner" id="banner" class="form-control">
+      </select>
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="service_certified">Service Certified</label>
+      <select name="service_certified" id="service_certified" class="form-control">
+        <option value="">None</option>
+        <option value="xero_silver_champion">XERO Silver Champion Partner</option>
+        <option value="xero_gold_champion">XERO Gold Champion Partner</option>
+        <option value="ms_cloud_silver">Microsoft Cloud Silver Partner</option>
+      </select>
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <!--/row--> 
+</div>
+<!--/signature_app-->
+
+<div style="display: flex;">
+
+  <div id="signature" style="padding:40px;width:800px;">
+
+  <br /><br /><br />
+
+   <!-- CSS Reset : BEGIN -->
+<style>
+  
+  /* What it does: Stops email clients resizing small text. */
+  * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+  }
+  
+  /* What it does: Centers email on Android 4.4 */
+  div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+  }
+  
+  /* What it does: Stops Outlook from adding extra spacing to tables. */
+  table,
+  td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+  }
+  
+  /* What it does: Fixes webkit padding issue. */
+  table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+  }
+  
+  /* What it does: Uses a better rendering method when resizing images in IE. */
+  img {
+      -ms-interpolation-mode:bicubic;
+  }
+  
+  /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+  a {
+      text-decoration: none;
+  }
+  
+  /* What it does: A work-around for email clients meddling in triggered links. */
+  *[x-apple-data-detectors],  /* iOS */
+  .unstyle-auto-detected-links *,
+  .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+  }
+  
+  /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+  .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+  }
+  
+  /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+  .im {
+      color: inherit !important;
+  }
+  
+  /* If the above doesn't work, add a .g-img class to any image in question. */
+  img.g-img + div {
+      display: none !important;
+  }
+  
+  /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+  /* Create one of these media queries for each additional viewport size you'd like to fix */
+  
+  /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u ~ div .email-container {
+          min-width: 320px !important;
+      }
+  }
+  /* iPhone 6, 6S, 7, 8, and X */
+  @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u ~ div .email-container {
+          min-width: 375px !important;
+      }
+  }
+  /* iPhone 6+, 7+, and 8+ */
+  @media only screen and (min-device-width: 414px) {
+      u ~ div .email-container {
+          min-width: 414px !important;
+      }
+  }
+  
+  </style>
+  
+      <!-- CSS Reset : END -->
+
+  <style type="text/css">
+    a, body, button, div, span{ text-decoration: none;}
+    * {
+            -ms-text-size-adjust: 100%;
+      }
+
+        /* CLIENT-SPECIFIC STYLES */
+        body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;font-family:Arial,Helvetica,sans-serif !important;} /* Prevent WebKit and Windows mobile changing default text sizes */
+          table,
+          td {
+            border-collapse:collapse;
+              mso-table-lspace: 0pt !important;
+              mso-table-rspace: 0pt !important;
+          }
+        table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+        img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+        /* RESET STYLES */
+        img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}
+        table{border-collapse: collapse !important;}
+        body{height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+          color: inherit !important;
+          text-decoration: none !important;
+          font-size: inherit !important;
+          font-family: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+        }
+    a{text-decoration:none;}
+    a[href]{text-decoration:none;}
+    a:hover{text-decoration:none;}
+    a:-webkit-any-link{text-decoration: none;}
+    a {text-decoration:none !important; text-decoration:none;}
+      </style>
+            
+     <!--[if mso]>
+    <style>
+          table, table td a{font-family:Arial, Helvetica, 'sans-serif' !important;}
+      </style>
+      <![endif]-->
+      <!--[if (mso)|(mso 16)]>
+    <style type="text/css">
+    a {text-decoration: none;}
+    </style>
+    <![endif]-->
+
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+    a{
+    text-decoration: none !important;
+    }
+    </style>
+    <![endif]-->
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px;font-family:Arial,Helvetica,sans-serif;">
+<tr>
+<td style="padding:0;margin:0;">
+
+<!-- ================= TOP SECTION ================= -->
+
+<!--[if mso]>
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<![endif]-->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
+<tr>
+
+<!-- LEFT SIDE -->
+<td valign="top" width="60%" style="padding:20px 0 10px 0;">
+  <p style="margin:0;font-size:18px;font-weight:bold;color:#2f4a6f;line-height:22px; padding: 0;">
+    <span id="name"></span>
+  </p>
+  <p style="margin:4px 0 0 0;font-size:14px;color:#555555;line-height:18px;padding: 0;">
+    <span id="position"></span>
+  </p>
+</td>
+
+<!-- RIGHT SIDE LOGO -->
+<td valign="middle" width="40%" align="right" style="padding:20px 0 10px 0;">
+  <img src="https://dsa-2025-gulp-setup.netlify.app/img/signature-logo.png"
+       width="211"
+       style="display:block;border:0;max-width:211px;height:auto;">
+</td>
+
+</tr>
+</table>
+
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+<!-- CONTACT BLOCK -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td bgcolor="#344C71" style="padding:15px 20px;color:#ffffff;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+
+<td width="50%" valign="top" style="font-size:13px;line-height:20px;color:#ffffff;">
+  Mob: <a href="tel:+00112223333" style="color:#ffffff;text-decoration:none;"><span id="mobile"></span> </a><br>
+  Tel: <a href="tel:+111122222222" style="color:#fefefe;text-decoration:none;"><span id="telephone"></span> ext. <span id="ext"></span></a>
+</td>
+
+<td width="50%" valign="top" style="font-size:13px;line-height:20px;color:#fefefe;">
+Email: <a href="mailto:jane.doe@dezshira.com" style="color:#fefefe;text-decoration:none;">
+<span id="email"></span></a><br>
+Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span>
+</td>
+
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<!-- DIVIDER  -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="padding:12px 0;">
+</td>
+</tr>
+</table>
+
+<!-- DESCRIPTION  -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="font-size:13px;color:#666666;line-height:20px;padding-bottom:15px;">
+<span id="address_english"></span>
+</td>
+</tr>
+</table>
+
+<!-- FOOTER STRIP -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td bgcolor="#e5e5e5" style="padding:10px 15px;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+
+<!-- FLAG -->
+<td width="25%" valign="middle" style="font-size:10px;color:#666666;">
+<span id="international_desk_badge"></span>
+</td>
+
+<!-- CENTER TEXT -->
+<td width="30%" valign="middle" align="center" style="font-size:10px;color:#666666;">
+  <span id="service_certified"></span>
+</td>
+
+<!-- WEBSITE + SOCIAL -->
+<td width="45%" valign="middle" align="right">
+
+<a href="https://www.dezshira.com"
+   style="font-size:10px;color:#2f4a6f;text-decoration:none;">
+   www.dezshira.com
+</a>
+
+&nbsp;&nbsp;
+
+<!-- Retina icons (28px image scaled to 14px display) -->
+<a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-in.png"
+     width="10"
+     style="width:10px;height:auto;border:0;"></a>
+&nbsp;
+<a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-f.png"
+     width="6"
+     style="width:6px;height:auto;border:0;"></a>
+&nbsp;
+<a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-x.png"
+     width="10"
+     style="width:10px;height:auto;border:0;"></a>
+&nbsp;
+<a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-y.png"
+     width="12"
+     style="width:12px;height:auto;border:0;"></a>
+&nbsp;
+<a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-w.png"
+     width="14"
+     style="width:14px;height:auto;border:0;"></a>     
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</div>
+
+<div>
+  <br /><br /><br /><br />
+  <span id="address_info" style="font-weight:bold;"><a href='https://www.dezshira.com/office/hong-kong.html' target='_blank'> Find a list of our offices, telephone numbers and fax numbers here.</a></span>
+</div>
+</div>
+<!--/signature-->
+
+<div style="padding:40px;">
+  <p><strong>HOW TO USE:</strong> Click the "select signature" button below to highlight your signature, then copy and paste it into your email client.</p>
+  <hr />
+  <!-- Trigger the modal with a button -->
+  <p align="center">
+    <button type="button" class="btn btn-default btn-lg text-uppercase" id="select_signature">Select Signature</button>
+    <button type="button" class="btn btn-default btn-lg text-uppercase" id="show_html">Source Code [Advanced]</button>
+  </p>
+</div>
+
+
+
+	<!-- Modal -->
+	<div id="signatureModal" class="hide">
+	  <textarea name="signature_html" id="signature_html" style="width:100%;height:400px;"></textarea>
+	</div><!--/Modal-->
+
+
+<script>
+
+$( document ).ready(function() {
+	//load up offices json
+	var json_offices = function () {
+		var jsonTemp = null;
+		$.ajax({
+			'async': false,
+			'url': "/signatures/offices.json",
+			'success': function (data) {
+				jsonTemp = data;
+				
+				$('select#office').append('<option value="">Select Office</option>');
+				$.each(jsonTemp, function(key,office){
+					$('select#office').append('<option value="'+office.id+'">'+office.city+'</option>');
+				});
+			}
+		});
+		return jsonTemp;
+	}(); 
+	//document.write(json.a);
+	//console.log(json_offices[1].country);
+	
+	$( "select#office" ).change(function() {
+	  officeID=$( "select#office option:selected" ).val();
+	  address_simplified=json_offices[officeID].address_simplified;
+	  if(address_simplified!==null){
+		  address_simplified=address_simplified.replace(/\n/g, ", ");
+		  address_simplified=address_simplified.replace(/^[,\s]+|[,\s]+$/g, '').replace(/,[,\s]*,/g, ',');
+		}
+	  
+	  address_simplified_cn=json_offices[officeID].address_simplified_cn;
+	  if(address_simplified_cn!==null){
+		  address_simplified_cn=address_simplified_cn.replace(/\n/g, ", ");
+		  address_simplified_cn = address_simplified_cn.replace(/^[,\s]+|[,\s]+$/g, '');
+		  address_simplified_cn = address_simplified_cn.replace(/\s*,\s*/g, ',');
+	  }
+	  
+	  //$('span#office').html('<a style="color:#000;" href="'+json_offices[officeID].link+'">'+json_offices[officeID].city+' Office </a>');
+	  $('span#address_english').html(address_simplified);
+	  $('span#address_chinese').html(address_simplified_cn);
+    $('span#address_info').html("<a href='"+json_offices[officeID].link+"' target='_blank'> Find a list of our offices, telephone numbers and fax numbers here.</a>");
+	});
+	
+	
+	$( "select#select_desk" ).change(function() {
+		desk=$( "select#select_desk option:selected" ).val();
+		int_desk_url='https://www.dezshira.com/international-desk';
+    int_desk_name='';
+    int_desk_flag='';
+		if(desk=='german'){
+			int_desk_url='https://www.dezshira.com/international-desk/german.html';
+      int_desk_name='GERMAN DESK';
+      int_desk_flag='GERMAN DESK';
+		} else if(desk=='italian') {
+			int_desk_url='https://www.dezshira.com/international-desk/italian.html';
+      int_desk_name='ITALIAN DESK';
+      int_desk_flag='ITALIAN DESK';
+		} else if(desk=='french') {
+			int_desk_url='https://www.dezshira.com/international-desk/french.html';
+      int_desk_name='FRENCH DESK';
+      int_desk_flag='FRENCH DESK';
+		} else if(desk=='spanish') {
+			int_desk_url='https://www.dezshira.com/international-desk/spanish.html';
+      int_desk_name='SPANISH DESK';
+      int_desk_flag='SPANISH DESK';
+		} else if(desk=='russian') {
+			int_desk_url='https://www.dezshira.com/international-desk/russian.html';
+      int_desk_name='RUSSIAN DESK';
+      int_desk_flag='RUSSIAN DESK';
+		} else if(desk=='asean') {
+			int_desk_url='https://www.dezshira.com/international-desk';
+      int_desk_name='ASEAN DESK';
+      int_desk_flag='ASEAN DESK';
+		} else if(desk=='australian') {
+			int_desk_url='https://www.dezshira.com/international-desk/australian.html';
+      int_desk_name='AUSTRALIAN DESK';
+      int_desk_flag='AUSTRALIAN DESK';
+		} else if(desk=='us') {
+			int_desk_url='https://www.dezshira.com/international-desk/north-american.html';
+      int_desk_name='NORTH AMERICAN DESK';
+      int_desk_flag='flg-us.jpg';
+		} else if(desk=='uk_ireland_1') {
+			int_desk_url='https://www.dezshira.com/international-desk/uk-ireland.html';
+      int_desk_name='UK AND IRELAND DESK';
+      int_desk_flag='UK and Ireland Desk';
+    }
+			
+		if(desk!='' && desk!='none'){
+      $('#international_desk_badge').html(
+      '<div>' +
+        '<a href="' + int_desk_url + '" target="_blank" style="display:flex;align-items:center;text-decoration:none;">' +
+          '<img src="https://dsa-2025-gulp-setup.netlify.app/img/desk-icon.png" width="18" style="border:0;vertical-align:middle;margin-right:6px;">' +
+          '<span style="font-size:10px;color:#666666;">' + int_desk_name + '</span>' +
+        '</a>' +
+      '</div>'
+    );
+
+  } else {
+			$('#international_desk_badge').html('');
+    }
+	});
+
+
+	$('#signature_app input').bind('input', function(){
+	  container=$(this).attr('name');
+	  
+		if(container=='ext'){
+			if($(this).val()=="")
+				$('span#'+container).html('');
+			else
+				$('span#'+container).html(' ext. '+$(this).val());
+		} else if(container=='fax'){
+			if($(this).val()==""){
+				$('td#'+container).html('');
+				$('td#fax_image').html('');
+			} else {
+				$('td#fax_image').html('<img src="https://www.dezshira.com/signatures/images/Icon-Signature-Fax.png" width="12" height="12" style="width:12px;height:12px; display: inline-block; float:left;"/>');
+				$('span#'+container).html('<span id="fax" style="color: #fefefe; font-size: 9.0pt; font-family: Arial, Helvetica, sans-serif; vertical-align: top; height: 12px;">'+$(this).val()+'</span>');
+			}
+		} else {
+
+      if(container=="telephone" || container=="mobile" || container=="fax" || container=="email"){
+        $('span#'+container).html("<a style='text-decoration:none;'><font color='#fefefe'>"+$(this).val()+"</font></a>");
+      } else {
+        $('span#'+container).html($(this).val());
+      }
+
+    }
+	});
+
+
+  $('#show_html').click(function(){
+    $('textarea#signature_html').val($('div#signature').html());
+    $('#signatureModal').removeClass('hide');
+    $('#select_signature').addClass('hide');
+
+    document.getElementById('signature_html').focus();
+    document.getElementById('signature_html').select();
+  });
+
+	$('button#btn_copy').click(function(){
+	  var copyText = document.getElementById("signature_html");
+	  copyText.select();
+	  document.execCommand("Copy");
+	  alert("Singature Copied to clipboard");
+	});
+
+	$('button#select_signature').click(function(){
+		 selectText('signature');
+		 setTimeout(function(){ document.execCommand("Copy"); }, 1000);
+	});
+
+	$("select#we_chat").change(function() {
+		we_chat_status=$( "select#we_chat option:selected" ).val();
+		if(we_chat_status=='display') {
+			$('div#signature_banner').html('<a href="https://www.dezshira.com" target="_blank"><img src="https://www.dezshira.com/userfiles/image/2020-email-signature/banner_qr_v1.jpg?v3" height="80" width="552" style="width:552px;height:80px;"/></a>');
+		} else {
+			$('div#signature_banner').html('<a href="https://www.dezshira.com" target="_blank"><img src="https://www.dezshira.com/userfiles/image/2020-email-signature/banner_v1.jpg?v3" height="80" width="473" style="width:473;height:80px;"/></a>');
+		}
+	});
+
+	$("select#service_certified").change(function() {
+		service_certified=$( "select#service_certified option:selected" ).val();
+
+		if(service_certified=='xero_advisor')
+			$('span#service_certified').html('XERO advisor Partner');
+		else if(service_certified=='xero_bronze')
+			$('span#service_certified').html('XERO Bronze Champion Partner');
+		else if(service_certified=='xero_silver_champion')
+			$('span#service_certified').html('XERO Silver Champion Partner');
+		else if(service_certified=='xero_gold_champion')
+			$('span#service_certified').html('XERO Gold Champion Partner');
+		else if(service_certified=='ms_cloud_silver')
+			$('span#service_certified').html('Microsoft Cloud Silver Partner');
+		else
+			$('span#service_certified').html('');
+	});
+
+
+  $("select#banner").change(function() {
+    banner=$( "select#banner option:selected" ).val();
+    if(banner=="hide"){
+      $('#div_banner').html('');
+    } /*else {
+      $('#div_banner').html('<div style="height:60px;width:576px;"><a href="https://www.dezshira.com/signature_banner_cta_link" target="_blank" style="display: block;"><img src="https://www.dezshira.com/signatures/images/badges1.1/banner-default.jpg" width="700" height="60"  alt="dsa"  align="left" border="0"  style="width:576px;margin: 0px; padding: 0px; display: block;"></a></div>');
+    }*/
+  });
+
+	function selectText(id){
+		var sel, range;
+		var el = document.getElementById(id); //get element id
+		if (window.getSelection && document.createRange) { //Browser compatibility
+		  sel = window.getSelection();
+		  if(sel.toString() == ''){ //no text selection
+			 window.setTimeout(function(){
+				range = document.createRange(); //range object
+				range.selectNodeContents(el); //sets Range
+				sel.removeAllRanges(); //remove all ranges from selection
+				sel.addRange(range);//add Range to a Selection.
+			},1);
+		  }
+		}else if (document.selection) { //older ie
+			sel = document.selection.createRange();
+			if(sel.text == ''){ //no text selection
+				range = document.body.createTextRange();//Creates TextRange object
+				range.moveToElementText(el);//sets Range
+				range.select(); //make selection.
+			}
+		}
+	}	
+	
+});
+
+
+</script>
+</body>
+</html>
+</div>

@@ -126,7 +126,10 @@
 
    <!-- CSS Reset : BEGIN -->
 <style>
-  
+  .ii a[href] {
+    color: #fefefe;
+    text-decoration: none;
+}
   /* What it does: Stops email clients resizing small text. */
   * {
       -ms-text-size-adjust: 100%;
@@ -329,7 +332,7 @@
 
 <td width="50%" valign="top" style="font-size:13px;line-height:20px;color:#fefefe;">
 Email: <a href="mailto:jane.doe@dezshira.com" style="color:#fefefe;text-decoration:none;">
-<span id="email"></span></a><br>
+<span id="email" style="color:#fefefe;text-decoration:none;"></span></a><br>
 Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span>
 </td>
 
@@ -569,7 +572,7 @@ $( document ).ready(function() {
 		} else {
 
       if(container=="telephone" || container=="mobile" || container=="fax" || container=="email"){
-        $('span#'+container).html("<a style='text-decoration:none;'><font color='#fefefe'>"+$(this).val()+"</font></a>");
+        $('span#'+container).html("<a style='text-decoration:none;color='#fefefe;'><font color='#fefefe'>"+$(this).val()+"</font></a>");
       } else {
         $('span#'+container).html($(this).val());
       }

@@ -126,6 +126,12 @@
 
    <!-- CSS Reset : BEGIN -->
 <style>
+    #mobRow,
+#telRow,
+#emailRow,
+#faxRow {
+  display: none;
+}
   .ii a[href] {
     color: #fefefe;
     text-decoration: none;
@@ -326,14 +332,18 @@
 <tr>
 
 <td width="50%" valign="top" style="font-size:13px;line-height:20px;color:#ffffff;">
-  Mob: <a href="tel:+00112223333" style="color:inherit !important;;text-decoration:none !important;;"><span id="mobile" style="color:#fefefe;text-decoration:none;"></span> </a><br>
-  Tel: <a href="tel:+111122222222" style="color:inherit !important;text-decoration:none !important;"><span id="telephone" style="color:#fefefe;text-decoration:none;"></span> ext. <span id="ext" style="color:#fefefe;text-decoration:none;"></span></a>
+  <div id="mobRow"> 
+  Mob: <a href="tel:+00112223333" style="color:inherit !important;;text-decoration:none !important;;"><span id="mobile" style="color:#fefefe;text-decoration:none;"></span> </a></div> 
+  <div id="telRow">
+  Tel: <a href="tel:+111122222222" style="color:inherit !important;text-decoration:none !important;"><span id="telephone" style="color:#fefefe;text-decoration:none;"></span> ext. <span id="ext" style="color:#fefefe;text-decoration:none;"></span></a></div>
 </td>
 
 <td width="50%" valign="top" style="font-size:13px;line-height:20px;color:#fefefe;">
+<div id="emailRow">     
 Email: <a href="mailto:jane.doe@dezshira.com" style="color:inherit !important;text-decoration:none !important;" data-detectors="false">
-<span id="email" style="color:#fefefe;text-decoration:none;"></span></a><br>
-Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span>
+<span id="email" style="color:#fefefe;text-decoration:none;"></span></a></div>
+<div id="faxRow">
+Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span></div>
 </td>
 
 </tr>
@@ -393,24 +403,24 @@ Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span>
 
 <!-- Retina icons (28px image scaled to 14px display) -->
 <a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-in.png"
-     width="10"
-     style="width:10px;height:auto;border:0;"></a>
+     width="10" height="10px"
+     style="width:10px;height:10px;border:0;"></a>
 &nbsp;
 <a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-f.png"
-     width="6"
-     style="width:6px;height:auto;border:0;"></a>
+     width="6" height="10"
+     style="width:6px;height:10px;border:0;"></a>
 &nbsp;
 <a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-x.png"
-     width="10"
-     style="width:10px;height:auto;border:0;"></a>
+     width="10" height="10"
+     style="width:10px;height:10px;border:0;"></a>
 &nbsp;
 <a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-y.png"
-     width="12"
-     style="width:12px;height:auto;border:0;"></a>
+     width="11" height="8"
+     style="width:11px;height:8px;border:0;"></a>
 &nbsp;
 <a href="#"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-w.png"
-     width="14"
-     style="width:14px;height:auto;border:0;"></a>     
+     width="12" height="10"
+     style="width:12px;height:10px;border:0;"></a>     
 </td>
 </tr>
 </table>
@@ -517,31 +527,31 @@ $( document ).ready(function() {
 		if(desk=='german'){
 			int_desk_url='https://www.dezshira.com/international-desk/german.html';
       int_desk_name='GERMAN DESK';
-      int_desk_flag='GERMAN DESK';
+      int_desk_flag='flg-de.jpg';
 		} else if(desk=='italian') {
 			int_desk_url='https://www.dezshira.com/international-desk/italian.html';
       int_desk_name='ITALIAN DESK';
-      int_desk_flag='ITALIAN DESK';
+      int_desk_flag='flg-it.jpg';
 		} else if(desk=='french') {
 			int_desk_url='https://www.dezshira.com/international-desk/french.html';
       int_desk_name='FRENCH DESK';
-      int_desk_flag='FRENCH DESK';
+      int_desk_flag='flg-fr.jpg';
 		} else if(desk=='spanish') {
 			int_desk_url='https://www.dezshira.com/international-desk/spanish.html';
       int_desk_name='SPANISH DESK';
-      int_desk_flag='SPANISH DESK';
+      int_desk_flag='flg-es.jpg';
 		} else if(desk=='russian') {
 			int_desk_url='https://www.dezshira.com/international-desk/russian.html';
       int_desk_name='RUSSIAN DESK';
-      int_desk_flag='RUSSIAN DESK';
+      int_desk_flag='flg-ru.jpg';
 		} else if(desk=='asean') {
 			int_desk_url='https://www.dezshira.com/international-desk';
       int_desk_name='ASEAN DESK';
-      int_desk_flag='ASEAN DESK';
+      int_desk_flag='flg-asean.jpg';
 		} else if(desk=='australian') {
 			int_desk_url='https://www.dezshira.com/international-desk/australian.html';
       int_desk_name='AUSTRALIAN DESK';
-      int_desk_flag='AUSTRALIAN DESK';
+      int_desk_flag='flg-au.jpg';
 		} else if(desk=='us') {
 			int_desk_url='https://www.dezshira.com/international-desk/north-american.html';
       int_desk_name='NORTH AMERICAN DESK';
@@ -549,7 +559,7 @@ $( document ).ready(function() {
 		} else if(desk=='uk_ireland_1') {
 			int_desk_url='https://www.dezshira.com/international-desk/uk-ireland.html';
       int_desk_name='UK AND IRELAND DESK';
-      int_desk_flag='UK and Ireland Desk';
+      int_desk_flag='flg-uk.jpg';
     }
 			
 		if(desk!='' && desk!='none'){
@@ -680,6 +690,53 @@ $( document ).ready(function() {
 
 
 </script>
+<script>
+function updateField(inputId, previewId, rowId, linkPrefix = null) {
+  const input = document.getElementById(inputId);
+  const preview = document.getElementById(previewId);
+  const row = document.getElementById(rowId);
+
+  if (!input || !preview || !row) return;
+
+  const value = input.value.trim();
+
+  if (value === "") {
+    row.style.display = "none";
+  } else {
+    row.style.display = "block";
+    preview.textContent = value;
+
+    // Update tel/mailto links if needed
+    if (linkPrefix) {
+      const link = preview.closest("a");
+      if (link) {
+        link.href = linkPrefix + value.replace(/\s+/g, '');
+      }
+    }
+  }
+}
+
+// Attach listeners
+document.querySelectorAll("input").forEach(input => {
+  input.addEventListener("input", function () {
+
+    updateField("txt_mobile", "mobile", "mobRow", "tel:");
+    updateField("txt_telephone", "telephone", "telRow", "tel:");
+    updateField("txt_email", "email", "emailRow", "mailto:");
+    updateField("txt_fax", "fax", "faxRow");
+
+    // Handle EXT separately (optional logic)
+    const extInput = document.getElementById("txt_ext");
+    const extPreview = document.getElementById("ext");
+
+    if (extInput && extPreview) {
+      extPreview.textContent = extInput.value.trim();
+    }
+
+  });
+});
+</script>
+
 </body>
 </html>
 </div>

@@ -334,8 +334,17 @@
 <td width="50%" valign="top" style="font-size:13px;line-height:20px;color:#ffffff;">
   <div id="mobRow"> 
   Mob: <a href="tel:+00112223333" style="color:inherit !important;;text-decoration:none !important;;"><span id="mobile" style="color:#fefefe;text-decoration:none;"></span> </a></div> 
+  <!-- <div id="telRow">
+  Tel: <a href="tel:+111122222222" style="color:inherit !important;text-decoration:none !important;"><span id="telephone" style="color:#fefefe;text-decoration:none;"></span> <span id="extRow"> ext. <span id="ext" style="color:#fefefe;text-decoration:none;"></span></span></a></div> -->
   <div id="telRow">
-  Tel: <a href="tel:+111122222222" style="color:inherit !important;text-decoration:none !important;"><span id="telephone" style="color:#fefefe;text-decoration:none;"></span> ext. <span id="ext" style="color:#fefefe;text-decoration:none;"></span></a></div>
+  Tel:
+  <a href="tel:+111122222222" style="color:inherit !important;;text-decoration:none !important;">
+    <span id="telephone" style="color:#fefefe;text-decoration:none;"></span>
+    <span id="extRow" style="display:none;">
+      &nbsp;ext. <span id="ext" style="color:#fefefe;text-decoration:none;"></span>
+    </span>
+  </a>
+</div>
 </td>
 
 <td width="50%" valign="top" style="font-size:13px;line-height:20px;color:#fefefe;">
@@ -367,7 +376,8 @@ Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span></div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
 <td style="font-size:13px;color:#666666;line-height:20px;padding-bottom:15px;">
-<span id="address_english"></span>
+<span id="address_english"></span><br>
+<span id="address_chinese"></span>
 </td>
 </tr>
 </table>
@@ -431,16 +441,16 @@ Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span></div>
 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
-<td style="font-size:10px;color:#7f7f7f;line-height:16px; padding-top: 15px;">
-<span style="color: #7f7f7f; font-size: 10px; font-family: Arial, Helvetica, sans-serif;line-height:16px;">China &nbsp;&nbsp;|&nbsp;&nbsp; Hong Kong SAR &nbsp;&nbsp;|&nbsp;&nbsp;Australia &nbsp;&nbsp;|&nbsp;&nbsp; Bangladesh &nbsp;&nbsp;|&nbsp;&nbsp; Dubai UAE &nbsp;&nbsp;|&nbsp;&nbsp; Germany &nbsp;&nbsp;|&nbsp;&nbsp; India &nbsp;&nbsp;|&nbsp;&nbsp; Indonesia &nbsp;&nbsp;|&nbsp;&nbsp; Italy &nbsp;&nbsp;|&nbsp;&nbsp; Japan &nbsp;&nbsp;|&nbsp;&nbsp; Malaysia &nbsp;&nbsp;|&nbsp;&nbsp; Mongolia &nbsp;&nbsp;|&nbsp;&nbsp; Nepal &nbsp;&nbsp;|&nbsp;&nbsp; Singapore &nbsp;&nbsp;|&nbsp;&nbsp; South Korea &nbsp;&nbsp;|&nbsp;&nbsp; Sri Lanka &nbsp;&nbsp;|&nbsp;&nbsp; Thailand &nbsp;&nbsp;|&nbsp;&nbsp; The Philippines &nbsp;&nbsp;|&nbsp;&nbsp; United States &nbsp;&nbsp;|&nbsp;&nbsp; Vietnam</span>
+<td style="font-size:9px;color:#7f7f7f;line-height:16px; padding-top: 15px;">
+<span style="color: #7f7f7f; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:16px;">China &nbsp;&nbsp;|&nbsp;&nbsp; Hong Kong SAR &nbsp;&nbsp;|&nbsp;&nbsp;Australia &nbsp;&nbsp;|&nbsp;&nbsp; Bangladesh &nbsp;&nbsp;|&nbsp;&nbsp; Cambodia &nbsp;&nbsp;|&nbsp;&nbsp; Dubai UAE &nbsp;&nbsp;|&nbsp;&nbsp; Germany &nbsp;&nbsp;|&nbsp;&nbsp; India &nbsp;&nbsp;|&nbsp;&nbsp; Indonesia &nbsp;&nbsp;|&nbsp;&nbsp; Italy &nbsp;&nbsp;|&nbsp;&nbsp; Japan &nbsp;&nbsp;|&nbsp;&nbsp; Malaysia &nbsp;&nbsp;|&nbsp;&nbsp; Mongolia &nbsp;&nbsp;|&nbsp;&nbsp; Nepal &nbsp;&nbsp;|&nbsp;&nbsp; Singapore &nbsp;&nbsp;|&nbsp;&nbsp; South Korea &nbsp;&nbsp;|&nbsp;&nbsp; Sri Lanka &nbsp;&nbsp;|&nbsp;&nbsp; Thailand &nbsp;&nbsp;|&nbsp;&nbsp; The Philippines &nbsp;&nbsp;|&nbsp;&nbsp; United States &nbsp;&nbsp;|&nbsp;&nbsp; Vietnam</span>
 </td>
 </tr>
 </table>
 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
-<td style="font-size:10px;color:#b1b3b6;line-height:14px;padding-bottom:15px; padding-top: 10px;">
-<span style="color: #b1b3b6; font-size: 10px; font-family: Arial, Helvetica, sans-serif;line-height:14px;">This message contains information that may be privileged or confidential and is the property of Dezan Shira and Associates. It is intended only for the person to whom it is addressed. If you are not the intended recipient, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. If you receive this message in error, please notify the sender immediately and delete all copies of this message.</span>
+<td style="font-size:9px;color:#b1b3b6;line-height:14px;padding-bottom:15px; padding-top: 10px;">
+<span style="color: #b1b3b6; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:14px;">This message contains information that may be privileged or confidential and is the property of Dezan Shira and Associates. It is intended only for the person to whom it is addressed. If you are not the intended recipient, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. If you receive this message in error, please notify the sender immediately and delete all copies of this message.</span>
 </td>
 </tr>
 </table>
@@ -585,7 +595,7 @@ $( document ).ready(function() {
 			if($(this).val()=="")
 				$('span#'+container).html('');
 			else
-				$('span#'+container).html(' ext. '+$(this).val());
+				$('span#'+container).html(''+$(this).val());
 		} else if(container=='fax'){
 			if($(this).val()==""){
 				$('td#'+container).html('');
@@ -719,19 +729,27 @@ function updateField(inputId, previewId, rowId, linkPrefix = null) {
 // Attach listeners
 document.querySelectorAll("input").forEach(input => {
   input.addEventListener("input", function () {
-
     updateField("txt_mobile", "mobile", "mobRow", "tel:");
     updateField("txt_telephone", "telephone", "telRow", "tel:");
     updateField("txt_email", "email", "emailRow", "mailto:");
     updateField("txt_fax", "fax", "faxRow");
+    // updateField("txt_ext", "ext", "extRow");
 
     // Handle EXT separately (optional logic)
-    const extInput = document.getElementById("txt_ext");
-    const extPreview = document.getElementById("ext");
+const extInput = document.getElementById("txt_ext");
+const extPreview = document.getElementById("ext");
+const extRow = document.getElementById("extRow");
 
-    if (extInput && extPreview) {
-      extPreview.textContent = extInput.value.trim();
-    }
+if (extInput && extPreview && extRow) {
+  const extValue = extInput.value.trim();
+
+  if (extValue === "") {
+    extRow.style.display = "none";
+  } else {
+    extRow.style.display = "inline";
+    extPreview.textContent = extValue;
+  }
+}
 
   });
 });

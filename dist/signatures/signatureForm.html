@@ -98,6 +98,10 @@
     <div class="form-group col-sm-6">
       <label for="banner">Banner</label>
       <select name="banner" id="banner" class="form-control">
+        <option value="">None</option>
+        <option value="ami_banner">AMI banner</option>
+        <option value="service_banner">service banner</option>
+        <option value="campaign_banner">campaign banner</option>
       </select>
     </div>
     <!--/col-->
@@ -442,7 +446,7 @@ Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span></div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
 <td style="font-size:9px;color:#7f7f7f;line-height:16px; padding-top: 15px;">
-<span style="color: #7f7f7f; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:16px;">China &nbsp;&nbsp;|&nbsp;&nbsp; Hong Kong SAR &nbsp;&nbsp;|&nbsp;&nbsp;Australia &nbsp;&nbsp;|&nbsp;&nbsp; Bangladesh &nbsp;&nbsp;|&nbsp;&nbsp; Cambodia &nbsp;&nbsp;|&nbsp;&nbsp; Dubai UAE &nbsp;&nbsp;|&nbsp;&nbsp; Germany &nbsp;&nbsp;|&nbsp;&nbsp; India &nbsp;&nbsp;|&nbsp;&nbsp; Indonesia &nbsp;&nbsp;|&nbsp;&nbsp; Italy &nbsp;&nbsp;|&nbsp;&nbsp; Japan &nbsp;&nbsp;|&nbsp;&nbsp; Malaysia &nbsp;&nbsp;|&nbsp;&nbsp; Mongolia &nbsp;&nbsp;|&nbsp;&nbsp; Nepal &nbsp;&nbsp;|&nbsp;&nbsp; Singapore &nbsp;&nbsp;|&nbsp;&nbsp; South Korea &nbsp;&nbsp;|&nbsp;&nbsp; Sri Lanka &nbsp;&nbsp;|&nbsp;&nbsp; Thailand &nbsp;&nbsp;|&nbsp;&nbsp; The Philippines &nbsp;&nbsp;|&nbsp;&nbsp; United States &nbsp;&nbsp;|&nbsp;&nbsp; Vietnam</span>
+<span id="country_list" style="color: #7f7f7f; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:16px;">China &nbsp;&nbsp;|&nbsp;&nbsp; Hong Kong SAR &nbsp;&nbsp;|&nbsp;&nbsp;Australia &nbsp;&nbsp;|&nbsp;&nbsp; Bangladesh &nbsp;&nbsp;|&nbsp;&nbsp; Cambodia &nbsp;&nbsp;|&nbsp;&nbsp; Dubai UAE &nbsp;&nbsp;|&nbsp;&nbsp; Germany &nbsp;&nbsp;|&nbsp;&nbsp; India &nbsp;&nbsp;|&nbsp;&nbsp; Indonesia &nbsp;&nbsp;|&nbsp;&nbsp; Italy &nbsp;&nbsp;|&nbsp;&nbsp; Japan &nbsp;&nbsp;|&nbsp;&nbsp; Malaysia &nbsp;&nbsp;|&nbsp;&nbsp; Mongolia &nbsp;&nbsp;|&nbsp;&nbsp; Nepal &nbsp;&nbsp;|&nbsp;&nbsp; Singapore &nbsp;&nbsp;|&nbsp;&nbsp; South Korea &nbsp;&nbsp;|&nbsp;&nbsp; Sri Lanka &nbsp;&nbsp;|&nbsp;&nbsp; Thailand &nbsp;&nbsp;|&nbsp;&nbsp; The Philippines &nbsp;&nbsp;|&nbsp;&nbsp; United States &nbsp;&nbsp;|&nbsp;&nbsp; Vietnam</span>
 </td>
 </tr>
 </table>
@@ -450,7 +454,15 @@ Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span></div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
 <td style="font-size:9px;color:#b1b3b6;line-height:14px;padding-bottom:15px; padding-top: 10px;">
-<span style="color: #b1b3b6; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:14px;">This message contains information that may be privileged or confidential and is the property of Dezan Shira and Associates. It is intended only for the person to whom it is addressed. If you are not the intended recipient, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. If you receive this message in error, please notify the sender immediately and delete all copies of this message.</span>
+<span id="disclaimer" style="color: #b1b3b6; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:14px;">This message contains information that may be privileged or confidential and is the property of Dezan Shira and Associates. It is intended only for the person to whom it is addressed. If you are not the intended recipient, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. If you receive this message in error, please notify the sender immediately and delete all copies of this message.</span>
+</td>
+</tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="font-size:9px;color:#b1b3b6;line-height:14px;padding-bottom:15px; padding-top: 10px;">
+<span id="banner" style="color: #b1b3b6; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:14px;"></span>
 </td>
 </tr>
 </table>
@@ -663,16 +675,29 @@ $( document ).ready(function() {
 			$('span#service_certified').html('');
 	});
 
+    	$("select#banner").change(function() {
+		banner=$( "select#banner option:selected" ).val();
 
+		if(banner=='ami_banner')
+			$('span#banner').html('<div style="height:60px;width:576px;"><a href="https://www.dezshira.com/signature_banner_cta_link" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_ami.jpg" width="700" height="60"  alt="dsa"  align="left" border="0"  style="width:576px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='service_banner')
+			$('span#banner').html('<div style="height:60px;width:576px;"><a href="https://www.dezshira.com/signature_banner_cta_link" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_service.jpg" width="700" height="60"  alt="dsa"  align="left" border="0"  style="width:576px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='campaign_banner')
+			$('span#banner').html('<div style="height:60px;width:576px;"><a href="https://www.dezshira.com/signature_banner_cta_link" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_campaign.jpg" width="700" height="60"  alt="dsa"  align="left" border="0"  style="width:576px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else
+			$('span#banner').html('');
+	});
+
+/*  
   $("select#banner").change(function() {
     banner=$( "select#banner option:selected" ).val();
     if(banner=="hide"){
       $('#div_banner').html('');
-    } /*else {
+    } else {
       $('#div_banner').html('<div style="height:60px;width:576px;"><a href="https://www.dezshira.com/signature_banner_cta_link" target="_blank" style="display: block;"><img src="https://www.dezshira.com/signatures/images/badges1.1/banner-default.jpg" width="700" height="60"  alt="dsa"  align="left" border="0"  style="width:576px;margin: 0px; padding: 0px; display: block;"></a></div>');
-    }*/
+    }
   });
-
+*/
 	function selectText(id){
 		var sel, range;
 		var el = document.getElementById(id); //get element id

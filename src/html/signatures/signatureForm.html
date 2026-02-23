@@ -118,6 +118,17 @@
     <!--/col--> 
     
   </div>
+
+<div class="row">
+<div class="form-group col-sm-6">
+  <div class="checkbox-row">
+  <input type="checkbox" id="show_country_list" name="countrylist" value="Country List">
+  <label for="countrylist">Country List</label></div>
+  <div class="checkbox-row">
+  <input type="checkbox" id="show_disclaimer" name="disclaimer" value="Disclaimer">
+  <label for="disclaimer" class="mb-0">Disclaimer</label></div>
+    </div>
+  </div>
   <!--/row--> 
 </div>
 <!--/signature_app-->
@@ -130,7 +141,11 @@
 
    <!-- CSS Reset : BEGIN -->
 <style>
-    #mobRow,
+.checkbox-row{display: flex; align-items: center;  margin-bottom: 8px;}  
+.checkbox-row label{ margin-bottom: 0;}
+.checkbox-row input{ margin-top: 0; margin-right: 5px;}
+#country_list, #disclaimer{ display: none;}
+#mobRow,
 #telRow,
 #emailRow,
 #faxRow {
@@ -443,18 +458,18 @@ Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span></div>
 </tr>
 </table>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<table id="country_list" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"style="display:none;">
 <tr>
 <td style="font-size:9px;color:#7f7f7f;line-height:16px; padding-top: 15px;">
-<span id="country_list" style="color: #7f7f7f; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:16px;">China &nbsp;&nbsp;|&nbsp;&nbsp; Hong Kong SAR &nbsp;&nbsp;|&nbsp;&nbsp;Australia &nbsp;&nbsp;|&nbsp;&nbsp; Bangladesh &nbsp;&nbsp;|&nbsp;&nbsp; Cambodia &nbsp;&nbsp;|&nbsp;&nbsp; Dubai UAE &nbsp;&nbsp;|&nbsp;&nbsp; Germany &nbsp;&nbsp;|&nbsp;&nbsp; India &nbsp;&nbsp;|&nbsp;&nbsp; Indonesia &nbsp;&nbsp;|&nbsp;&nbsp; Italy &nbsp;&nbsp;|&nbsp;&nbsp; Japan &nbsp;&nbsp;|&nbsp;&nbsp; Malaysia &nbsp;&nbsp;|&nbsp;&nbsp; Mongolia &nbsp;&nbsp;|&nbsp;&nbsp; Nepal &nbsp;&nbsp;|&nbsp;&nbsp; Singapore &nbsp;&nbsp;|&nbsp;&nbsp; South Korea &nbsp;&nbsp;|&nbsp;&nbsp; Sri Lanka &nbsp;&nbsp;|&nbsp;&nbsp; Thailand &nbsp;&nbsp;|&nbsp;&nbsp; The Philippines &nbsp;&nbsp;|&nbsp;&nbsp; United States &nbsp;&nbsp;|&nbsp;&nbsp; Vietnam</span>
+<span style="color: #7f7f7f; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:16px;">China &nbsp;&nbsp;|&nbsp;&nbsp; Hong Kong SAR &nbsp;&nbsp;|&nbsp;&nbsp;Australia &nbsp;&nbsp;|&nbsp;&nbsp; Bangladesh &nbsp;&nbsp;|&nbsp;&nbsp; Cambodia &nbsp;&nbsp;|&nbsp;&nbsp; Dubai UAE &nbsp;&nbsp;|&nbsp;&nbsp; Germany &nbsp;&nbsp;|&nbsp;&nbsp; India &nbsp;&nbsp;|&nbsp;&nbsp; Indonesia &nbsp;&nbsp;|&nbsp;&nbsp; Italy &nbsp;&nbsp;|&nbsp;&nbsp; Japan &nbsp;&nbsp;|&nbsp;&nbsp; Malaysia &nbsp;&nbsp;|&nbsp;&nbsp; Mongolia &nbsp;&nbsp;|&nbsp;&nbsp; Nepal &nbsp;&nbsp;|&nbsp;&nbsp; Singapore &nbsp;&nbsp;|&nbsp;&nbsp; South Korea &nbsp;&nbsp;|&nbsp;&nbsp; Sri Lanka &nbsp;&nbsp;|&nbsp;&nbsp; Thailand &nbsp;&nbsp;|&nbsp;&nbsp; The Philippines &nbsp;&nbsp;|&nbsp;&nbsp; United States &nbsp;&nbsp;|&nbsp;&nbsp; Vietnam</span>
 </td>
 </tr>
 </table>
 
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<table id="disclaimer"  role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none;">
 <tr>
 <td style="font-size:9px;color:#b1b3b6;line-height:14px;padding-bottom:15px; padding-top: 10px;">
-<span id="disclaimer" style="color: #b1b3b6; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:14px;">This message contains information that may be privileged or confidential and is the property of Dezan Shira and Associates. It is intended only for the person to whom it is addressed. If you are not the intended recipient, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. If you receive this message in error, please notify the sender immediately and delete all copies of this message.</span>
+<span style="color: #b1b3b6; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:14px;">This message contains information that may be privileged or confidential and is the property of Dezan Shira and Associates. It is intended only for the person to whom it is addressed. If you are not the intended recipient, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. If you receive this message in error, please notify the sender immediately and delete all copies of this message.</span>
 </td>
 </tr>
 </table>
@@ -586,12 +601,12 @@ $( document ).ready(function() {
 			
 		if(desk!='' && desk!='none'){
       $('#international_desk_badge').html(
-      '<div>' +
+       
         '<a href="' + int_desk_url + '" target="_blank" style="display:flex;align-items:center;text-decoration:none;">' +
-          '<img src="https://dsa-2025-gulp-setup.netlify.app/img/desk-icon.png" width="18" style="border:0;vertical-align:middle;margin-right:6px;">' +
+          '<img src="https://www.dezshira.com/signatures/images/badges1.1/icon_'+desk+'_desk.jpg" width="18" height="10" align="left" border="0"  style="margin: 0px; padding: 0px; display: block; height: 10px; margin-right: 5px;" />' +
           '<span style="font-size:10px;color:#666666;">' + int_desk_name + '</span>' +
-        '</a>' +
-      '</div>'
+        '</a>' 
+      
     );
 
   } else {
@@ -722,8 +737,6 @@ $( document ).ready(function() {
 	}	
 	
 });
-
-
 </script>
 <script>
 function updateField(inputId, previewId, rowId, linkPrefix = null) {
@@ -760,7 +773,7 @@ document.querySelectorAll("input").forEach(input => {
     updateField("txt_fax", "fax", "faxRow");
     // updateField("txt_ext", "ext", "extRow");
 
-    // Handle EXT separately (optional logic)
+// Handle EXT separately (optional logic)
 const extInput = document.getElementById("txt_ext");
 const extPreview = document.getElementById("ext");
 const extRow = document.getElementById("extRow");
@@ -777,6 +790,21 @@ if (extInput && extPreview && extRow) {
 }
 
   });
+});
+
+// Handle country list and disclaimer
+const showCountryList = document.getElementById("show_country_list");
+const showDisclaimer = document.getElementById("show_disclaimer");
+
+const countryList = document.getElementById("country_list");
+const disclaimer = document.getElementById("disclaimer");
+
+showCountryList.addEventListener("change", function () {
+  countryList.style.display = this.checked ? "table" : "none";
+});
+
+showDisclaimer.addEventListener("change", function () {
+  disclaimer.style.display = this.checked ? "table" : "none";
 });
 </script>
 

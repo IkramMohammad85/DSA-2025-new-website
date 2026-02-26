@@ -335,15 +335,15 @@
   </p>
 <div id="socialMedia" style="display:none;">
   <span id="linkedinIcon" style="display:none;">
-    <a id="linkedinLink" href="#" target="_blank" style="display:inline-block;">
+    <a id="linkedinLink" href="#" target="_blank" style="display:inline-block; margin-left: 8px;">
       <img src="https://dsa-2025-gulp-setup.netlify.app/img/s-in.png" width="10" style="display:inline-block;border:0;">
     </a>
   </span><span id="wechatIcon" style="display:none;">
-    <a id="wechatLink" href="#" target="_blank" style="display:inline-block;">
+    <a id="wechatLink" href="#" target="_blank" style="display:inline-block; margin-left: 8px;">
       <img src="https://dsa-2025-gulp-setup.netlify.app/img/s-w.png" width="12"style="display:inline-block;border:0;">
     </a>
   </span><span id="whatsappIcon" style="display:none;">
-    <a id="whatsappLink" href="#" target="_blank" style="display:inline-block;">
+    <a id="whatsappLink" href="#" target="_blank" style="display:inline-block; margin-left: 8px;">
       <img src="https://dsa-2025-gulp-setup.netlify.app/img/s-w.png" width="12"style="display:inline-block;border:0;">
     </a>
   </span>
@@ -876,7 +876,7 @@ function updateSocial(inputId, iconId, linkId) {
     document.getElementById("wechatIcon").style.display !== "none" ||
     document.getElementById("whatsappIcon").style.display !== "none";
 
-  container.style.display = anyVisible ? "block" : "none";
+  container.style.display = anyVisible ? "inline-block" : "none";
 }
 
 // Attach listeners

@@ -1,0 +1,950 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://www.dezshira.com/themes/dsa/js/jquery.min.js"></script>
+<link href="https://www.india-briefing.com/themes/ib/css/bundle.css" rel="stylesheet">
+<link href="https://www.dezshira.com/themes/dsa/css/bundle.css" rel="stylesheet">
+<meta charset="utf-8">
+<title>Signature Generation Tool for Dezan Shira & Associates </title>
+<style>
+  .create-signature{display: flex; flex-wrap: wrap; gap: 2rem; padding-top: 1rem; padding-bottom: 1rem;}
+  .signature-v-thumb {border-radius: 4px;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background: #207fd4;
+    width: 210px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 2rem 1rem;}
+ .signature-v-thumb a {
+
+
+    color: #fff;
+    text-align: center;
+    display: block;
+  }
+</style>
+</head>
+<body>
+<div id="signature_app" style="padding:40px;"> <a href="https://www.dezshira.com/" id="logo" data-target="#logoDownload"><img alt="" src="https://dsa-2021.netlify.app/assets/img/DSA_30_sig-300x37_blue.jpg" srcset="https://dsa-2021.netlify.app/assets/img/Logo-sig-30years_96dpi.jpg" class="mrg-left40 logo margin4Top"></a>
+  <hr />
+  <h1 class="page-title">Signature Generation Tool for Dezan Shira & Associates</h1>
+
+  <div class="alert alert-danger">
+    To implement the email signature, please refer to the guidelines provided below.</strong><br />
+<div class="create-signature">
+
+  <div class="signature-v-thumb"><a href="https://support.microsoft.com/en-us/office/how-to-add-and-change-an-email-signature-in-outlook-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2#picktab=new_outlook" target="_blank">How to create signature in New Outlook</a></div>
+  <div class="signature-v-thumb">
+    <a href="https://support.microsoft.com/en-us/office/how-to-add-and-change-an-email-signature-in-outlook-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2#picktab=classic_outlook" target="_blank">How to create signature in Classic Outlook</a>
+  </div>
+    <div class="signature-v-thumb">
+    <a href="https://support.microsoft.com/en-us/office/how-to-add-and-change-an-email-signature-in-outlook-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2#picktab=web" target="_blank">How to create signature in Outlook Web</a>
+  </div>
+      <div class="signature-v-thumb">
+    <a href="https://support.microsoft.com/en-us/office/create-insert-or-change-a-signature-in-outlook-for-mac-f4d21492-0956-4429-95ad-2769745b539c" target="_blank">How to create signature in Outlook Mac</a>
+  </div>
+</div>
+    If you face any issue, please contact <a href="mailto:design-marketing@dezshira.com">design-marketing@dezshira.com</a> for assistance.
+  </div>
+  
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="txt_name">Name:</label>
+      <input type="text" name="name" id="txt_name" placeholder="Name" class="form-control" required />
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="txt_position">Position:</label>
+      <input type="text" name="position" id="txt_position" placeholder="Position" class="form-control" required />
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="txt_telephone">Telephone:</label>
+      <input type="text" name="telephone" id="txt_telephone" placeholder="Enter Phone +86 21 8888 8888" class="form-control" />
+    </div>
+    <!--/col-->
+    
+    <!-- <div class="form-group col-sm-2">
+      <label for="txt_ext">Ext.</label>
+      <input type="text" name="ext" id="txt_ext" placeholder="8888" class="form-control" />
+    </div> -->
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="txt_mobile">Mobile:</label>
+      <input type="text" name="mobile" id="txt_mobile" placeholder="Enter Mobile +86 21 8888 8888" class="form-control" />
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-6">
+            <label for="txt_media">Personal Social Media Links:</label>
+ <div class="social-sign-cta">         
+<input type="text" name="linkedin" id="txt_linkedin" placeholder="Enter Linkedin" class="form-control" style="margin-bottom: 10px;"/>
+<input type="text" name="WeChat" id="txt_weChat" placeholder="Enter WeChat" class="form-control" style="margin-bottom: 10px;"/>
+<input type="text" name="whatsApp" id="txt_whatsApp" placeholder="Enter WhatsApp" class="form-control" style="margin-bottom: 10px;"/></div>  
+      <!-- <label for="txt_fax">Fax:</label>
+      <input type="text" name="fax" id="txt_fax" placeholder="Enter Fax +86 21 8888 8888" class="form-control" /> -->
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="txt_email">Email:</label>
+      <input type="email" name="email" id="txt_email" placeholder="Email" class="form-control" />
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="txt_office">Office:</label>
+      <select name="office" id="office" id="txt_office" class="form-control">
+      </select>
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="select_desk">International Desk:</label>
+      <select name="desk" id="select_desk" class="form-control">
+        <option value="none">None</option>
+        <option value="asean">ASEAN Desk</option>
+        <option value="australian">Australian Desk</option>
+        <option value="italian">Italian Desk</option>
+        <option value="french">French Desk</option>
+        <option value="german">German Desk</option>
+        <option value="spanish">Spanish Desk</option>
+        <option value="us">North American Desk</option>
+        <option value="russian">Russian Desk</option>
+        <option value="uk_ireland_1">UK and Ireland Desk</option>
+      </select>
+    </div>
+    <!--/col--> 
+    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-6">
+      <label for="banner">Banner</label>
+      <select name="banner" id="banner" class="form-control">
+        <option value="">None</option>
+        <option value="ami_banner">Asia Manufacturing Index 2026</option>
+        <option value="accounting_banner">Accounting</option>
+        <option value="audit-financial-review_banner">Audit and Financial Review</option>
+        <option value="business_advisory_banner">Business Advisory</option>
+        <option value="business_intelligence_banner">Business Intelligence</option>
+        <option value="china_outbound_banner">China Outbound | 境外直接投资</option>
+        <option value="corporate_establishment_banner">Corporate Establishment</option>
+        <option value="government_and_economic_development_banner">Government and Economic Development</option>
+        <option value="hr_and_payroll_banner">HR and Payroll</option>
+        <option value="mergers_and_acquisitions_banner">Mergers and Acquisitions</option>
+        <option value="risk_management_and_ESG_banner">Risk Management and ESG</option>
+        <option value="tax_banner">Tax</option>
+        <option value="technology_banner">Technology</option>
+        <option value="dbg_banner">Doing Business Guides 2026: ASEAN | China | India | UAE | Vietnam</option>
+        <!-- <option value="campaign_banner">campaign banner</option> -->
+      </select>
+    </div>
+    <!--/col-->
+    
+    <div class="form-group col-sm-6">
+      <label for="service_certified">Service Certified</label>
+      <select name="service_certified" id="service_certified" class="form-control">
+        <option value="">None</option>
+        <option value="xero_silver_champion">XERO Silver Champion Partner</option>
+        <option value="xero_gold_champion">XERO Gold Champion Partner</option>
+        <option value="ms_cloud_silver">Microsoft Cloud Silver Partner</option>
+      </select>
+    </div>
+    <!--/col--> 
+    
+  </div>
+
+<div class="row">
+<div class="form-group col-sm-6">
+  <div class="checkbox-row">
+  <input type="checkbox" id="show_country_list" name="countrylist" value="Country List">
+  <label for="show_country_list">Country List</label></div>
+  <div class="checkbox-row">
+  <input type="checkbox" id="show_disclaimer" name="disclaimer" value="Disclaimer">
+  <label for="show_disclaimer" class="mb-0">Disclaimer</label></div>
+    </div>
+  </div>
+  <!--/row--> 
+</div>
+<!--/signature_app-->
+
+<div style="display: flex;">
+
+  <div id="signature" style="padding:40px;width:800px;">
+
+  <br /><br /><br />
+
+   <!-- CSS Reset : BEGIN -->
+<style>
+.social-sign-cta{display: flex; gap:1rem;}
+  .alert-danger{line-height: 24px;}
+.checkbox-row{display: flex; align-items: center;  margin-bottom: 8px;}  
+.checkbox-row label{ margin-bottom: 0;}
+.checkbox-row input{ margin-top: 0; margin-right: 5px;}
+#country_list, #disclaimer{ display: none;}
+#mobRow,
+#telRow,
+#emailRow,
+#faxRow {
+  display: none;
+}
+  .ii a[href] {
+    color: #fefefe;
+    text-decoration: none;
+}
+  /* What it does: Stops email clients resizing small text. */
+  * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+  }
+  
+  /* What it does: Centers email on Android 4.4 */
+  div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+  }
+  
+  /* What it does: Stops Outlook from adding extra spacing to tables. */
+  table,
+  td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+  }
+  
+  /* What it does: Fixes webkit padding issue. */
+  table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+  }
+  
+  /* What it does: Uses a better rendering method when resizing images in IE. */
+  img {
+      -ms-interpolation-mode:bicubic;
+  }
+  
+  /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+  a {
+      text-decoration: none;
+  }
+  
+  /* What it does: A work-around for email clients meddling in triggered links. */
+  *[x-apple-data-detectors],  /* iOS */
+  .unstyle-auto-detected-links *,
+  .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+  }
+  
+  /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+  .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+  }
+  
+  /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+  .im {
+      color: inherit !important;
+  }
+  
+  /* If the above doesn't work, add a .g-img class to any image in question. */
+  img.g-img + div {
+      display: none !important;
+  }
+  
+  /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+  /* Create one of these media queries for each additional viewport size you'd like to fix */
+  
+  /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u ~ div .email-container {
+          min-width: 320px !important;
+      }
+  }
+  /* iPhone 6, 6S, 7, 8, and X */
+  @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u ~ div .email-container {
+          min-width: 375px !important;
+      }
+  }
+  /* iPhone 6+, 7+, and 8+ */
+  @media only screen and (min-device-width: 414px) {
+      u ~ div .email-container {
+          min-width: 414px !important;
+      }
+  }
+  
+  </style>
+  
+      <!-- CSS Reset : END -->
+
+  <style type="text/css">
+    a, body, button, div, span{ text-decoration: none;}
+    * {
+            -ms-text-size-adjust: 100%;
+      }
+
+        /* CLIENT-SPECIFIC STYLES */
+        body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;font-family:Arial,Helvetica,sans-serif !important;} /* Prevent WebKit and Windows mobile changing default text sizes */
+          table,
+          td {
+            border-collapse:collapse;
+              mso-table-lspace: 0pt !important;
+              mso-table-rspace: 0pt !important;
+          }
+        table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+        img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+        /* RESET STYLES */
+        img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}
+        table{border-collapse: collapse !important;}
+        body{height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+          color: inherit !important;
+          text-decoration: none !important;
+          font-size: inherit !important;
+          font-family: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+        }
+    a{text-decoration:none;}
+    a[href]{text-decoration:none;}
+    a:hover{text-decoration:none;}
+    a:-webkit-any-link{text-decoration: none;}
+    a {text-decoration:none !important; text-decoration:none;}
+      </style>
+            
+     <!--[if mso]>
+    <style>
+          table, table td a{font-family:Arial, Helvetica, 'sans-serif' !important;}
+      </style>
+      <![endif]-->
+      <!--[if (mso)|(mso 16)]>
+    <style type="text/css">
+    a {text-decoration: none;}
+    </style>
+    <![endif]-->
+
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+    a{
+    text-decoration: none !important;
+    }
+    </style>
+    <![endif]-->
+
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;font-family:Arial,Helvetica,sans-serif; width: 600px;">
+<tr>
+<td style="padding:0;margin:0;">
+
+<!-- ================= TOP SECTION ================= -->
+
+<!--[if mso]>
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td>
+<![endif]-->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;">
+<tr>
+
+<!-- LEFT SIDE -->
+<td valign="top" width="60%" style="padding:20px 0 10px 0;">
+  <p style="margin:0;font-size:18px;font-weight:bold;color:#2f4a6f;line-height:22px; padding: 0;">
+    <span id="name"></span>
+  </p>
+  <p style="margin:4px 0 0 0;font-size:14px;color:#555555;line-height:18px;padding: 0;">
+    <span id="position"></span>
+  </p>
+<div id="socialMedia" style="display:none;">
+  <span id="linkedinIcon" style="display:none; line-height: 0; float: left;background-color: #fff;"><a id="linkedinLink" href="#" target="_blank" style="display:inline-block; margin-right: 2px;line-height: 0;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/p-in.jpg" width="10" height="10" style="display:inline-block;border:0; width: 10px; height: 10px;"></a>
+  </span><span id="whatsappIcon" style="display:none; line-height: 0; float: left;background-color: #fff;"><a id="whatsappLink" href="#" target="_blank" style="display:inline-block; margin-right: 2px; line-height: 0;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/p-wp.jpg" width="10" height="10"  style="display:inline-block;border:0;height: 10px; width: 10px;"></a>
+  </span><span id="wechatIcon" style="display:none; line-height: 0; float: left; background-color: #fff;"><a id="wechatLink" href="#" target="_blank" style="display:inline-block; margin-right: 2px; line-height: 0;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/p-wt.jpg" width="12" height="10"  style="display:inline-block;border:0; width: 12px; height: 10px;"></a>
+  </span>
+</div> 
+</td>
+
+<!-- RIGHT SIDE LOGO -->
+<td valign="middle" width="40%" align="right" style="padding:20px 0 10px 0; background-color: #fff; vertical-align: middle;">
+  <img src="https://dsa-2025-gulp-setup.netlify.app/img/signature-logo.png"
+       width="211"
+       style="display:block;border:0;max-width:211px;height:auto;">
+</td>
+
+</tr>
+</table>
+
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+<!-- CONTACT BLOCK -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td bgcolor="#344C71" style="padding:15px 15px;color:#ffffff;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+
+<td width="40%" valign="top" bgcolor="#344C71" style="font-size:13px;line-height:20px;color:#ffffff;">
+  <div id="mobRow"> 
+  Mob: <span id="mobile" style="color:#fefefe;text-decoration:none;"></span></div> 
+  <!-- <div id="telRow">
+  Tel: <a href="tel:+111122222222" style="color:inherit !important;text-decoration:none !important;"><span id="telephone" style="color:#fefefe;text-decoration:none;"></span> <span id="extRow"> ext. <span id="ext" style="color:#fefefe;text-decoration:none;"></span></span></a></div> -->
+  <!-- <div id="telRow">
+  Tel:
+  <a href="tel:+111122222222" style="color:fefefe;text-decoration:none;">
+    <span id="telephone" style="color:#fefefe;text-decoration:none;"></span>
+    <span id="extRow" style="display:none;color:#fefefe;">
+      &nbsp;ext. <span id="ext" style="color:#fefefe;text-decoration:none;"></span>
+    </span>
+  </a>
+</div> -->
+</td>
+
+<td width="60%" bgcolor="#344C71" valign="top" style="font-size:13px;line-height:20px;color:#fefefe;">
+<div id="emailRow">     
+Email: <a href="mailto:jane.doe@dezshira.com" style="color:#fefefe;text-decoration:none;" data-detectors="false">
+<span id="email" style="color:#fefefe;text-decoration:none;"></span></a></div>
+<!-- <div id="faxRow">
+Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span></div> -->
+</td>
+
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<!-- DIVIDER  -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="padding-top:15px;">
+</td>
+</tr>
+</table>
+
+<!-- DESCRIPTION  -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="font-size:13px;color:#666666;line-height:20px;padding-bottom:15px;">
+<span id="address_english"></span><br>
+<div id="telRow">
+  Tel:
+  <a href="tel:+111122222222" style="color:#555555;text-decoration:none;">
+    <span id="telephone" style="color:#555555;text-decoration:none;"></span>
+  </a>
+</div>
+<span id="address_chinese" style="display: block; margin-top: 10px;"></span>
+</td>
+</tr>
+</table>
+
+<!-- FOOTER STRIP -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td bgcolor="#F1F2F2" style="padding:10px 15px;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+
+<!-- FLAG -->
+<td width="25%" valign="middle" style="font-size:10px;color:#666666;">
+<span id="international_desk_badge"></span>
+</td>
+
+<!-- CENTER TEXT -->
+<td width="30%" valign="middle" align="center" style="font-size:10px;color:#666666;">
+  <span id="service_certified"></span>
+</td>
+
+<!-- WEBSITE + SOCIAL -->
+<td width="45%" valign="middle" align="right">
+
+<a href="https://www.dezshira.com"
+   style="font-size:10px;color:#2f4a6f;text-decoration:none;">
+   www.dezshira.com
+</a>
+
+&nbsp;&nbsp;
+
+<!-- Retina icons (28px image scaled to 14px display) -->
+<a href="https://twitter.com/dezanshira" style="background-color: #F1F2F2; padding: 2px;line-height: 0;display: inline-block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-in.png"
+     width="10" height="10px"
+     style="width:10px;height:10px;border:0;"></a>
+&nbsp;
+<a href="https://www.facebook.com/DezanShira" target="_blank" style="background-color: #F1F2F2; padding: 2px;line-height: 0;display: inline-block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-f.png"
+     width="6" height="10"
+     style="width:6px;height:10px;border:0;"></a>
+&nbsp;
+<a href="https://twitter.com/dezanshira" style="background-color: #F1F2F2; padding: 2px;line-height: 0;display: inline-block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-x.png"
+     width="10" height="10"
+     style="width:10px;height:10px;border:0;"></a>
+&nbsp;
+<a href="https://www.youtube.com/channel/UCDuNrJ3qUVmxinM5i6trjtA" style="background-color: #F1F2F2; padding: 2px;line-height: 0;display: inline-block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-y.png"
+     width="11" height="8"
+     style="width:11px;height:8px;border:0;"></a>
+&nbsp;
+<a href="https://www.dezshira.com/connect-with-us" style="background-color: #F1F2F2; padding: 2px;line-height: 0;display: inline-block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/s-w.png"
+     width="12" height="10"
+     style="width:12px;height:10px;border:0;"></a>     
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="font-size:9px;color:#b1b3b6;line-height:14px;padding-bottom:0px; padding-top: 15px;">
+<span id="banner" style="color: #b1b3b6; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:14px;"></span>
+</td>
+</tr>
+</table>
+<table id="country_list" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"style="display:none;">
+<tr>
+<td style="font-size:9px;color:#7f7f7f;line-height:16px; padding-top: 15px;">
+<span style="color: #7f7f7f; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:16px;"><a href="https://www.dezshira.com/office/china" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">China</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/hong-kong.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Hong Kong SAR</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.dezshira.com/office/australia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Australia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/bangladesh.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Bangladesh</a> &nbsp;&nbsp;|&nbsp;&nbsp; Cambodia &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/dubai.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Dubai UAE</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/germany" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Germany</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/india" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">India</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/indonesia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Indonesia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/italy" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Italy</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/tokyo.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Japan</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/malaysia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Malaysia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/ulaanbaatar.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Mongolia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/nepal.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Nepal</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/singapore.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Singapore</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/seoul.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">South Korea</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/sri-lanka.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Sri Lanka</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/thailand.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Thailand</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/philippines.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">The Philippines</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/usa" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">United States</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/vietnam" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Vietnam</a></span>
+</td>
+</tr>
+</table>
+
+<table id="disclaimer"  role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="display:none;">
+<tr>
+<td style="font-size:9px;color:#b1b3b6;line-height:14px;padding-bottom:15px; padding-top: 10px;">
+<span style="color: #b1b3b6; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:14px;">This message contains information that may be privileged or confidential and is the property of Dezan Shira and Associates. It is intended only for the person to whom it is addressed. If you are not the intended recipient, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. If you receive this message in error, please notify the sender immediately and delete all copies of this message.</span>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+<div>
+  <br /><br /><br /><br />
+  <span id="address_info" style="font-weight:bold;"><a href='https://www.dezshira.com/office/hong-kong.html' target='_blank'> Find a list of our offices, telephone numbers and fax numbers here.</a></span>
+</div>
+</div>
+<!--/signature-->
+
+<div style="padding:40px;">
+  <p><strong>HOW TO USE:</strong> Click the "select signature" button below to highlight your signature, then copy and paste it into your email client.</p>
+  <hr />
+  <!-- Trigger the modal with a button -->
+  <p align="center">
+    <button type="button" class="btn btn-default btn-lg text-uppercase" id="select_signature">Select Signature</button>
+    <button type="button" class="btn btn-default btn-lg text-uppercase" id="show_html">Source Code [Advanced]</button>
+  </p>
+</div>
+
+
+
+	<!-- Modal -->
+	<div id="signatureModal" class="hide">
+	  <textarea name="signature_html" id="signature_html" style="width:100%;height:400px;"></textarea>
+	</div><!--/Modal-->
+
+
+<script>
+
+$( document ).ready(function() {
+	//load up offices json
+	var json_offices = function () {
+		var jsonTemp = null;
+		$.ajax({
+			'async': false,
+			'url': "/signatures/offices.json",
+			'success': function (data) {
+				jsonTemp = data;
+				
+				$('select#office').append('<option value="">Select Office</option>');
+				$.each(jsonTemp, function(key,office){
+					$('select#office').append('<option value="'+office.id+'">'+office.city+'</option>');
+				});
+			}
+		});
+		return jsonTemp;
+	}(); 
+	//document.write(json.a);
+	//console.log(json_offices[1].country);
+	
+	$( "select#office" ).change(function() {
+	  officeID=$( "select#office option:selected" ).val();
+	  address_simplified=json_offices[officeID].address_simplified;
+	  if(address_simplified!==null){
+		  address_simplified=address_simplified.replace(/\n/g, ", ");
+		  address_simplified=address_simplified.replace(/^[,\s]+|[,\s]+$/g, '').replace(/,[,\s]*,/g, ',');
+		}
+	  
+	  address_simplified_cn=json_offices[officeID].address_simplified_cn;
+	  if(address_simplified_cn!==null){
+		  address_simplified_cn=address_simplified_cn.replace(/\n/g, ", ");
+		  address_simplified_cn = address_simplified_cn.replace(/^[,\s]+|[,\s]+$/g, '');
+		  address_simplified_cn = address_simplified_cn.replace(/\s*,\s*/g, ',');
+	  }
+	  
+	  //$('span#office').html('<a style="color:#000;" href="'+json_offices[officeID].link+'">'+json_offices[officeID].city+' Office </a>');
+	  $('span#address_english').html(address_simplified);
+	  $('span#address_chinese').html(address_simplified_cn);
+    $('span#address_info').html("<a href='"+json_offices[officeID].link+"' target='_blank'> Find a list of our offices, telephone numbers and fax numbers here.</a>");
+	});
+	
+	
+	$( "select#select_desk" ).change(function() {
+		desk=$( "select#select_desk option:selected" ).val();
+		int_desk_url='https://www.dezshira.com/international-desk';
+    int_desk_name='';
+    int_desk_flag='';
+		if(desk=='german'){
+			int_desk_url='https://www.dezshira.com/international-desk/german.html';
+      int_desk_name='GERMAN DESK';
+      int_desk_flag='flg-de.jpg';
+		} else if(desk=='italian') {
+			int_desk_url='https://www.dezshira.com/international-desk/italian.html';
+      int_desk_name='ITALIAN DESK';
+      int_desk_flag='flg-it.jpg';
+		} else if(desk=='french') {
+			int_desk_url='https://www.dezshira.com/international-desk/french.html';
+      int_desk_name='FRENCH DESK';
+      int_desk_flag='flg-fr.jpg';
+		} else if(desk=='spanish') {
+			int_desk_url='https://www.dezshira.com/international-desk/spanish.html';
+      int_desk_name='SPANISH DESK';
+      int_desk_flag='flg-es.jpg';
+		} else if(desk=='russian') {
+			int_desk_url='https://www.dezshira.com/international-desk/russian.html';
+      int_desk_name='RUSSIAN DESK';
+      int_desk_flag='flg-ru.jpg';
+		} else if(desk=='asean') {
+			int_desk_url='https://www.dezshira.com/international-desk';
+      int_desk_name='ASEAN DESK';
+      int_desk_flag='flg-asean.jpg';
+		} else if(desk=='australian') {
+			int_desk_url='https://www.dezshira.com/international-desk/australian.html';
+      int_desk_name='AUSTRALIAN DESK';
+      int_desk_flag='flg-au.jpg';
+		} else if(desk=='us') {
+			int_desk_url='https://www.dezshira.com/international-desk/north-american.html';
+      int_desk_name='NORTH AMERICAN DESK';
+      int_desk_flag='flg-us.jpg';
+		} else if(desk=='uk_ireland_1') {
+			int_desk_url='https://www.dezshira.com/international-desk/uk-ireland.html';
+      int_desk_name='UK AND IRELAND DESK';
+      int_desk_flag='flg-uk.jpg';
+    }
+			
+		if(desk!='' && desk!='none'){
+      $('#international_desk_badge').html(
+       /*
+        '<a href="' + int_desk_url + '" target="_blank" style="display:inline-block;text-decoration:none;">' +
+          '<span style="display:inline-block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/desk-flag/icon_'+desk+'_desk.jpg" width="18" height="10" align="left" border="0"  style="margin: 0px; padding: 0px; height: 10px; margin-right: 5px;" /></span>' +
+          '<span style="font-size:10px;color:#666666;">' + int_desk_name + '</span>' +
+        '</a>' 
+      */
+  '<table role="presentation" cellpadding="0" cellspacing="0" border="0">' +
+    '<tr>' +
+
+      '<td valign="middle" style="padding-right:5px; line-height:0;">' + '<a href="' + int_desk_url + '" target="_blank" style="display:inline-block;text-decoration:none;">' +
+        '<img src="https://dsa-2025-gulp-setup.netlify.app/img/desk-flag/icon_' + desk + '_desk.jpg" ' +
+        'width="18" height="10" style="display:block;border:0;" />' + '</a>' +
+      '</td>' +
+
+      '<td valign="middle" style="font-size:10px;color:#666666;font-family:Arial, Helvetica, sans-serif;">' +  '<a href="' + int_desk_url + '" target="_blank" style="display:inline-block;text-decoration:none;color:#666666;">' +
+        int_desk_name +
+      '</a>' +'</td>' +
+
+    '</tr>' +
+  '</table>'
+    );
+
+  } else {
+			$('#international_desk_badge').html('');
+    }
+	});
+
+
+	$('#signature_app input').bind('input', function(){
+	  container=$(this).attr('name');
+	  
+		if(container=='ext'){
+			if($(this).val()=="")
+				$('span#'+container).html('');
+			else
+				$('span#'+container).html(''+$(this).val());
+		} else if(container=='fax'){
+			if($(this).val()==""){
+				$('td#'+container).html('');
+				$('td#fax_image').html('');
+			} else {
+				$('td#fax_image').html('<img src="https://www.dezshira.com/signatures/images/Icon-Signature-Fax.png" width="12" height="12" style="width:12px;height:12px; display: inline-block; float:left;"/>');
+				$('span#'+container).html('<span id="fax" style="color: #fefefe; font-size: 9.0pt; font-family: Arial, Helvetica, sans-serif; vertical-align: top; height: 12px;">'+$(this).val()+'</span>');
+			}
+		} else {
+
+      if(container=="telephone" || container=="mobile" || container=="fax" || container=="email"){
+        $('span#'+container).html("<a style='text-decoration:none;color='#fefefe;'><font color='#fefefe'>"+$(this).val()+"</font></a>");
+      } else {
+        $('span#'+container).html($(this).val());
+      }
+
+    }
+	});
+
+
+  $('#show_html').click(function(){
+    $('textarea#signature_html').val($('div#signature').html());
+    $('#signatureModal').removeClass('hide');
+    $('#select_signature').addClass('hide');
+
+    document.getElementById('signature_html').focus();
+    document.getElementById('signature_html').select();
+  });
+
+	$('button#btn_copy').click(function(){
+	  var copyText = document.getElementById("signature_html");
+	  copyText.select();
+	  document.execCommand("Copy");
+	  alert("Singature Copied to clipboard");
+	});
+
+	$('button#select_signature').click(function(){
+		 selectText('signature');
+		 setTimeout(function(){ document.execCommand("Copy"); }, 1000);
+	});
+
+	$("select#we_chat").change(function() {
+		we_chat_status=$( "select#we_chat option:selected" ).val();
+		if(we_chat_status=='display') {
+			$('div#signature_banner').html('<a href="https://www.dezshira.com" target="_blank"><img src="https://www.dezshira.com/userfiles/image/2020-email-signature/banner_qr_v1.jpg?v3" height="80" width="552" style="width:552px;height:80px;"/></a>');
+		} else {
+			$('div#signature_banner').html('<a href="https://www.dezshira.com" target="_blank"><img src="https://www.dezshira.com/userfiles/image/2020-email-signature/banner_v1.jpg?v3" height="80" width="473" style="width:473;height:80px;"/></a>');
+		}
+	});
+
+	$("select#service_certified").change(function() {
+		service_certified=$( "select#service_certified option:selected" ).val();
+
+		if(service_certified=='xero_advisor')
+			$('span#service_certified').html('XERO advisor Partner');
+		else if(service_certified=='xero_bronze')
+			$('span#service_certified').html('XERO Bronze Champion Partner');
+		else if(service_certified=='xero_silver_champion')
+			$('span#service_certified').html('XERO Silver Champion Partner');
+		else if(service_certified=='xero_gold_champion')
+			$('span#service_certified').html('XERO Gold Champion Partner');
+		else if(service_certified=='ms_cloud_silver')
+			$('span#service_certified').html('Microsoft Cloud Silver Partner');
+		else
+			$('span#service_certified').html('');
+	});
+
+    	$("select#banner").change(function() {
+		banner=$( "select#banner option:selected" ).val();
+
+		if(banner=='ami_banner')
+			$('span#banner').html('<div style="height:29px;width:237px;"><a href="https://www.dezshira.com/asia-manufacturing-index" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_asia_manufacturing_index_2026.jpg" width="237" height="29"  alt="dsa"  align="left" border="0"  style="width:237px; height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='audit-financial-review_banner')
+			$('span#banner').html('<div style="height:29px;width:197px;"><a href="https://www.dezshira.com/services/audit-financial-review" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_audit-financial-review.jpg" width="197" height="29"  alt="dsa"  align="left" border="0"  style="width:197px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='accounting_banner')
+			$('span#banner').html('<div style="height:29px;width:125px;"><a href="https://www.dezshira.com/services/accounting-reporting" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_accounting.jpg" width="125" height="29"  alt="dsa"  align="left" border="0"  style="width:125px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='business_advisory_banner')
+			$('span#banner').html('<div style="height:29px;width:164px;"><a href="https://www.dezshira.com/services/business-advisory-services" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_business_advisory.jpg" width="164" height="29"  alt="dsa"  align="left" border="0"  style="width:164px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='business_intelligence_banner')
+			$('span#banner').html('<div style="height:29px;width:184px;"><a href="https://www.dezshira.com/services/business-intelligence-solutions" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_business_intelligence.jpg" width="184" height="29"  alt="dsa"  align="left" border="0"  style="width:184px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='china_outbound_banner')
+			$('span#banner').html('<div style="height:29px;width:231px;"><a href="https://www.dezshira.com/cn/services/outbound-direct-investment" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_china_outbound.jpg" width="231" height="29"  alt="dsa"  align="left" border="0"  style="width:231px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='corporate_establishment_banner')
+			$('span#banner').html('<div style="height:29px;width:207px;"><a href="https://www.dezshira.com/services/business-advisory-services/corporate-establishment" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_corporate_establishment.jpg" width="207" height="29"  alt="dsa"  align="left" border="0"  style="width:207px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='government_and_economic_development_banner')
+			$('span#banner').html('<div style="height:29px;width:293px;"><a href="https://www.dezshira.com/services/government-and-economic-development" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_government_and_economic_development.jpg" width="293" height="29"  alt="dsa"  align="left" border="0"  style="width:293px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='hr_and_payroll_banner')
+			$('span#banner').html('<div style="height:29px;width:145px;"><a href="https://www.dezshira.com/services/payroll-human-resource-administration" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_hr_and_payroll.jpg" width="145" height="29"  alt="dsa"  align="left" border="0"  style="width:145px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='mergers_and_acquisitions_banner')
+			$('span#banner').html('<div style="height:29px;width:209px;"><a href="https://www.dezshira.com/services/business-advisory/mergers-acquisitions-services" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_mergers_and_acquisitions.jpg" width="209" height="29"  alt="dsa"  align="left" border="0"  style="width:209px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='risk_management_and_ESG_banner')
+			$('span#banner').html('<div style="height:29px;width:206px;"><a href="https://www.dezshira.com/services/risk-management-compliance" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_risk_management_and_ESG.jpg" width="206" height="29"  alt="dsa"  align="left" border="0"  style="width:206px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='tax_banner')
+			$('span#banner').html('<div style="height:29px;width:77px;"><a href="https://www.dezshira.com/services/tax" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_tax.jpg" width="77" height="29"  alt="dsa"  align="left" border="0"  style="width:77px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='technology_banner')
+			$('span#banner').html('<div style="height:29px;width:128px;"><a href="https://www.dezshira.com/services/information-technology-solutions" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_technology.jpg" width="128" height="29"  alt="dsa"  align="left" border="0"  style="width:128px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else if(banner=='dbg_banner')
+			$('span#banner').html('<div style="height:29px;width:424px;"><a href="https://www.asiabriefing.com/store/search?type_detail=report-guide&language=15&page=1" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_DBG-026.jpg" width="424" height="29"  alt="dsa"  align="left" border="0"  style="width:424px;height:29px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		// else if(banner=='campaign_banner')
+		// 	$('span#banner').html('<div style="height:60px;width:576px;"><a href="https://www.dezshira.com/signature_banner_cta_link" target="_blank" style="display: block;"><img src="https://dsa-2025-gulp-setup.netlify.app/img/banner_campaign.jpg" width="700" height="60"  alt="dsa"  align="left" border="0"  style="width:576px;margin: 0px; padding: 0px; display: block;"></a></div>');
+		else
+			$('span#banner').html('');
+	});
+
+/*  
+  $("select#banner").change(function() {
+    banner=$( "select#banner option:selected" ).val();
+    if(banner=="hide"){
+      $('#div_banner').html('');
+    } else {
+      $('#div_banner').html('<div style="height:60px;width:576px;"><a href="https://www.dezshira.com/signature_banner_cta_link" target="_blank" style="display: block;"><img src="https://www.dezshira.com/signatures/images/badges1.1/banner-default.jpg" width="700" height="60"  alt="dsa"  align="left" border="0"  style="width:576px;margin: 0px; padding: 0px; display: block;"></a></div>');
+    }
+  });
+*/
+	function selectText(id){
+		var sel, range;
+		var el = document.getElementById(id); //get element id
+		if (window.getSelection && document.createRange) { //Browser compatibility
+		  sel = window.getSelection();
+		  if(sel.toString() == ''){ //no text selection
+			 window.setTimeout(function(){
+				range = document.createRange(); //range object
+				range.selectNodeContents(el); //sets Range
+				sel.removeAllRanges(); //remove all ranges from selection
+				sel.addRange(range);//add Range to a Selection.
+			},1);
+		  }
+		}else if (document.selection) { //older ie
+			sel = document.selection.createRange();
+			if(sel.text == ''){ //no text selection
+				range = document.body.createTextRange();//Creates TextRange object
+				range.moveToElementText(el);//sets Range
+				range.select(); //make selection.
+			}
+		}
+	}	
+	
+});
+</script>
+<script>
+function updateField(inputId, previewId, rowId, linkPrefix = null) {
+  const input = document.getElementById(inputId);
+  const preview = document.getElementById(previewId);
+  const row = document.getElementById(rowId);
+
+  if (!input || !preview || !row) return;
+
+  const value = input.value.trim();
+
+  if (value === "") {
+    row.style.display = "none";
+  } else {
+    row.style.display = "block";
+    preview.textContent = value;
+
+    // Update tel/mailto links if needed
+    if (linkPrefix) {
+      const link = preview.closest("a");
+      if (link) {
+        link.href = linkPrefix + value.replace(/\s+/g, '');
+      }
+    }
+  }
+}
+
+// Attach listeners
+document.querySelectorAll("input").forEach(input => {
+  input.addEventListener("input", function () {
+    updateField("txt_mobile", "mobile", "mobRow", "tel:");
+    updateField("txt_telephone", "telephone", "telRow", "tel:");
+    updateField("txt_email", "email", "emailRow", "mailto:");
+    updateField("txt_fax", "fax", "faxRow");
+    // updateField("txt_ext", "ext", "extRow");
+
+// Handle EXT separately (optional logic)
+const extInput = document.getElementById("txt_ext");
+const extPreview = document.getElementById("ext");
+const extRow = document.getElementById("extRow");
+
+if (extInput && extPreview && extRow) {
+  const extValue = extInput.value.trim();
+
+  if (extValue === "") {
+    extRow.style.display = "none";
+  } else {
+    extRow.style.display = "inline";
+    extPreview.textContent = extValue;
+  }
+}
+
+  });
+});
+
+// Handle country list and disclaimer
+const showCountryList = document.getElementById("show_country_list");
+const showDisclaimer = document.getElementById("show_disclaimer");
+
+const countryList = document.getElementById("country_list");
+const disclaimer = document.getElementById("disclaimer");
+
+showCountryList.addEventListener("change", function () {
+  countryList.style.display = this.checked ? "table" : "none";
+});
+
+showDisclaimer.addEventListener("change", function () {
+  disclaimer.style.display = this.checked ? "table" : "none";
+});
+
+function updateSocial(inputId, iconId, linkId) {
+  const input = document.getElementById(inputId);
+  const icon = document.getElementById(iconId);
+  const link = document.getElementById(linkId);
+  const container = document.getElementById("socialMedia");
+
+  if (!input || !icon || !link || !container) return;
+
+  const value = input.value.trim();
+
+  if (value === "") {
+    icon.style.display = "none";
+  } else {
+    icon.style.display = "inline-block";
+    link.href = value;
+  }
+
+  // Show container only if at least one icon is visible
+  const anyVisible =
+    document.getElementById("linkedinIcon").style.display !== "none" ||
+    document.getElementById("wechatIcon").style.display !== "none" ||
+    document.getElementById("whatsappIcon").style.display !== "none";
+
+  container.style.display = anyVisible ? "inline-block" : "none";
+}
+
+// Attach listeners
+document.getElementById("txt_linkedin").addEventListener("input", function () {
+  updateSocial("txt_linkedin", "linkedinIcon", "linkedinLink");
+});
+
+document.getElementById("txt_weChat").addEventListener("input", function () {
+  updateSocial("txt_weChat", "wechatIcon", "wechatLink");
+});
+
+document.getElementById("txt_whatsApp").addEventListener("input", function () {
+  updateSocial("txt_whatsApp", "whatsappIcon", "whatsappLink");
+});
+</script>
+
+
+
+</body>
+</html>
+</div>

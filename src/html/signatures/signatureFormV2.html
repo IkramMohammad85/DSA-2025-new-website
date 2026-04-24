@@ -22,6 +22,8 @@
     text-align: center;
     display: block;
   }
+  .social-sign-cta .inputfield-block{width: 300px;}
+  .social-sign-cta .inputfield-block .form-control{padding-right: 16px;}
 </style>
 </head>
 <body>
@@ -84,13 +86,20 @@
   <div class="row">
     <div class="form-group col-sm-6">
             <label for="txt_media">Personal Social Media Links:</label>
- <div class="social-sign-cta">         
-<input type="text" name="linkedin" id="txt_linkedin" placeholder="Enter Linkedin" class="form-control" style="margin-bottom: 10px;"/>
-<input type="text" name="WeChat" id="txt_weChat" placeholder="Enter WeChat" class="form-control" style="margin-bottom: 10px;"/>
-<input type="text" name="whatsApp" id="txt_whatsApp" placeholder="Enter WhatsApp" class="form-control" style="margin-bottom: 10px;"/></div>  
+ <div class="social-sign-cta">  
+  <div class="inputfield-block" >     
+<input type="text" name="linkedin" id="txt_linkedin" placeholder="Enter LinkedIn profile URL" class="form-control" style="margin-bottom: 10px;"/>  
+<label for="txt_whatsApp" style="font-size: 10px; font-weight: normal;">e.g. https://www.linkedin.com/in/username</label></div>
+ <div class="inputfield-block" > 
+<input type="text" name="whatsApp" id="txt_whatsApp" placeholder="WhatsApp number (+country code)" class="form-control" style="margin-bottom: 10px;"/>
+<label for="whatsApp" style="font-size: 10px; font-weight: normal;">e.g. +86 138 0000 0000</label></div>
+ <div class="inputfield-block"> 
+<input type="text" name="WeChat" id="txt_weChat" placeholder="Enter WeChat ID" class="form-control" style="margin-bottom: 10px;"/> 
+<label for="WeChat" style="font-size: 10px; font-weight: normal;">e.g. wxid_abcdf1234</label>
+</div>
       <!-- <label for="txt_fax">Fax:</label>
       <input type="text" name="fax" id="txt_fax" placeholder="Enter Fax +86 21 8888 8888" class="form-control" /> -->
-    </div>
+    </div></div>
     <!--/col-->
     
     <div class="form-group col-sm-6">

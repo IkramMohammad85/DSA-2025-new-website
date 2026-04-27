@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -48,7 +49,6 @@
     If you face any issue, please contact <a href="mailto:design-marketing@dezshira.com">design-marketing@dezshira.com</a> for assistance.
   </div>
   
-  <form id="signatureForm" autocomplete="off">
   <div class="row">
     <div class="form-group col-sm-6">
       <label for="txt_name">Name: <sapn style="color: red;">*</sapn></label>
@@ -61,6 +61,7 @@
       <input type="text" name="position" id="txt_position" placeholder="Position" class="form-control" required />
     </div>
     <!--/col--> 
+    
   </div>
   <div class="row">
     <div class="form-group col-sm-6">
@@ -69,36 +70,44 @@
     </div>
     <!--/col-->
     
+    <!-- <div class="form-group col-sm-2">
+      <label for="txt_ext">Ext.</label>
+      <input type="text" name="ext" id="txt_ext" placeholder="8888" class="form-control" />
+    </div> -->
+    <!--/col-->
+    
     <div class="form-group col-sm-6">
       <label for="txt_mobile">Mobile: <sapn style="color: red;">*</sapn></label>
       <input type="text" name="mobile" id="txt_mobile" placeholder="Enter Mobile +86 21 8888 8888" class="form-control" />
     </div>
     <!--/col--> 
+    
   </div>
   <div class="row">
     <div class="form-group col-sm-6">
-      <label for="txt_media">Personal Social Media Links:</label>
-      <div class="social-sign-cta">  
-        <div class="inputfield-block" >     
-          <input type="text" name="linkedin" id="txt_linkedin" placeholder="Enter LinkedIn profile URL" class="form-control" style="margin-bottom: 10px;"/>  
-          <label for="txt_whatsApp" style="font-size: 10px; font-weight: normal;">e.g. https://www.linkedin.com/in/username</label>
-        </div>
-        <div class="inputfield-block" > 
-          <input type="text" name="whatsApp" id="txt_whatsApp" placeholder="WhatsApp number (+country code)" class="form-control" style="margin-bottom: 10px;"/>
-          <label for="whatsApp" style="font-size: 10px; font-weight: normal;">e.g. +86 138 0000 0000</label>
-        </div>
-        <div class="inputfield-block"> 
-          <input type="text" name="WeChat" id="txt_weChat" placeholder="Enter WeChat ID" class="form-control" style="margin-bottom: 10px;"/> 
-          <label for="WeChat" style="font-size: 10px; font-weight: normal;">e.g. User_Name123</label>
-        </div>
-      </div>
-    </div>
+            <label for="txt_media">Personal Social Media Links:</label>
+ <div class="social-sign-cta">  
+  <div class="inputfield-block" >     
+<input type="text" name="linkedin" id="txt_linkedin" placeholder="Enter LinkedIn profile URL" class="form-control" style="margin-bottom: 10px;"/>  
+<label for="txt_whatsApp" style="font-size: 10px; font-weight: normal;">e.g. https://www.linkedin.com/in/username</label></div>
+ <div class="inputfield-block" > 
+<input type="text" name="whatsApp" id="txt_whatsApp" placeholder="WhatsApp number (+country code)" class="form-control" style="margin-bottom: 10px;"/>
+<label for="whatsApp" style="font-size: 10px; font-weight: normal;">e.g. +86 138 0000 0000</label></div>
+ <div class="inputfield-block"> 
+<input type="text" name="WeChat" id="txt_weChat" placeholder="Enter WeChat ID" class="form-control" style="margin-bottom: 10px;"/> 
+<label for="WeChat" style="font-size: 10px; font-weight: normal;">e.g. User_Name123</label>
+</div>
+      <!-- <label for="txt_fax">Fax:</label>
+      <input type="text" name="fax" id="txt_fax" placeholder="Enter Fax +86 21 8888 8888" class="form-control" /> -->
+    </div></div>
     <!--/col-->
+    
     <div class="form-group col-sm-6">
       <label for="txt_email">Email: <sapn style="color: red;">*</sapn></label>
       <input type="email" name="email" id="txt_email" placeholder="Email" class="form-control" />
     </div>
     <!--/col--> 
+    
   </div>
   <div class="row">
     <div class="form-group col-sm-6">
@@ -124,6 +133,7 @@
       </select>
     </div>
     <!--/col--> 
+    
   </div>
   <div class="row">
     <div class="form-group col-sm-6">
@@ -144,6 +154,7 @@
         <option value="tax_banner">Tax</option>
         <option value="technology_banner">Technology</option>
         <option value="dbg_banner">Doing Business Guides 2026: ASEAN | China | India | UAE | Vietnam</option>
+        <!-- <option value="campaign_banner">campaign banner</option> -->
       </select>
     </div>
     <!--/col-->
@@ -158,21 +169,21 @@
       </select>
     </div>
     <!--/col--> 
+    
   </div>
-  <div class="row">
-    <div class="form-group col-sm-6">
-      <div class="checkbox-row">
-        <input type="checkbox" id="show_country_list" name="countrylist" value="Country List">
-        <label for="show_country_list">Country List</label>
-      </div>
-      <div class="checkbox-row">
-        <input type="checkbox" id="show_disclaimer" name="disclaimer" value="Disclaimer">
-        <label for="show_disclaimer" class="mb-0">Disclaimer</label>
-      </div>
+
+<div class="row">
+<div class="form-group col-sm-6">
+  <div class="checkbox-row">
+  <input type="checkbox" id="show_country_list" name="countrylist" value="Country List">
+  <label for="show_country_list">Country List</label></div>
+  <div class="checkbox-row">
+  <input type="checkbox" id="show_disclaimer" name="disclaimer" value="Disclaimer">
+  <label for="show_disclaimer" class="mb-0">Disclaimer</label></div>
     </div>
   </div>
   <!--/row--> 
-</form>
+</div>
 <!--/signature_app-->
 
 <div style="display: flex;">
@@ -531,7 +542,7 @@ Fax: <span id="fax" style="color:#fefefe;text-decoration:none;"></span></div> --
 <table id="country_list" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"style="display:none;">
 <tr>
 <td style="font-size:9px;color:#7f7f7f;line-height:16px; padding-top: 15px;">
-<span style="color: #7f7f7f; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:16px;"><a href="https://www.dezshira.com/office/china" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">China</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/hong-kong.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Hong Kong SAR</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/australia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Australia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/bangladesh.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Bangladesh</a> &nbsp;&nbsp;|&nbsp;&nbsp; Cambodia &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/dubai.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Dubai UAE</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/germany" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Germany</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/india" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">India</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/indonesia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Indonesia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/italy" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Italy</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/tokyo.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Japan</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/malaysia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Malaysia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/ulaanbaatar.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Mongolia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/nepal.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Nepal</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/singapore.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Singapore</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/seoul.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">South Korea</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/sri-lanka.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Sri Lanka</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/thailand.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Thailand</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/philippines.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">The Philippines</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/usa" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">United States</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/vietnam" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Vietnam</a></span>
+<span style="color: #7f7f7f; font-size: 9px; font-family: Arial, Helvetica, sans-serif;line-height:16px;"><a href="https://www.dezshira.com/office/china" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">China</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/hong-kong.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Hong Kong SAR</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.dezshira.com/office/australia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Australia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/bangladesh.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Bangladesh</a> &nbsp;&nbsp;|&nbsp;&nbsp; Cambodia &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/dubai.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Dubai UAE</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/germany" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Germany</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/india" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">India</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/indonesia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Indonesia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/italy" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Italy</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/tokyo.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Japan</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/malaysia.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Malaysia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/ulaanbaatar.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Mongolia</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/nepal.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Nepal</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/singapore.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Singapore</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/seoul.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">South Korea</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/sri-lanka.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Sri Lanka</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/thailand.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Thailand</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/philippines.html" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">The Philippines</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/usa" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">United States</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="https://www.dezshira.com/office/vietnam" target="_blank" style="color: #7f7f7f;text-decoration:none; text-decoration:none; font-size: 9px; font-family: Arial, Helvetica, sans-serif;text-align: center; line-height: 16px;display:inline;">Vietnam</a></span>
 </td>
 </tr>
 </table>
@@ -948,79 +959,7 @@ document.getElementById("txt_whatsApp").addEventListener("input", function () {
 </script>
 
 
-<!-- ...existing code... -->
-<script>
-function validateSignatureForm() {
-  const requiredFields = [
-    { id: "txt_name", label: "Name" },
-    { id: "txt_position", label: "Position" },
-    { id: "txt_telephone", label: "Telephone" },
-    { id: "txt_mobile", label: "Mobile" },
-    { id: "txt_email", label: "Email" },
-    { id: "office", label: "Office" }
-  ];
-  let missing = [];
-  requiredFields.forEach(field => {
-    const el = document.getElementById(field.id);
-    if (el && !el.value.trim()) {
-      missing.push(field.label);
-      el.classList.add("input-error");
-    } else if (el) {
-      el.classList.remove("input-error");
-    }
-  });
 
-  // Simple email format check
-  const email = document.getElementById("txt_email");
-  if (email && email.value && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)) {
-    missing.push("Valid Email");
-    email.classList.add("input-error");
-  }
-
-  if (missing.length > 0) {
-    alert("Please fill in the following required fields:\n\n" + missing.join("\n"));
-    return false;
-  }
-  return true;
-}
-
-// Add red border for error
-const style = document.createElement('style');
-style.innerHTML = ".input-error { border: 2px solid #e74c3c !important; }";
-document.head.appendChild(style);
-
-// Attach validation to the Select Signature button
-document.getElementById("select_signature").addEventListener("click", function(e) {
-  // Prevent default form submission
-  if (!validateSignatureForm()) {
-    e.preventDefault();
-    return false;
-  }
-  // If valid, continue as normal
-});
-</script>
-<!-- ...existing code... -->
- <script>
-const input = document.getElementById("txt_whatsApp");
-const link = document.getElementById("whatsappLink");
-
-input.addEventListener("input", function () {
-  let number = input.value;
-
-  // Remove everything except digits
-  number = number.replace(/\D/g, "");
-
-  if (number.length >= 10) {
-    link.href = "https://wa.me/" + number;
-    link.style.pointerEvents = "auto";
-    link.style.opacity = "1";
-  } else {
-    link.href = "#";
-    link.style.pointerEvents = "none";
-    link.style.opacity = "0.5";
-  }
-});
-</script>
 </body>
 </html>
 </div>

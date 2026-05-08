@@ -923,7 +923,28 @@ document.getElementById("txt_whatsApp").addEventListener("input", function () {
 });
 </script>
 
+<script>
 
+const wechatInput = document.getElementById("txt_weChat");
+const wechatIcon = document.getElementById("wechatIcon");
+const wechatLink = document.getElementById("wechatLink");
+
+wechatInput.addEventListener("input", function () {
+  let wechatID = wechatInput.value.trim();
+
+  if (wechatID !== "") {
+    wechatIcon.style.display = "table-cell";
+    wechatLink.href =
+      "https://weixin://dl/chat?username=" +
+      encodeURIComponent(wechatID);
+
+  } else {
+    wechatIcon.style.display = "none";
+    wechatLink.href = "#";
+
+  }
+});
+</script>
 <!-- ...existing code... -->
 <script>
 function validateSignatureForm() {

@@ -367,11 +367,11 @@ font-family:Arial,Helvetica,sans-serif;
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style=" border-collapse:collapse;mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
 <tr>
 
-<td width="160" id="mobRow" valign="middle" align="left" bgcolor="#344C71" style="font-size:13px;line-height: 14px;color:#ffffff; mso-line-height-rule:exactly; font-family: Arial, Helvetica, sans-serif; width: 160px; vertical-align: top;">
+<td width="160" id="mobRow" valign="middle" align="left" bgcolor="#344C71" style="font-size:13px;line-height: 14px;color:#ffffff !important; mso-line-height-rule:exactly; font-family: Arial, Helvetica, sans-serif; width: 160px; vertical-align: top;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style=" border-collapse:collapse;mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial,Helvetica,sans-serif; table-layout:fixed;">
     <tr>
         <td width="35" style="color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px; padding: 0; margin: 0; vertical-align: top; width: 35px;" data-detectors="false;">Mob:</td>
-        <td width="125" style=" width: 125px;color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px; padding: 0; margin: 0; vertical-align: top;" data-detectors="false;"><a id="mobile" style="color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px;"></a></td>
+        <td width="125" style=" width: 125px;color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px; padding: 0; margin: 0; vertical-align: top;" data-detectors="false;"><a id="mobile" style="color:#fefefe !important;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px;"></a></td>
     </tr>
   </table>
 
@@ -382,7 +382,7 @@ font-family:Arial,Helvetica,sans-serif;
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style=" border-collapse:collapse;mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial,Helvetica,sans-serif; table-layout:fixed;">
     <tr>
         <td width="40" style="color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" data-detectors="false;mso-line-height-rule:exactly;line-height:18px padding: 0; margin: 0;vertical-align: top; width: 40px;">Email:</td>
-        <td width="230" style="color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" data-detectors="false;mso-line-height-rule:exactly;line-height:18px; padding: 0; margin: 0; vertical-align: top; width: 230px;"><a id="email" href="mailto:jane.doe@dezshira.com" style="color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" data-detectors="false;mso-line-height-rule:exactly;line-height:18px;"></a></td>
+        <td width="230" style="color:#fefefe !important;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" data-detectors="false;mso-line-height-rule:exactly;line-height:18px; padding: 0; margin: 0; vertical-align: top; width: 230px;"><a id="email" href="mailto:jane.doe@dezshira.com" style="color:#fefefe !important;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" data-detectors="false;mso-line-height-rule:exactly;line-height:18px;"></a></td>
     </tr>
   </table> 
 </td>
@@ -482,7 +482,7 @@ font-family:Arial,Helvetica,sans-serif;
 <tr>
 <td style="padding:0 0 15px 0;margin:0;mso-line-height-rule:exactly; vertical-align:top; font-family: Arial, Helvetica, sans-serif; font-size: 0; line-height: 0;">
   <a href="https://www.dezshira.com/updates/2026/04/ascentium-acquires-dezan-shira-associates-expanding-footprint-27-markets-strengthening-corporate-services-capabilities.html" target="_blank" style="display:block; text-decoration: none;">
-<img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/Email Signature - We Are Rebranding.jpg" width="600" alt="Rebranding Banner" border="0"  style="width: 600px; max-width:600px;height:auto; display: block;border: 0;background:#ffffff;-ms-interpolation-mode:bicubic;"></a>
+<img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/Email Signature - We Are Rebranding.jpg" width="600" alt="Rebranding Banner" border="0"  style="width: 600px; max-width:600px;height:75px; display: block;border: 0;background:#ffffff;-ms-interpolation-mode:bicubic;"></a>
 </td>
 </tr>
 </table>
@@ -699,7 +699,7 @@ $( document ).ready(function() {
 		} else {
 
       if(container=="telephone" || container=="mobile" || container=="fax" || container=="email"){
-        $('td#'+container).html("<a style='text-decoration:none;color='#ffffff;'><font color='#ffffff'>"+$(this).val()+"</font></a>");
+        $('td#'+container).html("<a style='text-decoration:none;color='#ffffff !important;'><font color='#ffffff'>"+$(this).val()+"</font></a>");
       } else {
         $('td#'+container).html($(this).val());
       }

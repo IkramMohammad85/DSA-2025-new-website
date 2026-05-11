@@ -906,21 +906,34 @@ function updateSocial(inputId, iconId, linkId) {
 
   const value = input.value.trim();
 
+  // --- FIXED TOP HALF ---
+  // We use 'display' instead of 'visibility' so the icons collapse
   if (value === "") {
     icon.style.display = "none";
+    icon.style.setProperty("mso-hide", "all"); // Keeps Outlook happy
   } else {
-    icon.style.display = "inline-block";
+    icon.style.display = ""; // Removes the inline 'none' rule to show it
+    icon.style.removeProperty("mso-hide"); 
     link.href = value;
   }
 
-  // Show container only if at least one icon is visible
+  // --- YOUR CORRECTED BOTTOM HALF ---
+  // 1. Check if ANY of the icons do NOT have display: "none"
   const anyVisible =
     document.getElementById("linkedinIcon").style.display !== "none" ||
     document.getElementById("wechatIcon").style.display !== "none" ||
     document.getElementById("whatsappIcon").style.display !== "none";
 
-  container.style.display = anyVisible ? "display" : "none";
+  // 2. Fix the display assignment
+  if (anyVisible) {
+    // Show the container by removing the inline display rule
+    container.style.display = ""; 
+  } else {
+    // Hide the container completely
+    container.style.display = "none"; 
+  }
 }
+
 
 // Attach listeners
 document.getElementById("txt_linkedin").addEventListener("input", function () {

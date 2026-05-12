@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <br><br><br>
+
+   <!-- CSS Reset : BEGIN -->
+<style>
+.social-sign-cta{display: flex; gap:1rem;}
+  .alert-danger{line-height: 24px;}
+.checkbox-row{display: flex; align-items: center;  margin-bottom: 8px;}  
+.checkbox-row label{ margin-bottom: 0;}
+.checkbox-row input{ margin-top: 0; margin-right: 5px;}
+#country_list, #disclaimer{ display: none;}
+#mobRow,
+#telRow,
+#emailRow,
+#faxRow {
+  display: none;
+}
+p.MsoNormal, li.MsoNormal, div.MsoNormal {
+    margin: 0!important;
+    padding: 0!important;
+}
+  .ii a[href] {
+    color: #fefefe;
+    text-decoration: none;
+}
+  /* What it does: Stops email clients resizing small text. */
+  * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+  }
+  
+  /* What it does: Centers email on Android 4.4 */
+  div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+  }
+  
+  /* What it does: Stops Outlook from adding extra spacing to tables. */
+  table,
+  td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+  }
+  
+  /* What it does: Fixes webkit padding issue. */
+  table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+  }
+  
+  /* What it does: Uses a better rendering method when resizing images in IE. */
+  img {
+      -ms-interpolation-mode:bicubic;
+  }
+  
+  /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+  a {
+      text-decoration: none;
+  }
+  
+  /* What it does: A work-around for email clients meddling in triggered links. */
+  *[x-apple-data-detectors],  /* iOS */
+  .unstyle-auto-detected-links *,
+  .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+  }
+  
+  /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+  .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+  }
+  
+  /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+  .im {
+      color: inherit !important;
+  }
+  
+  /* If the above doesn't work, add a .g-img class to any image in question. */
+  img.g-img + div {
+      display: none !important;
+  }
+  
+  /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+  /* Create one of these media queries for each additional viewport size you'd like to fix */
+  
+  /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u ~ div .email-container {
+          min-width: 320px !important;
+      }
+  }
+  /* iPhone 6, 6S, 7, 8, and X */
+  @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u ~ div .email-container {
+          min-width: 375px !important;
+      }
+  }
+  /* iPhone 6+, 7+, and 8+ */
+  @media only screen and (min-device-width: 414px) {
+      u ~ div .email-container {
+          min-width: 414px !important;
+      }
+  }
+  
+  </style>
+  
+      <!-- CSS Reset : END -->
+
+  <style type="text/css">
+    a, body, button, div, span{ text-decoration: none;}
+    * {
+            -ms-text-size-adjust: 100%;
+      }
+
+        /* CLIENT-SPECIFIC STYLES */
+        body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;font-family:Arial,Helvetica,sans-serif !important;} /* Prevent WebKit and Windows mobile changing default text sizes */
+          table,
+          td {
+            border-collapse:collapse;
+              mso-table-lspace: 0pt !important;
+              mso-table-rspace: 0pt !important;
+          }
+        table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+        img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+        /* RESET STYLES */
+        img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}
+        table{border-collapse: collapse !important;}
+        body{height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important;}
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+          color: inherit !important;
+          text-decoration: none !important;
+          font-size: inherit !important;
+          font-family: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+        }
+    a{text-decoration:none;}
+    a[href]{text-decoration:none;}
+    a:hover{text-decoration:none;}
+    a:-webkit-any-link{text-decoration: none;}
+    a {text-decoration:none !important; text-decoration:none;}
+      </style>
+            
+     <!--[if mso]>
+    <style>
+          table, table td a{font-family:Arial, Helvetica, 'sans-serif' !important;}
+      </style>
+      <![endif]-->
+      <!--[if (mso)|(mso 16)]>
+    <style type="text/css">
+    a {text-decoration: none;}
+    </style>
+    <![endif]-->
+
+    <!--[if (gte mso 9)|(IE)]>
+    <style type="text/css">
+    a{
+    text-decoration: none !important;
+    }
+    </style>
+    <![endif]-->
+<!--[if mso]>
+<table width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="
+width:600px;
+table-layout:fixed;
+border-collapse:collapse;
+mso-table-lspace:0pt;
+mso-table-rspace:0pt;
+font-family:Arial,Helvetica,sans-serif;
+">
+<tbody><tr>
+<td style="padding:0 0 12px 0;margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;mso-line-height-rule:exactly;vertical-align:top; ">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:600px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+<tbody><tr>
+<td valign="top" width="360" style="padding:0;margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;mso-line-height-rule:exactly;vertical-align:top; width: 360px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;">
+        <tbody><tr>
+            <td id="name" style="margin:0;font-size:16px;font-weight:bold;color:#2f4a6f;padding:0;font-family:Arial,Helvetica,sans-serif;line-height:18px;mso-line-height-rule:exactly;vertical-align:top;"> Riccardo Benussi</td>
+        </tr>
+        <tr>
+            <td id="position" style="font-size:13px;color:#555555;padding:0;margin:0;font-family:Arial,Helvetica,sans-serif;line-height:18px;mso-line-height-rule:exactly;vertical-align:top;">Partner</td>
+        </tr>
+    </tbody></table>
+</td>
+<!-- RIGHT SIDE LOGO -->
+<td valign="middle" bgcolor="#fff" width="240" align="right" style="background: #ffffff; vertical-align: middle;padding:0;margin:0;font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;mso-line-height-rule:exactly; width: 240px;"><a href="https://www.dezshira.com/" target="_blank" style="display:block;"><img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/DSA_ASC-434x60.jpg" width="217" height="30" border="0" align="right" style="max-width:217px;height:30px; display: block;border: 0;background:#ffffff; -ms-interpolation-mode:bicubic;"></a>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td bgcolor="#344C71" style="padding:0 15px 0 15px;margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;mso-line-height-rule:exactly;vertical-align:middle; height: 40px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+<tbody><tr>
+<td bgcolor="#344C71" style="color:#ffffff;padding:0;margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:18px;mso-line-height-rule:exactly;vertical-align:top;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style=" border-collapse:collapse;mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+<tbody><tr>
+
+<td width="160" id="mobRow" valign="middle" align="left" bgcolor="#344C71" style="font-size: 13px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; width: 160px; vertical-align: top; color: rgb(255, 255, 255) !important; display: block;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style=" border-collapse:collapse;mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial,Helvetica,sans-serif; table-layout:fixed;">
+    <tbody><tr>
+        <td width="35" style="color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px; padding: 0; margin: 0; vertical-align: top; width: 35px;" data-detectors="false;">Mob:</td>
+        <td width="125" style=" width: 125px;color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px; padding: 0; margin: 0; vertical-align: top;" data-detectors="false;"><a id="mobile" style="color:#fefefe !important;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px;" href="tel:+4917627752984">+49 176 2775 2984</a></td>
+    </tr>
+  </tbody></table>
+
+</td>
+<td width="20px" valign="top" style="width: 20px; border-left: solid 1px #fefefe; font-family: Arial, Helvetica, sans-serif;mso-line-height-rule:exactly;line-height:1px; vertical-align: top; font-size: 1px;"></td>
+
+<td width="270px" id="emailRow" bgcolor="#344C71" valign="middle" align="left" style="font-size: 13px; line-height: 14px; color: rgb(254, 254, 254); text-align: left; font-family: Arial, Helvetica, sans-serif; width: 270px; padding: 0px; margin: 0px; vertical-align: top; display: block;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style=" border-collapse:collapse;mso-table-lspace:0pt; mso-table-rspace:0pt; font-family:Arial,Helvetica,sans-serif; table-layout:fixed;">
+    <tbody><tr>
+        <td width="40" style="color:#fefefe;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" data-detectors="false;mso-line-height-rule:exactly;line-height:18px padding: 0; margin: 0;vertical-align: top; width: 40px;">Email:</td>
+        <td width="230" style="color:#fefefe !important;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" data-detectors="false;mso-line-height-rule:exactly;line-height:18px; padding: 0; margin: 0; vertical-align: top; width: 230px;"><a id="email" href="mailto:riccardo.benussi@dezshira.com" style="color:#fefefe !important;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;" data-detectors="false;mso-line-height-rule:exactly;line-height:18px;">riccardo.benussi@dezshira.com</a></td>
+    </tr>
+  </tbody></table> 
+</td>
+
+<td width="20" valign="top" style="width: 20px; line-height: 1px; font-size: 1px; font-family: Arial, Helvetica, sans-serif;mso-line-height-rule:exactly; vertical-align: top;"></td>
+<td width="60" id="socialMedia" bgcolor="#344C71" valign="top" align="right" style="font-size: 0px; line-height: 0px; color: rgb(254, 254, 254); text-align: right; width: 60px; padding: 0px; margin: 0px; vertical-align: top; display: none;">
+  <table role="presentation" width="60px" cellpadding="0" cellspacing="0" border="0" style="width: 60px; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+    <tbody><tr>
+      <td style="width: 20px; height: 14px; text-align: right; line-height: 0px; padding: 0px; margin: 0px; vertical-align: middle; font-size: 0px; display: none;" id="linkedinIcon"><a id="linkedinLink" href="https://www.linkedin.com/in/username" target="_blank"><img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/linkedin_color__blue-BG_.jpg" width="14" height="14" style="display:block;border:0; width: 14px; height: 14px;-ms-interpolation-mode:bicubic;"></a>
+  </td>
+      <td style="width: 20px; height: 14px; text-align: right; line-height: 0px; padding: 0px; margin: 0px; font-size: 0px; vertical-align: middle; display: none;" id="whatsappIcon"><a id="whatsappLink" href="#" target="_blank" style="pointer-events: none; opacity: 0.5;"><img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/whatsapp_color__blue-BG.jpg" width="14" height="14" style="display:block;border:0;height: 14px; width: 14px;-ms-interpolation-mode:bicubic;"></a>
+  </td>
+      <td style="width: 20px; height: 14px; text-align: right; line-height: 0px; margin: 0px; padding: 0px; vertical-align: middle; font-size: 0px; display: none;" id="wechatIcon"><a id="wechatLink" href="#" target="_blank"><img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/wechat_color__blue-BG.jpg?v2.2" width="14" height="14" style="display:block;border:0; width: 14px; height: 14px;-ms-interpolation-mode:bicubic;"></a>
+  </td>
+    </tr>
+  </tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td height="7" style="padding:7px 0 0 0;margin:0;mso-line-height-rule:exactly; vertical-align:top;line-height: 1px; font-family: Arial, Helvetica, sans-serif; font: 1px; line-height: 1px;">
+</td>
+</tr>
+<tr>
+<td style="padding:0;margin:0;mso-line-height-rule:exactly; vertical-align:top;line-height: 18px; font-family: Arial, Helvetica, sans-serif; font: 14px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+<tbody><tr>
+<td style="font-size:13px;color:#666666; padding: 0 0 7px 0; margin: 0;mso-line-height-rule:exactly; font-family: Arial, Helvetica, sans-serif; vertical-align: top; line-height: 18px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+<tbody><tr>
+<td id="address_english" valign="top" style="font-size:13px;color:#666666;line-height:18px;mso-line-height-rule:exactly; font-family: Arial, Helvetica, sans-serif; vertical-align: top; padding: 0 0 0 0; margin: 0;">Munich and Milan</br>Sitz München HRB 258225</br>
+Geschaftsführer: Riccardo Benussi</td>
+</tr>
+<tr>
+<td id="telRow" valign="top" style="font-size: 13px; color: rgb(102, 102, 102); line-height: 20px; font-family: Arial, Helvetica, sans-serif; padding: 0px 0px 5px; margin: 0px; display: block;">
+    Tel:
+  <a href="tel:+4917627752984(DE)" style="color:#555555;text-decoration:none; font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px;">
+    <span id="telephone" style="color:#555555;text-decoration:none;font-family: Arial, Helvetica, sans-serif; font-size: 13px;mso-line-height-rule:exactly;line-height:18px;">+49 176 2775 2984 (DE)</span>
+  </a>    
+</td>
+</tr>
+<tr>
+<td id="address_chinese" valign="top" style="font-size: 13px; color: rgb(102, 102, 102); line-height: 18px; font-family: Arial, Helvetica, sans-serif; padding: 0px; margin: 0px; vertical-align: top; display: none;"></td>
+</tr>
+    </tbody></table>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td bgcolor="#F1F2F2" style="padding:0 0 0 15px;margin:0;mso-line-height-rule:exactly; vertical-align:middle;line-height: 18px; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+<tbody><tr>
+<td bgcolor="#F1F2F2" style="mso-line-height-rule:exactly;line-height: 18px; vertical-align:top; padding: 7px 0 7px 0;margin: 0; font-size: 14x; font-family: Arial, Helvetica, sans-serif;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+<tbody><tr>
+<td id="banner" width="484" valign="middle" align="left" style=" width:484px; padding:0; margin:0;  line-height:0px;  font-size:0px;  mso-line-height-rule:exactly;"><a href="https://www.asiabriefing.com/store/search?type_detail=report-guide&amp;language=15&amp;page=1" target="_blank" style="display: block;"><img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/banner_DBG-026.jpg" width="362" height="23" alt="dsa" align="left" border="0" style="width:362px;height:23px;margin: 0px; padding: 0px; display: block;-ms-interpolation-mode:bicubic;"></a></td>
+<td width="90" valign="middle" align="right" style=" width:90px; padding:0; margin:0; mso-line-height-rule:exactly;font-family: Arial, Helvetica, sans-serif; text-align: right;">
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:Arial,Helvetica,sans-serif;table-layout:fixed;">
+    <tbody><tr>
+      <!-- LinkedIn -->
+      <td style="mso-line-height-rule:exactly;line-height: 1px; vertical-align:top; padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 1px; width: 30px;">
+       <a href="https://www.linkedin.com/company/51688" target="_blank" style="display:block;"><img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/s-in.png" width="14" height="14" style="display:block; border:0; background-color:#F1F2F2;-ms-interpolation-mode:bicubic; width: 14px; height: 14px;"></a>
+      </td>
+      <!-- Twitter -->
+      <td style="mso-line-height-rule:exactly;line-height: 1px; vertical-align:top; padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 1px; width: 30px;">
+        <a href="https://twitter.com/dezanshira" target="_blank" style="display:block;"><img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/s-x.png" width="14" height="14" style="display:block; border:0; background-color:#F1F2F2;-ms-interpolation-mode:bicubic;"></a>
+      </td>
+      <!-- Website -->
+      <td style="mso-line-height-rule:exactly;line-height: 1px; vertical-align:top; padding: 0; margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 1px; width: 30px;">
+       <a href="https://www.dezshira.com/connect-with-us?weChat=true" target="_blank" style="display: block;"><img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/s-w.png?v2.2" width="14" height="14" style="display:block; border:0; background-color:#F1F2F2;-ms-interpolation-mode:bicubic; width: 14px; height: 14px;"></a>
+      </td>
+    </tr>
+  </tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style="padding:15px 0 0 0;margin:0;mso-line-height-rule:exactly; vertical-align:top; line-height: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 0px;">
+<table id="asc_rebranding" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; table-layout: fixed; display: none;">
+<tbody><tr>
+<td style="padding:0 0 15px 0;margin:0;mso-line-height-rule:exactly; vertical-align:top; font-family: Arial, Helvetica, sans-serif; font-size: 0; line-height: 0;">
+  <a href="https://www.dezshira.com/updates/2026/04/ascentium-acquires-dezan-shira-associates-expanding-footprint-27-markets-strengthening-corporate-services-capabilities.html" target="_blank" style="display:block; text-decoration: none;">
+<img src="https://d2h56l9e5xqoi4.cloudfront.net/misc/signature/Email Signature - We Are Rebranding.jpg" width="600" height="75" alt="Rebranding Banner" border="0" style="width: 600px; max-width:600px;height:75px; display: block;border: 0;background:#ffffff;-ms-interpolation-mode:bicubic;"></a>
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td style="padding:0;margin:0;mso-line-height-rule:exactly; vertical-align:top; line-height: 18px; font-size: 9px;">
+<table id="country_list" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="display: table; border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; table-layout: fixed;">
+<tbody><tr>
+<td style="padding:0 0 0 0; margin: 0; font-size:9px; color:#7f7f7f; line-height:16px; font-family: Arial, Helvetica, sans-serif; word-break: break-word; vertical-align: top;mso-line-height-rule:exactly;">
+      <a href="https://www.dezshira.com/office/china" target="_blank" style="color: #7f7f7f;text-decoration:none;">China</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/hong-kong.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Hong&nbsp;Kong&nbsp;SAR</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/australia.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Australia</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/bangladesh.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Bangladesh</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/cambodia.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Cambodia</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/dubai.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Dubai&nbsp;UAE</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/germany" target="_blank" style="color: #7f7f7f;text-decoration:none;">Germany</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/india" target="_blank" style="color: #7f7f7f;text-decoration:none;">India</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/indonesia.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Indonesia</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/italy" target="_blank" style="color: #7f7f7f;text-decoration:none;">Italy</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/tokyo.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Japan</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/malaysia.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Malaysia</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/ulaanbaatar.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Mongolia</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/nepal.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Nepal</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/singapore.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Singapore</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/seoul.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">South&nbsp;Korea</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/sri-lanka.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Sri&nbsp;Lanka</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/thailand.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">Thailand</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/philippines.html" target="_blank" style="color: #7f7f7f;text-decoration:none;">The&nbsp;Philippines</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/usa" target="_blank" style="color: #7f7f7f;text-decoration:none;">United&nbsp;States</a>&nbsp;&nbsp;|&nbsp;&nbsp;​<a href="https://www.dezshira.com/office/vietnam" target="_blank" style="color: #7f7f7f;text-decoration:none;">Vietnam</a>
+    </td>
+</tr>
+</tbody></table>
+</td>  
+</tr>
+<tr>
+<td style="padding:0;margin:0;mso-line-height-rule:exactly; vertical-align:top; line-height: 18px; font-size: 9px; font-family: Arial, Helvetica, sans-serif;">
+<table id="disclaimer" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="display: table; border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; table-layout: fixed;">
+<tbody><tr>
+<td style="font-size:9px;color:#b1b3b6;line-height:14px;padding: 10px 0 15px 0;mso-line-height-rule:exactly; vertical-align: top;font-family: Arial, Helvetica, sans-serif; margin: 0;">
+This message contains information that may be privileged or confidential and is the property of Dezan Shira and Associates. It is intended only for the person to whom it is addressed. If you are not the intended recipient, you are not authorized to read, print, retain, copy, disseminate, distribute, or use this message or any part thereof. If you receive this message in error, please notify the sender immediately and delete all copies of this message.
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+
+</tbody></table>
+
+</body>
+</html>

@@ -1239,7 +1239,9 @@ ul.mega-mtabs {
 .date{font-weight: 500; color: #717171; display: block; font-size: 14px; margin-top: 0.5rem;
   &.event-d{margin-bottom: 0.5rem; margin-top: 0;}
 }
-
+@media (max-width: 360px) {
+  .login-lan {right: 50px;}
+  }
 @media (min-width: 1100px) {
   .page-link-block{margin-left: 45px; padding-right: 45px;border-right: solid 1px #DCDCDC;
     ul {
@@ -1485,8 +1487,10 @@ ul.mega-mtabs {
 }
 @media (max-width: 480px) {
         .navbar__logo img{
-        max-width: 240px;
+          max-width: 165px;
+        // max-width: 240px;
         //height: 36px;
+
       }
       }
 @media (max-width: 576px) {
@@ -1535,9 +1539,12 @@ ul.mega-mtabs {
   //   @media screen and (max-device-width: 1136px) { 
   //     .navbar__logo img{height: 34px; width: auto;}
   // }
-@media (min-width: 1200px) and (max-width: 1314px) {
-.navbar__logo img{max-height: 40px;}
-}
+// @media (min-width: 1200px) and (max-width: 1314px) {
+// .navbar__logo img{max-height: 40px;}
+// }
+@media (min-width: 1100px) and (max-width: 1314px) {
+  .navbar__logo img {max-height: 28px;width: 100%;}
+    }
 @media (min-width: 1100px) and (max-width: 1200px) {
 .navbar__logo img{max-height: 26px;}
 }

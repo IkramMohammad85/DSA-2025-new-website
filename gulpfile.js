@@ -86,6 +86,12 @@ function watchFiles() {
 
 // -------------------- Task Experts --------------------
 
+// Individual tasks
+exports.stylesDev = stylesDev;
+exports.stylesProd = stylesProd;
+exports.scripts = scripts;
+exports.html = html;
+
 // Netlify build task
 exports.build = series(stylesProd, scripts, html);
 

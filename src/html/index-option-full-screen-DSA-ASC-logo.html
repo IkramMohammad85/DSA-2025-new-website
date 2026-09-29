@@ -44,11 +44,29 @@
         width: 100%;
     }
     } */
-    </style>
+    .top-header-widget{background-color: #FFA370; min-height: 40px;
+p{font-size: 14px; padding: 0.4rem 0; margin-bottom: 0;line-height: 27px;}
+.btn{ margin-left: 1rem;padding: 1px 12px; background-color: #000; color: #fff; font-size: 14px;}
+}
+#main-slider{margin-top: -45px;}
+  @media (max-width: 667px) {
+
+    #main-slider{margin-top: -18px;}
+    }
+  @media (max-width: 1100px) {
+    .navbar__wrapper{position: relative;}
+
+    }
+@media (min-width: 1100px) {
+    .navbar__megamenu{top: 124px;}
+    } 
+
+</style>
     
 </head>
 
 <body>
+
     @@include("includes/headerV6-en-dsa-asc.html")
     <section>
         <div id="main-slider" class="splide" data-rewind="true" data-autoplay="true" data-arrows="true"

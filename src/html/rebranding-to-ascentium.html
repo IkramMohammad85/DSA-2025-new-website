@@ -228,12 +228,13 @@
     vertical-align: middle;
     margin-right: .5rem;}
     .partners-alliances-list.dsa-asc .partners-alliances{
-        min-height: 292px;
+        min-height: 263px;
         border: 1px solid #dfe3e9;
         border-radius: 8px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
     }
     .partners-alliances-list.dsa-asc .partners-alliances h5{margin-bottom: 0.5rem;}
+    .partners-alliances-list.dsa-asc .partners-alliances .pa-text{margin-bottom: 0;}
     .round-circle {
     border-radius: 50%;
     height: 36px;
@@ -243,18 +244,40 @@
     justify-content: center;
     align-items: center;}
     .text-cta-link{color: #e85d0f;}
-.btn--primary{background: #e85d0f;;
+
+    .btn--primary {
+    background: #E85D0F;
     color: #fff;
-}
-    .primary-animation{
-      display: inline-block;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    }
-    .primary-animation:before{
-      content: "";
+    border: none;
+    font-weight: 600;
+    &:hover { background: #E85D0F; color: #fff; }
+  }
+    .btn--primary-soft {
+    background: #fdba95;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    &:hover { background: #E85D0F; color: #fff; }
+
+  }
+  .primary-animation, .primary-soft-animation {
+  display: inline-block;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#E85D0F;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -263,18 +286,33 @@
     background-color: #fdba95;
     transition: all .3s;
     z-index: -1;
+    
+  }
+  &:hover {
+    color: var(--black);
+    &:before {
+      width: 100%;
+      
     }
-    .primary-animation:after{
-      content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #e85d0f;
-    z-index: -2;
+  }
+
+}
+.primary-soft-animation{
+  color: #000;
+  &:after {
+    background-color:#FDBA95;
+    
+  }
+  &:before {
+    background-color: #E85D0F;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
     }
-    .primary-animation:hover{background-color: #e85d0f; color: #fff;}
+  }
+}
   </style>
 </head>
 
@@ -283,7 +321,7 @@
     <section class="bg-hero-banner">
   <div class="section-wrapper-min">
     <div class="hero-banner-content">
-      <h1>Dezan Shira & Associates rebranding to Ascentium </h1>
+      <h1>Dezan Shira & Associates Rebranding to Ascentium </h1>
       <h5>Same trusted expertise. Broader capabilities. One global brand. </h5>
     </div>
   </div>
@@ -359,10 +397,10 @@
 <section class="pt-4 pb-4">
         <div class="section-wrapper-min">
             <h2 class="heading-level2 text-center mb-1">Our global presence </h2>
-<p class="text-center">Our international teams will continue to provide the local knowledge, on-the-ground support, and cross-border expertise that have long defined Dezan Shira & Associates, now as part of the broader Ascentium network. </p>
+<p class="text-center mb-1">Our international teams will continue to provide the local knowledge, on-the-ground support, and cross-border expertise that have long defined Dezan Shira & Associates, now as part of the broader Ascentium network. </p>
        
 <div class="d-flex" style="align-items: center; justify-content: center">
-<a href="https://www.dezshira.com" class="text-cta-link"> Explore Our Global Locations </a>
+<a href="https://www.ascentium.com/" target="_blank" class="text-cta-link"> Explore Our Global Locations </a>
  </div> 
 </div>
         </section>
@@ -392,7 +430,7 @@
 <p class="text-center">As the transition is being implemented progressively across our international operations, you may continue to see both the Dezan Shira & Associates and Ascentium brands during this period. </p>
 <div class="d-flex" style="align-items: center; justify-content: center">
 <a href="https://www.ascentium.com/" class="btn btn--primary primary-animation">Discover Ascentium</a>
-<a href="https://www.dezshira.com/contact" class="text-cta-link"> Contact Our Team </a>
+<a href="https://www.dezshira.com/contact" class="btn btn--primary-soft primary-soft-animation"> Contact Our Team </a>
  </div> 
         </div></section>
  @@include("includes/footer-dsa-asc.html")

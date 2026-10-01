@@ -209,9 +209,10 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        h1{font-size: 30px; color: #000; margin-bottom: 1rem; font-weight: 600;}
+        h5{margin-bottom: 0; font-size: 18px;}
       }
-    .bg-hero-banner h1{font-size: 30px; color: #000; margin-bottom: 1rem; font-weight: 600;}
-      .bg-hero-banner h5{margin-bottom: 0; font-size: 18px;}
+  
       .dsa-asc-transition{display: flex; flex-direction: row; align-items:center;gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; justify-content: center;}
       .text-cta-link:hover{color: #e85d0f;}
       .text-cta-link::after{
@@ -227,22 +228,24 @@
     display: inline-block;
     vertical-align: middle;
     margin-right: .5rem;}
+
     .partners-alliances-list.dsa-asc .partners-alliances{
-        min-height: 263px;
+        min-height: 277px;
         border: 1px solid #dfe3e9;
         border-radius: 8px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+        h5{margin-bottom: 0.5rem;}
+      .pa-text{margin-bottom: 0;}
     }
-    .partners-alliances-list.dsa-asc .partners-alliances h5{margin-bottom: 0.5rem;}
-    .partners-alliances-list.dsa-asc .partners-alliances .pa-text{margin-bottom: 0;}
     .round-circle {
     border-radius: 50%;
-    height: 36px;
-    width: 36px;
+    height: 50px;
+    width: 50px;
     background-color: #fff0e7;
     display: flex;
     justify-content: center;
     align-items: center;}
+
     .text-cta-link{color: #e85d0f;}
 
     .btn--primary {
@@ -313,6 +316,15 @@
     }
   }
 }
+  .landing-top-content .two-column-section .right-section-block.padding-top {
+    padding-top: 0rem;
+  }
+@media (max-width: 767px) {
+  .landing-top-content .two-column-section .right-section-block.padding-top {
+    padding-top: 2rem;
+  }
+}
+
   </style>
 </head>
 
@@ -327,7 +339,7 @@
   </div>
 
 </section>
-<section class="landing-top-content pt-4 pb-4">
+<section class="landing-top-content pt-5 pb-4">
   <div class="section-wrapper-min">
 <div class="two-column-section">
             <div class="left-section-block">
@@ -337,7 +349,7 @@
 <p>The transition to the Ascentium brand will take place progressively across our markets. While our name and visual identity will change, our focus remains the same: providing practical, responsive support to businesses operating, investing, and growing across Asia and internationally. </p>
 <p class="mb-0">Thank you for your continued trust and partnership as we take this next step together.</p>
             </div>
-            <div class="right-section-block" style="padding-top: 0;"> 
+            <div class="right-section-block padding-top"> 
 
 <img fetchpriority="high" decoding="async" width="1920" height="1920" src="https://australia.incorp.asia/wp-content/uploads/2026/06/ASC-Video-Logo-Animation-26-03-12.gif" class="attachment-full size-full wp-image-12070" alt="" style="margin-top: 0;">
 
@@ -358,7 +370,7 @@
           <div class="splide__list">
             <div class="splide__slide">
               <div class="partners-alliances ">
-                <span class="round-circle mb-1"><img src="/img/Service.svg" alt="logo" width="20" height="20" sloading="lazy"></span>
+                <span class="round-circle mb-1"><img src="/img/Service.svg" alt="logo" width="30" height="30" sloading="lazy"></span>
                 <h5>Continuity of service </h5>
                 <div class="pa-text">Our teams will continue supporting clients throughout the transition, with existing engagements and ongoing matters continuing as usual.
                 </div>
@@ -368,7 +380,7 @@
 
             <div class="splide__slide">
               <div class="partners-alliances">
-                <span class="round-circle mb-1"><img src="/img/Capabilities.svg" alt="logo" width="20" height="20" sloading="lazy"></span>
+                <span class="round-circle mb-1"><img src="/img/Capabilities.svg" alt="logo" width="30" height="30" sloading="lazy"></span>
                 <h5>Broader capabilities </h5>
                 <div class="pa-text">As part of Ascentium, clients can benefit from access to a broader range of expertise and capabilities across the group. 
                 </div>
@@ -378,7 +390,7 @@
             <div class="splide__slide">
               <div class="partners-alliances">
                 
-                <span class="round-circle mb-1"><img src="/img/Global Network.svg" alt="logo" width="20" height="20" sloading="lazy"></span>
+                <span class="round-circle mb-1"><img src="/img/Global Network.svg" alt="logo" width="30" height="30" sloading="lazy"></span>
                 <h5>A more connected global network</h5>
                 <div class="pa-text">Bringing our teams together under one global brand strengthens our ability to support businesses across markets and throughout their growth journey. 
                 </div>

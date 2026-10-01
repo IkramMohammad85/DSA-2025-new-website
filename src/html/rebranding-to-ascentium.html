@@ -213,10 +213,13 @@
     .bg-hero-banner h1{font-size: 30px; color: #000; margin-bottom: 1rem; font-weight: 600;}
       .bg-hero-banner h5{margin-bottom: 0; font-size: 18px;}
       .dsa-asc-transition{display: flex; flex-direction: row; align-items:center;gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; justify-content: center;}
-      
+      .text-cta-link:hover{color: #e85d0f;}
+      .text-cta-link::after{
+        background: url(../img/Arrow-text-link-orange.svg) no-repeat right top;
+      }
     .dsa-asc-transition__arrow::after {
     content: "";
-    background: url(../img/Arrow-text-link.svg) no-repeat right top;
+    background: url(../img/Arrow-text-link-orange.svg) no-repeat right top;
     transform: translateX(0);
     transition: transform .3s ease;
     width: 26px;
@@ -239,6 +242,39 @@
     display: flex;
     justify-content: center;
     align-items: center;}
+    .text-cta-link{color: #e85d0f;}
+.btn--primary{background: #e85d0f;;
+    color: #fff;
+}
+    .primary-animation{
+      display: inline-block;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    }
+    .primary-animation:before{
+      content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fdba95;
+    transition: all .3s;
+    z-index: -1;
+    }
+    .primary-animation:after{
+      content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e85d0f;
+    z-index: -2;
+    }
+    .primary-animation:hover{background-color: #e85d0f; color: #fff;}
   </style>
 </head>
 
@@ -254,10 +290,7 @@
 
 </section>
 <section class="landing-top-content pt-4 pb-4">
-        <div class="section-wrapper-min">
-
-
-
+  <div class="section-wrapper-min">
 <div class="two-column-section">
             <div class="left-section-block">
                          <h2 class="heading-level2">Scaling greater heights, together</h2>
@@ -326,12 +359,11 @@
 <section class="pt-4 pb-4">
         <div class="section-wrapper-min">
             <h2 class="heading-level2 text-center mb-1">Our global presence </h2>
-<p class="text-center mb-0">Our international teams will continue to provide the local knowledge, on-the-ground support, and cross-border expertise that have long defined Dezan Shira & Associates, now as part of the broader Ascentium network. </p>
+<p class="text-center">Our international teams will continue to provide the local knowledge, on-the-ground support, and cross-border expertise that have long defined Dezan Shira & Associates, now as part of the broader Ascentium network. </p>
        
-<!-- <div class="d-flex" style="align-items: center;">
-<a href="https://www.ascentium.com/" class="btn btn-primary">Discover Ascentium</a>
-<a href="https://www.dezshira.com/contact" class="text-cta-link"> Contact Our Team </a>
- </div> -->
+<div class="d-flex" style="align-items: center; justify-content: center">
+<a href="https://www.dezshira.com" class="text-cta-link"> Explore Our Global Locations </a>
+ </div> 
 </div>
         </section>
         <section class="pt-4 pb-4 section-light-gray-bg">
@@ -357,7 +389,11 @@
 </div>
         <p class="text-center">Over the coming months, you will begin to see the Ascentium name and visual identity across our offices, websites, communications, and other client touchpoints.</p> 
 
-<p class="text-center mb-0">As the transition is being implemented progressively across our international operations, you may continue to see both the Dezan Shira & Associates and Ascentium brands during this period. </p>
+<p class="text-center">As the transition is being implemented progressively across our international operations, you may continue to see both the Dezan Shira & Associates and Ascentium brands during this period. </p>
+<div class="d-flex" style="align-items: center; justify-content: center">
+<a href="https://www.ascentium.com/" class="btn btn--primary primary-animation">Discover Ascentium</a>
+<a href="https://www.dezshira.com/contact" class="text-cta-link"> Contact Our Team </a>
+ </div> 
         </div></section>
  @@include("includes/footer-dsa-asc.html")
 <link rel="preload" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/css/vendor/splide.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">

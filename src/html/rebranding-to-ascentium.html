@@ -200,7 +200,9 @@
           max-width: 185px;
         }
       }
-      .bg-hero-banner{
+
+/* rebranding */
+    .bg-hero-banner{
         background-color: #FFA370;
         min-height: 244px;
         display: flex;
@@ -208,9 +210,9 @@
         align-items: center;
         text-align: center;
       }
-       .bg-hero-banner h1{font-size: 30px; color: #000; margin-bottom: 1rem; font-weight: 600;}
-       .bg-hero-banner h5{margin-bottom: 0; font-size: 18px;}
-       .dsa-asc-transition{display: flex; flex-direction: row; align-items:center;gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap;}
+    .bg-hero-banner h1{font-size: 30px; color: #000; margin-bottom: 1rem; font-weight: 600;}
+      .bg-hero-banner h5{margin-bottom: 0; font-size: 18px;}
+      .dsa-asc-transition{display: flex; flex-direction: row; align-items:center;gap: 1rem; margin: 1.5rem 0; flex-wrap: wrap; justify-content: center;}
       
     .dsa-asc-transition__arrow::after {
     content: "";
@@ -221,16 +223,22 @@
     height: 16px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: .5rem;
-}
+    margin-right: .5rem;}
     .partners-alliances-list.dsa-asc .partners-alliances{
-        min-height: 262px;
+        min-height: 292px;
         border: 1px solid #dfe3e9;
         border-radius: 8px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
-
     }
-     .partners-alliances-list.dsa-asc .partners-alliances h5{margin-bottom: 0.5rem;}
+    .partners-alliances-list.dsa-asc .partners-alliances h5{margin-bottom: 0.5rem;}
+    .round-circle {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    background-color: #fff0e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
   </style>
 </head>
 
@@ -245,14 +253,14 @@
   </div>
 
 </section>
-<section class="landing-top-content pt-5 pb-5">
+<section class="landing-top-content pt-4 pb-4">
         <div class="section-wrapper-min">
 
 
 
 <div class="two-column-section">
             <div class="left-section-block">
-                         <h2>Scaling greater heights, together</h2>
+                         <h2 class="heading-level2">Scaling greater heights, together</h2>
 <p>Dezan Shira & Associates will be rebranding to Ascentium, marking the next chapter in our development as an international business advisory firm. </p>
 <p>As part of Ascentium Group, our established teams and capabilities across Asia will become part of one global brand, connecting the regional expertise our clients know and trust with a broader international business services platform. </p>
 <p>The transition to the Ascentium brand will take place progressively across our markets. While our name and visual identity will change, our focus remains the same: providing practical, responsive support to businesses operating, investing, and growing across Asia and internationally. </p>
@@ -268,7 +276,7 @@
           </div>
         </div>
         </section>
-<section class="pt-5 pb-5 section-light-gray-bg">
+<section class="pt-4 pb-4 section-light-gray-bg">
   <h2 class="heading-level2 text-center mb-3">What this means for our clients </h2>
   <div class="section-wrapper-min">
     <div class="partners-alliances-list our-testimonial dsa-asc">
@@ -279,6 +287,7 @@
           <div class="splide__list">
             <div class="splide__slide">
               <div class="partners-alliances ">
+                <span class="round-circle mb-1"><img src="/img/Service.svg" alt="logo" width="20" height="20" sloading="lazy"></span>
                 <h5>Continuity of service </h5>
                 <div class="pa-text">Our teams will continue supporting clients throughout the transition, with existing engagements and ongoing matters continuing as usual.
                 </div>
@@ -288,6 +297,7 @@
 
             <div class="splide__slide">
               <div class="partners-alliances">
+                <span class="round-circle mb-1"><img src="/img/Capabilities.svg" alt="logo" width="20" height="20" sloading="lazy"></span>
                 <h5>Broader capabilities </h5>
                 <div class="pa-text">As part of Ascentium, clients can benefit from access to a broader range of expertise and capabilities across the group. 
                 </div>
@@ -296,6 +306,8 @@
             </div>
             <div class="splide__slide">
               <div class="partners-alliances">
+                
+                <span class="round-circle mb-1"><img src="/img/Global Network.svg" alt="logo" width="20" height="20" sloading="lazy"></span>
                 <h5>A more connected global network</h5>
                 <div class="pa-text">Bringing our teams together under one global brand strengthens our ability to support businesses across markets and throughout their growth journey. 
                 </div>
@@ -311,13 +323,24 @@
 </section>
 
 
-<section class="pt-5 pb-5">
+<section class="pt-4 pb-4">
         <div class="section-wrapper-min">
-            <h2>Our global presence </h2>
-<p>Our international teams will continue to provide the local knowledge, on-the-ground support, and cross-border expertise that have long defined Dezan Shira & Associates, now as part of the broader Ascentium network. </p>
+            <h2 class="heading-level2 text-center mb-1">Our global presence </h2>
+<p class="text-center">Our international teams will continue to provide the local knowledge, on-the-ground support, and cross-border expertise that have long defined Dezan Shira & Associates, now as part of the broader Ascentium network. </p>
        
 
-        <h2>What is changing? </h2>
+
+
+
+<!-- <div class="d-flex" style="align-items: center;">
+<a href="https://www.ascentium.com/" class="btn btn-primary">Discover Ascentium</a>
+<a href="https://www.dezshira.com/contact" class="text-cta-link"> Contact Our Team </a>
+ </div> -->
+</div>
+        </section>
+        <section class="pt-4 pb-4 section-light-gray-bg">
+        <div class="section-wrapper-min">
+                    <h2 class="heading-level2 text-center mb-1">What is changing? </h2>
 <div class="dsa-asc-transition">
     <div class="dsa-asc-transition__from"><a href="https://www.dezshira.com/"  alt="dezshira"><img src="https://dsa-2021.netlify.app/assets/img/dsa-logo-2nd.svg" alt="logo"  width="279" height="auto" sloading="lazy"></a></div>
     <div style="color: #000; font-size: 32px;">&#8658;</div>
@@ -336,16 +359,10 @@
           <path d="M16.3033 20.2294C16.0358 20.9774 15.63 21.6418 15.0535 22.204C13.9696 23.2912 12.6091 23.8348 10.9673 23.8348C9.3254 23.8348 7.96487 23.2912 6.8995 22.204C5.83414 21.1168 5.29454 19.7183 5.29454 18.0178C5.29454 16.3173 5.83414 14.9188 6.8995 13.8316C7.50828 13.2044 8.23236 12.7723 9.03484 12.5075V7.20619H8.73507C6.52593 7.48031 4.59352 8.50247 2.93782 10.2727C0.977737 12.382 0 14.956 0 18.0224C0 21.0889 0.977737 23.6443 2.93321 25.7629C4.88869 27.863 7.2454 28.9177 9.98952 28.9177C12.872 28.9177 15.1042 27.9188 16.6953 25.907V28.9177H22.0037V20.234H16.3033V20.2294Z" fill="#0F1514"></path>
         </svg></a></div>
 </div>
-        <p>Over the coming months, you will begin to see the Ascentium name and visual identity across our offices, websites, communications, and other client touchpoints.</p> 
+        <p class="text-center">Over the coming months, you will begin to see the Ascentium name and visual identity across our offices, websites, communications, and other client touchpoints.</p> 
 
-<p>As the transition is being implemented progressively across our international operations, you may continue to see both the Dezan Shira & Associates and Ascentium brands during this period. </p>
-
-
-<div class="d-flex" style="align-items: center;">
-<a href="https://www.ascentium.com/" class="btn btn-primary">Discover Ascentium</a>
-<a href="https://www.dezshira.com/contact" class="text-cta-link"> Contact Our Team </a>
- </div></div>
-        </section>
+<p class="text-center">As the transition is being implemented progressively across our international operations, you may continue to see both the Dezan Shira & Associates and Ascentium brands during this period. </p>
+        </div></section>
  @@include("includes/footer-dsa-asc.html")
 <link rel="preload" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/css/vendor/splide.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/css/vendor/splide.min.css"></noscript>

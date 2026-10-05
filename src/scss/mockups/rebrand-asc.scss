@@ -1,0 +1,214 @@
+
+
+/* Hero Banner */
+.bg-hero-banner {
+  min-height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffa370;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1rem;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  h5 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+}
+
+
+/* DSA to ASC Transition */
+.dsa-asc-transition {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+
+  &__arrow {
+    color: #000;
+    font-size: 32px;
+  }
+}
+
+
+/* Text CTA Link */
+.text-cta-link {
+  color: #e85d0f;
+
+  &:hover {
+    color: #e85d0f;
+  }
+
+  &::after {
+    background: url("../img/Arrow-text-link-orange.svg") no-repeat right top;
+  }
+}
+
+
+/* Partners & Alliances */
+.partners-alliances-list.dsa-asc {
+  .partners-alliances {
+    min-height: 277px;
+    border: 1px solid #dfe3e9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+    h5 {
+      margin-bottom: 0.5rem;
+    }
+
+    .pa-text {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+/* Round Circle */
+.round-circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff0e7;
+}
+
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+.btn--primary,
+.btn--primary-soft {
+  border: none;
+  font-weight: 600;
+}
+
+
+/* Primary Button */
+.btn--primary {
+  background-color: #e85d0f;
+  color: #fff;
+
+  &:hover {
+    background-color: #e85d0f;
+    color: #fff;
+  }
+}
+
+
+/* Soft Primary Button */
+.btn--primary-soft {
+  background-color: #fdba95;
+  color: #000;
+
+  &:hover {
+    background-color: #e85d0f;
+    color: #fff;
+  }
+}
+
+
+/* =========================================================
+   Button Animations
+   ========================================================= */
+
+.primary-animation,
+.primary-soft-animation {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 0.3s;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::after {
+    z-index: -2;
+    background-color: #e85d0f;
+  }
+
+  &::before {
+    z-index: -1;
+    width: 0;
+    background-color: #fdba95;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    color: var(--black);
+
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+
+/* Soft Animation */
+.primary-soft-animation {
+  color: #000;
+
+  &::after {
+    background-color: #fdba95;
+  }
+
+  &::before {
+    background-color: #e85d0f;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+
+/* =========================================================
+   Landing Content
+   ========================================================= */
+
+.landing-top-content {
+  .two-column-section {
+    .right-section-block.padding-top {
+      padding-top: 0;
+    }
+  }
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 767px) {
+  .landing-top-content {
+    .two-column-section {
+      .right-section-block.padding-top {
+        padding-top: 2rem;
+      }
+    }
+  }
+}

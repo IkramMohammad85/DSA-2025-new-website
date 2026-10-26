@@ -203,12 +203,14 @@ body.padding-top0 {
 .employess-info-block .about-employes p {
   font-size: 13px;
   color: #000;
+  margin-bottom: 0rem;
 }
 
 .employess-info-block .about-employes .employes-name {
   font-weight: 600;
   color: #043835;
   margin-bottom: 0.5rem;
+  padding-top: 0rem;
   font-size: 14px;
 }
 

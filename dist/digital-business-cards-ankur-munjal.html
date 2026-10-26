@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <!-- Required meta tags-->
+  <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]},feature_flags:["rum_v2"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"3283726c53",applicationID:"2874630",browserID:"2874636"};;/*! For license information please see nr-loader-rum-1.324.0.min.js.LICENSE.txt */
+(()=>{var e={8122(e,t,r){"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let s in a)if(void 0!==e[s])try{if(null===e[s]){r[s]=null;continue}Array.isArray(e[s])&&Array.isArray(t[s])?r[s]=Array.from(new Set([...e[s],...t[s]])):e[s]instanceof Map||e[s]instanceof Set||e[s]instanceof Date||e[s]instanceof RegExp?r[s]=e[s]:"object"==typeof e[s]&&null!==t[s]&&"object"==typeof t[s]?r[s]=i(e[s],t[s]):r[s]=e[s]}catch(e){r[s]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){"use strict";r.d(t,{f:()=>s});var n=r(384),i=r(8122);const a={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function s(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}r.d(t,["D",0,e=>(0,i.a)(e,a)])},7699(e,t,r){"use strict";var n=r(860);const i=1e6,a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0};r.d(t,["It",0,i,"KC",0,a,"qh",0,"SESSION_ERROR","zd",0,5e5])},9324(e,t,r){"use strict";r.d(t,["xv",0,"1.324.0"])},981(e,t,r){"use strict";r.d(t,["R",0,{AJAX:"AjaxRequest",PA:"PageAction",UA:"UserAction",BP:"BrowserPerformance",WS:"WebSocket",SPV:"SecurityPolicyViolation",JSE:"JavaScriptError",LOG:"Log",PVE:"PageView",PVT:"PageViewTiming",SR:"SessionReplay",ST:"SessionTrace",BI:"BrowserInteraction"}])},6154(e,t,r){"use strict";var n=r(1863);const i="undefined"!=typeof window&&!!window.document,a="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),s=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===s?.document?.visibilityState),c=""+s?.location,u=/iPad|iPhone|iPod/.test(s.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=s.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)());r.d(t,["OF",0,u,"RI",0,i,"WN",0,l,"bv",0,a,"gm",0,s,"m",0,c,"mw",0,o,"sb",0,d,"zk",0,()=>{const e=s?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<s.performance.now())return e}])},3241(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(6154);function i(e={}){try{n.gm.dispatchEvent(new CustomEvent("newrelic",{detail:e}))}catch(e){}}},1687(e,t,r){"use strict";r.d(t,{Ak:()=>o,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),a=r(860),s=r(2646);function o(e,t){if(!e)return;const r={staged:!1,priority:a.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const a=e.ee,o=i.i.handlers;if(a&&!a.aborted&&a.backlog&&o){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=a.backlog[t],r=o[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof s.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}a.isolatedBacklog||delete o[t],a.backlog[t]=null,a.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],a=e[2];n.apply(i,a)}})}},7836(e,t,r){"use strict";var n=r(384),i=r(8990),a=r(2646),s=r(5607);const o="nr@context:".concat(s.W),c=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(c.aborted&&!i)return;t&&a&&t.emit(e,r,n);var o=g(n);m(e).forEach(e=>{e.apply(o,r)});var u=v()[s[e]];u&&u.push([f,e,r,o]);return o},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{s[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,o,()=>new a.y(o)):new a.y(o)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c),r.d(t,["P",0,o,"ee",0,c])},2646(e,t,r){"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908(e,t,r){"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(9908);a.on=s;var i=a.handlers={};function a(e,t,r,a){s(a||n.d,i,e,t,r)}function s(e,t,r,i,a){a||(a="feature"),e||(e=n.d);var s=t[a]=t[a]||{};(s[r]=s[r]||[]).push([e,i])}},3878(e,t,r){"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function a(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>a,jT:()=>n,sp:()=>i})},5607(e,t,r){"use strict";const n=(0,r(9566).bz)();r.d(t,["W",0,n])},9566(e,t,r){"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);function i(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".split("").map(e=>"x"===e?i(t,r++).toString(16):"y"===e?(3&i()|8).toString(16):e).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,a=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const s=[];for(var o=0;o<e;o++)s.push(i(r,a++).toString(16));return s.join("")}},2614(e,t,r){"use strict";r.d(t,["BB",0,18e5,"Wt",0,"NRBA_SESSION::","iL",0,{SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},"tS",0,{STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},"wk",0,144e5])},1863(e,t,r){"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944(e,t,r){"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},8990(e,t,r){"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389(e,t,r){"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},1910(e,t,r){"use strict";r.d(t,{i:()=>a});var n=r(944);const i=new Map;function a(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),a=t.includes("nrWrapper");return r||a||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},5289(e,t,r){"use strict";r.d(t,{GG:()=>s,Qr:()=>c,sB:()=>o});var n=r(3878),i=r(6389);function a(){return"undefined"==typeof document||"complete"===document.readyState}function s(e,t){if(a())return e();const r=(0,i.J)(e),s=setInterval(()=>{a()&&(clearInterval(s),r())},500);(0,n.sp)("load",r,t)}function o(e){if(a())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(a())return e();(0,n.sp)("popstate",e)}},384(e,t,r){"use strict";r.d(t,{Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),a=r(944),s=r(1910);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,s.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,a.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}r.d(t,["NT",0,o])},2843(e,t,r){"use strict";r.d(t,{G:()=>a,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function a(e,t,r){(0,n.sp)("pagehide",e,t,r)}},9300(e,t,r){"use strict";r(860).K7.ajax;r.d(t,["mo",0,{NONE:"none",FAILURES:"failures",ALL:"all"}])},3969(e,t,r){"use strict";const n=r(860).K7.metrics;r.d(t,["TZ",0,n,"XG",0,"storeEventMetrics","xV",0,"storeSupportabilityMetrics"])},6630(e,t,r){"use strict";const n=r(860).K7.pageViewEvent;r.d(t,["T",0,n])},782(e,t,r){"use strict";const n=r(860).K7.pageViewTiming;r.d(t,["T",0,n])},4234(e,t,r){"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},7767(e,t,r){"use strict";var n=r(6154);r.d(t,["V",0,e=>n.RI&&!0===e?.privacy.cookies_enabled])},8362(e,t,r){"use strict";r.d(t,{d:()=>a});var n=r(9566),i=r(1741);class a extends i.W{agentIdentifier=(0,n.LA)(16)}},1741(e,t,r){"use strict";r.d(t,{W:()=>a});var n=r(944),i=r(4261);class a{#e(e,...t){if(this[e]!==a.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e("log",e,t)}start(){return this.#e("start")}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},4261(e,t,r){"use strict";r.d(t,["BL",0,"finished","CH",0,"recordReplay","Dl",0,"setUserId","Fw",0,"setPageViewName","PA",0,"setCurrentRouteName","Pv",0,"consent","Tb",0,"pauseReplay","U2",0,"addToTrace","V1",0,"measure","Wb",0,"wrapLogger","bt",0,"setErrorHandler","cD",0,"setCustomAttribute","dT",0,"interaction","eY",0,"register","fF",0,"recordCustomEvent","hG",0,"addPageAction","k6",0,"addRelease","nb",0,"setApplicationVersion","o5",0,"noticeError"])},1738(e,t,r){"use strict";r.d(t,{U:()=>l,Y:()=>d});var n=r(3241),i=r(9908),a=r(1863),s=r(944),o=r(3969),c=r(8362),u=r(860);function d(e,t,r,a){const d=a||r;!d||d[e]&&d[e]!==c.d.prototype[e]||(d[e]=function(){(0,i.p)(o.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:"api-"+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,s.R)(23,e)}})}function l(e,t,r,n,s){const o=e.info;null===r?delete o.jsAttributes[t]:o.jsAttributes[t]=r,(s||null===r)&&(0,i.p)("api-"+n,[(0,a.t)(),t,r],void 0,"session",e.ee)}},8374(e,t,r){r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860(e,t,r){"use strict";const n="events",i="jserrors",a="browser/blobs",s="browser/logs",o={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},c={[o.pageViewEvent]:1,[o.pageViewTiming]:2,[o.metrics]:3,[o.jserrors]:4,[o.softNav]:5,[o.ajax]:6,[o.sessionTrace]:7,[o.sessionReplay]:8,[o.logging]:9,[o.genericEvents]:10},u={[o.pageViewEvent]:"rum",[o.pageViewTiming]:n,[o.ajax]:n,[o.softNav]:n,[o.metrics]:i,[o.jserrors]:i,[o.sessionTrace]:a,[o.sessionReplay]:a,[o.logging]:s,[o.genericEvents]:"ins"};r.d(t,["$J",0,u,"K7",0,o,"P3",0,c,"XX",0,i,"Yy",0,s,"df",0,a,"hg",0,"connect"])}};const t={};function r(n){const i=t[n];if(void 0!==i)return i.exports;const a=t[n]={exports:{}};return e[n](a,a.exports,r),a.exports}r.m=e,r.d=(e,t)=>{if(Array.isArray(t))for(var n=0;n<t.length;){var i=t[n++],a=t[n++];r.o(e,i)?0===a&&n++:0===a?Object.defineProperty(e,i,{enumerable:!0,value:t[n++]}):Object.defineProperty(e,i,{enumerable:!0,get:a})}else for(var i in t)r.o(t,i)&&!r.o(e,i)&&Object.defineProperty(e,i,{enumerable:!0,get:t[i]})},r.f={},r.e=e=>Promise.all(Object.keys(r.f).reduce((t,n)=>(r.f[n](e,t),t),[])),r.u=e=>"nr-rum-1.324.0.min.js",r.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),(()=>{const e={},t="NRBA-1.324.0.PROD:";r.l=(n,i,a,s)=>{if(e[n])return void e[n].push(i);let o,c;if(void 0!==a){const e=document.getElementsByTagName("script");for(var u=0;u<e.length;u++){const r=e[u];if(r.getAttribute("src")==n||r.getAttribute("data-webpack")==t+a){o=r;break}}}if(!o){c=!0;var d={296:"sha512-Pjy0Jxmo6oAG6oGKLKrf8x8xyaSM1NuL7vLGv9xRLEw0hrpERDruLI5RxlCHNy0NpMyEPWhlC34zujXIR3qJPQ=="};o=document.createElement("script"),o.charset="utf-8",r.nc&&o.setAttribute("nonce",r.nc),o.setAttribute("data-webpack",t+a),o.src=n,0!==o.src.indexOf(window.location.origin+"/")&&(o.crossOrigin="anonymous"),d[s]&&(o.integrity=d[s])}e[n]=[i];const l=(t,r)=>{o.onerror=o.onload=null,clearTimeout(f);const i=e[n];if(delete e[n],o.parentNode?.removeChild(o),i?.forEach(e=>e(r)),t)return t(r)},f=setTimeout(l.bind(null,void 0,{type:"timeout",target:o}),12e4);o.onerror=l.bind(null,o.onerror),o.onload=l.bind(null,o.onload),c&&document.head.appendChild(o)}})(),r.r=e=>{Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.p="https://js-agent.newrelic.com/",(()=>{const e={374:0,840:0};r.f.j=(t,n)=>{let i=r.o(e,t)?e[t]:void 0;if(0!==i)if(i)n.push(i[2]);else{const a=new Promise((r,n)=>i=e[t]=[r,n]);n.push(i[2]=a);const s=r.p+r.u(t),o=new Error,c=n=>{if(r.o(e,t)&&(i=e[t],0!==i&&(e[t]=void 0),i)){const e=n&&("load"===n.type?"missing":n.type),r=n&&n.target&&n.target.src;o.message="Loading chunk "+t+" failed: ("+e+": "+r+")",o.name="ChunkLoadError",o.type=e,o.request=r,i[1](o)}};r.l(s,c,"chunk-"+t,t)}};const t=(t,n)=>{let[i,a,s]=n;var o,c,u=0;if(i.some(t=>0!==e[t])){for(o in a)r.o(a,o)&&(r.m[o]=a[o]);if(s)s(r)}for(t&&t(n);u<i.length;u++)c=i[u],r.o(e,c)&&e[c]&&e[c][0](),e[c]=0},n=self["webpackChunk:NRBA-1.324.0.PROD"]=self["webpackChunk:NRBA-1.324.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";r(8374);var e=r(8362),t=r(860);const n=Object.values(t.K7);var i=r(384),a=r(1741);var s=r(2555),o=r(981);t.K7.genericEvents,o.R.PA,o.R.UA,o.R.BP;const c={RESOURCES:"experimental.resources",REGISTER:"register"};var u=r(9300);const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var l=r(2614),f=r(944),g=r(8122);const p="[data-nr-mask]",m=e=>(0,g.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1,iframe_bridge:!1,iframe_domains:[]},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0,capture_payloads:u.mo.NONE},api:{register:{get enabled(){return e.feature_flags.includes(c.REGISTER)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1,get allow_iframe_bridge(){return e.feature_flags.includes(c.IFRAME_BRIDGE)||e.experimental.iframe_bridge},set allow_iframe_bridge(t){e.experimental.iframe_bridge=t},get iframe_domains(){return e.experimental.iframe_domains},set iframe_domains(t){Array.isArray(t)?e.experimental.iframe_domains=t:(0,f.R)(1,t)}}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(c.RESOURCES)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:l.wk,inactiveMs:l.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(p):""===t||null===t?e.mask_selector=p:(0,f.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,f.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,f.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]},web_sockets:{enabled:!1}}})());var h=r(6154),v=r(9324);let b=0;const y={buildEnv:"PROD",distMethod:"CDN",version:v.xv,originTime:h.WN},_={consented:!1},w={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||_.consented},set consented(e){_.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,connector:void 0,harvester:void 0,v2Target:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++b},listeningForIframeMessages:!1},R="BA";var A=r(7836),x=r(3241);const E={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};var S=r(9908);const k="newrelic-iframe-";function T(e,t={},n,o){let{init:c,info:u,loader_config:d,runtime:l={},exposed:f=!0}=t;if(!u){const e=(0,i.pV)();c=e.init,u=e.info,d=e.loader_config}var p;e.init=m(c||{}),e.loader_config=(p=d||{},(0,g.a)(p,E)),u.jsAttributes??={},h.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,s.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,g.a)(e,w),r=Object.keys(y).reduce((e,t)=>(e[t]={value:y[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),e.runtime.v2Target??={type:R,instance:e.agentIdentifier,get id(){return e.runtime.appMetadata?.agents?.[0]?.entityGuid},get attributes(){return{"entity.guid":this.id,appId:e.info.applicationID}}},v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,i.pV)();Object.getOwnPropertyNames(a.W.prototype).forEach(r=>{const n=a.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=n,e.ee=A.ee.get(e.agentIdentifier),e.exposed=f,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.init.api.register.allow_iframe_bridge&&h.gm.addEventListener("message",t=>{"string"==typeof t.data?.type&&t.data.type.startsWith(k)&&(0,S.p)("iframe-message",[t],void 0,"IFRAME",e.ee)}),e.runtime.configured=!0)}var j=r(1863),P=r(4261),N=r(1738);var O=r(1687),M=r(4234),I=r(5289),D=r(7767);function V(e){return!!(0,i.dV)().o.MO&&(0,D.V)(e)&&!0===e?.session_trace.enabled}var W=r(6389),B=r(7699);const C=new WeakSet,K=new WeakMap;class U extends M.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,W.J)(()=>{(0,O.Ak)(e,this.featureName),t()}))}):(0,O.Ak)(e,t)}importAggregator(e,t,n={}){if(this.featAggregate)return;const i=async()=>{if(await this.deferred,this.#t(e),!(0,s.f)(e.info))return(0,f.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);try{await async function(e,t,n){if(K.has(e))return K.get(e);const i=(async()=>{if((0,D.V)(e.init))try{const{setupAgentSession:t}=await r.e(296).then(r.bind(r,1768));t(e)}catch(e){(0,f.R)(20,e),t.emit("internal-error",[e]),(0,S.p)(B.qh,[e],void 0,n,t)}if(e.init.api.register.allow_iframe_bridge)try{const{setupIframeMFEMessageListener:t}=await Promise.resolve().then(function(){const e=new Error("Cannot find module '../../loaders/configure/iframe-message-handler'");throw e.code="MODULE_NOT_FOUND",e});t(e)}catch(e){(0,f.R)(23,e)}const[{Connector:i},{Harvester:a}]=await Promise.all([r.e(296).then(r.bind(r,6589)),r.e(296).then(r.bind(r,5237))]);e.runtime.connector=new i(e),e.runtime.harvester=new a(e);const s=Object.values(e.features).filter(t=>e.runtime.drainRegistry.has(t.featureName));Promise.all(s.map(e=>e.onAggregateImported)).then(()=>e.runtime.harvester.startTimer())})();K.set(e,i),await i}(e,this.ee,this.featureName)}catch(e){return(0,f.R)(79,e),this.ee.abort(),void this.loadedSuccessfully(!1)}try{if(!this.#r(this.featureName,e.runtime.session,e.init))return this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:r}=await t();this.featAggregate=new r(e,n),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,f.R)(34,e),this.abortHandler?.(),(0,O.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1)}};h.RI?(0,I.GG)(()=>i(),!0):i()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return V(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!C.has(e)&&(C.add(e),!(0,s.f)(e.info))){const t=(0,i.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}T(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var L=r(6630);class F extends U{static featureName=L.T;constructor(e){var t;super(e,L.T),this.setupInspectionEvents(),t=e,(0,N.Y)(P.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,S.p)("api-"+P.Fw,[(0,j.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>e.init.feature_flags.includes("rum_v2")?r.e(296).then(r.bind(r,908)):r.e(296).then(r.bind(r,7927)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,I.sB)(t=>{e(t,"DOMContentLoaded")}),(0,I.GG)(t=>{e(t,"load")}),(0,I.Qr)(t=>{e(t,"navigate")}),this.ee.on(l.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class G extends e.d{constructor(e){var t;(super(),h.gm)?(this.features={},(0,i.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(F),T(this,e,e.loaderType||"agent"),t=this,(0,N.Y)(P.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,N.U)(t,e,r,P.cD,n);(0,f.R)(40,typeof r)}else(0,f.R)(39,typeof e)},t),function(e){(0,N.Y)(P.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,f.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,S.p)("api-setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,N.U)(e,"enduser.id",t,P.Dl,!0)},e)}(this),function(e){(0,N.Y)(P.nb,function(t){if("string"==typeof t||null===t)return(0,N.U)(e,"application.version",t,P.nb,!1);(0,f.R)(42,typeof t)},e)}(this),function(e){(0,N.Y)("start",function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,N.Y)(P.Pv,function(t=!0){if("boolean"==typeof t){if((0,S.p)("api-"+P.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum?.()})}}else(0,f.R)(65,typeof t)},e)}(this),this.run()):(0,f.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return n.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),r=[...this.desiredFeatures],i=this.init.feature_flags.includes("rum_v2");r.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),r.forEach(r=>{if(!e[r.featureName]&&(i||r.featureName!==t.K7.pageViewEvent))return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,f.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,f.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,i.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var H=r(2843),z=r(782);class Y extends U{static featureName=z.T;constructor(e){super(e,z.T),h.RI&&((0,H.u)(()=>(0,S.p)("docHidden",[(0,j.t)()],void 0,z.T,this.ee),!0),(0,H.G)(()=>(0,S.p)("winPagehide",[(0,j.t)()],void 0,z.T,this.ee)),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9981))))}}var Z=r(3969);class q extends U{static featureName=Z.TZ;constructor(e){super(e,Z.TZ),this.importAggregator(e,()=>r.e(296).then(r.bind(r,9623)))}}new G({features:[F,Y,q],loaderType:"lite"})})()})();</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="msvalidate.01" content="2345799BBAA101C7A3E95128C0C6F6B2" />
+
+  <link rel="dns-prefetch" href="//d2h561de5xqoi4.cloudfront.net">
+  <link rel="preconnect" href="https://d2h561de5xqoi4.cloudfront.net" crossorigin>
+
+  <link rel="dns-prefetch" href="//d2h56l9e5xqoi4.cloudfront.net">
+  <link rel="preconnect" href="https://d2h56l9e5xqoi4.cloudfront.net" crossorigin>
+
+  <link rel="preload" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  
+
+
+  <link rel="stylesheet" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/css/main.min.css" type="text/css">
+  <!-- <link rel="stylesheet" href="/assets_v3/css/main.min.css" type="text/css"> -->
+  
+  <!-- <link rel="stylesheet" rel="preload" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/css/vendor/splide.min.css" type="text/css"> -->
+
+    <style>
+  </style>
+
+  
+				<title>Ankur Munjal - Country Director, India |  Dezan Shira & Associates</title>
+				<meta name="description" content="" />
+				<meta name="keyword" content="" />
+              <meta property="og:image" content="https://www.dezshira.com/userfiles/image/dsa-share-image.jpg"/>
+<meta property="og:image:width" content="1200" />
+					<meta property="og:image:height" content="630" />
+
+<!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-P2VRZGL');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="msapplication-TileColor" content="#0c2740">
+  <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#0c2740">
+
+
+  <style>
+    /* temp UI overwrites */
+    /* .ibm-enizi-sp .carousel-inner .carousel-item:nth-child(2) .ibm-enizi-sp-block .ibm-enizi-sp-text h3{width: 100%;}
+    .ibm-enizi-sp .ibm-enizi-sp-container .ibm-enizi-sp-block {width: 365px;}
+    .accordion-reg-button{font-size: 18px;}
+    .page-intro h2{margin-top: 0;} */
+    .masthead__text.mini_banner {
+      justify-content: center;
+      max-width: 500px;
+    }
+
+    .accordion-reg.explore-faq .accordion-reg-button[aria-expanded="true"] {
+      font-weight: 500;
+    }
+
+
+    .accordion-reg-body table th {
+      background-color: white;
+      color: #207fd4;
+      border-bottom: 2px solid #207fd4;
+    }
+
+    .accordion-reg-body table th p,
+    .accordion-reg-body table td p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .accordion-reg-body table th,
+    .accordion-reg-body table td {
+      border: 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    ul.mega-mtabs li span a {
+      color: #3f3f3f;
+    }
+
+    .btn.btn-primary {
+      cursor: pointer;
+    }
+
+    .card-animate {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease;
+    }
+
+    .card-animate.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .navbar__signupbox__slider .splide__slide img {
+      margin: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .navbar__signupbox__slider .splide__pagination {
+      bottom: -0.5em;
+    }
+
+    .navbar__signupbox__slider .splide__pagination button {
+      /* display: inline;
+      width: unset;
+      margin: unset; */
+      padding: unset;
+      border-radius: 50%;
+    }
+
+    /* Login */
+    .navbar__iconmenu__login>a {
+      color: #357dc0 !important;
+      background-image: none;
+      border: solid 1px #357dc0;
+      text-decoration: none;
+      padding: .3rem 1rem !important;
+    }
+
+    .navbar__iconmenu>li:nth-child(2) {
+      position: inherit;
+    }
+
+
+    .services-question-section .got-question-block form input[type=email]{
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      border-bottom: 1px solid #c4c4c4;
+      background: 0 0;
+      margin-bottom: .5rem;
+      color: #231f20;
+      font-size: 15px;
+      padding-left: .5rem;
+      padding-right: 1.5rem;
+    }
+
+    a.navbar__togglemenu{cursor: pointer;}
+
+    input.error,select.error,textarea.error{border-color: #dc3545 !important;color:#dc3545 !important;}
+    input.error::placeholder ,select.error::placeholder ,textarea.error::placeholder {color:#dc3545 !important;}
+    input.error:focus { border-color: #dc3545 !important; }
+    input[name="captcha_code"]::placeholder{font-size: 12px;}
+
+    /* alerts */
+    .alert{font-size: 12px;text-align: center;color: #606060;border: 1px solid #ddd;padding: 10px;margin: 1rem auto;}
+    .alert.alert-danger{color:#dc3545;border-color: #dc3545;}
+    .alert.alert-success{color:green;border-color: green;}
+
+        /* Enquiry popup */
+    .register__accessbox#enquiryAlertModal{position: fixed;width: 100vw;height: 100vh;top: 0;left: 0;padding-top: 6rem;background-color: rgba(0, 0, 0, 0.8);box-shadow: 0 2px 4px rgba(3, 27, 78, 0.1);opacity: 0;visibility: hidden;transition: opacity 0.2s ease-out;}
+    .register__accessbox.show-modal#enquiryAlertModal {opacity: 1;visibility: visible;z-index: 2;}
+    .register__accessbox#enquiryAlertModal .register__accessbox--top {position: relative;max-width: 850px;margin: 0 auto;padding: 2rem 0;text-align: center;color: #000;background: #fff;}
+    .register__accessbox#enquiryAlertModal .register__accessbox__close {display: inline-block;position: absolute;right: 0;top: 0;padding: 1rem;}
+    .register__accessbox#enquiryAlertModal .register__accessbox--top{border-radius: 4px;top:20%;max-width: 700px;}
+    .register__accessbox#enquiryAlertModal .message{padding:1rem 3rem;}
+    .register__accessbox#enquiryAlertModal .action-buttons{display: flex;gap:30px;justify-content:center;}
+    .register__accessbox#enquiryAlertModal .action-buttons button{display:inline-block;width:auto;padding:10px 20px;text-transform:none;font-size: 0.9rem;}
+    .register__accessbox#enquiryAlertModal .action-buttons button.primary{background-color: #217fd4;color:white;}
+
+
+    @media screen and (max-width: 1366px){
+      .splide-progress-wrapper{display: none;}
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1366px) {
+      .slider-content {top: 5rem;}
+      .slider-content .slide-title {font-size: 30px;line-height: 45px;margin-bottom: 1rem;}
+      .slider-content .slide-desc {margin-top: 1rem;font-size: 17px;line-height: 28px;}
+      .splide-progress-wrapper{left: 15%;}
+    }
+
+    /* Lazy Loading */
+    img.lazy {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    img.lazy.loaded {
+      opacity: 1;
+    }
+
+    .our-experts .experts-detail{min-height: 150px;}
+    ul.mega-mtabs li span a {color: #3f3f3f;}
+
+    /* Services/Industries Menu Mobile Optimization */
+    .service-page-subheading.mobile-view-cta{display: none;}
+    @media screen and (max-width: 700px) {
+    #industryFocus .page-link-block{ display: none;}
+    .service-page-subheading.mobile-view-cta{ display: block; margin: 0 0 1rem 0; padding-left: 24px; padding-top: 0;}
+     }
+
+     /* EDO Menu Fix */
+     @media (min-width: 1100px) {
+          .navbar__megamenu--two ul.mega-mtabs li span { width: 315px;}
+      }
+      
+      @media (min-width: 1500px) {
+          ul.mega-mtabs { width: 345px;}
+      }
+
+      .services-question-section .got-question-block{background-color: rgb(241, 248, 255);}
+
+      /* Language Switcher */
+      .lng-change {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        min-width: 80px;
+      }
+      .lng-change img {
+        width: 18px;
+      }
+
+      .navbar__desks.navbar__lng,
+      .lng-list {
+        width: 125px;
+        top: 62px;
+        left: inherit;
+        right: 0px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+
+      .navbar__desks.navbar__lng a:hover {
+        background-color: inherit;
+      }
+
+      .lng-switcher-mob {
+        display: flex;
+        position: relative;
+      }
+      .lng-switcher-mob .lng-switcher:after {
+        margin-left: 5px;
+      }
+
+      .lng-switcher {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+      }
+      .lng-switcher:hover {
+        color: #357dc0;
+      }
+
+      .lng-list {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        position: absolute;
+        font-size: 0.875rem;
+        top: 34px;
+        background-color: #fff;
+        transition: opacity 0.2s ease-out;
+      }
+      .lng-list ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .lng-list ul li a {
+        padding: 1rem 1rem;
+        font-weight: bold;
+        display: block;
+      }
+      .lng-list.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+      .login-cta {
+        /* color: #fff; */
+        font-weight: 400;
+        font-size: 0.875rem;
+        background-image: none;
+        border: solid 1px #207fd4;
+        text-decoration: none;
+        padding: 0.3rem 1rem;
+        border-radius: 2px;
+      }
+
+      .login-lan {
+        display: flex;
+        gap: 1.3rem;
+      }
+
+      .navbar-bgHover .login-cta {
+        border: solid 1px #357dc0;
+        color: #357dc0;
+      }
+      .navbar-bgHover .lng-switcher {
+        color: #0c2740;
+      }
+
+      .navbar-bgHover .lng-change:after,
+      .navbar-bgHover .lng-switcher-mob .lng-switcher:after {
+        border-color: #0c2740;
+      }
+
+      .trending-insights .ti-heading {
+        min-width: 128px;
+      }
+
+      @media (max-width: 1100px) {
+        .login-lan {
+          min-width: 90px;
+          position: absolute;
+          right: 60px;
+          top: 30px;
+        }
+        .login-cta {
+          display: none;
+        }
+        .lng-switcher {
+          display: flex;
+          align-items: center;
+          background-color: #f1f1f1;
+          padding: 2px 6px;
+          border-radius: 3px;
+          font-size: 12px;
+        }
+        .lng-switcher span {
+          display: none;
+        }
+        .lng-switcher-mob {
+          display: inline-block;
+          position: relative;
+        }
+        .lng-switcher-mob a {
+          color: #0c2740;
+        }
+        .lng-list {
+          top: 20px;
+          width: 94px;
+        }
+        .lng-list ul li a {
+          padding: 0.5rem;
+        }
+        .lng-change:after,
+        .lng-switcher-mob .lng-switcher:after {
+          border-color: #0c2740;
+        }
+      }
+      @media (max-width: 480px) {
+        .navbar__logo img {
+          max-width: 185px;
+        }
+      }
+  </style>
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2VRZGL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<style>
+.navbar__iconmenu__login>a{
+    color: #357dc0 !important;
+    background-image: none;
+    border: solid 1px #357dc0;
+    text-decoration: none;
+    padding: .3rem 1rem !important;
+    border-radius: 2px !important;
+}
+
+/* rebranding to Ascentium yop sticky */
+.top-header-widget{background-color: #FFA370; min-height: 40px;
+p{font-size: 15px; padding: 0.46rem 0 0.45rem 0; margin-bottom: 0; display: flex; justify-content: center;align-items: center; flex-wrap: wrap;}
+.btn{ margin-left: 1rem;padding: 1px 12px; background-color: #000; color: #fff; font-size: 14px;}
+}
+ 
+ 
+#main-slider{margin-top: -45px;}
+#wrapper{margin-top: 40px;}
+@media (max-width: 667px) {
+#main-slider{margin-top: -18px;}
+#wrapper{margin-top: 86px;}
+    }
+@media (max-width: 1100px) {
+.navbar__wrapper{position: relative;}
+    }
+@media (min-width: 1100px) {
+.navbar__megamenu{top: 124px;}
+    } 
+/* end*/
+</style>
+
+<main class="home country-section" id="wrapper">
+<link rel="stylesheet" href="/css/digital-name-card.css" type="text/css">
+
+
+<style>
+  #weChatQRModel,
+  #weChatUserModel {
+    z-index: 10;
+  }
+
+  .modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+  }
+
+  .modal-dialog {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .profile-header img {
+    max-width: 350px;
+  }
+
+  .employes-cta-btn .btn-cta-cyan-blue,
+  .employes-cta-btn .btn-cta-cyan-blue-outline {
+    padding: 10px 22px 5px;
+  }
+
+  .footer-dnc .footer-column-3 {
+    width: 20% !important;
+  }
+
+  .footer-dnc.fix-width-desk {
+    align-items: center;
+  }
+
+  .employes-follow-me-section .follow-me-block .follow-me-title {
+    font-weight: bold;
+  }
+
+  .highlight.copy {
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+    user-select: all;
+  }
+
+  .highlight.copy span {
+    border: 1px dotted #e67f13;
+    padding: 0.5rem 2rem;
+    border-radius: 3px;
+  }
+
+  @media (min-width: 1024px) {
+
+    .employes-cta-info-detail .cta-row-main {
+      flex-direction: column !important;
+      margin-bottom: 0 !important;
+    }
+
+    .employes-cta-info-detail .cta-row-main .cta-row .cta-column-left,
+    .employes-cta-info-detail .cta-row-main .cta-row .cta-column-left.cta-column-left-l {
+      width: 70px;
+    }
+
+    .employes-cta-info-detail .cta-row-main .cta-row .cta-column-right.cta-column-full {
+      width: auto;
+      max-width: 80%;
+    }
+
+    /* .employes-get-in-touch.fix-width-get {
+      width: 350px;
+  } */
+
+    .footer-dnc.fix-width-desk .footer-column-3 {
+      width: 12% !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .profile-header img {
+      max-width: 80% !important;
+    }
+
+    .modal-dialog {
+      width: 95%;
+    }
+
+    .qr-footer {
+      display: block;
+      text-align: center;
+      padding: 0 0 50px 0;
+    }
+
+    .c-btn {
+      margin: .5rem auto;
+    }
+
+    .qr-body {
+      padding-top: 2rem;
+    }
+
+    .employes-get-in-touch .get-in-touch-title {
+      font-size: 0.9rem;
+      line-height: 1rem;
+    }
+
+    .sitefooter__copyright {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .footer-dnc.terms_of_use ul {
+      text-align: center;
+    }
+
+  }
+
+
+  /*new css*/
+  .fix-width-header img,
+  .employes-thumb img {
+    margin: 0 auto;
+  }
+
+  .employes-name {
+    padding-top: 1rem;
+  }
+
+  .employes-name a {
+    font-weight: bold;
+    color: #344E70;
+    padding-top: 1rem;
+  }
+
+  .employes-position a {
+    color: #344E70;
+  }
+
+  .sitefooter__copyright p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .sitefooter__submenu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem !important;
+    gap: 1rem;
+  }
+
+  .about-employes p a {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  .terms_of_use {
+    border-top: solid 1px #2e3f5a;
+    padding-top: 1rem !important;
+  }
+
+  .footer-dnc.fix-width-desk a:hover {
+    color: #c1c1c1;
+  }
+
+  .popup-content {
+    background: #fff;
+  }
+
+
+.employes-head .employes-thumb img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+object-fit: cover;
+}
+ 
+ 
+@media (min-width: 1024px) {
+    .employes-head.fix-width-desk .employes-thumb img {
+        width: 196px;
+        height: 196px;
+    object-fit: cover;
+    }
+}
+
+  /* Model */
+  .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.5); z-index: 1050; }
+  .modal.show { display: block; }
+  .modal-dialog { margin: 10% auto; background: white; padding: 1rem; border-radius: 4px; max-width: 500px; }
+
+</style>
+
+
+
+
+<body class="padding-top0 background-image2">
+
+  <main class="employee-profile-width full-width" id="wrapper">
+    <div class="employess-info-block fix-width-desk bg-white-color top-l-r-radius bg-white-box">
+      <div class="profile-header fix-width-desk fix-width-header"><img alt="" src="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/img/DSA-main-logo-white.svg?v2"></div>
+      <div class="employes-head fix-width-desk">
+        <div class="employes-thumb"><a href="https://www.dezshira.com/personnel/ankur-munjal.html" target="_blank"> <img alt="Ankur Munjal" src="https://d2h56l9e5xqoi4.cloudfront.net/dsa/images/personnel/rect_1/ankur-munjal.webp"></a></div>
+        <div class="employes-name"> <a href="https://www.dezshira.com/personnel/ankur-munjal.html" target="_blank"> Ankur Munjal</a></div>
+        <div class="employes-position"><a href="https://www.dezshira.com/personnel/ankur-munjal.html" target="_blank">Country Director, India<br>Dezan Shira & Associates</a></div>
+      </div>
+      <div class="employes-get-in-touch fix-width-get">
+        <div class="get-in-touch-title">Contact me</div>
+        <div class="employes-social">
+          <ul>
+                          <li><a href="https://linkedin.com/in/ankur-munjal-08507739/" target="_blank" role="button"><img alt="" src="https://www.dezshira.com/assets_v2/img/logos/social/LinkedIn.svg"></a></li>
+            
+            
+            
+            
+
+            <li><a href="mailto:ankur.munjal@dezshira.com" role="button"><img alt="" width="28px" src="https://dsa-2021.netlify.app/assets/img/email.svg"></a></li>
+            <li><a href="https://www.dezshira.com/personnel/ankur-munjal.html" target="_blank" role="button"><img alt="" width="28px" src="https://www.dezshira.com/assets_v2/img/logos/social/Profile.svg"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-employes margin-l-r-inner-box">
+        <div class="employes-name">About Ankur</div>
+        <P>
+          With over 17 years of experience in business consulting and advisory services, Ankur has worked with organizations across multiple industries and geographies. He is a Chartered Accountant, a commerce graduate, and holds a postgraduate diploma in Business Administration. Ankur has also earned key certifications, including ISO 31000, CISA (Certified Information Systems Auditor), and CFE (Certified Fraud Examiner).  In his current role as Country Director at Dezan Shira &amp; Associates (DSA), India, Ankur is responsible for leading the firm&rsquo;s operations in India. His expertise lies in advising multinational companies and global businesses investing in emerging markets across Asia - particularly in India.          <a href="https://www.dezshira.com/personnel/ankur-munjal.html" class="btn btn-outline-primary">Read More</a>
+        </P>
+      </div>
+      
+      <div class="employes-cta-info-detail margin-l-r-inner-box">
+        <div class="cta-row-main">
+                    <div class="cta-row">
+            <div class="cta-column-left">Phone</div>
+            <div class="cta-column-right">
+              <a href='tel:+91 124 4001785'>+91 124 4001785</a>            </div>
+          </div>
+
+          <div class="cta-row">
+            <div class="cta-column-left">Email</div>
+            <div class="cta-column-right"><a href="mailto:ankur.munjal@dezshira.com">ankur.munjal@dezshira.com</a></div>
+          </div>
+
+        </div>
+        <!-- <div class="cta-row-main">
+          <div class="cta-row cta-row-full"> 
+            <div class="cta-column-left cta-column-left-l">Profile</div>
+            <div class="cta-column-right cta-column-full"> <a style="word-break: break-all;" href="https://www.dezshira.com/personnel/ankur-munjal.html">www.dezshira.com/personnel/ankur-munjal.html</a></div>
+          </div>
+        </div> -->
+        <div class="cta-row-main">
+          <div class="cta-row cta-row-full">
+            <div class="cta-column-left cta-column-left-l">Office</div>
+            <div class="cta-column-right cta-column-full">
+                            <a href="https://www.google.com/maps?q=Unit No. 1101-A,11th Floor, Emaar Capital Tower 2, MG Road, Near Guru-Dronacharya Metro Station 
+Gurugram-122002, Haryana, India" target="_blank">Unit No. 1101-A,11th Floor, Emaar Capital Tower 2, MG Road, Near Guru-Dronacharya Metro Station 
+Gurugram-122002, Haryana, India</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="employes-cta-btn">
+        <a class="btn btn-primary" href="javascript:downloadVCF('ankur-munjal.html')" role="button">SAVE CONTACT</a>
+        <a class="btn btn-outline-primary" href="javascript:shareOrCompose()" role="button">SHARE PROFILE</a>
+      </div>
+    </div>
+    <div class="employes-follow-me-section">
+      <div class="follow-me-block">
+        <div class="follow-me-title">Follow us</div>
+        <ul>
+          <li><a href="https://www.linkedin.com/company/dezan-shira-&-associates" role="button" target="_blank"><img alt="" src="https://dsa-2021.netlify.app/assets/img/LinkedIn.svg"></a></li>
+          <li><a href="https://twitter.com/dezanshira" role="button" target="_blank"><img alt="" src="https://dsa-2021.netlify.app/assets/img/X - Twitter.svg"></a></li>
+          <li><a href="https://www.facebook.com/DezanShira" role="button" target="_blank"><img alt="" src="https://dsa-2021.netlify.app/assets/img/Facebook.svg"></a></li>
+          <li><a class="dsaChina" href="WeChat" target="_blank" data-toggle="modal" data-target="#weChatQRModel" role="button"><img alt="" src="https://dsa-2021.netlify.app/assets/img/WeChat.svg"></a></li>
+          <li><a href="https://www.dezshira.com/" role="button" target="_blank"><img alt="" src="https://www.dezshira.com/assets_v2/img/logos/social/website_1a.svg"></a></li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="footer-dnc fix-width-desk">
+      <div class="footer-column-1">
+        <ul>
+          <li><a href="https://www.dezshira.com/about-us/our-firm.html"> About Us</a></li>
+          <li><a href="https://www.dezshira.com/services"> Services</a></li>
+          <li><a href="https://www.dezshira.com/office"> Offices</a></li>
+        </ul>
+      </div>
+      <div class="footer-column-2">
+        <ul>
+          <li><a href="https://www.dezshira.com/personnel"> Our Team</a></li>
+          <li><a href="https://www.dezshira.com/success-stories/testimonials"> Success Stories</a></li>
+          <li><a href="https://www.asiabriefing.com/store" target="_blank"> Publications</a></li>
+        </ul>
+      </div>
+      <div class="footer-column-3">
+        <ul>
+          <li><a href="https://www.dezshira.com/events"> Events</a></li>
+          <li><a href="https://www.dezshira.com/library/search?type=multimedia"> Webinars</a></li>
+          <li><a href="https://www.dezshira.com/library"> Asiapedia </a></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-dnc fix-width-desk terms_of_use" style="padding:0;">
+      <div class="sitefooter--bot" style="font-size: 0.8rem;width:95%;">
+        <div class="sitefooter__copyright">
+          <p>© 1992-2026 Dezan Shira &amp; Associates All Rights Reserved.</p>
+        </div>
+        <ul class="sitefooter__submenu">
+          <li><a href="https://www.dezshira.com/terms-of-use.html">Terms of Use</a></li>
+          <li><a href="https://www.dezshira.com/privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="weChatQRModel" tabindex="-1" role="dialog" aria-labelledby="Follow Us on WeChat">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <p align="center"><img src="https://www.dezshira.com/userfiles/staticpage-assets/business-card/WeChat_QR.png" /></p>
+          <p align="center">Save the QR code to your phone and scan, or search DSA_China to follow us on WeChat</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="weChatUserModel" tabindex="-1" role="dialog" aria-labelledby="Follow Me on WeChat">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <h3 style="text-align: center;">Follow me on weChat</h3>
+                                          <div class="highlight copy" id="copyText" id="WeChat ID"><span></span></div>
+                      <p align="center">Search "" to follow me on WeChat.</p>
+                      <p align="center" style="margin-bottom: 0;"><img src="https://file.service.qq.com/user-files/uploads/202004/2e6d678146ce29110111a878251cfd62.jpg" width="100%" /></p>
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+  <script>
+    var weChatLink = document.querySelector('.dsaChina');
+    var modal = document.getElementById('weChatQRModel');
+
+    weChatLink.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      // Show the modal
+      modal.style.opacity = '1';
+      modal.style.visibility = 'visible';
+    });
+
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.opacity = '0';
+        modal.style.visibility = 'hidden';
+      }
+    });
+
+    var weChatLinkUser = document.querySelector('.weChatUserLink');
+    var modalUser = document.getElementById('weChatUserModel');
+
+    if(weChatLinkUser){
+      weChatLinkUser.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Show the modal
+        modalUser.style.opacity = '1';
+        modalUser.style.visibility = 'visible';
+      });
+
+      modalUser.addEventListener('click', function(e) {
+        if (e.target === modalUser) {
+          modalUser.style.opacity = '0';
+          modalUser.style.visibility = 'hidden';
+        }
+      });
+    }
+
+    // Share or Compose
+    function shareOrCompose() {
+      // Check if the user is on a mobile device
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // If on a mobile device, share the current page
+        if (navigator.share) {
+          navigator.share({
+            title: document.title,
+            url: window.location.href
+          }).then(() => {
+            console.log('Shared successfully');
+          }).catch((error) => {
+            console.error('Error sharing:', error);
+          });
+        } else {
+          // Fallback if the navigator.share API is not supported
+          alert('Sharing is not supported on your device.');
+        }
+      } else {
+        // If on a desktop device, compose an email
+        const emailSubject = encodeURIComponent('Contact Details of Ankur Munjal');
+        const emailBody = encodeURIComponent(`Hello, \n You can contact Ankur Munjal from Dezan Shira & Associates here: ${window.location.href}`);
+        const emailLink = `mailto:?subject=${emailSubject}&body=${emailBody}`;
+
+        // Open the default email client with the pre-composed email
+        window.location.href = emailLink;
+      }
+    }
+
+    // Download VCF
+    function downloadVCF(slug = "") {
+      if (slug != "") {
+        window.location.href = "https://www.dezshira.com/personnel/vcf/" + slug;
+      }
+    }
+
+
+    // Copy text
+    const copyText = document.getElementById('copyText');
+
+    copyText.addEventListener('click', () => {
+      const textToCopy = copyText.querySelector('span').innerText;
+
+      // Create a temporary element to hold the text and select it
+      const tempElement = document.createElement('textarea');
+      tempElement.value = textToCopy;
+      document.body.appendChild(tempElement);
+      tempElement.select();
+
+      // Execute the copy command
+      document.execCommand('copy');
+
+      // Remove the temporary element
+      document.body.removeChild(tempElement);
+
+      // Notify the user
+      alert('weChat ID copied, now you can paste this on WeChat\'s account search.');
+    });
+
+
+  // Model
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-toggle="modal"]').forEach(trigger => {
+      console.log(trigger);
+      trigger.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(trigger.dataset.target);
+        if (target) target.classList.add('show');
+      });
+    });
+
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', e => {
+        if (e.target === modal) modal.classList.remove('show');
+      });
+    });
+  });
+  </script>
+
+</body>
+
+<!-- <div class="scrolldown-instruction hide">
+      <div class="arrow-u-d"></div>
+</div>
+<a class="top-link hide" id="js-top" href="" style="display: none;"><i class="arrow-u-du"> </i><span class="screen-reader-text">Back to top    </span></a> -->
+
+
+<!-- Enquiry confirmation popup -->
+<div class="register__accessbox" id="enquiryAlertModal">
+    <div class="register__accessbox--top">
+      <div class="message">
+		<p class="text-center">
+			<svg width="40px" height="40px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+			<path fill="#ffcb2f" fill-rule="evenodd" d="M9.71093422,1.9716895 C8.93428422,0.6761035 7.05680422,0.6761035 6.28015422,1.9716895 L0.287692215,11.9681595 C-0.511423785,13.3011595 0.448847215,14.9964595 2.00308422,14.9964595 L13.9880442,14.9964595 C15.5422442,14.9964595 16.5025442,13.3011595 15.7034442,11.9681595 L9.71093422,1.9716895 Z M7.99556422,9.9964595 L9.06454422,6.4331995 C9.27936422,5.7171295 8.74315422,4.9964595 7.99556422,4.9964595 C7.24796422,4.9964595 6.71176422,5.7171295 6.92658422,6.4331995 L7.99556422,9.9964595 Z M7.99554422,12.9964595 C8.54783422,12.9964595 8.99554422,12.5487595 8.99554422,11.9964595 C8.99554422,11.4441595 8.54783422,10.9964595 7.99554422,10.9964595 C7.44326422,10.9964595 6.99554422,11.4441595 6.99554422,11.9964595 C6.99554422,12.5487595 7.44326422,12.9964595 7.99554422,12.9964595 Z"/>
+			</svg>
+		</p>
+		<p>It appears that you have recently submitted an inquiry on this topic. Would you like to <br />replace your previous submission with this one?</p>
+		<div class="action-buttons">
+			<button class="btn primary" onclick="toggle_modal('#enquiryAlertModal');if (frm[0]) frm[0].reset();$('#loading').hide();">Cancel (just send my first one)</button>
+			<button class="btn" id="user_confirm_send_both">Send both</button>
+		</div>
+	  </div>
+      <a class="register__accessbox__close" onclick="toggle_modal('#enquiryAlertModal');"><span class="sprite-close"></span></a>
+    </div>
+</div>
+
+<!-- Moved splide CSS to load after page render -->
+<link rel="preload" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/css/vendor/splide.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/css/vendor/splide.min.css"></noscript>
+
+
+<script src="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/js/vendor/splide.min.js"></script>
+<script src="https://d2h56l9e5xqoi4.cloudfront.net/dsa_website_assets/2025/js/main.min.js?v1.13"></script>
+<script src="/assets_v3/js/enquiry_mgmt.js?v1.12" defer></script>
+
+<!-- <script src="/assets_v3/js/main.min.js?v1.11"></script> -->
+
+
+<script>
+  //script to load csrf on the form
+  var TokenNameKey = document.querySelectorAll('.TokenNameKey');
+  var TokenValueKey = document.querySelectorAll('.TokenValueKey');
+  var RandomString = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var csrfResponse = JSON.parse(xhttp.responseText);
+
+      for (var i = 0; i < TokenNameKey.length; i++) {
+        TokenNameKey[i].value = csrfResponse.TokenName;
+        TokenValueKey[i].value = csrfResponse.TokenValue;
+      }
+
+    }
+  };
+  xhttp.open("GET", '/api/csrf?' + RandomString, true);
+  xhttp.send();
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Define your whitelisted domains
+    const allowedDomains = [
+      'www.china-briefing.com',
+      'china-briefing.com',
+      'www.india-briefing.com',
+      'india-briefing.com',
+      'www.vietnam-briefing.com',
+      'vietnam-briefing.com',
+      'www.aseanbriefing.com',
+      'aseanbriefing.com',
+      'www.middleeastbriefing.com',
+      'middleeastbriefing.com',
+      'www.asiabriefing.com',
+      'asiabriefing.com',
+    ];
+
+    // Get all anchor tags
+    // const links = document.querySelectorAll("a[href]");
+
+    // links.forEach(link => {
+    //   try {
+    //     const url = new URL(link.href);
+    //     if (
+    //       allowedDomains.includes(url.hostname) &&
+    //       url.pathname.includes('/doing-business-guide/')
+    //     ) {
+    //       const encodedUrl = encodeURIComponent(url.href);
+    //       link.href = `/external/${encodedUrl}`;
+    //     }
+    //   } catch (e) {
+    //     // Skip malformed URLs or relative links
+    //   }
+    // });
+
+    const links = document.querySelectorAll("a[href]");
+    const guidePath = '/doing-business-guide/';
+
+    links.forEach(link => {
+      const href = link.getAttribute('href');
+
+      // Handle internal accordion links with a hash and a specific keyword
+      if (href && href.startsWith('#') && href.includes('services_accordion')) {
+        link.addEventListener('click', (event) => {
+          event.preventDefault();
+
+          const targetId = href.substring(1);
+          const targetButton = document.querySelector(`button[aria-controls="${targetId}"]`);
+          
+          if (targetButton) {
+            targetButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            setTimeout(() => {
+              targetButton.click();
+            }, 300);
+          }
+        });
+      } else {
+        try {
+          const url = new URL(link.href);
+          if (allowedDomains.includes(url.hostname) && url.pathname.includes(guidePath)) {
+            const encodedUrl = encodeURIComponent(url.href);
+            link.href = `/external/${encodedUrl}`;
+          }
+        } catch (e) {
+          console.error('Invalid URL detected, skipping:', link.href);
+        }
+      }
+    });
+
+
+    // Open Accordion if Has Tag has a match
+    const hash = decodeURIComponent(window.location.hash.replace(/^#/, '')).trim().toLowerCase();
+    if (hash) {
+      const buttons = document.querySelectorAll(".accordion-reg-button");
+      buttons.forEach(btn => {
+        const text = btn.textContent.trim().toLowerCase();
+        if (text === hash) {
+          btn.click(); // simulate click to open accordion
+        }
+      });
+    }
+
+    // Responsive Accordion
+    document.querySelectorAll('[data-toggle="accordion"]').forEach(label => {
+      label.addEventListener('click', function () {
+        const listAccWrapper = this.closest('.list-acc-wrapper');
+        const listAccBlock = wrapper.querySelector('.list-acc-block');
+        const topicArrow = this.querySelector('.accordion-arrow');
+
+        listAccBlock.classList.toggle('open');
+        this.classList.toggle('open'); 
+      });
+    });
+
+    // Handle contact scroll
+      // const hash = window.location.hash;
+
+    if (hash === 'contact' || hash === 'enquiry') {
+      const target = document.querySelector('#gotQuestion');
+
+      if (target) {
+        const y = target.getBoundingClientRect().top + window.pageYOffset - 100;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      } else {
+        const btn = document.querySelector('.hero-section button[data-show-on-click="get-in-touch"]');
+        if (btn) btn.click();
+      }
+    }
+    
+
+        // Temporary: add v2_2025 on DSA links
+    // (function() {
+    //   var links = document.getElementsByTagName('a');
+    //   for (var i = 0; i < links.length; i++) {
+    //     var a = links[i],
+    //       h = a.getAttribute('href');
+    //     if (h && (h.indexOf('dezshira.com') > -1 || h.charAt(0) === '/') && h.indexOf('/') === -1 && h.indexOf('#') !== 0 && h.indexOf('mailto') !== 0) {
+    //       a.setAttribute('href', h.indexOf('https://www.dezshira.com/') === 0 ? h.replace('https://www.dezshira.com/', 'https://www.dezshira.com/') : h.indexOf('https://dezshira.com/') === 0 ? h.replace('https://dezshira.com/', 'https://dezshira.com/') : '/v2_2025' + h)
+    //     }
+    //   }
+    // })();
+    
+    // Contact form init
+    // Initialize all forms from array with global and form-specific options
+    var handlers = ContactFormHandler.initAll(
+        ['contact_form', 'services_side_full_form'],
+        
+        // Global options (applied to all forms)
+        {
+            enableFreeEmailValidation: true,
+            enableRealTimeValidation: true,
+            validationDelay: 300,
+            useFormData: true
+        },
+        
+        // Form-specific options (override global options)
+        {
+            'services_side_full_form': {
+                enableFreeEmailValidation: true
+            },
+            'contact_form': {
+                enableFreeEmailValidation: true,
+                options: {
+                  messageSelector: '#contact_form_message',
+                  loadingSelector: '#contact_form_loading'
+                }
+            }
+        }
+    );
+    ContactFormHandler.reloadAllCaptchas();
+
+
+    // updating requestURI on enquiry form
+              const loc = window.location;
+        const baseUri = `${loc.protocol}//${loc.host}${loc.pathname}`;
+        const urlParams = new URLSearchParams(loc.search);
+        let entry = urlParams.get('ENTRY');
+
+        try {
+            entry = entry ? decodeURIComponent(decodeURIComponent(entry)) : null;
+        } catch (e) {
+            entry = entry || null;
+        }
+
+        const phpRef = "";
+        const suffix = entry ? entry.replace(/^#/, '') : phpRef;
+        
+        const finalUri = suffix ? `${baseUri}#${suffix}` : baseUri;
+
+        document.querySelectorAll('input[name="request_uri"]').forEach(f => f.value = finalUri);
+        
+
+    // Handling Hash Links on pages
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+    anchorLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const hash = link.getAttribute('href'); 
+            if (hash === '#') return;
+
+            const targetElement = document.querySelector(hash);
+
+            if (targetElement) {
+                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 100;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.error('Target element not found for hash: ' + hash);
+            }
+        });
+    });
+
+  });
+
+
+  // Lazy Loading Images
+  (function() {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          const src = img.getAttribute('data-src');
+          if (src) {
+            img.src = src;
+            img.onload = () => img.classList.add('loaded');
+            obs.unobserve(img);
+          }
+        }
+      });
+    }, { rootMargin: '100px' });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('img.lazy[data-src]').forEach(img => {
+        observer.observe(img);
+      });
+    });
+  })();
+
+  // Language Switcher
+  document.addEventListener("DOMContentLoaded", function () {
+    const switcher = document.querySelector('.lng-switcher');
+    const list = document.querySelector('.lng-list');
+
+    switcher.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      list.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.lng-switcher-mob')) {
+        list.classList.remove('show');
+      }
+    });
+  });
+</script>
+
+</main>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3283726c53","applicationID":"2874630","transactionName":"Z1AGZkEHD0JVVxVQWF4aMUBaSQhfUFEZF0dYRQ==","queueTime":0,"applicationTime":92,"atts":"SxcFEAkdHEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
